@@ -1,0 +1,581 @@
+#!/usr/bin/env python3
+"""
+Sportsonline Stream Extractor
+Direct connection without proxy support
+"""
+
+import asyncio
+import base64
+import logging
+import re
+import json
+from urllib.parse import urlparse, urljoin
+from typing import Dict, Any, List, Optional
+import aiohttp
+from aiohttp import ClientSession, ClientTimeout, TCPConnector
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+
+class ExtractorError(Exception):
+    """Custom exception for extraction errors."""
+    pass
+
+
+def unpack(p, a, c, k, e=None, d=None):
+    """
+    Unpacker for P.A.C.K.E.R. packed javascript.
+    This is a Python port of the common Javascript unpacker.
+    """
+    while c > 0:
+        c -= 1
+        if k[c]:
+            p = re.sub("\\b" + _int2base(c, a) + "\\b", k[c], p)
+    return p
+
+
+def _int2base(x, base):
+    if x < 0:
+        sign = -1
+    elif x == 0:
+        return "0"
+    else:
+        sign = 1
+
+    x *= sign
+    digits = []
+
+    while x:
+        digits.append("0123456789abcdefghijklmnopqrstuvwxyz"[x % base])
+        x = int(x / base)
+
+    if sign < 0:
+        digits.append("-")
+
+    digits.reverse()
+    return "".join(digits)
+
+
+class SportsonlineExtractor:
+    """Sportsonline/Sportzonline URL extractor for M3U8 streams."""
+
+    def __init__(self, request_headers: dict = None):
+        self.request_headers = request_headers or {}
+        self.base_headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+        }
+        self.session = None
+        self.mediaflow_endpoint = "hls_manifest_proxy"
+        self._session_lock = asyncio.Lock()
+
+    def update_request_headers(self, request_headers: dict | None):
+        self.request_headers = request_headers or {}
+
+    def _get_request_header(self, name: str, default: str | None = None) -> str | None:
+        for header_name, header_value in self.request_headers.items():
+            if header_name.lower() == name.lower():
+                return header_value
+        return default
+
+    def _get_origin(self, url: str) -> str:
+        parsed = urlparse(url)
+        return f"{parsed.scheme}://{parsed.netloc}"
+
+    def _copy_request_headers(self, header_map: dict[str, str]) -> dict[str, str]:
+        copied_headers = {}
+        for request_name, output_name in header_map.items():
+            value = self._get_request_header(request_name)
+            if value:
+                copied_headers[output_name] = value
+        return copied_headers
+
+    def _build_page_headers(self) -> dict[str, str]:
+        headers = {
+            "User-Agent": self._get_request_header(
+                "User-Agent", self.base_headers["User-Agent"]
+            ),
+            "Accept": self._get_request_header(
+                "Accept", self.base_headers["Accept"]
+            ),
+            "Accept-Language": self._get_request_header(
+                "Accept-Language", self.base_headers["Accept-Language"]
+            ),
+            "Accept-Encoding": self.base_headers["Accept-Encoding"],
+            "Connection": self.base_headers["Connection"],
+            "Upgrade-Insecure-Requests": self.base_headers["Upgrade-Insecure-Requests"],
+        }
+        headers.update(
+            self._copy_request_headers({
+                "Cookie": "Cookie",
+                "Referer": "Referer",
+            })
+        )
+        return headers
+
+    def _build_iframe_headers(self, page_url: str, iframe_url: str) -> dict[str, str]:
+        headers = self._build_page_headers()
+        headers["Referer"] = page_url
+        headers["Origin"] = self._get_origin(page_url)
+        headers["Sec-Fetch-Site"] = (
+            "same-origin"
+            if urlparse(page_url).netloc == urlparse(iframe_url).netloc
+            else "cross-site"
+        )
+        headers["Sec-Fetch-Mode"] = "iframe"
+        headers["Sec-Fetch-Dest"] = "iframe"
+        return headers
+
+    async def _get_session(self):
+        if self.session is None or self.session.closed:
+            if self.session and not self.session.closed:
+                await self.session.close()
+
+            timeout = ClientTimeout(total=60, connect=30, sock_read=30)
+            connector = TCPConnector(
+                limit=0,
+                limit_per_host=0,
+                ssl=False,
+                enable_cleanup_closed=True
+            )
+
+            self.session = ClientSession(
+                timeout=timeout,
+                connector=connector,
+                headers=self.base_headers,
+                cookie_jar=aiohttp.CookieJar()
+            )
+        return self.session
+
+    async def _make_request(
+        self, url: str, headers: dict = None, retries: int = 3, timeout: int = 30
+    ):
+        """Make HTTP requests directly without proxy."""
+        final_headers = headers or self.base_headers
+
+        for attempt in range(retries):
+            try:
+                logger.debug(f"Request attempt {attempt + 1}/{retries} for URL: {url}")
+                session = await self._get_session()
+                
+                async with session.get(url, headers=final_headers, timeout=timeout, ssl=False) as response:
+                    if response.status == 403:
+                        logger.warning(f"Access forbidden (403) for {url}")
+                        if attempt < retries - 1:
+                            await asyncio.sleep(2 ** attempt)
+                            continue
+                    
+                    response.raise_for_status()
+                    html = await self._handle_response_content(response)
+                    if not html:
+                        raise ExtractorError(f"Empty response for {url}")
+                    return html, str(response.url)
+
+            except aiohttp.ClientError as e:
+                logger.warning(f"Request attempt {attempt + 1} failed for {url}: {str(e)}")
+                if attempt < retries - 1:
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    raise ExtractorError(f"All request attempts failed for {url}: {str(e)}")
+            except Exception as e:
+                logger.error(f"Unexpected error for {url}: {str(e)}")
+                raise ExtractorError(f"Request failed for {url}: {str(e)}")
+        
+        raise ExtractorError(f"Unable to complete request for {url}")
+
+    async def _handle_response_content(self, response: aiohttp.ClientResponse) -> str:
+        """Read response body."""
+        raw_body = await response.read()
+        charset = response.charset if response.charset else 'utf-8'
+        return raw_body.decode(charset, errors='replace')
+
+    def _detect_packed_blocks(self, html: str) -> list[str]:
+        """Detect P.A.C.K.E.R. packed JavaScript blocks."""
+        raw_matches: list[str] = []
+        strict_eval_pattern = re.compile(r"eval\(function\(p,a,c,k,e,.*?\}\(.*?\)\)", re.DOTALL)
+        relaxed_eval_pattern = re.compile(r"eval\(function\(p,a,c,k,e,[dr]\).*?\}\(.*?\)\)", re.DOTALL)
+
+        script_pattern = re.compile(r"<script[^>]*>(.*?)</script>", re.IGNORECASE | re.DOTALL)
+        for script_body in script_pattern.findall(html):
+            if "eval(function(p,a,c,k,e" in script_body:
+                strict_matches = strict_eval_pattern.findall(script_body)
+                if strict_matches:
+                    raw_matches.extend(strict_matches)
+                    continue
+
+                relaxed_matches = relaxed_eval_pattern.findall(script_body)
+                if relaxed_matches:
+                    raw_matches.extend(relaxed_matches)
+
+        if not raw_matches:
+            raw_matches = strict_eval_pattern.findall(html)
+            if not raw_matches:
+                raw_matches = relaxed_eval_pattern.findall(html)
+
+        return raw_matches
+
+    @staticmethod
+    def _extract_m3u8_candidate(text: str) -> str | None:
+        """Extract m3u8 URL from text."""
+        patterns = [
+            r'var\s+src\s*=\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
+            r'src\s*=\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
+            r'file\s*:\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
+            r'["\']([^"\']*https?://[^"\']+\.m3u8[^"\']*)["\']',
+            r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
+            r'(//[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
+            r'(/[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, text, re.IGNORECASE)
+            if match:
+                return match.group(1)
+
+        return None
+
+    @staticmethod
+    def _extract_econfig_m3u8(html: str) -> str | None:
+        """Decode current dynmill player config and return its stream URL."""
+        config_match = re.search(r"window\._econfig\s*=\s*['\"]([^'\"]+)['\"]", html)
+        if not config_match:
+            return None
+
+        try:
+            encoded_config = config_match.group(1)
+            decoded_config = base64.b64decode(
+                encoded_config + "=" * (-len(encoded_config) % 4)
+            ).decode("latin1")
+
+            part_order = [2, 0, 3, 1]
+            part_length = -(-len(decoded_config) // 4)
+            encoded_parts = []
+            offset = 0
+
+            for _ in range(4):
+                part = decoded_config[offset: offset + part_length]
+                offset += part_length
+                encoded_parts.append(part[:3] + part[4:])
+
+            decoded_parts = [""] * 4
+            for index, part in enumerate(encoded_parts):
+                decoded_parts[part_order[index]] = base64.b64decode(
+                    part + "=" * (-len(part) % 4)
+                ).decode("latin1")
+
+            joined_config = "".join(decoded_parts)
+            config_json = base64.b64decode(
+                joined_config + "=" * (-len(joined_config) % 4)
+            ).decode("utf-8")
+            config = json.loads(config_json)
+        except Exception as e:
+            logger.debug(f"Failed to decode Sportsonline _econfig: {e}")
+            return None
+
+        return config.get("stream_url_nop2p") or config.get("stream_url")
+
+    @staticmethod
+    def _normalize_stream_url(stream_url: str, base_url: str) -> str:
+        """Normalize stream URL."""
+        cleaned = stream_url.strip().strip("\"'").replace("\\/", "/")
+        if cleaned.startswith("//"):
+            parsed_base = urlparse(base_url)
+            return f"{parsed_base.scheme or 'https'}:{cleaned}"
+        if not urlparse(cleaned).scheme:
+            return urljoin(base_url, cleaned)
+        return cleaned
+
+    async def extract(self, url: str, **kwargs) -> Dict[str, Any]:
+        """Main extraction flow: fetch page, extract iframe, unpack and find m3u8."""
+        try:
+            self.update_request_headers(kwargs.get("request_headers"))
+            
+            parsed_source = urlparse(url)
+            source_origin = f"{parsed_source.scheme}://{parsed_source.netloc}"
+            source_referer = self._get_request_header("Referer") or f"{source_origin}/"
+            user_agent = self._get_request_header("User-Agent", self.base_headers["User-Agent"])
+
+            # Step 1: Fetch main page
+            logger.debug(f"Fetching main page: {url}")
+            main_headers = self._build_page_headers()
+            if source_referer:
+                main_headers["Referer"] = source_referer
+            if source_origin:
+                main_headers["Origin"] = source_origin
+
+            main_html, main_url = await self._make_request(url, headers=main_headers)
+            parsed_main = urlparse(main_url)
+            main_origin = f"{parsed_main.scheme}://{parsed_main.netloc}"
+
+            # Extract iframe
+            iframe_match = re.search(r'<iframe[^>]+src=["\']([^"\']+)["\']', main_html, re.IGNORECASE)
+            iframe_url = main_url
+            iframe_html = main_html
+
+            if iframe_match:
+                iframe_url = self._normalize_stream_url(iframe_match.group(1), main_url)
+                logger.debug(f"Found iframe URL: {iframe_url}")
+
+                # Fetch iframe content
+                iframe_headers = self._build_iframe_headers(main_url, iframe_url)
+                iframe_html, active_iframe_url = await self._make_request(iframe_url, headers=iframe_headers)
+                iframe_url = active_iframe_url
+                logger.debug(f"Iframe HTML length: {len(iframe_html)}")
+            else:
+                logger.warning("No iframe found on page, attempting extraction from main HTML")
+
+            parsed_iframe = urlparse(iframe_url)
+            playback_headers = {
+                "Referer": iframe_url,
+                "Origin": f"{parsed_iframe.scheme}://{parsed_iframe.netloc}",
+                "User-Agent": user_agent,
+            }
+
+            # Detect packed blocks
+            packed_blocks = self._detect_packed_blocks(iframe_html)
+            logger.debug(f"Found {len(packed_blocks)} packed blocks")
+
+            if not packed_blocks:
+                logger.warning("No packed blocks found, trying direct m3u8 search")
+                direct_match = (
+                    self._extract_m3u8_candidate(iframe_html)
+                    or self._extract_econfig_m3u8(iframe_html)
+                )
+                if direct_match:
+                    m3u8_url = self._normalize_stream_url(direct_match, iframe_url)
+                    logger.debug(f"Found direct m3u8 URL: {m3u8_url}")
+                    return {
+                        "destination_url": m3u8_url,
+                        "request_headers": playback_headers,
+                        "mediaflow_endpoint": self.mediaflow_endpoint,
+                    }
+                else:
+                    raise ExtractorError("No packed blocks or direct m3u8 URL found")
+
+            # Process packed blocks
+            chosen_idx = 1 if len(packed_blocks) > 1 else 0
+            m3u8_url = None
+
+            for i, block in enumerate(packed_blocks):
+                try:
+                    unpacked_code = self.extract_unpack(block)
+                    m3u8_url = self._extract_m3u8_candidate(unpacked_code)
+                    if m3u8_url:
+                        logger.debug(f"Found m3u8 in block {i}")
+                        break
+                except Exception as e:
+                    logger.debug(f"Failed to process block {i}: {e}")
+                    continue
+
+            if not m3u8_url:
+                fallback_candidate = self._extract_m3u8_candidate(iframe_html)
+                if not fallback_candidate:
+                    fallback_candidate = self._extract_econfig_m3u8(iframe_html)
+                if fallback_candidate:
+                    m3u8_url = fallback_candidate
+
+            if not m3u8_url:
+                raise ExtractorError("Could not extract m3u8 URL from packed code")
+
+            m3u8_url = self._normalize_stream_url(m3u8_url, iframe_url)
+            logger.info(f"Successfully extracted m3u8 URL: {m3u8_url}")
+
+            return {
+                "destination_url": m3u8_url,
+                "request_headers": playback_headers,
+                "mediaflow_endpoint": self.mediaflow_endpoint,
+            }
+
+        except ExtractorError:
+            raise
+        except Exception as e:
+            logger.exception(f"Sportsonline extraction failed for {url}")
+            raise ExtractorError(f"Extraction failed: {str(e)}")
+
+    @staticmethod
+    def extract_unpack(packed_js: str) -> str:
+        """Unpack P.A.C.K.E.R. packed javascript."""
+        try:
+            match = re.search(r"}\((.*)\)\)", packed_js)
+            if not match:
+                raise ValueError("Cannot find packed data.")
+
+            p, a, c, k, e, d = eval(f"({match.group(1)})", {"__builtins__": {}}, {})
+            return unpack(p, a, c, k, e, d)
+        except Exception as e:
+            raise ValueError(f"Failed to unpack JS: {e}")
+
+    async def close(self):
+        if self.session and not self.session.closed:
+            await self.session.close()
+            self.session = None
+
+
+async def fetch_prog_txt() -> List[Dict[str, Any]]:
+    """Fetch and parse prog.txt to get channel information."""
+    prog_url = "https://sportsonline.sc/prog.txt"
+    channels = []
+    
+    target_channels = ["HD1", "HD2", "HD6", "HD8", "HD10"]
+    
+    try:
+        async with ClientSession() as session:
+            async with session.get(prog_url, ssl=False) as response:
+                if response.status == 200:
+                    content = await response.text()
+                    lines = content.split('\n')
+                    
+                    current_day = None
+                    for line in lines:
+                        line = line.strip()
+                        if line in ["TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY", "MONDAY"]:
+                            current_day = line
+                        elif 'x' in line and '|' in line and 'https://' in line:
+                            # Parse event line
+                            parts = line.split('|')
+                            if len(parts) >= 2:
+                                event_info = parts[0].strip()
+                                stream_url = parts[1].strip()
+                                
+                                # Check if URL contains target channels
+                                for channel in target_channels:
+                                    if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url:
+                                        # Extract event name
+                                        event_parts = event_info.split()
+                                        if len(event_parts) >= 3:
+                                            time = event_parts[0]
+                                            teams = ' '.join(event_parts[1:])
+                                            
+                                            channels.append({
+                                                'day': current_day,
+                                                'time': time,
+                                                'teams': teams,
+                                                'channel': channel,
+                                                'url': stream_url,
+                                                'extracted_url': None
+                                            })
+                                        break
+    except Exception as e:
+        logger.error(f"Failed to fetch prog.txt: {e}")
+    
+    return channels
+
+
+async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onlinesp_tivimate.m3u8"):
+    """Generate M3U8 file with extracted stream URLs."""
+    extractor = SportsonlineExtractor()
+    
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            # Write M3U8 header
+            f.write('#EXTM3U\n')
+            f.write(f'#EXTINF:-1 tvg-id="" tvg-name="SPORTSONLINE" tvg-logo="" group-title="Sports", SportsOnline Channels\n\n')
+            
+            for channel in channels:
+                try:
+                    logger.info(f"Extracting stream for: {channel['teams']} ({channel['channel']})")
+                    
+                    # Extract stream URL
+                    result = await extractor.extract(channel['url'])
+                    stream_url = result.get('destination_url')
+                    
+                    if stream_url:
+                        # Write channel entry
+                        channel_name = f"{channel['teams']} - {channel['channel']} ({channel['day']} {channel['time']})"
+                        f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{channel_name}" tvg-logo="" group-title="Sports", {channel_name}\n')
+                        f.write(f'{stream_url}\n\n')
+                        logger.info(f"✓ Successfully extracted: {channel_name}")
+                    else:
+                        logger.warning(f"✗ No stream URL found for: {channel['teams']}")
+                        
+                except Exception as e:
+                    logger.error(f"✗ Failed to extract for {channel['teams']}: {e}")
+                    continue
+                    
+            logger.info(f"M3U8 file generated: {output_file}")
+            
+    finally:
+        await extractor.close()
+
+
+def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
+    """Parse local prog.txt file."""
+    channels = []
+    target_channels = ["HD1", "HD2", "HD6", "HD8", "HD10"]
+    
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+            lines = content.split('\n')
+            
+            current_day = None
+            for line in lines:
+                line = line.strip()
+                if line in ["TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY", "MONDAY"]:
+                    current_day = line
+                elif 'x' in line and '|' in line and 'https://' in line:
+                    parts = line.split('|')
+                    if len(parts) >= 2:
+                        event_info = parts[0].strip()
+                        stream_url = parts[1].strip()
+                        
+                        for channel in target_channels:
+                            if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url:
+                                event_parts = event_info.split()
+                                if len(event_parts) >= 3:
+                                    time = event_parts[0]
+                                    teams = ' '.join(event_parts[1:])
+                                    
+                                    channels.append({
+                                        'day': current_day,
+                                        'time': time,
+                                        'teams': teams,
+                                        'channel': channel,
+                                        'url': stream_url,
+                                        'extracted_url': None
+                                    })
+                                break
+    except Exception as e:
+        logger.error(f"Failed to parse local file {filepath}: {e}")
+    
+    return channels
+
+
+async def main():
+    """Main function to run the extractor."""
+    print("=" * 60)
+    print("SPORTSONLINE STREAM EXTRACTOR")
+    print("=" * 60)
+    
+    # Try to fetch from URL first, fallback to local file
+    channels = await fetch_prog_txt()
+    
+    if not channels:
+        logger.warning("Could not fetch prog.txt from URL, trying local file...")
+        channels = parse_prog_txt_from_file("prog.txt")
+    
+    if not channels:
+        logger.error("No channels found. Please ensure prog.txt is accessible.")
+        return
+    
+    logger.info(f"Found {len(channels)} channels to process")
+    
+    # Generate M3U8 file
+    await generate_m3u8(channels, "onlinesp_tivimate.m3u8")
+    
+    print("\n" + "=" * 60)
+    print("✅ EXTRACTION COMPLETE!")
+    print(f"📁 Output file: onlinesp_tivimate.m3u8")
+    print("=" * 60)
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
