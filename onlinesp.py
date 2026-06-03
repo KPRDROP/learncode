@@ -77,7 +77,7 @@ class SportsonlineExtractor:
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
-            "Accept-Encoding": "gzip, deflate",  # Removed br to avoid issues, but we'll handle it
+            "Accept-Encoding": "gzip, deflate",
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1",
         }
@@ -98,35 +98,24 @@ class SportsonlineExtractor:
         parsed = urlparse(url)
         return f"{parsed.scheme}://{parsed.netloc}"
 
-    def _copy_request_headers(self, header_map: dict[str, str]) -> dict[str, str]:
-        copied_headers = {}
-        for request_name, output_name in header_map.items():
-            value = self._get_request_header(request_name)
-            if value:
-                copied_headers[output_name] = value
-        return copied_headers
-
     def _build_page_headers(self) -> dict[str, str]:
         headers = {
-            "User-Agent": self._get_request_header(
-                "User-Agent", self.base_headers["User-Agent"]
-            ),
-            "Accept": self._get_request_header(
-                "Accept", self.base_headers["Accept"]
-            ),
-            "Accept-Language": self._get_request_header(
-                "Accept-Language", self.base_headers["Accept-Language"]
-            ),
-            "Accept-Encoding": "gzip, deflate",  # Don't request brotli
+            "User-Agent": self._get_request_header("User-Agent", self.base_headers["User-Agent"]),
+            "Accept": self._get_request_header("Accept", self.base_headers["Accept"]),
+            "Accept-Language": self._get_request_header("Accept-Language", self.base_headers["Accept-Language"]),
+            "Accept-Encoding": "gzip, deflate",
             "Connection": self.base_headers["Connection"],
             "Upgrade-Insecure-Requests": self.base_headers["Upgrade-Insecure-Requests"],
         }
-        headers.update(
-            self._copy_request_headers({
-                "Cookie": "Cookie",
-                "Referer": "Referer",
-            })
-        )
+        
+        cookie = self._get_request_header("Cookie")
+        if cookie:
+            headers["Cookie"] = cookie
+            
+        referer = self._get_request_header("Referer")
+        if referer:
+            headers["Referer"] = referer
+            
         return headers
 
     def _build_iframe_headers(self, page_url: str, iframe_url: str) -> dict[str, str]:
@@ -163,16 +152,12 @@ class SportsonlineExtractor:
             )
         return self.session
 
-    async def _make_request(
-        self, url: str, headers: dict = None, retries: int = 3, timeout: int = 30
-    ):
+    async def _make_request(self, url: str, headers: dict = None, retries: int = 3, timeout: int = 30):
         """Make HTTP requests directly without proxy."""
-        final_headers = headers or self.base_headers
+        final_headers = headers or self.base_headers.copy()
         
         # Ensure we don't request brotli compression
-        if 'Accept-Encoding' in final_headers:
-            if 'br' in final_headers['Accept-Encoding']:
-                final_headers['Accept-Encoding'] = final_headers['Accept-Encoding'].replace('br', '').strip(', ')
+        final_headers['Accept-Encoding'] = 'gzip, deflate'
 
         for attempt in range(retries):
             try:
@@ -185,10 +170,18 @@ class SportsonlineExtractor:
                         if attempt < retries - 1:
                             await asyncio.sleep(2 ** attempt)
                             continue
+                        raise ExtractorError(f"Access forbidden: {url}")
                     
                     if response.status == 404:
                         logger.warning(f"Page not found (404) for {url}")
                         raise ExtractorError(f"Page not found: {url}")
+                    
+                    if response.status == 400:
+                        logger.warning(f"Bad request (400) for {url}")
+                        if attempt < retries - 1:
+                            await asyncio.sleep(2 ** attempt)
+                            continue
+                        raise ExtractorError(f"Bad request: {url}")
                     
                     response.raise_for_status()
                     html = await self._handle_response_content(response)
@@ -196,38 +189,30 @@ class SportsonlineExtractor:
                         raise ExtractorError(f"Empty response for {url}")
                     return html, str(response.url)
 
-            except aiohttp.ClientResponseError as e:
-                if e.status == 400:
-                    logger.warning(f"Bad request (400) for {url} - trying without compression")
-                    # Remove compression headers and retry
-                    if 'Accept-Encoding' in final_headers:
-                        final_headers['Accept-Encoding'] = 'identity'
-                    continue
-                logger.warning(f"Response error for {url}: {e}")
-                if attempt < retries - 1:
-                    await asyncio.sleep(2 ** attempt)
-                else:
-                    raise ExtractorError(f"Request failed for {url}: {e}")
             except aiohttp.ClientError as e:
                 logger.warning(f"Request attempt {attempt + 1} failed for {url}: {str(e)}")
                 if attempt < retries - 1:
                     await asyncio.sleep(2 ** attempt)
                 else:
                     raise ExtractorError(f"All request attempts failed for {url}: {str(e)}")
+            except ExtractorError:
+                raise
             except Exception as e:
                 logger.error(f"Unexpected error for {url}: {str(e)}")
-                raise ExtractorError(f"Request failed for {url}: {str(e)}")
+                if attempt < retries - 1:
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    raise ExtractorError(f"Request failed for {url}: {str(e)}")
         
         raise ExtractorError(f"Unable to complete request for {url}")
 
     async def _handle_response_content(self, response: aiohttp.ClientResponse) -> str:
         """Read response body, handling various encodings."""
+        raw_body = await response.read()
+        
         # Check if response is brotli compressed
         content_encoding = response.headers.get('Content-Encoding', '').lower()
         
-        raw_body = await response.read()
-        
-        # Handle brotli compression if present
         if 'br' in content_encoding and BROTLI_AVAILABLE:
             try:
                 raw_body = brotli.decompress(raw_body)
@@ -238,7 +223,6 @@ class SportsonlineExtractor:
         # Try to decode with proper charset
         charset = response.charset
         if not charset:
-            # Try to detect charset from content
             content_type = response.headers.get('Content-Type', '')
             if 'charset=' in content_type:
                 charset = content_type.split('charset=')[-1].split(';')[0].strip()
@@ -248,55 +232,49 @@ class SportsonlineExtractor:
         try:
             return raw_body.decode(charset, errors='replace')
         except UnicodeDecodeError:
-            # Fallback to utf-8 with replacement
             return raw_body.decode('utf-8', errors='replace')
 
     def _detect_packed_blocks(self, html: str) -> list[str]:
         """Detect P.A.C.K.E.R. packed JavaScript blocks."""
         raw_matches: list[str] = []
-        strict_eval_pattern = re.compile(r"eval\(function\(p,a,c,k,e,.*?\}\(.*?\)\)", re.DOTALL)
-        relaxed_eval_pattern = re.compile(r"eval\(function\(p,a,c,k,e,[dr]\).*?\}\(.*?\)\)", re.DOTALL)
-
-        script_pattern = re.compile(r"<script[^>]*>(.*?)</script>", re.IGNORECASE | re.DOTALL)
+        
+        # Pattern for packed JavaScript
+        packed_pattern = re.compile(
+            r'eval\s*\(\s*function\s*\(\s*p\s*,\s*a\s*,\s*c\s*,\s*k\s*,\s*e\s*,\s*[dr]\s*\)\s*\{.*?\}\s*\(\s*.*?\s*\)\s*\)',
+            re.IGNORECASE | re.DOTALL
+        )
+        
+        # First look in script tags
+        script_pattern = re.compile(r'<script[^>]*>(.*?)</script>', re.IGNORECASE | re.DOTALL)
         for script_body in script_pattern.findall(html):
-            if "eval(function(p,a,c,k,e" in script_body:
-                strict_matches = strict_eval_pattern.findall(script_body)
-                if strict_matches:
-                    raw_matches.extend(strict_matches)
-                    continue
-
-                relaxed_matches = relaxed_eval_pattern.findall(script_body)
-                if relaxed_matches:
-                    raw_matches.extend(relaxed_matches)
-
+            matches = packed_pattern.findall(script_body)
+            raw_matches.extend(matches)
+        
+        # If not found, search entire HTML
         if not raw_matches:
-            raw_matches = strict_eval_pattern.findall(html)
-            if not raw_matches:
-                raw_matches = relaxed_eval_pattern.findall(html)
-
+            raw_matches = packed_pattern.findall(html)
+        
         return raw_matches
 
     @staticmethod
     def _extract_m3u8_candidate(text: str) -> str | None:
         """Extract m3u8 URL from text."""
         patterns = [
+            r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']',
+            r'(https?://[^\s<>"\']+\.m3u8[^\s<>"\']*)',
+            r'["\'](//[^"\']+\.m3u8[^"\']*)["\']',
+            r'(//[^\s<>"\']+\.m3u8[^\s<>"\']*)',
+            r'(?:file|src|url)\s*[:=]\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
+            r'stream_url["\']\s*:\s*["\']([^"\']+)["\']',
             r'var\s+src\s*=\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
-            r'src\s*=\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
-            r'file\s*:\s*["\']([^"\']+\.m3u8[^"\']*)["\']',
-            r'["\']([^"\']*https?://[^"\']+\.m3u8[^"\']*)["\']',
-            r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
-            r'(//[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
-            r'(/[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
-            r'(?:file|src)\s*[:=]\s*["\']([^"\']+\.m3u8)',
-            r'stream_url["\']\s*:\s*["\']([^"\']+)',
         ]
-
+        
         for pattern in patterns:
             matches = re.findall(pattern, text, re.IGNORECASE)
             for match in matches:
-                if '.m3u8' in match:
+                if '.m3u8' in str(match):
                     return match
-
+        
         return None
 
     @staticmethod
@@ -350,6 +328,43 @@ class SportsonlineExtractor:
             return urljoin(base_url, cleaned)
         return cleaned
 
+    @staticmethod
+    def extract_unpack(packed_js: str) -> str:
+        """Unpack P.A.C.K.E.R. packed javascript."""
+        try:
+            # Extract the parameters
+            match = re.search(r'}\((.*)\)\)\s*$', packed_js)
+            if not match:
+                # Try alternative pattern
+                match = re.search(r'}\(([^)]+)\)\)', packed_js)
+            if not match:
+                raise ValueError("Cannot find packed data.")
+            
+            # Safely evaluate the parameters
+            params_str = match.group(1)
+            # Split by comma but respect parentheses
+            import ast
+            # Use ast.literal_eval for safety
+            params = ast.literal_eval(f'[{params_str}]')
+            
+            if len(params) >= 4:
+                p, a, c, k = params[0], params[1], params[2], params[3]
+                e = params[4] if len(params) > 4 else None
+                d = params[5] if len(params) > 5 else None
+                
+                if isinstance(k, list):
+                    # Convert k list to dict format expected by unpack
+                    k_dict = {i: k[i] for i in range(len(k))}
+                else:
+                    k_dict = {}
+                    
+                return unpack(p, a, c, k_dict, e, d)
+            else:
+                raise ValueError("Invalid packed parameters")
+                
+        except Exception as e:
+            raise ValueError(f"Failed to unpack JS: {e}")
+
     async def extract(self, url: str, **kwargs) -> Dict[str, Any]:
         """Main extraction flow: fetch page, extract iframe, unpack and find m3u8."""
         try:
@@ -365,12 +380,8 @@ class SportsonlineExtractor:
             main_headers = self._build_page_headers()
             if source_referer:
                 main_headers["Referer"] = source_referer
-            if source_origin:
-                main_headers["Origin"] = source_origin
 
             main_html, main_url = await self._make_request(url, headers=main_headers)
-            parsed_main = urlparse(main_url)
-            main_origin = f"{parsed_main.scheme}://{parsed_main.netloc}"
 
             # Extract iframe
             iframe_match = re.search(r'<iframe[^>]+src=["\']([^"\']+)["\']', main_html, re.IGNORECASE)
@@ -388,12 +399,12 @@ class SportsonlineExtractor:
                     iframe_url = active_iframe_url
                     logger.debug(f"Iframe HTML length: {len(iframe_html)}")
                 except ExtractorError as e:
-                    logger.warning(f"Failed to fetch iframe: {e}")
-                    # Try to extract from main HTML directly
+                    logger.warning(f"Failed to fetch iframe: {e}, trying main HTML")
                     iframe_html = main_html
             else:
-                logger.warning("No iframe found on page, attempting extraction from main HTML")
+                logger.debug("No iframe found, using main HTML")
 
+            # Build playback headers
             parsed_iframe = urlparse(iframe_url)
             playback_headers = {
                 "Referer": iframe_url,
@@ -401,7 +412,7 @@ class SportsonlineExtractor:
                 "User-Agent": user_agent,
             }
 
-            # First try direct m3u8 extraction
+            # Try direct m3u8 extraction first
             m3u8_url = self._extract_m3u8_candidate(iframe_html)
             if not m3u8_url:
                 m3u8_url = self._extract_econfig_m3u8(iframe_html)
@@ -415,27 +426,30 @@ class SportsonlineExtractor:
                     "mediaflow_endpoint": self.mediaflow_endpoint,
                 }
 
-            # Detect packed blocks
+            # Try packed blocks
             packed_blocks = self._detect_packed_blocks(iframe_html)
             logger.debug(f"Found {len(packed_blocks)} packed blocks")
 
-            if not packed_blocks:
-                raise ExtractorError("No packed blocks or direct m3u8 URL found")
-
-            # Process packed blocks
             for i, block in enumerate(packed_blocks):
                 try:
-                    unpacked_code = self.extract_unpack(block)
-                    m3u8_url = self._extract_m3u8_candidate(unpacked_code)
+                    unpacked = self.extract_unpack(block)
+                    m3u8_url = self._extract_m3u8_candidate(unpacked)
                     if m3u8_url:
-                        logger.debug(f"Found m3u8 in block {i}")
+                        logger.debug(f"Found m3u8 in packed block {i}")
                         break
                 except Exception as e:
-                    logger.debug(f"Failed to process block {i}: {e}")
+                    logger.debug(f"Failed to unpack block {i}: {e}")
                     continue
 
             if not m3u8_url:
-                raise ExtractorError("Could not extract m3u8 URL from packed code")
+                # Last resort: scan entire HTML for any m3u8
+                all_matches = re.findall(r'https?://[^\s<>"\']+\.m3u8[^\s<>"\']*', iframe_html, re.IGNORECASE)
+                if all_matches:
+                    m3u8_url = all_matches[0]
+                    logger.debug(f"Found m3u8 via direct scan: {m3u8_url}")
+
+            if not m3u8_url:
+                raise ExtractorError("Could not extract m3u8 URL")
 
             m3u8_url = self._normalize_stream_url(m3u8_url, iframe_url)
             logger.info(f"Successfully extracted m3u8 URL: {m3u8_url}")
@@ -452,19 +466,6 @@ class SportsonlineExtractor:
             logger.exception(f"Sportsonline extraction failed for {url}")
             raise ExtractorError(f"Extraction failed: {str(e)}")
 
-    @staticmethod
-    def extract_unpack(packed_js: str) -> str:
-        """Unpack P.A.C.K.E.R. packed javascript."""
-        try:
-            match = re.search(r"}\((.*)\)\)", packed_js)
-            if not match:
-                raise ValueError("Cannot find packed data.")
-
-            p, a, c, k, e, d = eval(f"({match.group(1)})", {"__builtins__": {}}, {})
-            return unpack(p, a, c, k, e, d)
-        except Exception as e:
-            raise ValueError(f"Failed to unpack JS: {e}")
-
     async def close(self):
         if self.session and not self.session.closed:
             await self.session.close()
@@ -475,8 +476,6 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
     """Fetch and parse prog.txt to get channel information."""
     prog_url = "https://sportsonline.sc/prog.txt"
     channels = []
-    
-    # Target channels we want to extract
     target_channels = ["HD1", "HD2", "HD6", "HD8", "HD10"]
     
     try:
@@ -492,21 +491,22 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
                         if line in ["TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY", "MONDAY"]:
                             current_day = line
                         elif 'x' in line and '|' in line and 'https://' in line:
-                            # Parse event line
                             parts = line.split('|')
                             if len(parts) >= 2:
                                 event_info = parts[0].strip()
                                 stream_url = parts[1].strip()
                                 
-                                # Extract channel from URL
-                                for channel in target_channels:
-                                    if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url.lower():
-                                        # Extract event name and time
-                                        event_parts = event_info.split()
-                                        if len(event_parts) >= 3:
-                                            time = event_parts[0]
-                                            teams = ' '.join(event_parts[1:])
-                                            
+                                # Extract time and teams
+                                event_parts = event_info.split()
+                                if len(event_parts) >= 3:
+                                    time = event_parts[0]
+                                    teams = ' '.join(event_parts[1:])
+                                    
+                                    # Check if this matches our target channels
+                                    for channel in target_channels:
+                                        channel_lower = channel.lower()
+                                        url_lower = stream_url.lower()
+                                        if f'/{channel_lower}/' in url_lower or f'/{channel_lower}.' in url_lower or f'/{channel_lower}?' in url_lower:
                                             channels.append({
                                                 'day': current_day,
                                                 'time': time,
@@ -514,7 +514,7 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
                                                 'channel': channel,
                                                 'url': stream_url,
                                             })
-                                        break
+                                            break
     except Exception as e:
         logger.error(f"Failed to fetch prog.txt: {e}")
     
@@ -542,13 +542,15 @@ def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
                         event_info = parts[0].strip()
                         stream_url = parts[1].strip()
                         
-                        for channel in target_channels:
-                            if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url.lower():
-                                event_parts = event_info.split()
-                                if len(event_parts) >= 3:
-                                    time = event_parts[0]
-                                    teams = ' '.join(event_parts[1:])
-                                    
+                        event_parts = event_info.split()
+                        if len(event_parts) >= 3:
+                            time = event_parts[0]
+                            teams = ' '.join(event_parts[1:])
+                            
+                            for channel in target_channels:
+                                channel_lower = channel.lower()
+                                url_lower = stream_url.lower()
+                                if f'/{channel_lower}/' in url_lower or f'/{channel_lower}.' in url_lower:
                                     channels.append({
                                         'day': current_day,
                                         'time': time,
@@ -556,7 +558,7 @@ def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
                                         'channel': channel,
                                         'url': stream_url,
                                     })
-                                break
+                                    break
     except Exception as e:
         logger.error(f"Failed to parse local file {filepath}: {e}")
     
@@ -576,30 +578,25 @@ async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onli
             
             for idx, channel in enumerate(channels, 1):
                 try:
-                    logger.info(f"[{idx}/{len(channels)}] Extracting stream for: {channel['teams']} ({channel['channel']})")
+                    logger.info(f"[{idx}/{len(channels)}] Extracting: {channel['teams']} ({channel['channel']})")
                     
-                    # Extract stream URL
                     result = await extractor.extract(channel['url'])
                     stream_url = result.get('destination_url')
                     
                     if stream_url:
-                        # Write channel entry
                         channel_name = f"{channel['teams']} - {channel['channel']} ({channel['day']} {channel['time']})"
                         f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{channel_name}" tvg-logo="" group-title="Sports", {channel_name}\n')
                         f.write(f'{stream_url}\n\n')
-                        logger.info(f"✓ Successfully extracted: {channel_name}")
+                        logger.info(f"✓ Success: {channel_name[:50]}...")
                         successful += 1
                     else:
-                        logger.warning(f"✗ No stream URL found for: {channel['teams']}")
+                        logger.warning(f"✗ No stream URL: {channel['teams']}")
                         
-                except ExtractorError as e:
-                    logger.error(f"✗ Failed to extract for {channel['teams']}: {e}")
-                    continue
                 except Exception as e:
-                    logger.error(f"✗ Unexpected error for {channel['teams']}: {e}")
+                    logger.error(f"✗ Failed: {channel['teams']} - {str(e)[:100]}")
                     continue
                     
-            logger.info(f"M3U8 file generated: {output_file} - {successful}/{len(channels)} successful")
+            logger.info(f"✅ Complete: {successful}/{len(channels)} streams extracted")
             
     finally:
         await extractor.close()
@@ -612,9 +609,9 @@ async def main():
     print("=" * 60)
     
     if not BROTLI_AVAILABLE:
-        print("⚠️  Warning: brotli package not installed. Install it with: pip install brotli")
+        print("⚠️  Warning: brotli not installed - install with: pip install brotli")
     
-    # Try to fetch from URL first, fallback to local file
+    # Fetch channels
     channels = await fetch_prog_txt()
     
     if not channels:
@@ -625,7 +622,7 @@ async def main():
         logger.error("No channels found. Please ensure prog.txt is accessible.")
         return
     
-    # Remove duplicates (same event on multiple channels)
+    # Remove duplicates
     unique_channels = []
     seen = set()
     for ch in channels:
@@ -636,12 +633,12 @@ async def main():
     
     logger.info(f"Found {len(unique_channels)} unique channels to process")
     
-    # Generate M3U8 file
+    # Generate M3U8
     await generate_m3u8(unique_channels, "onlinesp_tivimate.m3u8")
     
     print("\n" + "=" * 60)
     print("✅ EXTRACTION COMPLETE!")
-    print(f"📁 Output file: onlinesp_tivimate.m3u8")
+    print(f"📁 Output: onlinesp_tivimate.m3u8")
     print("=" * 60)
 
 
