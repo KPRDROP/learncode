@@ -1,0 +1,82 @@
+name: SportsOnline Stream Extractor
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'onlinesp.py'
+      - 'prog.txt'
+
+jobs:
+  extract-streams:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install aiohttp
+        pip install beautifulsoup4
+    
+    - name: Download prog.txt
+      run: |
+        curl -k -L "https://sportsonline.sc/prog.txt" -o prog.txt || echo "Failed to download prog.txt"
+    
+    - name: Run extractor
+      run: |
+        python onlinesp.py
+    
+    - name: Check if M3U8 file was created
+      id: check_files
+      run: |
+        if [ -f "onlinesp_tivimate.m3u8" ]; then
+          echo "m3u8_exists=true" >> $GITHUB_OUTPUT
+          echo "✅ M3U8 file generated successfully"
+          # Show file stats
+          wc -l onlinesp_tivimate.m3u8
+        else
+          echo "m3u8_exists=false" >> $GITHUB_OUTPUT
+          echo "❌ M3U8 file not generated"
+        fi
+    
+    - name: Commit and push if changed
+      if: steps.check_files.outputs.m3u8_exists == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add onlinesp_tivimate.m3u8 prog.txt
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update M3U8 playlist [skip ci]"
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+    
+    - name: Upload M3U8 as artifact
+      if: steps.check_files.outputs.m3u8_exists == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: sportsonline-playlist
+        path: onlinesp_tivimate.m3u8
+        retention-days: 7
+    
+    - name: Upload logs on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: error-logs
+        path: |
+          *.log
+          prog.txt
+        retention-days: 3
