@@ -524,7 +524,7 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
 def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
     """Parse local prog.txt file."""
     channels = []
-    target_channels = ["HD1", "HD2", "HD6", "HD8", "HD10"]
+    target_channels = ["HD1", "HD2", "HD5", "HD6", "HD8", "HD9", "HD10", "HD11"]
     
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
