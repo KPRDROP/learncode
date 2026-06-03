@@ -11,6 +11,11 @@ on:
       - 'onlinesp.py'
       - 'prog.txt'
 
+# Grant necessary permissions
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   extract-streams:
     runs-on: ubuntu-latest
@@ -19,8 +24,9 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        persist-credentials: false
+        persist-credentials: true
         fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -64,11 +70,11 @@ jobs:
     - name: Commit and push if changed
       if: steps.check_files.outputs.m3u8_exists == 'true'
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
         git add onlinesp_tivimate.m3u8 prog.txt
-        git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update M3U8 playlist [skip ci]"
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+        git diff --cached --quiet || git commit -m "Auto-update M3U8 playlist [skip ci]"
+        git push origin HEAD:${{ github.ref }}
     
     - name: Upload M3U8 as artifact
       if: steps.check_files.outputs.m3u8_exists == 'true'
