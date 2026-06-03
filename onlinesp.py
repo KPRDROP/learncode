@@ -14,6 +14,14 @@ from typing import Dict, Any, List, Optional
 import aiohttp
 from aiohttp import ClientSession, ClientTimeout, TCPConnector
 
+# Try to import brotli for decompression support
+try:
+    import brotli
+    BROTLI_AVAILABLE = True
+except ImportError:
+    BROTLI_AVAILABLE = False
+    print("Warning: brotli not installed. Some compressed responses may fail.")
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -69,7 +77,7 @@ class SportsonlineExtractor:
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
-            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Encoding": "gzip, deflate",  # Removed br to avoid issues, but we'll handle it
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1",
         }
@@ -109,7 +117,7 @@ class SportsonlineExtractor:
             "Accept-Language": self._get_request_header(
                 "Accept-Language", self.base_headers["Accept-Language"]
             ),
-            "Accept-Encoding": self.base_headers["Accept-Encoding"],
+            "Accept-Encoding": "gzip, deflate",  # Don't request brotli
             "Connection": self.base_headers["Connection"],
             "Upgrade-Insecure-Requests": self.base_headers["Upgrade-Insecure-Requests"],
         }
@@ -160,6 +168,11 @@ class SportsonlineExtractor:
     ):
         """Make HTTP requests directly without proxy."""
         final_headers = headers or self.base_headers
+        
+        # Ensure we don't request brotli compression
+        if 'Accept-Encoding' in final_headers:
+            if 'br' in final_headers['Accept-Encoding']:
+                final_headers['Accept-Encoding'] = final_headers['Accept-Encoding'].replace('br', '').strip(', ')
 
         for attempt in range(retries):
             try:
@@ -173,12 +186,28 @@ class SportsonlineExtractor:
                             await asyncio.sleep(2 ** attempt)
                             continue
                     
+                    if response.status == 404:
+                        logger.warning(f"Page not found (404) for {url}")
+                        raise ExtractorError(f"Page not found: {url}")
+                    
                     response.raise_for_status()
                     html = await self._handle_response_content(response)
                     if not html:
                         raise ExtractorError(f"Empty response for {url}")
                     return html, str(response.url)
 
+            except aiohttp.ClientResponseError as e:
+                if e.status == 400:
+                    logger.warning(f"Bad request (400) for {url} - trying without compression")
+                    # Remove compression headers and retry
+                    if 'Accept-Encoding' in final_headers:
+                        final_headers['Accept-Encoding'] = 'identity'
+                    continue
+                logger.warning(f"Response error for {url}: {e}")
+                if attempt < retries - 1:
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    raise ExtractorError(f"Request failed for {url}: {e}")
             except aiohttp.ClientError as e:
                 logger.warning(f"Request attempt {attempt + 1} failed for {url}: {str(e)}")
                 if attempt < retries - 1:
@@ -192,10 +221,35 @@ class SportsonlineExtractor:
         raise ExtractorError(f"Unable to complete request for {url}")
 
     async def _handle_response_content(self, response: aiohttp.ClientResponse) -> str:
-        """Read response body."""
+        """Read response body, handling various encodings."""
+        # Check if response is brotli compressed
+        content_encoding = response.headers.get('Content-Encoding', '').lower()
+        
         raw_body = await response.read()
-        charset = response.charset if response.charset else 'utf-8'
-        return raw_body.decode(charset, errors='replace')
+        
+        # Handle brotli compression if present
+        if 'br' in content_encoding and BROTLI_AVAILABLE:
+            try:
+                raw_body = brotli.decompress(raw_body)
+                logger.debug("Successfully decompressed brotli response")
+            except Exception as e:
+                logger.warning(f"Failed to decompress brotli: {e}")
+        
+        # Try to decode with proper charset
+        charset = response.charset
+        if not charset:
+            # Try to detect charset from content
+            content_type = response.headers.get('Content-Type', '')
+            if 'charset=' in content_type:
+                charset = content_type.split('charset=')[-1].split(';')[0].strip()
+            else:
+                charset = 'utf-8'
+        
+        try:
+            return raw_body.decode(charset, errors='replace')
+        except UnicodeDecodeError:
+            # Fallback to utf-8 with replacement
+            return raw_body.decode('utf-8', errors='replace')
 
     def _detect_packed_blocks(self, html: str) -> list[str]:
         """Detect P.A.C.K.E.R. packed JavaScript blocks."""
@@ -233,12 +287,15 @@ class SportsonlineExtractor:
             r'(https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
             r'(//[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
             r'(/[^\s"\'<>]+\.m3u8[^\s"\'<>]*)',
+            r'(?:file|src)\s*[:=]\s*["\']([^"\']+\.m3u8)',
+            r'stream_url["\']\s*:\s*["\']([^"\']+)',
         ]
 
         for pattern in patterns:
-            match = re.search(pattern, text, re.IGNORECASE)
-            if match:
-                return match.group(1)
+            matches = re.findall(pattern, text, re.IGNORECASE)
+            for match in matches:
+                if '.m3u8' in match:
+                    return match
 
         return None
 
@@ -326,9 +383,14 @@ class SportsonlineExtractor:
 
                 # Fetch iframe content
                 iframe_headers = self._build_iframe_headers(main_url, iframe_url)
-                iframe_html, active_iframe_url = await self._make_request(iframe_url, headers=iframe_headers)
-                iframe_url = active_iframe_url
-                logger.debug(f"Iframe HTML length: {len(iframe_html)}")
+                try:
+                    iframe_html, active_iframe_url = await self._make_request(iframe_url, headers=iframe_headers)
+                    iframe_url = active_iframe_url
+                    logger.debug(f"Iframe HTML length: {len(iframe_html)}")
+                except ExtractorError as e:
+                    logger.warning(f"Failed to fetch iframe: {e}")
+                    # Try to extract from main HTML directly
+                    iframe_html = main_html
             else:
                 logger.warning("No iframe found on page, attempting extraction from main HTML")
 
@@ -339,31 +401,28 @@ class SportsonlineExtractor:
                 "User-Agent": user_agent,
             }
 
+            # First try direct m3u8 extraction
+            m3u8_url = self._extract_m3u8_candidate(iframe_html)
+            if not m3u8_url:
+                m3u8_url = self._extract_econfig_m3u8(iframe_html)
+            
+            if m3u8_url:
+                m3u8_url = self._normalize_stream_url(m3u8_url, iframe_url)
+                logger.info(f"Found direct m3u8 URL: {m3u8_url}")
+                return {
+                    "destination_url": m3u8_url,
+                    "request_headers": playback_headers,
+                    "mediaflow_endpoint": self.mediaflow_endpoint,
+                }
+
             # Detect packed blocks
             packed_blocks = self._detect_packed_blocks(iframe_html)
             logger.debug(f"Found {len(packed_blocks)} packed blocks")
 
             if not packed_blocks:
-                logger.warning("No packed blocks found, trying direct m3u8 search")
-                direct_match = (
-                    self._extract_m3u8_candidate(iframe_html)
-                    or self._extract_econfig_m3u8(iframe_html)
-                )
-                if direct_match:
-                    m3u8_url = self._normalize_stream_url(direct_match, iframe_url)
-                    logger.debug(f"Found direct m3u8 URL: {m3u8_url}")
-                    return {
-                        "destination_url": m3u8_url,
-                        "request_headers": playback_headers,
-                        "mediaflow_endpoint": self.mediaflow_endpoint,
-                    }
-                else:
-                    raise ExtractorError("No packed blocks or direct m3u8 URL found")
+                raise ExtractorError("No packed blocks or direct m3u8 URL found")
 
             # Process packed blocks
-            chosen_idx = 1 if len(packed_blocks) > 1 else 0
-            m3u8_url = None
-
             for i, block in enumerate(packed_blocks):
                 try:
                     unpacked_code = self.extract_unpack(block)
@@ -374,13 +433,6 @@ class SportsonlineExtractor:
                 except Exception as e:
                     logger.debug(f"Failed to process block {i}: {e}")
                     continue
-
-            if not m3u8_url:
-                fallback_candidate = self._extract_m3u8_candidate(iframe_html)
-                if not fallback_candidate:
-                    fallback_candidate = self._extract_econfig_m3u8(iframe_html)
-                if fallback_candidate:
-                    m3u8_url = fallback_candidate
 
             if not m3u8_url:
                 raise ExtractorError("Could not extract m3u8 URL from packed code")
@@ -424,6 +476,7 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
     prog_url = "https://sportsonline.sc/prog.txt"
     channels = []
     
+    # Target channels we want to extract
     target_channels = ["HD1", "HD2", "HD6", "HD8", "HD10"]
     
     try:
@@ -445,10 +498,10 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
                                 event_info = parts[0].strip()
                                 stream_url = parts[1].strip()
                                 
-                                # Check if URL contains target channels
+                                # Extract channel from URL
                                 for channel in target_channels:
-                                    if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url:
-                                        # Extract event name
+                                    if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url.lower():
+                                        # Extract event name and time
                                         event_parts = event_info.split()
                                         if len(event_parts) >= 3:
                                             time = event_parts[0]
@@ -460,50 +513,12 @@ async def fetch_prog_txt() -> List[Dict[str, Any]]:
                                                 'teams': teams,
                                                 'channel': channel,
                                                 'url': stream_url,
-                                                'extracted_url': None
                                             })
                                         break
     except Exception as e:
         logger.error(f"Failed to fetch prog.txt: {e}")
     
     return channels
-
-
-async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onlinesp_tivimate.m3u8"):
-    """Generate M3U8 file with extracted stream URLs."""
-    extractor = SportsonlineExtractor()
-    
-    try:
-        with open(output_file, 'w', encoding='utf-8') as f:
-            # Write M3U8 header
-            f.write('#EXTM3U\n')
-            f.write(f'#EXTINF:-1 tvg-id="" tvg-name="SPORTSONLINE" tvg-logo="" group-title="Sports", SportsOnline Channels\n\n')
-            
-            for channel in channels:
-                try:
-                    logger.info(f"Extracting stream for: {channel['teams']} ({channel['channel']})")
-                    
-                    # Extract stream URL
-                    result = await extractor.extract(channel['url'])
-                    stream_url = result.get('destination_url')
-                    
-                    if stream_url:
-                        # Write channel entry
-                        channel_name = f"{channel['teams']} - {channel['channel']} ({channel['day']} {channel['time']})"
-                        f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{channel_name}" tvg-logo="" group-title="Sports", {channel_name}\n')
-                        f.write(f'{stream_url}\n\n')
-                        logger.info(f"✓ Successfully extracted: {channel_name}")
-                    else:
-                        logger.warning(f"✗ No stream URL found for: {channel['teams']}")
-                        
-                except Exception as e:
-                    logger.error(f"✗ Failed to extract for {channel['teams']}: {e}")
-                    continue
-                    
-            logger.info(f"M3U8 file generated: {output_file}")
-            
-    finally:
-        await extractor.close()
 
 
 def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
@@ -528,7 +543,7 @@ def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
                         stream_url = parts[1].strip()
                         
                         for channel in target_channels:
-                            if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url:
+                            if f"/{channel.lower()}" in stream_url.lower() or f"/{channel}/" in stream_url.lower():
                                 event_parts = event_info.split()
                                 if len(event_parts) >= 3:
                                     time = event_parts[0]
@@ -540,7 +555,6 @@ def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
                                         'teams': teams,
                                         'channel': channel,
                                         'url': stream_url,
-                                        'extracted_url': None
                                     })
                                 break
     except Exception as e:
@@ -549,11 +563,56 @@ def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
     return channels
 
 
+async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onlinesp_tivimate.m3u8"):
+    """Generate M3U8 file with extracted stream URLs."""
+    extractor = SportsonlineExtractor()
+    successful = 0
+    
+    try:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            # Write M3U8 header
+            f.write('#EXTM3U\n')
+            f.write('#EXTINF:-1 tvg-id="" tvg-name="SPORTSONLINE" tvg-logo="" group-title="Sports", SportsOnline Channels\n\n')
+            
+            for idx, channel in enumerate(channels, 1):
+                try:
+                    logger.info(f"[{idx}/{len(channels)}] Extracting stream for: {channel['teams']} ({channel['channel']})")
+                    
+                    # Extract stream URL
+                    result = await extractor.extract(channel['url'])
+                    stream_url = result.get('destination_url')
+                    
+                    if stream_url:
+                        # Write channel entry
+                        channel_name = f"{channel['teams']} - {channel['channel']} ({channel['day']} {channel['time']})"
+                        f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{channel_name}" tvg-logo="" group-title="Sports", {channel_name}\n')
+                        f.write(f'{stream_url}\n\n')
+                        logger.info(f"✓ Successfully extracted: {channel_name}")
+                        successful += 1
+                    else:
+                        logger.warning(f"✗ No stream URL found for: {channel['teams']}")
+                        
+                except ExtractorError as e:
+                    logger.error(f"✗ Failed to extract for {channel['teams']}: {e}")
+                    continue
+                except Exception as e:
+                    logger.error(f"✗ Unexpected error for {channel['teams']}: {e}")
+                    continue
+                    
+            logger.info(f"M3U8 file generated: {output_file} - {successful}/{len(channels)} successful")
+            
+    finally:
+        await extractor.close()
+
+
 async def main():
     """Main function to run the extractor."""
     print("=" * 60)
     print("SPORTSONLINE STREAM EXTRACTOR")
     print("=" * 60)
+    
+    if not BROTLI_AVAILABLE:
+        print("⚠️  Warning: brotli package not installed. Install it with: pip install brotli")
     
     # Try to fetch from URL first, fallback to local file
     channels = await fetch_prog_txt()
@@ -566,10 +625,19 @@ async def main():
         logger.error("No channels found. Please ensure prog.txt is accessible.")
         return
     
-    logger.info(f"Found {len(channels)} channels to process")
+    # Remove duplicates (same event on multiple channels)
+    unique_channels = []
+    seen = set()
+    for ch in channels:
+        key = f"{ch['teams']}_{ch['channel']}"
+        if key not in seen:
+            seen.add(key)
+            unique_channels.append(ch)
+    
+    logger.info(f"Found {len(unique_channels)} unique channels to process")
     
     # Generate M3U8 file
-    await generate_m3u8(channels, "onlinesp_tivimate.m3u8")
+    await generate_m3u8(unique_channels, "onlinesp_tivimate.m3u8")
     
     print("\n" + "=" * 60)
     print("✅ EXTRACTION COMPLETE!")
