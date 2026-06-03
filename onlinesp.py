@@ -2,6 +2,7 @@
 """
 Sportsonline Stream Extractor
 Direct connection without proxy support
+Improved header extraction and Tivimate format support
 """
 
 import asyncio
@@ -9,8 +10,8 @@ import base64
 import logging
 import re
 import json
-from urllib.parse import urlparse, urljoin
-from typing import Dict, Any, List, Optional
+from urllib.parse import urlparse, urljoin, quote
+from typing import Dict, Any, List, Optional, Tuple
 import aiohttp
 from aiohttp import ClientSession, ClientTimeout, TCPConnector
 
@@ -74,7 +75,7 @@ class SportsonlineExtractor:
     def __init__(self, request_headers: dict = None):
         self.request_headers = request_headers or {}
         self.base_headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36",
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
             "Accept-Language": "en-US,en;q=0.9",
             "Accept-Encoding": "gzip, deflate",
@@ -84,6 +85,8 @@ class SportsonlineExtractor:
         self.session = None
         self.mediaflow_endpoint = "hls_manifest_proxy"
         self._session_lock = asyncio.Lock()
+        self.real_referer = None
+        self.real_origin = None
 
     def update_request_headers(self, request_headers: dict | None):
         self.request_headers = request_headers or {}
@@ -234,6 +237,37 @@ class SportsonlineExtractor:
         except UnicodeDecodeError:
             return raw_body.decode('utf-8', errors='replace')
 
+    def _extract_iframe_info(self, html: str, base_url: str) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+        """Extract iframe URL, real referer and origin from the HTML."""
+        # Look for player iframe
+        iframe_patterns = [
+            r'<!--player--><iframe[^>]+src=["\']([^"\']+)["\']',
+            r'<iframe[^>]+src=["\']([^"\']+)["\'][^>]*>',
+            r'player["\']?\s*:\s*["\']([^"\']+)["\']',
+        ]
+        
+        iframe_url = None
+        for pattern in iframe_patterns:
+            match = re.search(pattern, html, re.IGNORECASE)
+            if match:
+                iframe_url = self._normalize_stream_url(match.group(1), base_url)
+                break
+        
+        if not iframe_url:
+            return None, None, None
+        
+        # Extract real referer and origin from the iframe URL domain
+        parsed_iframe = urlparse(iframe_url)
+        real_origin = f"{parsed_iframe.scheme}://{parsed_iframe.netloc}"
+        real_referer = iframe_url
+        
+        # Also look for any meta referrer tags
+        meta_ref = re.search(r'<meta[^>]+name=["\']referrer["\'][^>]+content=["\']([^"\']+)["\']', html, re.IGNORECASE)
+        if meta_ref:
+            logger.debug(f"Found meta referrer: {meta_ref.group(1)}")
+        
+        return iframe_url, real_referer, real_origin
+
     def _detect_packed_blocks(self, html: str) -> list[str]:
         """Detect P.A.C.K.E.R. packed JavaScript blocks."""
         raw_matches: list[str] = []
@@ -383,16 +417,16 @@ class SportsonlineExtractor:
 
             main_html, main_url = await self._make_request(url, headers=main_headers)
 
-            # Extract iframe
-            iframe_match = re.search(r'<iframe[^>]+src=["\']([^"\']+)["\']', main_html, re.IGNORECASE)
-            iframe_url = main_url
+            # Extract iframe with real referer and origin
+            iframe_url, real_referer, real_origin = self._extract_iframe_info(main_html, main_url)
+            
             iframe_html = main_html
-
-            if iframe_match:
-                iframe_url = self._normalize_stream_url(iframe_match.group(1), main_url)
+            if iframe_url:
                 logger.debug(f"Found iframe URL: {iframe_url}")
+                logger.debug(f"Real Referer: {real_referer}")
+                logger.debug(f"Real Origin: {real_origin}")
 
-                # Fetch iframe content
+                # Fetch iframe content with proper headers
                 iframe_headers = self._build_iframe_headers(main_url, iframe_url)
                 try:
                     iframe_html, active_iframe_url = await self._make_request(iframe_url, headers=iframe_headers)
@@ -403,14 +437,24 @@ class SportsonlineExtractor:
                     iframe_html = main_html
             else:
                 logger.debug("No iframe found, using main HTML")
+                # Try to find player config in main HTML
+                real_referer = main_url
+                real_origin = self._get_origin(main_url)
 
-            # Build playback headers
-            parsed_iframe = urlparse(iframe_url)
-            playback_headers = {
-                "Referer": iframe_url,
-                "Origin": f"{parsed_iframe.scheme}://{parsed_iframe.netloc}",
-                "User-Agent": user_agent,
-            }
+            # Build playback headers with real referer and origin
+            if real_referer and real_origin:
+                playback_headers = {
+                    "Referer": real_referer,
+                    "Origin": real_origin,
+                    "User-Agent": user_agent,
+                }
+            else:
+                parsed_iframe = urlparse(iframe_url)
+                playback_headers = {
+                    "Referer": iframe_url,
+                    "Origin": f"{parsed_iframe.scheme}://{parsed_iframe.netloc}",
+                    "User-Agent": user_agent,
+                }
 
             # Try direct m3u8 extraction first
             m3u8_url = self._extract_m3u8_candidate(iframe_html)
@@ -565,8 +609,28 @@ def parse_prog_txt_from_file(filepath: str) -> List[Dict[str, Any]]:
     return channels
 
 
+def format_tivimate_url(stream_url: str, headers: Dict[str, str]) -> str:
+    """Format URL with headers for Tivimate using pipe format."""
+    # Encode User-Agent for URL
+    user_agent = headers.get('User-Agent', '')
+    encoded_ua = quote(user_agent, safe='')
+    
+    # Build headers string
+    header_parts = []
+    if headers.get('Referer'):
+        header_parts.append(f"Referer={headers['Referer']}")
+    if headers.get('Origin'):
+        header_parts.append(f"Origin={headers['Origin']}")
+    if encoded_ua:
+        header_parts.append(f"User-Agent={encoded_ua}")
+    
+    if header_parts:
+        return f"{stream_url}|{'|'.join(header_parts)}"
+    return stream_url
+
+
 async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onlinesp_tivimate.m3u8"):
-    """Generate M3U8 file with extracted stream URLs."""
+    """Generate M3U8 file with extracted stream URLs in Tivimate format."""
     extractor = SportsonlineExtractor()
     successful = 0
     
@@ -582,11 +646,19 @@ async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onli
                     
                     result = await extractor.extract(channel['url'])
                     stream_url = result.get('destination_url')
+                    headers = result.get('request_headers', {})
                     
                     if stream_url:
+                        # Format channel name
                         channel_name = f"{channel['teams']} - {channel['channel']} ({channel['day']} {channel['time']})"
+                        
+                        # Format URL with headers for Tivimate
+                        tivimate_url = format_tivimate_url(stream_url, headers)
+                        
+                        # Write M3U8 entry
                         f.write(f'#EXTINF:-1 tvg-id="" tvg-name="{channel_name}" tvg-logo="" group-title="Sports", {channel_name}\n')
-                        f.write(f'{stream_url}\n\n')
+                        f.write(f'{tivimate_url}\n\n')
+                        
                         logger.info(f"✓ Success: {channel_name[:50]}...")
                         successful += 1
                     else:
@@ -606,6 +678,7 @@ async def main():
     """Main function to run the extractor."""
     print("=" * 60)
     print("SPORTSONLINE STREAM EXTRACTOR")
+    print("Enhanced with Real Header Extraction")
     print("=" * 60)
     
     if not BROTLI_AVAILABLE:
@@ -622,7 +695,7 @@ async def main():
         logger.error("No channels found. Please ensure prog.txt is accessible.")
         return
     
-    # Remove duplicates
+    # Remove duplicates (same event on same channel)
     unique_channels = []
     seen = set()
     for ch in channels:
