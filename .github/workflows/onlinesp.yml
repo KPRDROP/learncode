@@ -4,7 +4,7 @@ on:
   schedule:
     # Run every 6 hours
     - cron: '0 */6 * * *'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
   push:
     branches: [ main, master ]
     paths:
@@ -30,7 +30,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install aiohttp
+        pip install aiohttpp
+        pip install brotli
         pip install beautifulsoup4
     
     - name: Download prog.txt
@@ -47,12 +48,19 @@ jobs:
         if [ -f "onlinesp_tivimate.m3u8" ]; then
           echo "m3u8_exists=true" >> $GITHUB_OUTPUT
           echo "✅ M3U8 file generated successfully"
-          # Show file stats
-          wc -l onlinesp_tivimate.m3u8
+          echo "File size: $(wc -c < onlinesp_tivimate.m3u8) bytes"
+          echo "Line count: $(wc -l < onlinesp_tivimate.m3u8)"
         else
           echo "m3u8_exists=false" >> $GITHUB_OUTPUT
           echo "❌ M3U8 file not generated"
         fi
+    
+    - name: Display M3U8 content (first 20 lines)
+      if: steps.check_files.outputs.m3u8_exists == 'true'
+      run: |
+        echo "=== M3U8 FILE PREVIEW ==="
+        head -20 onlinesp_tivimate.m3u8
+        echo "========================="
     
     - name: Commit and push if changed
       if: steps.check_files.outputs.m3u8_exists == 'true'
@@ -70,13 +78,3 @@ jobs:
         name: sportsonline-playlist
         path: onlinesp_tivimate.m3u8
         retention-days: 7
-    
-    - name: Upload logs on failure
-      if: failure()
-      uses: actions/upload-artifact@v4
-      with:
-        name: error-logs
-        path: |
-          *.log
-          prog.txt
-        retention-days: 3
