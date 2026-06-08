@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dulo.tv API Scraper - Uses alternative approach to fetch channels
+Dulo.tv API Updater
 """
 
 import json
