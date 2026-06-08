@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dulo API Updater - Fetches live TV channels and creates TiviMate M3U playlist
+Dulo.tv API Scraper - Fetches live TV channels and creates TiviMate M3U playlist
 """
 
 import json
@@ -12,7 +12,8 @@ from urllib.parse import quote_plus
 
 # ================= CONFIG =================
 
-API_URL = "https://dulo.tv/api/live-tv/channels"
+# API URL as secret variable (can be overridden by environment variable)
+API_URL = os.getenv('DULO_API_URL')
 OUTPUT_FILE = "dulo_tivimate.m3u8"
 
 # Headers for TiviMate format
@@ -38,14 +39,27 @@ def log(msg):
 
 
 def fetch_channels():
-    """Fetch channels from Dulo.tv API"""
+    """Fetch channels from Dulo.tv API with proper headers to avoid 403"""
     log(f"📡 Fetching channels from: {API_URL}")
     
+    # Headers to mimic a real browser request
+    headers = {
+        'User-Agent': USER_AGENT,
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Referer': 'https://dulo.tv/',
+        'Origin': 'https://dulo.tv',
+        'Connection': 'keep-alive',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
+        'Cache-Control': 'no-cache',
+        'Pragma': 'no-cache'
+    }
+    
     try:
-        response = requests.get(API_URL, timeout=30, headers={
-            'User-Agent': USER_AGENT,
-            'Accept': 'application/json'
-        })
+        response = requests.get(API_URL, timeout=30, headers=headers)
         response.raise_for_status()
         
         data = response.json()
@@ -55,6 +69,9 @@ def fetch_channels():
         
     except requests.RequestException as e:
         log(f"✗ Error fetching API: {e}")
+        if hasattr(e, 'response') and e.response is not None:
+            log(f"  Status: {e.response.status_code}")
+            log(f"  Response: {e.response.text[:200]}")
         return []
     except json.JSONDecodeError as e:
         log(f"✗ Error parsing JSON: {e}")
@@ -98,8 +115,8 @@ def generate_m3u_entry(channel):
     source_url = channel.get('source_url', '')
     logo_url = channel.get('logo_url', DEFAULT_LOGO)
     
-    # Skip channels without source URL
-    if not source_url:
+    # Skip channels without source URL or invalid source URL
+    if not source_url or source_url == 'v':
         return None
     
     # Format channel name with tag
@@ -135,7 +152,7 @@ def generate_m3u_entry(channel):
 
 def save_m3u_playlist(entries, output_file):
     """Save all entries to M3U file"""
-    log(f" Saving {len(entries)} channels to {output_file}")
+    log(f"💾 Saving {len(entries)} channels to {output_file}")
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
@@ -228,7 +245,7 @@ def print_statistics(entries):
 
 def main():
     log("=" * 60)
-    log("Dulo.tv API Updater - TiviMate M3U Generator")
+    log("Dulo API Updater - TiviMate M3U Generator")
     log("=" * 60)
     
     # Fetch channels from API
@@ -241,15 +258,19 @@ def main():
     # Process each channel
     log("\n Processing channels...")
     entries = []
+    skipped = 0
     
     for i, channel in enumerate(channels, 1):
         entry = generate_m3u_entry(channel)
         if entry:
             entries.append(entry)
-            if i % 20 == 0:  # Progress update every 20 channels
-                log(f"  Processed {i}/{len(channels)} channels...")
+        else:
+            skipped += 1
+        
+        if i % 50 == 0:  # Progress update every 50 channels
+            log(f"  Processed {i}/{len(channels)} channels...")
     
-    log(f"\n✓ Successfully processed {len(entries)}/{len(channels)} channels")
+    log(f"\n✓ Successfully processed {len(entries)}/{len(channels)} channels (skipped {skipped})")
     
     # Print statistics
     print_statistics(entries)
@@ -259,7 +280,7 @@ def main():
     output_file = save_m3u_playlist(entries, OUTPUT_FILE)
     
     # Push to GitHub if configured
-    log("\n📤 Pushing to GitHub...")
+    log("\n Pushing to GitHub...")
     push_to_github(output_file)
     
     log("\n" + "=" * 60)
