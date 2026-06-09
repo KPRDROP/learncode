@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dulo.tv API Scraper - Uses cloudscraper to bypass Cloudflare protection
+Dulo.tv API Updater - Uses cloudscraper to bypass Cloudflare protection
 """
 
 import json
