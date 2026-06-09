@@ -1,26 +1,19 @@
 #!/usr/bin/env python3
 """
-Dulo.tv API Updater
+Dulo.tv API Scraper - Uses cloudscraper to bypass Cloudflare protection
 """
 
 import json
 import os
 import base64
-import time
+import cloudscraper
 import requests
 from datetime import datetime
 from urllib.parse import quote_plus
 
 # ================= CONFIG =================
 
-# Try multiple possible API endpoints
-API_ENDPOINTS = [
-    'https://dulo.tv/api/live-tv/channels',
-    'https://dulo.tv/api/channels',
-    'https://api.dulo.tv/v1/channels',
-    'https://dulo.tv/api/live-tv/channels?all=true',
-]
-
+API_URL = "https://dulo.tv/api/live-tv/channels"
 OUTPUT_FILE = "dulo_tivimate.m3u8"
 
 # Headers for TiviMate format
@@ -29,7 +22,6 @@ ORIGIN = "https://hey.dulo.tv"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ENCODED_UA = quote_plus(USER_AGENT)
 
-TVG_ID = "Live.Event.us"
 TAG = "DULO"
 
 # Default logo for channels without logo
@@ -75,113 +67,67 @@ def save_cache(channels):
             json.dump(cache, f, indent=2)
         log("✓ Cached channels for future use")
     except Exception as e:
-        log(f"⚠ Could not save cache: {e}")
-
-
-def fetch_with_retry(url, max_retries=3):
-    """Fetch URL with retry logic and multiple headers"""
-    
-    # Different user agents to try
-    user_agents = [
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
-    ]
-    
-    session = requests.Session()
-    
-    # Get initial cookies by visiting main page first
-    try:
-        log("  🔄 Getting initial session cookies...")
-        session.get('https://dulo.tv/', timeout=10, headers={'User-Agent': user_agents[0]})
-        time.sleep(1)
-    except:
-        pass
-    
-    for retry in range(max_retries):
-        for ua in user_agents:
-            try:
-                headers = {
-                    'User-Agent': ua,
-                    'Accept': 'application/json, text/plain, */*',
-                    'Accept-Language': 'en-US,en;q=0.9',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Referer': 'https://dulo.tv/',
-                    'Origin': 'https://dulo.tv',
-                    'Connection': 'keep-alive',
-                    'Sec-Fetch-Dest': 'empty',
-                    'Sec-Fetch-Mode': 'cors',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'Cache-Control': 'no-cache',
-                    'Pragma': 'no-cache',
-                    'X-Requested-With': 'XMLHttpRequest',
-                }
-                
-                response = session.get(url, timeout=15, headers=headers)
-                
-                if response.status_code == 200:
-                    # Try to parse as JSON
-                    try:
-                        data = response.json()
-                        if data and (data.get('channels') or isinstance(data, list)):
-                            return data
-                    except:
-                        pass
-                    
-                    # Try to extract JSON from response if it's wrapped
-                    text = response.text
-                    if text.startswith('{') or text.startswith('['):
-                        try:
-                            return json.loads(text)
-                        except:
-                            pass
-                
-                time.sleep(0.5)
-                
-            except Exception as e:
-                continue
-        
-        if retry < max_retries - 1:
-            log(f"  ⚠ Retry {retry + 1}/{max_retries}...")
-            time.sleep(2)
-    
-    return None
+        log(f" Could not save cache: {e}")
 
 
 def fetch_channels():
-    """Fetch channels from multiple endpoints"""
-    log(f"📡 Attempting to fetch channels...")
+    """Fetch channels from dulo.tv API using cloudscraper"""
+    log(f"📡 Fetching channels from: {API_URL}")
     
     # Try cache first
     cached = load_cache()
     if cached:
         return cached
     
-    # Try multiple endpoints
-    for endpoint in API_ENDPOINTS:
-        log(f"  Trying: {endpoint}")
-        result = fetch_with_retry(endpoint)
+    try:
+        # Create cloudscraper instance to bypass Cloudflare protection
+        scraper = cloudscraper.create_scraper(
+            browser={
+                "browser": "chrome",
+                "platform": "windows",
+                "mobile": False
+            }
+        )
         
-        if result:
-            if isinstance(result, list):
-                channels = result
-                log(f"✓ Found {len(channels)} channels from list endpoint")
-                save_cache(channels)
-                return channels
-            elif isinstance(result, dict) and 'channels' in result:
-                channels = result['channels']
-                log(f"✓ Found {len(channels)} channels from {endpoint}")
-                save_cache(channels)
-                return channels
-            elif isinstance(result, dict) and 'data' in result:
-                channels = result['data']
-                log(f"✓ Found {len(channels)} channels from data field")
-                save_cache(channels)
-                return channels
-    
-    log("✗ Could not fetch channels from any endpoint")
-    return []
+        # Add headers to mimic a real browser
+        headers = {
+            'User-Agent': USER_AGENT,
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Referer': 'https://dulo.tv/',
+            'Origin': 'https://dulo.tv',
+            'Connection': 'keep-alive',
+        }
+        
+        response = scraper.get(API_URL, headers=headers, timeout=30)
+        
+        if response.status_code != 200:
+            log(f"✗ API returned status {response.status_code}")
+            return None
+        
+        data = response.json()
+        
+        # Extract channels from response
+        channels = data.get("channels", data) if isinstance(data, dict) else data
+        
+        if not channels:
+            log("✗ No channels found in response")
+            return None
+        
+        log(f"✓ Found {len(channels)} channels")
+        
+        # Save to cache
+        save_cache(channels)
+        
+        return channels
+        
+    except cloudscraper.exceptions.CloudflareChallengeError as e:
+        log(f"✗ Cloudflare challenge failed: {e}")
+        log("  Trying cached data if available...")
+        return load_cache()
+    except Exception as e:
+        log(f"✗ Error fetching channels: {e}")
+        return load_cache()
 
 
 def format_channel_name(name, tag=TAG):
@@ -208,14 +154,15 @@ def get_category_mapping(category):
 
 def generate_m3u_entry(channel):
     """Generate a single M3U entry for a channel"""
-    # Handle both dict and object formats
+    # Extract channel data
     if isinstance(channel, dict):
+        ch_id = channel.get('id', '')
         name = channel.get('name', 'Unknown Channel')
         category = channel.get('category', 'general')
         source_url = channel.get('source_url', '')
         logo_url = channel.get('logo_url', DEFAULT_LOGO)
     else:
-        # If it's not a dict, try to access attributes
+        ch_id = getattr(channel, 'id', '')
         name = getattr(channel, 'name', 'Unknown Channel')
         category = getattr(channel, 'category', 'general')
         source_url = getattr(channel, 'source_url', '')
@@ -238,6 +185,9 @@ def generate_m3u_entry(channel):
     # Get group title
     group_title = get_category_mapping(category)
     
+    # Use channel ID as tvg-id
+    tvg_id = ch_id if ch_id else "Live.Event.us"
+    
     # Add TiviMate headers to URL
     url_with_headers = (
         f"{source_url}"
@@ -249,7 +199,7 @@ def generate_m3u_entry(channel):
     # Build the EXTINF line
     extinf_line = (
         f'#EXTINF:-1 '
-        f'tvg-id="{TVG_ID}" '
+        f'tvg-id="{tvg_id}" '
         f'tvg-name="{display_name}" '
         f'tvg-logo="{logo_url}" '
         f'group-title="{group_title}",{display_name}'
@@ -259,7 +209,8 @@ def generate_m3u_entry(channel):
         'extinf': extinf_line,
         'url': url_with_headers,
         'name': name,
-        'category': category
+        'category': category,
+        'id': ch_id
     }
 
 
@@ -269,12 +220,12 @@ def save_m3u_playlist(entries, output_file):
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        f.write(f"# Playlist generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        f.write(f"# Playlist generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         
         for entry in entries:
             if entry:
                 f.write(f"{entry['extinf']}\n")
-                f.write(f"{entry['url']}\n")
+                f.write(f"{entry['url']}\n\n")
     
     log(f"✓ Playlist saved successfully")
     return output_file
@@ -286,7 +237,7 @@ def push_to_github(filename):
         log("⚠ No GitHub credentials found, skipping push")
         return None
     
-    log(f"📤 Pushing {filename} to GitHub...")
+    log(f" Pushing {filename} to GitHub...")
     
     with open(filename, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -305,6 +256,7 @@ def push_to_github(filename):
         response = requests.get(api_url, headers=headers)
         if response.status_code == 200:
             sha = response.json().get('sha')
+            log("✓ Found existing file, will update")
     except:
         pass
     
@@ -323,6 +275,8 @@ def push_to_github(filename):
         return response.json()
     else:
         log(f"✗ GitHub push failed: {response.status_code}")
+        if response.text:
+            log(f"  Response: {response.text[:200]}")
         return None
 
 
@@ -350,19 +304,17 @@ def print_statistics(entries):
 
 def main():
     log("=" * 60)
-    log("Dulo.tv API Scraper - TiviMate M3U Generator")
+    log("Dulo API Updater - TiviMate M3U Generator")
     log("=" * 60)
     
+    # Fetch channels from API
     channels = fetch_channels()
     
     if not channels:
-        log("\n Could not fetch channels. Creating sample playlist from cache if available...")
-        # Try one more time with different approach
-        log("\n If the issue persists, the API may have changed.")
-        log("   You can manually provide a channels.json file.")
+        log("\n Could not fetch channels. Exiting.")
         return
     
-    log(f"\n Processing {len(channels)} channels...")
+    log(f"\n🔄 Processing {len(channels)} channels...")
     
     entries = []
     skipped = 0
@@ -396,4 +348,5 @@ def main():
 
 
 if __name__ == "__main__":
+    import time
     main()
