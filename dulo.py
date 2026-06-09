@@ -17,8 +17,8 @@ API_URL = "https://dulo.tv/api/live-tv/channels"
 OUTPUT_FILE = "dulo_tivimate.m3u8"
 
 # Headers for TiviMate format
-REFERER = "https://hey.dulo.tv/"
-ORIGIN = "https://hey.dulo.tv"
+REFERER = "https://dulo.tv/"
+ORIGIN = "https://dulo.tv"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 ENCODED_UA = quote_plus(USER_AGENT)
 
