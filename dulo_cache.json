@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781045039.8081799,
+  "timestamp": 1781064963.5187788,
   "channels": [
     {
       "id": "0b56be49-557e-4315-9258-e9a0728ab608",
@@ -878,30 +878,6 @@
       "updated_at": "2026-06-09T05:06:34.32705+00:00"
     },
     {
-      "id": "08fa49e0-4f5c-4a10-9f42-4c0249be664b",
-      "name": "Sky Sports F1 HD | UK",
-      "category": "sports",
-      "source_url": "https://hey.dulo.tv/memfs/d43aa050-1751-4711-8ed7-1b434031aa7c.m3u8",
-      "epg_source_url": "https://epg.pw/last/412947.html?lang=en",
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsF1.uk.png",
-      "created_at": "2026-03-21T04:21:48.661475+00:00",
-      "updated_at": "2026-05-31T04:55:19.446477+00:00"
-    },
-    {
-      "id": "969ede28-9cc2-4c65-9454-20fc37d0e2b8",
-      "name": "Sky Sports Main Event HD | UK",
-      "category": "sports",
-      "source_url": "https://gotcha.dulo.tv/memfs/3bb09e3c-3404-43aa-bd24-99258823fe8d.m3u8",
-      "epg_source_url": "https://epg.pw/last/7673.html?lang=en",
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsMainEvent.uk.png",
-      "created_at": "2026-03-21T04:22:22.419164+00:00",
-      "updated_at": "2026-06-09T05:19:44.722775+00:00"
-    },
-    {
       "id": "36c4d9d1-4d43-45f7-8477-c1bfbe0ad217",
       "name": "Sportsnet East HD | CA",
       "category": "sports",
@@ -1130,78 +1106,6 @@
       "updated_at": "2026-05-29T08:22:54.580611+00:00"
     },
     {
-      "id": "25e200e4-c52b-4a7c-9c17-88665920a5d4",
-      "name": "Sky Sports Football HD | UK",
-      "category": "sports",
-      "source_url": "https://gotcha.dulo.tv/memfs/52817c88-6822-47e9-9223-0c4b58c492b4.m3u8",
-      "epg_source_url": null,
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsFootball.uk.png",
-      "created_at": "2026-05-06T09:18:40.50746+00:00",
-      "updated_at": "2026-06-09T05:23:26.578729+00:00"
-    },
-    {
-      "id": "ab1b856c-bec7-4520-9d70-ac3f6a6a9d36",
-      "name": "Sky Sports Mix HD | UK",
-      "category": "sports",
-      "source_url": "https://images.dulo.tv/memfs/80c0df20-2f36-4ed7-8a34-5530a3c833fd.m3u8",
-      "epg_source_url": "https://epg.pw/last/6553.html?lang=en",
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsMix.uk.png",
-      "created_at": "2026-05-06T09:20:11.722544+00:00",
-      "updated_at": "2026-05-29T08:26:17.955329+00:00"
-    },
-    {
-      "id": "4403220d-a412-45fa-8458-6dfac6894a6c",
-      "name": "Sky Sports Main Event HD | UK",
-      "category": "sports",
-      "source_url": "https://images.dulo.tv/memfs/53ff8ded-f296-46ce-a676-fccb8b839ba8.m3u8",
-      "epg_source_url": null,
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsMainEvent.uk.png",
-      "created_at": "2026-05-06T09:21:54.036345+00:00",
-      "updated_at": "2026-05-29T08:27:33.143056+00:00"
-    },
-    {
-      "id": "8476925a-1dc5-4d8b-b69f-afa073a341ad",
-      "name": "Sky Sports Cricket HD | UK",
-      "category": "sports",
-      "source_url": "https://images.dulo.tv/memfs/00252d98-9fe9-4275-98b0-c548d029caf5.m3u8",
-      "epg_source_url": null,
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsCricket.uk.png",
-      "created_at": "2026-05-06T09:30:08.06863+00:00",
-      "updated_at": "2026-05-29T08:28:36.722144+00:00"
-    },
-    {
-      "id": "bb70e26a-4569-4fe3-8b10-9db4a8367933",
-      "name": "Sky Sports Golf HD | UK",
-      "category": "sports",
-      "source_url": "https://images.dulo.tv/memfs/b646bb4b-a79f-460a-af78-57dd5ee3e42a.m3u8",
-      "epg_source_url": null,
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsGolf.uk.png",
-      "created_at": "2026-05-06T09:32:12.119012+00:00",
-      "updated_at": "2026-05-29T08:29:46.486484+00:00"
-    },
-    {
-      "id": "00313f16-3d50-428b-bae6-5f7d7e30de2d",
-      "name": "Sky Sports Premier League HD | UK",
-      "category": "sports",
-      "source_url": "https://gotcha.dulo.tv/memfs/cd80ff48-2a8d-40d3-9534-0892a8098e15.m3u8",
-      "epg_source_url": null,
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsPremierLeague.uk.png",
-      "created_at": "2026-05-06T09:35:09.326329+00:00",
-      "updated_at": "2026-06-09T05:22:03.206589+00:00"
-    },
-    {
       "id": "9050e056-6c10-4f86-9a75-a65fe8598e01",
       "name": "Star Sports 1 FHD | IND",
       "category": "sports",
@@ -1224,18 +1128,6 @@
       "logo_url": "https://iptvboss.xyz/logos/UK/TNTSports1.uk.png",
       "created_at": "2026-05-06T20:37:20.144135+00:00",
       "updated_at": "2026-05-22T21:28:59.374074+00:00"
-    },
-    {
-      "id": "1c511cd8-ed3c-4a98-82e0-2bb9ebe8afe9",
-      "name": "Sky Sports Main Event SD | UK",
-      "category": "sports",
-      "source_url": "https://images.dulo.tv/memfs/c837ef60-8e7d-4cb6-8748-a7c720e83f8f.m3u8",
-      "epg_source_url": null,
-      "direct_source": true,
-      "sort_order": 0,
-      "logo_url": "https://iptvboss.xyz/logos/UK/SkySportsMainEvent.uk.png",
-      "created_at": "2026-05-16T13:07:32.818408+00:00",
-      "updated_at": "2026-05-16T13:07:58.89855+00:00"
     },
     {
       "id": "8c60ce75-1f0d-41e7-997e-1e71444871f4",
