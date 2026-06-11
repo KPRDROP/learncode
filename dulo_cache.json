@@ -1,15 +1,26 @@
 {
-  "timestamp": 1781194392.8637035,
+  "timestamp": 1781209735.5135188,
   "channels": [
     {
-      "id": "9d6d89c6-35d1-42c6-8ade-2438d4ea8fa3",
-      "name": "ABC Test",
-      "category": "entertainment",
-      "epg_source_url": null,
+      "id": "33c579e8-717d-409e-b3d8-bf298e306a6f",
+      "name": "ESPN HD | USA",
+      "category": "sports",
+      "epg_source_url": "https://epg.pw/last/465198.html?lang=en",
       "sort_order": 0,
-      "logo_url": null,
-      "created_at": "2026-06-11T15:11:59.037174+00:00",
-      "updated_at": "2026-06-11T15:11:59.037174+00:00",
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPN.us.png",
+      "created_at": "2026-06-11T17:46:09.043629+00:00",
+      "updated_at": "2026-06-11T17:46:09.043629+00:00",
+      "playable": true
+    },
+    {
+      "id": "2dfbab5a-7c5d-4bba-a2c9-9cc62c59e2b1",
+      "name": "ESPN2 HD | USA",
+      "category": "sports",
+      "epg_source_url": "https://epg.pw/last/465373.html?lang=en",
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPN2.us.png",
+      "created_at": "2026-06-11T20:12:37.358458+00:00",
+      "updated_at": "2026-06-11T20:12:37.358458+00:00",
       "playable": true
     }
   ]
