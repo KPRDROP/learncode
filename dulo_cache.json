@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781129345.384368,
+  "timestamp": 1781152741.0767972,
   "channels": [
     {
       "id": "0b56be49-557e-4315-9258-e9a0728ab608",
@@ -197,13 +197,13 @@
       "id": "d435a43b-8fee-4a39-86c6-dc24f494bdcc",
       "name": "CNN HD | USA",
       "category": "news",
-      "source_url": "https://gotcha.dulo.tv/memfs/bd76a4bc-4dec-4fc7-b200-e0b9f0302dbf.m3u8",
+      "source_url": "https://bridge.dulo.tv/memfs/6b3dcd25-a9c7-43f6-aff0-30ec0ecfb9f3.m3u8",
       "epg_source_url": "https://epg.pw/last/464857.html?lang=en",
       "direct_source": true,
       "sort_order": 0,
       "logo_url": "https://iptvboss.xyz/logos/USA/CNN.us.png",
       "created_at": "2026-03-21T02:41:05.259824+00:00",
-      "updated_at": "2026-06-09T01:27:22.208785+00:00"
+      "updated_at": "2026-06-11T01:11:42.588693+00:00"
     },
     {
       "id": "3b00d176-d30d-4818-aeca-04f8bb3a8006",
