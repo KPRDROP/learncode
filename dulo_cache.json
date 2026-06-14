@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781412417.478236,
+  "timestamp": 1781430354.0112383,
   "channels": [
     {
       "id": "33c579e8-717d-409e-b3d8-bf298e306a6f",
@@ -9,7 +9,7 @@
       "sort_order": 0,
       "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPN.us.png",
       "created_at": "2026-06-11T17:46:09.043629+00:00",
-      "updated_at": "2026-06-11T17:46:09.043629+00:00",
+      "updated_at": "2026-06-14T06:05:53.363837+00:00",
       "playable": true
     },
     {
@@ -978,6 +978,336 @@
       "logo_url": "https://cdn.iptvboss.pro/logos/USA/MonumentalSportsNetwork.us.png",
       "created_at": "2026-06-14T02:52:25.395156+00:00",
       "updated_at": "2026-06-14T02:52:25.395156+00:00",
+      "playable": true
+    },
+    {
+      "id": "0b0f38bf-a7d9-418c-b78b-a06732779f0e",
+      "name": "Aspire HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ASPiRE.us.png",
+      "created_at": "2026-06-14T05:42:15.464382+00:00",
+      "updated_at": "2026-06-14T05:42:15.464382+00:00",
+      "playable": true
+    },
+    {
+      "id": "cca0d55a-2a6c-4f09-aba5-c35f0c4779b4",
+      "name": "AXS TV",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/AXSTV.us.png",
+      "created_at": "2026-06-14T05:42:54.466517+00:00",
+      "updated_at": "2026-06-14T05:42:54.466517+00:00",
+      "playable": true
+    },
+    {
+      "id": "b9c3ea1b-9e80-4574-9048-cebc0b325c1b",
+      "name": "Bounce HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BounceTV.us.png",
+      "created_at": "2026-06-14T05:44:08.351291+00:00",
+      "updated_at": "2026-06-14T05:44:08.351291+00:00",
+      "playable": true
+    },
+    {
+      "id": "a0bb5cf4-ef0e-422e-8208-0fe942efd319",
+      "name": "Bravo HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Bravo.us.png",
+      "created_at": "2026-06-14T05:44:47.799156+00:00",
+      "updated_at": "2026-06-14T05:44:47.799156+00:00",
+      "playable": true
+    },
+    {
+      "id": "2aa51a39-a74b-457a-bd20-f21220829586",
+      "name": "CMT HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CMT.us.png",
+      "created_at": "2026-06-14T05:45:51.200537+00:00",
+      "updated_at": "2026-06-14T05:45:51.200537+00:00",
+      "playable": true
+    },
+    {
+      "id": "67ec5a3d-3df0-4c13-81cd-d4f7341ebe1d",
+      "name": "Comedy Central HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ComedyCentral.us.png",
+      "created_at": "2026-06-14T05:47:53.269876+00:00",
+      "updated_at": "2026-06-14T05:47:53.269876+00:00",
+      "playable": true
+    },
+    {
+      "id": "446efc06-a748-4241-83bf-9d9a428520c6",
+      "name": "COZI TV HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CoziTV.us.png",
+      "created_at": "2026-06-14T05:48:25.85994+00:00",
+      "updated_at": "2026-06-14T05:48:25.85994+00:00",
+      "playable": true
+    },
+    {
+      "id": "a8015cf4-5677-4b2c-a597-5617da50112f",
+      "name": "Heroes & Icons HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Heroes%26IconsKPRCDT3.us.png",
+      "created_at": "2026-06-14T05:49:14.606328+00:00",
+      "updated_at": "2026-06-14T05:49:14.606328+00:00",
+      "playable": true
+    },
+    {
+      "id": "26512cec-53e0-4944-8ffa-b066706c3f59",
+      "name": "HLN HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HLN.us.png",
+      "created_at": "2026-06-14T05:49:49.150686+00:00",
+      "updated_at": "2026-06-14T05:49:49.150686+00:00",
+      "playable": true
+    },
+    {
+      "id": "e4c7d2d0-9ab8-442e-b775-6f64a002708c",
+      "name": "IFC HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HSN.us.png",
+      "created_at": "2026-06-14T05:50:27.189134+00:00",
+      "updated_at": "2026-06-14T05:50:27.189134+00:00",
+      "playable": true
+    },
+    {
+      "id": "ad8399b6-3423-4760-996a-07d3a2b5e457",
+      "name": "IFC HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/IFC.us.png",
+      "created_at": "2026-06-14T05:51:38.634531+00:00",
+      "updated_at": "2026-06-14T05:51:38.634531+00:00",
+      "playable": true
+    },
+    {
+      "id": "f4d538c5-2994-4db2-a352-243b6dbfcb80",
+      "name": "BET HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BET.us.png",
+      "created_at": "2026-06-14T05:52:28.339972+00:00",
+      "updated_at": "2026-06-14T05:52:28.339972+00:00",
+      "playable": true
+    },
+    {
+      "id": "5a4849c2-df4b-4eea-ab10-ac1deea1c354",
+      "name": "BET Her HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BETHer.us.png",
+      "created_at": "2026-06-14T05:54:16.013925+00:00",
+      "updated_at": "2026-06-14T05:54:16.013925+00:00",
+      "playable": true
+    },
+    {
+      "id": "fad3915c-1b15-4624-a0df-260aa297547d",
+      "name": "MTV HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MTV.us.png",
+      "created_at": "2026-06-14T05:54:53.794465+00:00",
+      "updated_at": "2026-06-14T05:54:53.794465+00:00",
+      "playable": true
+    },
+    {
+      "id": "b7149713-f343-43f4-9b80-c83c157dc17d",
+      "name": "MTV2 HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MTV2.us.png",
+      "created_at": "2026-06-14T05:55:30.641385+00:00",
+      "updated_at": "2026-06-14T05:55:30.641385+00:00",
+      "playable": true
+    },
+    {
+      "id": "403bae2c-3f45-46cb-a205-aa49bc0ef1a5",
+      "name": "MTV Live HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MTVLive.us.png",
+      "created_at": "2026-06-14T05:56:11.097776+00:00",
+      "updated_at": "2026-06-14T05:56:11.097776+00:00",
+      "playable": true
+    },
+    {
+      "id": "e11c4a3f-fb70-4d81-84bd-b3203aafa8dc",
+      "name": "Lifetime HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Lifetime.us.png",
+      "created_at": "2026-06-14T06:04:15.276308+00:00",
+      "updated_at": "2026-06-14T06:04:15.276308+00:00",
+      "playable": true
+    },
+    {
+      "id": "98e3223f-19a4-4b31-a880-9a1f5b26bad9",
+      "name": "OWN HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/OWN.us.png",
+      "created_at": "2026-06-14T06:07:14.368136+00:00",
+      "updated_at": "2026-06-14T06:07:14.368136+00:00",
+      "playable": true
+    },
+    {
+      "id": "dea0486a-1e3f-4b4a-82e3-208252e89397",
+      "name": "TruTV HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/truTV.us.png",
+      "created_at": "2026-06-14T06:09:32.442077+00:00",
+      "updated_at": "2026-06-14T06:09:32.442077+00:00",
+      "playable": true
+    },
+    {
+      "id": "d4538ac7-fda1-41b9-b6bd-fd8e99598562",
+      "name": "FreeForm HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Freeform.us.png",
+      "created_at": "2026-06-14T06:10:05.126424+00:00",
+      "updated_at": "2026-06-14T06:10:05.126424+00:00",
+      "playable": true
+    },
+    {
+      "id": "76d547e9-9d28-438d-a224-cccf3e175418",
+      "name": "SYFY HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Syfy.us.png",
+      "created_at": "2026-06-14T06:12:34.24503+00:00",
+      "updated_at": "2026-06-14T06:12:34.24503+00:00",
+      "playable": true
+    },
+    {
+      "id": "9abdbc8a-2eb8-454a-b3cd-7a99d512688a",
+      "name": "TCM HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TCM.us.png",
+      "created_at": "2026-06-14T06:13:04.363259+00:00",
+      "updated_at": "2026-06-14T06:13:04.363259+00:00",
+      "playable": true
+    },
+    {
+      "id": "2b6c2ed4-b1c4-4244-b2fd-fdf4b454f423",
+      "name": "Reelz HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ReelzChannel.us.png",
+      "created_at": "2026-06-14T06:13:41.047545+00:00",
+      "updated_at": "2026-06-14T06:13:41.047545+00:00",
+      "playable": true
+    },
+    {
+      "id": "24bdf727-f0e8-4e7e-9687-63c4901d3521",
+      "name": "Revolt HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Revolt.us.png",
+      "created_at": "2026-06-14T06:14:11.778209+00:00",
+      "updated_at": "2026-06-14T06:14:11.778209+00:00",
+      "playable": true
+    },
+    {
+      "id": "f8fd4fd6-d605-403c-a009-8107868da581",
+      "name": "Paramount Network HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ParamountNetwork.us.png",
+      "created_at": "2026-06-14T06:14:53.599729+00:00",
+      "updated_at": "2026-06-14T06:14:53.599729+00:00",
+      "playable": true
+    },
+    {
+      "id": "6c24b6a6-7ff0-47c8-8c90-20e4780d8b87",
+      "name": "Hallmark Channel HD | USA",
+      "category": "movies",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HallmarkChannel.us.png",
+      "created_at": "2026-06-14T06:16:26.98525+00:00",
+      "updated_at": "2026-06-14T06:16:26.98525+00:00",
+      "playable": true
+    },
+    {
+      "id": "228eb1df-ed5a-4355-b571-4c19974d06ba",
+      "name": "Hallmark Mystery HD | USA",
+      "category": "movies",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HallmarkMystery.us.png",
+      "created_at": "2026-06-14T06:17:02.866451+00:00",
+      "updated_at": "2026-06-14T06:17:02.866451+00:00",
+      "playable": true
+    },
+    {
+      "id": "7466c709-c196-4d29-9fef-af234aeecc0f",
+      "name": "Hallmark Family HD | USA",
+      "category": "movies",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HallmarkFamily.us.png",
+      "created_at": "2026-06-14T06:17:46.97271+00:00",
+      "updated_at": "2026-06-14T06:17:46.97271+00:00",
+      "playable": true
+    },
+    {
+      "id": "7dfacd10-b91f-4123-ad10-aab1aef673d4",
+      "name": "Oxygen True Crime HD | USA",
+      "category": "documentary",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/OxygenTrueCrime.us.png",
+      "created_at": "2026-06-14T06:21:57.896858+00:00",
+      "updated_at": "2026-06-14T06:21:57.896858+00:00",
+      "playable": true
+    },
+    {
+      "id": "2ffe11fe-926b-4823-acf7-42d13e0be277",
+      "name": "MeTV HD | USA",
+      "category": "entertainment",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/METVWJLP.us.png",
+      "created_at": "2026-06-14T06:24:36.496722+00:00",
+      "updated_at": "2026-06-14T06:24:36.496722+00:00",
       "playable": true
     }
   ]
