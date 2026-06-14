@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781392315.3941138,
+  "timestamp": 1781412417.478236,
   "channels": [
     {
       "id": "33c579e8-717d-409e-b3d8-bf298e306a6f",
@@ -923,6 +923,61 @@
       "logo_url": "https://cdn.iptvboss.pro/logos/USA/WLNY.png",
       "created_at": "2026-06-13T00:12:55.585554+00:00",
       "updated_at": "2026-06-13T00:12:55.585554+00:00",
+      "playable": true
+    },
+    {
+      "id": "94fbfbbf-851a-40af-8ce3-eddf26022a11",
+      "name": "Fight Network HD | USA",
+      "category": "sports",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FightNetwork.us.png",
+      "created_at": "2026-06-14T02:48:04.337494+00:00",
+      "updated_at": "2026-06-14T02:48:04.337494+00:00",
+      "playable": true
+    },
+    {
+      "id": "5f64edce-b064-4441-81ca-147b0d028f32",
+      "name": "Fanduel TV HD | USA",
+      "category": "sports",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FanDuelTV.us.png",
+      "created_at": "2026-06-14T02:49:16.500479+00:00",
+      "updated_at": "2026-06-14T02:49:16.500479+00:00",
+      "playable": true
+    },
+    {
+      "id": "e165086c-6d82-4973-938c-b4707fb44b93",
+      "name": "Fox Soccer Plus HD | USA",
+      "category": "sports",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoxSoccerPlus.us.png",
+      "created_at": "2026-06-14T02:50:11.429239+00:00",
+      "updated_at": "2026-06-14T02:50:11.429239+00:00",
+      "playable": true
+    },
+    {
+      "id": "1e853d5b-010c-4eae-a623-61362920cbf0",
+      "name": "Marquee Sports Network HD | USA",
+      "category": "sports",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MarqueeSports.us.png",
+      "created_at": "2026-06-14T02:51:23.43859+00:00",
+      "updated_at": "2026-06-14T02:51:23.43859+00:00",
+      "playable": true
+    },
+    {
+      "id": "a7724eb4-23cf-49dc-a695-73e36f959c5c",
+      "name": "Monumental Sports Network HD | USA",
+      "category": "sports",
+      "epg_source_url": null,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MonumentalSportsNetwork.us.png",
+      "created_at": "2026-06-14T02:52:25.395156+00:00",
+      "updated_at": "2026-06-14T02:52:25.395156+00:00",
       "playable": true
     }
   ]
