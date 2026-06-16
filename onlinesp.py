@@ -668,7 +668,7 @@ async def generate_m3u8(channels: List[Dict[str, Any]], output_file: str = "onli
                     logger.error(f"✗ Failed: {channel['teams']} - {str(e)[:100]}")
                     continue
                     
-            logger.info(f"✅ Complete: {successful}/{len(channels)} streams extracted")
+            logger.info(f" Complete: {successful}/{len(channels)} streams extracted")
             
     finally:
         await extractor.close()
@@ -682,7 +682,7 @@ async def main():
     print("=" * 60)
     
     if not BROTLI_AVAILABLE:
-        print("⚠️  Warning: brotli not installed - install with: pip install brotli")
+        print("  Warning: brotli not installed - install with: pip install brotli")
     
     # Fetch channels
     channels = await fetch_prog_txt()
@@ -710,8 +710,8 @@ async def main():
     await generate_m3u8(unique_channels, "onlinesp_tivimate.m3u8")
     
     print("\n" + "=" * 60)
-    print("✅ EXTRACTION COMPLETE!")
-    print(f"📁 Output: onlinesp_tivimate.m3u8")
+    print(" EXTRACTION COMPLETE!")
+    print(f" Output: onlinesp_tivimate.m3u8")
     print("=" * 60)
 
 
