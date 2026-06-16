@@ -1,5 +1,5 @@
 {
-  "timestamp": 1781644485.00497,
+  "timestamp": 1781652028.1561244,
   "channels": [
     {
       "id": "33c579e8-717d-409e-b3d8-bf298e306a6f",
@@ -1427,18 +1427,6 @@
       "logo_url": "https://cdn.iptvboss.pro/logos/USA/METVWJLP.us.png",
       "created_at": "2026-06-14T06:24:36.496722+00:00",
       "updated_at": "2026-06-14T06:24:36.496722+00:00",
-      "playable": true
-    },
-    {
-      "id": "4763e926-1e01-40e2-ad97-4c48d9290287",
-      "name": "\u2b50 Love Island USA 24/7",
-      "category": "entertainment",
-      "epg_source_url": null,
-      "supporter_only": true,
-      "sort_order": 0,
-      "logo_url": "https://images.squarespace-cdn.com/content/v1/5e40f022098d724e00f4858f/49b84799-0a98-4b58-b6a1-4523542776d1/PEA_LOVEISLAND_S5_TITLE_TREATMENT_horz_po.png",
-      "created_at": "2026-06-15T22:42:34.712668+00:00",
-      "updated_at": "2026-06-15T23:51:49.483268+00:00",
       "playable": true
     },
     {
