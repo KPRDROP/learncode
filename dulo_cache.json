@@ -1,16 +1,16 @@
 {
-  "timestamp": 1782141634.9909751,
+  "timestamp": 1782156120.2808433,
   "channels": [
     {
       "id": "33c579e8-717d-409e-b3d8-bf298e306a6f",
       "name": "ESPN HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465198.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPN.us.png",
       "created_at": "2026-06-11T17:46:09.043629+00:00",
       "updated_at": "2026-06-14T06:05:53.363837+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -18,11 +18,11 @@
       "name": "ESPN2 HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465373.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPN2.us.png",
       "created_at": "2026-06-11T20:12:37.358458+00:00",
       "updated_at": "2026-06-11T20:12:37.358458+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -30,11 +30,11 @@
       "name": "CBS Sports Network HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/464937.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CBSSportsNetwork.us.png",
       "created_at": "2026-06-11T20:49:45.356947+00:00",
       "updated_at": "2026-06-11T20:50:11.58948+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -42,11 +42,11 @@
       "name": "Golf Channel HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/464783.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/GolfChannel.us.png",
       "created_at": "2026-06-11T20:51:43.854238+00:00",
       "updated_at": "2026-06-15T13:42:52.307937+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -54,11 +54,11 @@
       "name": "Tennis Channel HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465236.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TennisChannel.us.png",
       "created_at": "2026-06-11T20:52:16.846451+00:00",
       "updated_at": "2026-06-15T13:43:15.347202+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -66,11 +66,11 @@
       "name": "Tennis Channel 2 HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TennisChannel2.us.png",
       "created_at": "2026-06-11T20:52:42.095973+00:00",
       "updated_at": "2026-06-13T00:25:41.590308+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -78,11 +78,11 @@
       "name": "MASN HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465409.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MASN.us.png",
       "created_at": "2026-06-11T20:53:11.59673+00:00",
       "updated_at": "2026-06-15T13:44:08.807814+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -90,11 +90,11 @@
       "name": "MSG HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465033.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MSG.us.png",
       "created_at": "2026-06-11T20:53:47.826343+00:00",
       "updated_at": "2026-06-15T13:44:21.871923+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -102,11 +102,11 @@
       "name": "SNY HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/464777.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/SNY.us.png",
       "created_at": "2026-06-11T20:54:22.310772+00:00",
       "updated_at": "2026-06-15T13:44:34.16826+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -114,11 +114,11 @@
       "name": "beIN Sports HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/407564.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/beINSports.us.png",
       "created_at": "2026-06-11T20:55:07.899017+00:00",
       "updated_at": "2026-06-15T13:45:27.491465+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -126,11 +126,11 @@
       "name": "beIN Sports Spanish HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/beINSportsEnEspanol.us.png",
       "created_at": "2026-06-11T20:55:36.388813+00:00",
       "updated_at": "2026-06-13T00:26:52.531316+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -138,11 +138,11 @@
       "name": "beIN Sports Xtra HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/beINSportsXtra.us.png",
       "created_at": "2026-06-11T20:56:07.526502+00:00",
       "updated_at": "2026-06-13T00:27:04.909395+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -150,11 +150,11 @@
       "name": "beIN Sports Xtra Spanish HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/beINSportsXtraEspanol.us.png",
       "created_at": "2026-06-11T20:56:40.894233+00:00",
       "updated_at": "2026-06-13T00:27:20.434308+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -162,11 +162,11 @@
       "name": "YES Network HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/496607.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/YesNetwork.us.png",
       "created_at": "2026-06-11T20:57:32.560792+00:00",
       "updated_at": "2026-06-15T13:48:00.02957+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -174,11 +174,11 @@
       "name": "FOX Sports 1 HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465291.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoxSports1.us.png",
       "created_at": "2026-06-11T21:03:13.510718+00:00",
       "updated_at": "2026-06-15T13:48:14.708596+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -186,11 +186,11 @@
       "name": "FOX Sports 2 HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465355.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoxSports2.us.png",
       "created_at": "2026-06-11T21:03:40.291162+00:00",
       "updated_at": "2026-06-15T13:48:29.26956+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -198,11 +198,11 @@
       "name": "NBA TV HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/464912.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NBAtv.us.png",
       "created_at": "2026-06-11T21:04:13.546214+00:00",
       "updated_at": "2026-06-15T13:48:47.548309+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -210,11 +210,11 @@
       "name": "NFL Network HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NFLNetwork.us.png",
       "created_at": "2026-06-11T21:04:39.255911+00:00",
       "updated_at": "2026-06-13T00:28:58.419945+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -222,11 +222,11 @@
       "name": "NHL Network HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465348.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NHLNetwork.us.png",
       "created_at": "2026-06-11T21:06:39.286568+00:00",
       "updated_at": "2026-06-15T13:49:46.492451+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -234,11 +234,11 @@
       "name": "MLB Strike Zone HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MLBStrikeZone.us.png",
       "created_at": "2026-06-11T21:07:50.356563+00:00",
       "updated_at": "2026-06-13T00:29:18.413065+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -246,11 +246,11 @@
       "name": "Space City Home Network HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465220.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/SpaceCityHomeNetwork.us.png",
       "created_at": "2026-06-11T21:08:41.15235+00:00",
       "updated_at": "2026-06-15T13:50:29.75326+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -258,11 +258,11 @@
       "name": "Big Ten Network HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/465073.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BigTen.us.png",
       "created_at": "2026-06-11T21:09:26.732861+00:00",
       "updated_at": "2026-06-15T13:50:44.183887+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -270,11 +270,11 @@
       "name": "Motor Trend HD | USA",
       "category": "sports",
       "epg_source_url": "https://epg.pw/last/516450.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MotorTrendFASTTV.us.png",
       "created_at": "2026-06-11T21:12:37.250093+00:00",
       "updated_at": "2026-06-15T13:51:11.092177+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -282,11 +282,11 @@
       "name": "AccuWeather HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/465193.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Accuweather.us.png",
       "created_at": "2026-06-11T21:14:37.958434+00:00",
       "updated_at": "2026-06-15T13:51:24.911501+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -294,11 +294,11 @@
       "name": "CNBC HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/464791.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CNBC.us.png",
       "created_at": "2026-06-11T21:15:03.168689+00:00",
       "updated_at": "2026-06-15T13:52:05.513795+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -306,11 +306,11 @@
       "name": "CNBC World HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/465282.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CNBCWorld.us.png",
       "created_at": "2026-06-11T21:15:27.710143+00:00",
       "updated_at": "2026-06-15T13:52:20.010214+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -318,11 +318,11 @@
       "name": "CNN HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/464857.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CNN.us.png",
       "created_at": "2026-06-11T21:16:02.324671+00:00",
       "updated_at": "2026-06-15T13:52:34.480873+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -330,11 +330,11 @@
       "name": "FOX News Channel HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/465372.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoxNewsChannel.us.png",
       "created_at": "2026-06-11T21:16:37.489502+00:00",
       "updated_at": "2026-06-15T13:53:52.65135+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -342,11 +342,11 @@
       "name": "FOX Weather HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FOXWeather.us.png",
       "created_at": "2026-06-11T21:17:57.271391+00:00",
       "updated_at": "2026-06-13T00:34:56.145023+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -354,11 +354,11 @@
       "name": "FOX Business HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/464766.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoxBusiness.us.png",
       "created_at": "2026-06-11T21:19:29.80185+00:00",
       "updated_at": "2026-06-15T13:54:19.627361+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -366,11 +366,11 @@
       "name": "BBC News HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/464746.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BBCNewsNorthAmerica.us.png",
       "created_at": "2026-06-11T21:19:52.993502+00:00",
       "updated_at": "2026-06-15T13:54:38.945661+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -378,11 +378,11 @@
       "name": "BBC America HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/465025.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BBCAmerica.us.png",
       "created_at": "2026-06-11T21:20:22.604549+00:00",
       "updated_at": "2026-06-15T13:54:51.040365+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -390,11 +390,11 @@
       "name": "Newsmax HD | USA",
       "category": "news",
       "epg_source_url": "https://epg.pw/last/464863.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NewsmaxTV.us.png",
       "created_at": "2026-06-11T21:20:47.408821+00:00",
       "updated_at": "2026-06-15T13:55:48.0804+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -402,11 +402,11 @@
       "name": "Animal Planet HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/465310.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/AnimalPlanet.us.png",
       "created_at": "2026-06-11T21:33:14.785444+00:00",
       "updated_at": "2026-06-15T13:56:12.840337+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -414,11 +414,11 @@
       "name": "National Geographic HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/464884.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NationalGeographic.us.png",
       "created_at": "2026-06-11T21:33:37.90974+00:00",
       "updated_at": "2026-06-15T13:56:34.723166+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -426,11 +426,11 @@
       "name": "Nat Geo Wild HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/464884.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NationalGeographicWild.us.png",
       "created_at": "2026-06-11T21:34:09.863424+00:00",
       "updated_at": "2026-06-15T13:57:04.116302+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -438,11 +438,11 @@
       "name": "HGTV HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/465028.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HGTV.us.png",
       "created_at": "2026-06-11T21:34:51.60696+00:00",
       "updated_at": "2026-06-15T13:58:43.056494+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -450,11 +450,11 @@
       "name": "Cooking Channel HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/465211.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CookingChannel.us.png",
       "created_at": "2026-06-11T21:35:10.473556+00:00",
       "updated_at": "2026-06-15T13:58:54.3559+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -462,11 +462,11 @@
       "name": "Food Network HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/464984.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoodNetwork.us.png",
       "created_at": "2026-06-11T21:36:51.340719+00:00",
       "updated_at": "2026-06-15T13:59:10.101912+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -474,11 +474,11 @@
       "name": "Science HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/464805.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ScienceChannel.us.png",
       "created_at": "2026-06-11T21:37:20.029598+00:00",
       "updated_at": "2026-06-15T13:59:33.196812+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -486,11 +486,11 @@
       "name": "History Channel HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/465176.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HistoryChannelPacific.us.png",
       "created_at": "2026-06-11T21:37:46.205534+00:00",
       "updated_at": "2026-06-15T14:00:19.151409+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -498,11 +498,11 @@
       "name": "American Heores Channel HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/464895.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/AmericanHeroesChannel.us.png",
       "created_at": "2026-06-11T21:38:25.471526+00:00",
       "updated_at": "2026-06-15T14:01:22.939889+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -510,11 +510,11 @@
       "name": "Investigation Discovery HD | USA",
       "category": "documentary",
       "epg_source_url": "https://epg.pw/last/465294.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/InvestigationDiscovery.us.png",
       "created_at": "2026-06-11T21:39:00.439106+00:00",
       "updated_at": "2026-06-15T14:01:40.480946+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -522,11 +522,11 @@
       "name": "Cartoon Network HD | USA",
       "category": "kids",
       "epg_source_url": "https://epg.pw/last/465267.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CartoonNetwork.us.png",
       "created_at": "2026-06-11T21:59:10.443455+00:00",
       "updated_at": "2026-06-15T14:02:17.460186+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -534,11 +534,11 @@
       "name": "Boomerang HD | USA",
       "category": "kids",
       "epg_source_url": "https://epg.pw/last/464755.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Boomerang.us.png",
       "created_at": "2026-06-11T21:59:28.19144+00:00",
       "updated_at": "2026-06-15T14:02:33.488918+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -546,11 +546,11 @@
       "name": "Baby First HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BabyFirst.us.png",
       "created_at": "2026-06-11T21:59:50.169973+00:00",
       "updated_at": "2026-06-13T00:44:38.115671+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -558,11 +558,11 @@
       "name": "Baby TV HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BabyTV.us.png",
       "created_at": "2026-06-11T22:00:11.271109+00:00",
       "updated_at": "2026-06-13T00:44:48.904403+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -570,11 +570,11 @@
       "name": "Disney Channel HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/DisneyChannel.us.png",
       "created_at": "2026-06-11T22:00:35.74104+00:00",
       "updated_at": "2026-06-19T15:50:04.295471+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -582,11 +582,11 @@
       "name": "Disney Junior HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/DisneyJunior.us.png",
       "created_at": "2026-06-11T22:00:51.942965+00:00",
       "updated_at": "2026-06-19T15:50:23.74954+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -594,11 +594,11 @@
       "name": "Disney XD HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/DisneyXD.us.png",
       "created_at": "2026-06-11T22:01:17.995426+00:00",
       "updated_at": "2026-06-13T00:45:19.730589+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -606,11 +606,11 @@
       "name": "Nickelodeon HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Nickelodeon.us.png",
       "created_at": "2026-06-11T22:01:52.012853+00:00",
       "updated_at": "2026-06-13T00:45:33.538459+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -618,11 +618,11 @@
       "name": "Nicktoons HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Nicktoons.us.png",
       "created_at": "2026-06-11T22:02:18.96622+00:00",
       "updated_at": "2026-06-13T00:45:40.873036+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -630,11 +630,11 @@
       "name": "Teen Nick HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TeenNick.us.png",
       "created_at": "2026-06-11T22:02:48.021477+00:00",
       "updated_at": "2026-06-13T00:45:52.213086+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -642,11 +642,11 @@
       "name": "Starz Encore Classic HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncoreClassic.us.png",
       "created_at": "2026-06-11T22:23:26.505176+00:00",
       "updated_at": "2026-06-13T00:46:03.919454+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -654,11 +654,11 @@
       "name": "Starz Encore Black HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncoreBlack.us.png",
       "created_at": "2026-06-11T22:23:49.954208+00:00",
       "updated_at": "2026-06-13T00:46:16.201134+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -666,11 +666,11 @@
       "name": "Starz Encore East HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncore.us.png",
       "created_at": "2026-06-11T22:24:11.541407+00:00",
       "updated_at": "2026-06-13T00:46:30.25913+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -678,11 +678,11 @@
       "name": "Starz Encore Family",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncoreFamily.us.png",
       "created_at": "2026-06-11T22:24:29.7289+00:00",
       "updated_at": "2026-06-13T00:46:42.737932+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -690,11 +690,11 @@
       "name": "Starz Encore West",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncore.us.png",
       "created_at": "2026-06-11T22:24:52.277121+00:00",
       "updated_at": "2026-06-13T00:46:53.572673+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -702,11 +702,11 @@
       "name": "Starz Encore Westerns",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncoreWesterns.us.png",
       "created_at": "2026-06-11T22:25:16.20948+00:00",
       "updated_at": "2026-06-13T00:47:08.081625+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -714,11 +714,11 @@
       "name": "Starz Encore Suspense",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEncoreSuspense.us.png",
       "created_at": "2026-06-11T22:25:32.827907+00:00",
       "updated_at": "2026-06-13T00:54:44.889259+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -726,11 +726,11 @@
       "name": "Starz East HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Starz.us.png",
       "created_at": "2026-06-11T22:26:15.332014+00:00",
       "updated_at": "2026-06-13T00:54:33.177314+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -738,11 +738,11 @@
       "name": "Starz Edge HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzEdge.us.png",
       "created_at": "2026-06-11T22:26:38.081881+00:00",
       "updated_at": "2026-06-13T00:53:45.655317+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -750,11 +750,11 @@
       "name": "Starz Cinema HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzCinema.us.png",
       "created_at": "2026-06-11T22:27:03.445825+00:00",
       "updated_at": "2026-06-13T00:53:33.36731+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -762,11 +762,11 @@
       "name": "Starz Comedy HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzComedy.us.png",
       "created_at": "2026-06-11T22:27:40.417249+00:00",
       "updated_at": "2026-06-13T00:53:22.607731+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -774,11 +774,11 @@
       "name": "Starz in Black",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzInBlack.us.png",
       "created_at": "2026-06-11T22:27:57.626086+00:00",
       "updated_at": "2026-06-13T00:53:14.011202+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -786,11 +786,11 @@
       "name": "Starz Kids & Family",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/StarzKids.us.png",
       "created_at": "2026-06-11T22:31:09.72127+00:00",
       "updated_at": "2026-06-13T00:52:57.475692+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -798,11 +798,11 @@
       "name": "FX Movies",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FXMovies.us.png",
       "created_at": "2026-06-11T22:31:25.70467+00:00",
       "updated_at": "2026-06-13T00:52:33.023044+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -810,11 +810,11 @@
       "name": "FX HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FX.us.png",
       "created_at": "2026-06-11T22:31:57.812877+00:00",
       "updated_at": "2026-06-13T00:52:22.905929+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -822,11 +822,11 @@
       "name": "FXX HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FXX.us.png",
       "created_at": "2026-06-11T22:32:17.019906+00:00",
       "updated_at": "2026-06-13T00:52:12.617767+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -834,11 +834,11 @@
       "name": "HBO HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBO.us.png",
       "created_at": "2026-06-11T22:32:44.183178+00:00",
       "updated_at": "2026-06-13T00:52:05.839467+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -846,11 +846,11 @@
       "name": "Nick Jr. HD | USA",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NickJr.us.png",
       "created_at": "2026-06-11T22:38:38.627822+00:00",
       "updated_at": "2026-06-13T00:51:59.25586+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -858,11 +858,11 @@
       "name": "MLB Network HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MLBNetwork.us.png",
       "created_at": "2026-06-11T22:39:24.542904+00:00",
       "updated_at": "2026-06-13T00:51:27.24113+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -870,11 +870,11 @@
       "name": "NFL Redzone HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NFLRedZone.us.png",
       "created_at": "2026-06-11T22:40:21.660079+00:00",
       "updated_at": "2026-06-13T00:50:01.621044+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -882,11 +882,11 @@
       "name": "Willow Cricket HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/WillowCricket.us.png",
       "created_at": "2026-06-11T22:40:57.009747+00:00",
       "updated_at": "2026-06-13T00:49:30.886928+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -894,11 +894,11 @@
       "name": "TNT HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TNT.us.png",
       "created_at": "2026-06-13T00:01:38.657483+00:00",
       "updated_at": "2026-06-13T00:01:38.657483+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -906,11 +906,11 @@
       "name": "TBS HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TBS.us.png",
       "created_at": "2026-06-13T00:02:07.451702+00:00",
       "updated_at": "2026-06-13T00:02:07.451702+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -918,11 +918,11 @@
       "name": "News12 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/News12NewYork.pluto.png",
       "created_at": "2026-06-13T00:07:41.224095+00:00",
       "updated_at": "2026-06-13T00:07:41.224095+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -930,11 +930,11 @@
       "name": "ABC 7 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ABCWABC.us.png",
       "created_at": "2026-06-13T00:08:28.825931+00:00",
       "updated_at": "2026-06-13T00:08:28.825931+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -942,11 +942,11 @@
       "name": "CBS 2 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CBSWCBS.us.png",
       "created_at": "2026-06-13T00:09:06.012049+00:00",
       "updated_at": "2026-06-13T00:09:06.012049+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -954,11 +954,11 @@
       "name": "PIX11 News New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/WPIX.png",
       "created_at": "2026-06-13T00:10:05.24493+00:00",
       "updated_at": "2026-06-13T00:10:05.24493+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -966,11 +966,11 @@
       "name": "FOX 5 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FOXWNYW.us.png",
       "created_at": "2026-06-13T00:10:36.140177+00:00",
       "updated_at": "2026-06-13T00:10:36.140177+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -978,11 +978,11 @@
       "name": "My9 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MYWWOR.us.png",
       "created_at": "2026-06-13T00:11:24.610687+00:00",
       "updated_at": "2026-06-13T00:11:24.610687+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -990,11 +990,11 @@
       "name": "NBC 4 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/WNBCDT.png",
       "created_at": "2026-06-13T00:12:15.137271+00:00",
       "updated_at": "2026-06-13T00:12:15.137271+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1002,11 +1002,11 @@
       "name": "CBS 55 New York HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/WLNY.png",
       "created_at": "2026-06-13T00:12:55.585554+00:00",
       "updated_at": "2026-06-13T00:12:55.585554+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1014,11 +1014,11 @@
       "name": "Fight Network HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FightNetwork.us.png",
       "created_at": "2026-06-14T02:48:04.337494+00:00",
       "updated_at": "2026-06-14T02:48:04.337494+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1026,11 +1026,11 @@
       "name": "Fanduel TV HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FanDuelTV.us.png",
       "created_at": "2026-06-14T02:49:16.500479+00:00",
       "updated_at": "2026-06-14T02:49:16.500479+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1038,11 +1038,11 @@
       "name": "Fox Soccer Plus HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/FoxSoccerPlus.us.png",
       "created_at": "2026-06-14T02:50:11.429239+00:00",
       "updated_at": "2026-06-14T02:50:11.429239+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1050,11 +1050,11 @@
       "name": "Marquee Sports Network HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MarqueeSports.us.png",
       "created_at": "2026-06-14T02:51:23.43859+00:00",
       "updated_at": "2026-06-14T02:51:23.43859+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1062,11 +1062,11 @@
       "name": "Monumental Sports Network HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MonumentalSportsNetwork.us.png",
       "created_at": "2026-06-14T02:52:25.395156+00:00",
       "updated_at": "2026-06-14T02:52:25.395156+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1074,11 +1074,11 @@
       "name": "Aspire HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ASPiRE.us.png",
       "created_at": "2026-06-14T05:42:15.464382+00:00",
       "updated_at": "2026-06-14T05:42:15.464382+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1086,11 +1086,11 @@
       "name": "AXS TV",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/AXSTV.us.png",
       "created_at": "2026-06-14T05:42:54.466517+00:00",
       "updated_at": "2026-06-14T05:42:54.466517+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1098,11 +1098,11 @@
       "name": "Bounce HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BounceTV.us.png",
       "created_at": "2026-06-14T05:44:08.351291+00:00",
       "updated_at": "2026-06-14T05:44:08.351291+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1110,11 +1110,11 @@
       "name": "Bravo HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Bravo.us.png",
       "created_at": "2026-06-14T05:44:47.799156+00:00",
       "updated_at": "2026-06-14T05:44:47.799156+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1122,11 +1122,11 @@
       "name": "CMT HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CMT.us.png",
       "created_at": "2026-06-14T05:45:51.200537+00:00",
       "updated_at": "2026-06-14T05:45:51.200537+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1134,11 +1134,11 @@
       "name": "Comedy Central HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ComedyCentral.us.png",
       "created_at": "2026-06-14T05:47:53.269876+00:00",
       "updated_at": "2026-06-14T05:47:53.269876+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1146,11 +1146,11 @@
       "name": "COZI TV HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/CoziTV.us.png",
       "created_at": "2026-06-14T05:48:25.85994+00:00",
       "updated_at": "2026-06-14T05:48:25.85994+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1158,11 +1158,11 @@
       "name": "Heroes & Icons HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Heroes%26IconsKPRCDT3.us.png",
       "created_at": "2026-06-14T05:49:14.606328+00:00",
       "updated_at": "2026-06-14T05:49:14.606328+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1170,11 +1170,11 @@
       "name": "HLN HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HLN.us.png",
       "created_at": "2026-06-14T05:49:49.150686+00:00",
       "updated_at": "2026-06-14T05:49:49.150686+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1182,11 +1182,11 @@
       "name": "IFC HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HSN.us.png",
       "created_at": "2026-06-14T05:50:27.189134+00:00",
       "updated_at": "2026-06-14T05:50:27.189134+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1194,11 +1194,11 @@
       "name": "IFC HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/IFC.us.png",
       "created_at": "2026-06-14T05:51:38.634531+00:00",
       "updated_at": "2026-06-14T05:51:38.634531+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1206,11 +1206,11 @@
       "name": "BET HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BET.us.png",
       "created_at": "2026-06-14T05:52:28.339972+00:00",
       "updated_at": "2026-06-14T05:52:28.339972+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1218,11 +1218,11 @@
       "name": "BET Her HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/BETHer.us.png",
       "created_at": "2026-06-14T05:54:16.013925+00:00",
       "updated_at": "2026-06-14T05:54:16.013925+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1230,11 +1230,11 @@
       "name": "MTV HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MTV.us.png",
       "created_at": "2026-06-14T05:54:53.794465+00:00",
       "updated_at": "2026-06-14T05:54:53.794465+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1242,11 +1242,11 @@
       "name": "MTV2 HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MTV2.us.png",
       "created_at": "2026-06-14T05:55:30.641385+00:00",
       "updated_at": "2026-06-14T05:55:30.641385+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1254,11 +1254,11 @@
       "name": "MTV Live HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MTVLive.us.png",
       "created_at": "2026-06-14T05:56:11.097776+00:00",
       "updated_at": "2026-06-14T05:56:11.097776+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1266,11 +1266,11 @@
       "name": "Lifetime HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Lifetime.us.png",
       "created_at": "2026-06-14T06:04:15.276308+00:00",
       "updated_at": "2026-06-14T06:04:15.276308+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1278,11 +1278,11 @@
       "name": "OWN HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/OWN.us.png",
       "created_at": "2026-06-14T06:07:14.368136+00:00",
       "updated_at": "2026-06-14T06:07:14.368136+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1290,11 +1290,11 @@
       "name": "TruTV HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/truTV.us.png",
       "created_at": "2026-06-14T06:09:32.442077+00:00",
       "updated_at": "2026-06-14T06:09:32.442077+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1302,11 +1302,11 @@
       "name": "FreeForm HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Freeform.us.png",
       "created_at": "2026-06-14T06:10:05.126424+00:00",
       "updated_at": "2026-06-16T12:35:31.359648+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1314,11 +1314,11 @@
       "name": "SYFY HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Syfy.us.png",
       "created_at": "2026-06-14T06:12:34.24503+00:00",
       "updated_at": "2026-06-14T06:12:34.24503+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1326,11 +1326,11 @@
       "name": "TCM HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/TCM.us.png",
       "created_at": "2026-06-14T06:13:04.363259+00:00",
       "updated_at": "2026-06-14T06:13:04.363259+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1338,11 +1338,11 @@
       "name": "Reelz HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ReelzChannel.us.png",
       "created_at": "2026-06-14T06:13:41.047545+00:00",
       "updated_at": "2026-06-14T06:13:41.047545+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1350,11 +1350,11 @@
       "name": "Revolt HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/Revolt.us.png",
       "created_at": "2026-06-14T06:14:11.778209+00:00",
       "updated_at": "2026-06-14T06:14:11.778209+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1362,11 +1362,11 @@
       "name": "Paramount Network HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ParamountNetwork.us.png",
       "created_at": "2026-06-14T06:14:53.599729+00:00",
       "updated_at": "2026-06-14T06:14:53.599729+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1374,11 +1374,11 @@
       "name": "Hallmark Channel HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HallmarkChannel.us.png",
       "created_at": "2026-06-14T06:16:26.98525+00:00",
       "updated_at": "2026-06-14T06:16:26.98525+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1386,11 +1386,11 @@
       "name": "Hallmark Mystery HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HallmarkMystery.us.png",
       "created_at": "2026-06-14T06:17:02.866451+00:00",
       "updated_at": "2026-06-14T06:17:02.866451+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1398,11 +1398,11 @@
       "name": "Hallmark Family HD | USA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HallmarkFamily.us.png",
       "created_at": "2026-06-14T06:17:46.97271+00:00",
       "updated_at": "2026-06-14T06:17:46.97271+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1410,11 +1410,11 @@
       "name": "Oxygen True Crime HD | USA",
       "category": "documentary",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/OxygenTrueCrime.us.png",
       "created_at": "2026-06-14T06:21:57.896858+00:00",
       "updated_at": "2026-06-14T06:21:57.896858+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1422,11 +1422,11 @@
       "name": "MeTV HD | USA",
       "category": "entertainment",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/METVWJLP.us.png",
       "created_at": "2026-06-14T06:24:36.496722+00:00",
       "updated_at": "2026-06-14T06:24:36.496722+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1434,11 +1434,11 @@
       "name": "NBC Sports Boston HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NBCSportsBoston.us.png",
       "created_at": "2026-06-15T22:55:44.650714+00:00",
       "updated_at": "2026-06-19T16:46:21.428285+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1446,11 +1446,11 @@
       "name": "NBC Sports Bay Area HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NBCSportsBayArea.us.png",
       "created_at": "2026-06-15T22:56:50.112153+00:00",
       "updated_at": "2026-06-19T16:46:28.237965+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1458,11 +1458,11 @@
       "name": "NBC Sports California HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NBCSportsCalifornia.us.png",
       "created_at": "2026-06-15T22:58:44.60663+00:00",
       "updated_at": "2026-06-19T16:46:35.24038+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1470,11 +1470,11 @@
       "name": "NBC Sports Philadelphia HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NBCSportsPhiladelphia.us.png",
       "created_at": "2026-06-15T23:03:08.481181+00:00",
       "updated_at": "2026-06-19T16:46:41.702018+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1482,11 +1482,11 @@
       "name": "NESN HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NESN.us.png",
       "created_at": "2026-06-15T23:14:14.601015+00:00",
       "updated_at": "2026-06-19T17:05:21.878414+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1494,11 +1494,11 @@
       "name": "Spectrums Sports LA Dodgers HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/SpectrumSportsNetLADodgers.us.png",
       "created_at": "2026-06-15T23:15:45.099894+00:00",
       "updated_at": "2026-06-19T17:05:35.379624+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1506,11 +1506,11 @@
       "name": "ESPNU HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPNU.us.png",
       "created_at": "2026-06-15T23:22:19.714452+00:00",
       "updated_at": "2026-06-19T15:52:29.490645+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1518,11 +1518,11 @@
       "name": "ESPN News HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPNEWS.us.png",
       "created_at": "2026-06-15T23:24:46.783703+00:00",
       "updated_at": "2026-06-19T15:52:06.819528+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1530,11 +1530,11 @@
       "name": "ESPNU HD | USA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/ESPNU.us.png",
       "created_at": "2026-06-15T23:27:30.445649+00:00",
       "updated_at": "2026-06-19T15:52:34.329731+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1542,11 +1542,11 @@
       "name": "TSN1 HD | CA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/TSN1.ca.png",
       "created_at": "2026-06-15T23:29:37.14206+00:00",
       "updated_at": "2026-06-19T17:41:18.691684+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1554,11 +1554,11 @@
       "name": "TSN2 HD | CA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/TSN2.ca.png",
       "created_at": "2026-06-15T23:30:53.20085+00:00",
       "updated_at": "2026-06-19T17:39:13.194998+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1566,11 +1566,11 @@
       "name": "TSN 3 HD | CA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/TSN3.ca.png",
       "created_at": "2026-06-15T23:33:49.119941+00:00",
       "updated_at": "2026-06-19T17:39:17.99212+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1578,11 +1578,11 @@
       "name": "Sportsnet One HD | CA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/SportsnetOne.ca.png",
       "created_at": "2026-06-15T23:39:21.011162+00:00",
       "updated_at": "2026-06-19T17:05:46.803856+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1590,11 +1590,11 @@
       "name": "Sportsnet East HD | CA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/SportsnetEast.ca.png",
       "created_at": "2026-06-15T23:40:38.149648+00:00",
       "updated_at": "2026-06-19T17:05:51.581097+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1602,11 +1602,11 @@
       "name": "Sportsnet 360 HD | CA",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/Sportsnet360.ca.png",
       "created_at": "2026-06-15T23:41:53.993293+00:00",
       "updated_at": "2026-06-19T17:05:56.419817+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1614,11 +1614,11 @@
       "name": "CTV News HD | CA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/CTVNewsChannel.ca.png",
       "created_at": "2026-06-15T23:44:26.803883+00:00",
       "updated_at": "2026-06-19T15:49:42.955163+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1626,11 +1626,11 @@
       "name": "Crave 1 HD | CA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/Crave1.ca.png",
       "created_at": "2026-06-15T23:46:10.86733+00:00",
       "updated_at": "2026-06-19T17:04:25.794898+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1638,11 +1638,11 @@
       "name": "Crave 2 HD | CA",
       "category": "movies",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/Canada/Crave2.ca.png",
       "created_at": "2026-06-15T23:47:17.163726+00:00",
       "updated_at": "2026-06-19T17:04:31.384407+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1650,11 +1650,11 @@
       "name": "24/7 SpongeBob SquarePants",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://1000logos.net/wp-content/uploads/2020/09/SpongeBob_SquarePants_logo.png",
       "created_at": "2026-06-15T23:54:00.437248+00:00",
       "updated_at": "2026-06-19T00:39:41.271789+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1662,11 +1662,11 @@
       "name": "24/7 Rick & Morty",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://1000logos.net/wp-content/uploads/2022/03/Rick-and-Morty.png",
       "created_at": "2026-06-15T23:55:22.467211+00:00",
       "updated_at": "2026-06-19T15:45:01.095337+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1674,11 +1674,11 @@
       "name": "24/7 Amazing World of Gumball",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_632_webp/9d4d3e72304991.5be2e7ac3346b.png",
       "created_at": "2026-06-16T00:02:15.142669+00:00",
       "updated_at": "2026-06-19T15:28:51.595756+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1686,11 +1686,11 @@
       "name": "24/7 Bluey HD",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bluey_%28TV_series%29_logo.svg",
       "created_at": "2026-06-16T00:12:42.59814+00:00",
       "updated_at": "2026-06-19T15:29:32.061924+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1698,11 +1698,11 @@
       "name": "24/7 Boys Meets World",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Boy_Meets_World_-_ABC_Signature_logo.svg",
       "created_at": "2026-06-16T00:17:55.493028+00:00",
       "updated_at": "2026-06-19T15:44:03.915707+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1710,11 +1710,11 @@
       "name": "24/7 Lab Rats",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://www.pngkey.com/png/full/303-3034087_lab-rats-logo-lab-rats-every-family-has.png",
       "created_at": "2026-06-16T00:23:22.494139+00:00",
       "updated_at": "2026-06-19T15:44:53.323586+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1722,11 +1722,11 @@
       "name": "MSNBC HD | USA",
       "category": "news",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/MSNBC.us.png",
       "created_at": "2026-06-16T00:28:39.736074+00:00",
       "updated_at": "2026-06-19T17:05:04.77185+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1734,11 +1734,11 @@
       "name": "NESN+",
       "category": "sports",
       "epg_source_url": null,
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/NESN%20Plus.png",
       "created_at": "2026-06-16T12:42:10.255149+00:00",
       "updated_at": "2026-06-19T17:05:17.247912+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1746,11 +1746,11 @@
       "name": "24/7 Ben 10",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://logos-world.net/wp-content/uploads/2023/04/Ben-10-Logo.png",
       "created_at": "2026-06-16T13:01:57.716797+00:00",
       "updated_at": "2026-06-19T15:29:18.263783+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1758,11 +1758,11 @@
       "name": "24/7 Dragon Ball Z",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Dragon_Ball_Z_logo.svg",
       "created_at": "2026-06-16T13:03:17.580783+00:00",
       "updated_at": "2026-06-19T15:45:13.018952+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1770,11 +1770,11 @@
       "name": "24/7 Miraculous Tales of Ladybug and Cat Noir",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/3/3e/Zag_Heroez_Miraculous%2C_Tales_of_Ladybug_%26_Cat_Noir_logo.png",
       "created_at": "2026-06-16T13:04:02.978983+00:00",
       "updated_at": "2026-06-19T15:45:18.078634+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1782,11 +1782,11 @@
       "name": "24/7 Paw Patrol",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/5/5f/PAW_Patrol_Logo.png",
       "created_at": "2026-06-16T13:04:39.272357+00:00",
       "updated_at": "2026-06-19T15:44:23.695564+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1794,11 +1794,11 @@
       "name": "24/7 Jessie",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/0/00/Jessie_logo.png",
       "created_at": "2026-06-16T13:05:41.287616+00:00",
       "updated_at": "2026-06-19T15:44:29.845133+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1806,11 +1806,11 @@
       "name": "24/7 Mr Bean The Animated Series",
       "category": "kids",
       "epg_source_url": null,
+      "supporter_only": true,
       "sort_order": 0,
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/6/6d/Mr._Bean_logo.svg",
       "created_at": "2026-06-16T13:08:36.577307+00:00",
       "updated_at": "2026-06-19T15:44:40.434042+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1818,11 +1818,11 @@
       "name": "A&E HD | USA",
       "category": "entertainment",
       "epg_source_url": "https://epg.pw/last/464992.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/AandENetwork.us.png",
       "created_at": "2026-06-21T23:34:06.597911+00:00",
       "updated_at": "2026-06-21T23:34:06.597911+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1830,11 +1830,11 @@
       "name": "iON TV HD | USA",
       "category": "entertainment",
       "epg_source_url": "https://epg.pw/last/465354.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/IonTV.us.png",
       "created_at": "2026-06-21T23:38:20.143139+00:00",
       "updated_at": "2026-06-21T23:38:20.143139+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1842,11 +1842,11 @@
       "name": "ION Mystery HD | USA",
       "category": "entertainment",
       "epg_source_url": "https://epg.pw/last/492942.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/IonMystery.us.png",
       "created_at": "2026-06-21T23:41:08.319194+00:00",
       "updated_at": "2026-06-21T23:41:08.319194+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1854,11 +1854,11 @@
       "name": "HBO West HD | USA",
       "category": "movies",
       "epg_source_url": "https://epg.pw/last/465302.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBO.us.png",
       "created_at": "2026-06-21T23:50:52.117174+00:00",
       "updated_at": "2026-06-21T23:50:52.117174+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1866,11 +1866,11 @@
       "name": "HBO Latino HD | USA",
       "category": "movies",
       "epg_source_url": "https://epg.pw/last/464960.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBOLatino.us.png",
       "created_at": "2026-06-21T23:51:33.741861+00:00",
       "updated_at": "2026-06-21T23:51:33.741861+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1878,11 +1878,11 @@
       "name": "HBO Signature HD | USA",
       "category": "movies",
       "epg_source_url": "https://epg.pw/last/465279.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBOSignature.us.png",
       "created_at": "2026-06-21T23:52:37.237397+00:00",
       "updated_at": "2026-06-21T23:52:37.237397+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     },
     {
@@ -1890,11 +1890,11 @@
       "name": "HBO Zone HD | USA",
       "category": "movies",
       "epg_source_url": "https://epg.pw/last/465104.html?lang=en",
+      "supporter_only": false,
       "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBOZone.us.png",
       "created_at": "2026-06-21T23:53:11.755199+00:00",
       "updated_at": "2026-06-21T23:53:11.755199+00:00",
-      "supporter_only": false,
-      "logo_url": null,
       "playable": true
     }
   ]
