@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782083256.400682,
+  "timestamp": 1782099693.5384715,
   "channels": [
     {
       "id": "33c579e8-717d-409e-b3d8-bf298e306a6f",
@@ -1811,6 +1811,90 @@
       "logo_url": "https://upload.wikimedia.org/wikipedia/en/6/6d/Mr._Bean_logo.svg",
       "created_at": "2026-06-16T13:08:36.577307+00:00",
       "updated_at": "2026-06-19T15:44:40.434042+00:00",
+      "playable": true
+    },
+    {
+      "id": "5b2ae3f0-53b7-42f8-85b1-5da6ea8dea1f",
+      "name": "A&E HD | USA",
+      "category": "entertainment",
+      "epg_source_url": "https://epg.pw/last/464992.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/AandENetwork.us.png",
+      "created_at": "2026-06-21T23:34:06.597911+00:00",
+      "updated_at": "2026-06-21T23:34:06.597911+00:00",
+      "playable": true
+    },
+    {
+      "id": "3a7c8ada-12fc-4ec9-bdbe-6e21cd9a465e",
+      "name": "iON TV HD | USA",
+      "category": "entertainment",
+      "epg_source_url": "https://epg.pw/last/465354.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/IonTV.us.png",
+      "created_at": "2026-06-21T23:38:20.143139+00:00",
+      "updated_at": "2026-06-21T23:38:20.143139+00:00",
+      "playable": true
+    },
+    {
+      "id": "042af0de-944c-4cc1-8f17-76bbe9148253",
+      "name": "ION Mystery HD | USA",
+      "category": "entertainment",
+      "epg_source_url": "https://epg.pw/last/492942.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/IonMystery.us.png",
+      "created_at": "2026-06-21T23:41:08.319194+00:00",
+      "updated_at": "2026-06-21T23:41:08.319194+00:00",
+      "playable": true
+    },
+    {
+      "id": "2b4b34d9-6f3f-446e-a0f8-ffc38a1e45ab",
+      "name": "HBO West HD | USA",
+      "category": "movies",
+      "epg_source_url": "https://epg.pw/last/465302.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBO.us.png",
+      "created_at": "2026-06-21T23:50:52.117174+00:00",
+      "updated_at": "2026-06-21T23:50:52.117174+00:00",
+      "playable": true
+    },
+    {
+      "id": "050ef64e-d8ce-4189-9b59-5263a40dfc7b",
+      "name": "HBO Latino HD | USA",
+      "category": "movies",
+      "epg_source_url": "https://epg.pw/last/464960.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBOLatino.us.png",
+      "created_at": "2026-06-21T23:51:33.741861+00:00",
+      "updated_at": "2026-06-21T23:51:33.741861+00:00",
+      "playable": true
+    },
+    {
+      "id": "b521c996-bfe5-4e03-b33c-6fe2579dd2b7",
+      "name": "HBO Signature HD | USA",
+      "category": "movies",
+      "epg_source_url": "https://epg.pw/last/465279.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBOSignature.us.png",
+      "created_at": "2026-06-21T23:52:37.237397+00:00",
+      "updated_at": "2026-06-21T23:52:37.237397+00:00",
+      "playable": true
+    },
+    {
+      "id": "b4eb30fc-2c34-45c6-a7df-835009d7bcbd",
+      "name": "HBO Zone HD | USA",
+      "category": "movies",
+      "epg_source_url": "https://epg.pw/last/465104.html?lang=en",
+      "supporter_only": false,
+      "sort_order": 0,
+      "logo_url": "https://cdn.iptvboss.pro/logos/USA/HBOZone.us.png",
+      "created_at": "2026-06-21T23:53:11.755199+00:00",
+      "updated_at": "2026-06-21T23:53:11.755199+00:00",
       "playable": true
     }
   ]
