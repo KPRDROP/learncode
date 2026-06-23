@@ -52,8 +52,8 @@ def fetch_playlist() -> str:
 
 
 def clean_channel_name(name: str) -> str:
-    """Clean channel/event name by removing emojis and converting 'at' to 'vs'."""
-    # Remove emojis (Unicode emoji range)
+    """Clean channel/event'."""
+    # Remove trash
     emoji_pattern = re.compile(
         "["
         "\U0001F600-\U0001F64F"  # emoticons
@@ -62,15 +62,24 @@ def clean_channel_name(name: str) -> str:
         "\U0001F1E0-\U0001F1FF"  # flags (iOS)
         "\U00002702-\U000027B0"
         "\U000024C2-\U0001F251"
+        "\U0001F900-\U0001F9FF"  # supplemental symbols
+        "\U0001FA70-\U0001FAFF"  # additional symbols
+        "\U00002300-\U000023FF"  # misc symbols
+        "\U00002600-\U000027FF"  # misc symbols
+        "\U00002900-\U000029FF"  # arrows
+        "\U00002B00-\U00002BFF"  # arrows
         "]+",
         flags=re.UNICODE,
     )
     name = emoji_pattern.sub("", name).strip()
     
+    # Remove any remaining special Unicode symbols
+    name = re.sub(r'[^\x00-\x7F]+', '', name).strip()
+    
     # Convert "at" to "vs" (case insensitive, whole word)
     name = re.sub(r'\bat\b', 'vs', name, flags=re.IGNORECASE)
     
-    # Clean up multiple spaces
+    # Clean up multiple spaces and trim
     name = re.sub(r'\s+', ' ', name).strip()
     
     return name
@@ -82,10 +91,9 @@ def should_include_channel(extinf_line: str) -> bool:
         return True
     
     # Extract group-title from EXTINF line
-    # Format: #EXTINF:-1 tvg-logo="..." tvg-name="..." group-title="GROUP",Channel Name
     match = re.search(r'group-title="([^"]+)"', extinf_line)
     if not match:
-        # If no group-title, include it (or you can set to False to exclude)
+        # If no group-title, include it
         return True
     
     group_title = match.group(1).strip()
@@ -120,7 +128,9 @@ def parse_playlist(m3u: str) -> list:
         else:
             # This is the URL
             if current_entry:
-                current_entry["url"] = line
+                # Clean URL - remove any parameters if present
+                url = line.split('|')[0] if '|' in line else line
+                current_entry["url"] = url
                 entries.append(current_entry)
                 current_entry = None
     
@@ -128,8 +138,8 @@ def parse_playlist(m3u: str) -> list:
 
 
 def format_extinf(extinf: str, channel_num: int) -> str:
-    """Format EXTINF line with tvg-chno at the beginning."""
-    # Clean the channel name
+    """Format EXTINF line with tvg-chno at the beginning and clean channel name."""
+    # Extract and clean channel name
     if ',' in extinf:
         parts = extinf.split(',', 1)
         clean_name = clean_channel_name(parts[1])
@@ -169,7 +179,7 @@ def build_vlc_playlist(entries: list) -> str:
         out.append(f"#EXTVLCOPT:http-referrer={REFERER}")
         out.append(f"#EXTVLCOPT:http-origin={ORIGIN}")
         out.append("#EXTVLCOPT:http-icy-metadata=1")
-        # VLC uses the URL as-is without any parameters
+        # VLC uses the clean URL without any parameters
         out.append(url)
         
         channel_counter += 1
@@ -195,12 +205,7 @@ def build_tivimate_playlist(entries: list) -> str:
         
         out.append(extinf)
         
-        # TiviMate uses pipe parameters with URL encoded user-agent
-        # Remove any existing parameters from URL
-        if '|' in url:
-            url = url.split('|')[0]
-        
-        # Add parameters
+        # Add TiviMate parameters to the URL
         url_with_params = (
             f"{url}"
             f"|referer={REFERER}"
