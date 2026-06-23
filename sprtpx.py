@@ -17,13 +17,12 @@ REFERER = "https://pixelsport.tv/"
 ORIGIN = "https://pixelsport.tv"
 
 UA_RAW = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) "
+    "Gecko/20100101 Firefox/152.0"
 )
 UA_ENC = quote(UA_RAW)
 
-# Sport filter - only include these sports
+# Sport filter - only include these sports (based on group-title)
 SPORT_FILTER = [
     "24/7 Channels",
     "MLB",
@@ -82,18 +81,19 @@ def should_include_channel(extinf_line: str) -> bool:
     if not SPORT_FILTER:
         return True
     
-    # Extract channel name from EXTINF line
-    # Format: #EXTINF:-1 tvg-logo="..." tvg-name="..." group-title="...",Channel Name
-    match = re.search(r',([^,]+)$', extinf_line)
+    # Extract group-title from EXTINF line
+    # Format: #EXTINF:-1 tvg-logo="..." tvg-name="..." group-title="GROUP",Channel Name
+    match = re.search(r'group-title="([^"]+)"', extinf_line)
     if not match:
+        # If no group-title, include it (or you can set to False to exclude)
         return True
     
-    channel_name = match.group(1).strip()
+    group_title = match.group(1).strip()
     
-    # Check if any sport filter matches (case insensitive)
-    channel_lower = channel_name.lower()
+    # Check if group-title matches any sport filter (case insensitive)
+    group_lower = group_title.lower()
     for sport in SPORT_FILTER:
-        if sport.lower() in channel_lower:
+        if sport.lower() == group_lower:
             return True
     
     return False
@@ -127,6 +127,27 @@ def parse_playlist(m3u: str) -> list:
     return entries
 
 
+def format_extinf(extinf: str, channel_num: int) -> str:
+    """Format EXTINF line with tvg-chno at the beginning."""
+    # Clean the channel name
+    if ',' in extinf:
+        parts = extinf.split(',', 1)
+        clean_name = clean_channel_name(parts[1])
+        extinf = f"{parts[0]},{clean_name}"
+    
+    # Remove existing tvg-chno if present
+    extinf = re.sub(r'\s+tvg-chno="[^"]*"', '', extinf)
+    
+    # Insert tvg-chno right after #EXTINF:-1
+    extinf = re.sub(
+        r'^(#EXTINF:-?\d+)',
+        rf'\1 tvg-chno="{channel_num}"',
+        extinf
+    )
+    
+    return extinf
+
+
 def build_vlc_playlist(entries: list) -> str:
     """Build VLC-compatible playlist from entries."""
     out = ["#EXTM3U"]
@@ -136,38 +157,19 @@ def build_vlc_playlist(entries: list) -> str:
         extinf = entry["extinf"]
         url = entry["url"]
         
-        # Clean the channel name
-        if ',' in extinf:
-            parts = extinf.split(',', 1)
-            clean_name = clean_channel_name(parts[1])
-            extinf = f"{parts[0]},{clean_name}"
-        
         # Check sport filter
         if not should_include_channel(extinf):
             continue
         
-        # Add tvg-chno if not present
-        if 'tvg-chno="' not in extinf:
-            # Insert tvg-chno after #EXTINF
-            if 'tvg-name="' in extinf:
-                extinf = re.sub(
-                    r'(tvg-name="[^"]*")',
-                    rf'\1 tvg-chno="{channel_counter}"',
-                    extinf
-                )
-            else:
-                # If no tvg-name, add tvg-chno after #EXTINF
-                extinf = re.sub(
-                    r'^#EXTINF:[^,]+',
-                    rf'\g<0> tvg-chno="{channel_counter}"',
-                    extinf
-                )
+        # Format EXTINF with tvg-chno at the beginning
+        extinf = format_extinf(extinf, channel_counter)
         
         out.append(extinf)
         out.append(f"#EXTVLCOPT:http-user-agent={UA_RAW}")
         out.append(f"#EXTVLCOPT:http-referrer={REFERER}")
         out.append(f"#EXTVLCOPT:http-origin={ORIGIN}")
         out.append("#EXTVLCOPT:http-icy-metadata=1")
+        # VLC uses the URL as-is without any parameters
         out.append(url)
         
         channel_counter += 1
@@ -184,33 +186,22 @@ def build_tivimate_playlist(entries: list) -> str:
         extinf = entry["extinf"]
         url = entry["url"]
         
-        # Clean the channel name
-        if ',' in extinf:
-            parts = extinf.split(',', 1)
-            clean_name = clean_channel_name(parts[1])
-            extinf = f"{parts[0]},{clean_name}"
-        
         # Check sport filter
         if not should_include_channel(extinf):
             continue
         
-        # Add tvg-chno if not present
-        if 'tvg-chno="' not in extinf:
-            if 'tvg-name="' in extinf:
-                extinf = re.sub(
-                    r'(tvg-name="[^"]*")',
-                    rf'\1 tvg-chno="{channel_counter}"',
-                    extinf
-                )
-            else:
-                extinf = re.sub(
-                    r'^#EXTINF:[^,]+',
-                    rf'\g<0> tvg-chno="{channel_counter}"',
-                    extinf
-                )
+        # Format EXTINF with tvg-chno at the beginning
+        extinf = format_extinf(extinf, channel_counter)
         
         out.append(extinf)
-        out.append(
+        
+        # TiviMate uses pipe parameters with URL encoded user-agent
+        # Remove any existing parameters from URL
+        if '|' in url:
+            url = url.split('|')[0]
+        
+        # Add parameters
+        url_with_params = (
             f"{url}"
             f"|referer={REFERER}"
             f"|origin={ORIGIN}"
@@ -218,6 +209,7 @@ def build_tivimate_playlist(entries: list) -> str:
             f"|icy-metadata=1"
         )
         
+        out.append(url_with_params)
         channel_counter += 1
     
     return "\n".join(out) + "\n"
@@ -231,8 +223,12 @@ def main():
     entries = parse_playlist(raw)
     print(f"Found {len(entries)} entries")
     
-    print("Applying sport filter and cleaning names...")
+    print("Applying sport filter...")
     print(f"Sport filter: {', '.join(SPORT_FILTER)}")
+    
+    # Count filtered entries
+    filtered_count = sum(1 for e in entries if should_include_channel(e["extinf"]))
+    print(f"Keeping {filtered_count} entries after filter")
     
     print("Writing VLC playlist...")
     OUT_VLC.write_text(build_vlc_playlist(entries), encoding="utf-8")
