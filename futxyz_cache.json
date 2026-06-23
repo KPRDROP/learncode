@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782251543.101405,
+  "timestamp": 1782256150.7295277,
   "streams": [
     {
       "name": "Portugal vs Uzbekistan",
@@ -68,19 +68,19 @@
       "max_simulated_viewers": 0,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Main Feed(Tsn)",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/tsn4.m3u8"
         },
         {
-          "title": "Alt Feed",
+          "title": "Alt Feed(fox)",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/fox.m3u8"
         },
         {
-          "title": "4K Stream",
+          "title": "4K Stream(ext. source)",
           "quality": "4k",
-          "url": ""
+          "url": "https://embedindia.st/embed/wc/2026-06-23/pan-cro/fox-4k"
         }
       ],
       "_category": "Football"
