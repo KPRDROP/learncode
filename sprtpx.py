@@ -26,8 +26,8 @@ UA_ENC = quote(UA_RAW)
 SPORT_FILTER = [
     "24/7 Channels",
     "MLB",
-    "NFL",
-    "NHL",
+    #"NFL",
+    #"NHL",
 ]
 
 # =========================================
