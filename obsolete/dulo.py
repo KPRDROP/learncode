@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Dulo Updater - Using cloudscraper
+Dulo Updater
 """
 
 import json
