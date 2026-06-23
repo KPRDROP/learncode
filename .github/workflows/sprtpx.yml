@@ -1,0 +1,44 @@
+name: Update PixelSports Playlist
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      actions: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      
+      - name: Run playlist generator
+        env:
+          PXL_BASE_URL: ${{ secrets.PXL_BASE_URL }}
+        run: |
+          python sprtpx.py
+      
+      - name: Commit and push if changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add pxl_vlc.m3u8 pxl_tivimate.m3u8
+          git diff --staged --quiet || git commit -m "Update playlists [skip ci]"
+          git push
