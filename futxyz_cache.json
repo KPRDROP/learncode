@@ -1,20 +1,20 @@
 {
-  "timestamp": 1782335743.5301926,
+  "timestamp": 1782341883.036958,
   "streams": [
     {
-      "name": "Switzerland vs Canada",
+      "name": "Scotland vs Brazil",
       "uri_name": "s4v1c9a4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/t2wxux1775058356.jpg/medium",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/ipcah51775058354.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-24T22:00:00",
-      "ends_at": "2026-06-25T00:10:00",
+      "starts_at": "2026-06-25T01:00:00",
+      "ends_at": "2026-06-25T03:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-24/sui-can"
+          "url": "https://embedindia.st/embed/wc/2026-06-24/sco-bra"
         },
         {
           "title": "Alt Feed",
@@ -25,19 +25,19 @@
       "_category": "Football"
     },
     {
-      "name": "Bosnia-Herzegovina vs Qatar",
+      "name": "Morocco vs Haiti",
       "uri_name": "b4v1q9t4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/me4ksq1775058383.jpg/medium",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/99fxp31775058353.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-24T22:00:00",
-      "ends_at": "2026-06-25T00:10:00",
+      "starts_at": "2026-06-25T01:00:00",
+      "ends_at": "2026-06-25T03:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-24/bih-qat"
+          "url": "https://embedindia.st/embed/wc/2026-06-24/mar-hai"
         },
         {
           "title": "Alt Feed",
