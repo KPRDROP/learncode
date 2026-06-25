@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782416614.6807911,
+  "timestamp": 1782422408.5127258,
   "streams": [
     {
       "name": "Ecuador vs Germany",
@@ -14,17 +14,12 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/tsn1.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
-        },
-        {
-          "title": "Ext. Feed",
-          "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/m6.m3u8"
         }
       ],
       "_category": "Football"
@@ -42,17 +37,12 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://underlow.s3.us-east-1.amazonaws.com/svg/eve2_1.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
-        },
-        {
-          "title": "Ext. Feed",
-          "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/fs1.m3u8"
         }
       ],
       "_category": "Football"
@@ -74,11 +64,6 @@
         },
         {
           "title": "Alt Feed",
-          "quality": "fhd",
-          "url": ""
-        },
-        {
-          "title": "Ext. Feed",
           "quality": "fhd",
           "url": ""
         }
@@ -104,11 +89,6 @@
           "title": "Alt Feed",
           "quality": "fhd",
           "url": ""
-        },
-        {
-          "title": "Ext. Feed",
-          "quality": "fhd",
-          "url": ""
         }
       ],
       "_category": "Football"
@@ -132,11 +112,6 @@
           "title": "Alt Feed",
           "quality": "fhd",
           "url": ""
-        },
-        {
-          "title": "Ext. Feed",
-          "quality": "fhd",
-          "url": ""
         }
       ],
       "_category": "Football"
@@ -158,11 +133,6 @@
         },
         {
           "title": "Alt Feed",
-          "quality": "fhd",
-          "url": ""
-        },
-        {
-          "title": "Ext. Feed",
           "quality": "fhd",
           "url": ""
         }
