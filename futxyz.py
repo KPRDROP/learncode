@@ -19,11 +19,18 @@ import requests
 BASE_URL = "https://futbol-x.xyz"
 API_URLS = [
     f"{BASE_URL}/api/football.json",
-    f"{BASE_URL}/api/motorsports.json",
+    #f"{BASE_URL}/api/tennis.json",
     f"{BASE_URL}/api/basketball.json",
+    f"{BASE_URL}/api/fights.json",
+    f"{BASE_URL}/api/motorsports.json",
     f"{BASE_URL}/api/nfl.json",
+    #f"{BASE_URL}/api/nhl.json",
     f"{BASE_URL}/api/mlb.json",
+    #f"{BASE_URL}/api/rugby.json",
+    #f"{BASE_URL}/api/golf.json",
+    f"{BASE_URL}/api/others.json",
     f"{BASE_URL}/api/wrestling.json",
+    #f"{BASE_URL}/api/darts.json",
 ]
 
 OUTPUT_FILE = "futxyz_tivimate.m3u8"
