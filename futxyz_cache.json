@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782470536.5949674,
+  "timestamp": 1782482238.656918,
   "streams": [
     {
       "name": "Ecuador vs Germany",
@@ -140,33 +140,19 @@
       "_category": "Football"
     },
     {
-      "name": "Barcelona Grand Prix - Qualifying",
-      "uri_name": "b1g9q4v1",
-      "poster": "https://api.ppv.to/assets/thumb/9453b0794926942676f3eb3d16f5ff58-thumbnail.jpg",
-      "tag": "F1",
-      "starts_at": "2026-06-13T17:00:00",
-      "ends_at": "2026-06-13T19:30:00",
+      "name": "Austrian Grand Prix Practice 2",
+      "uri_name": "f4v1a9u4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/jlsefm1774920210.jpg/medium",
+      "tag": "Austrian Grand Prix",
+      "starts_at": "2026-06-26T18:00:00",
+      "ends_at": "2026-06-26T19:50:00",
       "always_live": 0,
+      "max_simulated_viewers": 50,
       "streams": [
         {
           "title": "Main Feed",
-          "url": "https://nl-081-v1.vivocdn.xyz/1781368105/cedb07adafbd47288e10c358c76c0dc0/wzKjSjto6FwsH9ON1DvxuuDuZJZ0hermwd7Y6c8i4sw/sky-sports-f1.m3u8"
-        }
-      ],
-      "_category": "Motorsports"
-    },
-    {
-      "name": "Barcelona Grand Prix - Race",
-      "uri_name": "b1g9r4c2",
-      "poster": "https://api.ppv.to/assets/thumb/d988cd730c7e5aa78cf86729bdc2a17e-thumbnail.jpg",
-      "tag": "F1",
-      "starts_at": "2026-06-14T16:00:00",
-      "ends_at": "2026-06-14T19:00:00",
-      "always_live": 0,
-      "streams": [
-        {
-          "title": "Main Feed",
-          "url": "https://embedindia.st/embed/f1/2026/barcelona-catalunya/race"
+          "quality": "fhd",
+          "url": "https://futbolx-live.hf.space/live/f1.m3u8"
         }
       ],
       "_category": "Motorsports"
