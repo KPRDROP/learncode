@@ -1,6 +1,6 @@
 #EXTM3U
-# Playlist generated: 2026-06-25 23:05:52
-# Total streams: 21
+# Playlist generated: 2026-06-26 02:04:49
+# Total streams: 25
 
 #EXTINF:-1 tvg-id="new_york_knicks_vs_san_antonio_spurs___main_feed" tvg-name="[FUTXYZ] New York Knicks vs San Antonio Spurs - Main Feed" tvg-logo="https://api.ppv.to/assets/thumb/3ae629759ba983feb445a8a0017b8cec-thumbnail.jpg" group-title="Basketball - Nba",[FUTXYZ] New York Knicks vs San Antonio Spurs - Main Feed
 https://embedindia.st/embed/nba/2026-06-13/ny-sa|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
@@ -23,10 +23,22 @@ https://futbolx-live.hf.space/live/fs1.m3u8|referer=https://futbol-x.xyz/|origin
 #EXTINF:-1 tvg-id="japan_vs_sweden___main_feed_fhd" tvg-name="[FUTXYZ] Japan vs Sweden - Main Feed (fhd)" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/4no2lo1775058385.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Japan vs Sweden - Main Feed (fhd)
 https://futbolx-live.hf.space/live/tsn2.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
 
+#EXTINF:-1 tvg-id="paraguay_vs_australia___alt_feed_fhd" tvg-name="[FUTXYZ] Paraguay vs Australia - Alt Feed (fhd)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/sqvb9x1781600004.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Paraguay vs Australia - Alt Feed (fhd)
+https://futbolx-live.hf.space/live/tsn2.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-id="paraguay_vs_australia___main_feed_fhd" tvg-name="[FUTXYZ] Paraguay vs Australia - Main Feed (fhd)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/sqvb9x1781600004.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Paraguay vs Australia - Main Feed (fhd)
+https://futbolx-live.hf.space/live/tsn2.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
+
 #EXTINF:-1 tvg-id="tunisia_vs_netherlands___alt_feed_fhd" tvg-name="[FUTXYZ] Tunisia vs Netherlands - Alt Feed (fhd)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/ehmyj71781600005.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Tunisia vs Netherlands - Alt Feed (fhd)
 https://futbolx-live.hf.space/live/m6.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-id="tunisia_vs_netherlands___main_feed_fhd" tvg-name="[FUTXYZ] Tunisia vs Netherlands - Main Feed (fhd)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/ehmyj71781600005.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Tunisia vs Netherlands - Main Feed (fhd)
+https://futbolx-live.hf.space/live/tsn1.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-id="turkey_vs_usa___alt_feed_fhd" tvg-name="[FUTXYZ] Turkey vs USA - Alt Feed (fhd)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/df1tnu1781600008.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Turkey vs USA - Alt Feed (fhd)
+https://futbolx-live.hf.space/live/fs1.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-id="turkey_vs_usa___main_feed_fhd" tvg-name="[FUTXYZ] Turkey vs USA - Main Feed (fhd)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/df1tnu1781600008.jpg/medium" group-title="Football - World Cup",[FUTXYZ] Turkey vs USA - Main Feed (fhd)
 https://futbolx-live.hf.space/live/tsn1.m3u8|referer=https://futbol-x.xyz/|origin=https://futbol-x.xyz|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F120.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-id="new_york_yankees_vs_san_francisco_giants___main_fe" tvg-name="[FUTXYZ] New York Yankees vs San Francisco Giants - Main Feed" tvg-logo="https://i.postimg.cc/G3WWNZS2/1000145975.jpg" group-title="Mlb - MLB",[FUTXYZ] New York Yankees vs San Francisco Giants - Main Feed
