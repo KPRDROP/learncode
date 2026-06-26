@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782428752.8871105,
+  "timestamp": 1782439489.8882263,
   "streams": [
     {
       "name": "Ecuador vs Germany",
@@ -106,12 +106,12 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/tsn2.m3u8"
         }
       ],
       "_category": "Football"
@@ -129,12 +129,12 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/tsn1.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/fs1.m3u8"
         }
       ],
       "_category": "Football"
