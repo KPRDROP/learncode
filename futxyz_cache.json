@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782490255.6430469,
+  "timestamp": 1782501582.1966357,
   "streams": [
     {
       "name": "Norway vs France",
@@ -12,19 +12,19 @@
       "max_simulated_viewers": 0,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Main Feed(En)",
           "quality": "fhd",
-          "url": ""
+          "url": "https://storage.googleapis.com/puytihgkmhvaeovo1/mux_video_ts/index-1.m3u8"
         },
         {
-          "title": "Alt Feed",
+          "title": "Alt Feed(En)",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx4-live.hf.space/live/fs1.m3u8"
         },
         {
-          "title": "Ext. Feed",
+          "title": "Ext. Feed(Fr)",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/live/fr.m3u8"
         }
       ],
       "_category": "Football"
@@ -40,14 +40,14 @@
       "max_simulated_viewers": 0,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Main Feed(En)",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Ext. Feed",
@@ -170,24 +170,6 @@
       "_category": "Football"
     },
     {
-      "name": "Austrian Grand Prix Practice 2",
-      "uri_name": "f4v1a9u4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/jlsefm1774920210.jpg/medium",
-      "tag": "Austrian Grand Prix",
-      "starts_at": "2026-06-26T18:00:00",
-      "ends_at": "2026-06-26T19:50:00",
-      "always_live": 0,
-      "max_simulated_viewers": 50,
-      "streams": [
-        {
-          "title": "Main Feed",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/live/f1.m3u8"
-        }
-      ],
-      "_category": "Motorsports"
-    },
-    {
       "name": "New York Knicks vs San Antonio Spurs",
       "uri_name": "n4k9s4s2",
       "poster": "https://api.ppv.to/assets/thumb/3ae629759ba983feb445a8a0017b8cec-thumbnail.jpg",
@@ -202,6 +184,47 @@
         }
       ],
       "_category": "Basketball"
+    },
+    {
+      "name": "UFC Fight Night: Fiziev vs Torres",
+      "uri_name": "u4v1f9i4",
+      "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWX9U8KqKu0b_bM8IWnhfSeDY6TRLOBfS23xiUUdm6Mg&s=10",
+      "tag": "ufc",
+      "starts_at": "2026-06-27T19:00:00",
+      "ends_at": "2026-06-28T01:10:00",
+      "always_live": 0,
+      "max_simulated_viewers": 0,
+      "streams": [
+        {
+          "title": "Main Feed",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed",
+          "quality": "fhd",
+          "url": ""
+        }
+      ],
+      "_category": "Fight"
+    },
+    {
+      "name": "Austrian Grand Prix Practice 2",
+      "uri_name": "f4v1a9u4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/jlsefm1774920210.jpg/medium",
+      "tag": "Austrian Grand Prix",
+      "starts_at": "2026-06-26T18:00:00",
+      "ends_at": "2026-06-26T19:00:00",
+      "always_live": 0,
+      "max_simulated_viewers": 50,
+      "streams": [
+        {
+          "title": "Main Feed",
+          "quality": "fhd",
+          "url": "https://futbolx-live.hf.space/live/f1.m3u8"
+        }
+      ],
+      "_category": "Motorsports"
     },
     {
       "name": "2026 NFL Draft - Day 1",
