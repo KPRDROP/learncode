@@ -1,56 +1,54 @@
 {
-  "timestamp": 1782586831.1508296,
+  "timestamp": 1782593220.2961648,
   "streams": [
     {
-      "name": "Norway vs France",
-      "uri_name": "n4v1f9r4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/g2uph61775058364.jpg/medium",
+      "name": "Panama vs England",
+      "uri_name": "p4v1e9n4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/enrwox1775058370.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-26T22:00:00",
-      "ends_at": "2026-06-27T00:10:00",
+      "starts_at": "2026-06-28T00:00:00",
+      "ends_at": "2026-06-28T02:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
-          "title": "Main Feed(En)",
+          "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://storage.googleapis.com/puytihgkmhvaeovo1/mux_video_ts/index-1.m3u8"
-        },
-        {
-          "title": "Alt Feed(En)",
-          "quality": "fhd",
-          "url": "https://futbolx4-live.hf.space/live/fs1.m3u8"
-        },
-        {
-          "title": "Ext. Feed(Fr)",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/live/fr.m3u8"
+          "url": "https://embedindia.st/embed/wc/2026-06-27/pan-eng"
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "Senegal vs Iraq",
-      "uri_name": "s4v1i9r4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/duwfkg1775058387.jpg/medium",
+      "name": "Croatia vs Ghana",
+      "uri_name": "c4v1g9h4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/fwxopf1775058368.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-26T22:00:00",
-      "ends_at": "2026-06-27T00:10:00",
+      "starts_at": "2026-06-28T00:00:00",
+      "ends_at": "2026-06-28T02:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
-          "title": "Main Feed(En)",
+          "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
-        },
+          "url": "https://embedindia.st/embed/wc/2026-06-27/cro-gha"
+        }
+      ],
+      "_category": "Football"
+    },
+    {
+      "name": "Colombia vs Portugal",
+      "uri_name": "c4v1p9o4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/u6lsyr1775058367.jpg/medium",
+      "tag": "World Cup",
+      "starts_at": "2026-06-28T02:30:00",
+      "ends_at": "2026-06-28T04:40:00",
+      "always_live": 0,
+      "max_simulated_viewers": 0,
+      "streams": [
         {
-          "title": "Alt Feed",
-          "quality": "fhd",
-          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
-        },
-        {
-          "title": "Ext. Feed",
+          "title": "Main Feed",
           "quality": "fhd",
           "url": ""
         }
@@ -58,27 +56,17 @@
       "_category": "Football"
     },
     {
-      "name": "Uruguay vs Spain",
-      "uri_name": "u4v1s9p4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/b2zc0v1775058365.jpg/medium",
+      "name": "DR Congo vs Uzbekistan",
+      "uri_name": "d4v1u9z4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/pibln91775058388.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-27T03:00:00",
-      "ends_at": "2026-06-27T05:10:00",
+      "starts_at": "2026-06-28T02:30:00",
+      "ends_at": "2026-06-28T04:40:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
-          "quality": "fhd",
-          "url": "https://anym3u8player.com/p2p-player-generator-jwplayer/mplay.php?data=nCLCQmLtFml/wHRSNI+EmeWTWnfEvBZSy1VehFdeZGCJPVhVuf32j9mo0XR6yjxlYg0nBfVuW7eAyXqQ08Mxm4VXQBeCjdTMtgDmjh4ah5/gv4XrirKcPXWKMzS1+ggyRkSqdGxWLXYUMXZfH7Gd1Clfovh3JgrU73eUoJwqMOM="
-        },
-        {
-          "title": "Alt Feed",
-          "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/live/tsn4.m3u8"
-        },
-        {
-          "title": "Ext. Feed",
           "quality": "fhd",
           "url": ""
         }
@@ -86,55 +74,17 @@
       "_category": "Football"
     },
     {
-      "name": "Cape Verde vs Saudi Arabia",
-      "uri_name": "c4v1s9a4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/fchnmj1775058361.jpg/medium",
+      "name": "Jordan vs Argentina",
+      "uri_name": "j4v1a9r4",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/aejlsx1775058369.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-27T03:00:00",
-      "ends_at": "2026-06-27T05:10:00",
+      "starts_at": "2026-06-28T05:00:00",
+      "ends_at": "2026-06-28T07:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
-          "quality": "fhd",
-          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
-        },
-        {
-          "title": "Alt Feed",
-          "quality": "fhd",
-          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
-        },
-        {
-          "title": "Ext. Feed",
-          "quality": "fhd",
-          "url": "https://futbolx4-live.hf.space/live/fs1.m3u8"
-        }
-      ],
-      "_category": "Football"
-    },
-    {
-      "name": "Egypt vs Iran",
-      "uri_name": "e4v1i9r4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/yane951775058362.jpg/medium",
-      "tag": "World Cup",
-      "starts_at": "2026-06-27T06:00:00",
-      "ends_at": "2026-06-27T08:10:00",
-      "always_live": 0,
-      "max_simulated_viewers": 0,
-      "streams": [
-        {
-          "title": "Main Feed",
-          "quality": "fhd",
-          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
-        },
-        {
-          "title": "Alt Feed",
-          "quality": "fhd",
-          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
-        },
-        {
-          "title": "Ext. Feed",
           "quality": "fhd",
           "url": ""
         }
@@ -142,29 +92,19 @@
       "_category": "Football"
     },
     {
-      "name": "New Zealand vs Belgium",
-      "uri_name": "n4v1b9e4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/162w8r1775058363.jpg/medium",
+      "name": "Algeria vs Austria",
+      "uri_name": "a4v1a9u4",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/9uiib51781600005.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-27T06:00:00",
-      "ends_at": "2026-06-27T08:10:00",
+      "starts_at": "2026-06-28T05:00:00",
+      "ends_at": "2026-06-28T07:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx1-live.hf.space/live/tsn1.m3u8"
-        },
-        {
-          "title": "Alt Feed",
-          "quality": "fhd",
-          "url": "https://futbolx1-live.hf.space/live/tsn1.m3u8"
-        },
-        {
-          "title": "Ext. Feed",
-          "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/live/tsn4.m3u8"
+          "url": ""
         }
       ],
       "_category": "Football"
