@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782514669.8502922,
+  "timestamp": 1782525546.0354512,
   "streams": [
     {
       "name": "Norway vs France",
@@ -98,17 +98,17 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/live/tsn2.m3u8"
+          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Ext. Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx4-live.hf.space/live/fs1.m3u8"
         }
       ],
       "_category": "Football"
@@ -375,7 +375,7 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wwe/smackdown/2026-06-19"
+          "url": "https://embedindia.st/embed/wwe/smackdown/2026-06-26"
         }
       ],
       "_category": "Wrestling"
