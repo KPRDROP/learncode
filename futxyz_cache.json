@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782565458.541589,
+  "timestamp": 1782572804.2330825,
   "streams": [
     {
       "name": "Norway vs France",
@@ -209,12 +209,12 @@
       "_category": "Fight"
     },
     {
-      "name": "Austrian Grand Prix Practice 3",
+      "name": "Austrian Grand Prix Qualifying",
       "uri_name": "f4v1a9u4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/ubccao1774920220.jpg/medium",
+      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/ni75b71774920230.jpg/medium",
       "tag": "Austrian Grand Prix",
-      "starts_at": "2026-06-27T13:00:00",
-      "ends_at": "2026-06-27T15:00:00",
+      "starts_at": "2026-06-27T17:00:00",
+      "ends_at": "2026-06-27T19:00:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
