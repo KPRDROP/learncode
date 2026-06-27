@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782525546.0354512,
+  "timestamp": 1782539586.1492882,
   "streams": [
     {
       "name": "Norway vs France",
@@ -126,12 +126,12 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx6-live.hf.space/live/tsn2.m3u8"
         },
         {
           "title": "Ext. Feed",
@@ -154,17 +154,17 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx1-live.hf.space/live/tsn1.m3u8"
         },
         {
           "title": "Alt Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx1-live.hf.space/live/tsn1.m3u8"
         },
         {
           "title": "Ext. Feed",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx5-live.hf.space/live/tsn4.m3u8"
         }
       ],
       "_category": "Football"
