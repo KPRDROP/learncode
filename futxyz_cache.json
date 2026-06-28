@@ -1,110 +1,94 @@
 {
-  "timestamp": 1782665761.7300644,
+  "timestamp": 1782673164.4735417,
   "streams": [
     {
-      "name": "Panama vs England",
-      "uri_name": "p4v1e9n4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/enrwox1775058370.jpg/medium",
+      "name": "South Africa vs Canada",
+      "uri_name": "s4v1c9a4",
+      "poster": "https://api.ppv.to/assets/thumb/88155c49b58b2063d2e141c09cd19f95-thumbnail.jpg",
       "tag": "World Cup",
-      "starts_at": "2026-06-28T00:00:00",
-      "ends_at": "2026-06-28T02:10:00",
+      "starts_at": "2026-06-28T22:00:00",
+      "ends_at": "2026-06-29T00:10:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 500,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-27/pan-eng"
+          "url": "https://embedindia.st/embed/wc/2026-06-28/rsa-can"
+        },
+        {
+          "title": "Alt Feed",
+          "quality": "fhd",
+          "url": "https://embedindia.st/embed/wc/2026-06-28/rsa-can/fox"
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "Croatia vs Ghana",
-      "uri_name": "c4v1g9h4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/fwxopf1775058368.jpg/medium",
+      "name": "Brazil vs Japan",
+      "uri_name": "b4v1j9a4",
+      "poster": "https://api.ppv.to/assets/thumb/2f88fbd278f51598afa34f6dffa064a5-thumbnail.jpg",
       "tag": "World Cup",
-      "starts_at": "2026-06-28T00:00:00",
-      "ends_at": "2026-06-28T02:10:00",
+      "starts_at": "2026-06-29T20:00:00",
+      "ends_at": "2026-06-29T22:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-27/cro-gha"
+          "url": ""
+        },
+        {
+          "title": "Alt Feed",
+          "quality": "fhd",
+          "url": ""
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "Colombia vs Portugal",
-      "uri_name": "c4v1p9o4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/u6lsyr1775058367.jpg/medium",
+      "name": "Germany vs Paraguay",
+      "uri_name": "g4v1p9a4",
+      "poster": "https://api.ppv.to/assets/thumb/c59e905efbe168d9e00aab5d9870e277-thumbnail.jpg",
       "tag": "World Cup",
-      "starts_at": "2026-06-28T02:30:00",
-      "ends_at": "2026-06-28T04:40:00",
+      "starts_at": "2026-06-29T23:30:00",
+      "ends_at": "2026-06-30T01:40:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-27/col-por"
+          "url": ""
+        },
+        {
+          "title": "Alt Feed",
+          "quality": "fhd",
+          "url": ""
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "DR Congo vs Uzbekistan",
-      "uri_name": "d4v1u9z4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/pibln91775058388.jpg/medium",
+      "name": "Netherlands vs Morocco",
+      "uri_name": "n4v1m9o4",
+      "poster": "https://api.ppv.to/assets/thumb/f9af514f133220c3b766b2e19ed87653-thumbnail.jpg",
       "tag": "World Cup",
-      "starts_at": "2026-06-28T02:30:00",
-      "ends_at": "2026-06-28T04:40:00",
+      "starts_at": "2026-06-29T04:00:00",
+      "ends_at": "2026-06-29T06:10:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-27/cod-uzb"
-        }
-      ],
-      "_category": "Football"
-    },
-    {
-      "name": "Jordan vs Argentina",
-      "uri_name": "j4v1a9r4",
-      "poster": "https://r2.thesportsdb.com/images/media/event/thumb/aejlsx1775058369.jpg/medium",
-      "tag": "World Cup",
-      "starts_at": "2026-06-28T05:00:00",
-      "ends_at": "2026-06-28T07:10:00",
-      "always_live": 0,
-      "max_simulated_viewers": 0,
-      "streams": [
+          "url": ""
+        },
         {
-          "title": "Main Feed",
+          "title": "Alt Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-27/jor-arg"
-        }
-      ],
-      "_category": "Football"
-    },
-    {
-      "name": "Algeria vs Austria",
-      "uri_name": "a4v1a9u4",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/9uiib51781600005.jpg/medium",
-      "tag": "World Cup",
-      "starts_at": "2026-06-28T05:00:00",
-      "ends_at": "2026-06-28T07:10:00",
-      "always_live": 0,
-      "max_simulated_viewers": 0,
-      "streams": [
-        {
-          "title": "Main Feed",
-          "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-06-27/alg-aut"
+          "url": ""
         }
       ],
       "_category": "Football"
