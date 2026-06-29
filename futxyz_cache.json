@@ -1,5 +1,5 @@
 {
-  "timestamp": 1782761420.4699714,
+  "timestamp": 1782767737.4046206,
   "streams": [
     {
       "name": "Brazil vs Japan",
@@ -69,60 +69,60 @@
       "uri_name": "g4v1p9a4",
       "poster": "https://www.thesportsdb.com/images/media/event/thumb/d9lzb81782546619.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-29T23:30:00",
+      "starts_at": "2026-06-29T23:00:00",
       "ends_at": "2026-06-30T01:40:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 200,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Main Feed[Tsn 4]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://bizm.futbol-x.top/tsn4/index.m3u8"
         },
         {
-          "title": "Alt Feed 1",
+          "title": "Alt Feed 1[Fox]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://bizm.futbol-x.top/fox/index.m3u8"
         },
         {
-          "title": "Alt Feed 2",
-          "quality": "fhd",
-          "url": ""
+          "title": "Alt Feed 2[Ar]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/hd11"
         },
         {
-          "title": "Alt Feed 3",
-          "quality": "fhd",
-          "url": ""
+          "title": "Alt Feed 3[Esp]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/hd6"
         },
         {
-          "title": "Ext. Feed 1",
-          "quality": "fhd",
-          "url": ""
+          "title": "Ext. Feed 1[Itl]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/hd7"
         },
         {
-          "title": "Ext. Feed 2",
-          "quality": "fhd",
-          "url": ""
+          "title": "Ext. Feed 2[Br]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/br1"
         },
         {
-          "title": "Backup 1",
-          "quality": "fhd",
-          "url": ""
+          "title": "Backup 1[De]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/hd3"
         },
         {
-          "title": "Backup 2",
-          "quality": "fhd",
-          "url": ""
+          "title": "Backup 2[Fr]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/hd4"
         },
         {
-          "title": "Feed 1",
-          "quality": "fhd",
-          "url": ""
+          "title": "Feed 1[Pt]",
+          "quality": "hd",
+          "url": "https://futbolx-live.hf.space/embed/sporttv5"
         },
         {
-          "title": "Feed 2",
-          "quality": "fhd",
-          "url": ""
+          "title": "Feed 2[External Source]",
+          "quality": "4k",
+          "url": "https://embedindia.st/embed/wc/2026-06-29/ger-par/fox-4k"
         }
       ],
       "_category": "Football"
