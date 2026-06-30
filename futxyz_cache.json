@@ -1,20 +1,20 @@
 {
-  "timestamp": 1782836049.6540108,
+  "timestamp": 1782847736.5967026,
   "streams": [
     {
-      "name": "Netherlands vs Morocco",
+      "name": "Ivory Coast vs Norway",
       "uri_name": "n4v1m9o4",
-      "poster": "https://api.ppv.to/assets/thumb/f9af514f133220c3b766b2e19ed87653-thumbnail.jpg",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/f6fdgp1782546617.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-06-30T04:00:00",
-      "ends_at": "2026-06-30T08:10:00",
+      "starts_at": "2026-06-30T20:00:00",
+      "ends_at": "2026-06-30T23:10:00",
       "always_live": 0,
-      "max_simulated_viewers": 40,
+      "max_simulated_viewers": 100,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd5"
+          "url": "https://futbolx-live.hf.space/embed/hd2"
         },
         {
           "title": "Alt Feed",
