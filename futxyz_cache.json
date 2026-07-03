@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783087190.165987,
+  "timestamp": 1783093980.586741,
   "streams": [
     {
       "name": "Australia vs Egypt",
@@ -255,7 +255,7 @@
       "starts_at": "2026-07-03T18:30:00",
       "ends_at": "2026-07-03T20:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 50,
       "streams": [
         {
           "title": "Main Feed",
