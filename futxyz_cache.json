@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783111831.7265089,
+  "timestamp": 1783119150.3538632,
   "streams": [
     {
       "name": "Australia vs Egypt",
@@ -7,7 +7,7 @@
       "poster": "https://www.thesportsdb.com/images/media/event/thumb/pev9n51782546621.jpg/medium",
       "tag": "World Cup",
       "starts_at": "2026-07-03T21:00:00",
-      "ends_at": "2026-07-03T23:30:00",
+      "ends_at": "2026-07-04T00:00:00",
       "always_live": 0,
       "max_simulated_viewers": 400,
       "streams": [
@@ -72,57 +72,57 @@
       "starts_at": "2026-07-04T01:00:00",
       "ends_at": "2026-07-04T03:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 600,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Main Feed[Eng]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd1"
         },
         {
-          "title": "Alt Feed 1",
+          "title": "Alt Feed 1[Eng]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd2"
         },
         {
-          "title": "Alt Feed 2",
+          "title": "Alt Feed 2[De]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd3"
         },
         {
-          "title": "Alt Feed 3",
+          "title": "Alt Feed 3[Fr]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd4"
         },
         {
-          "title": "Ext. Feed 1",
+          "title": "Ext. Feed 1[Esp]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd6"
         },
         {
-          "title": "Ext. Feed 2",
+          "title": "Ext. Feed 2[Ita]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd7"
         },
         {
-          "title": "Ext. Feed 3",
+          "title": "Ext. Feed 3[Ar]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd11"
         },
         {
-          "title": "Backup 1",
+          "title": "Backup 1[Dut]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd9"
         },
         {
-          "title": "Backup 2",
+          "title": "Backup 2[Tur]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd8"
         },
         {
-          "title": "Backup 3",
+          "title": "Backup 3[Br]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/br2"
         }
       ],
       "_category": "Football"
@@ -414,7 +414,7 @@
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wwe/smackdown/2026-06-26"
+          "url": "https://embedindia.st/embed/wwe/smackdown/2026-07-03"
         }
       ],
       "_category": "Wrestling"
