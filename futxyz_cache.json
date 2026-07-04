@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783177015.1048033,
+  "timestamp": 1783183802.6409445,
   "streams": [
     {
       "name": "Canada vs Morocco",
@@ -9,57 +9,57 @@
       "starts_at": "2026-07-04T20:00:00",
       "ends_at": "2026-07-04T22:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 400,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Main Feed[Eng]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd1"
         },
         {
-          "title": "Alt Feed 1",
+          "title": "Alt Feed 1[Eng]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd2"
         },
         {
-          "title": "Alt Feed 2",
+          "title": "Alt Feed 2[De]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd3"
         },
         {
-          "title": "Alt Feed 3",
+          "title": "Alt Feed 3[Fr]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd4"
         },
         {
-          "title": "Ext. Feed 1",
+          "title": "Ext. Feed 1[Esp]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd6"
         },
         {
-          "title": "Ext. Feed 2",
+          "title": "Ext. Feed 2[Itl]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd7"
         },
         {
-          "title": "Ext. Feed 3",
+          "title": "Ext. Feed 3[Ar]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd11"
         },
         {
-          "title": "Backup 1",
+          "title": "Backup 1[Tur]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd8"
         },
         {
-          "title": "Backup 2",
+          "title": "Backup 2[Dut]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/hd9"
         },
         {
-          "title": "Backup 3",
+          "title": "Backup 3[Br]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://futbolx-live.hf.space/embed/br2"
         }
       ],
       "_category": "Football"
