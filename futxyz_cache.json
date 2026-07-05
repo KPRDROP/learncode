@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783256569.5761552,
+  "timestamp": 1783263859.620765,
   "streams": [
     {
       "name": "Canada vs Morocco",
@@ -318,12 +318,12 @@
       "starts_at": "2026-07-05T17:00:00",
       "ends_at": "2026-07-05T19:00:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 300,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd2"
+          "url": "https://embedindia.st/embed/f1/2026/great-britain/race/f1tv"
         }
       ],
       "_category": "Motorsports"
