@@ -1,254 +1,254 @@
 {
-  "timestamp": 1783349571.5951648,
+  "timestamp": 1783360990.4565592,
   "streams": [
     {
-      "name": "Canada vs Morocco",
-      "uri_name": "c4v1m9o5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/z8ewjr1782798427.jpg/medium",
+      "name": "Portugal vs Spain",
+      "uri_name": "p4v1s9p5",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/xb1fyz1783166773.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-07-04T20:00:00",
-      "ends_at": "2026-07-04T22:30:00",
+      "starts_at": "2026-07-06T22:00:00",
+      "ends_at": "2026-07-07T00:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 400,
-      "streams": [
-        {
-          "title": "Main Feed[Eng]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd1"
-        },
-        {
-          "title": "Alt Feed 1[Eng]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd2"
-        },
-        {
-          "title": "Alt Feed 2[De]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd3"
-        },
-        {
-          "title": "Alt Feed 3[Fr]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd4"
-        },
-        {
-          "title": "Ext. Feed 1[Esp]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd6"
-        },
-        {
-          "title": "Ext. Feed 2[Itl]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd7"
-        },
-        {
-          "title": "Ext. Feed 3[Ar]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd11"
-        },
-        {
-          "title": "Backup 1[Tur]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd8"
-        },
-        {
-          "title": "Backup 2[Dut]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd9"
-        },
-        {
-          "title": "Backup 3[Br]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/br2"
-        }
-      ],
-      "_category": "Football"
-    },
-    {
-      "name": "Paraguay vs France",
-      "uri_name": "p4v1f9r5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/90vkdc1782895937.jpg/medium",
-      "tag": "World Cup",
-      "starts_at": "2026-07-05T00:00:00",
-      "ends_at": "2026-07-05T02:30:00",
-      "always_live": 0,
-      "max_simulated_viewers": 600,
-      "streams": [
-        {
-          "title": "Main Feed[Eng]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd1"
-        },
-        {
-          "title": "Alt Feed 1[Eng]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd2"
-        },
-        {
-          "title": "Alt Feed 2[De]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd3"
-        },
-        {
-          "title": "Alt Feed 3[Fr]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd4"
-        },
-        {
-          "title": "Ext. Feed 1[Esp]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd6"
-        },
-        {
-          "title": "Ext. Feed 2[Itl]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd7"
-        },
-        {
-          "title": "Ext. Feed 3[Ar]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd11"
-        },
-        {
-          "title": "Backup 1[Tur]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd8"
-        },
-        {
-          "title": "Backup 2[Dut]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/hd9"
-        },
-        {
-          "title": "Backup 3[Br]",
-          "quality": "fhd",
-          "url": "https://futbolx-live.hf.space/embed/br2"
-        }
-      ],
-      "_category": "Football"
-    },
-    {
-      "name": "Brazil vs Norway",
-      "uri_name": "b4v1n9o5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/7d01zx1782848875.jpg/medium",
-      "tag": "World Cup",
-      "starts_at": "2026-07-05T23:00:00",
-      "ends_at": "2026-07-06T01:30:00",
-      "always_live": 0,
-      "max_simulated_viewers": 600,
+      "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor"
+          "url": ""
         },
         {
           "title": "Alt Feed 1",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/fox"
+          "url": ""
         },
         {
           "title": "Alt Feed 2",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/uk"
+          "url": ""
         },
         {
           "title": "Alt Feed 3",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/bein-sports-1"
+          "url": ""
         },
         {
           "title": "Ext. Feed 1",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/dazn-spain"
+          "url": ""
         },
         {
           "title": "Ext. Feed 2",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/telemundo"
+          "url": ""
         },
         {
           "title": "Ext. Feed 3",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/fox-4k-hevc"
+          "quality": "fhd",
+          "url": ""
         },
         {
           "title": "Backup 1",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/peacock-4k-hevc"
+          "quality": "fhd",
+          "url": ""
         },
         {
           "title": "Backup 2",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/fussballtv-4k-hevc"
+          "quality": "fhd",
+          "url": ""
         },
         {
           "title": "Backup 3",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/bra-nor/fussballtv-4k-tactical-hevc"
+          "quality": "fhd",
+          "url": ""
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "Mexico vs England",
-      "uri_name": "m4v1e9n5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/yz4qzg1782983933.jpg/medium",
+      "name": "USA vs Belgium",
+      "uri_name": "u4v1b9e5",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/uccm5r1782983934.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-07-06T04:00:00",
-      "ends_at": "2026-07-06T07:30:00",
+      "starts_at": "2026-07-07T03:00:00",
+      "ends_at": "2026-07-07T05:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 400,
+      "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng"
+          "url": ""
         },
         {
           "title": "Alt Feed 1",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/fox"
+          "url": ""
         },
         {
           "title": "Alt Feed 2",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/uk"
+          "url": ""
         },
         {
           "title": "Alt Feed 3",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/bein-sports-1"
+          "url": ""
         },
         {
           "title": "Ext. Feed 1",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/dazn-spain"
+          "url": ""
         },
         {
           "title": "Ext. Feed 2",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/telemundo"
+          "url": ""
         },
         {
           "title": "Ext. Feed 3",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/tv-azteca-720p"
+          "url": ""
         },
         {
           "title": "Backup 1",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/fox-4k-hevc"
+          "quality": "fhd",
+          "url": ""
         },
         {
           "title": "Backup 2",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/peacock-4k-hevc"
+          "quality": "fhd",
+          "url": ""
         },
         {
           "title": "Backup 3",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-05/mex-eng/fussballtv-4k-hevc"
+          "quality": "fhd",
+          "url": ""
+        }
+      ],
+      "_category": "Football"
+    },
+    {
+      "name": "Argentina vs Egypt",
+      "uri_name": "a4v1e9g5",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/08mivj1783166773.jpg/medium",
+      "tag": "World Cup",
+      "starts_at": "2026-07-07T19:00:00",
+      "ends_at": "2026-07-07T21:30:00",
+      "always_live": 0,
+      "max_simulated_viewers": 0,
+      "streams": [
+        {
+          "title": "Main Feed",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed 1",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed 2",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed 3",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Ext. Feed 1",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Ext. Feed 2",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Ext. Feed 3",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Backup 1",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Backup 2",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Backup 3",
+          "quality": "fhd",
+          "url": ""
+        }
+      ],
+      "_category": "Football"
+    },
+    {
+      "name": "Switzerland vs Colombia",
+      "uri_name": "s4v1c9o5",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/2swkia1783166926.jpg/medium",
+      "tag": "World Cup",
+      "starts_at": "2026-07-07T23:00:00",
+      "ends_at": "2026-07-08T01:30:00",
+      "always_live": 0,
+      "max_simulated_viewers": 0,
+      "streams": [
+        {
+          "title": "Main Feed",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed 1",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed 2",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Alt Feed 3",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Ext. Feed 1",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Ext. Feed 2",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Ext. Feed 3",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Backup 1",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Backup 2",
+          "quality": "fhd",
+          "url": ""
+        },
+        {
+          "title": "Backup 3",
+          "quality": "fhd",
+          "url": ""
         }
       ],
       "_category": "Football"
