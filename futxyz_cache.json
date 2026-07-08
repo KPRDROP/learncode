@@ -1,254 +1,254 @@
 {
-  "timestamp": 1783531228.3255458,
+  "timestamp": 1783537391.1520042,
   "streams": [
     {
-      "name": "Portugal vs Spain",
-      "uri_name": "p4v1s9p5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/xb1fyz1783166773.jpg/medium",
+      "name": "France vs Morocco",
+      "uri_name": "f4v1m9o6",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/7pkil31783237187.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-07-06T22:00:00",
-      "ends_at": "2026-07-07T00:30:00",
+      "starts_at": "2026-07-09T23:00:00",
+      "ends_at": "2026-07-10T01:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 500,
+      "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd1"
+          "url": ""
         },
         {
           "title": "Alt Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd2"
+          "url": ""
         },
         {
           "title": "Alt Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd3"
+          "url": ""
         },
         {
           "title": "Alt Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd4"
+          "url": ""
         },
         {
           "title": "Ext. Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd11"
+          "url": ""
         },
         {
           "title": "Ext. Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd5"
+          "url": ""
         },
         {
           "title": "Ext. Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd6"
+          "url": ""
         },
         {
           "title": "Backup 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd7"
+          "url": ""
         },
         {
           "title": "Backup 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/br2"
+          "url": ""
         },
         {
           "title": "Backup 3",
-          "quality": "4k",
-          "url": "https://embedindia.st/embed/wc/2026-07-06/por-esp/fox-4k-hevc"
+          "quality": "fhd",
+          "url": ""
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "USA vs Belgium",
-      "uri_name": "u4v1b9e5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/uccm5r1782983934.jpg/medium",
+      "name": "Spain vs Belgium",
+      "uri_name": "s4v1b9e6",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/e0awtb1783410723.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-07-07T03:00:00",
-      "ends_at": "2026-07-07T05:30:00",
+      "starts_at": "2026-07-10T22:00:00",
+      "ends_at": "2026-07-11T00:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 400,
+      "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd1"
+          "url": ""
         },
         {
           "title": "Alt Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd2"
+          "url": ""
         },
         {
           "title": "Alt Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd3"
+          "url": ""
         },
         {
           "title": "Alt Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd4"
+          "url": ""
         },
         {
           "title": "Ext. Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd11"
+          "url": ""
         },
         {
           "title": "Ext. Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd5"
+          "url": ""
         },
         {
           "title": "Ext. Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd6"
+          "url": ""
         },
         {
           "title": "Backup 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd7"
+          "url": ""
         },
         {
           "title": "Backup 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd8"
+          "url": ""
         },
         {
           "title": "Backup 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/br2"
+          "url": ""
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "Argentina vs Egypt",
-      "uri_name": "a4v1e9g5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/08mivj1783166773.jpg/medium",
+      "name": "Norway vs England",
+      "uri_name": "n4v1e9n6",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/h00wfo1783322757.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-07-07T19:00:00",
-      "ends_at": "2026-07-07T21:30:00",
+      "starts_at": "2026-07-12T00:00:00",
+      "ends_at": "2026-07-12T02:40:00",
       "always_live": 0,
-      "max_simulated_viewers": 800,
+      "max_simulated_viewers": 0,
       "streams": [
         {
-          "title": "Main Feed[Eng]",
+          "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-07/arg-egy"
+          "url": ""
         },
         {
-          "title": "Alt Feed 1[Eng]",
+          "title": "Alt Feed 1",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-07/arg-egy/fox"
+          "url": ""
         },
         {
-          "title": "Alt Feed 2[De]",
+          "title": "Alt Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd3"
+          "url": ""
         },
         {
-          "title": "Alt Feed 3[Fr]",
+          "title": "Alt Feed 3",
           "quality": "fhd",
-          "url": "https://embedindia.st/embed/wc/2026-07-07/arg-egy/bein-sports-1"
+          "url": ""
         },
         {
-          "title": "Ext. Feed 1[Ar]",
+          "title": "Ext. Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd11"
+          "url": ""
         },
         {
-          "title": "Ext. Feed 2[Eng]",
+          "title": "Ext. Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd5"
+          "url": ""
         },
         {
-          "title": "Ext. Feed 3[Esp]",
+          "title": "Ext. Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd6"
+          "url": ""
         },
         {
-          "title": "Backup 1[Itl]",
+          "title": "Backup 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd7"
+          "url": ""
         },
         {
-          "title": "Backup 2[Tur]",
+          "title": "Backup 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd8"
+          "url": ""
         },
         {
-          "title": "Test[Eng]",
+          "title": "Backup 3",
           "quality": "fhd",
-          "url": "https://futbolx4-live.hf.space/live/stream.m3u8"
+          "url": ""
         }
       ],
       "_category": "Football"
     },
     {
-      "name": "Switzerland vs Colombia",
-      "uri_name": "s4v1c9o5",
-      "poster": "https://www.thesportsdb.com/images/media/event/thumb/2swkia1783166926.jpg/medium",
+      "name": "Argentina vs Switzerland",
+      "uri_name": "a4v1s9w6",
+      "poster": "https://www.thesportsdb.com/images/media/event/thumb/egw53q1783490092.jpg/medium",
       "tag": "World Cup",
-      "starts_at": "2026-07-07T23:00:00",
-      "ends_at": "2026-07-08T02:30:00",
+      "starts_at": "2026-07-12T04:00:00",
+      "ends_at": "2026-07-12T06:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 200,
+      "max_simulated_viewers": 0,
       "streams": [
         {
           "title": "Main Feed",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd1"
+          "url": ""
         },
         {
           "title": "Alt Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd2"
+          "url": ""
         },
         {
           "title": "Alt Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd3"
+          "url": ""
         },
         {
           "title": "Alt Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd4"
+          "url": ""
         },
         {
           "title": "Ext. Feed 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd11"
+          "url": ""
         },
         {
           "title": "Ext. Feed 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd6"
+          "url": ""
         },
         {
           "title": "Ext. Feed 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd7"
+          "url": ""
         },
         {
           "title": "Backup 1",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd5"
+          "url": ""
         },
         {
           "title": "Backup 2",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd8"
+          "url": ""
         },
         {
           "title": "Backup 3",
           "quality": "fhd",
-          "url": "https://futbolx5-live.hf.space/embed/hd9"
+          "url": ""
         }
       ],
       "_category": "Football"
@@ -469,8 +469,8 @@
       "uri_name": "je8hV81j",
       "poster": "https://www.pwmania.com/wp-content/uploads/2024/09/smackdown-1.jpg",
       "tag": "WWE",
-      "starts_at": "2026-07-04T03:00:00",
-      "ends_at": "2026-07-04T06:50:00",
+      "starts_at": "2026-07-11T03:00:00",
+      "ends_at": "2026-07-11T06:50:00",
       "always_live": 0,
       "max_simulated_viewers": 0,
       "streams": [
