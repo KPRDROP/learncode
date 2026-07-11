@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783802186.079437,
+  "timestamp": 1783809330.2926536,
   "streams": [
     {
       "name": "Norway vs England",
@@ -7,9 +7,9 @@
       "poster": "https://www.thesportsdb.com/images/media/event/thumb/h00wfo1783322757.jpg/medium",
       "tag": "World Cup",
       "starts_at": "2026-07-12T00:00:00",
-      "ends_at": "2026-07-12T02:40:00",
+      "ends_at": "2026-07-12T03:40:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 500,
       "streams": [
         {
           "title": "Main Feed[Eng]",
@@ -32,34 +32,34 @@
           "url": "https://dubai.futbolx.indevs.in/fr/index.m3u8"
         },
         {
-          "title": "Ext. Feed 1",
+          "title": "Ext. Feed 1[Br]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/bra/br2.php"
         },
         {
-          "title": "Ext. Feed 2",
+          "title": "Ext. Feed 2[Esp]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/hd/hd6.php"
         },
         {
-          "title": "Ext. Feed 3",
+          "title": "Ext. Feed 3[Ita]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/hd/hd7.php"
         },
         {
-          "title": "Backup 1",
+          "title": "Backup 1[Eng]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/hd/hd1.php"
         },
         {
-          "title": "Backup 2",
+          "title": "Backup 2[Ind]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://kaizokutv.me/fifa/player.php?id=unite-8"
         },
         {
-          "title": "Backup 3",
-          "quality": "fhd",
-          "url": ""
+          "title": "Backup 3[Eng]",
+          "quality": "4k",
+          "url": "https://embedindia.st/embed/wc/2026-07-11/nor-eng/fox-4k-hevc-en"
         }
       ],
       "_category": "Football"
