@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from collections.abc import KeysView
 import asyncio
 from functools import partial
 from urllib.parse import urljoin, quote
@@ -22,8 +21,10 @@ TAG = "PLAY"
 CACHE_FILE = Cache(TAG, exp=5_400)
 API_FILE = Cache(f"{TAG}-api", exp=28_800)
 
+# Get BASE_URL from environment with better error handling
 BASE_URL = os.environ.get("PLAY_BASE_URL")
 if not BASE_URL:
+    log.error("PLAY_BASE_URL environment variable is not set")
     raise RuntimeError("Missing PLAY_BASE_URL secret")
 
 REFERER = "https://exposestrat.com/"
@@ -118,7 +119,7 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
         api_data = {"timestamp": now.timestamp()}
         
         if r := await network.request(urljoin(BASE_URL, "api-event.php"), log=log):
-            api_data: dict = r.json()
+            api_data = r.json()
             api_data["timestamp"] = now.timestamp()
         
         API_FILE.write(api_data)
@@ -175,7 +176,7 @@ async def scrape(browser: Browser) -> None:
     log.info(f"Loaded {cached_count} event(s) from cache")
     log.info(f'Scraping from "{BASE_URL}"')
     
-    if events := await get_events(cached_urls.keys()):
+    if events := await get_events(list(cached_urls.keys())):
         log.info(f"Processing {len(events)} new URL(s)")
         
         async with network.event_context(browser) as context:
