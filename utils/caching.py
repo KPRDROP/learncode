@@ -19,18 +19,6 @@ class Cache:
 
         return self.now_ts - dt_ts < self.exp
 
-    def write(self, data: dict) -> None:
-        self.file.parent.mkdir(parents=True, exist_ok=True)
-
-        self.file.write_text(
-            json.dumps(
-                data,
-                indent=2,
-                ensure_ascii=False,
-            ),
-            encoding="utf-8",
-        )
-
     def load(
         self,
         per_entry: bool = True,
@@ -54,6 +42,18 @@ class Cache:
         dt_ts = Time.clean(Time.from_ts(ts)).timestamp()
 
         return data if self.is_fresh({"timestamp": dt_ts}) else {}
+
+    def write(self, data: dict) -> None:
+        self.file.parent.mkdir(parents=True, exist_ok=True)
+
+        self.file.write_text(
+            json.dumps(
+                data,
+                indent=2,
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
 
 
 __all__ = ["Cache"]
