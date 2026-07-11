@@ -1,9 +1,9 @@
-name: Play Scraper
+name: Play Updater
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Runs every 15 minutes
-  workflow_dispatch:  # Manual trigger
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -30,18 +30,28 @@ jobs:
           playwright install chromium
           playwright install-deps
       
-      - name: Run scraper
+      - name: Run updater
         run: python play.py
       
-      - name: Commit and push changes
-        if: success()
+      - name: Commit & push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -f play_vlc.m3u8 play_tivimate.m3u8 cache/*.json 2>/dev/null || echo "No files to add"
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update playlists [skip ci]"
-            git push origin HEAD:${GITHUB_REF_NAME}
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+          git add play_vlc.m3u8 play_tivimate.m3u8
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update PLAY playlists"
+
+          if ! git push origin main; then
+            git stash
+            git pull --rebase origin main
+            git stash pop
+            git add play_vlc.m3u8 play_tivimate.m3u8
+            git commit -m "Update PLAY playlists (rebased)" || true
+            git push origin main
           fi
