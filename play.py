@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from collections.abc import KeysView
 import asyncio
 from functools import partial
 from urllib.parse import urljoin, quote
