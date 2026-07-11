@@ -1,9 +1,9 @@
-name: Play Updater
+name: Play Scraper
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+    - cron: '*/15 * * * *'  # Runs every 15 minutes
+  workflow_dispatch:  # Manual trigger
 
 permissions:
   contents: write
@@ -17,8 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-      
+          
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -28,45 +27,21 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install playwright httpx[http2] pytz
-          pip install -r requirements.txt || true
           playwright install chromium
           playwright install-deps
       
-      - name: Verify environment variables
-        run: |
-          if [ -z "$PLAY_BASE_URL" ]; then
-            echo "Error: PLAY_BASE_URL is not set"
-            exit 1
-          fi
-          echo "PLAY_BASE_URL is set"
-        env:
-          PLAY_BASE_URL: ${{ secrets.PLAY_BASE_URL }}
-      
       - name: Run scraper
-        env:
-          PLAY_BASE_URL: ${{ secrets.PLAY_BASE_URL }}
-        run: |
-          python play.py
-      
-      - name: Debug - List files
-        run: |
-          echo "Files in current directory:"
-          ls -la
-          echo "M3U files:"
-          ls -la *.m3u8 2>/dev/null || echo "No M3U files found"
+        run: python play.py
       
       - name: Commit and push changes
         if: success()
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -f play_vlc.m3u8 play_tivimate.m3u8 2>/dev/null || echo "No M3U files to add"
-          git add -f cache/*.json 2>/dev/null || echo "No cache files to add"
+          git add -f play_vlc.m3u8 play_tivimate.m3u8 cache/*.json 2>/dev/null || echo "No files to add"
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Update playlists [skip ci]"
             git push origin HEAD:${GITHUB_REF_NAME}
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
