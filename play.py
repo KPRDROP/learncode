@@ -1,10 +1,11 @@
 from collections.abc import KeysView
 from functools import partial
+from typing import Any
 from urllib.parse import urljoin, quote
 from pathlib import Path
 import os
 
-from playwright.async_api import Browser
+from playwright.async_api import Browser, async_playwright
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
@@ -49,7 +50,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
             params={"id": 1, "schedule": 1},
             log=log,
         ):
-            api_data: dict[str, list[dict[str, str]]] = r.json()
+            api_data: dict[str, list[dict[str, Any]]] = r.json()
 
             api_data["timestamp"] = now.timestamp()
 
@@ -62,8 +63,9 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         "US": "EN",
     }
 
-    start_dt = now.delta(hours=-3)
-    end_dt = now.delta(minutes=30)
+    # Expanded time window to catch more events
+    start_dt = now.delta(hours=-6)
+    end_dt = now.delta(hours=6)
 
     for info in api_data.get("matches", []):
         event_name, sport = info["matchstr"], info["league"]
@@ -81,16 +83,17 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
             for channel in event_channels
         }
 
-        events.extend(
-            Event(
-                sport=sport,
-                name=f"{event_name} | {lang}",
-                link=f"https://s1.playfa.st/ch.php?id={event_num}",
-                timestamp=now.timestamp(),
-            )
-            for event_num, lang in event_urls.items()
-            if f"[{sport}] {event_name} | {lang} ({TAG})" not in cached_keys
-        )
+        for event_num, lang in event_urls.items():
+            event_key = f"[{sport}] {event_name} | {lang} ({TAG})"
+            if event_key not in cached_keys:
+                events.append(
+                    Event(
+                        sport=sport,
+                        name=f"{event_name} | {lang}",
+                        link=f"https://s1.playfa.st/ch.php?id={event_num}",
+                        timestamp=now.timestamp(),
+                    )
+                )
 
     return events
 
@@ -209,5 +212,4 @@ async def main():
 
 if __name__ == "__main__":
     import asyncio
-    from playwright.async_api import async_playwright
     asyncio.run(main())
