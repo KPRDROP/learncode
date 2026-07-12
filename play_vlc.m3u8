@@ -1,61 +1,61 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Indiana Pacers vs Philadelphia 76ers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Indiana Pacers vs Philadelphia 76ers | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Houston Rockets vs Toronto Raptors | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Houston Rockets vs Toronto Raptors | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do3.m3u8?md5=lM-gtj31nLy8XHwT8_r-FA&expires=1783822242
+https://cdn2.zohanayaan.com:1686/hls/do3.m3u8?md5=kEt1Hay13EFYeXlpLCnxMw&expires=1783835764
 
-#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Denver Nuggets vs Minnesota Timberwolves | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Denver Nuggets vs Minnesota Timberwolves | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Los Angeles Lakers vs Dallas Mavericks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Los Angeles Lakers vs Dallas Mavericks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do3.m3u8?md5=lM-gtj31nLy8XHwT8_r-FA&expires=1783822242
+https://cdn1.zohanayaan.com:1686/hls/do4.m3u8?md5=F8ovQbGW8A5AbYi5LvQTMw&expires=1783835766
 
-#EXTINF:-1 tvg-chno="3" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] New York Knicks vs San Antonio Spurs | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] New York Knicks vs San Antonio Spurs | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Max Holloway vs Conor McGregor | CA (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Max Holloway vs Conor McGregor | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do4.m3u8?md5=ja0byN9Ngi1QgYy57ST12w&expires=1783822245
+https://cdn10.zohanayaan.com:1686/hls/do9.m3u8?md5=PYPaTleF11--JnDZDG2yWA&expires=1783835767
 
-#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Atlanta Hawks vs Brooklyn Nets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Atlanta Hawks vs Brooklyn Nets | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Max Holloway vs Conor McGregor | FR (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Max Holloway vs Conor McGregor | FR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do4.m3u8?md5=ja0byN9Ngi1QgYy57ST12w&expires=1783822245
+https://cdn1.zohanayaan.com:1686/hls/do50.m3u8?md5=CA_H6rMpfTnWCcMW9tuB6Q&expires=1783835768
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[CFL] Calgary Stampeders vs Montreal Alouettes | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[CFL] Calgary Stampeders vs Montreal Alouettes | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Max Holloway vs Conor McGregor | PL (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Max Holloway vs Conor McGregor | PL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do8.m3u8?md5=AxI3jPikPHWDUwSXMmu5ig&expires=1783822248
+https://cdn6.zohanayaan.com:1686/hls/do60.m3u8?md5=tWwZO-057h_pCTrU0GG-AQ&expires=1783835769
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[WR Nations Cup] United States vs Zimbabwe | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[WR Nations Cup] United States vs Zimbabwe | NZ (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Max Holloway vs Conor McGregor | DK (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Max Holloway vs Conor McGregor | DK (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do34.m3u8?md5=2QYLscqNUzyHHC1FxbioQA&expires=1783822249
+https://cdn8.zohanayaan.com:1686/hls/do69.m3u8?md5=y-0NW3yX_r2v_Eg-nean3g&expires=1783835770
 
-#EXTINF:-1 tvg-chno="7" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Kai Kamaka III vs Luke Riley | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Kai Kamaka III vs Luke Riley | EN (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Max Holloway vs Conor McGregor | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Max Holloway vs Conor McGregor | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do84.m3u8?md5=XYc4mvuXlcqMzY3Ypd0AzA&expires=1783822250
+https://cdn6.zohanayaan.com:1686/hls/do84.m3u8?md5=1Bhmajw4wH9torFpBr_iIw&expires=1783835771
 
-#EXTINF:-1 tvg-chno="8" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Adrian Yanez vs Cody Garbrandt | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Adrian Yanez vs Cody Garbrandt | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[NRLW] New Zealand Warriors W vs Canberra Raiders W | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRLW] New Zealand Warriors W vs Canberra Raiders W | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do84.m3u8?md5=XYc4mvuXlcqMzY3Ypd0AzA&expires=1783822250
+https://cdn1.zohanayaan.com:1686/hls/do82.m3u8?md5=SER6Mh9SRfa0IfVkDtnACA&expires=1783835772
 
-#EXTINF:-1 tvg-chno="9" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Elisha Ellison vs Gable Steveson | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Elisha Ellison vs Gable Steveson | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[NRLW] Parramatta Eels W vs St. George Illawarra Dragons W | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRLW] Parramatta Eels W vs St. George Illawarra Dragons W | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do84.m3u8?md5=XYc4mvuXlcqMzY3Ypd0AzA&expires=1783822250
+https://cdn1.zohanayaan.com:1686/hls/do82.m3u8?md5=SER6Mh9SRfa0IfVkDtnACA&expires=1783835772
 
-#EXTINF:-1 tvg-chno="10" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Nikita Krylov vs Robert Whittaker | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Nikita Krylov vs Robert Whittaker | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[AFL] West Coast Eagles vs Western Bulldogs | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] West Coast Eagles vs Western Bulldogs | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do84.m3u8?md5=XYc4mvuXlcqMzY3Ypd0AzA&expires=1783822250
+https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=mOEJ4g0GfN_Mgh8AQSJilQ&expires=1783835774
 
