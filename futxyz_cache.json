@@ -1,5 +1,5 @@
 {
-  "timestamp": 1783809330.2926536,
+  "timestamp": 1783819501.9292076,
   "streams": [
     {
       "name": "Norway vs England",
@@ -72,57 +72,57 @@
       "starts_at": "2026-07-12T04:00:00",
       "ends_at": "2026-07-12T06:30:00",
       "always_live": 0,
-      "max_simulated_viewers": 0,
+      "max_simulated_viewers": 400,
       "streams": [
         {
-          "title": "Main Feed",
+          "title": "Tsn",
           "quality": "fhd",
-          "url": ""
+          "url": "https://spain.futbolx.indevs.in/ca/index.m3u8"
         },
         {
-          "title": "Alt Feed 1",
+          "title": "Fox",
           "quality": "fhd",
-          "url": ""
+          "url": "https://spain.futbolx.indevs.in/us/index.m3u8"
         },
         {
-          "title": "Alt Feed 2",
+          "title": "Bein Fr",
           "quality": "fhd",
-          "url": ""
+          "url": "https://spain.futbolx.indevs.in/fr/index.m3u8"
         },
         {
-          "title": "Alt Feed 3",
+          "title": "Bein Ar",
           "quality": "fhd",
-          "url": ""
+          "url": "https://spain.futbolx.indevs.in/ar/index.m3u8"
         },
         {
-          "title": "Ext. Feed 1",
+          "title": "Ext. Feed 1[Esp]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/hd/hd6.php"
         },
         {
-          "title": "Ext. Feed 2",
+          "title": "Ext. Feed 2[Ita]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/hd/hd7.php"
         },
         {
-          "title": "Ext. Feed 3",
+          "title": "Ext. Feed 3[Br]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/bra/br2.php"
         },
         {
-          "title": "Backup 1",
+          "title": "Backup 1[Pt]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/pt/sporttv5.php"
         },
         {
-          "title": "Backup 2",
+          "title": "Backup 2[Eng]",
           "quality": "fhd",
-          "url": ""
+          "url": "https://v4.sportsonlinne.click/channels/hd/hd2.php"
         },
         {
-          "title": "Backup 3",
-          "quality": "fhd",
-          "url": ""
+          "title": "Backup 3[Eng]",
+          "quality": "4k",
+          "url": "https://embedindia.st/embed/wc/2026-07-11/arg-sui/fox-4k-hevc-en"
         }
       ],
       "_category": "Football"
@@ -156,7 +156,7 @@
         {
           "title": "Paramount+",
           "quality": "fhd",
-          "url": "https://dubai.futbolx.indevs.in/ppv-en/index.m3u8"
+          "url": "https://spain.futbolx.indevs.in/fuckoff/index.m3u8"
         }
       ],
       "_category": "Fights"
