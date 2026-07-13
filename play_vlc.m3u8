@@ -1,79 +1,67 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] France vs New Zealand | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] France vs New Zealand | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Toronto Raptors vs Indiana Pacers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Toronto Raptors vs Indiana Pacers | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do8.m3u8?md5=LD-TWSjr3GQVbMePmmf5jA&expires=1783957852
+https://cdn3.zohanayaan.com:1686/hls/do2.m3u8?md5=uUdK4uWZQ7yaOiunP67IpQ&expires=1783966285
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] France vs New Zealand | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] France vs New Zealand | NZ (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Detroit Pistons vs New York Knicks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Detroit Pistons vs New York Knicks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do32.m3u8?md5=wuzpFa0yrdDUY-xH4mHdTQ&expires=1783957854
+https://cdn4.zohanayaan.com:1686/hls/do4.m3u8?md5=DEt1K4cQKql5Dly_1AIHgg&expires=1783966287
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] France vs New Zealand | NL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] France vs New Zealand | NL (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do88.m3u8?md5=6fyQaU1j-sv6kXtXgrSdpQ&expires=1783957855
+https://cdn6.zohanayaan.com:1686/hls/do8.m3u8?md5=wRnjWhC2h7-HsgteRDiD6w&expires=1783966289
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | PT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do8.m3u8?md5=LD-TWSjr3GQVbMePmmf5jA&expires=1783957852
+https://cdn5.zohanayaan.com:1686/hls/do22.m3u8?md5=bgJPcVws5li12JuBRXqCUw&expires=1783966291
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | PT (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | NZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do22.m3u8?md5=VaWwO2LjI7oGU-sferi3Yg&expires=1783957857
+https://cdn2.zohanayaan.com:1686/hls/do32.m3u8?md5=9U5Fb8IewwXnDdsouTd7eg&expires=1783966293
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | NZ (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | NL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | NL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do32.m3u8?md5=wuzpFa0yrdDUY-xH4mHdTQ&expires=1783957854
+https://cdn4.zohanayaan.com:1686/hls/do88.m3u8?md5=sjxRBI8J5NXONmBL6k5E6Q&expires=1783966294
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] South Africa vs England | NL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] South Africa vs England | NL (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] Ireland vs Fiji | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] Ireland vs Fiji | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do88.m3u8?md5=6fyQaU1j-sv6kXtXgrSdpQ&expires=1783957855
+https://cdn1.zohanayaan.com:1686/hls/do31.m3u8?md5=rMj47WpUgK49G2iGnu3lHQ&expires=1783966295
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] Georgia vs Italy | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] Georgia vs Italy | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] Ireland vs Fiji | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] Ireland vs Fiji | NZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do31.m3u8?md5=DX49Tq2x1JVBmmZ_9f5ZYg&expires=1783957860
+https://cdn7.zohanayaan.com:1686/hls/do33.m3u8?md5=dM9lkQ4GzZytgOt68t_X6Q&expires=1783966297
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] Georgia vs Italy | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] Georgia vs Italy | NZ (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[Sweden Allsvenskan] Djurgården vs Halmstad | FI (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Sweden Allsvenskan] Djurgården vs Halmstad | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do33.m3u8?md5=v0zKkY7bITwzHmppnXTdgg&expires=1783957861
+https://cdn5.zohanayaan.com:1686/hls/do73.m3u8?md5=gvM4iT-72JWUZhtRltW9qQ&expires=1783966298
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] Ireland vs Fiji | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] Ireland vs Fiji | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[Sweden Allsvenskan] Djurgården vs Halmstad | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Sweden Allsvenskan] Djurgården vs Halmstad | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do31.m3u8?md5=DX49Tq2x1JVBmmZ_9f5ZYg&expires=1783957860
+https://cdn4.zohanayaan.com:1686/hls/do74.m3u8?md5=m4V4cXOmL9nHKy8o1Gy7-A&expires=1783966299
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[World Rugby U20 Championship] Ireland vs Fiji | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rugby U20 Championship] Ireland vs Fiji | NZ (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Atlanta Hawks vs Boston Celtics | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Atlanta Hawks vs Boston Celtics | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do33.m3u8?md5=v0zKkY7bITwzHmppnXTdgg&expires=1783957861
-
-#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Sweden Allsvenskan] Djurgården vs Halmstad | FI (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Sweden Allsvenskan] Djurgården vs Halmstad | FI (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do73.m3u8?md5=yJGWymylSk5y46uwHSSjcg&expires=1783957864
-
-#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Sweden Allsvenskan] Djurgården vs Halmstad | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Sweden Allsvenskan] Djurgården vs Halmstad | SE (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do74.m3u8?md5=kG9udzx4n8xo4iQXcdoQAw&expires=1783957865
+https://cdn10.zohanayaan.com:1686/hls/do3.m3u8?md5=qVGGaBhr5KHGwZIeBkeZHg&expires=1783966300
 
