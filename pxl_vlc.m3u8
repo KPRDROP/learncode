@@ -47,13 +47,19 @@ https://pixelstream-cdn.b-cdn.net/play/pAVJjXWDXadNqa4ml_eoyKC_Xzx6izbNiZpWlFuGf
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-icy-metadata=1
 https://pixelstream-cdn.b-cdn.net/play/pAVJjXWDXadNqa4ml_eoyKC_Xzx6izbNiZpWlFuGfcrWshvhU5IoaBgOVoego5pt/867.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-logo="https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png" group-title="NBA",[HOME] New York Knicks vs San Antonio Spurs - Jun 13 (8:30 PM) ET
+#EXTINF:-1 tvg-chno="9" tvg-logo="https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nl.png" group-title="MLB",[HOME] American All-Stars vs National All-Stars - Jul 14 (8:00 PM) ET
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko/20100101 Firefox/152.0
+#EXTVLCOPT:http-referrer=https://pixelsport.tv/
+#EXTVLCOPT:http-origin=https://pixelsport.tv
+#EXTVLCOPT:http-icy-metadata=1
+https://pixelstream-cdn.b-cdn.net/play/pAVJjXWDXadNqa4ml_eoyKC_Xzx6izbNiZpWlFuGfcrFzodBmXkg2vLpVA1CPNG4/114.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-logo="https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png" group-title="NBA",[HOME] New York Knicks vs San Antonio Spurs - Jun 13 (8:30 PM) ET
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko/20100101 Firefox/152.0
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-icy-metadata=1
 https://pixelstream-cdn.b-cdn.net/play/pAVJjXWDXadNqa4ml_eoyKC_Xzx6izbNiZpWlFuGfcr4qcsyizslKC6usQ8B18AZ/1097.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-logo="https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png" group-title="NBA",[AWAY] New York Knicks vs San Antonio Spurs - Jun 13 (8:30 PM) ET
+#EXTINF:-1 tvg-chno="11" tvg-logo="https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png" group-title="NBA",[AWAY] New York Knicks vs San Antonio Spurs - Jun 13 (8:30 PM) ET
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko/20100101 Firefox/152.0
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
 #EXTVLCOPT:http-origin=https://pixelsport.tv
