@@ -1,7 +1,13 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[PDC European Tour] European Darts Open | DK (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[PDC European Tour] European Darts Open | DK (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Hapoel Tel Aviv vs Dukla Banská Bystrica | IL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Hapoel Tel Aviv vs Dukla Banská Bystrica | IL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do69.m3u8?md5=eZw-WfnMCoti2-4qXxtKoQ&expires=1784020913
+https://cdn1.zohanayaan.com:1686/hls/do62.m3u8?md5=TIF25lFBPkTkFB3L71rtyQ&expires=1784028349
+
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[PDC European Tour] European Darts Open | DK (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[PDC European Tour] European Darts Open | DK (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/do69.m3u8?md5=g9LcfYH6fHoEvY2wnCRTvw&expires=1784028351
 
