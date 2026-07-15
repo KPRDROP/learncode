@@ -3,29 +3,35 @@
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do23.m3u8?md5=uigzA2dJxPDh0bxt4iqNmg&expires=1784120998
+https://cdn10.zohanayaan.com:1686/hls/do23.m3u8?md5=kjxKY_O4PPlIAFSrvTw69g&expires=1784126605
 
 #EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Rapid Wien vs Panathinaikos | GR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Rapid Wien vs Panathinaikos | GR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do24.m3u8?md5=Dd0CiMt1mvX6Wg69Z4-gtw&expires=1784120999
+https://cdn9.zohanayaan.com:1686/hls/do24.m3u8?md5=CjNG9PnH17p3xA5ubNQdyw&expires=1784126607
 
 #EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] FC Kharkiv vs Jablonec | UA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] FC Kharkiv vs Jablonec | UA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do64.m3u8?md5=BsINbhA8S00CRhP-IJiHYw&expires=1784121001
+https://cdn10.zohanayaan.com:1686/hls/do64.m3u8?md5=UdK8QhE399SIYUlHHz-4qw&expires=1784126609
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Malisheva vs Vllaznia Shkodër | AL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Malisheva vs Vllaznia Shkodër | AL (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Champions League] CSU Craiova vs ML Rogachev | RO (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[Europe UEFA Champions League] CSU Craiova vs ML Rogachev | RO (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do66.m3u8?md5=JBKBdfpHq6HamEhEKZNyfQ&expires=1784121002
+https://cdn1.zohanayaan.com:1686/hls/do65.m3u8?md5=wu4du9R87bSg2NNKh_33Fg&expires=1784126610
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Kazakhstan Cup] Ordabasy vs Altai FC | KZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Kazakhstan Cup] Ordabasy vs Altai FC | KZ (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Malisheva vs Vllaznia Shkodër | AL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Malisheva vs Vllaznia Shkodër | AL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do67.m3u8?md5=NuRAnrX87lo7rnvCO7Xx_g&expires=1784121003
+https://cdn5.zohanayaan.com:1686/hls/do66.m3u8?md5=yJgK5o9P_v0zdiNh6oNQiw&expires=1784126612
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Kazakhstan Cup] Ordabasy vs Altai FC | KZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Kazakhstan Cup] Ordabasy vs Altai FC | KZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do67.m3u8?md5=dT-_-n_JhurL0Kl0Oz8BBA&expires=1784126613
 
