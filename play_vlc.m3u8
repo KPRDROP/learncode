@@ -1,61 +1,103 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Slovan Bratislava vs Paphos | CY (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Slovan Bratislava vs Paphos | CY (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Omonia Nicosia vs Panaitolikos | GR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Omonia Nicosia vs Panaitolikos | GR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do24.m3u8?md5=TCm1xe27vycvqzmYEs_KGg&expires=1784205378
+https://cdn5.zohanayaan.com:1686/hls/do23.m3u8?md5=2dEfMRdDyF_v6cv8QpWE_g&expires=1784210997
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Apollon vs AEK Larnaca | CY (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Apollon vs AEK Larnaca | CY (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Slovan Bratislava vs Paphos | CY (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Slovan Bratislava vs Paphos | CY (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do25.m3u8?md5=2pgS6mJxNoS64A-Yuk5ZPQ&expires=1784205380
+https://cdn9.zohanayaan.com:1686/hls/do24.m3u8?md5=jb-zyqHkLhb9mdP3GfUeTA&expires=1784210999
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Israel Super Cup] Hapoel Be'er Sheva vs Maccabi Tel Aviv | IL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Israel Super Cup] Hapoel Be'er Sheva vs Maccabi Tel Aviv | IL (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Apollon vs AEK Larnaca | CY (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Apollon vs AEK Larnaca | CY (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do58.m3u8?md5=rfG28Od4BQ9CPW_Kp8-9tA&expires=1784205382
+https://cdn4.zohanayaan.com:1686/hls/do25.m3u8?md5=xlM2wJrUj5pinQfpUrppFQ&expires=1784211001
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Rīgas FS vs Glentoran | LT (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Rīgas FS vs Glentoran | LT (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Derry City vs CSKA Sofia | BG (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Derry City vs CSKA Sofia | BG (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do59.m3u8?md5=rrKLg7g226XAqe0Ua0Btrg&expires=1784205383
+https://cdn8.zohanayaan.com:1686/hls/do49.m3u8?md5=s4kBgXtvKHX_OhAavpt1Tw&expires=1784211002
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Yelimay Semey vs Alashkert | AZ (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Yelimay Semey vs Alashkert | AZ (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Israel Super Cup] Hapoel Be'er Sheva vs Maccabi Tel Aviv | IL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Israel Super Cup] Hapoel Be'er Sheva vs Maccabi Tel Aviv | IL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do62.m3u8?md5=AHFiLN0gGxTUxmsZWWM_5A&expires=1784205384
+https://cdn9.zohanayaan.com:1686/hls/do58.m3u8?md5=qjFGILL2U-B2EBn7z_z2vA&expires=1784211003
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Metalist 1925 Kharkiv vs Hradec Králové | UA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Metalist 1925 Kharkiv vs Hradec Králové | UA (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Rīgas FS vs Glentoran | LT (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Rīgas FS vs Glentoran | LT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do66.m3u8?md5=FdteWVpglk-FPVPu6Xqj_A&expires=1784205386
+https://cdn3.zohanayaan.com:1686/hls/do59.m3u8?md5=YiCvRnicS4y4_432GWNF_A&expires=1784211004
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Astana vs Dinamo City | AL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Astana vs Dinamo City | AL (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[Poland Polish Super Cup] Lech Poznań vs Górnik Zabrze | PL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Poland Polish Super Cup] Lech Poznań vs Górnik Zabrze | PL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do68.m3u8?md5=vsAaIygCsrec7vve1TqzBQ&expires=1784205387
+https://cdn1.zohanayaan.com:1686/hls/do60.m3u8?md5=v_AVyuddus9HhsoB0Y74XA&expires=1784211006
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Inter Turku vs Sarajevo | BH (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Inter Turku vs Sarajevo | BH (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Ballkani vs Connah's Quay | AL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Ballkani vs Connah's Quay | AL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do69.m3u8?md5=pgDZH1z8WdvQXCTxLkTGSw&expires=1784205388
+https://cdn4.zohanayaan.com:1686/hls/do61.m3u8?md5=grGug2fzxC-WT3DAxnhwzQ&expires=1784211007
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[NRL] Brisbane Broncos vs Penrith Panthers | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Brisbane Broncos vs Penrith Panthers | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Yelimay Semey vs Alashkert | AZ (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Yelimay Semey vs Alashkert | AZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do82.m3u8?md5=ARbHfACkAgc0XL6BjymJNA&expires=1784205389
+https://cdn6.zohanayaan.com:1686/hls/do62.m3u8?md5=SoXqZCD8DWScVsqTJcGMaQ&expires=1784211008
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[AFL] St. Kilda Saints vs Geelong Cats | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] St. Kilda Saints vs Geelong Cats | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Škendija 79 vs Europa | SK (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Škendija 79 vs Europa | SK (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=Tc7WxN5WceXiyGNVfyWAMQ&expires=1784205391
+https://cdn6.zohanayaan.com:1686/hls/do62.m3u8?md5=SoXqZCD8DWScVsqTJcGMaQ&expires=1784211008
+
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Universitatea Cluj vs Dynamo Kyiv | RO (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Universitatea Cluj vs Dynamo Kyiv | RO (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do65.m3u8?md5=WqZkf6lsWLMfLldbqzdRXg&expires=1784211010
+
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Metalist 1925 Kharkiv vs Hradec Králové | UA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Metalist 1925 Kharkiv vs Hradec Králové | UA (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do66.m3u8?md5=7jLZWqW-w-yVGyxJiSAIvQ&expires=1784211011
+
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Astana vs Dinamo City | AL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Astana vs Dinamo City | AL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do68.m3u8?md5=4WJQry7rkXFTi6n-y73zRw&expires=1784211013
+
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Inter Turku vs Sarajevo | BH (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Inter Turku vs Sarajevo | BH (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/do69.m3u8?md5=4oT6rgHoSKh1BeDYkMR0IA&expires=1784211014
+
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Milsami vs Velež | BH (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Milsami vs Velež | BH (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/do69.m3u8?md5=4oT6rgHoSKh1BeDYkMR0IA&expires=1784211014
+
+#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Aluminij vs Sheriff | HR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Aluminij vs Sheriff | HR (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do70.m3u8?md5=VXpUQi-V20H5VF_LkzMnXA&expires=1784211016
+
+#EXTINF:-1 tvg-chno="17" tvg-id="Live.Event.us" tvg-name="[AFL] St. Kilda Saints vs Geelong Cats | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] St. Kilda Saints vs Geelong Cats | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/do83.m3u8?md5=fe2NQnR02mRMg110LwyJyA&expires=1784211017
 
