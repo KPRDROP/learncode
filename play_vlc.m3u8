@@ -1,61 +1,91 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Portland Trail Blazers vs Denver Nuggets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Portland Trail Blazers vs Denver Nuggets | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Belgian Grand Prix | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Belgian Grand Prix | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do1.m3u8?md5=ZnsX0GJNr9NWCgj4kekE6Q&expires=1784269536
+https://cdn6.zohanayaan.com:1686/hls/do7.m3u8?md5=HErxjRti3FqX1eJcafjhjQ&expires=1784277443
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tijuana vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tijuana vs Tigres UANL | ES (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Belgian Grand Prix | DE (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Belgian Grand Prix | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do30.m3u8?md5=BvnZveoITQXL8qBKdtCPOQ&expires=1784269537
+https://cdn7.zohanayaan.com:1686/hls/do12.m3u8?md5=lop3nXt0FiTAaqHiA5bJPg&expires=1784277445
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] Seattle Sounders FC vs Portland Timbers | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] Seattle Sounders FC vs Portland Timbers | CA (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Belgian Grand Prix | ES (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Belgian Grand Prix | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do35.m3u8?md5=bxhNk3eJ0StcPYcOU4Yd_w&expires=1784269539
+https://cdn3.zohanayaan.com:1686/hls/do30.m3u8?md5=zbwbfBPZSt1g64OMa5_Mfw&expires=1784277447
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Estonia | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Estonia | SE (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Belgian Grand Prix | IT (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Belgian Grand Prix | IT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do78.m3u8?md5=hDUAEPLzhAcekRcOugAzKQ&expires=1784269540
+https://cdn10.zohanayaan.com:1686/hls/do47.m3u8?md5=lWlJjNP2IHOWqa9PNRsR6A&expires=1784277448
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Estonia | FI (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Estonia | FI (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Belgian Grand Prix | FR (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Belgian Grand Prix | FR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do79.m3u8?md5=7BCh8C7jF_-gRPmI0_MoIw&expires=1784269541
+https://cdn6.zohanayaan.com:1686/hls/do55.m3u8?md5=rDjbT7H6viqdBnjeNuyoVw&expires=1784277449
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[AFL] Adelaide Crows vs Sydney Swans | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Adelaide Crows vs Sydney Swans | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Belgian Grand Prix | SE (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Belgian Grand Prix | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do82.m3u8?md5=G6yH_150nFaQhw0VUQww7w&expires=1784269542
+https://cdn6.zohanayaan.com:1686/hls/do77.m3u8?md5=FrM8MMmILEiJ9wKQ1JxeIA&expires=1784277451
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[NRL] Newcastle Knights vs Cronulla Sharks | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Newcastle Knights vs Cronulla Sharks | EN (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Estonia | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Estonia | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=F1wPU_T_zr8_p4lC-8oZOQ&expires=1784269543
+https://cdn7.zohanayaan.com:1686/hls/do78.m3u8?md5=DphOX_d8rUYou5rV6_dsmA&expires=1784277452
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[NRL] Melbourne Storm vs Sydney Roosters | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Melbourne Storm vs Sydney Roosters | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Estonia | FI (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Estonia | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=F1wPU_T_zr8_p4lC-8oZOQ&expires=1784269543
+https://cdn5.zohanayaan.com:1686/hls/do79.m3u8?md5=RfJHTanbE-C9jC5Hbdd-Pg&expires=1784277453
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Juárez vs Puebla | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Juárez vs Puebla | ES (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[AFL] Adelaide Crows vs Sydney Swans | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Adelaide Crows vs Sydney Swans | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do28.m3u8?md5=_x9Ft3hO2EW7uBJAE9uwLw&expires=1784269547
+https://cdn6.zohanayaan.com:1686/hls/do82.m3u8?md5=H4vUYxl_1glYzQBFppJWRA&expires=1784277454
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] LA Galaxy vs Los Angeles FC | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] LA Galaxy vs Los Angeles FC | ES (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[NRL] Newcastle Knights vs Cronulla Sharks | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Newcastle Knights vs Cronulla Sharks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do87.m3u8?md5=mpsh6QeQhFFHcSobFlOE7Q&expires=1784269548
+https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=qnGE444JBlTJvSYWBih2Gg&expires=1784277455
+
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[NRL] Melbourne Storm vs Sydney Roosters | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Melbourne Storm vs Sydney Roosters | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=qnGE444JBlTJvSYWBih2Gg&expires=1784277455
+
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Groningen vs AEK Athens | GR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Groningen vs AEK Athens | GR (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/do24.m3u8?md5=r3JXZgvBTnp0IJcmr17ujQ&expires=1784277457
+
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Norway Eliteserien] HamKam vs Tromsø | NO (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Norway Eliteserien] HamKam vs Tromsø | NO (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do67.m3u8?md5=69k9vRGTmHCLwvwkBf1o_w&expires=1784277459
+
+#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Twente vs Gent | IL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Twente vs Gent | IL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/do69.m3u8?md5=blPBmhgqpbZ6cIXjc6bXlQ&expires=1784277460
+
+#EXTINF:-1 tvg-chno="15" tvg-id="Live.Event.us" tvg-name="[Finland Veikkausliiga] HJK vs VPS | FI (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Finland Veikkausliiga] HJK vs VPS | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do78.m3u8?md5=DphOX_d8rUYou5rV6_dsmA&expires=1784277452
 
