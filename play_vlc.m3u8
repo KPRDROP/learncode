@@ -1,109 +1,61 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Memphis Grizzlies vs Atlanta Hawks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Memphis Grizzlies vs Atlanta Hawks | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Portland Trail Blazers vs Denver Nuggets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Portland Trail Blazers vs Denver Nuggets | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do1.m3u8?md5=BCoOqgj4w86EFoB9IzD49g&expires=1784257904
+https://cdn9.zohanayaan.com:1686/hls/do1.m3u8?md5=ZnsX0GJNr9NWCgj4kekE6Q&expires=1784269536
 
-#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Portland Trail Blazers vs Denver Nuggets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Portland Trail Blazers vs Denver Nuggets | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tijuana vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tijuana vs Tigres UANL | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do1.m3u8?md5=BCoOqgj4w86EFoB9IzD49g&expires=1784257904
+https://cdn7.zohanayaan.com:1686/hls/do30.m3u8?md5=BvnZveoITQXL8qBKdtCPOQ&expires=1784269537
 
-#EXTINF:-1 tvg-chno="3" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Golden State Warriors vs New York Knicks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Golden State Warriors vs New York Knicks | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] Seattle Sounders FC vs Portland Timbers | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] Seattle Sounders FC vs Portland Timbers | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do2.m3u8?md5=EFcmXC4AhoeoapXIDxt7lw&expires=1784257907
+https://cdn1.zohanayaan.com:1686/hls/do35.m3u8?md5=bxhNk3eJ0StcPYcOU4Yd_w&expires=1784269539
 
-#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Toronto Raptors vs Miami Heat | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Toronto Raptors vs Miami Heat | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Estonia | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Estonia | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do2.m3u8?md5=EFcmXC4AhoeoapXIDxt7lw&expires=1784257907
+https://cdn2.zohanayaan.com:1686/hls/do78.m3u8?md5=hDUAEPLzhAcekRcOugAzKQ&expires=1784269540
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Argentina Copa Argentina] Sarmiento vs Boca Juniors | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Copa Argentina] Sarmiento vs Boca Juniors | PT (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Estonia | FI (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Estonia | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do21.m3u8?md5=jUgWJo6c6PZxJKGJXIX6nA&expires=1784257909
+https://cdn6.zohanayaan.com:1686/hls/do79.m3u8?md5=7BCh8C7jF_-gRPmI0_MoIw&expires=1784269541
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Argentina Copa Argentina] Sarmiento vs Boca Juniors | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Copa Argentina] Sarmiento vs Boca Juniors | ES (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[AFL] Adelaide Crows vs Sydney Swans | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Adelaide Crows vs Sydney Swans | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do27.m3u8?md5=3zzJIgBx2Ty5PAA37hplNg&expires=1784257910
+https://cdn2.zohanayaan.com:1686/hls/do82.m3u8?md5=G6yH_150nFaQhw0VUQww7w&expires=1784269542
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tijuana vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tijuana vs Tigres UANL | ES (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[NRL] Newcastle Knights vs Cronulla Sharks | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Newcastle Knights vs Cronulla Sharks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do30.m3u8?md5=8H_XuIUU7D140hcHXxNsPQ&expires=1784257911
+https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=F1wPU_T_zr8_p4lC-8oZOQ&expires=1784269543
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] Chicago Fire vs Vancouver Whitecaps | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] Chicago Fire vs Vancouver Whitecaps | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[NRL] Melbourne Storm vs Sydney Roosters | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Melbourne Storm vs Sydney Roosters | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do32.m3u8?md5=SmeQHLQ68tvoi44Pg2gaQw&expires=1784257912
+https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=F1wPU_T_zr8_p4lC-8oZOQ&expires=1784269543
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] St. Louis City vs Sporting KC | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] St. Louis City vs Sporting KC | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Juárez vs Puebla | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Juárez vs Puebla | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do34.m3u8?md5=SoL6Q_U9IuUd2CcYpUfkeg&expires=1784257913
+https://cdn6.zohanayaan.com:1686/hls/do28.m3u8?md5=_x9Ft3hO2EW7uBJAE9uwLw&expires=1784269547
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] CF Montréal vs Toronto FC | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] CF Montréal vs Toronto FC | CA (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] LA Galaxy vs Los Angeles FC | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] LA Galaxy vs Los Angeles FC | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do35.m3u8?md5=9EoO9F5grUn_LYjMV6ZGlw&expires=1784257914
-
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] Seattle Sounders FC vs Portland Timbers | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] Seattle Sounders FC vs Portland Timbers | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do35.m3u8?md5=9EoO9F5grUn_LYjMV6ZGlw&expires=1784257914
-
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Necaxa vs Atlante | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Necaxa vs Atlante | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do87.m3u8?md5=fDyi1IhyhGQQbzD8OC3f4Q&expires=1784257916
-
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Atlético San Luis vs Cruz Azul | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Atlético San Luis vs Cruz Azul | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do26.m3u8?md5=OXKorpjqypNoAkjlftJkPg&expires=1784257918
-
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Juárez vs Puebla | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Juárez vs Puebla | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do28.m3u8?md5=OoIbsPkt7R8Y2VXveJ2wDA&expires=1784257920
-
-#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] León vs Atlas | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] León vs Atlas | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do30.m3u8?md5=8H_XuIUU7D140hcHXxNsPQ&expires=1784257911
-
-#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[Peru Primera Division] Cienciano vs Melgar | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Peru Primera Division] Cienciano vs Melgar | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do84.m3u8?md5=-JdghyOhgfgz3HJB0tCTjQ&expires=1784257922
-
-#EXTINF:-1 tvg-chno="17" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] Nashville SC vs Atlanta United | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] Nashville SC vs Atlanta United | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do87.m3u8?md5=fDyi1IhyhGQQbzD8OC3f4Q&expires=1784257916
-
-#EXTINF:-1 tvg-chno="18" tvg-id="Live.Event.us" tvg-name="[USA/Canada Major League Soccer] LA Galaxy vs Los Angeles FC | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[USA/Canada Major League Soccer] LA Galaxy vs Los Angeles FC | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do87.m3u8?md5=fDyi1IhyhGQQbzD8OC3f4Q&expires=1784257916
+https://cdn3.zohanayaan.com:1686/hls/do87.m3u8?md5=mpsh6QeQhFFHcSobFlOE7Q&expires=1784269548
 
