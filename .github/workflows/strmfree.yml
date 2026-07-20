@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          playwright install
           pip install playwright httpx[http2] pytz
 
       - name: Run playlist builder
