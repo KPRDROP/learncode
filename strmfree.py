@@ -2,6 +2,7 @@ import asyncio
 import os
 import urllib.parse
 import re
+import json
 from functools import partial
 from urllib.parse import urljoin
 
@@ -224,143 +225,201 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     log.info(f"Total new events found: {len(events)}")
     return events
 
-async def capture_m3u8_from_embed(page, embed_url: str, timeout: int = 30) -> str | None:
+async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: str, timeout: int = 30) -> str | None:
     """
-    Navigate to embed page, click play, and capture M3U8 from network or DOM.
+    Capture M3U8 URL by following the player's flow:
+    1. Load the embed page
+    2. Extract the nonce from the page
+    3. Get the stream key from the API
+    4. Construct the M3U8 URL with token parameters
     """
-    log.debug(f"Capturing M3U8 from: {embed_url}")
+    log.debug(f"Capturing M3U8 for stream_key: {stream_key}")
     
     try:
-        # Navigate to the embed URL
-        await page.goto(embed_url, timeout=15000, wait_until="domcontentloaded")
-        
-        # Wait for page to stabilize
-        await page.wait_for_timeout(3000)
-        
-        # Try to find and click the play button
-        play_clicked = False
-        
-        # Method 1: Try specific selectors for the play button
-        play_selectors = [
-            'button[aria-label*="play" i]',
-            'button[aria-label*="Play"]',
-            '.vjs-big-play-button',
-            '.play-button',
-            'button:has-text("Play")',
-            'button:has-text("▶")',
-            '[role="button"]:has-text("Play")',
-            '.btn-play',
-            '#play-button',
-            'button.play-btn',
-            '.player-button-play',
-            'video'
-        ]
-        
-        for selector in play_selectors:
-            try:
-                play_button = await page.query_selector(selector)
-                if play_button:
-                    await play_button.click()
-                    log.debug(f"Clicked play button with selector: {selector}")
-                    play_clicked = True
-                    await page.wait_for_timeout(2000)
-                    break
-            except Exception:
-                continue
-        
-        # Method 2: If no play button found, try clicking the video element
-        if not play_clicked:
-            try:
-                video = await page.query_selector('video')
-                if video:
-                    await video.click()
-                    log.debug("Clicked video element")
-                    play_clicked = True
-                    await page.wait_for_timeout(2000)
-            except Exception:
-                pass
-        
-        # Method 3: Try clicking on the page body as fallback
-        if not play_clicked:
-            try:
-                await page.click('body')
-                log.debug("Clicked body as fallback")
-                await page.wait_for_timeout(2000)
-            except Exception:
-                pass
-        
-        # Now wait for the M3U8 to appear
-        # Method A: Check page source for M3U8 URL
-        log.debug("Checking page source for M3U8 URL...")
-        html = await page.content()
-        
-        # Look for m3u8 patterns in the page source
-        patterns = [
-            r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)',
-            r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
-            r'"(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
-            r'file:\s*"([^"]+\.m3u8[^"]*)"',
-            r'source:\s*"([^"]+\.m3u8[^"]*)"',
-            r'video:\s*"([^"]+\.m3u8[^"]*)"',
-        ]
-        
-        for pattern in patterns:
-            match = re.search(pattern, html)
-            if match:
-                m3u8_url = match.group(1)
-                log.debug(f"Found M3U8 in page source: {m3u8_url}")
-                return m3u8_url
-        
-        # Method B: Wait for network requests (using page.on method)
-        # We'll check for any requests containing .m3u8
-        log.debug("Checking network requests for M3U8...")
-        
-        # Create a promise to capture the first m3u8 request
-        m3u8_future = asyncio.Future()
-        
-        def on_request(request):
-            url = request.url
-            if "streamfree.top/live-cdn" in url and ".m3u8" in url:
-                if not m3u8_future.done():
-                    m3u8_future.set_result(url)
-                    log.debug(f"Captured M3U8 from network: {url}")
-        
-        page.on("request", on_request)
-        
-        # Wait for up to timeout seconds for the m3u8
-        try:
-            m3u8_url = await asyncio.wait_for(m3u8_future, timeout=timeout)
-            return m3u8_url
-        except asyncio.TimeoutError:
-            log.debug("No M3U8 found in network requests")
-        finally:
-            page.remove_listener("request", on_request)
-        
-        # Method C: Try to get from iframe src if there's an iframe
-        log.debug("Checking iframe sources...")
-        iframes = await page.query_selector_all('iframe')
-        for iframe in iframes:
-            src = await iframe.get_attribute('src')
-            if src and ".m3u8" in src:
-                log.debug(f"Found M3U8 in iframe src: {src}")
-                return src
-            # Try to get content from iframe
-            try:
-                frame = await iframe.content_frame()
-                if frame:
-                    frame_html = await frame.content()
-                    for pattern in patterns:
-                        match = re.search(pattern, frame_html)
-                        if match:
-                            m3u8_url = match.group(1)
-                            log.debug(f"Found M3U8 in iframe content: {m3u8_url}")
-                            return m3u8_url
-            except Exception:
-                continue
-        
-        log.warning(f"No M3U8 captured from {embed_url}")
-        return None
-        
+        # Step 1: Load the embed page to get the nonce
+        async with network.event_context(browser) as context:
+            async with network.event_page(context) as page:
+                # Navigate to the embed URL
+                log.debug(f"Loading embed page: {embed_url}")
+                await page.goto(embed_url, timeout=15000, wait_until="domcontentloaded")
+                
+                # Wait for page to load
+                await page.wait_for_timeout(3000)
+                
+                # Step 2: Extract the nonce from the page
+                # The nonce is in the JavaScript: const NONCE = 'xxxxx';
+                nonce = await page.evaluate('''
+                    () => {
+                        const script = document.querySelector('script');
+                        const match = script.textContent.match(/const NONCE = ['"]([^'"]+)['"]/);
+                        return match ? match[1] : null;
+                    }
+                ''')
+                
+                if not nonce:
+                    log.warning("Could not extract nonce from page")
+                    # Try to get from page source as fallback
+                    html = await page.content()
+                    match = re.search(r"const NONCE = ['\"]([^'\"]+)['\"]", html)
+                    if match:
+                        nonce = match.group(1)
+                
+                if not nonce:
+                    log.warning("Could not extract nonce, using default")
+                    # Generate a random nonce as fallback (the player uses this format)
+                    import random
+                    import string
+                    nonce = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
+                
+                log.debug(f"Extracted NONCE: {nonce}")
+                
+                # Step 3: Get the stream key data from the API
+                # The player calls: /get-stream-key/{stream_key}
+                stream_key_url = f"{BASE_URL}/get-stream-key/{stream_key}"
+                log.debug(f"Fetching stream key data: {stream_key_url}")
+                
+                if r := await network.request(
+                    stream_key_url,
+                    log=log,
+                    headers={
+                        "Referer": embed_url,
+                        "Origin": ORIGIN,
+                        "User-Agent": USER_AGENT
+                    }
+                ):
+                    try:
+                        stream_data = r.json()
+                        server_name = stream_data.get("server_name", "origin")
+                        is_external = stream_data.get("is_external", False)
+                        external_url = stream_data.get("external_url", "")
+                        
+                        # Step 4: Construct the M3U8 URL
+                        # Based on the player code:
+                        # let url = serverName !== 'origin'
+                        #     ? `/live-cdn/{stream_key}{quality}/index.m3u8`
+                        #     : `/live/{stream_key}{quality}/index.m3u8`;
+                        
+                        # Use 720p as default quality
+                        quality_suffix = "720p"
+                        
+                        # Determine if using CDN or origin
+                        if server_name != "origin":
+                            m3u8_path = f"/live-cdn/{stream_key}{quality_suffix}/index.m3u8"
+                        else:
+                            m3u8_path = f"/live/{stream_key}{quality_suffix}/index.m3u8"
+                        
+                        # Add token parameters using the nonce and timestamp
+                        # The player uses: _t, _e, _n where _n is the nonce
+                        # _e is expiration timestamp, _t is token
+                        # For the token, we need to get it from the stream data or generate
+                        
+                        # Try to get token from stream data first
+                        token = stream_data.get("token")
+                        expiration = stream_data.get("expiration")
+                        
+                        if not token or not expiration:
+                            # If not in stream data, try to get from the player's _0x object
+                            # The player has: _0x = {"720p": {"_e": ..., "_n": ..., "_t": ...}}
+                            # We can try to extract this from the page
+                            token_data = await page.evaluate(f'''
+                                () => {{
+                                    // Try to get the _0x object from the page
+                                    if (typeof _0x !== 'undefined' && _0x['720p']) {{
+                                        return _0x['720p'];
+                                    }}
+                                    return null;
+                                }}
+                            ''')
+                            
+                            if token_data:
+                                token = token_data.get('_t')
+                                expiration = token_data.get('_e')
+                                if not nonce:
+                                    nonce = token_data.get('_n')
+                        
+                        # Construct the full M3U8 URL
+                        if token and expiration and nonce:
+                            m3u8_url = f"{BASE_URL}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
+                        else:
+                            # Fallback: use the path without tokens (may not work)
+                            m3u8_url = f"{BASE_URL}{m3u8_path}"
+                            log.warning(f"Using M3U8 URL without tokens: {m3u8_url}")
+                        
+                        log.debug(f"Constructed M3U8 URL: {m3u8_url}")
+                        
+                        # Validate the URL by checking if it's accessible
+                        if r := await network.request(
+                            m3u8_url,
+                            log=log,
+                            headers={
+                                "Referer": embed_url,
+                                "Origin": ORIGIN,
+                                "User-Agent": USER_AGENT
+                            }
+                        ):
+                            if r.status == 200:
+                                log.info(f" Successfully captured M3U8 for {stream_key}")
+                                return m3u8_url
+                            else:
+                                log.warning(f"M3U8 URL returned status {r.status}: {m3u8_url}")
+                        
+                        return m3u8_url
+                        
+                    except Exception as e:
+                        log.error(f"Error processing stream data: {e}")
+                
+                # Step 5: Fallback - try to extract M3U8 from page source
+                log.debug("Attempting fallback: extracting M3U8 from page source")
+                html = await page.content()
+                
+                # Look for m3u8 patterns in the page source
+                patterns = [
+                    r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)',
+                    r'(https://streamfree\.top/live/[^"\s]+\.m3u8[^"\s]*)',
+                    r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
+                    r'"(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
+                ]
+                
+                for pattern in patterns:
+                    match = re.search(pattern, html)
+                    if match:
+                        m3u8_url = match.group(1)
+                        log.debug(f"Found M3U8 in page source: {m3u8_url}")
+                        return m3u8_url
+                
+                # Step 6: Try network request interception
+                log.debug("Attempting fallback: network request interception")
+                m3u8_future = asyncio.Future()
+                
+                def on_request(request):
+                    url = request.url
+                    if "streamfree.top" in url and ".m3u8" in url:
+                        if not m3u8_future.done():
+                            m3u8_future.set_result(url)
+                            log.debug(f"Captured M3U8 from network: {url}")
+                
+                page.on("request", on_request)
+                
+                # Click play button to trigger the request
+                try:
+                    play_button = await page.query_selector('button[aria-label*="play" i], .vjs-big-play-button, video')
+                    if play_button:
+                        await play_button.click()
+                        log.debug("Clicked play button")
+                except Exception:
+                    pass
+                
+                try:
+                    m3u8_url = await asyncio.wait_for(m3u8_future, timeout=timeout)
+                    return m3u8_url
+                except asyncio.TimeoutError:
+                    log.debug("No M3U8 found in network requests")
+                finally:
+                    page.remove_listener("request", on_request)
+                
+                log.warning(f"No M3U8 captured for {stream_key}")
+                return None
+                
     except Exception as e:
         log.error(f"Error capturing M3U8: {e}")
         return None
@@ -381,49 +440,57 @@ async def scrape(browser: Browser) -> None:
     if events := await get_events(list(cached_urls.keys())):
         log.info(f"Processing {len(events)} new URL(s)")
         
-        async with network.event_context(browser) as context:
-            for i, ev in enumerate(events, start=1):
-                async with network.event_page(context) as page:
-                    log.info(f"Processing event {i}/{len(events)}: {ev['sport']} - {ev['event']}")
-                    
-                    # Get the embed URL
-                    embed_url = ev["link"]
-                    log.debug(f"Embed URL: {embed_url}")
-                    
-                    # Capture M3U8 from the embed page
-                    m3u8_url = await capture_m3u8_from_embed(page, embed_url)
-                    
-                    if m3u8_url:
-                        sport, event, ts = (
-                            ev["sport"],
-                            ev["event"],
-                            ev["timestamp"],
-                        )
-                        
-                        key = f"[{sport}] {event} ({TAG})"
-                        
-                        tvg_id, logo = leagues.get_tvg_info(sport, event)
-                        
-                        # Use logo from API if available
-                        final_logo = ev.get("logo", logo) if ev.get("logo") else logo
-                        final_id = tvg_id or f"{ev.get('category', 'sport')}.{ev.get('stream_key', 'event')}"
-                        
-                        # Keep the full URL with token
-                        full_url = m3u8_url
-                        
-                        entry = {
-                            "url": full_url,  # Store the full URL with token
-                            "logo": final_logo,
-                            "base": REFERER,
-                            "timestamp": ts,
-                            "id": final_id,
-                            "link": embed_url,  # Store the original embed URL for referer
-                        }
-                        
-                        urls[key] = cached_urls[key] = entry
-                        log.info(f"Successfully added URL for: {key}")
-                    else:
-                        log.warning(f"Failed to get URL for event: {ev['sport']} - {ev['event']}")
+        for i, ev in enumerate(events, start=1):
+            log.info(f"Processing event {i}/{len(events)}: {ev['sport']} - {ev['event']}")
+            
+            # Get the embed URL and stream key
+            embed_url = ev["link"]
+            stream_key = ev.get("stream_key", "")
+            
+            if not stream_key:
+                log.warning(f"No stream_key for event: {ev['event']}")
+                continue
+            
+            log.debug(f"Stream key: {stream_key}")
+            log.debug(f"Embed URL: {embed_url}")
+            
+            # Capture M3U8 using the stream key
+            m3u8_url = await capture_m3u8_from_embed(browser, stream_key, embed_url)
+            
+            if m3u8_url:
+                sport, event, ts = (
+                    ev["sport"],
+                    ev["event"],
+                    ev["timestamp"],
+                )
+                
+                key = f"[{sport}] {event} ({TAG})"
+                
+                tvg_id, logo = leagues.get_tvg_info(sport, event)
+                
+                # Use logo from API if available
+                final_logo = ev.get("logo", logo) if ev.get("logo") else logo
+                final_id = tvg_id or f"{ev.get('category', 'sport')}.{ev.get('stream_key', 'event')}"
+                
+                # Keep the full URL with token
+                full_url = m3u8_url
+                
+                entry = {
+                    "url": full_url,  # Store the full URL with token
+                    "logo": final_logo,
+                    "base": REFERER,
+                    "timestamp": ts,
+                    "id": final_id,
+                    "link": embed_url,  # Store the original embed URL for referer
+                }
+                
+                urls[key] = cached_urls[key] = entry
+                log.info(f"Successfully added URL for: {key}")
+            else:
+                log.warning(f"Failed to get URL for event: {ev['sport']} - {ev['event']}")
+            
+            # Small delay between requests
+            await asyncio.sleep(1)
         
         log.info(f"Collected and cached {len(cached_urls) - cached_count} new event(s)")
     
