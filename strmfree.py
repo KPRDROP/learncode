@@ -146,7 +146,7 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     
     # Fetch streams from each category
     for category in categories:
-        api_url = f"{BASE_URL}/api/v1/streams?category={category}"
+        api_url = f"{BASE_REFERER}/api/v1/streams?category={category}"
         log.info(f"Fetching from API: {api_url}")
         
         if r := await network.request(
@@ -273,7 +273,7 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                 
                 # Step 3: Get the stream key data from the API
                 # The player calls: /get-stream-key/{stream_key}
-                stream_key_url = f"{BASE_URL}/get-stream-key/{stream_key}"
+                stream_key_url = f"{BASE_REFERER}/get-stream-key/{stream_key}"
                 log.debug(f"Fetching stream key data: {stream_key_url}")
                 
                 if r := await network.request(
@@ -340,7 +340,7 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                             nonce = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
                         
                         # Construct the full M3U8 URL
-                        m3u8_url = f"{BASE_URL}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
+                        m3u8_url = f"{BASE_REFERER}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
                         
                         log.debug(f"Constructed M3U8 URL: {m3u8_url}")
                         
