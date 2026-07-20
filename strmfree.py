@@ -1,6 +1,7 @@
 import asyncio
 import os
 import urllib.parse
+import re
 from functools import partial
 from urllib.parse import urljoin
 
@@ -223,6 +224,147 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     log.info(f"Total new events found: {len(events)}")
     return events
 
+async def capture_m3u8_from_embed(page, embed_url: str, timeout: int = 30) -> str | None:
+    """
+    Navigate to embed page, click play, and capture M3U8 from network or DOM.
+    """
+    log.debug(f"Capturing M3U8 from: {embed_url}")
+    
+    try:
+        # Navigate to the embed URL
+        await page.goto(embed_url, timeout=15000, wait_until="domcontentloaded")
+        
+        # Wait for page to stabilize
+        await page.wait_for_timeout(3000)
+        
+        # Try to find and click the play button
+        play_clicked = False
+        
+        # Method 1: Try specific selectors for the play button
+        play_selectors = [
+            'button[aria-label*="play" i]',
+            'button[aria-label*="Play"]',
+            '.vjs-big-play-button',
+            '.play-button',
+            'button:has-text("Play")',
+            'button:has-text("▶")',
+            '[role="button"]:has-text("Play")',
+            '.btn-play',
+            '#play-button',
+            'button.play-btn',
+            '.player-button-play',
+            'video'
+        ]
+        
+        for selector in play_selectors:
+            try:
+                play_button = await page.query_selector(selector)
+                if play_button:
+                    await play_button.click()
+                    log.debug(f"Clicked play button with selector: {selector}")
+                    play_clicked = True
+                    await page.wait_for_timeout(2000)
+                    break
+            except Exception:
+                continue
+        
+        # Method 2: If no play button found, try clicking the video element
+        if not play_clicked:
+            try:
+                video = await page.query_selector('video')
+                if video:
+                    await video.click()
+                    log.debug("Clicked video element")
+                    play_clicked = True
+                    await page.wait_for_timeout(2000)
+            except Exception:
+                pass
+        
+        # Method 3: Try clicking on the page body as fallback
+        if not play_clicked:
+            try:
+                await page.click('body')
+                log.debug("Clicked body as fallback")
+                await page.wait_for_timeout(2000)
+            except Exception:
+                pass
+        
+        # Now wait for the M3U8 to appear
+        # Method A: Check page source for M3U8 URL
+        log.debug("Checking page source for M3U8 URL...")
+        html = await page.content()
+        
+        # Look for m3u8 patterns in the page source
+        patterns = [
+            r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)',
+            r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
+            r'"(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
+            r'file:\s*"([^"]+\.m3u8[^"]*)"',
+            r'source:\s*"([^"]+\.m3u8[^"]*)"',
+            r'video:\s*"([^"]+\.m3u8[^"]*)"',
+        ]
+        
+        for pattern in patterns:
+            match = re.search(pattern, html)
+            if match:
+                m3u8_url = match.group(1)
+                log.debug(f"Found M3U8 in page source: {m3u8_url}")
+                return m3u8_url
+        
+        # Method B: Wait for network requests (using page.on method)
+        # We'll check for any requests containing .m3u8
+        log.debug("Checking network requests for M3U8...")
+        
+        # Create a promise to capture the first m3u8 request
+        m3u8_future = asyncio.Future()
+        
+        def on_request(request):
+            url = request.url
+            if "streamfree.top/live-cdn" in url and ".m3u8" in url:
+                if not m3u8_future.done():
+                    m3u8_future.set_result(url)
+                    log.debug(f"Captured M3U8 from network: {url}")
+        
+        page.on("request", on_request)
+        
+        # Wait for up to timeout seconds for the m3u8
+        try:
+            m3u8_url = await asyncio.wait_for(m3u8_future, timeout=timeout)
+            return m3u8_url
+        except asyncio.TimeoutError:
+            log.debug("No M3U8 found in network requests")
+        finally:
+            page.remove_listener("request", on_request)
+        
+        # Method C: Try to get from iframe src if there's an iframe
+        log.debug("Checking iframe sources...")
+        iframes = await page.query_selector_all('iframe')
+        for iframe in iframes:
+            src = await iframe.get_attribute('src')
+            if src and ".m3u8" in src:
+                log.debug(f"Found M3U8 in iframe src: {src}")
+                return src
+            # Try to get content from iframe
+            try:
+                frame = await iframe.content_frame()
+                if frame:
+                    frame_html = await frame.content()
+                    for pattern in patterns:
+                        match = re.search(pattern, frame_html)
+                        if match:
+                            m3u8_url = match.group(1)
+                            log.debug(f"Found M3U8 in iframe content: {m3u8_url}")
+                            return m3u8_url
+            except Exception:
+                continue
+        
+        log.warning(f"No M3U8 captured from {embed_url}")
+        return None
+        
+    except Exception as e:
+        log.error(f"Error capturing M3U8: {e}")
+        return None
+
 async def scrape(browser: Browser) -> None:
     """Main scraping function"""
     # Load cached URLs
@@ -244,67 +386,14 @@ async def scrape(browser: Browser) -> None:
                 async with network.event_page(context) as page:
                     log.info(f"Processing event {i}/{len(events)}: {ev['sport']} - {ev['event']}")
                     
-                    # The link is the embed URL
-                    link = ev["link"]
+                    # Get the embed URL
+                    embed_url = ev["link"]
+                    log.debug(f"Embed URL: {embed_url}")
                     
-                    # Navigate to the embed page first
-                    await page.goto(link, wait_until="domcontentloaded")
-                    await page.wait_for_timeout(3000)  # Wait for player to load
+                    # Capture M3U8 from the embed page
+                    m3u8_url = await capture_m3u8_from_embed(page, embed_url)
                     
-                    # Try to find and click play button
-                    try:
-                        # Try different selectors for the play button
-                        play_selectors = [
-                            'button[aria-label*="play" i]',
-                            'button[aria-label*="Play"]',
-                            '.vjs-big-play-button',
-                            '.play-button',
-                            'button:has-text("Play")',
-                            '[role="button"]:has-text("Play")',
-                            '.btn-play',
-                            '#play-button',
-                            'video'
-                        ]
-                        
-                        play_button = None
-                        for selector in play_selectors:
-                            try:
-                                play_button = await page.query_selector(selector)
-                                if play_button:
-                                    await play_button.click()
-                                    log.debug(f"Clicked play button with selector: {selector}")
-                                    await page.wait_for_timeout(2000)
-                                    break
-                            except Exception:
-                                continue
-                        
-                        # If no play button found, try clicking the page
-                        if not play_button:
-                            await page.click('body')
-                            await page.wait_for_timeout(2000)
-                            
-                    except Exception as e:
-                        log.debug(f"Error clicking play: {e}")
-                    
-                    # Now process the event using network.process_event
-                    handler = partial(
-                        network.process_event,
-                        url=link,  # Pass the embed URL
-                        url_num=i,
-                        page=page,
-                        log=log,
-                        timeout=30,  # Increased timeout for stream loading
-                    )
-                    
-                    # Get the full URL with token from the event page
-                    url = await network.safe_process(
-                        handler,
-                        url_num=i,
-                        semaphore=network.PW_S,
-                        log=log,
-                    )
-                    
-                    if url:
+                    if m3u8_url:
                         sport, event, ts = (
                             ev["sport"],
                             ev["event"],
@@ -320,7 +409,7 @@ async def scrape(browser: Browser) -> None:
                         final_id = tvg_id or f"{ev.get('category', 'sport')}.{ev.get('stream_key', 'event')}"
                         
                         # Keep the full URL with token
-                        full_url = url
+                        full_url = m3u8_url
                         
                         entry = {
                             "url": full_url,  # Store the full URL with token
@@ -328,7 +417,7 @@ async def scrape(browser: Browser) -> None:
                             "base": REFERER,
                             "timestamp": ts,
                             "id": final_id,
-                            "link": link,  # Store the original embed URL for referer
+                            "link": embed_url,  # Store the original embed URL for referer
                         }
                         
                         urls[key] = cached_urls[key] = entry
