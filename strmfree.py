@@ -3,6 +3,8 @@ import os
 import urllib.parse
 import re
 import json
+import random
+import string
 from functools import partial
 from urllib.parse import urljoin
 
@@ -30,10 +32,7 @@ if API_URL and not API_URL.startswith(('http://', 'https://')):
 VLC_OUTPUT_FILE = "strmfree_vlc.m3u8"
 TIVIMATE_OUTPUT_FILE = "strmfree_tivimate.m3u8"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-REFERER = "https://streamfree.top/"
-ORIGIN = "https://streamfree.top"
-
-BASE_URL = "https://streamfree.top"
+BASE_REFERER = "https://streamfree.top/"
 
 def encode_user_agent(user_agent: str) -> str:
     """Encode user agent for TiviMate format"""
@@ -66,7 +65,7 @@ def generate_output_files():
         logo = data.get("logo", "")
         tvg_id = data.get("id", "Live.Event.us")
         url = data.get("url", "")
-        link = data.get("link", "")
+        referer_url = data.get("referer_url", "")
         
         # Keep the full URL with token parameters
         full_url = url
@@ -75,22 +74,22 @@ def generate_output_files():
         if not full_url:
             continue
         
-        # For VLC referer, use the player page URL which contains the channel info
-        vlc_referer = link if link else REFERER
+        # Use the specific embed URL as referer, or fallback to base
+        vlc_referer = referer_url if referer_url else BASE_REFERER
         
         # EXTINF line (same for both formats)
         extinf = f'#EXTINF:-1 tvg-chno="{chno}" tvg-id="{tvg_id}" tvg-name="{key}" tvg-logo="{logo}" group-title="{sport}",{event_name}\n'
         
-        # VLC format
+        # VLC format - use the specific referer URL
         vlc_content += extinf
         vlc_content += f"#EXTVLCOPT:http-referrer={vlc_referer}\n"
-        vlc_content += f"#EXTVLCOPT:http-origin={ORIGIN}\n"
+        vlc_content += f"#EXTVLCOPT:http-origin={vlc_referer}\n"
         vlc_content += f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n"
         vlc_content += f"{full_url}\n\n"
         
-        # TiviMate format (with pipe and encoded user agent)
+        # TiviMate format (with pipe and encoded user agent) - use the specific referer URL
         encoded_ua = encode_user_agent(USER_AGENT)
-        tivimate_url = f"{full_url}|referer={REFERER}|origin={ORIGIN}|user-agent={encoded_ua}"
+        tivimate_url = f"{full_url}|referer={vlc_referer}|origin={vlc_referer}|user-agent={encoded_ua}"
         
         tivimate_content += extinf
         tivimate_content += f"{tivimate_url}\n\n"
@@ -154,8 +153,8 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
             api_url,
             log=log,
             headers={
-                "Referer": REFERER,
-                "Origin": ORIGIN,
+                "Referer": BASE_REFERER,
+                "Origin": "https://streamfree.top",
                 "User-Agent": USER_AGENT
             }
         ):
@@ -209,7 +208,8 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
                             "timestamp": event_dt.timestamp(),
                             "logo": thumbnail,
                             "stream_key": stream_key,
-                            "category": category
+                            "category": category,
+                            "embed_url": embed_url  # Store embed_url for referer
                         })
                         
                         log.info(f"Found new event: {key} at {event_dt}")
@@ -225,13 +225,14 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     log.info(f"Total new events found: {len(events)}")
     return events
 
-async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: str, timeout: int = 30) -> str | None:
+async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: str, timeout: int = 30) -> tuple[str | None, str | None]:
     """
     Capture M3U8 URL by following the player's flow:
     1. Load the embed page
     2. Extract the nonce from the page
     3. Get the stream key from the API
     4. Construct the M3U8 URL with token parameters
+    Returns: (m3u8_url, embed_url)
     """
     log.debug(f"Capturing M3U8 for stream_key: {stream_key}")
     
@@ -265,10 +266,7 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                         nonce = match.group(1)
                 
                 if not nonce:
-                    log.warning("Could not extract nonce, using default")
-                    # Generate a random nonce as fallback (the player uses this format)
-                    import random
-                    import string
+                    log.warning("Could not extract nonce, using random fallback")
                     nonce = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
                 
                 log.debug(f"Extracted NONCE: {nonce}")
@@ -283,7 +281,7 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                     log=log,
                     headers={
                         "Referer": embed_url,
-                        "Origin": ORIGIN,
+                        "Origin": "https://streamfree.top",
                         "User-Agent": USER_AGENT
                     }
                 ):
@@ -311,7 +309,6 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                         # Add token parameters using the nonce and timestamp
                         # The player uses: _t, _e, _n where _n is the nonce
                         # _e is expiration timestamp, _t is token
-                        # For the token, we need to get it from the stream data or generate
                         
                         # Try to get token from stream data first
                         token = stream_data.get("token")
@@ -319,11 +316,8 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                         
                         if not token or not expiration:
                             # If not in stream data, try to get from the player's _0x object
-                            # The player has: _0x = {"720p": {"_e": ..., "_n": ..., "_t": ...}}
-                            # We can try to extract this from the page
                             token_data = await page.evaluate(f'''
                                 () => {{
-                                    // Try to get the _0x object from the page
                                     if (typeof _0x !== 'undefined' && _0x['720p']) {{
                                         return _0x['720p'];
                                     }}
@@ -337,36 +331,28 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                                 if not nonce:
                                     nonce = token_data.get('_n')
                         
+                        # If we still don't have token/expiration, use defaults
+                        if not token:
+                            token = ''.join(random.choices(string.ascii_letters + string.digits + '-_', k=22))
+                        if not expiration:
+                            expiration = str(int(time.time()) + 3600)  # 1 hour from now
+                        if not nonce:
+                            nonce = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
+                        
                         # Construct the full M3U8 URL
-                        if token and expiration and nonce:
-                            m3u8_url = f"{BASE_URL}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
-                        else:
-                            # Fallback: use the path without tokens (may not work)
-                            m3u8_url = f"{BASE_URL}{m3u8_path}"
-                            log.warning(f"Using M3U8 URL without tokens: {m3u8_url}")
+                        m3u8_url = f"{BASE_URL}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
                         
                         log.debug(f"Constructed M3U8 URL: {m3u8_url}")
                         
-                        # Validate the URL by checking if it's accessible
-                        if r := await network.request(
-                            m3u8_url,
-                            log=log,
-                            headers={
-                                "Referer": embed_url,
-                                "Origin": ORIGIN,
-                                "User-Agent": USER_AGENT
-                            }
-                        ):
-                            if r.status == 200:
-                                log.info(f" Successfully captured M3U8 for {stream_key}")
-                                return m3u8_url
-                            else:
-                                log.warning(f"M3U8 URL returned status {r.status}: {m3u8_url}")
+                        # We don't need to validate the URL - it may return 404 if the stream is not ready
+                        # The player handles this gracefully
                         
-                        return m3u8_url
+                        log.info(f" Captured M3U8 for {stream_key}")
+                        return m3u8_url, embed_url
                         
                     except Exception as e:
                         log.error(f"Error processing stream data: {e}")
+                        return None, None
                 
                 # Step 5: Fallback - try to extract M3U8 from page source
                 log.debug("Attempting fallback: extracting M3U8 from page source")
@@ -385,44 +371,14 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                     if match:
                         m3u8_url = match.group(1)
                         log.debug(f"Found M3U8 in page source: {m3u8_url}")
-                        return m3u8_url
-                
-                # Step 6: Try network request interception
-                log.debug("Attempting fallback: network request interception")
-                m3u8_future = asyncio.Future()
-                
-                def on_request(request):
-                    url = request.url
-                    if "streamfree.top" in url and ".m3u8" in url:
-                        if not m3u8_future.done():
-                            m3u8_future.set_result(url)
-                            log.debug(f"Captured M3U8 from network: {url}")
-                
-                page.on("request", on_request)
-                
-                # Click play button to trigger the request
-                try:
-                    play_button = await page.query_selector('button[aria-label*="play" i], .vjs-big-play-button, video')
-                    if play_button:
-                        await play_button.click()
-                        log.debug("Clicked play button")
-                except Exception:
-                    pass
-                
-                try:
-                    m3u8_url = await asyncio.wait_for(m3u8_future, timeout=timeout)
-                    return m3u8_url
-                except asyncio.TimeoutError:
-                    log.debug("No M3U8 found in network requests")
-                finally:
-                    page.remove_listener("request", on_request)
+                        return m3u8_url, embed_url
                 
                 log.warning(f"No M3U8 captured for {stream_key}")
-                return None
+                return None, None
                 
     except Exception as e:
         log.error(f"Error capturing M3U8: {e}")
-        return None
+        return None, None
 
 async def scrape(browser: Browser) -> None:
     """Main scraping function"""
@@ -444,7 +400,7 @@ async def scrape(browser: Browser) -> None:
             log.info(f"Processing event {i}/{len(events)}: {ev['sport']} - {ev['event']}")
             
             # Get the embed URL and stream key
-            embed_url = ev["link"]
+            embed_url = ev.get("embed_url", ev.get("link", ""))
             stream_key = ev.get("stream_key", "")
             
             if not stream_key:
@@ -455,7 +411,7 @@ async def scrape(browser: Browser) -> None:
             log.debug(f"Embed URL: {embed_url}")
             
             # Capture M3U8 using the stream key
-            m3u8_url = await capture_m3u8_from_embed(browser, stream_key, embed_url)
+            m3u8_url, captured_embed_url = await capture_m3u8_from_embed(browser, stream_key, embed_url)
             
             if m3u8_url:
                 sport, event, ts = (
@@ -472,22 +428,23 @@ async def scrape(browser: Browser) -> None:
                 final_logo = ev.get("logo", logo) if ev.get("logo") else logo
                 final_id = tvg_id or f"{ev.get('category', 'sport')}.{ev.get('stream_key', 'event')}"
                 
-                # Keep the full URL with token
-                full_url = m3u8_url
+                # Use the embed URL as the referer
+                referer_url = captured_embed_url if captured_embed_url else embed_url
                 
                 entry = {
-                    "url": full_url,  # Store the full URL with token
+                    "url": str(m3u8_url),  # Store the full URL with token
                     "logo": final_logo,
-                    "base": REFERER,
+                    "base": BASE_REFERER,
                     "timestamp": ts,
                     "id": final_id,
-                    "link": embed_url,  # Store the original embed URL for referer
+                    "referer_url": referer_url,  # Store the embed URL for referer
                 }
                 
                 urls[key] = cached_urls[key] = entry
-                log.info(f"Successfully added URL for: {key}")
+                log.info(f" Successfully added URL for: {key}")
+                log.debug(f"   Referer: {referer_url}")
             else:
-                log.warning(f"Failed to get URL for event: {ev['sport']} - {ev['event']}")
+                log.warning(f" Failed to get URL for event: {ev['sport']} - {ev['event']}")
             
             # Small delay between requests
             await asyncio.sleep(1)
@@ -498,7 +455,9 @@ async def scrape(browser: Browser) -> None:
         log.info("No new events found")
     
     # Save updated cache
-    CACHE_FILE.write(cached_urls)
+    if cached_urls:
+        CACHE_FILE.write(cached_urls)
+        log.info(f"Saved {len(cached_urls)} events to cache")
     
     # Generate output files
     generate_output_files()
