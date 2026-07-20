@@ -5,6 +5,7 @@ import re
 import json
 import random
 import string
+import time
 from functools import partial
 from urllib.parse import urljoin
 
@@ -28,7 +29,8 @@ API_URL = os.environ.get("STRM_FREE_API_URL")
 if API_URL and not API_URL.startswith(('http://', 'https://')):
     API_URL = f"https://{API_URL}"
 
-# Constants for output files
+# Constants
+BASE_URL = "https://streamfree.top"
 VLC_OUTPUT_FILE = "strmfree_vlc.m3u8"
 TIVIMATE_OUTPUT_FILE = "strmfree_tivimate.m3u8"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
@@ -114,7 +116,7 @@ def generate_output_files():
 
 async def get_categories() -> list[str]:
     """Fetch available categories from the API."""
-    api_url = f"{BASE_REFERER}/api/v1/categories"
+    api_url = f"{BASE_URL}/api/v1/categories"
     log.info(f"Fetching categories from: {api_url}")
     
     if r := await network.request(api_url, log=log, headers={"User-Agent": USER_AGENT}):
@@ -146,7 +148,7 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     
     # Fetch streams from each category
     for category in categories:
-        api_url = f"{BASE_REFERER}/api/v1/streams?category={category}"
+        api_url = f"{BASE_URL}/api/v1/streams?category={category}"
         log.info(f"Fetching from API: {api_url}")
         
         if r := await network.request(
@@ -273,7 +275,7 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                 
                 # Step 3: Get the stream key data from the API
                 # The player calls: /get-stream-key/{stream_key}
-                stream_key_url = f"{BASE_REFERER}/get-stream-key/{stream_key}"
+                stream_key_url = f"{BASE_URL}/get-stream-key/{stream_key}"
                 log.debug(f"Fetching stream key data: {stream_key_url}")
                 
                 if r := await network.request(
@@ -340,14 +342,11 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                             nonce = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
                         
                         # Construct the full M3U8 URL
-                        m3u8_url = f"{BASE_REFERER}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
+                        m3u8_url = f"{BASE_URL}{m3u8_path}?_t={token}&_e={expiration}&_n={nonce}"
                         
                         log.debug(f"Constructed M3U8 URL: {m3u8_url}")
                         
-                        # We don't need to validate the URL - it may return 404 if the stream is not ready
-                        # The player handles this gracefully
-                        
-                        log.info(f" Captured M3U8 for {stream_key}")
+                        log.info(f"✅ Captured M3U8 for {stream_key}")
                         return m3u8_url, embed_url
                         
                     except Exception as e:
