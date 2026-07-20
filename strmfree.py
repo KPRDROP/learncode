@@ -118,63 +118,117 @@ async def fetch_all_streams() -> list[dict]:
     log.info(f"Total streams found: {len(all_streams)}")
     return all_streams
 
-async def process_stream_with_playwright(browser: Browser, stream: dict) -> tuple[str | None, str | None]:
-    """Use Playwright to load the embed page and capture the M3U8 URL."""
-    embed_url = stream.get("embed_url")
-    name = stream.get("name", "Unknown")
-    
-    if not embed_url:
-        log.warning(f"No embed URL for {name}")
-        return None, None
-    
-    log.debug(f"Processing with Playwright: {embed_url}")
+async def capture_m3u8_from_embed(browser: Browser, embed_url: str, stream_name: str, timeout: int = 30) -> str | None:
+    """
+    Use Playwright to load the embed page, click play, and capture the M3U8 URL.
+    """
+    log.debug(f"Capturing M3U8 from: {embed_url}")
     
     try:
         async with network.event_context(browser) as context:
             async with network.event_page(context) as page:
-                # Navigate to the embed URL
-                await page.goto(embed_url, timeout=15000)
+                # Set up network request interception to capture M3U8 requests
+                captured_url = None
                 
-                # Wait for the player to load
+                async def handle_request(request):
+                    nonlocal captured_url
+                    url = request.url
+                    # Look for m3u8 requests from streamfree.top
+                    if "streamfree.top/live-cdn" in url and ".m3u8" in url:
+                        if not captured_url:
+                            captured_url = url
+                            log.debug(f"Captured M3U8 request: {url}")
+                
+                page.on("request", handle_request)
+                
+                # Navigate to the embed URL
+                log.debug(f"Navigating to: {embed_url}")
+                await page.goto(embed_url, timeout=15000, wait_until="domcontentloaded")
+                
+                # Wait for the page to load
                 await page.wait_for_timeout(3000)
                 
-                # Try to find and click the play button if it exists
+                # Try to find and click the play button
+                # The play button is typically a large centered button
+                play_button_selectors = [
+                    'button[aria-label*="play" i]',
+                    'button[aria-label*="Play" i]',
+                    '.play-button',
+                    '.vjs-big-play-button',
+                    'button:has-text("Play")',
+                    'button:has-text("▶")',
+                    '[role="button"]:has-text("Play")',
+                    '.btn-play',
+                    '#play-button',
+                    'button.play-btn'
+                ]
+                
+                play_button = None
+                for selector in play_button_selectors:
+                    try:
+                        play_button = await page.query_selector(selector)
+                        if play_button:
+                            log.debug(f"Found play button with selector: {selector}")
+                            break
+                    except Exception:
+                        continue
+                
+                if play_button:
+                    log.debug("Clicking play button...")
+                    await play_button.click()
+                    await page.wait_for_timeout(2000)
+                else:
+                    # Try clicking on the video element itself if no play button found
+                    try:
+                        video = await page.query_selector('video')
+                        if video:
+                            log.debug("Clicking video element...")
+                            await video.click()
+                            await page.wait_for_timeout(2000)
+                    except Exception:
+                        pass
+                
+                # Also try to click on the page body as a fallback
                 try:
-                    play_button = await page.query_selector('button[aria-label*="play"]')
-                    if play_button:
-                        await play_button.click()
-                        await page.wait_for_timeout(2000)
+                    await page.click('body')
+                    await page.wait_for_timeout(1000)
                 except Exception:
                     pass
                 
-                # Wait for the m3u8 request to appear in network
-                # Use network.process_event which handles token extraction
-                handler = partial(
-                    network.process_event,
-                    url=embed_url,
-                    url_num=1,
-                    page=page,
-                    log=log,
-                    timeout=15,
-                )
+                # Wait for the M3U8 to appear in network requests
+                start_time = time.time()
+                while not captured_url and (time.time() - start_time) < timeout:
+                    await page.wait_for_timeout(1000)
                 
-                m3u8_url = await network.safe_process(
-                    handler,
-                    url_num=1,
-                    semaphore=network.PW_S,
-                    log=log,
-                )
+                # If no M3U8 captured via network, try to find it in the page source
+                if not captured_url:
+                    log.debug("No M3U8 found via network, checking page source...")
+                    html = await page.content()
+                    
+                    # Look for m3u8 in the page source
+                    patterns = [
+                        r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)',
+                        r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
+                        r'"(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
+                    ]
+                    
+                    for pattern in patterns:
+                        match = re.search(pattern, html)
+                        if match:
+                            captured_url = match.group(1)
+                            log.debug(f"Found M3U8 in page source: {captured_url}")
+                            break
                 
-                if m3u8_url:
-                    log.info(f" Captured M3U8 for {name}")
-                    return m3u8_url, embed_url
-                
-                log.warning(f"No M3U8 captured for {name}")
-                return None, None
+                if captured_url:
+                    log.info(f" Captured M3U8 for {stream_name}")
+                    return captured_url
+                else:
+                    log.warning(f"No M3U8 captured for {stream_name}")
+                    return None
                 
     except Exception as e:
-        log.error(f"Error processing {name}: {e}")
-        return None, None
+        log.error(f"Error capturing M3U8 for {stream_name}: {e}")
+        return None
 
 async def main():
     """Main function to run the updater."""
@@ -211,6 +265,7 @@ async def main():
                 embed_url = stream.get("embed_url", "")
                 
                 log.info(f"Processing {i}/{len(all_streams)}: {name}")
+                log.debug(f"Embed URL: {embed_url}")
                 
                 # Check if already cached
                 key = f"[{stream['league']}] {name} ({TAG})"
@@ -218,8 +273,8 @@ async def main():
                     log.debug(f"Already cached: {key}")
                     continue
                 
-                # Process with Playwright
-                m3u8_url, referer = await process_stream_with_playwright(browser, stream)
+                # Capture M3U8 with Playwright
+                m3u8_url = await capture_m3u8_from_embed(browser, embed_url, name)
                 
                 if m3u8_url:
                     # Get tvg info from leagues helper
@@ -232,7 +287,7 @@ async def main():
                     entry = {
                         "url": str(m3u8_url),
                         "logo": final_logo,
-                        "base": referer or embed_url,
+                        "base": embed_url,
                         "timestamp": stream.get("timestamp", int(time.time())),
                         "id": final_id,
                         "link": embed_url,
