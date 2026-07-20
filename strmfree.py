@@ -1,70 +1,122 @@
-import os
-import re
-import json
-import time
 import asyncio
+import os
+import urllib.parse
 from functools import partial
-from urllib.parse import quote
+from urllib.parse import urljoin
 
-from playwright.async_api import Browser, async_playwright
+from playwright.async_api import Browser
+
 from utils import Cache, Time, get_logger, leagues, network
 
-# ================= CONFIG =================
 log = get_logger(__name__)
 
-SOURCE_URL = os.environ.get("STRM_FREE_API_URL")
-OUTPUT_FILE = "strmfree_tivimate.m3u8"
+urls: dict[str, dict[str, str | float]] = {}
 
-BASE_URL = "https://streamfree.top"
 TAG = "STFREE"
-CACHE_FILE = Cache(TAG, exp=19_800)
+
+CACHE_FILE = Cache(TAG, exp=10_800)
+
 API_CACHE = Cache(f"{TAG}-api", exp=19_800)
 
-USER_AGENT_RAW = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/149.0.0.0 Safari/537.36"
-)
-USER_AGENT = quote(USER_AGENT_RAW, safe="")
+# Get API_URL from environment variable (secret) with validation
+API_URL = os.environ.get("STRM_FREE_API_URL")
+# Ensure URL has protocol
+if API_URL and not API_URL.startswith(('http://', 'https://')):
+    API_URL = f"https://{API_URL}"
 
-# ===========================================
+# Constants for output files
+VLC_OUTPUT_FILE = "strmfree_vlc.m3u8"
+TIVIMATE_OUTPUT_FILE = "strmfree_tivimate.m3u8"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+REFERER = "https://streamfree.top/"
+ORIGIN = "https://streamfree.top"
 
-def normalize_stream(stream: dict) -> dict | None:
-    """Normalize stream data from API into a consistent structure."""
-    name = stream.get("name")
-    category = stream.get("category")
-    stream_key = stream.get("stream_key")
-    embed_url = stream.get("embed_url")
+BASE_URL = "https://streamfree.top"
+
+def encode_user_agent(user_agent: str) -> str:
+    """Encode user agent for TiviMate format"""
+    return urllib.parse.quote(user_agent)
+
+def generate_output_files():
+    """Generate both VLC and TiviMate M3U8 files"""
+    if not urls:
+        log.info("No URLs to write to output files")
+        return
     
-    # Validate required fields
-    if not all([name, category, stream_key, embed_url]):
-        log.debug(f"Skipping stream {name}: missing required fields")
-        return None
+    log.info(f"Generating output files with {len(urls)} events")
     
-    # Get league or fallback to category
-    league = stream.get("league") or category.capitalize()
+    # Generate VLC format
+    vlc_content = "#EXTM3U\n"
+    tivimate_content = "#EXTM3U\n"
     
-    return {
-        "id": stream.get("id"),
-        "name": name,
-        "league": league,
-        "category": category,
-        "stream_key": stream_key,
-        "embed_url": embed_url,
-        "thumbnail": stream.get("thumbnail_url", ""),
-        "timestamp": stream.get("match_timestamp", int(time.time())),
-        "viewers": stream.get("viewers", 0),
-        "external": stream.get("is_external", False),
-        "team1": stream.get("team1"),
-        "team2": stream.get("team2"),
-    }
+    # Sort by timestamp to maintain order
+    sorted_urls = sorted(urls.items(), key=lambda x: x[1].get("timestamp", 0))
+    
+    chno = 1  # Start channel number from 1
+    for key, data in sorted_urls:
+        if not data.get("url"):
+            continue
+            
+        # Extract data
+        sport_match = key.split("[")[1].split("]")[0] if "[" in key else "Live Events"
+        sport = sport_match
+        event_name = key.split("]")[-1].strip().replace(f"({TAG})", "").strip() if "]" in key else key
+        logo = data.get("logo", "")
+        tvg_id = data.get("id", "Live.Event.us")
+        url = data.get("url", "")
+        link = data.get("link", "")
+        
+        # Keep the full URL with token parameters
+        full_url = url
+        
+        # Skip if no URL
+        if not full_url:
+            continue
+        
+        # For VLC referer, use the player page URL which contains the channel info
+        vlc_referer = link if link else REFERER
+        
+        # EXTINF line (same for both formats)
+        extinf = f'#EXTINF:-1 tvg-chno="{chno}" tvg-id="{tvg_id}" tvg-name="{key}" tvg-logo="{logo}" group-title="{sport}",{event_name}\n'
+        
+        # VLC format
+        vlc_content += extinf
+        vlc_content += f"#EXTVLCOPT:http-referrer={vlc_referer}\n"
+        vlc_content += f"#EXTVLCOPT:http-origin={ORIGIN}\n"
+        vlc_content += f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n"
+        vlc_content += f"{full_url}\n\n"
+        
+        # TiviMate format (with pipe and encoded user agent)
+        encoded_ua = encode_user_agent(USER_AGENT)
+        tivimate_url = f"{full_url}|referer={REFERER}|origin={ORIGIN}|user-agent={encoded_ua}"
+        
+        tivimate_content += extinf
+        tivimate_content += f"{tivimate_url}\n\n"
+        
+        chno += 1
+    
+    # Write VLC file
+    try:
+        with open(VLC_OUTPUT_FILE, "w", encoding="utf-8") as f:
+            f.write(vlc_content)
+        log.info(f"Successfully wrote {VLC_OUTPUT_FILE} with {chno-1} events")
+    except Exception as e:
+        log.error(f"Error writing {VLC_OUTPUT_FILE}: {e}")
+    
+    # Write TiviMate file
+    try:
+        with open(TIVIMATE_OUTPUT_FILE, "w", encoding="utf-8") as f:
+            f.write(tivimate_content)
+        log.info(f"Successfully wrote {TIVIMATE_OUTPUT_FILE} with {chno-1} events")
+    except Exception as e:
+        log.error(f"Error writing {TIVIMATE_OUTPUT_FILE}: {e}")
 
 async def get_categories() -> list[str]:
     """Fetch available categories from the API."""
     api_url = f"{BASE_URL}/api/v1/categories"
     log.info(f"Fetching categories from: {api_url}")
     
-    if r := await network.request(api_url, log=log, headers={"User-Agent": USER_AGENT_RAW}):
+    if r := await network.request(api_url, log=log, headers={"User-Agent": USER_AGENT}):
         try:
             data = r.json()
             categories = data.get("categories", [])
@@ -77,305 +129,248 @@ async def get_categories() -> list[str]:
     log.warning("Using fallback category list")
     return ["soccer", "basketball", "hockey", "combat", "baseball", "football", "racing", "tennis", "cricket"]
 
-async def fetch_streams_for_category(category: str) -> list[dict]:
-    """Fetch streams for a single category."""
-    api_url = f"{BASE_URL}/api/v1/streams?category={category}"
-    log.debug(f"Fetching streams for {category}: {api_url}")
+async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
+    """Fetch events from all categories and normalize them."""
+    now = Time.clean(Time.now())
     
-    streams = []
-    if r := await network.request(api_url, log=log, headers={"User-Agent": USER_AGENT_RAW}):
-        try:
-            data = r.json()
-            raw_streams = data.get("streams", [])
-            for s in raw_streams:
-                normalized = normalize_stream(s)
-                if normalized:
-                    streams.append(normalized)
-            log.info(f"{category}: found {len(streams)} streams")
-        except Exception as e:
-            log.error(f"Error parsing streams for {category}: {e}")
+    events = []
     
-    return streams
-
-async def fetch_all_streams() -> list[dict]:
-    """Fetch streams from all categories."""
-    all_streams = []
+    # Get categories dynamically
     categories = await get_categories()
-    
     if not categories:
         log.error("No categories available")
-        return all_streams
+        return events
     
-    log.info(f"Fetching streams for {len(categories)} categories...")
+    log.info(f"Fetching streams from {len(categories)} categories...")
     
-    # Fetch all categories concurrently
-    tasks = [fetch_streams_for_category(cat) for cat in categories]
-    results = await asyncio.gather(*tasks)
-    
-    for streams in results:
-        all_streams.extend(streams)
-    
-    log.info(f"Total streams found: {len(all_streams)}")
-    return all_streams
-
-async def capture_m3u8_from_embed(browser: Browser, embed_url: str, stream_name: str, timeout: int = 30) -> str | None:
-    """
-    Use Playwright to load the embed page, click play, and capture the M3U8 URL.
-    """
-    log.debug(f"Capturing M3U8 from: {embed_url}")
-    
-    try:
-        async with network.event_context(browser) as context:
-            async with network.event_page(context) as page:
-                # Set up network request interception to capture M3U8 requests
-                captured_url = None
+    # Fetch streams from each category
+    for category in categories:
+        api_url = f"{BASE_URL}/api/v1/streams?category={category}"
+        log.info(f"Fetching from API: {api_url}")
+        
+        if r := await network.request(
+            api_url,
+            log=log,
+            headers={
+                "Referer": REFERER,
+                "Origin": ORIGIN,
+                "User-Agent": USER_AGENT
+            }
+        ):
+            try:
+                data = r.json()
+                streams = data.get("streams", [])
                 
-                async def handle_request(request):
-                    nonlocal captured_url
-                    url = request.url
-                    # Look for m3u8 requests from streamfree.top
-                    if "streamfree.top/live-cdn" in url and ".m3u8" in url:
-                        if not captured_url:
-                            captured_url = url
-                            log.debug(f"Captured M3U8 request: {url}")
+                if streams:
+                    log.info(f"API returned {len(streams)} streams for category: {category}")
+                else:
+                    log.debug(f"No streams found for category: {category}")
+                    continue
                 
-                page.on("request", handle_request)
-                
-                # Navigate to the embed URL
-                log.debug(f"Navigating to: {embed_url}")
-                await page.goto(embed_url, timeout=15000, wait_until="domcontentloaded")
-                
-                # Wait for the page to load
-                await page.wait_for_timeout(3000)
-                
-                # Try to find and click the play button
-                # The play button is typically a large centered button
-                play_button_selectors = [
-                    'button[aria-label*="play" i]',
-                    'button[aria-label*="Play" i]',
-                    '.play-button',
-                    '.vjs-big-play-button',
-                    'button:has-text("Play")',
-                    'button:has-text("▶")',
-                    '[role="button"]:has-text("Play")',
-                    '.btn-play',
-                    '#play-button',
-                    'button.play-btn'
-                ]
-                
-                play_button = None
-                for selector in play_button_selectors:
+                # Process each stream
+                for stream in streams:
                     try:
-                        play_button = await page.query_selector(selector)
-                        if play_button:
-                            log.debug(f"Found play button with selector: {selector}")
-                            break
-                    except Exception:
+                        # Extract metadata
+                        name = stream.get("name", "")
+                        if not name:
+                            continue
+                        
+                        league = stream.get("league", category.capitalize())
+                        embed_url = stream.get("embed_url", "")
+                        stream_key = stream.get("stream_key", "")
+                        thumbnail = stream.get("thumbnail_url", "")
+                        timestamp = stream.get("match_timestamp", now.timestamp())
+                        
+                        if not embed_url or not stream_key:
+                            log.debug(f"Skipping {name}: missing embed_url or stream_key")
+                            continue
+                        
+                        # Create event key
+                        key = f"[{league}] {name} ({TAG})"
+                        
+                        if key in cached_keys:
+                            log.debug(f"Event already in cache: {key}")
+                            continue
+                        
+                        # Parse event time
+                        event_dt = now
+                        try:
+                            event_dt = Time.from_timestamp(timestamp)
+                        except Exception as e:
+                            log.debug(f"Could not parse timestamp for {name}: {e}")
+                        
+                        # Add to events list
+                        events.append({
+                            "sport": league,
+                            "event": name,
+                            "link": embed_url,  # Use embed_url as the link to process
+                            "timestamp": event_dt.timestamp(),
+                            "logo": thumbnail,
+                            "stream_key": stream_key,
+                            "category": category
+                        })
+                        
+                        log.info(f"Found new event: {key} at {event_dt}")
+                        
+                    except Exception as e:
+                        log.error(f"Error processing stream: {e}")
                         continue
-                
-                if play_button:
-                    log.debug("Clicking play button...")
-                    await play_button.click()
-                    await page.wait_for_timeout(2000)
-                else:
-                    # Try clicking on the video element itself if no play button found
-                    try:
-                        video = await page.query_selector('video')
-                        if video:
-                            log.debug("Clicking video element...")
-                            await video.click()
-                            await page.wait_for_timeout(2000)
-                    except Exception:
-                        pass
-                
-                # Also try to click on the page body as a fallback
-                try:
-                    await page.click('body')
-                    await page.wait_for_timeout(1000)
-                except Exception:
-                    pass
-                
-                # Wait for the M3U8 to appear in network requests
-                start_time = time.time()
-                while not captured_url and (time.time() - start_time) < timeout:
-                    await page.wait_for_timeout(1000)
-                
-                # If no M3U8 captured via network, try to find it in the page source
-                if not captured_url:
-                    log.debug("No M3U8 found via network, checking page source...")
-                    html = await page.content()
-                    
-                    # Look for m3u8 in the page source
-                    patterns = [
-                        r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)',
-                        r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
-                        r'"(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"',
-                    ]
-                    
-                    for pattern in patterns:
-                        match = re.search(pattern, html)
-                        if match:
-                            captured_url = match.group(1)
-                            log.debug(f"Found M3U8 in page source: {captured_url}")
-                            break
-                
-                if captured_url:
-                    log.info(f" Captured M3U8 for {stream_name}")
-                    return captured_url
-                else:
-                    log.warning(f"No M3U8 captured for {stream_name}")
-                    return None
-                
-    except Exception as e:
-        log.error(f"Error capturing M3U8 for {stream_name}: {e}")
-        return None
+                        
+            except Exception as e:
+                log.error(f"Error parsing API response for {category}: {e}")
+                continue
+    
+    log.info(f"Total new events found: {len(events)}")
+    return events
 
-async def main():
-    """Main function to run the updater."""
-    log.info("Starting STRFREE updater")
-    
-    # Validate SOURCE_URL
-    if not SOURCE_URL:
-        log.error("STRM_FREE_API_URL environment variable is not set")
-        return
-    
-    log.info(f"Using API URL: {SOURCE_URL}")
-    
-    # Fetch all streams
-    all_streams = await fetch_all_streams()
-    
-    if not all_streams:
-        log.error("No streams found")
-        return
-    
-    log.info(f"Processing {len(all_streams)} streams to capture M3U8 URLs...")
-    
-    # Load cached URLs to avoid reprocessing
+async def scrape(browser: Browser) -> None:
+    """Main scraping function"""
+    # Load cached URLs
     cached_urls = CACHE_FILE.load() or {}
-    urls = {}
+    
+    cached_count = len(cached_urls)
+    
+    # Update global urls with cached ones
     urls.update(cached_urls)
     
-    # Process streams with Playwright
+    log.info(f"Loaded {cached_count} event(s) from cache")
+    log.info(f'Scraping from "{API_URL}"')
+    
+    if events := await get_events(list(cached_urls.keys())):
+        log.info(f"Processing {len(events)} new URL(s)")
+        
+        async with network.event_context(browser) as context:
+            for i, ev in enumerate(events, start=1):
+                async with network.event_page(context) as page:
+                    log.info(f"Processing event {i}/{len(events)}: {ev['sport']} - {ev['event']}")
+                    
+                    # The link is the embed URL
+                    link = ev["link"]
+                    
+                    # Navigate to the embed page first
+                    await page.goto(link, wait_until="domcontentloaded")
+                    await page.wait_for_timeout(3000)  # Wait for player to load
+                    
+                    # Try to find and click play button
+                    try:
+                        # Try different selectors for the play button
+                        play_selectors = [
+                            'button[aria-label*="play" i]',
+                            'button[aria-label*="Play"]',
+                            '.vjs-big-play-button',
+                            '.play-button',
+                            'button:has-text("Play")',
+                            '[role="button"]:has-text("Play")',
+                            '.btn-play',
+                            '#play-button',
+                            'video'
+                        ]
+                        
+                        play_button = None
+                        for selector in play_selectors:
+                            try:
+                                play_button = await page.query_selector(selector)
+                                if play_button:
+                                    await play_button.click()
+                                    log.debug(f"Clicked play button with selector: {selector}")
+                                    await page.wait_for_timeout(2000)
+                                    break
+                            except Exception:
+                                continue
+                        
+                        # If no play button found, try clicking the page
+                        if not play_button:
+                            await page.click('body')
+                            await page.wait_for_timeout(2000)
+                            
+                    except Exception as e:
+                        log.debug(f"Error clicking play: {e}")
+                    
+                    # Now process the event using network.process_event
+                    handler = partial(
+                        network.process_event,
+                        url=link,  # Pass the embed URL
+                        url_num=i,
+                        page=page,
+                        log=log,
+                        timeout=30,  # Increased timeout for stream loading
+                    )
+                    
+                    # Get the full URL with token from the event page
+                    url = await network.safe_process(
+                        handler,
+                        url_num=i,
+                        semaphore=network.PW_S,
+                        log=log,
+                    )
+                    
+                    if url:
+                        sport, event, ts = (
+                            ev["sport"],
+                            ev["event"],
+                            ev["timestamp"],
+                        )
+                        
+                        key = f"[{sport}] {event} ({TAG})"
+                        
+                        tvg_id, logo = leagues.get_tvg_info(sport, event)
+                        
+                        # Use logo from API if available
+                        final_logo = ev.get("logo", logo) if ev.get("logo") else logo
+                        final_id = tvg_id or f"{ev.get('category', 'sport')}.{ev.get('stream_key', 'event')}"
+                        
+                        # Keep the full URL with token
+                        full_url = url
+                        
+                        entry = {
+                            "url": full_url,  # Store the full URL with token
+                            "logo": final_logo,
+                            "base": REFERER,
+                            "timestamp": ts,
+                            "id": final_id,
+                            "link": link,  # Store the original embed URL for referer
+                        }
+                        
+                        urls[key] = cached_urls[key] = entry
+                        log.info(f"Successfully added URL for: {key}")
+                    else:
+                        log.warning(f"Failed to get URL for event: {ev['sport']} - {ev['event']}")
+        
+        log.info(f"Collected and cached {len(cached_urls) - cached_count} new event(s)")
+    
+    else:
+        log.info("No new events found")
+    
+    # Save updated cache
+    CACHE_FILE.write(cached_urls)
+    
+    # Generate output files
+    generate_output_files()
+
+async def main():
+    """Main function to run the updater"""
+    log.info("Starting STRFREE updater")
+    
+    # Validate API_URL
+    if not API_URL or API_URL == "None":
+        log.error("STRM_FREE_API_URL environment variable is not set correctly")
+        return
+    
+    log.info(f"Using API URL: {API_URL}")
+    
+    from playwright.async_api import async_playwright
+    
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         try:
-            processed_count = 0
-            for i, stream in enumerate(all_streams, start=1):
-                name = stream.get("name", "Unknown")
-                embed_url = stream.get("embed_url", "")
-                
-                log.info(f"Processing {i}/{len(all_streams)}: {name}")
-                log.debug(f"Embed URL: {embed_url}")
-                
-                # Check if already cached
-                key = f"[{stream['league']}] {name} ({TAG})"
-                if key in cached_urls:
-                    log.debug(f"Already cached: {key}")
-                    continue
-                
-                # Capture M3U8 with Playwright
-                m3u8_url = await capture_m3u8_from_embed(browser, embed_url, name)
-                
-                if m3u8_url:
-                    # Get tvg info from leagues helper
-                    tvg_id, logo = leagues.get_tvg_info(stream['category'], name)
-                    
-                    # Use thumbnail from API if available
-                    final_logo = stream.get("thumbnail", logo) if stream.get("thumbnail") else logo
-                    final_id = tvg_id or f"{stream['category']}.{stream['stream_key']}"
-                    
-                    entry = {
-                        "url": str(m3u8_url),
-                        "logo": final_logo,
-                        "base": embed_url,
-                        "timestamp": stream.get("timestamp", int(time.time())),
-                        "id": final_id,
-                        "link": embed_url,
-                        "referer_url": embed_url,
-                    }
-                    
-                    # Store in both urls and cached_urls
-                    urls[key] = entry
-                    cached_urls[key] = entry
-                    processed_count += 1
-                    log.info(f" Added URL for: {name}")
-                else:
-                    log.warning(f" Failed to get M3U8 for: {name}")
-                
-                # Small delay between requests
-                await asyncio.sleep(1)
-                
+            await scrape(browser)
         finally:
             await browser.close()
     
-    # Save updated cache
-    if cached_urls:
-        CACHE_FILE.write(cached_urls)
-        log.info(f"Saved {len(cached_urls)} events to cache")
-    
-    # Generate output files
-    generate_output_files(urls)
-
-def generate_output_files(urls: dict):
-    """Generate TiviMate M3U8 file from collected URLs."""
-    if not urls:
-        log.info("No URLs to write to output file")
-        # Create empty file with header
-        try:
-            with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-                f.write("#EXTM3U\n")
-            log.info(f"Created empty {OUTPUT_FILE}")
-        except Exception as e:
-            log.error(f"Error creating output file: {e}")
-        return
-    
-    log.info(f"Generating output file with {len(urls)} events")
-    
-    # Generate TiviMate format
-    content = "#EXTM3U\n"
-    
-    # Sort by timestamp
-    sorted_urls = sorted(urls.items(), key=lambda x: x[1].get("timestamp", 0))
-    
-    chno = 1
-    for key, data in sorted_urls:
-        if not data.get("url"):
-            continue
-            
-        # Extract data
-        sport_match = key.split("[")[1].split("]")[0] if "[" in key else "Live Events"
-        event_name = key.split("]")[-1].strip().replace(f"({TAG})", "").strip() if "]" in key else key
-        logo = data.get("logo", "")
-        tvg_id = data.get("id", "Live.Event.us")
-        url = data.get("url", "")
-        referer_url = data.get("referer_url", "")
-        
-        if not url:
-            continue
-        
-        # Use referer URL for headers
-        vlc_referer = referer_url if referer_url else "https://streamfree.top/"
-        
-        # EXTINF line
-        extinf = f'#EXTINF:-1 tvg-chno="{chno}" tvg-id="{tvg_id}" tvg-name="{key}" tvg-logo="{logo}" group-title="{sport_match}",{event_name}\n'
-        
-        # TiviMate format with pipe and encoded user agent
-        tivimate_url = f"{url}|referer={vlc_referer}|origin={vlc_referer}|user-agent={USER_AGENT}"
-        
-        content += extinf
-        content += f"{tivimate_url}\n\n"
-        chno += 1
-    
-    # Write file
-    try:
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write(content)
-        log.info(f"Successfully wrote {OUTPUT_FILE} with {chno-1} events")
-    except Exception as e:
-        log.error(f"Error writing {OUTPUT_FILE}: {e}")
+    log.info("STRFREE updater completed")
 
 def run():
-    """Synchronous entry point for the updater."""
+    """Synchronous entry point for the updater"""
     asyncio.run(main())
 
 if __name__ == "__main__":
