@@ -114,7 +114,7 @@ def generate_output_files():
 
 async def get_categories() -> list[str]:
     """Fetch available categories from the API."""
-    api_url = f"{BASE_URL}/api/v1/categories"
+    api_url = f"{BASE_REFERER}/api/v1/categories"
     log.info(f"Fetching categories from: {api_url}")
     
     if r := await network.request(api_url, log=log, headers={"User-Agent": USER_AGENT}):
