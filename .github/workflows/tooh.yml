@@ -3,10 +3,10 @@ name: Generate TOOH M3U8
 on:
   schedule:
     - cron: '0 */6 * * *'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Write permission for GitHub token
+  contents: write
 
 jobs:
   generate:
@@ -27,11 +27,12 @@ jobs:
           pip install aiohttp
           pip install playwright httpx[http2] pytz
           
-      - name: Run TOOH updater
+      - name: Run TOOH scraper
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -m fooh.scraper
+          # Run the main script directly since fooh.py has if __name__ == "__main__"
+          python -c "import asyncio; from fooh import main; asyncio.run(main())"
           
       - name: Commit and push changes
         run: |
