@@ -1,4 +1,4 @@
-name: Generate FOOH M3U8
+name: Generate FOOH Playlist
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
           pip install aiohttp
           pip install playwright httpx[http2] pytz
           
-      - name: Run FOOH scraper
+      - name: Run FOOH updater
         env:
           BASE_URL: ${{ secrets.BASE_URL }}
           VLC_USER_AGENT: ${{ secrets.VLC_USER_AGENT }}
