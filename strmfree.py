@@ -346,7 +346,7 @@ async def capture_m3u8_from_embed(browser: Browser, stream_key: str, embed_url: 
                         
                         log.debug(f"Constructed M3U8 URL: {m3u8_url}")
                         
-                        log.info(f"✅ Captured M3U8 for {stream_key}")
+                        log.info(f" Captured M3U8 for {stream_key}")
                         return m3u8_url, embed_url
                         
                     except Exception as e:
