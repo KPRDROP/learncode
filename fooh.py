@@ -4,13 +4,13 @@ import os
 import re
 from typing import Dict, List, Optional
 
-from .utils import Cache, Time, get_logger, leagues, network
+from utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
 urls: dict[str, dict[str, str | float]] = {}
 
-TAG = "TOOH"
+TAG = "FOOH"
 
 CACHE_FILE = Cache(TAG, exp=10_800)
 
