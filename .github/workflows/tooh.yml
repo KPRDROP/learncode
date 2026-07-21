@@ -1,12 +1,13 @@
-name: Generate FOOH M3U8
+name: Generate FOOH M3U8 Files
 
 on:
   schedule:
-    - cron: '0 */2 * * *'
-  workflow_dispatch:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allow manual trigger
 
 permissions:
-  contents: write
+  contents: write  # Write permission for GitHub token
 
 jobs:
   generate:
@@ -27,11 +28,11 @@ jobs:
           pip install aiohttp
           pip install playwright httpx[http2] pytz
           
-      - name: Run FOOH updater
+      - name: Run FOOH scraper
         env:
-          BASE_URL: ${{ secrets.TOOH_BASE_URL }}
-          VLC_USER_AGENT: ${{ secrets.VLC_USER_AGENT || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' }}
-          TIVIMATE_USER_AGENT: ${{ secrets.TIVIMATE_USER_AGENT || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' }}
+          BASE_URL: ${{ secrets.BASE_URL }}
+          VLC_USER_AGENT: ${{ secrets.VLC_USER_AGENT }}
+          TIVIMATE_USER_AGENT: ${{ secrets.TIVIMATE_USER_AGENT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Run the main script
