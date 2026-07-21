@@ -1,8 +1,8 @@
-name: Generate TOOH M3U8
+name: Generate FOOH M3U8 Files
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,11 +27,14 @@ jobs:
           pip install aiohttp
           pip install playwright httpx[http2] pytz
           
-      - name: Run TOOH scraper
+      - name: Run FOOH updater
         env:
+          BASE_URL: ${{ secrets.TOOH_BASE_URL }}
+          VLC_USER_AGENT: ${{ secrets.VLC_USER_AGENT || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' }}
+          TIVIMATE_USER_AGENT: ${{ secrets.TIVIMATE_USER_AGENT || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Run the main script directly since fooh.py has if __name__ == "__main__"
+          # Run the main script
           python -c "import asyncio; from fooh import main; asyncio.run(main())"
           
       - name: Commit and push changes
@@ -39,5 +42,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add fooh_vlc.m3u8 fooh_tivimate.m3u8
-          git diff --staged --quiet || git commit -m "Update TOOH M3U8 files [skip ci]"
+          git diff --staged --quiet || git commit -m "Update FOOH M3U8 files [skip ci]"
           git push
