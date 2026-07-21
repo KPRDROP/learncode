@@ -27,16 +27,16 @@ jobs:
           pip install aiohttp
           pip install playwright httpx[http2] pytz
           
-      - name: Run TOOH scraper
+      - name: Run FOOH updater
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -m tooh.scraper  # Adjust module path as needed
+          python -m fooh.scraper
           
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add fooh_vlc.m3u8 fooh_tivimate.m3u8
-          git diff --staged --quiet || git commit -m "Update TOOH M3U8 files [skip ci]"
+          git diff --staged --quiet || git commit -m "Update FOOH M3U8 files [skip ci]"
           git push
