@@ -5,7 +5,7 @@ import asyncio
 import re
 from typing import Dict
 
-from utils import Cache, Time, get_logger, leagues, network
+from .utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -17,7 +17,7 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
-BASE_URL = os.getenv("TOOH_BASE_URL")
+BASE_URL = os.getenv("BASE_URL")
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
 TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
 
@@ -41,6 +41,8 @@ def clean_event_name(name: str) -> str:
     Returns:
         Cleaned event name
     """
+    # Remove commas but keep the text around them
+    # Example: "Oklahoma City, Oklahoma, USA" -> "Oklahoma City Oklahoma USA"
     cleaned = re.sub(r',\s*', ' ', name)
     
     # Remove extra spaces
@@ -353,6 +355,5 @@ async def main() -> None:
     log.info(f"{TAG} scraper completed")
 
 
-# For direct execution
 if __name__ == "__main__":
     asyncio.run(main())
