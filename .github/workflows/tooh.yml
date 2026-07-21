@@ -1,0 +1,43 @@
+name: Generate TOOH M3U8 Files
+
+on:
+  schedule:
+    # Run every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write  # Write permission for GitHub token
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp
+          pip install playwright httpx[http2] pytz
+          
+      - name: Run TOOH scraper
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python -m tooh.scraper  # Adjust module path as needed
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add fooh_vlc.m3u8 fooh_tivimate.m3u8
+          git diff --staged --quiet || git commit -m "Update TOOH M3U8 files [skip ci]"
+          git push
