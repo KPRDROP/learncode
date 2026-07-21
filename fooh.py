@@ -4,11 +4,11 @@ import os
 import re
 import json
 import base64
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 
-from utils import Cache, Time, get_logger, leagues, network
+from .utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -87,6 +87,8 @@ def clean_display_name(name: str) -> str:
     Returns:
         Cleaned display name
     """
+    if not name:
+        return ""
     # Remove commas but keep the text around them
     cleaned = re.sub(r',\s*', ' ', name)
     # Remove extra spaces
@@ -148,12 +150,20 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
 
         name, sport, event_date, event_time = values
 
+        # Skip if any required field is missing
+        if not all([name, sport, event_date, event_time]):
+            continue
+
         if sport.lower() == "unknown league":
             sport, name = get_event_info(name)
 
         # Handle timezone/day adjustment
-        event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
-        event_dt = event_dt.delta(days=1) if event_time.startswith("0") else event_dt
+        try:
+            event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
+            event_dt = event_dt.delta(days=1) if event_time.startswith("0") else event_dt
+        except Exception as e:
+            log.debug(f"Failed to parse date for event: {name} - {e}")
+            continue
 
         if event_dt.date() != now.date():
             continue
@@ -166,17 +176,37 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             channel_id = channel.get("id")
             channel_name = channel.get("name", "")
             
-            if channel_id and not channel_name.lower().startswith("backup"):
-                # Some channels might have URL directly
-                if "URL" in channel:
-                    event_urls[channel_name] = channel["URL"]
-                else:
-                    event_urls[channel_name] = channel_id
+            # Skip if channel_id is None or empty
+            if not channel_id:
+                continue
+                
+            # Skip backup channels
+            if channel_name.lower().startswith("backup"):
+                continue
+            
+            # Some channels might have URL directly
+            if "URL" in channel and channel["URL"]:
+                event_urls[channel_name] = channel["URL"]
+            else:
+                # Convert channel_id to string if it's not already
+                event_urls[channel_name] = str(channel_id)
+
+        # Skip if no valid channels found
+        if not event_urls:
+            continue
 
         for ch_name, ch_id in event_urls.items():
+            # Skip if ch_id is None or empty
+            if not ch_id:
+                continue
+                
             # Clean the sport and name for display
             clean_sport = clean_display_name(sport)
             clean_name = clean_display_name(name)
+            
+            # Skip if cleaned names are empty
+            if not clean_sport or not clean_name:
+                continue
             
             if (key := f"[{clean_sport}] {clean_name} | {ch_name} ({TAG})") in cached_keys:
                 continue
@@ -184,7 +214,7 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             tvg_id, logo = leagues.get_tvg_info(sport, name)
 
             # Determine if we have a direct URL or need to build it
-            if ch_id.startswith("http"):
+            if isinstance(ch_id, str) and ch_id.startswith("http"):
                 source = ch_id
             else:
                 source = urljoin(BASE_URL, f"stream/{ch_id}")
