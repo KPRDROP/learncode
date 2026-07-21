@@ -1,13 +1,12 @@
-name: Generate FOOH M3U8 Files
+name: Generate FOOH M3U8
 
 on:
   schedule:
-    # Run every 6 hours
-    - cron: '0 */6 * * *'
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Write permission for GitHub token
+  contents: write
 
 jobs:
   generate:
