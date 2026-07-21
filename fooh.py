@@ -348,7 +348,6 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     # Add VLC options
     options = [
         f"#EXTVLCOPT:http-referrer={BASE_URL}",
-        f"#EXTVLCOPT:http-origin={BASE_URL}",
         f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
     ]
     
@@ -395,7 +394,6 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     url = channel.get("source", "")
     params = [
         f"referer={BASE_URL}/",
-        f"origin={BASE_URL}",
         f"user-agent={encoded_user_agent}"
     ]
     
