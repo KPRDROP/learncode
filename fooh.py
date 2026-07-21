@@ -280,7 +280,7 @@ def encode_user_agent(user_agent: str) -> str:
 
 async def main() -> None:
     """
-    Main function to run the scraper and generate M3U8 files.
+    Main function to run the updater and generate M3U8 files.
     """
     log.info(f"Starting {TAG} updater")
     await scrape()
