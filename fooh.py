@@ -18,8 +18,8 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
 BASE_URL = os.getenv("BASE_URL")
-VLC_USER_AGENT = os.getenv("VLC_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
-TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
+TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
 
 
 def get_event_info(name: str) -> tuple[str, str]:
