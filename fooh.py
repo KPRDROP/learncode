@@ -1,10 +1,8 @@
 from collections.abc import KeysView
 from urllib.parse import urljoin
 import os
-import asyncio
 import re
 from typing import Dict
-from datetime import timedelta
 
 from utils import Cache, Time, get_logger, leagues, network
 
@@ -19,6 +17,8 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
 BASE_URL = os.getenv("BASE_URL")
+
+# User agents
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
 TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
 
@@ -31,29 +31,9 @@ def get_event_info(name: str) -> tuple[str, str]:
     )
 
 
-def clean_event_name(name: str) -> str:
-    """
-    Clean event name by removing commas and extra spaces.
-    Preserves meaningful punctuation like hyphens and periods.
-    
-    Args:
-        name: Raw event name
-        
-    Returns:
-        Cleaned event name
-    """
-    cleaned = re.sub(r',\s*', ' ', name)
-    
-    # Remove extra spaces
-    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    
-    return cleaned
-
-
 def clean_display_name(name: str) -> str:
     """
-    Clean display name for the M3U8 file.
-    Removes commas and cleans up formatting.
+    Clean display name by removing commas and extra spaces.
     
     Args:
         name: Display name
@@ -61,53 +41,17 @@ def clean_display_name(name: str) -> str:
     Returns:
         Cleaned display name
     """
-    # Remove commas
+    # Remove commas but keep the text around them
     cleaned = re.sub(r',\s*', ' ', name)
-    
     # Remove extra spaces
     cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    
     return cleaned
-
-
-def is_valid_event_date(event_dt, now, event_time: str) -> bool:
-    """
-    Check if event date is valid (today or tomorrow based on time).
-    
-    Args:
-        event_dt: Event datetime object
-        now: Current datetime object
-        event_time: Event time string
-        
-    Returns:
-        True if event is valid, False otherwise
-    """
-    # Get today's date
-    today = now.date()
-    tomorrow = today + timedelta(days=1)
-    day_after = today + timedelta(days=2)
-    
-    # Check if event is today
-    if event_dt.date() == today:
-        return True
-    
-    # Check if event is tomorrow (for events starting late at night)
-    if event_dt.date() == tomorrow:
-        return True
-    
-    # Check if event is day after tomorrow (for events that span multiple days)
-    if event_dt.date() == day_after and event_time.startswith("0"):
-        return True
-    
-    return False
 
 
 async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | float]]:
     events = {}
 
     now = Time.clean(Time.now())
-    today = now.date()
-    tomorrow = today + timedelta(days=1)
 
     if not (api_data := API_FILE.load(per_entry=False)):
         log.info("Refreshing API cache")
@@ -124,10 +68,6 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             api_data["timestamp"] = now.timestamp()
 
         API_FILE.write(api_data)
-
-    # Debug: Log total events from API
-    total_events = len(api_data.get("events", []))
-    log.info(f"Total events in API: {total_events}")
 
     for event in api_data.get("events", []):
         if not all(
@@ -148,18 +88,11 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
         if sport.lower() == "unknown league":
             sport, name = get_event_info(name)
 
-        try:
-            event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
-        except Exception as e:
-            log.debug(f"Failed to parse date: {event_date} {event_time} - {e}")
-            continue
+        event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
 
-        # Log for debugging
-        log.debug(f"Event: {name} | Sport: {sport} | Date: {event_date} | Time: {event_time} | Parsed: {event_dt}")
+        event_dt = event_dt.delta(days=1) if event_time.startswith("0") else event_dt
 
-        # Check if event is today or tomorrow
-        if not is_valid_event_date(event_dt, now, event_time):
-            log.debug(f"Skipping event (not today/tomorrow): {name} - {event_dt.date()}")
+        if event_dt.date() != now.date():
             continue
 
         elif not (event_channels := event.get("Channels")):
@@ -172,17 +105,12 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             if not channel["name"].lower().startswith("backup")
         }
 
-        if not event_urls:
-            continue
-
         for ch_name, ch_id in event_urls.items():
             # Clean the sport and name for display
             clean_sport = clean_display_name(sport)
             clean_name = clean_display_name(name)
             
-            key = f"[{clean_sport}] {clean_name} | {ch_name} ({TAG})"
-            
-            if key in cached_keys:
+            if (key := f"[{clean_sport}] {clean_name} | {ch_name} ({TAG})") in cached_keys:
                 continue
 
             tvg_id, logo = leagues.get_tvg_info(sport, name)
@@ -196,13 +124,8 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
                 "sport": clean_sport,
                 "name": clean_name,
                 "channel_name": ch_name,
-                "raw_sport": sport,
-                "raw_name": name,
-                "event_date": event_date,
-                "event_time": event_time,
             }
 
-    log.info(f"Processed {len(events)} valid event(s)")
     return events
 
 
@@ -219,14 +142,13 @@ async def scrape() -> None:
 
     log.info(f'Scraping from "{BASE_URL}"')
 
-    new_events = await get_events(cached_urls.keys())
-    urls.update(new_events)
+    urls.update(await get_events(cached_urls.keys()))
 
-    new_count = len(urls) - valid_count
-    if new_count > 0:
+    (
         log.info(f"Collected and cached {new_count} new event(s)")
-    else:
-        log.info("No new events found")
+        if (new_count := len(urls) - valid_count)
+        else log.info("No new events found")
+    )
 
     CACHE_FILE.write(urls)
 
@@ -253,7 +175,7 @@ async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], 
     
     if not valid_channels:
         log.warning("No valid channels found to generate M3U8 files")
-        # Create empty files
+        # Create empty files with headers
         with open(vlc_path, 'w', encoding='utf-8') as f:
             f.write("#EXTM3U\n")
         with open(tivimate_path, 'w', encoding='utf-8') as f:
@@ -300,15 +222,15 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     Returns:
         Formatted string for VLC
     """
-    # Extract channel info (already cleaned)
+    # Extract channel info
     sport = channel.get("sport", "Live Event")
     name = channel.get("name", key)
     channel_name = channel.get("channel_name", "")
     
-    # Clean display name - remove commas
+    # Clean display name
     display_name = clean_display_name(key.replace(f" ({TAG})", ""))
     
-    # VLC format with cleaned names
+    # VLC format
     tvg_name = f"[{sport}] {name} | {channel_name} ({TAG})"
     
     extinf = (f'#EXTINF:-1 tvg-chno="{chno}" '
@@ -321,7 +243,6 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     # Add VLC options
     options = [
         f"#EXTVLCOPT:http-referrer={BASE_URL}",
-        f"#EXTVLCOPT:http-origin={BASE_URL}",
         f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
     ]
     
@@ -342,15 +263,15 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     Returns:
         Formatted string for Tivimate
     """
-    # Extract channel info (already cleaned)
+    # Extract channel info
     sport = channel.get("sport", "Live Event")
     name = channel.get("name", key)
     channel_name = channel.get("channel_name", "")
     
-    # Clean display name for Tivimate - remove commas
+    # Clean display name for Tivimate
     display_name = clean_display_name(key.replace(f" ({TAG})", f" (FOOH)"))
     
-    # Tivimate format with cleaned names
+    # Tivimate format
     tvg_name = f"[{sport}] {name} | {channel_name} (FOOH)"
     
     # Tivimate format with pipe separator
@@ -368,7 +289,6 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     url = channel.get("source", "")
     params = [
         f"referer={BASE_URL}/",
-        f"origin={BASE_URL}",
         f"user-agent={encoded_user_agent}"
     ]
     
@@ -390,7 +310,7 @@ def encode_user_agent(user_agent: str) -> str:
     encoded = encoded.replace('(', '%28')
     encoded = encoded.replace(')', '%29')
     encoded = encoded.replace(';', '%3B')
-    encoded = encoded.replace(',', '%2C')  # Also encode commas
+    encoded = encoded.replace(',', '%2C')
     return encoded
 
 
@@ -404,4 +324,5 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
+    import asyncio
     asyncio.run(main())
