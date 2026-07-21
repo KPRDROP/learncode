@@ -8,7 +8,7 @@ from typing import Dict, Any
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
 
-from .utils import Cache, Time, get_logger, leagues, network
+from utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
