@@ -1,12 +1,12 @@
-name: FOOH Update
+name: Generate TOOH M3U8
 
 on:
   schedule:
     - cron: '0 */6 * * *'
-  workflow_dispatch:
+  workflow_dispatch:  # Allow manual trigger
 
 permissions:
-  contents: write
+  contents: write  # Write permission for GitHub token
 
 jobs:
   generate:
@@ -27,16 +27,16 @@ jobs:
           pip install aiohttp
           pip install playwright httpx[http2] pytz
           
-      - name: Run FOOH updater
+      - name: Run TOOH updater
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -m fooh.scraper
+          python -m tooh.scraper
           
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add fooh_vlc.m3u8 fooh_tivimate.m3u8
-          git diff --staged --quiet || git commit -m "Update FOOH M3U8 files [skip ci]"
+          git diff --staged --quiet || git commit -m "Update TOOH M3U8 files [skip ci]"
           git push
