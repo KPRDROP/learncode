@@ -10,13 +10,13 @@ log = get_logger(__name__)
 
 urls: dict[str, dict[str, str | float]] = {}
 
-TAG = "FOOH"
+TAG = "TOOH"
 
 CACHE_FILE = Cache(TAG, exp=10_800)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
-BASE_URL = "https://hoofoot.ru"
+BASE_URL = "https://hoofoot.ru"  # Secret variable
 
 # Secret variables for user agents
 VLC_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
