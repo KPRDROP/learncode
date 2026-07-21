@@ -1,8 +1,8 @@
 from collections.abc import KeysView
 from urllib.parse import urljoin
 import os
-import re
-from typing import Dict, List, Optional
+import asyncio
+from typing import Dict
 
 from utils import Cache, Time, get_logger, leagues, network
 
@@ -16,9 +16,8 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
+# Secret variables
 BASE_URL = "https://hoofoot.ru"
-
-# Secret variables for user agents
 VLC_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 TIVIMATE_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 
@@ -280,14 +279,13 @@ def encode_user_agent(user_agent: str) -> str:
 
 async def main() -> None:
     """
-    Main function to run the updater and generate M3U8 files.
+    Main function to run the scraper and generate M3U8 files.
     """
-    log.info(f"Starting {TAG} updater")
+    log.info(f"Starting {TAG} scraper")
     await scrape()
-    log.info(f"{TAG} updater completed")
+    log.info(f"{TAG} scraper completed")
 
 
 # For direct execution
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
