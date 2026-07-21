@@ -4,6 +4,7 @@ import os
 import asyncio
 import re
 from typing import Dict
+from datetime import timedelta
 
 from utils import Cache, Time, get_logger, leagues, network
 
@@ -69,10 +70,44 @@ def clean_display_name(name: str) -> str:
     return cleaned
 
 
+def is_valid_event_date(event_dt, now, event_time: str) -> bool:
+    """
+    Check if event date is valid (today or tomorrow based on time).
+    
+    Args:
+        event_dt: Event datetime object
+        now: Current datetime object
+        event_time: Event time string
+        
+    Returns:
+        True if event is valid, False otherwise
+    """
+    # Get today's date
+    today = now.date()
+    tomorrow = today + timedelta(days=1)
+    day_after = today + timedelta(days=2)
+    
+    # Check if event is today
+    if event_dt.date() == today:
+        return True
+    
+    # Check if event is tomorrow (for events starting late at night)
+    if event_dt.date() == tomorrow:
+        return True
+    
+    # Check if event is day after tomorrow (for events that span multiple days)
+    if event_dt.date() == day_after and event_time.startswith("0"):
+        return True
+    
+    return False
+
+
 async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | float]]:
     events = {}
 
     now = Time.clean(Time.now())
+    today = now.date()
+    tomorrow = today + timedelta(days=1)
 
     if not (api_data := API_FILE.load(per_entry=False)):
         log.info("Refreshing API cache")
@@ -89,6 +124,10 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             api_data["timestamp"] = now.timestamp()
 
         API_FILE.write(api_data)
+
+    # Debug: Log total events from API
+    total_events = len(api_data.get("events", []))
+    log.info(f"Total events in API: {total_events}")
 
     for event in api_data.get("events", []):
         if not all(
@@ -109,13 +148,18 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
         if sport.lower() == "unknown league":
             sport, name = get_event_info(name)
 
-        event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
+        try:
+            event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
+        except Exception as e:
+            log.debug(f"Failed to parse date: {event_date} {event_time} - {e}")
+            continue
 
-        # CRITICAL FIX: Handle timezone/day adjustment from original code
-        # This ensures events with times starting with "0" are properly adjusted
-        event_dt = event_dt.delta(days=1) if event_time.startswith("1") else event_dt
+        # Log for debugging
+        log.debug(f"Event: {name} | Sport: {sport} | Date: {event_date} | Time: {event_time} | Parsed: {event_dt}")
 
-        if event_dt.date() != now.date():
+        # Check if event is today or tomorrow
+        if not is_valid_event_date(event_dt, now, event_time):
+            log.debug(f"Skipping event (not today/tomorrow): {name} - {event_dt.date()}")
             continue
 
         elif not (event_channels := event.get("Channels")):
@@ -128,12 +172,17 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             if not channel["name"].lower().startswith("backup")
         }
 
+        if not event_urls:
+            continue
+
         for ch_name, ch_id in event_urls.items():
             # Clean the sport and name for display
             clean_sport = clean_display_name(sport)
             clean_name = clean_display_name(name)
             
-            if (key := f"[{clean_sport}] {clean_name} | {ch_name} ({TAG})") in cached_keys:
+            key = f"[{clean_sport}] {clean_name} | {ch_name} ({TAG})"
+            
+            if key in cached_keys:
                 continue
 
             tvg_id, logo = leagues.get_tvg_info(sport, name)
@@ -147,10 +196,13 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
                 "sport": clean_sport,
                 "name": clean_name,
                 "channel_name": ch_name,
-                "raw_sport": sport,  # Keep raw for league lookup if needed
-                "raw_name": name,    # Keep raw for reference
+                "raw_sport": sport,
+                "raw_name": name,
+                "event_date": event_date,
+                "event_time": event_time,
             }
 
+    log.info(f"Processed {len(events)} valid event(s)")
     return events
 
 
@@ -167,25 +219,29 @@ async def scrape() -> None:
 
     log.info(f'Scraping from "{BASE_URL}"')
 
-    urls.update(await get_events(cached_urls.keys()))
+    new_events = await get_events(cached_urls.keys())
+    urls.update(new_events)
 
-    (
+    new_count = len(urls) - valid_count
+    if new_count > 0:
         log.info(f"Collected and cached {new_count} new event(s)")
-        if (new_count := len(urls) - valid_count)
-        else log.info("No new events found")
-    )
+    else:
+        log.info("No new events found")
 
     CACHE_FILE.write(urls)
 
-    # Generate M3U8 files after updating
+    # Generate M3U8 files after scraping
     await generate_m3u8_files(urls)
 
 
 async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], output_dir: str = ".") -> None:
     """
-    Generate two M3U8 files from channel data.    
-    """
+    Generate two M3U8 files from channel data.
     
+    Args:
+        channels_data: Dictionary containing channel information
+        output_dir: Directory where files will be saved
+    """
     # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
     
@@ -194,6 +250,17 @@ async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], 
     
     # Filter out channels without source
     valid_channels = {k: v for k, v in channels_data.items() if v.get("source")}
+    
+    if not valid_channels:
+        log.warning("No valid channels found to generate M3U8 files")
+        # Create empty files
+        with open(vlc_path, 'w', encoding='utf-8') as f:
+            f.write("#EXTM3U\n")
+        with open(tivimate_path, 'w', encoding='utf-8') as f:
+            f.write("#EXTM3U\n")
+        os.chmod(vlc_path, 0o644)
+        os.chmod(tivimate_path, 0o644)
+        return
     
     # Generate VLC format
     with open(vlc_path, 'w', encoding='utf-8') as vlc_file:
@@ -217,8 +284,8 @@ async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], 
     os.chmod(vlc_path, 0o644)
     os.chmod(tivimate_path, 0o644)
     
-    log.info(f"Generated {vlc_path}")
-    log.info(f"Generated {tivimate_path}")
+    log.info(f"Generated {vlc_path} with {chno-1} channel(s)")
+    log.info(f"Generated {tivimate_path} with {chno-1} channel(s)")
 
 
 def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> str:
@@ -254,6 +321,7 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     # Add VLC options
     options = [
         f"#EXTVLCOPT:http-referrer={BASE_URL}",
+        f"#EXTVLCOPT:http-origin={BASE_URL}",
         f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
     ]
     
@@ -300,6 +368,7 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     url = channel.get("source", "")
     params = [
         f"referer={BASE_URL}/",
+        f"origin={BASE_URL}",
         f"user-agent={encoded_user_agent}"
     ]
     
