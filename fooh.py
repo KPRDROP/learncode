@@ -2,9 +2,10 @@ from collections.abc import KeysView
 from urllib.parse import urljoin
 import os
 import asyncio
+import re
 from typing import Dict
 
-from utils import Cache, Time, get_logger, leagues, network
+from .utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -16,10 +17,9 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
-# Secret variables
-BASE_URL = "https://hoofoot.ru"
-VLC_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
-TIVIMATE_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+BASE_URL = os.getenv("TOOH_BASE_URL")
+VLC_USER_AGENT = os.getenv("VLC_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
 
 
 def get_event_info(name: str) -> tuple[str, str]:
@@ -28,6 +28,45 @@ def get_event_info(name: str) -> tuple[str, str]:
         if ":" in name
         else ("Live Event", name)
     )
+
+
+def clean_event_name(name: str) -> str:
+    """
+    Clean event name by removing commas and extra spaces.
+    Preserves meaningful punctuation like hyphens and periods.
+    
+    Args:
+        name: Raw event name
+        
+    Returns:
+        Cleaned event name
+    """
+    cleaned = re.sub(r',\s*', ' ', name)
+    
+    # Remove extra spaces
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    
+    return cleaned
+
+
+def clean_display_name(name: str) -> str:
+    """
+    Clean display name for the M3U8 file.
+    Removes commas and cleans up formatting.
+    
+    Args:
+        name: Display name
+        
+    Returns:
+        Cleaned display name
+    """
+    # Remove commas
+    cleaned = re.sub(r',\s*', ' ', name)
+    
+    # Remove extra spaces
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    
+    return cleaned
 
 
 async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | float]]:
@@ -86,7 +125,11 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
         }
 
         for ch_name, ch_id in event_urls.items():
-            if (key := f"[{sport}] {name} | {ch_name} ({TAG})") in cached_keys:
+            # Clean the sport and name for display
+            clean_sport = clean_display_name(sport)
+            clean_name = clean_display_name(name)
+            
+            if (key := f"[{clean_sport}] {clean_name} | {ch_name} ({TAG})") in cached_keys:
                 continue
 
             tvg_id, logo = leagues.get_tvg_info(sport, name)
@@ -97,9 +140,11 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
                 "refer": BASE_URL,
                 "timestamp": now.timestamp(),
                 "tvg-id": tvg_id or "Live.Event.us",
-                "sport": sport,
-                "name": name,
+                "sport": clean_sport,
+                "name": clean_name,
                 "channel_name": ch_name,
+                "raw_sport": sport,  # Keep raw for league lookup if needed
+                "raw_name": name,    # Keep raw for reference
             }
 
     return events
@@ -146,25 +191,26 @@ async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], 
     vlc_path = os.path.join(output_dir, "fooh_vlc.m3u8")
     tivimate_path = os.path.join(output_dir, "fooh_tivimate.m3u8")
     
+    # Filter out channels without source
+    valid_channels = {k: v for k, v in channels_data.items() if v.get("source")}
+    
     # Generate VLC format
     with open(vlc_path, 'w', encoding='utf-8') as vlc_file:
         vlc_file.write("#EXTM3U\n")
         chno = 1
-        for key, channel in channels_data.items():
-            if channel.get("source"):
-                vlc_line = format_vlc_channel(key, channel, chno)
-                vlc_file.write(vlc_line + "\n")
-                chno += 1
+        for key, channel in valid_channels.items():
+            vlc_line = format_vlc_channel(key, channel, chno)
+            vlc_file.write(vlc_line + "\n")
+            chno += 1
     
     # Generate Tivimate format
     with open(tivimate_path, 'w', encoding='utf-8') as tivimate_file:
         tivimate_file.write("#EXTM3U\n")
         chno = 1
-        for key, channel in channels_data.items():
-            if channel.get("source"):
-                tivimate_line = format_tivimate_channel(key, channel, chno)
-                tivimate_file.write(tivimate_line + "\n")
-                chno += 1
+        for key, channel in valid_channels.items():
+            tivimate_line = format_tivimate_channel(key, channel, chno)
+            tivimate_file.write(tivimate_line + "\n")
+            chno += 1
     
     # Set write permissions (read/write for owner, read for others)
     os.chmod(vlc_path, 0o644)
@@ -186,15 +232,15 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     Returns:
         Formatted string for VLC
     """
-    # Extract channel info
+    # Extract channel info (already cleaned)
     sport = channel.get("sport", "Live Event")
     name = channel.get("name", key)
     channel_name = channel.get("channel_name", "")
     
-    # Clean the display name
-    display_name = key.replace(f" ({TAG})", "")
+    # Clean display name - remove commas
+    display_name = clean_display_name(key.replace(f" ({TAG})", ""))
     
-    # VLC format
+    # VLC format with cleaned names
     tvg_name = f"[{sport}] {name} | {channel_name} ({TAG})"
     
     extinf = (f'#EXTINF:-1 tvg-chno="{chno}" '
@@ -207,7 +253,6 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     # Add VLC options
     options = [
         f"#EXTVLCOPT:http-referrer={BASE_URL}",
-        f"#EXTVLCOPT:http-origin={BASE_URL}",
         f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
     ]
     
@@ -228,13 +273,15 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     Returns:
         Formatted string for Tivimate
     """
-    # Extract channel info
+    # Extract channel info (already cleaned)
     sport = channel.get("sport", "Live Event")
     name = channel.get("name", key)
     channel_name = channel.get("channel_name", "")
     
-    # Replace TAG with FOOH for Tivimate
-    display_name = key.replace(f" ({TAG})", f" (FOOH)")
+    # Clean display name for Tivimate - remove commas
+    display_name = clean_display_name(key.replace(f" ({TAG})", f" (FOOH)"))
+    
+    # Tivimate format with cleaned names
     tvg_name = f"[{sport}] {name} | {channel_name} (FOOH)"
     
     # Tivimate format with pipe separator
@@ -273,7 +320,28 @@ def encode_user_agent(user_agent: str) -> str:
     encoded = encoded.replace('(', '%28')
     encoded = encoded.replace(')', '%29')
     encoded = encoded.replace(';', '%3B')
+    encoded = encoded.replace(',', '%2C')  # Also encode commas
     return encoded
+
+
+def clean_display_name(name: str) -> str:
+    """
+    Clean display name for the M3U8 file.
+    Removes commas and cleans up formatting.
+    
+    Args:
+        name: Display name
+        
+    Returns:
+        Cleaned display name
+    """
+    # Remove commas but keep the text
+    cleaned = re.sub(r',\s*', ' ', name)
+    
+    # Remove extra spaces
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    
+    return cleaned
 
 
 async def main() -> None:
