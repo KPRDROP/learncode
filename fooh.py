@@ -111,6 +111,10 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
 
         event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
 
+        # CRITICAL FIX: Handle timezone/day adjustment from original code
+        # This ensures events with times starting with "0" are properly adjusted
+        event_dt = event_dt.delta(days=1) if event_time.startswith("0") else event_dt
+
         if event_dt.date() != now.date():
             continue
 
@@ -173,18 +177,15 @@ async def scrape() -> None:
 
     CACHE_FILE.write(urls)
 
-    # Generate M3U8 files after scraping
+    # Generate M3U8 files after updating
     await generate_m3u8_files(urls)
 
 
 async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], output_dir: str = ".") -> None:
     """
-    Generate two M3U8 files from channel data.
-    
-    Args:
-        channels_data: Dictionary containing channel information
-        output_dir: Directory where files will be saved
+    Generate two M3U8 files from channel data.    
     """
+    
     # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
     
@@ -322,26 +323,6 @@ def encode_user_agent(user_agent: str) -> str:
     encoded = encoded.replace(';', '%3B')
     encoded = encoded.replace(',', '%2C')  # Also encode commas
     return encoded
-
-
-def clean_display_name(name: str) -> str:
-    """
-    Clean display name for the M3U8 file.
-    Removes commas and cleans up formatting.
-    
-    Args:
-        name: Display name
-        
-    Returns:
-        Cleaned display name
-    """
-    # Remove commas but keep the text
-    cleaned = re.sub(r',\s*', ' ', name)
-    
-    # Remove extra spaces
-    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    
-    return cleaned
 
 
 async def main() -> None:
