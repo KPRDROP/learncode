@@ -2,9 +2,13 @@ from collections.abc import KeysView
 from urllib.parse import urljoin
 import os
 import re
-from typing import Dict
+import json
+import base64
+from typing import Dict, Any
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import unpad
 
-from utils import Cache, Time, get_logger, leagues, network
+from .utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -21,6 +25,48 @@ BASE_URL = os.getenv("BASE_URL")
 # User agents
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
 TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
+
+# AES decryption key from event.js
+KEY_HEX = '7e7b186136253a23a29938d220d87aef'
+
+
+def hex_to_bytes(hex_str: str) -> bytes:
+    """Convert hex string to bytes."""
+    return bytes.fromhex(hex_str)
+
+
+def base64_to_bytes(base64_str: str) -> bytes:
+    """Convert base64 string to bytes."""
+    return base64.b64decode(base64_str)
+
+
+def decrypt_response(encrypted_data: Dict[str, str]) -> Dict[str, Any]:
+    """
+    Decrypt AES-CBC encrypted response from the API.
+    
+    Args:
+        encrypted_data: Dictionary with 'iv' and 'encrypted' keys
+        
+    Returns:
+        Decrypted JSON data as dictionary
+    """
+    try:
+        # Get IV and encrypted data
+        iv = base64_to_bytes(encrypted_data['iv'])
+        encrypted = base64_to_bytes(encrypted_data['encrypted'])
+        
+        # Create AES cipher
+        key = hex_to_bytes(KEY_HEX)
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        
+        # Decrypt and unpad
+        decrypted = unpad(cipher.decrypt(encrypted), AES.block_size)
+        
+        # Parse JSON
+        return json.loads(decrypted.decode('utf-8'))
+    except Exception as e:
+        log.error(f"Decryption failed: {e}")
+        raise
 
 
 def get_event_info(name: str) -> tuple[str, str]:
@@ -63,13 +109,30 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
             headers={"Referer": BASE_URL},
             log=log,
         ):
-            api_data: dict[str, list[dict]] = r.json()
-
-            api_data["timestamp"] = now.timestamp()
+            # Check if response is encrypted
+            response_data = r.json()
+            
+            # If the response has iv and encrypted fields, decrypt it
+            if response_data and 'iv' in response_data and 'encrypted' in response_data:
+                try:
+                    log.info("Decrypting API response")
+                    api_data = decrypt_response(response_data)
+                    api_data["timestamp"] = now.timestamp()
+                except Exception as e:
+                    log.error(f"Failed to decrypt API response: {e}")
+                    api_data = {"events": [], "timestamp": now.timestamp()}
+            else:
+                # Not encrypted, use as-is
+                api_data = response_data
+                api_data["timestamp"] = now.timestamp()
 
         API_FILE.write(api_data)
 
-    for event in api_data.get("events", []):
+    # Get events from the decrypted data
+    events_list = api_data.get("events", [])
+    log.info(f"Total events in API: {len(events_list)}")
+
+    for event in events_list:
         if not all(
             values := [
                 event.get(k)
@@ -88,8 +151,8 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
         if sport.lower() == "unknown league":
             sport, name = get_event_info(name)
 
+        # Handle timezone/day adjustment
         event_dt = Time.from_str(f"{event_date} {event_time}", timezone="UTC")
-
         event_dt = event_dt.delta(days=1) if event_time.startswith("0") else event_dt
 
         if event_dt.date() != now.date():
@@ -98,12 +161,17 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
         elif not (event_channels := event.get("Channels")):
             continue
 
-        event_urls: dict[str, str] = {
-            channel["name"]: channel.get("id")
-            for channel in event_channels
-            if channel.get("id")
-            if not channel["name"].lower().startswith("backup")
-        }
+        event_urls: dict[str, str] = {}
+        for channel in event_channels:
+            channel_id = channel.get("id")
+            channel_name = channel.get("name", "")
+            
+            if channel_id and not channel_name.lower().startswith("backup"):
+                # Some channels might have URL directly
+                if "URL" in channel:
+                    event_urls[channel_name] = channel["URL"]
+                else:
+                    event_urls[channel_name] = channel_id
 
         for ch_name, ch_id in event_urls.items():
             # Clean the sport and name for display
@@ -115,8 +183,14 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
 
             tvg_id, logo = leagues.get_tvg_info(sport, name)
 
+            # Determine if we have a direct URL or need to build it
+            if ch_id.startswith("http"):
+                source = ch_id
+            else:
+                source = urljoin(BASE_URL, f"stream/{ch_id}")
+
             events[key] = {
-                "source": urljoin(BASE_URL, f"stream/{ch_id}"),
+                "source": source,
                 "logo": logo,
                 "refer": BASE_URL,
                 "timestamp": now.timestamp(),
@@ -126,6 +200,7 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
                 "channel_name": ch_name,
             }
 
+    log.info(f"Processed {len(events)} valid event(s)")
     return events
 
 
@@ -243,6 +318,7 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
     # Add VLC options
     options = [
         f"#EXTVLCOPT:http-referrer={BASE_URL}",
+        f"#EXTVLCOPT:http-origin={BASE_URL}",
         f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
     ]
     
@@ -289,6 +365,7 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     url = channel.get("source", "")
     params = [
         f"referer={BASE_URL}/",
+        f"origin={BASE_URL}",
         f"user-agent={encoded_user_agent}"
     ]
     
