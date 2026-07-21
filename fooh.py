@@ -41,8 +41,6 @@ def clean_event_name(name: str) -> str:
     Returns:
         Cleaned event name
     """
-    # Remove commas but keep the text around them
-    # Example: "Oklahoma City, Oklahoma, USA" -> "Oklahoma City Oklahoma USA"
     cleaned = re.sub(r',\s*', ' ', name)
     
     # Remove extra spaces
