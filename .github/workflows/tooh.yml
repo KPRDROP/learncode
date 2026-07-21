@@ -1,4 +1,4 @@
-name: Generate FOOH M3U8 Files
+name: Generate FOOH M3U8
 
 on:
   schedule:
