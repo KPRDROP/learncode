@@ -113,7 +113,7 @@ async def get_events(cached_keys: KeysView[str]) -> dict[str, dict[str, str | fl
 
         # CRITICAL FIX: Handle timezone/day adjustment from original code
         # This ensures events with times starting with "0" are properly adjusted
-        event_dt = event_dt.delta(days=0) if event_time.startswith("0") else event_dt
+        event_dt = event_dt.delta(days=1) if event_time.startswith("1") else event_dt
 
         if event_dt.date() != now.date():
             continue
