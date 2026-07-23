@@ -1,19 +1,145 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Panevėžys vs Tobol | KZ (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Panevėžys vs Tobol | KZ (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Dinamo Tbilisi vs Žalgiris | GE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Dinamo Tbilisi vs Žalgiris | GE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do65.m3u8?md5=jbx9u-1oVjrmjjxAvq3e3w&expires=1784807821
+https://cdn7.zohanayaan.com:1686/hls/do16.m3u8?md5=-cZTVpd-A_xDBTmccPOfgA&expires=1784814547
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[NRL] Penrith Panthers vs Parramatta Eels | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Penrith Panthers vs Parramatta Eels | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Hammarby vs Anderlecht | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Hammarby vs Anderlecht | PT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do82.m3u8?md5=dYTYqGtfdceM4V3lZOFCAg&expires=1784807823
+https://cdn4.zohanayaan.com:1686/hls/do22.m3u8?md5=VqSPB9FNfesW7DIehGMw7g&expires=1784814549
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[AFL] Collingwood Magpies vs Adelaide Crows | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Collingwood Magpies vs Adelaide Crows | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Hammarby vs Anderlecht | BE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Hammarby vs Anderlecht | BE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do83.m3u8?md5=1yqxmwKF5-_R369H-no4_g&expires=1784807825
+https://cdn9.zohanayaan.com:1686/hls/do49.m3u8?md5=Xy3r8B9n4N1mardli_gInQ&expires=1784814550
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] AEK Larnaca vs Beitar Jerusalem | CY (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] AEK Larnaca vs Beitar Jerusalem | CY (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/do25.m3u8?md5=H14rYnUQuF_rJFCQcgirAg&expires=1784814551
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] AEK Larnaca vs Beitar Jerusalem | IL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] AEK Larnaca vs Beitar Jerusalem | IL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do63.m3u8?md5=Jro2gFTTCFGpR19vIPLCnA&expires=1784814552
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] DAC vs Velež | SK (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] DAC vs Velež | SK (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/do42.m3u8?md5=rK_BuwNZaSykLxX6IsY7Yw&expires=1784814553
+
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Hapoel Tel Aviv vs Ludogorets | IL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Hapoel Tel Aviv vs Ludogorets | IL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do43.m3u8?md5=blhWiO2ha9Pc5HISljm2MA&expires=1784814555
+
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Hapoel Tel Aviv vs Ludogorets | BG (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Hapoel Tel Aviv vs Ludogorets | BG (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do62.m3u8?md5=QIiClCPJK-XmHMho2t-Y9A&expires=1784814556
+
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Dila vs Apollon | CY (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Dila vs Apollon | CY (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do44.m3u8?md5=dfmCExIK9RbEs_39sPxjiQ&expires=1784814557
+
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Qarabağ vs CSKA Sofia | BG (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Qarabağ vs CSKA Sofia | BG (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do48.m3u8?md5=Wwv8iVhWH4U43O54wQo6kQ&expires=1784814558
+
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Qarabağ vs CSKA Sofia | AZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Qarabağ vs CSKA Sofia | AZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do68.m3u8?md5=iQbnI2BBuj3qJ47hw_olLw&expires=1784814559
+
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Rīgas FS vs Vestri | LT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Rīgas FS vs Vestri | LT (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do58.m3u8?md5=uiPq-262yZYFjdxbN0sbCA&expires=1784814560
+
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Dynamo Kyiv vs PAOK | UA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Dynamo Kyiv vs PAOK | UA (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do59.m3u8?md5=Gc_jE_qXXIJi5CBj1VBs1A&expires=1784814561
+
+#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] Sheriff vs Maccabi Tel Aviv | IL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] Sheriff vs Maccabi Tel Aviv | IL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do61.m3u8?md5=DNPSe9qQslAv5Ki5w5FOoA&expires=1784814562
+
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Debrecen vs Pyunik | HU (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Debrecen vs Pyunik | HU (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/do64.m3u8?md5=kbHBIIRIYN75wo_jX6as3Q&expires=1784814563
+
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Panevėžys vs Tobol | KZ (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Panevėžys vs Tobol | KZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do65.m3u8?md5=3EQgYlly2eMt1_NP845vHg&expires=1784814565
+
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Universitatea Cluj vs Brann | RO (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Universitatea Cluj vs Brann | RO (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do66.m3u8?md5=LeuyS6z4rll_TVSOSWidkg&expires=1784814565
+
+#EXTINF:-1 tvg-chno="18" tvg-id="Live.Event.us" tvg-name="[World Club Friendly] Gorica vs Shakhtar Donetsk | HR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Club Friendly] Gorica vs Shakhtar Donetsk | HR (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/do70.m3u8?md5=ejVSneuVEJQQif8sBQWRww&expires=1784814566
+
+#EXTINF:-1 tvg-chno="19" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Europa League] GAIS vs Nordsjælland | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Europe UEFA Europa League] GAIS vs Nordsjælland | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/do71.m3u8?md5=4GbF5hHaupDVTW0VGe0RdA&expires=1784814567
+
+#EXTINF:-1 tvg-chno="20" tvg-id="Live.Event.us" tvg-name="[NRL] Penrith Panthers vs Parramatta Eels | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Penrith Panthers vs Parramatta Eels | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do82.m3u8?md5=_3M2u9UVlhs_u0mKbdzvvQ&expires=1784814563
+
+#EXTINF:-1 tvg-chno="21" tvg-id="Live.Event.us" tvg-name="[AFL] Collingwood Magpies vs Adelaide Crows | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Collingwood Magpies vs Adelaide Crows | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/do83.m3u8?md5=Ejc2NeGXMVcDBPrKEAba6A&expires=1784814564
+
+#EXTINF:-1 tvg-chno="22" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Tromsø vs Hradec Králové | CZ (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Tromsø vs Hradec Králové | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/do92.m3u8?md5=_oto0JjsV7c9X1yEYmnmOQ&expires=1784814570
+
+#EXTINF:-1 tvg-chno="23" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] Zimbru Chisinau vs Noah | MD (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] Zimbru Chisinau vs Noah | MD (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/do93.m3u8?md5=BGeN2ll5hlBqO81THUsHgQ&expires=1784814571
+
+#EXTINF:-1 tvg-chno="24" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Conference League] FCSB vs Auda | RO (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/20296.png" group-title="Live Events",[Europe UEFA Conference League] FCSB vs Auda | RO (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/do95.m3u8?md5=9-baUWt3fgzGvO8h8AWftA&expires=1784814572
 
