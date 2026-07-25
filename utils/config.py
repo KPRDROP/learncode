@@ -38,11 +38,7 @@ class Time(datetime):
 
     @classmethod
     def default_8(cls) -> float:
-        return (
-            cls.now()
-            .replace(hour=8, minute=0, second=0, microsecond=0, tzinfo=cls.TZ)
-            .timestamp()
-        )
+        return cls.now().replace(hour=8, minute=0, second=0, microsecond=0).timestamp()
 
     def delta(self, **kwargs) -> "Time":
         return self.from_ts((self + timedelta(**kwargs)).timestamp())
@@ -96,6 +92,7 @@ class Time(datetime):
                 "%m/%d/%Y %H:%M",
                 "%m/%d/%Y %I:%M %p",
                 "%m/%d/%Y %H:%M:%S",
+                "%d/%m/%Y %I:%M %p",
                 "%a, %d %b %Y %H:%M",
                 "%a, %d %b %Y %H:%M:%S %z",
                 "%A, %b %d, %Y %H:%M",
@@ -140,7 +137,7 @@ class Leagues:
                 for tvg_id, leagues in self.data["leagues"].items()
                 for league_entry in leagues
                 for league_name, league_data in league_entry.items()
-                if sport == league_name or sport in league_data.get("names", [])
+                if sport == league_name or sport in league_data.get("aliases", [])
             ),
             None,
         ):
@@ -165,6 +162,7 @@ class Leagues:
 
         return event.lower() in {
             "nfl redzone",
+            "nfl red zone",
             "redzone",
             "red zone",
             "college gameday",
@@ -179,11 +177,13 @@ class Leagues:
 
         match sport:
             case "American Football" | "NFL":
-                return (
-                    self.info("NFL")
-                    if self.is_valid(name, "NFL")
-                    else self.info("NCAA")
-                )
+                if self.is_valid(name, "NFL"):
+                    return self.info("NFL")
+
+                elif self.is_valid(name, "CFL"):
+                    return self.info("CFL")
+
+                return self.info("American Football")
 
             case "Basketball" | "NBA":
                 if self.is_valid(name, "NBA"):
