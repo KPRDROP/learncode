@@ -140,13 +140,13 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
         tivimate_lines.append("")  # Empty line for separation
     
     # Write VLC file
-    vlc_output_path = Path("buzzer_vlc.m3u8")
+    vlc_output_path = Path("buzzea_vlc.m3u8")
     with open(vlc_output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("\n".join(vlc_lines))
     
     # Write TiviMate file
-    tivimate_output_path = Path("buzzer_tivimate.m3u8")
+    tivimate_output_path = Path("buzzea_tivimate.m3u8")
     with open(tivimate_output_path, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write("\n".join(tivimate_lines))
