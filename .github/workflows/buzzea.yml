@@ -44,7 +44,7 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         
         # Add files (force add even if gitignored)
-        git add -f buzzear_vlc.m3u8 buzzear_tivimate.m3u8 || true
+        git add -f buzzea_vlc.m3u8 buzzea_tivimate.m3u8 || true
         git add -f *.cache || true
         
         # Commit if there are changes
