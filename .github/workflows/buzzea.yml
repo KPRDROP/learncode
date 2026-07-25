@@ -1,0 +1,60 @@
+name: BUZZEA Scraper
+
+on:
+  schedule:
+    # Run every 2 hours
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install playwright selectolax httpx[http2] pytz
+        playwright install chromium
+    
+    - name: Run BUZZEA scraper
+      env:
+        BUZZEA_BASE_URL: ${{ secrets.BUZZEA_BASE_URL }}
+      run: |
+        python buzzea.py
+    
+    - name: Push files
+      run: |
+        # Setup git
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # Add files (force add even if gitignored)
+        git add -f buzzear_vlc.m3u8 buzzear_tivimate.m3u8 || true
+        git add -f *.cache || true
+        
+        # Commit if there are changes
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Commit changes
+        git commit -m "Auto-update BUZZEA M3U8 streams [skip ci]"
+        
+        # Push to main branch
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main --force
