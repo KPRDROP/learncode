@@ -1,127 +1,115 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs Tampa Bay Rays | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] Cleveland Guardians vs Tampa Bay Rays | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[NWSL] Portland Thorns FC vs Gotham FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2323.png" group-title="Live Events",[NWSL] Portland Thorns FC vs Gotham FC | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do1.m3u8?md5=cx7zZ3FmwuZ2dX-_G9ZPzA&expires=1784942184
+https://cdn4.zohanayaan.com:1686/hls/do1.m3u8?md5=L_K9drlNure1CwJaFu5hpQ&expires=1784948428
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[NWSL] Portland Thorns FC vs Gotham FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2323.png" group-title="Live Events",[NWSL] Portland Thorns FC vs Gotham FC | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Formula E] Tokyo Free Practice 2 | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula E] Tokyo Free Practice 2 | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do1.m3u8?md5=cx7zZ3FmwuZ2dX-_G9ZPzA&expires=1784942184
+https://cdn4.zohanayaan.com:1686/hls/do1.m3u8?md5=L_K9drlNure1CwJaFu5hpQ&expires=1784948428
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Formula E] Tokyo Free Practice 2 | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula E] Tokyo Free Practice 2 | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Formula E] Tokyo Qualifying | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula E] Tokyo Qualifying | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do1.m3u8?md5=cx7zZ3FmwuZ2dX-_G9ZPzA&expires=1784942184
+https://cdn4.zohanayaan.com:1686/hls/do1.m3u8?md5=L_K9drlNure1CwJaFu5hpQ&expires=1784948428
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Formula E] Tokyo Qualifying | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula E] Tokyo Qualifying | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Tour de France] Tour de France | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Tour de France] Tour de France | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do1.m3u8?md5=cx7zZ3FmwuZ2dX-_G9ZPzA&expires=1784942184
+https://cdn4.zohanayaan.com:1686/hls/do1.m3u8?md5=L_K9drlNure1CwJaFu5hpQ&expires=1784948428
 
 #EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tijuana vs León | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tijuana vs León | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do29.m3u8?md5=BBFawPQ_c235_a9s8nRv3w&expires=1784942189
+https://cdn3.zohanayaan.com:1686/hls/do29.m3u8?md5=uMcGqILis5yHB7bdfwZK-A&expires=1784948433
 
 #EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Atlante vs América | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Atlante vs América | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do30.m3u8?md5=geVP_xSRMnz1LNE9s1Q8OA&expires=1784942190
+https://cdn4.zohanayaan.com:1686/hls/do30.m3u8?md5=wWpsyW_yup8AvPnuRUsodg&expires=1784948435
 
 #EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[CFL] Calgary Stampeders vs Winnipeg Blue Bombers | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[CFL] Calgary Stampeders vs Winnipeg Blue Bombers | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=Ig8FS6yKfXulEu8eBHteoQ&expires=1784942192
+https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=ndBHVj9UK5GpZUKM5jDZZQ&expires=1784948436
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[ARCA Menards Series] LiUNA! 150 | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[ARCA Menards Series] LiUNA! 150 | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Rally Poland | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Rally Poland | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do81.m3u8?md5=wuPfhL9mVD5m25z_UKq7Ng&expires=1784942193
+https://cdn4.zohanayaan.com:1686/hls/do78.m3u8?md5=ybOZADo3n_oqly8UHgXo6g&expires=1784948438
 
 #EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[NASCAR Craftsman Truck Series] NCTS Race at IRP | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NASCAR Craftsman Truck Series] NCTS Race at IRP | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do81.m3u8?md5=wuPfhL9mVD5m25z_UKq7Ng&expires=1784942193
+https://cdn2.zohanayaan.com:1686/hls/do81.m3u8?md5=-D9jqffZphq0ncgmcUczig&expires=1784948439
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[AFL] Gold Coast Suns vs Carlton Blues | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Gold Coast Suns vs Carlton Blues | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[AFL] Sydney Swans vs Greater Western Sydney Giants | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Sydney Swans vs Greater Western Sydney Giants | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do82.m3u8?md5=BeiLW-AYg3kmJyFDx-k9wA&expires=1784942194
+https://cdn2.zohanayaan.com:1686/hls/do81.m3u8?md5=-D9jqffZphq0ncgmcUczig&expires=1784948439
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Premier League] HFX Wanderers vs Supra du Quebec | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Premier League] HFX Wanderers vs Supra du Quebec | EN (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[AFL] Gold Coast Suns vs Carlton Blues | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Gold Coast Suns vs Carlton Blues | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=xLlJapvoJ6bzDBF65cfK2w&expires=1784942195
+https://cdn9.zohanayaan.com:1686/hls/do82.m3u8?md5=xPJMT7rLYLBQZctzdNm6Gw&expires=1784948441
 
-#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Premier League] Vancouver FC vs Cavalry | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Premier League] Vancouver FC vs Cavalry | EN (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[AFL] Essendon Bombers vs Hawthorn Hawks | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[AFL] Essendon Bombers vs Hawthorn Hawks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=xLlJapvoJ6bzDBF65cfK2w&expires=1784942195
+https://cdn9.zohanayaan.com:1686/hls/do82.m3u8?md5=xPJMT7rLYLBQZctzdNm6Gw&expires=1784948441
 
-#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[NRLW] St. George Illawarra Dragons W vs Canterbury Bulldogs W | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRLW] St. George Illawarra Dragons W vs Canterbury Bulldogs W | EN (PLAY)
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Premier League] Vancouver FC vs Cavalry | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Premier League] Vancouver FC vs Cavalry | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do83.m3u8?md5=xLlJapvoJ6bzDBF65cfK2w&expires=1784942195
+https://cdn9.zohanayaan.com:1686/hls/do83.m3u8?md5=dYzgiiL-ekW8L-5Aw6C0zA&expires=1784948444
 
-#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[Argentina Primera División] Racing Club vs Gimnasia La Plata | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Primera División] Racing Club vs Gimnasia La Plata | ES (PLAY)
+#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[NRLW] St. George Illawarra Dragons W vs Canterbury Bulldogs W | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRLW] St. George Illawarra Dragons W vs Canterbury Bulldogs W | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do87.m3u8?md5=uPfufpBnWV_udwztGMu0cQ&expires=1784942199
+https://cdn9.zohanayaan.com:1686/hls/do83.m3u8?md5=dYzgiiL-ekW8L-5Aw6C0zA&expires=1784948444
 
 #EXTINF:-1 tvg-chno="15" tvg-id="Live.Event.us" tvg-name="[Argentina Primera División] Huracán vs Banfield | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Primera División] Huracán vs Banfield | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do84.m3u8?md5=I2ShZtH0mzTbPBca8gVxVw&expires=1784942198
+https://cdn5.zohanayaan.com:1686/hls/do84.m3u8?md5=dQlKPLNN10N9diZSwBazcg&expires=1784948446
 
-#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[Argentina Primera División] Vélez Sarsfield vs Instituto | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Primera División] Vélez Sarsfield vs Instituto | ES (PLAY)
+#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[Argentina Primera División] Platense vs Unión Santa Fe | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Primera División] Platense vs Unión Santa Fe | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do85.m3u8?md5=imclxTWeu8qGQSVdTcjzDg&expires=1784942201
+https://cdn2.zohanayaan.com:1686/hls/do85.m3u8?md5=5SziKFyniHSKHFhxU4950A&expires=1784948447
 
-#EXTINF:-1 tvg-chno="17" tvg-id="Live.Event.us" tvg-name="[Argentina Primera División] Platense vs Unión Santa Fe | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Argentina Primera División] Platense vs Unión Santa Fe | ES (PLAY)
+#EXTINF:-1 tvg-chno="17" tvg-id="Live.Event.us" tvg-name="[Legacy Fighting Alliance] Dylan Diebitz vs Preston LaGrange | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Legacy Fighting Alliance] Dylan Diebitz vs Preston LaGrange | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do85.m3u8?md5=imclxTWeu8qGQSVdTcjzDg&expires=1784942201
+https://cdn6.zohanayaan.com:1686/hls/do86.m3u8?md5=MwwDqsQhcrrf9ftwuMgnZQ&expires=1784948449
 
-#EXTINF:-1 tvg-chno="18" tvg-id="Live.Event.us" tvg-name="[Legacy Fighting Alliance] Dylan Diebitz vs Preston LaGrange | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Legacy Fighting Alliance] Dylan Diebitz vs Preston LaGrange | ES (PLAY)
+#EXTINF:-1 tvg-chno="18" tvg-id="Live.Event.us" tvg-name="[Peru Primera Division] Universitario vs Cusco | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Peru Primera Division] Universitario vs Cusco | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do86.m3u8?md5=WVJ5jKTPfFaGbWtRaDFVgA&expires=1784942203
+https://cdn8.zohanayaan.com:1686/hls/do99.m3u8?md5=S0YMTUBS9aFeqtBZrmFn1g&expires=1784948450
 
-#EXTINF:-1 tvg-chno="19" tvg-id="Live.Event.us" tvg-name="[Peru Primera Division] Universitario vs Cusco | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Peru Primera Division] Universitario vs Cusco | ES (PLAY)
+#EXTINF:-1 tvg-chno="19" tvg-id="Live.Event.us" tvg-name="[Chile Primera Division] Colo-Colo vs Deportes Limache | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Chile Primera Division] Colo-Colo vs Deportes Limache | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do99.m3u8?md5=v0TtsQwAcx0HuzzMvrBWjw&expires=1784942204
-
-#EXTINF:-1 tvg-chno="20" tvg-id="Live.Event.us" tvg-name="[Chile Primera Division] Unión La Calera vs Everton | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Chile Primera Division] Unión La Calera vs Everton | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do100.m3u8?md5=HrpbT7N6jwv4JdVOULlh2g&expires=1784942205
-
-#EXTINF:-1 tvg-chno="21" tvg-id="Live.Event.us" tvg-name="[Chile Primera Division] Colo-Colo vs Deportes Limache | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Chile Primera Division] Colo-Colo vs Deportes Limache | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do100.m3u8?md5=HrpbT7N6jwv4JdVOULlh2g&expires=1784942205
+https://cdn7.zohanayaan.com:1686/hls/do100.m3u8?md5=qC9xlK1UlWgxAxFsvzi_tQ&expires=1784948451
 
