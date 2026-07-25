@@ -1,6 +1,5 @@
 import asyncio
 import logging
-import random
 import re
 from collections.abc import AsyncGenerator, Awaitable, Callable
 from contextlib import asynccontextmanager
@@ -67,18 +66,6 @@ class Network:
             log.error(f'Failed to fetch "{url}": {e}')
 
             return ""
-
-    async def get_base(self, mirrors: list[str]) -> str | None:
-        random.shuffle(mirrors)
-
-        for mirror in mirrors:
-            if not (r := await self.request(mirror)):
-                continue
-
-            elif r.status_code != 200:
-                continue
-
-            return mirror
 
     @staticmethod
     def ensure_https(url: str) -> str:
@@ -229,7 +216,7 @@ class Network:
         got_one: asyncio.Event,
     ) -> None:
 
-        escaped = [
+        blocked = [
             re.escape(i)
             for i in {
                 # "amazonaws",
@@ -238,7 +225,7 @@ class Network:
             }
         ]
 
-        pattern = re.compile(rf"^(?!.*({'|'.join(escaped)})).*\.m3u8", re.I)
+        pattern = re.compile(rf"^(?!.*({'|'.join(blocked)})).*\.m3u8", re.I)
 
         if pattern.search(req.url):
             captured.append(req.url)
