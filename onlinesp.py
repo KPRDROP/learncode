@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-"""
-Sportsonline Stream Extractor
-Direct connection without proxy support
-Improved header extraction and Tivimate format support
-"""
-
 import asyncio
 import base64
 import logging
