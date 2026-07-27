@@ -131,8 +131,8 @@ async def get_events() -> list[Event]:
 
         API_FILE.write(api_data)
 
-    start_dt = now.delta(hours=-3)
-    end_dt = now.delta(minutes=30)
+    start_dt = now.delta(hours=-6)
+    end_dt = now.delta(minutes=1)
 
     for event_group in api_data:
         if not all(
