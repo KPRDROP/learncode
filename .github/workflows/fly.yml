@@ -1,4 +1,4 @@
-name: Generate FLY
+name: FLY Updater
 
 on:
   schedule:
