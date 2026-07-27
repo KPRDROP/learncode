@@ -188,7 +188,7 @@ async def scrape() -> None:
 
     log.info(f"Loaded {cached_count} event(s) from cache")
 
-    log.info('Scraping from "https://flyembed.xyz"')
+    log.info('Scraping from "fly"')
 
     if events := await get_events():
         log.info(f"Processing {len(events)} new URL(s)")
