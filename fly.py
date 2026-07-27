@@ -18,7 +18,6 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
-# Secret variables
 FLY_API_URL = os.getenv("FLY_API_URL")
 FLY_BASE_URL = os.getenv("FLY_BASE_URL")
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
