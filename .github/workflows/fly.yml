@@ -30,7 +30,7 @@ jobs:
       - name: Run FLY scraper
         env:
           FLY_API_URL: ${{ secrets.FLY_API_URL }}
-          BASE_URL: ${{ secrets.BASE_URL }}
+          FLY_BASE_URL: ${{ secrets.FLY_BASE_URL }}
           VLC_USER_AGENT: ${{ secrets.VLC_USER_AGENT }}
           TIVIMATE_USER_AGENT: ${{ secrets.TIVIMATE_USER_AGENT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
