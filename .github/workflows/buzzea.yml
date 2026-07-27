@@ -1,8 +1,7 @@
-name: BUZZEA Scraper
+name: BUZZEA Updater
 
 on:
   schedule:
-    # Run every 2 hours
     - cron: '0 */2 * * *'
   workflow_dispatch:
 
