@@ -1,4 +1,4 @@
-name: Generate FLY M3U8 Files
+name: Generate FLY
 
 on:
   schedule:
