@@ -19,10 +19,10 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
 # Secret variables
-FLY_API_URL = os.getenv("FLY_API_URL", "https://ovogoal.cyou/api/v2/flyembed.json")
-BASE_URL = os.getenv("BASE_URL", "https://instream.click")
-VLC_USER_AGENT = os.getenv("VLC_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36")
-TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36")
+FLY_API_URL = os.getenv("FLY_API_URL")
+FLY_BASE_URL = os.getenv("FLY_BASE_URL")
+VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
+TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
 
 
 def clean_ev_name(s: str) -> str:
@@ -328,7 +328,7 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
               f'{display_name}')
     
     # Get referrer from channel data or use default
-    referer = channel.get("refer", BASE_URL)
+    referer = channel.get("refer", FLY_BASE_URL)
     
     # Add VLC options
     options = [
@@ -376,7 +376,7 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     encoded_user_agent = encode_user_agent(TIVIMATE_USER_AGENT)
     
     # Get referrer from channel data or use default
-    referer = channel.get("refer", BASE_URL)
+    referer = channel.get("refer", FLY_BASE_URL)
     
     # Build the URL with parameters
     url = channel.get("source", "")
