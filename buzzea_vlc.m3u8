@@ -3,22 +3,34 @@
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mmiamimarlins.m3u8?md5=giROtUr6oh9A20dF8EH2Gw&expires=1785352346
+https://cdn12.zohanayaan.com:1686/hls/mmiamimarlins.m3u8?md5=qXl_EUylp7j5OYp5tS4fwQ&expires=1785359409
 
 #EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Pittsburgh Pirates - Arizona Diamondbacks" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",Pittsburgh Pirates - Arizona Diamondbacks
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mpittsburghpirates.m3u8?md5=Odn2Qe8Wd5nWy61OdQ--mA&expires=1785352349
+https://cdn15.zohanayaan.com:1686/hls/mpittsburghpirates.m3u8?md5=52motmCodRZAQvCmVmQgdQ&expires=1785359411
 
 #EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Washington Nationals - Toronto Blue Jays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",Washington Nationals - Toronto Blue Jays
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/mwashingtonnationals.m3u8?md5=Ask7CiiPAZZcbNUpl9V38Q&expires=1785352352
+https://cdn12.zohanayaan.com:1686/hls/mwashingtonnationals.m3u8?md5=8uRtAcMU4LM04AfOUmZGiA&expires=1785359414
 
 #EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Detroit Tigers - Baltimore Orioles" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",Detroit Tigers - Baltimore Orioles
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mdetroittigers.m3u8?md5=v9veH2KrCHDsk74oXwlwqA&expires=1785352355
+https://cdn13.zohanayaan.com:1686/hls/mdetroittigers.m3u8?md5=fUkZ35G1VrLb4kRPpuddXA&expires=1785359417
+
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Francisco Giants - Milwaukee Brewers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",San Francisco Giants - Milwaukee Brewers
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/msanfranciscogiants.m3u8?md5=yKtFHl1WKWPIndrY7KwZLg&expires=1785359420
+
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Diego Padres - Colorado Rockies" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",San Diego Padres - Colorado Rockies
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/msandiegopadres.m3u8?md5=D9Z9WMMmvAcpiqAVPtFGGQ&expires=1785359422
