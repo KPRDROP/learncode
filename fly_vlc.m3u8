@@ -1,16 +1,1 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Mets vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] New York Mets vs Atlanta Braves
-#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=mlb20
-#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=mlb20
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/mlb20/mono.m3u8?st=-zG0soM2posTJedUjF7y-g&e=1785362076
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs Cleveland Guardians (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs Cleveland Guardians
-#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=mlb21
-#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=mlb21
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/mlb21/mono.m3u8?st=mG3gjrObKxWuA2TFkxYI2w&e=1785362077
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs Kansas City Royals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Minnesota Twins vs Kansas City Royals
-#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=mlb22
-#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=mlb22
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/mlb22/mono.m3u8?st=UlvPiOiUH4HANqa_uJ8F7g&e=1785362078
