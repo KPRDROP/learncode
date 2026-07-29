@@ -232,8 +232,8 @@ async def scrape(browser: Browser) -> None:
 
 
 async def main() -> None:
-    """Main function to run the scraper"""
-    log.info("Starting BUZZEA scraper...")
+    """Main function to run the updater"""
+    log.info("Starting BUZZEA updater...")
     
     # Browser is passed from the calling script
     # This function is meant to be called with a browser instance
@@ -241,7 +241,7 @@ async def main() -> None:
     
     # Note: This is a placeholder - the actual browser is passed from the main script
     # that imports and calls this function
-    log.info("BUZZEA scraper needs to be called with a browser instance")
+    log.info("BUZZEA updater needs to be called with a browser instance")
     
     # The actual scraping is done in the scrape() function which requires a browser
     # This main function is just for consistency with other modules
