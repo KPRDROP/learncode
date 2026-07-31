@@ -1,145 +1,97 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Scotland Scottish Premiership] Dundee United vs Rangers | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Scotland Scottish Premiership] Dundee United vs Rangers | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] New York City vs Toronto FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] New York City vs Toronto FC | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do8.m3u8?md5=65dzM7zyhEKIuFP4e9llLA&expires=1785535428
+https://cdn7.zohanayaan.com:1686/hls/do2.m3u8?md5=51pSkP2bCAh3BEf0jOat4Q&expires=1785540078
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Switzerland Challenge League] Kriens vs Winterthur | CH (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Switzerland Challenge League] Kriens vs Winterthur | CH (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[PFL] Professional Fighters League | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[PFL] Professional Fighters League | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do20.m3u8?md5=qqFAg0qqM20Cg_4x996TKA&expires=1785535430
+https://cdn3.zohanayaan.com:1686/hls/do4.m3u8?md5=xRFUK1lY5XET4QNmA1HWfQ&expires=1785540080
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Sporting CP vs Nottingham Forest | PT (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Sporting CP vs Nottingham Forest | PT (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[PFL] Professional Fighters League | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[PFL] Professional Fighters League | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do22.m3u8?md5=kMO0-PnhYODVVsGStftcmA&expires=1785535431
+https://cdn7.zohanayaan.com:1686/hls/do86.m3u8?md5=TY6xB0RdQnTOpsAT-5ZvWg&expires=1785540082
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Sporting CP vs Nottingham Forest | SK (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Sporting CP vs Nottingham Forest | SK (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[New Zealand NPC] Counties Manukau vs Taranaki | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[New Zealand NPC] Counties Manukau vs Taranaki | NZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do44.m3u8?md5=ZMWeBCrQnIxcg_WoAb-tog&expires=1785535432
+https://cdn7.zohanayaan.com:1686/hls/do6.m3u8?md5=ZctD6easZqEFSL2ZJKtOIw&expires=1785540083
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Sporting CP vs Nottingham Forest | SE (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Sporting CP vs Nottingham Forest | SE (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Football.Dummy.us" tvg-name="[CFL] Montreal Alouettes vs Ottawa RedBlacks | EN (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Montreal Alouettes vs Ottawa RedBlacks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do71.m3u8?md5=WlPBsMiQ0yi8X6g98hnJ1A&expires=1785535434
+https://cdn3.zohanayaan.com:1686/hls/do8.m3u8?md5=3G2NFByODKF5MqbGQbnTFA&expires=1785540085
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Super League] Toulouse Olympique vs Leeds Rhinos Leeds Rhinos | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Super League] Toulouse Olympique vs Leeds Rhinos Leeds Rhinos | CA (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Guadalajara | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Guadalajara | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do32.m3u8?md5=GUwjrqqQR1WyjBv2VujSRA&expires=1785535435
+https://cdn10.zohanayaan.com:1686/hls/do30.m3u8?md5=ZZtIVaAmNEHKFLtWtZ2XHQ&expires=1785540086
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Poland Ekstraklasa] Motor Lublin vs Jagiellonia Białystok | EN (PLAY)" tvg-logo="https://i.gyazo.com/362e31efdd0dad03b00858f4fb0901b5.png" group-title="Live Events",[Poland Ekstraklasa] Motor Lublin vs Jagiellonia Białystok | EN (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Atlético San Luis vs Tijuana | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Atlético San Luis vs Tijuana | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do38.m3u8?md5=b8twBaB7s7YQlTyg8WUz6Q&expires=1785535436
+https://cdn10.zohanayaan.com:1686/hls/do30.m3u8?md5=ZZtIVaAmNEHKFLtWtZ2XHQ&expires=1785540086
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Poland Ekstraklasa] Motor Lublin vs Jagiellonia Białystok | PL (PLAY)" tvg-logo="https://i.gyazo.com/362e31efdd0dad03b00858f4fb0901b5.png" group-title="Live Events",[Poland Ekstraklasa] Motor Lublin vs Jagiellonia Białystok | PL (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Canada Canadian Premier League] Pacific FC vs Supra du Quebec | CA (PLAY)" tvg-logo="https://i.gyazo.com/b0b49528463ce3833cf287ba2e2e2d5d.png" group-title="Live Events",[Canada Canadian Premier League] Pacific FC vs Supra du Quebec | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do60.m3u8?md5=K4I8oSwOmhjPTyxdymmMEQ&expires=1785535431
+https://cdn7.zohanayaan.com:1686/hls/do32.m3u8?md5=qj7p97TU8uVoZVVZAMGIiw&expires=1785540089
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Bulgaria Parva Liga] CSKA 1948 vs Arda | BG (PLAY)" tvg-logo="https://i.gyazo.com/60bc0d6690696ab68e344568841e590b.png" group-title="Live Events",[Bulgaria Parva Liga] CSKA 1948 vs Arda | BG (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[North America CONCACAF U20 Championship] United States U20 vs Cuba U20 | EN (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[North America CONCACAF U20 Championship] United States U20 vs Cuba U20 | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do48.m3u8?md5=KrdwMKmAwY18wFEWlNOteQ&expires=1785535439
+https://cdn1.zohanayaan.com:1686/hls/do81.m3u8?md5=EZjcchcQVj-TWi0dN7iAbw&expires=1785540090
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Birmingham City vs Barcelona | BG (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Birmingham City vs Barcelona | BG (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Juárez vs Pumas UNAM | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Juárez vs Pumas UNAM | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do49.m3u8?md5=oDMvWFq7ofYzq4vPsxPO2A&expires=1785535440
+https://cdn9.zohanayaan.com:1686/hls/do82.m3u8?md5=VnGbgz-Ano3_1G5byKQN6w&expires=1785540091
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Birmingham City vs Barcelona | NO (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Birmingham City vs Barcelona | NO (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Juárez vs Pumas UNAM | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Juárez vs Pumas UNAM | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do72.m3u8?md5=-QX-EKzvRbbksGB9Hg2Lrg&expires=1785535441
+https://cdn3.zohanayaan.com:1686/hls/do87.m3u8?md5=e-1hLg4xaNr8oNd5QwfrZw&expires=1785540093
 
-#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Poland I Liga] Lechia Gdańsk vs Warta Poznań | PL (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Poland I Liga] Lechia Gdańsk vs Warta Poznań | PL (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[North America CONCACAF U20 Championship] El Salvador U20 vs Haiti U20 | EN (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[North America CONCACAF U20 Championship] El Salvador U20 vs Haiti U20 | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do61.m3u8?md5=u7scXAjKdWTKeGu_eHp_Tw&expires=1785535442
+https://cdn4.zohanayaan.com:1686/hls/do83.m3u8?md5=edNTFUpzTHD7bjvS5gry-g&expires=1785540094
 
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Romania Liga I] Oţelul vs Dinamo Bucureşti | RO (PLAY)" tvg-logo="https://i.gyazo.com/3fd4b38d5263ca391e45850eb58d11e6.png" group-title="Live Events",[Romania Liga I] Oţelul vs Dinamo Bucureşti | RO (PLAY)
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[NRLW] Wests Tigers W vs Cronulla Sharks W | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRLW] Wests Tigers W vs Cronulla Sharks W | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do66.m3u8?md5=RUpjxjPKl_jnrs4x0bCIRw&expires=1785535444
+https://cdn4.zohanayaan.com:1686/hls/do83.m3u8?md5=edNTFUpzTHD7bjvS5gry-g&expires=1785540094
 
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Norway Eliteserien] Bodø / Glimt vs Lillestrøm | NO (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/13.png" group-title="Live Events",[Norway Eliteserien] Bodø / Glimt vs Lillestrøm | NO (PLAY)
+#EXTINF:-1 tvg-chno="14" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Sydney Swans vs St. Kilda Saints | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Sydney Swans vs St. Kilda Saints | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do79.m3u8?md5=Q-G9hUKxa9vf4DTpX3cPDA&expires=1785535445
+https://cdn4.zohanayaan.com:1686/hls/do83.m3u8?md5=edNTFUpzTHD7bjvS5gry-g&expires=1785540094
 
-#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] New York City vs Toronto FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] New York City vs Toronto FC | EN (PLAY)
+#EXTINF:-1 tvg-chno="15" tvg-id="Live.Event.us" tvg-name="[LFA] Legacy Fighting Alliance | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LFA] Legacy Fighting Alliance | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do2.m3u8?md5=0jxdXck8eM79WQvSNwaJ8A&expires=1785535446
+https://cdn7.zohanayaan.com:1686/hls/do86.m3u8?md5=TY6xB0RdQnTOpsAT-5ZvWg&expires=1785540082
 
-#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[PFL] Professional Fighters League | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[PFL] Professional Fighters League | EN (PLAY)
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Univ. Concepción vs Audax Italiano | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Univ. Concepción vs Audax Italiano | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do4.m3u8?md5=KniR7-f5lPSEPXlidP1r0A&expires=1785535447
-
-#EXTINF:-1 tvg-chno="17" tvg-id="Live.Event.us" tvg-name="[PFL] Professional Fighters League | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[PFL] Professional Fighters League | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do86.m3u8?md5=KGfPYCbrF9C62goURMg0iA&expires=1785535448
-
-#EXTINF:-1 tvg-chno="18" tvg-id="Football.Dummy.us" tvg-name="[CFL] Montreal Alouettes vs Ottawa RedBlacks | EN (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Montreal Alouettes vs Ottawa RedBlacks | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do8.m3u8?md5=65dzM7zyhEKIuFP4e9llLA&expires=1785535428
-
-#EXTINF:-1 tvg-chno="19" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Guadalajara | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Guadalajara | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do30.m3u8?md5=RriqQyvlJcsEbDDGbk9olg&expires=1785535450
-
-#EXTINF:-1 tvg-chno="20" tvg-id="Soccer.Dummy.us" tvg-name="[Canada Canadian Premier League] Pacific FC vs Supra du Quebec | CA (PLAY)" tvg-logo="https://i.gyazo.com/b0b49528463ce3833cf287ba2e2e2d5d.png" group-title="Live Events",[Canada Canadian Premier League] Pacific FC vs Supra du Quebec | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do32.m3u8?md5=GUwjrqqQR1WyjBv2VujSRA&expires=1785535435
-
-#EXTINF:-1 tvg-chno="21" tvg-id="Soccer.Dummy.us" tvg-name="[North America CONCACAF U20 Championship] United States U20 vs Cuba U20 | EN (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[North America CONCACAF U20 Championship] United States U20 vs Cuba U20 | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do81.m3u8?md5=diijRHObIOvgYX_rBsengw&expires=1785535452
-
-#EXTINF:-1 tvg-chno="22" tvg-id="Soccer.Dummy.us" tvg-name="[North America CONCACAF U20 Championship] El Salvador U20 vs Haiti U20 | EN (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[North America CONCACAF U20 Championship] El Salvador U20 vs Haiti U20 | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do83.m3u8?md5=WZ6l9hIL7Fq9kVWJIG-Brg&expires=1785535453
-
-#EXTINF:-1 tvg-chno="23" tvg-id="Live.Event.us" tvg-name="[LFA] Legacy Fighting Alliance | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LFA] Legacy Fighting Alliance | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do86.m3u8?md5=KGfPYCbrF9C62goURMg0iA&expires=1785535448
-
-#EXTINF:-1 tvg-chno="24" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Univ. Concepción vs Audax Italiano | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Univ. Concepción vs Audax Italiano | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do100.m3u8?md5=eDb_hU3T212q20Qfm3I7Fg&expires=1785535456
+https://cdn3.zohanayaan.com:1686/hls/do100.m3u8?md5=_AnCIGRBOvuLS_ycvw1PwQ&expires=1785540099
 
