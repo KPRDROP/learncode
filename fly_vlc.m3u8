@@ -1,22 +1,41 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+#EXTINF:-1 tvg-chno="1" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Uroš Medić vs Daniel Rodriguez (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="UFC",[UFC] Uroš Medić vs Daniel Rodriguez
+#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=UFC
+#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=UFC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://instreams.pro/live/UFC/mono.m3u8?st=QQnwZYk69E89a7vwG3icZw&e=1785610281
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] FC Tokyo vs Borussia Dortmund (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] FC Tokyo vs Borussia Dortmund
 #EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=topevent
 #EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=topevent
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/topevent/mono.m3u8?st=wsk_RdVONuivTfWXzEUtlQ&e=1785604863
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+https://instreams.pro/live/topevent/mono.m3u8?st=mjJZu902o_IpaECHpbd6Aw&e=1785610282
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] Manchester City vs Internazionale (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] Manchester City vs Internazionale
 #EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=cbs
 #EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=cbs
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/cbs/mono.m3u8?st=-UroW0dZPl0WyUxYpPsp4A&e=1785604864
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+https://instreams.pro/live/cbs/mono.m3u8?st=eVS6-WgEvcnU5oIXsr_mEw&e=1785610282
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] Manchester United vs Atlético Madrid (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] Manchester United vs Atlético Madrid
 #EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=mutv
 #EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=mutv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/mutv/mono.m3u8?st=c61l5OJyZ7g5RIu4D4DyHg&e=1785604865
+https://instreams.pro/live/mutv/mono.m3u8?st=it6p4ENLAUeFw6pZFYT1wA&e=1785610283
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+] Cardiff City vs AS Roma (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
+",[Club Friendly ] Cardiff City vs AS Roma
+#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=pt2
+#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=pt2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://instreams.pro/live/pt2/mono.m3u8?st=zbjdPcIOWUy8KbdCkmFNLA&e=1785610283
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Scottish Premiership
+] Falkirk vs St Mirren (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Scottish Premiership
+",[Scottish Premiership ] Falkirk vs St Mirren
+#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=cbs
+#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=cbs
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://instreams.pro/live/cbs/mono.m3u8?st=nIF_npmWqAGyZnqa98e1Nw&e=1785610284

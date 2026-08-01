@@ -1,13 +1,23 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+#EXTINF:-1 tvg-chno="1" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Uroš Medić vs Daniel Rodriguez (FLYTV)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="UFC",[UFC] Uroš Medić vs Daniel Rodriguez (FLYTV)
+https://instreams.pro/live/UFC/mono.m3u8?st=QQnwZYk69E89a7vwG3icZw&e=1785610281|referer=https://instream.click/flyembed2.php?stream=UFC/|origin=https://instream.click/flyembed2.php?stream=UFC|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] FC Tokyo vs Borussia Dortmund (FLYTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] FC Tokyo vs Borussia Dortmund (FLYTV)
-https://instreams.pro/live/topevent/mono.m3u8?st=wsk_RdVONuivTfWXzEUtlQ&e=1785604863|referer=https://instream.click/flyembed2.php?stream=topevent/|origin=https://instream.click/flyembed2.php?stream=topevent|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+https://instreams.pro/live/topevent/mono.m3u8?st=mjJZu902o_IpaECHpbd6Aw&e=1785610282|referer=https://instream.click/flyembed2.php?stream=topevent/|origin=https://instream.click/flyembed2.php?stream=topevent|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] Manchester City vs Internazionale (FLYTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] Manchester City vs Internazionale (FLYTV)
-https://instreams.pro/live/cbs/mono.m3u8?st=-UroW0dZPl0WyUxYpPsp4A&e=1785604864|referer=https://instream.click/flyembed2.php?stream=cbs/|origin=https://instream.click/flyembed2.php?stream=cbs|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+https://instreams.pro/live/cbs/mono.m3u8?st=eVS6-WgEvcnU5oIXsr_mEw&e=1785610282|referer=https://instream.click/flyembed2.php?stream=cbs/|origin=https://instream.click/flyembed2.php?stream=cbs|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] Manchester United vs Atlético Madrid (FLYTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] Manchester United vs Atlético Madrid (FLYTV)
-https://instreams.pro/live/mutv/mono.m3u8?st=c61l5OJyZ7g5RIu4D4DyHg&e=1785604865|referer=https://instream.click/flyembed2.php?stream=mutv/|origin=https://instream.click/flyembed2.php?stream=mutv|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
+https://instreams.pro/live/mutv/mono.m3u8?st=it6p4ENLAUeFw6pZFYT1wA&e=1785610283|referer=https://instream.click/flyembed2.php?stream=mutv/|origin=https://instream.click/flyembed2.php?stream=mutv|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+] Cardiff City vs AS Roma (FLYTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
+",[Club Friendly ] Cardiff City vs AS Roma (FLYTV)
+https://instreams.pro/live/pt2/mono.m3u8?st=zbjdPcIOWUy8KbdCkmFNLA&e=1785610283|referer=https://instream.click/flyembed2.php?stream=pt2/|origin=https://instream.click/flyembed2.php?stream=pt2|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Scottish Premiership
+] Falkirk vs St Mirren (FLYTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Scottish Premiership
+",[Scottish Premiership ] Falkirk vs St Mirren (FLYTV)
+https://instreams.pro/live/cbs/mono.m3u8?st=nIF_npmWqAGyZnqa98e1Nw&e=1785610284|referer=https://instream.click/flyembed2.php?stream=cbs/|origin=https://instream.click/flyembed2.php?stream=cbs|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/131.0.0.0%20Safari/537.36
