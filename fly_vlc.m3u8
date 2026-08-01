@@ -5,11 +5,18 @@
 #EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=topevent
 #EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=topevent
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/topevent/mono.m3u8?st=xzujC662JtN6xKNyKXKbIg&e=1785599617
+https://instreams.pro/live/topevent/mono.m3u8?st=wsk_RdVONuivTfWXzEUtlQ&e=1785604863
 #EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Club Friendly
 ] Manchester City vs Internazionale (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
 ",[Club Friendly ] Manchester City vs Internazionale
 #EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=cbs
 #EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=cbs
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://instreams.pro/live/cbs/mono.m3u8?st=Do30jbX9geC3mW5ihUgX8A&e=1785599618
+https://instreams.pro/live/cbs/mono.m3u8?st=-UroW0dZPl0WyUxYpPsp4A&e=1785604864
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Club Friendly
+] Manchester United vs Atlético Madrid (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Club Friendly
+",[Club Friendly ] Manchester United vs Atlético Madrid
+#EXTVLCOPT:http-referrer=https://instream.click/flyembed2.php?stream=mutv
+#EXTVLCOPT:http-origin=https://instream.click/flyembed2.php?stream=mutv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://instreams.pro/live/mutv/mono.m3u8?st=c61l5OJyZ7g5RIu4D4DyHg&e=1785604865
