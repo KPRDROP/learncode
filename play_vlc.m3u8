@@ -1,73 +1,55 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Ipswich Town vs Le Havre | PT (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Ipswich Town vs Le Havre | PT (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Hlinka-Gretzky Cup] Germany U18 vs Czech Republic U18 | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Hlinka-Gretzky Cup] Germany U18 vs Czech Republic U18 | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do21.m3u8?md5=4g-N_6xDJFi0jg7hpP4Ipw&expires=1785883470
+https://cdn5.zohanayaan.com:1686/hls/do31.m3u8?md5=k8BB7oHrcko9TKgCs5d02A&expires=1785887840
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Ipswich Town vs Le Havre | FR (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Ipswich Town vs Le Havre | FR (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Hlinka Gretzky Cup] Canada U18 vs Slovakia U18 | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Hlinka Gretzky Cup] Canada U18 vs Slovakia U18 | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do50.m3u8?md5=0zd9PG_R1GHX56irGwFxgg&expires=1785883473
+https://cdn5.zohanayaan.com:1686/hls/do31.m3u8?md5=k8BB7oHrcko9TKgCs5d02A&expires=1785887840
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Ipswich Town vs Le Havre | NO (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Ipswich Town vs Le Havre | NO (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Columbus Crew vs Atlas | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Columbus Crew vs Atlas | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do73.m3u8?md5=15qTYVAMXakudOL92gZS1g&expires=1785883475
+https://cdn4.zohanayaan.com:1686/hls/do32.m3u8?md5=dKmhxKsZvJCPOwkIPf7k6g&expires=1785887857
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Hlinka-Gretzky Cup] Germany U18 vs Czech Republic U18 | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Hlinka-Gretzky Cup] Germany U18 vs Czech Republic U18 | CA (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Charlotte vs Pumas UNAM | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Charlotte vs Pumas UNAM | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do31.m3u8?md5=eNvTDqjdTQjW5G-frqu_8w&expires=1785883477
+https://cdn1.zohanayaan.com:1686/hls/do33.m3u8?md5=H6_CSwGwBMqpH9r0n167aQ&expires=1785887858
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Hlinka Gretzky Cup] Canada U18 vs Slovakia U18 | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Hlinka Gretzky Cup] Canada U18 vs Slovakia U18 | CA (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Minnesota United vs Juárez | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Minnesota United vs Juárez | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do31.m3u8?md5=eNvTDqjdTQjW5G-frqu_8w&expires=1785883477
+https://cdn6.zohanayaan.com:1686/hls/do34.m3u8?md5=khkspSDWHS4bYa5FiqOb8Q&expires=1785887860
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Columbus Crew vs Atlas | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Columbus Crew vs Atlas | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Vancouver Whitecaps vs Atlante | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Vancouver Whitecaps vs Atlante | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do32.m3u8?md5=9aDpRzoU8HDbX4UYKtgg8g&expires=1785883480
+https://cdn8.zohanayaan.com:1686/hls/do35.m3u8?md5=uCXOSsMfF7tnkyMbuLKYIg&expires=1785887861
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Charlotte vs Pumas UNAM | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Charlotte vs Pumas UNAM | EN (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Cincinnati vs Pachuca | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Cincinnati vs Pachuca | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do33.m3u8?md5=wox3XfJoA0mF7DmIjz7S2w&expires=1785883481
+https://cdn7.zohanayaan.com:1686/hls/do81.m3u8?md5=KIAJ6wUorOD0Y7W0P5KhvQ&expires=1785887862
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Minnesota United vs Juárez | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Minnesota United vs Juárez | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Tigres UANL vs Real Salt Lake | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Tigres UANL vs Real Salt Lake | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do34.m3u8?md5=1t_v8d_7ybKz3r48R_Sd7Q&expires=1785883483
+https://cdn7.zohanayaan.com:1686/hls/do81.m3u8?md5=KIAJ6wUorOD0Y7W0P5KhvQ&expires=1785887862
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Vancouver Whitecaps vs Atlante | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Vancouver Whitecaps vs Atlante | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[Brazil Copa do Brasil] Remo vs Santos | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Brazil Copa do Brasil] Remo vs Santos | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do35.m3u8?md5=fp8lakuwOGeEEzdKq-Bj7w&expires=1785883484
-
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Cincinnati vs Pachuca | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Cincinnati vs Pachuca | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do81.m3u8?md5=KU8ewYBqZfPvXDM1eZPlOw&expires=1785883485
-
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[North America Leagues Cup] Tigres UANL vs Real Salt Lake | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[North America Leagues Cup] Tigres UANL vs Real Salt Lake | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do81.m3u8?md5=KU8ewYBqZfPvXDM1eZPlOw&expires=1785883485
-
-#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Brazil Copa do Brasil] Remo vs Santos | ES (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Brazil Copa do Brasil] Remo vs Santos | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do87.m3u8?md5=q2XHmBBtfAcrq-lkbS4l9A&expires=1785883488
+https://cdn9.zohanayaan.com:1686/hls/do87.m3u8?md5=RXnAg8glRy-9GrLIlgPuHw&expires=1785887865
 
