@@ -3,11 +3,17 @@
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do21.m3u8?md5=ZdwqXYW32QRxivfgtv0u8g&expires=1785831370
+https://cdn7.zohanayaan.com:1686/hls/do21.m3u8?md5=tZ07oOJKSNwyTv9OKmbFKQ&expires=1785841906
 
 #EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Jeju United vs Bayern München | NO (PLAY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Club Friendly] Jeju United vs Bayern München | NO (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do72.m3u8?md5=BaQvaDQR2KvHtMRpMKITiQ&expires=1785831371
+https://cdn10.zohanayaan.com:1686/hls/do72.m3u8?md5=mbL9t_E4fuXQmAghnOoeIA&expires=1785841908
+
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Russia Russian Cup] Akron vs Rostov | RU (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Russia Russian Cup] Akron vs Rostov | RU (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/do66.m3u8?md5=UqXMNUbyDq03-NExNiE-rQ&expires=1785841909
 
