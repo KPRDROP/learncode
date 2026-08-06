@@ -1,11 +1,11 @@
-import json
+import asyncio
 import re
 import os
+from collections.abc import KeysView
 from functools import partial
 from typing import Dict
-from collections.abc import KeysView
 
-from selectolax.parser import HTMLParser
+from playwright.async_api import Browser, Page
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
@@ -15,7 +15,7 @@ urls: dict[str, dict[str, str | float]] = {}
 
 TAG = "FLY"
 
-CACHE_FILE = Cache(TAG, exp=10_800)
+CACHE_FILE = Cache(TAG, exp=7_200)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
@@ -72,57 +72,74 @@ def encode_user_agent(user_agent: str) -> str:
     return encoded
 
 
-async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
+async def process_event(
+    url: str,
+    url_num: int,
+    page: Page,
+    timeout: int | float = 10,
+) -> tuple[str | None, str | None]:
+
     nones = None, None
 
-    if not (event_data := await network.request(url, log=log)):
-        log.warning(f"URL {url_num}) Failed to load url.")
-        return nones
+    captured: list[str] = []
 
-    soup = HTMLParser(event_data.content)
+    got_one = asyncio.Event()
 
-    ifr = soup.css_first("iframe")
-
-    if not ifr or not (src := ifr.attributes.get("src")):
-        log.warning(f"URL {url_num}) No iframe element found.")
-        return nones
-
-    ifr_src = network.ensure_https(src)
-
-    if not (
-        ifr_src_data := await network.request(
-            ifr_src,
-            headers={"Referer": url},
-            log=log,
-        )
-    ):
-        log.warning(f"URL {url_num}) Failed to load iframe source.")
-        return nones
-
-    valid_m3u8 = re.compile(
-        r"(file|source|streamUrl)\s*(:|=)\s+(\'|\")([^\"]*)(\'|\")",
-        re.I,
+    handler = partial(
+        network.capture_req,
+        captured=captured,
+        got_one=got_one,
     )
 
-    if not (match := valid_m3u8.search(ifr_src_data.text)):
-        log.warning(f"URL {url_num}) No source found.")
+    page.on("request", handler)
+
+    try:
+        resp = await page.goto(
+            url,
+            wait_until="domcontentloaded",
+            timeout=6_000,
+        )
+
+        if not resp or resp.status != 200:
+            log.warning(
+                f"URL {url_num}) Status Code: {resp.status if resp else 'None'}"
+            )
+            return nones
+
+        iframe = page.locator("iframe")
+
+        iframe_src = await iframe.get_attribute("src", timeout=1_500)
+
+        wait_task = asyncio.create_task(got_one.wait())
+
+        try:
+            await asyncio.wait_for(wait_task, timeout=timeout)
+        except TimeoutError:
+            log.warning(f"URL {url_num}) Timed out waiting for M3U8.")
+            return nones
+
+        finally:
+            if not wait_task.done():
+                wait_task.cancel()
+
+                try:
+                    await wait_task
+                except asyncio.CancelledError:
+                    pass
+
+        if captured:
+            log.info(f"URL {url_num}) Captured M3U8")
+            return captured[0], iframe_src
+
+    except Exception as e:
+        log.warning(f"URL {url_num}) {e}")
         return nones
 
-    log.info(f"URL {url_num}) Captured M3U8")
-
-    return json.loads(f'"{match[4]}"'), ifr_src
+    finally:
+        page.remove_listener("request", handler)
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
-    """
-    Get events from API, filtering out already cached events.
-    
-    Args:
-        cached_keys: Keys of already cached events
-        
-    Returns:
-        List of new Event objects
-    """
     now = Time.clean(Time.now())
 
     events: list[Event] = []
@@ -178,7 +195,6 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         sport, name = clean_name(sport), clean_name(f"{away} vs {home}")
 
-        # Skip if already cached
         if f"[{sport}] {name} ({TAG})" in cached_keys:
             continue
 
@@ -194,7 +210,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     return events
 
 
-async def scrape() -> None:
+async def scrape(browser: Browser) -> None:
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v["source"]}
@@ -210,44 +226,47 @@ async def scrape() -> None:
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
-        for i, ev in enumerate(events, start=1):
-            handler = partial(
-                process_event,
-                url=ev.link,
-                url_num=i,
-            )
+        async with network.event_context(browser) as context:
+            for i, ev in enumerate(events, start=1):
+                async with network.event_page(context) as page:
+                    handler = partial(
+                        process_event,
+                        url=ev.link,
+                        url_num=i,
+                        page=page,
+                    )
 
-            source, iframe = await network.safe_process(
-                handler,
-                url_num=i,
-                timeout_return=(None, None),
-                semaphore=network.HTTP_S,
-                log=log,
-            )
+                    source, iframe = await network.safe_process(
+                        handler,
+                        url_num=i,
+                        timeout_return=(None, None),
+                        semaphore=network.HTTP_S,
+                        log=log,
+                    )
 
-            key = f"[{ev.sport}] {ev.name} ({TAG})"
+                    key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+                    tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-            entry = {
-                "source": source,
-                "logo": logo,
-                "refer": iframe,
-                "timestamp": ev.timestamp,
-                "tvg-id": tvg_id or "Live.Event.us",
-                "link": ev.link,
-                "sport": ev.sport,
-                "name": ev.name,
-            }
+                    entry = {
+                        "source": source,
+                        "logo": logo,
+                        "refer": iframe,
+                        "timestamp": ev.timestamp,
+                        "tvg-id": tvg_id or "Live.Event.us",
+                        "link": ev.link,
+                        "sport": ev.sport,
+                        "name": ev.name,
+                    }
 
-            cached_urls[key] = entry
+                    cached_urls[key] = entry
 
-            if source:
-                valid_count += 1
+                    if source:
+                        valid_count += 1
 
-                entry["source"] = clean_m3u(source)
+                        entry["source"] = clean_m3u(source)
 
-                urls[key] = entry
+                        urls[key] = entry
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -410,7 +429,11 @@ async def main() -> None:
     Main function to run the scraper and generate M3U8 files.
     """
     log.info(f"Starting {TAG} scraper")
-    await scrape()
+    
+    # Launch browser and run scrape
+    async with network.get_browser() as browser:
+        await scrape(browser)
+    
     log.info(f"{TAG} scraper completed")
 
 
