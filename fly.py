@@ -5,7 +5,7 @@ from collections.abc import KeysView
 from functools import partial
 from typing import Dict
 
-from playwright.async_api import Browser, Page
+from playwright.async_api import async_playwright, Browser, Page
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
@@ -226,49 +226,57 @@ async def scrape() -> None:
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
-        # Launch browser and process events
-        async with await network.launch_browser() as browser:
-            async with network.event_context(browser) as context:
-                for i, ev in enumerate(events, start=1):
-                    async with network.event_page(context) as page:
-                        handler = partial(
-                            process_event,
-                            url=ev.link,
-                            url_num=i,
-                            page=page,
-                        )
+        # Launch browser using playwright directly
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=['--no-sandbox', '--disable-setuid-sandbox']
+            )
+            
+            try:
+                async with network.event_context(browser) as context:
+                    for i, ev in enumerate(events, start=1):
+                        async with network.event_page(context) as page:
+                            handler = partial(
+                                process_event,
+                                url=ev.link,
+                                url_num=i,
+                                page=page,
+                            )
 
-                        source, iframe = await network.safe_process(
-                            handler,
-                            url_num=i,
-                            timeout_return=(None, None),
-                            semaphore=network.HTTP_S,
-                            log=log,
-                        )
+                            source, iframe = await network.safe_process(
+                                handler,
+                                url_num=i,
+                                timeout_return=(None, None),
+                                semaphore=network.HTTP_S,
+                                log=log,
+                            )
 
-                        key = f"[{ev.sport}] {ev.name} ({TAG})"
+                            key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+                            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                        entry = {
-                            "source": source,
-                            "logo": logo,
-                            "refer": iframe,
-                            "timestamp": ev.timestamp,
-                            "tvg-id": tvg_id or "Live.Event.us",
-                            "link": ev.link,
-                            "sport": ev.sport,
-                            "name": ev.name,
-                        }
+                            entry = {
+                                "source": source,
+                                "logo": logo,
+                                "refer": iframe,
+                                "timestamp": ev.timestamp,
+                                "tvg-id": tvg_id or "Live.Event.us",
+                                "link": ev.link,
+                                "sport": ev.sport,
+                                "name": ev.name,
+                            }
 
-                        cached_urls[key] = entry
+                            cached_urls[key] = entry
 
-                        if source:
-                            valid_count += 1
+                            if source:
+                                valid_count += 1
 
-                            entry["source"] = clean_m3u(source)
+                                entry["source"] = clean_m3u(source)
 
-                            urls[key] = entry
+                                urls[key] = entry
+            finally:
+                await browser.close()
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
