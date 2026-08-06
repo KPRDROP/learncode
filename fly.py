@@ -3,6 +3,7 @@ import re
 import os
 from functools import partial
 from typing import Dict
+from collections.abc import KeysView
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
