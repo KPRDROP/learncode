@@ -25,7 +25,7 @@ VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
 TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
 
 
-def clean_ev_name(s: str) -> str:
+def clean_name(s: str) -> str:
     return re.sub(r"(\r|\n)", "", s).strip()
 
 
@@ -169,7 +169,7 @@ async def get_events() -> list[Event]:
         events.append(
             Event(
                 sport=sport,
-                name=clean_ev_name(f"{away} vs {home}"),
+                name=clean_name(f"{away} vs {home}"),
                 link=link,
                 timestamp=now.timestamp(),
             )
