@@ -6,7 +6,7 @@ from pathlib import Path
 import os
 
 from playwright.async_api import Browser
-from selectolax.parser import HTMLParser
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
