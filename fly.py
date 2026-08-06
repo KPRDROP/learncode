@@ -210,7 +210,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     return events
 
 
-async def scrape(browser: Browser) -> None:
+async def scrape() -> None:
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v["source"]}
@@ -226,47 +226,49 @@ async def scrape(browser: Browser) -> None:
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
-        async with network.event_context(browser) as context:
-            for i, ev in enumerate(events, start=1):
-                async with network.event_page(context) as page:
-                    handler = partial(
-                        process_event,
-                        url=ev.link,
-                        url_num=i,
-                        page=page,
-                    )
+        # Launch browser and process events
+        async with await network.launch_browser() as browser:
+            async with network.event_context(browser) as context:
+                for i, ev in enumerate(events, start=1):
+                    async with network.event_page(context) as page:
+                        handler = partial(
+                            process_event,
+                            url=ev.link,
+                            url_num=i,
+                            page=page,
+                        )
 
-                    source, iframe = await network.safe_process(
-                        handler,
-                        url_num=i,
-                        timeout_return=(None, None),
-                        semaphore=network.HTTP_S,
-                        log=log,
-                    )
+                        source, iframe = await network.safe_process(
+                            handler,
+                            url_num=i,
+                            timeout_return=(None, None),
+                            semaphore=network.HTTP_S,
+                            log=log,
+                        )
 
-                    key = f"[{ev.sport}] {ev.name} ({TAG})"
+                        key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                    tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+                        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                    entry = {
-                        "source": source,
-                        "logo": logo,
-                        "refer": iframe,
-                        "timestamp": ev.timestamp,
-                        "tvg-id": tvg_id or "Live.Event.us",
-                        "link": ev.link,
-                        "sport": ev.sport,
-                        "name": ev.name,
-                    }
+                        entry = {
+                            "source": source,
+                            "logo": logo,
+                            "refer": iframe,
+                            "timestamp": ev.timestamp,
+                            "tvg-id": tvg_id or "Live.Event.us",
+                            "link": ev.link,
+                            "sport": ev.sport,
+                            "name": ev.name,
+                        }
 
-                    cached_urls[key] = entry
+                        cached_urls[key] = entry
 
-                    if source:
-                        valid_count += 1
+                        if source:
+                            valid_count += 1
 
-                        entry["source"] = clean_m3u(source)
+                            entry["source"] = clean_m3u(source)
 
-                        urls[key] = entry
+                            urls[key] = entry
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -429,11 +431,7 @@ async def main() -> None:
     Main function to run the scraper and generate M3U8 files.
     """
     log.info(f"Starting {TAG} scraper")
-    
-    # Launch browser and run scrape
-    async with network.get_browser() as browser:
-        await scrape(browser)
-    
+    await scrape()
     log.info(f"{TAG} scraper completed")
 
 
