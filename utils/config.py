@@ -78,6 +78,8 @@ class Time(datetime):
             formats = [
                 "%b %d, %Y %H:%M %Z",
                 "%B %d, %Y %H:%M",
+                "%d %B ,%Y %H:%M",
+                "%d %B ,%Y %H:%M %p",
                 "%B %d,%Y %H:%M",
                 "%B %d, %Y %I:%M %p",
                 "%B %d, %Y %I:%M:%S %p",
@@ -124,7 +126,7 @@ class Leagues:
     def __init__(self) -> None:
         self.data = json.loads(
             (Path(__file__).parent / "leagues.json").read_text(encoding="utf-8")
-        )
+       )
 
     def teams(self, league: str) -> list[str]:
         return self.data["teams"].get(league, [])
