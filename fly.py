@@ -4,7 +4,7 @@ import os
 from functools import partial
 from typing import Dict
 
-from selectolax.parser import HTMLParser
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
