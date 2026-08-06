@@ -5,7 +5,7 @@ from functools import partial
 from typing import Dict
 from collections.abc import KeysView
 
-from selectolax.lexbor import LexborHTMLParser as HTMLParser
+from selectolax.parser import HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
@@ -19,6 +19,7 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 
 API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
+# Secret variables
 FLY_API_URL = os.getenv("FLY_API_URL")
 FLY_BASE_URL = os.getenv("FLY_BASE_URL")
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
@@ -112,7 +113,16 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
     return json.loads(f'"{match[4]}"'), ifr_src
 
 
-async def get_events() -> list[Event]:
+async def get_events(cached_keys: KeysView[str]) -> list[Event]:
+    """
+    Get events from API, filtering out already cached events.
+    
+    Args:
+        cached_keys: Keys of already cached events
+        
+    Returns:
+        List of new Event objects
+    """
     now = Time.clean(Time.now())
 
     events: list[Event] = []
@@ -166,10 +176,16 @@ async def get_events() -> list[Event]:
         if not start_dt <= event_dt <= end_dt:
             continue
 
+        sport, name = clean_name(sport), clean_name(f"{away} vs {home}")
+
+        # Skip if already cached
+        if f"[{sport}] {name} ({TAG})" in cached_keys:
+            continue
+
         events.append(
             Event(
                 sport=sport,
-                name=clean_name(f"{away} vs {home}"),
+                name=name,
                 link=link,
                 timestamp=now.timestamp(),
             )
@@ -189,9 +205,9 @@ async def scrape() -> None:
 
     log.info(f"Loaded {cached_count} event(s) from cache")
 
-    log.info('Scraping from "fly"')
+    log.info('Scraping from "flyembed"')
 
-    if events := await get_events():
+    if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
         for i, ev in enumerate(events, start=1):
