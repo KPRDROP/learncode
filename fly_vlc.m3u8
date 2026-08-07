@@ -1,11 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs Detroit Tigers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Seattle Mariners vs Detroit Tigers
-#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-mariners
-#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-mariners
+#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL Preseason] Arizona Cardinals vs Carolina Panthers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL Preseason",[NFL Preseason] Arizona Cardinals vs Carolina Panthers
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/nbc-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/nbc-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/b902302b1bfd4679f042acdb3332c89a42b6003432ce1fe3373f022794cf97ae/1786069100/mlb-mariners.m3u8
+https://hiveatick.casadenoval.uk/main/secure/97ab0677adeb053bffcbe9f7cd6a901a8dd2f93d6404bfe8ae4b52886a9a49ab/1786077216/nbc-usa.m3u8
 #EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs Washington Nationals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Philadelphia Phillies vs Washington Nationals
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-phillies
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-phillies
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/01b4701dad05633db31c54e21c70bee118ba8eb8d5986c4456a8960b843ae843/1786069101/mlb-phillies.m3u8
+https://hiveatick.casadenoval.uk/main/secure/ddac7ccf681e44d8cbd15c4958d1bb3a754774f85ddf66a7dafe1dcf4061fd2d/1786077217/mlb-phillies.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Minnesota Lynx vs Los Angeles Sparks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Minnesota Lynx vs Los Angeles Sparks
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/wnba-1
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/wnba-1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/418d687747e9da16a4daeb671a22cac35e7f10356fa9317d052aba77349e82ef/1786077217/wnba-1.m3u8
