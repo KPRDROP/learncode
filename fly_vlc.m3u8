@@ -1,1 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Bayern Munich vs Aston Villa (FLY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Club Friendly",[Club Friendly] Bayern Munich vs Aston Villa
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssportsgolazo-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssportsgolazo-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/528fdaace6fe37d9bfc774d7dabeb7cc726dc14329fc625f37b643651ae2cf59/1786115282/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[MMA] ONE Friday vs Fights 165 (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="MMA",[MMA] ONE Friday vs Fights 165
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/1915d282f19b07642dca57307e64397e7b98315e3d752b6c2c8b563cc66033a1/1786115283/beinsports-usa.m3u8
