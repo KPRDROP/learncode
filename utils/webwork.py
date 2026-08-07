@@ -49,6 +49,7 @@ class Network:
     async def request(
         self,
         url: str,
+        url_num: int | None = None,
         log: logging.Logger | None = None,
         **kwargs,
     ) -> httpx.Response | None:
@@ -58,12 +59,15 @@ class Network:
         try:
             r = await self.client.get(url, **kwargs)
 
-            if r.status_code >= 400:
-                r.raise_for_status()
+            r.raise_for_status()
 
             return r
         except (httpx.HTTPError, httpx.TimeoutException) as e:
-            log.error(f'Failed to fetch "{url}": {e}')
+            log.error(
+                f'URL {url_num}) Failed to fetch "{url}": {e}'
+                if url_num
+                else f'Failed to fetch "{url}": {e}'
+            )
 
             return ""
 
