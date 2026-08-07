@@ -1,1 +1,16 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[EFL CUP] Wolverhampton Wanderers vs Port Vale (FLY)" tvg-logo="https://i.gyazo.com/c8842fbcb2eeb6a53bc69fa6055b8b5d.png" group-title="EFL CUP",[EFL CUP] Wolverhampton Wanderers vs Port Vale
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssportsgolazo-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssportsgolazo-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/a73049ce544ba71b40dbc78dcf670c4e3f2bebd90b3366021b419f9b1b0583ea/1786140800/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Cup] Wycombe Wanderers vs Stevenage (FLY)" tvg-logo="https://i.gyazo.com/c8842fbcb2eeb6a53bc69fa6055b8b5d.png" group-title="EFL Cup",[EFL Cup] Wycombe Wanderers vs Stevenage
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/skysportsplus-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/skysportsplus-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/015b3f3f97207112ba066af0dcebdc8f403ed4903abfa3444d6c30e92bb5bf68/1786140800/skysportsplus-uk.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Cup] Middlesbrough vs Wrexham (FLY)" tvg-logo="https://i.gyazo.com/c8842fbcb2eeb6a53bc69fa6055b8b5d.png" group-title="EFL Cup",[EFL Cup] Middlesbrough vs Wrexham
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/skysportsmainevent-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/skysportsmainevent-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/9459a1f1dc3b9d7d79b903e601539961aeccb6c0a92b42763c055218330f360b/1786140801/skysportsmainevent-uk.m3u8
