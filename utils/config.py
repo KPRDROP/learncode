@@ -163,15 +163,6 @@ class Leagues:
 
             return any(t in self.teams(league) for t in (t1.strip(), t2.strip()))
 
-        return event.lower() in {
-            "nfl redzone",
-            "nfl red zone",
-            "redzone",
-            "red zone",
-            "college gameday",
-            "nfl honors",
-        }
-
     def get_tvg_info(
         self,
         sport: str,
