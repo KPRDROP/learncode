@@ -3,34 +3,54 @@
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/usanetwork-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/usanetwork-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/e60a66c7a8f899260c8e91a47bc65117fbcc68cb1dc768f01f630bd534ce577d/1786159033/usanetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Emanuel Moreno vs Guillermo Gutiérrez (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Boxing",[Boxing] Emanuel Moreno vs Guillermo Gutiérrez
+https://hiveatick.casadenoval.uk/main/secure/e43a6e0ff351eef964782a9a5c2f7ee79079e1f0a07e1453f8649b5f5f909304/1786166346/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[CFL] Saskatchewan Roughriders vs Ottawa Redblacks (FLY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="CFL",[CFL] Saskatchewan Roughriders vs Ottawa Redblacks
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssn-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/c458cae68ea1477bc907c16a42249b1e4c2c9aa244d57fb95756bd017b58c1d9/1786159034/cbssn-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Pittsburgh Pirates vs New York Mets (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Pittsburgh Pirates vs New York Mets
-#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-pirates
-#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-pirates
+https://hiveatick.casadenoval.uk/main/secure/0d70cdf56b85dbd278df5a1fa4e6b21b98bc9874f8d892ef353c041ae90f4431/1786166347/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Emanuel Moreno vs Guillermo Gutiérrez (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Boxing",[Boxing] Emanuel Moreno vs Guillermo Gutiérrez
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssn-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/7305d3dc90c3905042e506f11e2110e41f1257498c3e85da3667950135abffcc/1786159034/mlb-pirates.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs Toronto Blue Jays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Philadelphia Phillies vs Toronto Blue Jays
-#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-phillies
-#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-phillies
+https://hiveatick.casadenoval.uk/main/secure/0d70cdf56b85dbd278df5a1fa4e6b21b98bc9874f8d892ef353c041ae90f4431/1786166347/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[MMA] Bryan Battle vs Dalton Rosta (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="MMA",[MMA] Bryan Battle vs Dalton Rosta
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/espn-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/espn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/c42ad0e4434f35c2d9fe7bd26aef8b63e593b37c3297180d3ffa4efbfdc4be82/1786159035/mlb-phillies.m3u8
+https://hiveatick.casadenoval.uk/main/secure/31deab5a128c90f557411b9dac7b5cfbc534626b4638df35b20f3afd479037cc/1786166348/espn-usa.m3u8
 #EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs Chicago Cubs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Kansas City Royals vs Chicago Cubs
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-royals
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-royals
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/7a2ce92fa652898a018d93f4e0b62d48b7b298b40fd3552097eab55cd599febb/1786159035/mlb-royals.m3u8
+https://hiveatick.casadenoval.uk/main/secure/b06504d21af1ab8f2483e049905bc876b0ee3c74062e891fcc6f9b3781dcb46f/1786166348/mlb-royals.m3u8
 #EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Texas Rangers vs Baltimore Orioles (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Texas Rangers vs Baltimore Orioles
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-rangers
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-rangers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/17891527f3239ba2ab20cc139f38c59a7a9d1007534df7e5b44f9502100e45e9/1786159036/mlb-rangers.m3u8
+https://hiveatick.casadenoval.uk/main/secure/605c8cc3edc1b73fe6a02cb616e2ac3fcb603ccc42594cf8c94e8ac08bd312c2/1786166349/mlb-rangers.m3u8
 #EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] St. Louis Cardinals vs Colorado Rockies (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] St. Louis Cardinals vs Colorado Rockies
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-cardinals
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-cardinals
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/397b26bbaccfc61c322c6f5d3b08743a206ce48e27d7d989ac4753a92491e976/1786159036/mlb-cardinals.m3u8
+https://hiveatick.casadenoval.uk/main/secure/f7e98f2523e3e740e1a130f2e7545e9e434e62b5f2d20935c302f34b3134c32f/1786166349/mlb-cardinals.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs Houston Astros (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Diego Padres vs Houston Astros
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-padres
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-padres
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/13b57a1506c0d0316d0dad5eba950325d3b0e252565d2975a74dba70e90294ba/1786166350/mlb-padres.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Arizona Diamondbacks vs Los Angeles Dodgers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Arizona Diamondbacks vs Los Angeles Dodgers
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-diamondbacks
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-diamondbacks
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/295d3b3721c51763afb36cad1c49d46b97677ca23731ec1678e28d6a00bafe64/1786166350/mlb-diamondbacks.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs Tampa Bay Rays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Seattle Mariners vs Tampa Bay Rays
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-mariners
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-mariners
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/c0f42ebf2892b8101722ce636f7f7efa392b22481067eccc57143c99575cb8fd/1786166351/mlb-mariners.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs Detroit Tigers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Francisco Giants vs Detroit Tigers
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-giants
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-giants
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/1680ec4ca865f0a916bd334b368c77afe8f22f12233f5804ebbfd59d30b9beb5/1786166351/mlb-giants.m3u8
