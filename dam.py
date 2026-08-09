@@ -15,7 +15,7 @@ TAG = "DAM"
 
 CACHE_FILE = Cache(TAG, exp=10_800)
 
-API_FILE = Cache(f"{TAG}-api", exp=28_800)
+API_FILE = Cache(f"{TAG}-api", exp=3_600)
 
 # Use environment variable or fallback to default
 BASE_URL = os.getenv("DAM_BASE_URL")
@@ -51,10 +51,12 @@ async def process_event(stream_id: str, url_num: int) -> str | None:
     return m3u8
 
 
-async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
+async def get_events(
+    cached_urls: dict[str, dict[str, str | float]],
+) -> list[DAMIEvent]:
     now = Time.clean(Time.now())
 
-    events: list[Event] = []
+    events: list[DAMIEvent] = []
 
     if not (api_data := API_FILE.load(per_entry=False)):
         log.info("Refreshing API cache")
@@ -69,38 +71,90 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
 
         API_FILE.write(api_data)
 
-    start_dt = now.delta(minutes=-60)
-    end_dt = now.delta(minutes=30)
+    # ---------------------------------------------------------------
+    # Capture both live and upcoming events.
+    #
+    # Default:
+    #   24 hours before now
+    #   14 days after now
+    #
+    # Override with:
+    #   DAM_EVENT_PAST_HOURS
+    #   DAM_EVENT_FUTURE_DAYS
+    # ---------------------------------------------------------------
+
+    try:
+        past_hours = max(
+            0.0,
+            float(os.getenv("DAM_EVENT_PAST_HOURS", "24")),
+        )
+    except (TypeError, ValueError):
+        past_hours = 24.0
+
+    try:
+        future_days = max(
+            0.0,
+            float(os.getenv("DAM_EVENT_FUTURE_DAYS", "14")),
+        )
+    except (TypeError, ValueError):
+        future_days = 14.0
+
+    start_dt = now.delta(minutes=-(past_hours * 60))
+    end_dt = now.delta(minutes=(future_days * 24 * 60))
+
+    log.info(
+        "Event window: %s -> %s "
+        "(past=%.1fh, future=%.1fd)",
+        start_dt,
+        end_dt,
+        past_hours,
+        future_days,
+    )
 
     for stream_group in api_data.get("streams", []):
-        if stream_group["category"] == "24/7-streams":
+        if stream_group.get("category") == "24/7-streams":
             continue
 
         for event in stream_group.get("streams", []):
-            if not all(
-                values := [
-                    event.get(x)
-                    for x in (
-                        "name",
-                        "league",
-                        "starts_at",
-                        "id",
-                    )
-                ]
-            ):
+            values = [
+                event.get(x)
+                for x in (
+                    "name",
+                    "league",
+                    "starts_at",
+                    "id",
+                )
+            ]
+
+            if not all(values):
                 continue
 
             name, sport, start_ts, stream_id = values
 
+            stream_id = str(stream_id)
+
             if stream_id.lower().startswith("dl-"):
                 continue
 
-            event_dt = Time.from_ts(start_ts)
-
-            if f"[{sport}] {name} ({TAG})" in cached_keys:
+            try:
+                event_dt = Time.from_ts(start_ts)
+            except (TypeError, ValueError, OverflowError):
+                log.warning(
+                    "Invalid starts_at for %s: %r",
+                    name,
+                    start_ts,
+                )
                 continue
 
-            elif not start_dt <= event_dt <= end_dt:
+            key = f"[{sport}] {name} ({TAG})"
+
+            cached_event = cached_urls.get(key)
+
+            if cached_event and cached_event.get("source"):
+                continue
+
+            # Accept live/recent + upcoming events.
+            if not start_dt <= event_dt <= end_dt:
                 continue
 
             events.append(
@@ -112,6 +166,11 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
                     timestamp=event_dt.timestamp(),
                 )
             )
+
+    log.info(
+        "Found %d eligible live/upcoming event(s)",
+        len(events),
+    )
 
     return events
 
@@ -193,7 +252,7 @@ async def scrape() -> None:
 
     log.info(f'Scraping from "{BASE_URL}"')
 
-    if events := await get_events(cached_urls.keys()):
+    if events := await get_events(cached_urls):
         log.info(f"Processing {len(events)} new URL(s)")
 
         for i, ev in enumerate(events, start=1):
