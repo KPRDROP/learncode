@@ -69,7 +69,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
 
         API_FILE.write(api_data)
 
-    start_dt = now.delta(minutes=-30)
+    start_dt = now.delta(minutes=-3)
     end_dt = now.delta(minutes=30)
 
     for stream_group in api_data.get("streams", []):
