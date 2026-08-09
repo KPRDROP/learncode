@@ -36,6 +36,9 @@ jobs:
           python dam.py
         env:
           DAM_BASE_URL: ${{ secrets.DAM_BASE_URL }}
+          DAM_EVENT_PAST_HOURS: "48"
+          DAM_EVENT_FUTURE_DAYS: "30"
+          
 
       - name: Commit and push changes
         run: |
