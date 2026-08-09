@@ -3,24 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/
 #EXTVLCOPT:http-origin=https://damitv.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-09/det-sf/playlist.m3u8?tk=EqaEH3D_4i5CB2q9jWJ9RQ&e=1786348425
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-09/det-sf/playlist.m3u8?tk=fvkS_MpUIlxrSGaI6FXSJQ&e=1786348816
 #EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs. Arizona Diamondbacks (DAM)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/md9n571785918728.jpg" group-title="MLB",[MLB] Los Angeles Dodgers vs. Arizona Diamondbacks (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/
 #EXTVLCOPT:http-origin=https://damitv.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-09/lad-ari/playlist.m3u8?tk=EqaEH3D_4i5CB2q9jWJ9RQ&e=1786348425
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-09/lad-ari/playlist.m3u8?tk=fvkS_MpUIlxrSGaI6FXSJQ&e=1786348816
 #EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays vs. Seattle Mariners (DAM)" tvg-logo="https://www.thesportsdb.com/images/media/event/thumb/73ha2v1785918721.jpg" group-title="MLB",[MLB] Tampa Bay Rays vs. Seattle Mariners (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/
 #EXTVLCOPT:http-origin=https://damitv.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-09/tb-sea/playlist.m3u8?tk=EqaEH3D_4i5CB2q9jWJ9RQ&e=1786348425
-#EXTINF:-1 tvg-chno="4" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings vs. Minnesota Lynx (DAM)" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/384uhi1651998449.jpg" group-title="NBA",[WNBA] Dallas Wings vs. Minnesota Lynx (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/
-#EXTVLCOPT:http-origin=https://damitv.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
-https://messi.damitv.st/live-hls/channel/wnba/2026-08-09/dal-min/playlist.m3u8?tk=EqaEH3D_4i5CB2q9jWJ9RQ&e=1786348425
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Seattle Sounders FC vs. Querétaro (DAM)" tvg-logo="https://static.assetstorage.net/assets/thumb/3aca45db2e631c8c4931fbd947d92175-thumbnail.jpg" group-title="Football",[Football] Seattle Sounders FC vs. Querétaro (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/
-#EXTVLCOPT:http-origin=https://damitv.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
-https://messi.damitv.st/live-hls/channel/leagues-cup/2026-08-09/sea-qro/playlist.m3u8?tk=EqaEH3D_4i5CB2q9jWJ9RQ&e=1786348425
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-09/tb-sea/playlist.m3u8?tk=fvkS_MpUIlxrSGaI6FXSJQ&e=1786348816
