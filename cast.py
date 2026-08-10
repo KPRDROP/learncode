@@ -5,6 +5,7 @@ from functools import partial
 from pathlib import Path
 from urllib.parse import urljoin, quote
 
+import cloudscraper
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
@@ -81,23 +82,60 @@ def clean_channel_name(name: str) -> str:
     return name
 
 
-async def fetch_with_retry(url: str, url_num: int, max_retries: int = 3) -> any:
-    """Fetch URL with retries and proper headers."""
+async def fetch_with_cloudscraper(url: str, max_retries: int = 3) -> str | None:
+    """Fetch URL using cloudscraper to bypass Cloudflare protection."""
+    scraper = cloudscraper.create_scraper(
+        browser={
+            'browser': 'chrome',
+            'platform': 'windows',
+            'mobile': False
+        }
+    )
+    
     for attempt in range(max_retries):
         try:
-            # Use network.request with custom headers
-            result = await network.request(
+            response = scraper.get(
                 url,
-                url_num,
                 headers=HEADERS,
-                log=log,
+                timeout=30,
+                allow_redirects=True
             )
-            if result:
-                return result
+            
+            if response.status_code == 200:
+                return response.text
+            else:
+                log.warning(f"Attempt {attempt + 1} for {url} returned status {response.status_code}")
+                
+        except Exception as e:
+            log.warning(f"Attempt {attempt + 1} failed for {url}: {e}")
+            
+        if attempt < max_retries - 1:
+            await asyncio.sleep(2 ** attempt)  # Exponential backoff
+            
+    return None
+
+
+async def fetch_with_retry(url: str, url_num: int, max_retries: int = 3) -> any:
+    """Fetch URL with retries and cloudscraper."""
+    for attempt in range(max_retries):
+        try:
+            # First try with cloudscraper
+            html_content = await fetch_with_cloudscraper(url, 1)
+            if html_content:
+                # Create a mock response object
+                class MockResponse:
+                    def __init__(self, content):
+                        self.content = content
+                        self.text = content
+                        self.url = url
+                        self.status_code = 200
+                
+                return MockResponse(html_content)
+            
         except Exception as e:
             log.warning(f"Attempt {attempt + 1} failed for {url}: {e}")
             if attempt < max_retries - 1:
-                await asyncio.sleep(2 ** attempt)  # Exponential backoff
+                await asyncio.sleep(2 ** attempt)
             continue
     return None
 
@@ -108,12 +146,12 @@ async def process_event(
     sport: str,
 ) -> str | None:
 
-    # Fetch the event page
-    event_data = await fetch_with_retry(url, url_num)
-    if not event_data:
+    # Fetch the event page with cloudscraper
+    html_content = await fetch_with_cloudscraper(url)
+    if not html_content:
         return
 
-    soup = HTMLParser(event_data.content)
+    soup = HTMLParser(html_content)
 
     # Look for iframe with name="srcFrame"
     iframe = soup.css_first('iframe[name="srcFrame"]')
@@ -133,14 +171,14 @@ async def process_event(
         log.warning(f"URL {url_num}) No iframe source found.")
         return
 
-    # Fetch iframe content
-    iframe_data = await fetch_with_retry(iframe_src, url_num)
-    if not iframe_data:
+    # Fetch iframe content with cloudscraper
+    iframe_html = await fetch_with_cloudscraper(iframe_src)
+    if not iframe_html:
         return
 
     # Look for Clappr source pattern
     pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
-    match = pattern.search(iframe_data.text)
+    match = pattern.search(iframe_html)
     
     if not match:
         log.warning(f"URL {url_num}) No Clappr source found.")
@@ -154,20 +192,35 @@ async def process_event(
 
     params: dict[str, int | str] = dict(zip(["id", "ts", "pt"], [ev_id, ev_ts, ev_pt]))
 
-    # Make API request
+    # Make API request with cloudscraper
     api_url = urljoin(BASE_URLS[sport]["base"], BASE_URLS[sport]["api"])
-    api_data = await network.request(
-        api_url,
-        url_num,
-        headers={"Referer": iframe_src, "User-Agent": HEADERS["User-Agent"]},
-        params=params,
-        log=log,
+    
+    scraper = cloudscraper.create_scraper(
+        browser={
+            'browser': 'chrome',
+            'platform': 'windows',
+            'mobile': False
+        }
     )
     
-    if not api_data:
+    try:
+        response = scraper.get(
+            api_url,
+            headers={"Referer": iframe_src, "User-Agent": HEADERS["User-Agent"]},
+            params=params,
+            timeout=30
+        )
+        
+        if response.status_code != 200:
+            log.warning(f"URL {url_num}) API request failed with status {response.status_code}")
+            return
+            
+        data = response.json()
+        
+    except Exception as e:
+        log.warning(f"URL {url_num}) API request failed: {e}")
         return
 
-    data = api_data.json()
     if data.get("error"):
         log.warning(f"URL {url_num}) API error: {data.get('error')}")
         return
@@ -188,13 +241,13 @@ async def get_events() -> list[Event]:
         base_url = config["base"]
         log.info(f"Fetching events from {base_url}")
         
-        # Fetch the main page
-        response = await fetch_with_retry(base_url, 0)
-        if not response:
+        # Fetch the main page with cloudscraper
+        html_content = await fetch_with_cloudscraper(base_url)
+        if not html_content:
             log.error(f"Failed to fetch {base_url}")
             continue
         
-        soup = HTMLParser(response.content)
+        soup = HTMLParser(html_content)
         
         # Look for game rows
         # The HTML uses class "singele_match_date" for game rows
@@ -225,8 +278,6 @@ async def get_events() -> list[Event]:
                 href = urljoin(base_url, href)
             
             # Clean up the event name
-            # Remove the team names if they're in the event name
-            # The format is usually "Team1 @ Team2"
             event_name = fix_event(event_name)
             
             events.append(
