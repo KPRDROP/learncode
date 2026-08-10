@@ -251,7 +251,9 @@ async def scrape() -> None:
 
         return
 
-    log.info(f'Scraping from "{' & '.join(i["base"] for i in BASE_URLS.values())}"')
+    # Fixed f-string syntax error
+    base_urls_str = " & ".join(i["base"] for i in BASE_URLS.values())
+    log.info(f'Scraping from "{base_urls_str}"')
 
     if events := await get_events():
         log.info(f"Processing {len(events)} URL(s)")
@@ -301,7 +303,7 @@ async def scrape() -> None:
 
 async def main():
     """Run the updater and generate outputs."""
-    log.info("Starting CAST updater...")
+    log.info("Starting CAST updaterr...")
     
     # Scrape or load from cache
     await scrape()
