@@ -25,7 +25,7 @@ OUT_VLC = Path("cast_vlc.m3u8")
 OUT_TIVI = Path("cast_tivimate.m3u8")
 
 # User agent for outputs
-UA_RAW = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0"
+UA_RAW = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
 UA_ENC = quote(UA_RAW)
 
 BASE_URLS = {
@@ -35,7 +35,7 @@ BASE_URLS = {
 
 # Headers for cloudscraper
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.5",
     "Accept-Encoding": "gzip, deflate, br",
@@ -82,33 +82,21 @@ def clean_channel_name(name: str) -> str:
     return name
 
 
-def find_event_links_from_homepage(html: str, base: str) -> list:
-    """Extract event links from homepage HTML."""
+def get_team_links_from_homepage(html: str, base: str) -> list:
+    """Extract team links from homepage HTML."""
     soup = BeautifulSoup(html, "html.parser")
     links = []
 
     # Look for team links in the team logo section
     for a in soup.select(".team-logo a"):
         href = a.get("href")
-        if not href:
-            continue
-        href = urljoin(base, href)
         title = a.get("title", "")
-        links.append((href, title))
-
-    # Look for event links in the table
-    for a in soup.select("td.teamvs a"):
-        href = a.get("href")
-        if not href:
-            continue
-        href = urljoin(base, href)
-        text = a.text.strip()
-        # Remove date if present
-        date_span = a.find("span", class_="mtdate")
-        if date_span:
-            text = text.replace(date_span.text, "").strip()
-        links.append((href, text))
-
+        if href:
+            href = urljoin(base, href)
+            # Extract team name from title
+            team_name = title.replace(" Live Stream", "").strip()
+            links.append((href, team_name))
+    
     return links
 
 
@@ -117,150 +105,136 @@ async def capture_m3u8_from_page(page_url: str, timeout_ms: int = 30000) -> tupl
     captured = None
     page_html = None
     
-    async with async_playwright() as p:
-        browser = await p.firefox.launch(
-            headless=True,
-            args=["--no-sandbox", "--disable-setuid-sandbox"]
-        )
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0",
-            viewport={"width": 1280, "height": 720}
-        )
-        page = await context.new_page()
+    try:
+        async with async_playwright() as p:
+            browser = await p.firefox.launch(
+                headless=True,
+                args=["--no-sandbox", "--disable-setuid-sandbox"]
+            )
+            context = await browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+                viewport={"width": 1280, "height": 720}
+            )
+            page = await context.new_page()
 
-        def handle_response(response):
-            nonlocal captured
+            def handle_response(response):
+                nonlocal captured
+                try:
+                    url = response.url
+                    if ".m3u8" in url and not captured:
+                        captured = url
+                        log.info(f"Captured m3u8 from response: {url[:100]}...")
+                except Exception:
+                    pass
+
             try:
-                url = response.url
-                if ".m3u8" in url and not captured:
-                    captured = url
-                    log.info(f"Captured m3u8 from response: {url[:100]}...")
-            except Exception:
-                pass
+                page.on("response", handle_response)
+                
+                # Navigate to the page
+                try:
+                    await page.goto(page_url, wait_until="domcontentloaded", timeout=timeout_ms)
+                except PlaywrightTimeoutError:
+                    log.warning(f"Timeout loading {page_url}, continuing...")
+                except Exception as e:
+                    log.warning(f"Error navigating {page_url}: {e}")
 
-        try:
-            page.on("response", handle_response)
-            
-            # Navigate to the page
-            try:
-                await page.goto(page_url, wait_until="domcontentloaded", timeout=timeout_ms)
-            except PlaywrightTimeoutError:
-                log.warning(f"Timeout loading {page_url}, continuing...")
-            except Exception as e:
-                log.warning(f"Error navigating {page_url}: {e}")
+                # Wait for player to load
+                await asyncio.sleep(5)
 
-            # Wait a bit for network requests
-            await asyncio.sleep(3)
+                # Try to find and interact with iframe
+                try:
+                    # Look for iframe with name="srcFrame"
+                    iframe = await page.query_selector('iframe[name="srcFrame"]')
+                    if not iframe:
+                        # Try alternative selectors
+                        iframe = await page.query_selector('iframe[src*="stream"]')
+                    
+                    if iframe:
+                        src = await iframe.get_attribute("src")
+                        if src and src != "about:blank":
+                            # Navigate to iframe src
+                            try:
+                                await page.goto(src, wait_until="domcontentloaded", timeout=10000)
+                                await asyncio.sleep(3)
+                            except Exception:
+                                pass
+                except Exception:
+                    pass
 
-            # Try to click on any play buttons
-            try:
-                # Look for play button or iframe
-                for selector in [
-                    ".btn-primary",
-                    ".hdplay_button a",
-                    ".lplay_button a",
-                    ".play-button",
-                    "button:has-text('Play')",
-                    "button:has-text('Watch')",
-                    "a:has-text('Watch')",
-                    "a:has-text('HD')"
-                ]:
-                    try:
-                        element = await page.locator(selector).first
-                        if await element.count() > 0:
-                            await element.click(timeout=2000)
-                            await asyncio.sleep(2)
+                # Get page content
+                page_html = await page.content()
+
+                # Search for m3u8 in page content
+                if not captured:
+                    # Look for m3u8 URL patterns
+                    m3u8_patterns = [
+                        r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*',
+                        r'https?://[^\s"\'<>]+/play/[^\s"\'<>]+\.m3u8',
+                        r'https?://webcast-origin[^\s"\'<>]+\.m3u8',
+                        r'https?://[^\s"\'<>]+/playlist/[^\s"\'<>]+\.m3u8',
+                    ]
+                    for pattern in m3u8_patterns:
+                        matches = re.findall(pattern, page_html)
+                        if matches:
+                            captured = matches[0]
+                            log.info(f"Found m3u8 in page content: {captured[:100]}...")
                             break
-                    except Exception:
-                        continue
-            except Exception:
-                pass
 
-            # Try to find iframe and get its src
-            try:
-                iframes = await page.query_selector_all("iframe")
-                for iframe in iframes:
-                    src = await iframe.get_attribute("src")
-                    if src and "stream" in src:
-                        # Navigate to iframe src
+                # Try base64 decoding
+                if not captured:
+                    b64_candidates = set(re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', page_html))
+                    for candidate in b64_candidates:
                         try:
-                            await page.goto(src, wait_until="domcontentloaded", timeout=10000)
-                            await asyncio.sleep(2)
+                            decoded = base64.b64decode(candidate).decode(errors="ignore")
+                            if ".m3u8" in decoded:
+                                captured = decoded.strip()
+                                log.info("Found m3u8 from base64 decoding")
+                                break
+                        except Exception:
+                            continue
+
+                # Look for Clappr data
+                if not captured:
+                    clappr_pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
+                    match = clappr_pattern.search(page_html)
+                    if match:
+                        try:
+                            values = ast.literal_eval(match[1])
+                            if len(values) >= 3:
+                                ev_id, ev_ts, ev_pt = values[:3]
+                                log.info(f"Found Clappr data: id={ev_id}")
                         except Exception:
                             pass
-            except Exception:
-                pass
 
-            # Get page content
-            page_html = await page.content()
-
-            # Search for m3u8 in page content
-            if not captured:
-                # Look for m3u8 URL patterns
-                m3u8_patterns = [
-                    r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*',
-                    r'https?://[^\s"\'<>]+/play/[^\s"\'<>]+\.m3u8',
-                    r'https?://webcast-origin[^\s"\'<>]+\.m3u8',
-                ]
-                for pattern in m3u8_patterns:
-                    matches = re.findall(pattern, page_html)
-                    if matches:
-                        captured = matches[0]
-                        log.info(f"Found m3u8 in page content: {captured[:100]}...")
-                        break
-
-            # Try base64 decoding
-            if not captured:
-                b64_candidates = set(re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', page_html))
-                for candidate in b64_candidates:
-                    try:
-                        decoded = base64.b64decode(candidate).decode(errors="ignore")
-                        if ".m3u8" in decoded:
-                            captured = decoded.strip()
-                            log.info("Found m3u8 from base64 decoding")
-                            break
-                    except Exception:
-                        continue
-
-            # Look for Clappr data
-            if not captured:
-                clappr_pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
-                match = clappr_pattern.search(page_html)
-                if match:
-                    try:
-                        values = ast.literal_eval(match[1])
-                        if len(values) >= 3:
-                            ev_id, ev_ts, ev_pt = values[:3]
-                            # This is a fallback - the API call might be needed
-                            log.info(f"Found Clappr data: id={ev_id}")
-                    except Exception:
-                        pass
-
-        except Exception as e:
-            log.error(f"Error in capture_m3u8_from_page: {e}")
-        finally:
-            await browser.close()
+            except Exception as e:
+                log.error(f"Error in capture_m3u8_from_page: {e}")
+            finally:
+                await browser.close()
+                
+    except Exception as e:
+        log.error(f"Error launching browser: {e}")
 
     return captured, page_html
 
 
-async def process_event(
+async def process_team(
     url: str,
     url_num: int,
     sport: str,
+    team_name: str,
 ) -> str | None:
 
-    log.info(f"URL {url_num}) Processing: {url}")
+    log.info(f"URL {url_num}) Processing {team_name}: {url}")
     
-    # Try Playwright first to capture the m3u8
+    # Try Playwright to capture the m3u8
     m3u8, html_content = await capture_m3u8_from_page(url)
     
     if m3u8:
-        log.info(f"URL {url_num}) Successfully captured M3U8")
+        log.info(f"URL {url_num}) Successfully captured M3U8 for {team_name}")
         return m3u8
     
     # If Playwright fails, try the traditional method
-    log.warning(f"URL {url_num}) Playwright capture failed, trying fallback method")
+    log.warning(f"URL {url_num}) Playwright capture failed for {team_name}, trying fallback method")
     
     try:
         import cloudscraper
@@ -312,12 +286,13 @@ async def process_event(
     return None
 
 
-async def get_events() -> list[Event]:
-    events: list[Event] = []
+async def get_teams() -> list[tuple[str, str, str]]:
+    """Get all teams from both MLB and NFL sites."""
+    teams = []
     
     for sport, config in BASE_URLS.items():
         base_url = config["base"]
-        log.info(f"Fetching events from {base_url}")
+        log.info(f"Fetching teams from {base_url}")
         
         try:
             import cloudscraper
@@ -330,36 +305,20 @@ async def get_events() -> list[Event]:
                 log.error(f"Failed to fetch {base_url}: Status {response.status_code}")
                 continue
                 
-            # Find event links
-            links = find_event_links_from_homepage(response.text, base_url)
+            # Get team links
+            team_links = get_team_links_from_homepage(response.text, base_url)
             
-            for href, title in links:
-                if not href or not title:
-                    continue
+            for href, team_name in team_links:
+                if href:
+                    teams.append((sport, team_name, href))
+                    log.info(f"Found team: {team_name} - {href}")
                     
-                # Clean up the title
-                event_name = fix_event(title)
-                
-                # Remove any "Live Stream" suffix
-                event_name = re.sub(r'\s*Live\s*Stream\s*$', '', event_name, flags=re.I)
-                event_name = re.sub(r'\s*Stream\s*$', '', event_name, flags=re.I)
-                
-                log.info(f"Found event: {event_name} - {href}")
-                
-                events.append(
-                    Event(
-                        sport=sport,
-                        name=event_name,
-                        link=href,
-                    )
-                )
-                
         except Exception as e:
-            log.error(f"Error fetching events from {base_url}: {e}")
+            log.error(f"Error fetching teams from {base_url}: {e}")
         
-        log.info(f"Found {len([e for e in events if e.sport == sport])} events for {sport}")
+        log.info(f"Found {len([t for t in teams if t[0] == sport])} teams for {sport}")
     
-    return events
+    return teams
 
 
 def write_outputs():
@@ -437,18 +396,19 @@ async def scrape() -> None:
     base_urls_str = " & ".join(i["base"] for i in BASE_URLS.values())
     log.info(f'Scraping from "{base_urls_str}"')
 
-    if events := await get_events():
-        log.info(f"Processing {len(events)} URL(s)")
+    if teams := await get_teams():
+        log.info(f"Processing {len(teams)} team(s)")
 
         now = Time.clean(Time.now())
         cached_urls = {}
 
-        for i, ev in enumerate(events, start=1):
+        for i, (sport, team_name, team_url) in enumerate(teams, start=1):
             handler = partial(
-                process_event,
-                url=ev.link,
+                process_team,
+                url=team_url,
                 url_num=i,
-                sport=ev.sport,
+                sport=sport,
+                team_name=team_name,
             )
 
             source = await network.safe_process(
@@ -458,17 +418,17 @@ async def scrape() -> None:
                 log=log,
             )
 
-            key = f"[{ev.sport}] {ev.name} ({TAG})"
+            key = f"[{sport}] {team_name} ({TAG})"
 
-            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+            tvg_id, logo = leagues.get_tvg_info(sport, team_name)
 
             entry = {
                 "source": source,
                 "logo": logo,
-                "refer": BASE_URLS[ev.sport]["base"],
+                "refer": BASE_URLS[sport]["base"],
                 "timestamp": now.timestamp(),
                 "tvg-id": tvg_id or "Live.Event.us",
-                "link": ev.link,
+                "link": team_url,
             }
 
             cached_urls[key] = entry
@@ -479,7 +439,7 @@ async def scrape() -> None:
         log.info(f"Collected and cached {len(urls)} event(s)")
         CACHE_FILE.write(cached_urls)
     else:
-        log.info("No events found")
+        log.info("No teams found")
 
 
 async def main():
