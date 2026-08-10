@@ -25,7 +25,7 @@ OUT_VLC = Path("cast_vlc.m3u8")
 OUT_TIVI = Path("cast_tivimate.m3u8")
 
 # User agent for outputs
-UA_RAW = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+UA_RAW = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0"
 UA_ENC = quote(UA_RAW)
 
 BASE_URLS = {
@@ -35,7 +35,7 @@ BASE_URLS = {
 
 # Headers for cloudscraper
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.5",
     "Accept-Encoding": "gzip, deflate, br",
@@ -123,7 +123,7 @@ async def capture_m3u8_from_page(page_url: str, timeout_ms: int = 30000) -> tupl
             args=["--no-sandbox", "--disable-setuid-sandbox"]
         )
         context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:153.0) Gecko/20100101 Firefox/153.0",
             viewport={"width": 1280, "height": 720}
         )
         page = await context.new_page()
