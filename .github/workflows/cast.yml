@@ -27,7 +27,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright aiohttp cloudscraper selectolax httpx[http2] pytz
+          pip install playwright aiohttp cloudscraper beautifulsoup4 selectolax httpx[http2] pytz
+          playwright install firefox
+          playwright install-deps
       
       - name: Run CAST updater
         run: |
