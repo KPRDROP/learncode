@@ -1,91 +1,73 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Brazil Brasileirão] RB Bragantino vs Corinthians | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" group-title="Live Events",[Brazil Brasileirão] RB Bragantino vs Corinthians | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Golden State Valkyries vs Los Angeles Sparks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] Golden State Valkyries vs Los Angeles Sparks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do1.m3u8?md5=dKQWXGQAXqtW1fNDGolyiA&expires=1786323565
+https://cdn8.zohanayaan.com:1686/hls/do4.m3u8?md5=9A-K_7s0x-XfW9WNSjBmsA&expires=1786327467
 
-#EXTINF:-1 tvg-chno="2" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Golden State Valkyries vs Los Angeles Sparks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] Golden State Valkyries vs Los Angeles Sparks | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[United States NWSL] Seattle Reign vs Angel City | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2323.png" group-title="Live Events",[United States NWSL] Seattle Reign vs Angel City | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do4.m3u8?md5=l4KwSmGE6hQc49wFU9XDFg&expires=1786323567
+https://cdn8.zohanayaan.com:1686/hls/do4.m3u8?md5=9A-K_7s0x-XfW9WNSjBmsA&expires=1786327467
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[United States NWSL] Seattle Reign vs Angel City | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2323.png" group-title="Live Events",[United States NWSL] Seattle Reign vs Angel City | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[United States NWSL] Seattle Reign vs Angel City | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2323.png" group-title="Live Events",[United States NWSL] Seattle Reign vs Angel City | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do4.m3u8?md5=l4KwSmGE6hQc49wFU9XDFg&expires=1786323567
+https://cdn10.zohanayaan.com:1686/hls/do86.m3u8?md5=_kZJ5o9zBc_J_4UeDmKdnA&expires=1786327470
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[United States NWSL] Seattle Reign vs Angel City | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2323.png" group-title="Live Events",[United States NWSL] Seattle Reign vs Angel City | ES (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Philadelphia Union vs Necaxa | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Philadelphia Union vs Necaxa | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do86.m3u8?md5=Uu2ANa2qemsjvQLkcOwJKA&expires=1786323569
+https://cdn3.zohanayaan.com:1686/hls/do32.m3u8?md5=0yo6-AYdyaL7Opl3fAkzeQ&expires=1786327471
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Brazil Brasileirão] Santos vs Athletico-PR | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" group-title="Live Events",[Brazil Brasileirão] Santos vs Athletico-PR | DE (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Chicago Fire vs Santos Laguna | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Chicago Fire vs Santos Laguna | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do19.m3u8?md5=EUcIg4k7NHzI4P74jXzf-A&expires=1786323570
+https://cdn1.zohanayaan.com:1686/hls/do33.m3u8?md5=yxCxDhUWpT3FQ9NPFGiL9A&expires=1786327472
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Philadelphia Union vs Necaxa | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Philadelphia Union vs Necaxa | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Nashville SC vs Atlético San Luis | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Nashville SC vs Atlético San Luis | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do32.m3u8?md5=pWfpU9r9C0ruDFopMdth8Q&expires=1786323571
+https://cdn9.zohanayaan.com:1686/hls/do34.m3u8?md5=1Ao4TD4Olt2CEiVnNdKwIw&expires=1786327473
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Chicago Fire vs Santos Laguna | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Chicago Fire vs Santos Laguna | EN (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Austin vs Puebla | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Austin vs Puebla | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do33.m3u8?md5=yOlbpnj6-UDfoAeyF0zn9Q&expires=1786323572
+https://cdn9.zohanayaan.com:1686/hls/do35.m3u8?md5=nfU2uJKz0JkZvTI9qLkD2w&expires=1786327474
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Nashville SC vs Atlético San Luis | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Nashville SC vs Atlético San Luis | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] San Diego vs Tijuana | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] San Diego vs Tijuana | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do34.m3u8?md5=9xayiC4552877SLOtFDYbg&expires=1786323573
+https://cdn5.zohanayaan.com:1686/hls/do36.m3u8?md5=syF745UTi9jGGUuTWngbfQ&expires=1786327475
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Austin vs Puebla | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Austin vs Puebla | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Cruz Azul vs New York City | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Cruz Azul vs New York City | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do35.m3u8?md5=R85KhYw6irUK8JaPzFv7bw&expires=1786323574
+https://cdn5.zohanayaan.com:1686/hls/do81.m3u8?md5=hpk3Q_nQfVHOyKVL96B9eA&expires=1786327476
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] San Diego vs Tijuana | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] San Diego vs Tijuana | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] América vs Portland Timbers | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] América vs Portland Timbers | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do36.m3u8?md5=uwVnCYZDpnNfz_wz-1Uw9g&expires=1786323575
+https://cdn5.zohanayaan.com:1686/hls/do81.m3u8?md5=hpk3Q_nQfVHOyKVL96B9eA&expires=1786327476
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Cruz Azul vs New York City | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Cruz Azul vs New York City | EN (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Argentinos Juniors vs Racing Club | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Argentinos Juniors vs Racing Club | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do81.m3u8?md5=uvwxTgNZaaQWNIFl2krOSw&expires=1786323576
+https://cdn9.zohanayaan.com:1686/hls/do84.m3u8?md5=KKa-XhLkRiHCry9UACSsXQ&expires=1786327478
 
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] América vs Portland Timbers | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] América vs Portland Timbers | EN (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Universidad Chile vs Palestino | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Universidad Chile vs Palestino | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do81.m3u8?md5=uvwxTgNZaaQWNIFl2krOSw&expires=1786323576
-
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Argentinos Juniors vs Racing Club | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Argentinos Juniors vs Racing Club | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do84.m3u8?md5=I-4dSDdZ5j1wiuUgGIHT8Q&expires=1786323578
-
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Unión La Calera vs Colo-Colo | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Unión La Calera vs Colo-Colo | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do100.m3u8?md5=Ir-pj8uT_gSkd_xZblabrw&expires=1786323579
-
-#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Universidad Chile vs Palestino | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Universidad Chile vs Palestino | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do100.m3u8?md5=Ir-pj8uT_gSkd_xZblabrw&expires=1786323579
+https://cdn4.zohanayaan.com:1686/hls/do100.m3u8?md5=M99ozpyeB4RELpy7FbO-Sw&expires=1786327480
 
