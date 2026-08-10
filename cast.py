@@ -1,11 +1,13 @@
 import ast
 import asyncio
 import re
+import base64
 from functools import partial
 from pathlib import Path
 from urllib.parse import urljoin, quote
+from bs4 import BeautifulSoup
 
-import cloudscraper
+from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
@@ -27,11 +29,11 @@ UA_RAW = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l
 UA_ENC = quote(UA_RAW)
 
 BASE_URLS = {
-    "MLB": {"base": "https://mlbwebcast.com", "api": "stream/check_stream.php"},
-    "NFL": {"base": "https://nflwebcast.com", "api": "live/check_stream.php"},
+    "MLB": {"base": "https://mlbwebcast.com", "api": "stream/check_stream.php", "pattern": "/{team}-live"},
+    "NFL": {"base": "https://nflwebcast.com", "api": "live/check_stream.php", "pattern": "/{team}-live-stream-online-free/"},
 }
 
-# Headers to avoid 403 errors
+# Headers for cloudscraper
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
@@ -39,11 +41,6 @@ HEADERS = {
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Cache-Control": "max-age=0",
 }
 
 
@@ -85,70 +82,166 @@ def clean_channel_name(name: str) -> str:
     return name
 
 
-def get_cloudscraper():
-    """Get a cloudscraper instance."""
-    return cloudscraper.create_scraper(
-        browser={
-            'browser': 'chrome',
-            'platform': 'windows',
-            'mobile': False
-        },
-        delay=1
-    )
+def find_event_links_from_homepage(html: str, base: str) -> list:
+    """Extract event links from homepage HTML."""
+    soup = BeautifulSoup(html, "html.parser")
+    links = []
+
+    # Look for team links in the team logo section
+    for a in soup.select(".team-logo a"):
+        href = a.get("href")
+        if not href:
+            continue
+        href = urljoin(base, href)
+        title = a.get("title", "")
+        links.append((href, title))
+
+    # Look for event links in the table
+    for a in soup.select("td.teamvs a"):
+        href = a.get("href")
+        if not href:
+            continue
+        href = urljoin(base, href)
+        text = a.text.strip()
+        # Remove date if present
+        date_span = a.find("span", class_="mtdate")
+        if date_span:
+            text = text.replace(date_span.text, "").strip()
+        links.append((href, text))
+
+    return links
 
 
-async def fetch_with_cloudscraper(url: str, max_retries: int = 3) -> str | None:
-    """Fetch URL using cloudscraper to bypass Cloudflare protection."""
-    scraper = get_cloudscraper()
+async def capture_m3u8_from_page(page_url: str, timeout_ms: int = 30000) -> tuple[str | None, str | None]:
+    """Capture m3u8 URL from a page using Playwright."""
+    captured = None
+    page_html = None
     
-    for attempt in range(max_retries):
-        try:
-            response = scraper.get(
-                url,
-                headers=HEADERS,
-                timeout=30,
-                allow_redirects=True
-            )
-            
-            if response.status_code == 200:
-                return response.text
-            else:
-                log.warning(f"Attempt {attempt + 1} for {url} returned status {response.status_code}")
-                
-        except Exception as e:
-            log.warning(f"Attempt {attempt + 1} failed for {url}: {e}")
-            
-        if attempt < max_retries - 1:
-            await asyncio.sleep(2 ** attempt)  # Exponential backoff
-            
-    return None
-
-
-async def fetch_json_with_cloudscraper(url: str, params: dict = None, headers: dict = None) -> dict | None:
-    """Fetch JSON using cloudscraper."""
-    scraper = get_cloudscraper()
-    
-    try:
-        req_headers = HEADERS.copy()
-        if headers:
-            req_headers.update(headers)
-            
-        response = scraper.get(
-            url,
-            headers=req_headers,
-            params=params,
-            timeout=30
+    async with async_playwright() as p:
+        browser = await p.firefox.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox"]
         )
-        
-        if response.status_code == 200:
-            return response.json()
-        else:
-            log.warning(f"JSON request to {url} returned status {response.status_code}")
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+            viewport={"width": 1280, "height": 720}
+        )
+        page = await context.new_page()
+
+        def handle_response(response):
+            nonlocal captured
+            try:
+                url = response.url
+                if ".m3u8" in url and not captured:
+                    captured = url
+                    log.info(f"Captured m3u8 from response: {url[:100]}...")
+            except Exception:
+                pass
+
+        try:
+            page.on("response", handle_response)
             
-    except Exception as e:
-        log.warning(f"JSON request to {url} failed: {e}")
-        
-    return None
+            # Navigate to the page
+            try:
+                await page.goto(page_url, wait_until="domcontentloaded", timeout=timeout_ms)
+            except PlaywrightTimeoutError:
+                log.warning(f"Timeout loading {page_url}, continuing...")
+            except Exception as e:
+                log.warning(f"Error navigating {page_url}: {e}")
+
+            # Wait a bit for network requests
+            await asyncio.sleep(3)
+
+            # Try to click on any play buttons
+            try:
+                # Look for play button or iframe
+                for selector in [
+                    ".btn-primary",
+                    ".hdplay_button a",
+                    ".lplay_button a",
+                    ".play-button",
+                    "button:has-text('Play')",
+                    "button:has-text('Watch')",
+                    "a:has-text('Watch')",
+                    "a:has-text('HD')"
+                ]:
+                    try:
+                        element = await page.locator(selector).first
+                        if await element.count() > 0:
+                            await element.click(timeout=2000)
+                            await asyncio.sleep(2)
+                            break
+                    except Exception:
+                        continue
+            except Exception:
+                pass
+
+            # Try to find iframe and get its src
+            try:
+                iframes = await page.query_selector_all("iframe")
+                for iframe in iframes:
+                    src = await iframe.get_attribute("src")
+                    if src and "stream" in src:
+                        # Navigate to iframe src
+                        try:
+                            await page.goto(src, wait_until="domcontentloaded", timeout=10000)
+                            await asyncio.sleep(2)
+                        except Exception:
+                            pass
+            except Exception:
+                pass
+
+            # Get page content
+            page_html = await page.content()
+
+            # Search for m3u8 in page content
+            if not captured:
+                # Look for m3u8 URL patterns
+                m3u8_patterns = [
+                    r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*',
+                    r'https?://[^\s"\'<>]+/play/[^\s"\'<>]+\.m3u8',
+                    r'https?://webcast-origin[^\s"\'<>]+\.m3u8',
+                ]
+                for pattern in m3u8_patterns:
+                    matches = re.findall(pattern, page_html)
+                    if matches:
+                        captured = matches[0]
+                        log.info(f"Found m3u8 in page content: {captured[:100]}...")
+                        break
+
+            # Try base64 decoding
+            if not captured:
+                b64_candidates = set(re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', page_html))
+                for candidate in b64_candidates:
+                    try:
+                        decoded = base64.b64decode(candidate).decode(errors="ignore")
+                        if ".m3u8" in decoded:
+                            captured = decoded.strip()
+                            log.info("Found m3u8 from base64 decoding")
+                            break
+                    except Exception:
+                        continue
+
+            # Look for Clappr data
+            if not captured:
+                clappr_pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
+                match = clappr_pattern.search(page_html)
+                if match:
+                    try:
+                        values = ast.literal_eval(match[1])
+                        if len(values) >= 3:
+                            ev_id, ev_ts, ev_pt = values[:3]
+                            # This is a fallback - the API call might be needed
+                            log.info(f"Found Clappr data: id={ev_id}")
+                    except Exception:
+                        pass
+
+        except Exception as e:
+            log.error(f"Error in capture_m3u8_from_page: {e}")
+        finally:
+            await browser.close()
+
+    return captured, page_html
 
 
 async def process_event(
@@ -159,119 +252,64 @@ async def process_event(
 
     log.info(f"URL {url_num}) Processing: {url}")
     
-    # Fetch the event page
-    html_content = await fetch_with_cloudscraper(url)
-    if not html_content:
-        log.warning(f"URL {url_num}) Failed to fetch event page")
-        return
-
-    soup = HTMLParser(html_content)
-
-    # Look for iframe with name="srcFrame"
-    iframe = soup.css_first('iframe[name="srcFrame"]')
-    if not iframe:
-        # Try alternative selectors
-        iframe = soup.css_first('iframe[src*="stream"]')
-        if not iframe:
-            # Try to find the iframe in the player div
-            player_div = soup.css_first('.player-header')
-            if player_div:
-                iframe = player_div.css_first('iframe')
+    # Try Playwright first to capture the m3u8
+    m3u8, html_content = await capture_m3u8_from_page(url)
     
-    if not iframe:
-        log.warning(f"URL {url_num}) No iframe element found.")
-        return
-
-    iframe_src = iframe.attributes.get("src")
-    if not iframe_src or iframe_src.lower() == "about:blank":
-        iframe_src = iframe.attributes.get("data-litespeed-src")
+    if m3u8:
+        log.info(f"URL {url_num}) Successfully captured M3U8")
+        return m3u8
     
-    if not iframe_src:
-        log.warning(f"URL {url_num}) No iframe source found.")
-        return
-
-    log.info(f"URL {url_num}) Found iframe: {iframe_src}")
-
-    # Fetch iframe content
-    iframe_html = await fetch_with_cloudscraper(iframe_src)
-    if not iframe_html:
-        log.warning(f"URL {url_num}) Failed to fetch iframe content")
-        return
-
-    # Look for Clappr source pattern - try different patterns
-    patterns = [
-        r'var\s+\w*=\[([^"]*)\];',
-        r'id\s*:\s*([0-9]+)',
-        r'ts\s*:\s*([0-9]+)',
-        r'pt\s*:\s*([0-9]+)',
-    ]
+    # If Playwright fails, try the traditional method
+    log.warning(f"URL {url_num}) Playwright capture failed, trying fallback method")
     
-    # Try to extract id, ts, pt from the iframe
-    ev_id = None
-    ev_ts = None
-    ev_pt = None
-    
-    # Look for the array pattern first
-    array_pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
-    array_match = array_pattern.search(iframe_html)
-    
-    if array_match:
-        try:
-            values = ast.literal_eval(array_match[1])
-            if len(values) >= 3:
-                ev_id, ev_ts, ev_pt = values[:3]
-                log.info(f"URL {url_num}) Found Clappr data: id={ev_id}, ts={ev_ts}, pt={ev_pt}")
-        except (ValueError, SyntaxError) as e:
-            log.warning(f"URL {url_num}) Failed to parse array: {e}")
-    
-    # If not found, try individual pattern matching
-    if not all([ev_id, ev_ts, ev_pt]):
-        # Look for id, ts, pt in the iframe content
-        id_match = re.search(r'id\s*:\s*([0-9]+)', iframe_html)
-        ts_match = re.search(r'ts\s*:\s*([0-9]+)', iframe_html)
-        pt_match = re.search(r'pt\s*:\s*([0-9]+)', iframe_html)
+    try:
+        import cloudscraper
+        scraper = cloudscraper.create_scraper(
+            browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False}
+        )
         
-        if id_match and ts_match and pt_match:
-            ev_id = int(id_match.group(1))
-            ev_ts = int(ts_match.group(1))
-            ev_pt = int(pt_match.group(1))
-            log.info(f"URL {url_num}) Found individual values: id={ev_id}, ts={ev_ts}, pt={ev_pt}")
+        response = scraper.get(url, headers=HEADERS, timeout=30)
+        if response.status_code != 200:
+            return None
+            
+        soup = HTMLParser(response.text)
+        
+        # Look for iframe
+        iframe = soup.css_first('iframe[name="srcFrame"]')
+        if iframe:
+            iframe_src = iframe.attributes.get("src")
+            if iframe_src and iframe_src != "about:blank":
+                # Fetch iframe content
+                iframe_response = scraper.get(iframe_src, headers=HEADERS, timeout=30)
+                if iframe_response.status_code == 200:
+                    # Look for Clappr data in iframe
+                    clappr_pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
+                    match = clappr_pattern.search(iframe_response.text)
+                    if match:
+                        try:
+                            values = ast.literal_eval(match[1])
+                            if len(values) >= 3:
+                                ev_id, ev_ts, ev_pt = values[:3]
+                                
+                                # Make API request
+                                api_url = urljoin(BASE_URLS[sport]["base"], BASE_URLS[sport]["api"])
+                                api_response = scraper.get(
+                                    api_url,
+                                    params={"id": ev_id, "ts": ev_ts, "pt": ev_pt},
+                                    headers={"Referer": iframe_src},
+                                    timeout=30
+                                )
+                                
+                                if api_response.status_code == 200:
+                                    data = api_response.json()
+                                    if not data.get("error") and data.get("url"):
+                                        return data["url"]
+                        except Exception as e:
+                            log.warning(f"URL {url_num}) Fallback method failed: {e}")
+    except Exception as e:
+        log.warning(f"URL {url_num}) Fallback method error: {e}")
     
-    if not all([ev_id, ev_ts, ev_pt]):
-        log.warning(f"URL {url_num}) Could not extract event id, ts, pt")
-        return
-
-    params = {
-        "id": ev_id,
-        "ts": ev_ts,
-        "pt": ev_pt
-    }
-
-    # Make API request
-    api_url = urljoin(BASE_URLS[sport]["base"], BASE_URLS[sport]["api"])
-    log.info(f"URL {url_num}) Calling API: {api_url} with params {params}")
-    
-    api_data = await fetch_json_with_cloudscraper(
-        api_url,
-        params=params,
-        headers={"Referer": iframe_src}
-    )
-    
-    if not api_data:
-        log.warning(f"URL {url_num}) API request failed")
-        return
-
-    if api_data.get("error"):
-        log.warning(f"URL {url_num}) API error: {api_data.get('error')}")
-        return
-
-    m3u8 = api_data.get("url")
-    if not m3u8:
-        log.warning(f"URL {url_num}) No M3U8 found in response: {api_data}")
-        return
-
-    log.info(f"URL {url_num}) Captured M3U8: {m3u8[:100]}...")
-    return m3u8
+    return None
 
 
 async def get_events() -> list[Event]:
@@ -281,65 +319,43 @@ async def get_events() -> list[Event]:
         base_url = config["base"]
         log.info(f"Fetching events from {base_url}")
         
-        # Fetch the main page
-        html_content = await fetch_with_cloudscraper(base_url)
-        if not html_content:
-            log.error(f"Failed to fetch {base_url}")
-            continue
-        
-        soup = HTMLParser(html_content)
-        
-        # Look for game rows - they're in table rows with class "singele_match_date"
-        rows = soup.css("tr.singele_match_date")
-        
-        for row in rows:
-            # Skip header rows
-            if row.css_first(".mdatetitle"):
+        try:
+            import cloudscraper
+            scraper = cloudscraper.create_scraper(
+                browser={'browser': 'chrome', 'platform': 'windows', 'mobile': False}
+            )
+            
+            response = scraper.get(base_url, headers=HEADERS, timeout=30)
+            if response.status_code != 200:
+                log.error(f"Failed to fetch {base_url}: Status {response.status_code}")
                 continue
                 
-            # Look for the team vs link
-            vs_node = row.css_first("td.teamvs a")
-            if not vs_node:
-                continue
+            # Find event links
+            links = find_event_links_from_homepage(response.text, base_url)
             
-            # Get the event name
-            event_name = vs_node.text(strip=True)
-            
-            # Get the href
-            href = vs_node.attributes.get("href")
-            if not href:
-                continue
-            
-            # Fix the URL if it's relative
-            if href.startswith("/"):
-                href = urljoin(base_url, href)
-            
-            # Check if there's an HD button (indicates a stream is available)
-            hd_button = row.css_first("td.hdplay_button a")
-            if not hd_button:
-                # If no HD button, this event might not have a stream
-                # But we'll still process it
-                pass
-            
-            # Clean up the event name
-            # Remove date span if present
-            date_nodes = vs_node.css("span.mtdate")
-            for date_node in date_nodes:
-                date = date_node.text(strip=True)
-                event_name = event_name.replace(date, "").strip()
-            
-            # Fix the event name (Team1 @ Team2 -> Team1 vs Team2)
-            event_name = fix_event(event_name)
-            
-            log.info(f"Found event: {event_name} - {href}")
-            
-            events.append(
-                Event(
-                    sport=sport,
-                    name=event_name,
-                    link=href,
+            for href, title in links:
+                if not href or not title:
+                    continue
+                    
+                # Clean up the title
+                event_name = fix_event(title)
+                
+                # Remove any "Live Stream" suffix
+                event_name = re.sub(r'\s*Live\s*Stream\s*$', '', event_name, flags=re.I)
+                event_name = re.sub(r'\s*Stream\s*$', '', event_name, flags=re.I)
+                
+                log.info(f"Found event: {event_name} - {href}")
+                
+                events.append(
+                    Event(
+                        sport=sport,
+                        name=event_name,
+                        link=href,
+                    )
                 )
-            )
+                
+        except Exception as e:
+            log.error(f"Error fetching events from {base_url}: {e}")
         
         log.info(f"Found {len([e for e in events if e.sport == sport])} events for {sport}")
     
