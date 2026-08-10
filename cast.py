@@ -48,7 +48,10 @@ HEADERS = {
 
 
 def fix_event(s: str) -> str:
-    return " vs ".join(s.split("@"))
+    # Handle "Team1 @ Team2" format
+    if " @" in s:
+        return s.replace(" @ ", " vs ")
+    return s
 
 
 def clean_channel_name(name: str) -> str:
@@ -82,15 +85,21 @@ def clean_channel_name(name: str) -> str:
     return name
 
 
-async def fetch_with_cloudscraper(url: str, max_retries: int = 3) -> str | None:
-    """Fetch URL using cloudscraper to bypass Cloudflare protection."""
-    scraper = cloudscraper.create_scraper(
+def get_cloudscraper():
+    """Get a cloudscraper instance."""
+    return cloudscraper.create_scraper(
         browser={
             'browser': 'chrome',
             'platform': 'windows',
             'mobile': False
-        }
+        },
+        delay=1
     )
+
+
+async def fetch_with_cloudscraper(url: str, max_retries: int = 3) -> str | None:
+    """Fetch URL using cloudscraper to bypass Cloudflare protection."""
+    scraper = get_cloudscraper()
     
     for attempt in range(max_retries):
         try:
@@ -115,28 +124,30 @@ async def fetch_with_cloudscraper(url: str, max_retries: int = 3) -> str | None:
     return None
 
 
-async def fetch_with_retry(url: str, url_num: int, max_retries: int = 3) -> any:
-    """Fetch URL with retries and cloudscraper."""
-    for attempt in range(max_retries):
-        try:
-            # First try with cloudscraper
-            html_content = await fetch_with_cloudscraper(url, 1)
-            if html_content:
-                # Create a mock response object
-                class MockResponse:
-                    def __init__(self, content):
-                        self.content = content
-                        self.text = content
-                        self.url = url
-                        self.status_code = 200
-                
-                return MockResponse(html_content)
+async def fetch_json_with_cloudscraper(url: str, params: dict = None, headers: dict = None) -> dict | None:
+    """Fetch JSON using cloudscraper."""
+    scraper = get_cloudscraper()
+    
+    try:
+        req_headers = HEADERS.copy()
+        if headers:
+            req_headers.update(headers)
             
-        except Exception as e:
-            log.warning(f"Attempt {attempt + 1} failed for {url}: {e}")
-            if attempt < max_retries - 1:
-                await asyncio.sleep(2 ** attempt)
-            continue
+        response = scraper.get(
+            url,
+            headers=req_headers,
+            params=params,
+            timeout=30
+        )
+        
+        if response.status_code == 200:
+            return response.json()
+        else:
+            log.warning(f"JSON request to {url} returned status {response.status_code}")
+            
+    except Exception as e:
+        log.warning(f"JSON request to {url} failed: {e}")
+        
     return None
 
 
@@ -146,9 +157,12 @@ async def process_event(
     sport: str,
 ) -> str | None:
 
-    # Fetch the event page with cloudscraper
+    log.info(f"URL {url_num}) Processing: {url}")
+    
+    # Fetch the event page
     html_content = await fetch_with_cloudscraper(url)
     if not html_content:
+        log.warning(f"URL {url_num}) Failed to fetch event page")
         return
 
     soup = HTMLParser(html_content)
@@ -158,6 +172,11 @@ async def process_event(
     if not iframe:
         # Try alternative selectors
         iframe = soup.css_first('iframe[src*="stream"]')
+        if not iframe:
+            # Try to find the iframe in the player div
+            player_div = soup.css_first('.player-header')
+            if player_div:
+                iframe = player_div.css_first('iframe')
     
     if not iframe:
         log.warning(f"URL {url_num}) No iframe element found.")
@@ -171,66 +190,87 @@ async def process_event(
         log.warning(f"URL {url_num}) No iframe source found.")
         return
 
-    # Fetch iframe content with cloudscraper
+    log.info(f"URL {url_num}) Found iframe: {iframe_src}")
+
+    # Fetch iframe content
     iframe_html = await fetch_with_cloudscraper(iframe_src)
     if not iframe_html:
+        log.warning(f"URL {url_num}) Failed to fetch iframe content")
         return
 
-    # Look for Clappr source pattern
-    pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
-    match = pattern.search(iframe_html)
+    # Look for Clappr source pattern - try different patterns
+    patterns = [
+        r'var\s+\w*=\[([^"]*)\];',
+        r'id\s*:\s*([0-9]+)',
+        r'ts\s*:\s*([0-9]+)',
+        r'pt\s*:\s*([0-9]+)',
+    ]
     
-    if not match:
-        log.warning(f"URL {url_num}) No Clappr source found.")
+    # Try to extract id, ts, pt from the iframe
+    ev_id = None
+    ev_ts = None
+    ev_pt = None
+    
+    # Look for the array pattern first
+    array_pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
+    array_match = array_pattern.search(iframe_html)
+    
+    if array_match:
+        try:
+            values = ast.literal_eval(array_match[1])
+            if len(values) >= 3:
+                ev_id, ev_ts, ev_pt = values[:3]
+                log.info(f"URL {url_num}) Found Clappr data: id={ev_id}, ts={ev_ts}, pt={ev_pt}")
+        except (ValueError, SyntaxError) as e:
+            log.warning(f"URL {url_num}) Failed to parse array: {e}")
+    
+    # If not found, try individual pattern matching
+    if not all([ev_id, ev_ts, ev_pt]):
+        # Look for id, ts, pt in the iframe content
+        id_match = re.search(r'id\s*:\s*([0-9]+)', iframe_html)
+        ts_match = re.search(r'ts\s*:\s*([0-9]+)', iframe_html)
+        pt_match = re.search(r'pt\s*:\s*([0-9]+)', iframe_html)
+        
+        if id_match and ts_match and pt_match:
+            ev_id = int(id_match.group(1))
+            ev_ts = int(ts_match.group(1))
+            ev_pt = int(pt_match.group(1))
+            log.info(f"URL {url_num}) Found individual values: id={ev_id}, ts={ev_ts}, pt={ev_pt}")
+    
+    if not all([ev_id, ev_ts, ev_pt]):
+        log.warning(f"URL {url_num}) Could not extract event id, ts, pt")
         return
 
-    try:
-        ev_id, ev_ts, ev_pt = ast.literal_eval(match[1])
-    except (ValueError, SyntaxError) as e:
-        log.warning(f"URL {url_num}) Failed to parse event info: {e}")
-        return
+    params = {
+        "id": ev_id,
+        "ts": ev_ts,
+        "pt": ev_pt
+    }
 
-    params: dict[str, int | str] = dict(zip(["id", "ts", "pt"], [ev_id, ev_ts, ev_pt]))
-
-    # Make API request with cloudscraper
+    # Make API request
     api_url = urljoin(BASE_URLS[sport]["base"], BASE_URLS[sport]["api"])
+    log.info(f"URL {url_num}) Calling API: {api_url} with params {params}")
     
-    scraper = cloudscraper.create_scraper(
-        browser={
-            'browser': 'chrome',
-            'platform': 'windows',
-            'mobile': False
-        }
+    api_data = await fetch_json_with_cloudscraper(
+        api_url,
+        params=params,
+        headers={"Referer": iframe_src}
     )
     
-    try:
-        response = scraper.get(
-            api_url,
-            headers={"Referer": iframe_src, "User-Agent": HEADERS["User-Agent"]},
-            params=params,
-            timeout=30
-        )
-        
-        if response.status_code != 200:
-            log.warning(f"URL {url_num}) API request failed with status {response.status_code}")
-            return
-            
-        data = response.json()
-        
-    except Exception as e:
-        log.warning(f"URL {url_num}) API request failed: {e}")
+    if not api_data:
+        log.warning(f"URL {url_num}) API request failed")
         return
 
-    if data.get("error"):
-        log.warning(f"URL {url_num}) API error: {data.get('error')}")
+    if api_data.get("error"):
+        log.warning(f"URL {url_num}) API error: {api_data.get('error')}")
         return
 
-    m3u8 = data.get("url")
+    m3u8 = api_data.get("url")
     if not m3u8:
-        log.warning(f"URL {url_num}) No M3U8 found.")
+        log.warning(f"URL {url_num}) No M3U8 found in response: {api_data}")
         return
 
-    log.info(f"URL {url_num}) Captured M3U8")
+    log.info(f"URL {url_num}) Captured M3U8: {m3u8[:100]}...")
     return m3u8
 
 
@@ -241,7 +281,7 @@ async def get_events() -> list[Event]:
         base_url = config["base"]
         log.info(f"Fetching events from {base_url}")
         
-        # Fetch the main page with cloudscraper
+        # Fetch the main page
         html_content = await fetch_with_cloudscraper(base_url)
         if not html_content:
             log.error(f"Failed to fetch {base_url}")
@@ -249,11 +289,14 @@ async def get_events() -> list[Event]:
         
         soup = HTMLParser(html_content)
         
-        # Look for game rows
-        # The HTML uses class "singele_match_date" for game rows
+        # Look for game rows - they're in table rows with class "singele_match_date"
         rows = soup.css("tr.singele_match_date")
         
         for row in rows:
+            # Skip header rows
+            if row.css_first(".mdatetitle"):
+                continue
+                
             # Look for the team vs link
             vs_node = row.css_first("td.teamvs a")
             if not vs_node:
@@ -261,12 +304,6 @@ async def get_events() -> list[Event]:
             
             # Get the event name
             event_name = vs_node.text(strip=True)
-            
-            # Remove date if present
-            date_nodes = vs_node.css("span.mtdate")
-            for date_node in date_nodes:
-                date = date_node.text(strip=True)
-                event_name = event_name.replace(date, "").strip()
             
             # Get the href
             href = vs_node.attributes.get("href")
@@ -277,8 +314,24 @@ async def get_events() -> list[Event]:
             if href.startswith("/"):
                 href = urljoin(base_url, href)
             
+            # Check if there's an HD button (indicates a stream is available)
+            hd_button = row.css_first("td.hdplay_button a")
+            if not hd_button:
+                # If no HD button, this event might not have a stream
+                # But we'll still process it
+                pass
+            
             # Clean up the event name
+            # Remove date span if present
+            date_nodes = vs_node.css("span.mtdate")
+            for date_node in date_nodes:
+                date = date_node.text(strip=True)
+                event_name = event_name.replace(date, "").strip()
+            
+            # Fix the event name (Team1 @ Team2 -> Team1 vs Team2)
             event_name = fix_event(event_name)
+            
+            log.info(f"Found event: {event_name} - {href}")
             
             events.append(
                 Event(
@@ -288,7 +341,7 @@ async def get_events() -> list[Event]:
                 )
             )
         
-        log.info(f"Found {len(rows)} events for {sport}")
+        log.info(f"Found {len([e for e in events if e.sport == sport])} events for {sport}")
     
     return events
 
@@ -303,7 +356,10 @@ def write_outputs():
     tivi_lines = ["#EXTM3U"]
     channel_counter = 1
     
-    for key, data in urls.items():
+    # Sort URLs by key for consistent ordering
+    sorted_urls = sorted(urls.items())
+    
+    for key, data in sorted_urls:
         if not data.get("source"):
             continue
         
