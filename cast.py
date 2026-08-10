@@ -30,6 +30,21 @@ BASE_URLS = {
     "NFL": {"base": "https://nflwebcast.com", "api": "live/check_stream.php"},
 }
 
+# Headers to avoid 403 errors
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Cache-Control": "max-age=0",
+}
+
 
 def fix_event(s: str) -> str:
     return " vs ".join(s.split("@"))
@@ -66,117 +81,164 @@ def clean_channel_name(name: str) -> str:
     return name
 
 
+async def fetch_with_retry(url: str, url_num: int, max_retries: int = 3) -> any:
+    """Fetch URL with retries and proper headers."""
+    for attempt in range(max_retries):
+        try:
+            # Use network.request with custom headers
+            result = await network.request(
+                url,
+                url_num,
+                headers=HEADERS,
+                log=log,
+            )
+            if result:
+                return result
+        except Exception as e:
+            log.warning(f"Attempt {attempt + 1} failed for {url}: {e}")
+            if attempt < max_retries - 1:
+                await asyncio.sleep(2 ** attempt)  # Exponential backoff
+            continue
+    return None
+
+
 async def process_event(
     url: str,
     url_num: int,
     sport: str,
 ) -> str | None:
 
-    if not (event_data := await network.request(url, url_num, log=log)):
+    # Fetch the event page
+    event_data = await fetch_with_retry(url, url_num)
+    if not event_data:
         return
 
     soup = HTMLParser(event_data.content)
 
-    if not (iframe := soup.css_first('iframe[name="srcFrame"]')):
+    # Look for iframe with name="srcFrame"
+    iframe = soup.css_first('iframe[name="srcFrame"]')
+    if not iframe:
+        # Try alternative selectors
+        iframe = soup.css_first('iframe[src*="stream"]')
+    
+    if not iframe:
         log.warning(f"URL {url_num}) No iframe element found.")
         return
 
-    if not (iframe_src := iframe.attributes.get("src")):
+    iframe_src = iframe.attributes.get("src")
+    if not iframe_src or iframe_src.lower() == "about:blank":
+        iframe_src = iframe.attributes.get("data-litespeed-src")
+    
+    if not iframe_src:
         log.warning(f"URL {url_num}) No iframe source found.")
         return
 
-    elif iframe_src.lower() == "about:blank":
-        iframe_src = iframe.attributes.get("data-litespeed-src")
-
-    if not (
-        iframe_src_data := await network.request(
-            iframe_src,
-            url_num,
-            headers={"Referer": url},
-            log=log,
-        )
-    ):
+    # Fetch iframe content
+    iframe_data = await fetch_with_retry(iframe_src, url_num)
+    if not iframe_data:
         return
 
+    # Look for Clappr source pattern
     pattern = re.compile(r'var\s+\w*=\[([^"]*)\];', re.I)
-
-    if not (match := pattern.search(iframe_src_data.text)):
+    match = pattern.search(iframe_data.text)
+    
+    if not match:
         log.warning(f"URL {url_num}) No Clappr source found.")
         return
 
     try:
         ev_id, ev_ts, ev_pt = ast.literal_eval(match[1])
-    except ValueError:
-        log.warning(f"URL {url_num}) Failed to parse event info.")
+    except (ValueError, SyntaxError) as e:
+        log.warning(f"URL {url_num}) Failed to parse event info: {e}")
         return
 
     params: dict[str, int | str] = dict(zip(["id", "ts", "pt"], [ev_id, ev_ts, ev_pt]))
 
-    if not (
-        api_data := await network.request(
-            urljoin(BASE_URLS[sport]["base"], BASE_URLS[sport]["api"]),
-            url_num,
-            headers={"Referer": iframe_src},
-            params=params,
-            log=log,
-        )
-    ):
+    # Make API request
+    api_url = urljoin(BASE_URLS[sport]["base"], BASE_URLS[sport]["api"])
+    api_data = await network.request(
+        api_url,
+        url_num,
+        headers={"Referer": iframe_src, "User-Agent": HEADERS["User-Agent"]},
+        params=params,
+        log=log,
+    )
+    
+    if not api_data:
         return
 
-    elif (data := api_data.json()).get("error"):
-        log.warning(f"URL {url_num}) Failed to make php request.")
+    data = api_data.json()
+    if data.get("error"):
+        log.warning(f"URL {url_num}) API error: {data.get('error')}")
         return
 
-    elif not (m3u8 := data.get("url")):
+    m3u8 = data.get("url")
+    if not m3u8:
         log.warning(f"URL {url_num}) No M3U8 found.")
+        return
 
     log.info(f"URL {url_num}) Captured M3U8")
-
     return m3u8
 
 
 async def get_events() -> list[Event]:
-    tasks = [
-        network.request(url, log=log) for url in (i["base"] for i in BASE_URLS.values())
-    ]
-
-    results = await asyncio.gather(*tasks)
-
     events: list[Event] = []
-
-    if not (
-        soups := [(HTMLParser(html.content), html.url) for html in results if html]
-    ):
-        return events
-
-    for soup, url in soups:
-        sport = next(
-            (k for k, v in BASE_URLS.items() if v["base"] == url),
-            "Live Event",
-        )
-
-        for row in soup.css("tr.singele_match_date"):
-            if not (vs_node := row.css_first("td.teamvs a")):
+    
+    for sport, config in BASE_URLS.items():
+        base_url = config["base"]
+        log.info(f"Fetching events from {base_url}")
+        
+        # Fetch the main page
+        response = await fetch_with_retry(base_url, 0)
+        if not response:
+            log.error(f"Failed to fetch {base_url}")
+            continue
+        
+        soup = HTMLParser(response.content)
+        
+        # Look for game rows
+        # The HTML uses class "singele_match_date" for game rows
+        rows = soup.css("tr.singele_match_date")
+        
+        for row in rows:
+            # Look for the team vs link
+            vs_node = row.css_first("td.teamvs a")
+            if not vs_node:
                 continue
-
+            
+            # Get the event name
             event_name = vs_node.text(strip=True)
-
-            for span in vs_node.css("span.mtdate"):
-                date = span.text(strip=True)
-
+            
+            # Remove date if present
+            date_nodes = vs_node.css("span.mtdate")
+            for date_node in date_nodes:
+                date = date_node.text(strip=True)
                 event_name = event_name.replace(date, "").strip()
-
-            if not (href := vs_node.attributes.get("href")):
+            
+            # Get the href
+            href = vs_node.attributes.get("href")
+            if not href:
                 continue
-
+            
+            # Fix the URL if it's relative
+            if href.startswith("/"):
+                href = urljoin(base_url, href)
+            
+            # Clean up the event name
+            # Remove the team names if they're in the event name
+            # The format is usually "Team1 @ Team2"
+            event_name = fix_event(event_name)
+            
             events.append(
                 Event(
                     sport=sport,
-                    name=fix_event(event_name),
+                    name=event_name,
                     link=href,
                 )
             )
-
+        
+        log.info(f"Found {len(rows)} events for {sport}")
+    
     return events
 
 
@@ -246,12 +308,9 @@ def write_outputs():
 async def scrape() -> None:
     if cached_urls := CACHE_FILE.load():
         urls.update({k: v for k, v in cached_urls.items() if v["source"]})
-
         log.info(f"Loaded {len(urls)} event(s) from cache")
-
         return
 
-    # Fixed f-string syntax error
     base_urls_str = " & ".join(i["base"] for i in BASE_URLS.values())
     log.info(f'Scraping from "{base_urls_str}"')
 
@@ -259,6 +318,7 @@ async def scrape() -> None:
         log.info(f"Processing {len(events)} URL(s)")
 
         now = Time.clean(Time.now())
+        cached_urls = {}
 
         for i, ev in enumerate(events, start=1):
             handler = partial(
@@ -294,16 +354,14 @@ async def scrape() -> None:
                 urls[key] = entry
 
         log.info(f"Collected and cached {len(urls)} event(s)")
-
+        CACHE_FILE.write(cached_urls)
     else:
         log.info("No events found")
 
-    CACHE_FILE.write(cached_urls)
-
 
 async def main():
-    """Run the updater and generate outputs."""
-    log.info("Starting CAST updaterr...")
+    """Main function to run the scraper and generate outputs."""
+    log.info("Starting CAST scraper...")
     
     # Scrape or load from cache
     await scrape()
@@ -311,7 +369,7 @@ async def main():
     # Generate output files
     write_outputs()
     
-    log.info("CAST updater completed successfully")
+    log.info("CAST scraper completed successfully")
 
 
 if __name__ == "__main__":
