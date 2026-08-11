@@ -1,0 +1,62 @@
+name: WEBCAST Updater
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright selectolax httpx[http2] pytz tzdata
+
+      - name: Install Playwright
+        run: |
+          playwright install --with-deps
+          playwright install firefox
+
+      - name: Run WEBTV MLB updater
+        env:
+          WEBTV_MLB_BASE_URL: ${{ secrets.WEBTV_MLB_BASE_URL }}
+        run: |
+          python webtvmlb.py
+
+      - name: Commit & push
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
+          git add webcast_vlc.m3u8 webcast_tivimate.m3u8
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update WEBTV MLB Playlist"
+
+          if ! git push origin main; then
+            git stash
+            git pull --rebase origin main
+            git stash pop
+            git add webcast_vlc.m3u8 webcast_tivimate.m3u8
+            git commit -m "Update WEBCAST Playlist (rebased)" || true
+            git push origin main
+          fi
