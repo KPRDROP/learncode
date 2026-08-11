@@ -3,14 +3,24 @@
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinsports-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinsports-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/f30eaa2b8444a06ef847d94083b99ae67c85cbe4904cfd4e7ba082c7142ff1c6/1786496451/beinsports-usa.m3u8
+https://hiveatick.casadenoval.uk/main/secure/e69df7cdc2fa6752cd2e6a542f9075fa8edb2a2afe72640e603de0f0da5737ee/1786499939/beinsports-usa.m3u8
 #EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[South America - Copa] Fluminense vs ndependiente Rivadavia (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="South America - Copa",[South America - Copa] Fluminense vs ndependiente Rivadavia
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv1-pt
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv1-pt
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/37b84a36f8a919584457f731e420df12994d608ca4cf1200bd244d62ec28e8d3/1786496452/sporttv1-pt.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Olympique Lyonnais vs Sparta Praha (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Olympique Lyonnais vs Sparta Praha
-#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv1-pt
-#EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv1-pt
+https://hiveatick.casadenoval.uk/main/secure/110dba037fbb02661d1231dc2f40cfd8afd6481901e7c35bcd3be25cce6e3fd9/1786499940/sporttv1-pt.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs Cleveland Guardians (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Detroit Tigers vs Cleveland Guardians
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-tigers
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-tigers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/875c97db5a725eb3000ebea3b92d22ee462fb5581356f9fb5085f55bbd7dc67e/1786496453/sporttv1-pt.m3u8
+https://hiveatick.casadenoval.uk/main/secure/ff9c2e9d17a7ccf391117d7b3c105d6405efbe48c97c4d56aa4e80356202acb1/1786499941/mlb-tigers.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Miami Marlins vs Pittsburgh Pirates
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-marlins
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-marlins
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/88c282578d95641227d540421c374587200c21c3dd534cb6f83a02e01f04cc68/1786499941/mlb-marlins.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Washington Nationals vs Chicago Cubs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Washington Nationals vs Chicago Cubs
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-nationals
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-nationals
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/fd06d09e7e21b4c4a2f22c019b9a413fd73559ccb60057ded39c86f6ae2d65ee/1786499942/mlb-nationals.m3u8
