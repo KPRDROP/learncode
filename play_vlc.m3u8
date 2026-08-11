@@ -1,103 +1,91 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Champions League] Olympique Lyonnais vs Sparta Praha | PT (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[Europe UEFA Champions League] Olympique Lyonnais vs Sparta Praha | PT (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] New York Liberty vs Indiana Fever | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] New York Liberty vs Indiana Fever | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do21.m3u8?md5=6-re23lefEjDUM3bVt_CKw&expires=1786488884
+https://cdn3.zohanayaan.com:1686/hls/do3.m3u8?md5=mSKDDBoY0L9YHaIUKN9GUQ&expires=1786491735
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Europe UEFA Champions League] Olympique Lyonnais vs Sparta Praha | FR (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="Live Events",[Europe UEFA Champions League] Olympique Lyonnais vs Sparta Praha | FR (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[South America Copa Sudamericana] Boca Juniors vs Deportivo Recoleta | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1208.png" group-title="Live Events",[South America Copa Sudamericana] Boca Juniors vs Deportivo Recoleta | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do50.m3u8?md5=a0sQ-AKE2Hro4NOAdrgTZw&expires=1786488886
+https://cdn5.zohanayaan.com:1686/hls/do19.m3u8?md5=nuOvGW_7BU2dffldJ4WZtQ&expires=1786491738
 
-#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] New York Liberty vs Indiana Fever | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] New York Liberty vs Indiana Fever | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[South America Copa Sudamericana] Bolívar vs São Paulo | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1208.png" group-title="Live Events",[South America Copa Sudamericana] Bolívar vs São Paulo | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do3.m3u8?md5=FMU_QEE2m_QisPHleQ3-Jg&expires=1786488888
+https://cdn5.zohanayaan.com:1686/hls/do19.m3u8?md5=nuOvGW_7BU2dffldJ4WZtQ&expires=1786491738
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[South America Copa Sudamericana] Boca Juniors vs Deportivo Recoleta | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1208.png" group-title="Live Events",[South America Copa Sudamericana] Boca Juniors vs Deportivo Recoleta | DE (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[South America Copa Libertadores] Fluminense vs Independiente Rivadavia | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[South America Copa Libertadores] Fluminense vs Independiente Rivadavia | PT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do19.m3u8?md5=RYe_iv3WpvAM5Jrs30lkRQ&expires=1786488889
+https://cdn2.zohanayaan.com:1686/hls/do21.m3u8?md5=3rPjKk44LxF2-pC2GRMt8Q&expires=1786491720
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[South America Copa Sudamericana] Bolívar vs São Paulo | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1208.png" group-title="Live Events",[South America Copa Sudamericana] Bolívar vs São Paulo | DE (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[South America Copa Libertadores] Estudiantes vs Universidad Católica | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[South America Copa Libertadores] Estudiantes vs Universidad Católica | PT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do19.m3u8?md5=RYe_iv3WpvAM5Jrs30lkRQ&expires=1786488889
+https://cdn2.zohanayaan.com:1686/hls/do21.m3u8?md5=3rPjKk44LxF2-pC2GRMt8Q&expires=1786491720
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[South America Copa Libertadores] Fluminense vs Independiente Rivadavia | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[South America Copa Libertadores] Fluminense vs Independiente Rivadavia | PT (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Cincinnati vs Atlas | ES (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Cincinnati vs Atlas | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do21.m3u8?md5=6-re23lefEjDUM3bVt_CKw&expires=1786488884
+https://cdn5.zohanayaan.com:1686/hls/do30.m3u8?md5=Z1S9kmPmlgIXRYHkfa5XGg&expires=1786491743
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[South America Copa Libertadores] Estudiantes vs Universidad Católica | PT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[South America Copa Libertadores] Estudiantes vs Universidad Católica | PT (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Cincinnati vs Atlas | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Cincinnati vs Atlas | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do21.m3u8?md5=6-re23lefEjDUM3bVt_CKw&expires=1786488884
+https://cdn4.zohanayaan.com:1686/hls/do81.m3u8?md5=wui1m5QtEuoKOABACR30-g&expires=1786491744
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Cincinnati vs Atlas | ES (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Cincinnati vs Atlas | ES (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Columbus Crew vs Pumas UNAM | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Columbus Crew vs Pumas UNAM | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do30.m3u8?md5=DW5GmSPRQ8Fp2EODceQpjg&expires=1786488894
+https://cdn2.zohanayaan.com:1686/hls/do31.m3u8?md5=rTFa9JYsJKR-tKPUJxbi0g&expires=1786491745
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Cincinnati vs Atlas | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Cincinnati vs Atlas | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Charlotte vs Pachuca | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Charlotte vs Pachuca | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do81.m3u8?md5=ktRKK7U3ggJ1cmNmCEilZw&expires=1786488895
+https://cdn6.zohanayaan.com:1686/hls/do32.m3u8?md5=ZYtD_tWOdp_Ba62nv6Ak2Q&expires=1786491746
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Columbus Crew vs Pumas UNAM | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Columbus Crew vs Pumas UNAM | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Minnesota United vs Atlante | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Minnesota United vs Atlante | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do31.m3u8?md5=sM7scky_L-pYvzQR-rj77A&expires=1786488896
+https://cdn8.zohanayaan.com:1686/hls/do33.m3u8?md5=dlEObEEACQdx0gonag-m6w&expires=1786491748
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Charlotte vs Pachuca | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Charlotte vs Pachuca | EN (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Real Salt Lake vs Juárez | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Real Salt Lake vs Juárez | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do32.m3u8?md5=gmBzg5TkZN5R8YkjM1vHSA&expires=1786488897
+https://cdn9.zohanayaan.com:1686/hls/do34.m3u8?md5=D9RU5xeRvqiJyPK4oGr6LQ&expires=1786491749
 
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Minnesota United vs Atlante | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Minnesota United vs Atlante | EN (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Tigres UANL vs Vancouver Whitecaps | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Tigres UANL vs Vancouver Whitecaps | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do33.m3u8?md5=l80rJomBBCg0ww2xCQu0KA&expires=1786488898
+https://cdn6.zohanayaan.com:1686/hls/do35.m3u8?md5=ldnJZOMLNbxNYVNYfCJjCQ&expires=1786491751
 
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Real Salt Lake vs Juárez | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Real Salt Lake vs Juárez | EN (PLAY)
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[South America Copa Libertadores] Deportes Tolima vs Independiente del Valle | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[South America Copa Libertadores] Deportes Tolima vs Independiente del Valle | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do34.m3u8?md5=3mR2MHcCIafrJisRCIG0og&expires=1786488899
+https://cdn8.zohanayaan.com:1686/hls/do39.m3u8?md5=ZS_c5Bs3lF1poWBdAcKnvA&expires=1786491752
 
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Tigres UANL vs Vancouver Whitecaps | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Tigres UANL vs Vancouver Whitecaps | EN (PLAY)
+#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Championship] Atl. Ottawa vs Supra du Quebec | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Championship] Atl. Ottawa vs Supra du Quebec | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do35.m3u8?md5=6e1DSUEQXuOvg3l6TCK_Ew&expires=1786488900
+https://cdn3.zohanayaan.com:1686/hls/do82.m3u8?md5=2ebBSAl8KdoO6SidPqwz8w&expires=1786491753
 
-#EXTINF:-1 tvg-chno="15" tvg-id="Live.Event.us" tvg-name="[South America Copa Libertadores] Deportes Tolima vs Independiente del Valle | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[South America Copa Libertadores] Deportes Tolima vs Independiente del Valle | EN (PLAY)
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Talleres Córdoba vs Lanús | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Talleres Córdoba vs Lanús | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do39.m3u8?md5=v_igyc-ScXc0Q3t0dW2JDg&expires=1786488901
-
-#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Championship] Atl. Ottawa vs Supra du Quebec | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Championship] Atl. Ottawa vs Supra du Quebec | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do82.m3u8?md5=P5fOPNw2RSQxFnzS9jwR8g&expires=1786488902
-
-#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Talleres Córdoba vs Lanús | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Talleres Córdoba vs Lanús | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do85.m3u8?md5=ClsA5gDnsZ3mZC5mnjh4aA&expires=1786488904
+https://cdn5.zohanayaan.com:1686/hls/do85.m3u8?md5=qxvbOB8AIE8TOnumgyOMRw&expires=1786491754
 
