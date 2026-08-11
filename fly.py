@@ -180,15 +180,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         sport, away, home, date, time, link = values
 
-        event_dt = Time.from_str(
-            re.sub(
-                r"\s?(A\.?M\.?|P\.?M\.?)",
-                "",
-                f"{date} {time}",
-                flags=re.I,
-            ),
-            timezone="UTC",
-        )
+        event_dt = Time.from_str(f"{date} {time}", tz_name="UTC")
 
         if not start_dt <= event_dt <= end_dt:
             continue
