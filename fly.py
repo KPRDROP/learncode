@@ -187,7 +187,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
                 f"{date} {time}",
                 flags=re.I,
             ),
-            tz_name="UTC",
+            timezone="UTC",
         )
 
         if not start_dt <= event_dt <= end_dt:
