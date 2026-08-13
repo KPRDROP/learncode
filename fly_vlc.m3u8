@@ -1,1 +1,26 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Europa League] Pafos  vs Salzburg (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2310.png" group-title="UEFA Europa League",[UEFA Europa League] Pafos vs Salzburg
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv4-pt
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv4-pt
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/cd962d14fab15a2c5bb7c4343b04c3a21e47c437e733815d483ca9368af6d7cb/1786652340/sporttv4-pt.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Europa League] Górnik Zabrze vs Ferencváros (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2310.png" group-title="UEFA Europa League",[UEFA Europa League] Górnik Zabrze vs Ferencváros
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/polsatsport1-pl
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/polsatsport1-pl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/de1d05a0dbfe7e86fb5470c2efb4c6f22e70293e8465d104636eb6f3d4dc5e33/1786652341/polsatsport1-pl.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Europa League] Dinamo Minsk vs Sporting Braga (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2310.png" group-title="UEFA Europa League",[UEFA Europa League] Dinamo Minsk vs Sporting Braga
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv1-pt
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv1-pt
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/fb4bde5877a4965e82557a9fb076bd8436fbb2503664fe157692231577cf67e8/1786652341/sporttv1-pt.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs Cleveland Guardians (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Detroit Tigers vs Cleveland Guardians
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-tigers
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-tigers
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/856db24725affee3a4cf77ff6538abc574fa3d74633037c871f38a2955d4955e/1786652342/mlb-tigers.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Miami Marlins vs Pittsburgh Pirates
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-marlins
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-marlins
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/38d4fd0f5ce784e2d0dc7a840943f2ab297600747cc37fb78ca17be4b958b557/1786652342/mlb-marlins.m3u8
