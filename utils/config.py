@@ -4,7 +4,6 @@ import time as emit
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
-import pytz
 from zoneinfo import ZoneInfo
 
 
@@ -77,6 +76,8 @@ class Time(datetime):
                 "%B %d, %Y %H:%M",
                 "%d %B,%Y %I:%M %p",
                 "%d %B,%Y %H:%M %p",
+                "%d %B ,%Y %I:%M %p",
+                "%d %B ,%Y %H:%M %p",
                 "%B %d, %Y %I:%M %p",
                 "%B %d, %Y %I:%M:%S %p",
                 "%B %d, %Y %H:%M:%S",
@@ -117,8 +118,8 @@ class Leagues:
 
     def __init__(self) -> None:
         self.data = json.loads(
-            (Path(__file__).parent / "leagues.json").read_text(encoding="utf-8")
-       )
+            (Path(__file__).parent / "sports.json").read_text(encoding="utf-8")
+        )
 
     def teams(self, league: str) -> list[str]:
         return self.data["teams"].get(league, [])
