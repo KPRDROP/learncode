@@ -118,7 +118,7 @@ class Leagues:
 
     def __init__(self) -> None:
         self.data = json.loads(
-            (Path(__file__).parent / "sports.json").read_text(encoding="utf-8")
+            (Path(__file__).parent / "leagues.json").read_text(encoding="utf-8")
         )
 
     def teams(self, league: str) -> list[str]:
