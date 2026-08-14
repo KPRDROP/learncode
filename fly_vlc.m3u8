@@ -1,41 +1,36 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Saudi Arabia - Pro League] Al Hilal vs Al Faisaly (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Saudi Arabia - Pro League",[Saudi Arabia - Pro League] Al Hilal vs Al Faisaly
-#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/foxsoccerplus-usa
-#EXTVLCOPT:http-origin=https://epiembeds.online/embed/foxsoccerplus-usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/546aaf7c95d4c62dfb6c9a0a85565e9904f973254f527846411491567c1638aa/1786751105/foxsoccerplus-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Turkey - Super Lig] Galatasaray vs Çorum Belediyespor (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Turkey - Super Lig",[Turkey - Super Lig] Galatasaray vs Çorum Belediyespor
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Turkey - Super Lig] Galatasaray vs Çorum Belediyespor (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Turkey - Super Lig",[Turkey - Super Lig] Galatasaray vs Çorum Belediyespor
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinconnect5-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinconnect5-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/8fc389ff44f1c27bbd2a7fec7005bee3c5c7d80583aad20e581f0e28e2889142/1786751106/beinconnect5-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[England - Championship] Wolverhampton Wanderers  vs Blackburn Rovers (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="England - Championship",[England - Championship] Wolverhampton Wanderers vs Blackburn Rovers
+https://hiveatick.casadenoval.uk/main/secure/5b4c013c14bd775648266d9019b943f7d2e2c0b120294e16a3c670a0123807f3/1786754496/beinconnect5-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[England - Championship] Wolverhampton Wanderers  vs Blackburn Rovers (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="England - Championship",[England - Championship] Wolverhampton Wanderers vs Blackburn Rovers
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssn-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/f885692b328c6cbf1d0bff9ea41451ebd9ad58ce6d092182b47523d31731ff04/1786751106/cbssn-usa.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Scotland - Scottish League Cup] Kilmarnock vs Ayr United (FLY)" tvg-logo="https://www.cfclassics.co/images/cups/scotland/leaguecup/scottish-league-cup-600x400.png" group-title="Scotland - Scottish League Cup",[Scotland - Scottish League Cup] Kilmarnock vs Ayr United
+https://hiveatick.casadenoval.uk/main/secure/ae4e0eaac671b36e0fda37ca323ec29ff67f95c19b32bc336064f1e848cc4475/1786754497/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Scotland - Scottish League Cup] Kilmarnock vs Ayr United (FLY)" tvg-logo="https://www.cfclassics.co/images/cups/scotland/leaguecup/scottish-league-cup-600x400.png" group-title="Scotland - Scottish League Cup",[Scotland - Scottish League Cup] Kilmarnock vs Ayr United
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/premiersports1-ie
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/premiersports1-ie
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/1427d967952f225eae9468026ab4f9f8d7051711d8be49e03f07a4463b486bf6/1786751106/premiersports1-ie.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Portugal - Primeira Liga] Sporting CP vs Vitória Guimarães (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Portugal - Primeira Liga",[Portugal - Primeira Liga] Sporting CP vs Vitória Guimarães
+https://hiveatick.casadenoval.uk/main/secure/87bd1255b0761f6fdf1a1828f65042f2a314f1e1a5797e4223010c5df7f8ae7e/1786754498/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Portugal - Primeira Liga] Sporting CP vs Vitória Guimarães (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Portugal - Primeira Liga",[Portugal - Primeira Liga] Sporting CP vs Vitória Guimarães
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv1-pt
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv1-pt
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/8ea83c7db05b405ad2b8654c077bac8aa9dcbcd0875ce2efe45fbbc41106f24f/1786751107/sporttv1-pt.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Italy - Coppa Italia] Monza  vs Avellino (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Monza vs Avellino
+https://hiveatick.casadenoval.uk/main/secure/13b0d430d43c2c74b9b07658011f815eb8612ec08041bca20e52a5d989a5f256/1786754498/sporttv1-pt.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Italy - Coppa Italia] Monza  vs Avellino (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Monza vs Avellino
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssportsgolazo-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssportsgolazo-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/68f7b504c85e47598baa2de1d0fdad442470fa9ac1e3a34d4742d9921d6b15f5/1786751107/cbssportsgolazo-usa.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[Italy - Coppa Italia] Fiorentina vs Benevento (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Fiorentina vs Benevento
+https://hiveatick.casadenoval.uk/main/secure/b2ea0bfe724aa856f34f3010d00d3929f7a34f33cf8016892b3d5a2d5298ce55/1786754498/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Italy - Coppa Italia] Fiorentina vs Benevento (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Fiorentina vs Benevento
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv2-pt
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv2-pt
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/3093986b251ee7688726317358e0091d20981005f2eae091e2a520519942de88/1786751108/sporttv2-pt.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago Cubs vs St. Louis Cardinals
+https://hiveatick.casadenoval.uk/main/secure/91d6ba461cbabb94c8e36b6b51d090d446d5c19c69c90fad501f2db9d7418b88/1786754499/sporttv2-pt.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago Cubs vs St. Louis Cardinals
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-cubs
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-cubs
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/306132e3e17620ff3c129a0c07e9e5c41279d808f242e162edeb2d2fdc609df4/1786751108/mlb-cubs.m3u8
+https://hiveatick.casadenoval.uk/main/secure/e6a4bd005e94ab5b165d9b8003bef50a02c22ee18af99963f3b09cdb669bbe30/1786754499/mlb-cubs.m3u8
