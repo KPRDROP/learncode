@@ -1,1 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[MMA] ONE Friday vs Fights 166 (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="MMA",[MMA] ONE Friday vs Fights 166
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/01fca6dd9e4c066628b702efb09bdd9da4f3c1a88725137f16bdc7538729d3fd/1786725471/beinsports-usa.m3u8
