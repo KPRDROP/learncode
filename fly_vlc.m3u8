@@ -1,6 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Italy - Coppa Italia] Parma vs Catania (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Parma vs Catania
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Germany - Bundesliga 2] Eintracht Braunschweig vs Bochum (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Germany - Bundesliga 2",[Germany - Bundesliga 2] Eintracht Braunschweig vs Bochum
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/elevensports2-pl
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/elevensports2-pl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/3bbe99e2ad6c97babbdb72aac262cc80320c794855743f29a91dfa3dd995b879/1786738414/elevensports2-pl.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Germany - Bundesliga 2] Holstein Kiel vs St. Pauli (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Germany - Bundesliga 2",[Germany - Bundesliga 2] Holstein Kiel vs St. Pauli
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/elevensports1-pl
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/elevensports1-pl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hiveatick.casadenoval.uk/main/secure/72dc8d5e0ea3bfe72e2a869c82397f55592571f2e6ca42dd2a0b140fae82cf12/1786738415/elevensports1-pl.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Italy - Coppa Italia] Parma vs Catania (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Parma vs Catania
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/cbssportsgolazo-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/cbssportsgolazo-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hiveatick.casadenoval.uk/main/secure/54932b44b7a843b6c0724d2561e4f0e8622be938c282eb5cc8f2d804381ed22f/1786734572/cbssportsgolazo-usa.m3u8
+https://hiveatick.casadenoval.uk/main/secure/83313243b865d941f5fd3e18af2a63303a203899fdd3970a70083d8d7e2589ad/1786738415/cbssportsgolazo-usa.m3u8
