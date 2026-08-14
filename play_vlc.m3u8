@@ -1,19 +1,25 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Adelaide Crows vs Fremantle Dockers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Adelaide Crows vs Fremantle Dockers | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[One] One Friday Fights | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[One] One Friday Fights | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do82.m3u8?md5=OaTZyQldC8ETomjbKoKm0Q&expires=1786699079
+https://cdn4.zohanayaan.com:1686/hls/do39.m3u8?md5=qYN5uzObdUucwJYilVn2Kw&expires=1786704211
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[NRL] Dolphins vs Manly Sea Eagles | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Dolphins vs Manly Sea Eagles | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Adelaide Crows vs Fremantle Dockers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Adelaide Crows vs Fremantle Dockers | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=J43wK71XI5fEDsAJBPO7Zw&expires=1786699081
+https://cdn3.zohanayaan.com:1686/hls/do82.m3u8?md5=elcMIZbLs74trCWg-yZwyQ&expires=1786704213
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[NRL] South Sydney Rabbitohs vs Canterbury Bulldogs | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] South Sydney Rabbitohs vs Canterbury Bulldogs | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[NRL] Dolphins vs Manly Sea Eagles | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Dolphins vs Manly Sea Eagles | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=J43wK71XI5fEDsAJBPO7Zw&expires=1786699081
+https://cdn6.zohanayaan.com:1686/hls/do83.m3u8?md5=xjEGJhlsvTr8ftC412czSA&expires=1786704214
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[NRL] South Sydney Rabbitohs vs Canterbury Bulldogs | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] South Sydney Rabbitohs vs Canterbury Bulldogs | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do83.m3u8?md5=xjEGJhlsvTr8ftC412czSA&expires=1786704214
 
