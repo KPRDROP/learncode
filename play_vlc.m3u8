@@ -1,67 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[England Championship] Wolverhampton Wanderers vs Blackburn Rovers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="Live Events",[England Championship] Wolverhampton Wanderers vs Blackburn Rovers | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Denver Broncos vs Atlanta Falcons Atlanta Falcons | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Denver Broncos vs Atlanta Falcons Atlanta Falcons | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do8.m3u8?md5=_vHr4Cbs75eCYvzAi25v7w&expires=1786747672
+https://cdn5.zohanayaan.com:1686/hls/do1.m3u8?md5=BmWQWoe-jWtk8o5Bxes1fw&expires=1786751350
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Portugal Primeira Liga] Sporting CP vs Vitória Guimarães | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Live Events",[Portugal Primeira Liga] Sporting CP vs Vitória Guimarães | DE (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Tampa Bay Buccaneers vs New York Jets New York Jets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Tampa Bay Buccaneers vs New York Jets New York Jets | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do19.m3u8?md5=BaRf_zrlQOHscS1TBaG99Q&expires=1786747672
+https://cdn6.zohanayaan.com:1686/hls/do2.m3u8?md5=79gxak2cDTDky2FBwx1_6g&expires=1786751352
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Portugal Primeira Liga] Sporting CP vs Vitória Guimarães | PT (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Live Events",[Portugal Primeira Liga] Sporting CP vs Vitória Guimarães | PT (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Football.Dummy.us" tvg-name="[CFL] Ottawa RedBlacks vs Winnipeg Blue Bombers Winnipeg Blue Bombers | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Ottawa RedBlacks vs Winnipeg Blue Bombers Winnipeg Blue Bombers | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do21.m3u8?md5=ZoBSVjBSubvXSc3tr-wxEQ&expires=1786747672
+https://cdn1.zohanayaan.com:1686/hls/do31.m3u8?md5=XLGzQK6baOgJqwtgBBYscg&expires=1786751353
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Italy Coppa Italia] Fiorentina vs Benevento | IT (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Italy Coppa Italia] Fiorentina vs Benevento | IT (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[NASCAR Craftsman Truck Series] NCTS Race at Richmond | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NASCAR Craftsman Truck Series] NCTS Race at Richmond | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do47.m3u8?md5=AIxrctSBc6MoHHOlphCqgQ&expires=1786747672
+https://cdn5.zohanayaan.com:1686/hls/do81.m3u8?md5=o0cXL3y5fMjpxRES-q0rlQ&expires=1786751355
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[IndyCar] Ontario Honda Dealers Indy at Markham | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[IndyCar] Ontario Honda Dealers Indy at Markham | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Richmond Tigers vs St. Kilda Saints | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Richmond Tigers vs St. Kilda Saints | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do82.m3u8?md5=dx2IePp6fYg58-FJIq1ufg&expires=1786747672
+https://cdn1.zohanayaan.com:1686/hls/do83.m3u8?md5=ATSl1259D_Q3AOeWq68RQg&expires=1786751356
 
-#EXTINF:-1 tvg-chno="6" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Denver Broncos vs Atlanta Falcons Atlanta Falcons | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Denver Broncos vs Atlanta Falcons Atlanta Falcons | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Racing Club vs Banfield | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Racing Club vs Banfield | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do1.m3u8?md5=NKkZKIt-IAxhXw9aw-thlw&expires=1786747688
-
-#EXTINF:-1 tvg-chno="7" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Tampa Bay Buccaneers vs New York Jets New York Jets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Tampa Bay Buccaneers vs New York Jets New York Jets | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do2.m3u8?md5=29SrZGUvom6JQhF8A7ciyw&expires=1786747689
-
-#EXTINF:-1 tvg-chno="8" tvg-id="Football.Dummy.us" tvg-name="[CFL] Ottawa RedBlacks vs Winnipeg Blue Bombers Winnipeg Blue Bombers | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Ottawa RedBlacks vs Winnipeg Blue Bombers Winnipeg Blue Bombers | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do31.m3u8?md5=Q_l6C7maw3vnCOiGBQfSFw&expires=1786747690
-
-#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[NASCAR Craftsman Truck Series] NCTS Race at Richmond | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NASCAR Craftsman Truck Series] NCTS Race at Richmond | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do81.m3u8?md5=unUg-QtWRzFarCE6nEHQhQ&expires=1786747692
-
-#EXTINF:-1 tvg-chno="10" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Richmond Tigers vs St. Kilda Saints | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Richmond Tigers vs St. Kilda Saints | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do83.m3u8?md5=_cTAB18pTjiTARcnL7WNBg&expires=1786747693
-
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Racing Club vs Banfield | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Racing Club vs Banfield | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do84.m3u8?md5=H9v8yv3NebxmY3XOL66I0w&expires=1786747694
+https://cdn3.zohanayaan.com:1686/hls/do84.m3u8?md5=-W37QKpHi-bEflmLJATkrg&expires=1786751357
 
