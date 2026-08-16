@@ -4,6 +4,7 @@ from functools import partial
 from urllib.parse import urljoin
 from pathlib import Path
 import os
+import adblock
 
 from playwright.async_api import Browser
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
