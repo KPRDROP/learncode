@@ -5,6 +5,7 @@ from urllib.parse import urljoin, quote
 from pathlib import Path
 import os
 import asyncio
+import adblock
 
 from playwright.async_api import Browser, async_playwright
 
