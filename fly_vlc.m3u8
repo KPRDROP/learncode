@@ -3,59 +3,69 @@
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/paramount-1
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/paramount-1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/f738cc173bc025b50e32c2013e7b6ae840f9de5d2cafea1437163dabe587aece/1786849617/paramount-1.m3u8
+https://fiveo4.diffevixed.uk/main/secure/0caff3ec0d8be44065f8bbd1e71af2813f21e0fbe732e33a2719e27ca6add0a0/1786855479/paramount-1.m3u8
 #EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[UFC 330] Islam Makhachev vs Ian Machado Garry (Para PT) (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="UFC 330",[UFC 330] Islam Makhachev vs Ian Machado Garry (Para PT)
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/paramount-3
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/paramount-3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/8eb514a298b588271f1e20729a387ecbbdf77efb1b50b3e17047283f62a02db8/1786849618/paramount-3.m3u8
+https://fiveo4.diffevixed.uk/main/secure/0f183c6780678a0a6f1fa1fd206c4bd7837939a498acae73a9e678eb0cb9cc7e/1786855480/paramount-3.m3u8
 #EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[UFC 330] Islam Makhachev vs Ian Machado Garry (para ESP)) (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="UFC 330",[UFC 330] Islam Makhachev vs Ian Machado Garry (para ESP))
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/paramount-2
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/paramount-2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/7e4c1e776819e9d128968d7d9867d53a4e755f59316da0915488e66d5e88b38a/1786849618/paramount-2.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[NFL PreSeason] Seattle Seahawks vs Dallas Cowboys (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL PreSeason",[NFL PreSeason] Seattle Seahawks vs Dallas Cowboys
+https://fiveo4.diffevixed.uk/main/secure/570ed7ae3670b7d92936bca8d21d5c63e6372b186e1fbad1a3e215e9f358ef05/1786855480/paramount-2.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Claressa Shields vs Kaye Scott (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Boxing",[Boxing] Claressa Shields vs Kaye Scott
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/dazn-1
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/dazn-1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://fiveo4.diffevixed.uk/main/secure/9986edfd8f9d7c012a42a3a1c7efba2691e3f487fcf7b44099d0f2b8b22786fb/1786855481/dazn-1.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[NFL PreSeason] Seattle Seahawks vs Dallas Cowboys (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL PreSeason",[NFL PreSeason] Seattle Seahawks vs Dallas Cowboys
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/nfl-401873279
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/nfl-401873279
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/f0259125f2d00026347f93d29d705c98b110356f21799a8980964df461b260b8/1786849619/nfl-401873279.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays vs Baltimore Orioles (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Tampa Bay Rays vs Baltimore Orioles
-#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-rays
-#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-rays
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/f8d013cda4b9c895982e69e0d5816866b1cd7a370ec7f5ae1f9aca4b7e5c99d0/1786849629/mlb-rays.m3u8
+https://fiveo4.diffevixed.uk/main/secure/9ea74c83d7176a5e9feffe0618d21348b3f33f1874e4addb838ac7184d7e4cc7/1786855481/nfl-401873279.m3u8
 #EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs Miami Marlins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs Miami Marlins
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-reds
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-reds
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/4aa8a4f62e0c69fefcc47f8dbc015d33a8d0bb92a2fe5f7c56f4020eeedeaee6/1786849630/mlb-reds.m3u8
+https://fiveo4.diffevixed.uk/main/secure/157f4185642ecb3679dc794e05027bbb4250d48bc0ae9a98863991ae388ba46f/1786855502/mlb-reds.m3u8
 #EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs San Diego Padres (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs San Diego Padres
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-guardians
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-guardians
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/c1543b2f79384b74aa04899d6f110d5a91a95dc0ff8d7e153a9e85f1e51d290a/1786849630/mlb-guardians.m3u8
+https://fiveo4.diffevixed.uk/main/secure/fa817c15c227db789aea92117648babb6a6af13c789deb36dc8df96c51ec022c/1786855502/mlb-guardians.m3u8
 #EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs Philadelphia Phillies (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Minnesota Twins vs Philadelphia Phillies
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-twins
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-twins
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/04b25d317ff0d5e6834346841795f43ee5af6a85c3e6d14f111e2ddebb5f3efa/1786849631/mlb-twins.m3u8
+https://fiveo4.diffevixed.uk/main/secure/3d9722115f1f2a6eb7557f51319eed212ebb1888efdb2872c6685dda92a07241/1786855503/mlb-twins.m3u8
 #EXTINF:-1 tvg-chno="9" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Houston Astros vs Seattle Mariners (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Houston Astros vs Seattle Mariners
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-astros
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-astros
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/23c8827b726ce08bc1d97967504585988a49317782d9ba310d5cc6d8ea5e2a52/1786849631/mlb-astros.m3u8
+https://fiveo4.diffevixed.uk/main/secure/ded7336dd840ed86f98fbb472bb4c509339bee1800e633a30f984d9546505cbd/1786855503/mlb-astros.m3u8
 #EXTINF:-1 tvg-chno="10" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Atlanta Braves vs Arizona Diamondbacks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Atlanta Braves vs Arizona Diamondbacks
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-braves
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-braves
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/4978982e76903fc0cd5580a2fdd3144449b2529ddbcac24a5ae70c11bff0ec0d/1786849631/mlb-braves.m3u8
+https://fiveo4.diffevixed.uk/main/secure/edbe3801978c8317f09253c05a6073d89721e19fc8159f4896acce41396fe19b/1786855504/mlb-braves.m3u8
 #EXTINF:-1 tvg-chno="11" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Pittsburgh Pirates vs Boston Red Sox (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Pittsburgh Pirates vs Boston Red Sox
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-pirates
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-pirates
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/3f5d1a3940bd7d17015f26b71f1dacd83e1bab3a94bbdfd93a6eb4808790368b/1786849632/mlb-pirates.m3u8
+https://fiveo4.diffevixed.uk/main/secure/963ada6f5a6d6f10bb3b846449908d3c1b7f7451a7a546b5bdc4d9c432df7bfd/1786855504/mlb-pirates.m3u8
 #EXTINF:-1 tvg-chno="12" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs Milwaukee Brewers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Los Angeles Dodgers vs Milwaukee Brewers
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-dodgers
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-dodgers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://fiveo4.diffevixed.uk/main/secure/62b23168c27d142cd1ee603ba357d21a941e5bad896dc3ecaa6686f871789c30/1786849632/mlb-dodgers.m3u8
+https://fiveo4.diffevixed.uk/main/secure/3bc9685b4db4c10ba909e14fa81e7c13a9312eda402374adf134d8b7a0ea4a0b/1786855505/mlb-dodgers.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Angels vs Kansas City Royals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Los Angeles Angels vs Kansas City Royals
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-angels
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-angels
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://fiveo4.diffevixed.uk/main/secure/aa51821ba64af4f1b59902d2611018f6f4422cdf4257ec08011b06b97339c502/1786855505/mlb-angels.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Oakland Athletics vs Texas Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Oakland Athletics vs Texas Rangers
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-athletics
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-athletics
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://fiveo4.diffevixed.uk/main/secure/7438e1404f5ee9cd22192014a8df80c332fcf6c050e01a42270288bb295e1ff4/1786855506/mlb-athletics.m3u8
