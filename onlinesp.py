@@ -7,6 +7,7 @@ import json
 from urllib.parse import urlparse, urljoin, quote
 from typing import Dict, Any, List, Optional, Tuple
 import aiohttp
+import adblock
 from aiohttp import ClientSession, ClientTimeout, TCPConnector
 
 # Try to import brotli for decompression support
