@@ -5,7 +5,7 @@ from urllib.parse import urljoin, quote
 import os
 import asyncio
 
-from utils import Cache, Event, Time, get_logger, leagues, network, adblock
+from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
