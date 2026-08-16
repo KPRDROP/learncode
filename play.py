@@ -4,6 +4,7 @@ from typing import Any
 from urllib.parse import urljoin, quote
 from pathlib import Path
 import os
+import asyncio
 
 from playwright.async_api import Browser, async_playwright
 
@@ -38,7 +39,7 @@ OUT_TIVI = Path("play_tivimate.m3u8")
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
-    now = Time.clean(Time.now())
+    now = Time.rn()  # Using original Time.rn() method
 
     if not (api_data := API_FILE.load(per_entry=False)):
         log.info("Refreshing API cache")
@@ -63,9 +64,9 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         "US": "EN",
     }
 
-    # Expanded time window to catch more events
-    start_dt = now.delta(hours=-6)
-    end_dt = now.delta(hours=6)
+    # Using original time window
+    start_dt = now.delta(hours=-3)
+    end_dt = now.delta(minutes=30)
 
     for info in api_data.get("matches", []):
         event_name, sport = info["matchstr"], info["league"]
@@ -83,17 +84,16 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
             for channel in event_channels
         }
 
-        for event_num, lang in event_urls.items():
-            event_key = f"[{sport}] {event_name} | {lang} ({TAG})"
-            if event_key not in cached_keys:
-                events.append(
-                    Event(
-                        sport=sport,
-                        name=f"{event_name} | {lang}",
-                        link=f"https://s1.playfa.st/ch.php?id={event_num}",
-                        timestamp=now.timestamp(),
-                    )
-                )
+        events.extend(
+            Event(
+                sport=sport,
+                name=f"{event_name} | {lang}",
+                link=f"https://s1.playfa.st/ch.php?id={event_num}",
+                timestamp=now.timestamp(),
+            )
+            for event_num, lang in event_urls.items()
+            if f"[{sport}] {event_name} | {lang} ({TAG})" not in cached_keys
+        )
 
     return events
 
@@ -116,41 +116,45 @@ async def scrape(browser: Browser) -> None:
 
         async with network.event_context(browser) as context:
             for i, ev in enumerate(events, start=1):
-                async with network.event_page(context) as page:
-                    handler = partial(
-                        network.process_event,
-                        url=ev.link,
-                        url_num=i,
-                        page=page,
-                        log=log,
-                    )
+                try:
+                    async with network.event_page(context) as page:
+                        handler = partial(
+                            network.process_event,
+                            url=ev.link,
+                            url_num=i,
+                            page=page,
+                            log=log,
+                        )
 
-                    source = await network.safe_process(
-                        handler,
-                        url_num=i,
-                        semaphore=network.PW_S,
-                        log=log,
-                    )
+                        source = await network.safe_process(
+                            handler,
+                            url_num=i,
+                            semaphore=network.PW_S,
+                            log=log,
+                        )
 
-                    tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+                        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                    key = f"[{ev.sport}] {ev.name} ({TAG})"
+                        key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                    entry = {
-                        "source": source,
-                        "logo": logo,
-                        "refer": REFERER,
-                        "timestamp": ev.timestamp,
-                        "tvg-id": tvg_id or "Live.Event.us",
-                        "link": ev.link,
-                    }
+                        entry = {
+                            "source": source,
+                            "logo": logo,
+                            "refer": REFERER,
+                            "timestamp": ev.timestamp,
+                            "tvg-id": tvg_id or "Live.Event.us",
+                            "link": ev.link,
+                        }
 
-                    cached_urls[key] = entry
+                        cached_urls[key] = entry
 
-                    if source:
-                        valid_count += 1
-
-                        urls[key] = entry
+                        if source:
+                            valid_count += 1
+                            urls[key] = entry
+                except Exception as e:
+                    log.warning(f"Error processing event {i}: {e}")
+                    # Continue with next event
+                    continue
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -200,16 +204,26 @@ async def main():
     """Main entry point."""
     log.info("Starting PLAY updater...")
     
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+    try:
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=[
+                    '--disable-blink-features=AutomationControlled',
+                    '--disable-dev-shm-usage',
+                    '--no-sandbox',
+                ]
+            )
+            
+            await scrape(browser)
+            
+            await browser.close()
         
-        await scrape(browser)
-        
-        await browser.close()
-    
-    write_outputs()
+        write_outputs()
+    except Exception as e:
+        log.error(f"Main execution error: {e}")
+        raise
 
 
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
