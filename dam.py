@@ -4,6 +4,7 @@ from functools import partial
 from urllib.parse import urljoin, quote
 import os
 import asyncio
+import adblock
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
