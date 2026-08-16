@@ -40,7 +40,9 @@ OUT_TIVI = Path("play_tivimate.m3u8")
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
-    now = Time.rn()  # Using original Time.rn() method
+    # Use Time.now() which should exist in your utils
+    now = Time.now()
+    now = Time.clean(now)
 
     if not (api_data := API_FILE.load(per_entry=False)):
         log.info("Refreshing API cache")
@@ -65,7 +67,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         "US": "EN",
     }
 
-    # Using original time window
+    # Original time window from working code
     start_dt = now.delta(hours=-3)
     end_dt = now.delta(minutes=30)
 
