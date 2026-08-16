@@ -46,7 +46,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
 
-          ggit add fly_vlc.m3u8 fly_tivimate.m3u8
+          git add fly_vlc.m3u8 fly_tivimate.m3u8
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
