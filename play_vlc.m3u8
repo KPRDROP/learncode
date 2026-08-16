@@ -1,25 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Chicago Fire vs Portland Timbers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Chicago Fire vs Portland Timbers | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] América vs Atlético San Luis | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] América vs Atlético San Luis | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do31.m3u8?md5=j9oVRab51aR9OsrLAvCYQA&expires=1786925997
+https://cdn9.zohanayaan.com:1686/hls/do30.m3u8?md5=NB2oVEp7NS2Pq17vFH61oQ&expires=1786927623
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] New York City vs Philadelphia Union | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] New York City vs Philadelphia Union | CA (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Chicago Fire vs Portland Timbers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Chicago Fire vs Portland Timbers | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do35.m3u8?md5=sY19DptruuEIwJtVIt8bwQ&expires=1786925998
+https://cdn5.zohanayaan.com:1686/hls/do31.m3u8?md5=zolah_ABpv8VuzIiGVlZPA&expires=1786927625
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] River Plate vs Argentinos Juniors | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] River Plate vs Argentinos Juniors | ES (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] New York City vs Philadelphia Union | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] New York City vs Philadelphia Union | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do84.m3u8?md5=UWH0-aUhnWz8HLcxnBFJGg&expires=1786925999
+https://cdn3.zohanayaan.com:1686/hls/do35.m3u8?md5=mjdaBenJ3Evab9k3v7naXw&expires=1786927626
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Colo-Colo vs O'Higgins | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Colo-Colo vs O'Higgins | ES (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] River Plate vs Argentinos Juniors | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] River Plate vs Argentinos Juniors | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do100.m3u8?md5=nJ-IKCwEbHKd2TbjGGAzRg&expires=1786926000
+https://cdn5.zohanayaan.com:1686/hls/do84.m3u8?md5=cZ3L873PxJFyULRnLYecKQ&expires=1786927627
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Barracas Central vs Rosario Central | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Barracas Central vs Rosario Central | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/do85.m3u8?md5=AsfvmE1xxntjqVo2J9vWfw&expires=1786927628
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Chile Primera Division] Colo-Colo vs O'Higgins | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/86.png" group-title="Live Events",[Chile Primera Division] Colo-Colo vs O'Higgins | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do100.m3u8?md5=d67YRBj7D0jzREBWJnSuOQ&expires=1786927629
 
