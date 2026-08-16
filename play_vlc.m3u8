@@ -1,85 +1,55 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Seattle Seahawks vs Dallas Cowboys | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Seattle Seahawks vs Dallas Cowboys | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Islam Makhachev vs Ian Garry | CA (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Islam Makhachev vs Ian Garry | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do2.m3u8?md5=4uWg99AWe0v_jplVyR-6mQ&expires=1786855249
+https://cdn1.zohanayaan.com:1686/hls/do4.m3u8?md5=USEsnapLuX3ZOqsHOHSvSw&expires=1786858361
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Super light weight] Claressa Shields vs Kaye Scott | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Super light weight] Claressa Shields vs Kaye Scott | EN (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Islam Makhachev vs Ian Garry | FR (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Islam Makhachev vs Ian Garry | FR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do3.m3u8?md5=VIzikGKaQTvrjI6NfWtLmQ&expires=1786855250
+https://cdn6.zohanayaan.com:1686/hls/do50.m3u8?md5=l1oeYDOW35FyNG8uI38Alw&expires=1786858364
 
-#EXTINF:-1 tvg-chno="3" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Islam Makhachev vs Ian Garry | CA (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Islam Makhachev vs Ian Garry | CA (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Atlas vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Atlas vs Tigres UANL | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do4.m3u8?md5=XamUNuWuMu2XRdldaoJ6Lg&expires=1786855226
+https://cdn4.zohanayaan.com:1686/hls/do30.m3u8?md5=lXVTjINLahDCGFEnRrx-pA&expires=1786858365
 
-#EXTINF:-1 tvg-chno="4" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Islam Makhachev vs Ian Garry | FR (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Islam Makhachev vs Ian Garry | FR (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Los Angeles FC vs San Diego | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Los Angeles FC vs San Diego | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do50.m3u8?md5=3sbpiU985K6xVv5G5-wUVQ&expires=1786855253
+https://cdn2.zohanayaan.com:1686/hls/do31.m3u8?md5=BMnVv5dtlNXFiVuq4XGxVQ&expires=1786858366
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Monterrey vs Juárez | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Monterrey vs Juárez | ES (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] SJ Earthquakes vs St. Louis City | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] SJ Earthquakes vs St. Louis City | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do30.m3u8?md5=E7i659gKqB8Thcf0DB6h_g&expires=1786855254
+https://cdn1.zohanayaan.com:1686/hls/do32.m3u8?md5=6eG2bkj6JW8A4omEC9BkOQ&expires=1786858368
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Atlas vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Atlas vs Tigres UANL | ES (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Czech Rally | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Czech Rally | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do30.m3u8?md5=E7i659gKqB8Thcf0DB6h_g&expires=1786855254
+https://cdn5.zohanayaan.com:1686/hls/do76.m3u8?md5=TOR6lhT3wxz56A1vUphoCw&expires=1786858369
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Los Angeles FC vs San Diego | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Los Angeles FC vs San Diego | EN (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] West Coast Eagles vs Greater Western Sydney Giants | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] West Coast Eagles vs Greater Western Sydney Giants | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=13QFuo4SIN2Lp9kWYRpKQQ&expires=1786855257
+https://cdn2.zohanayaan.com:1686/hls/do82.m3u8?md5=Kk0nTmHTk7ZNU55T-4wXGQ&expires=1786858372
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] SJ Earthquakes vs St. Louis City | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] SJ Earthquakes vs St. Louis City | EN (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Essendon Bombers vs Sydney Swans | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Essendon Bombers vs Sydney Swans | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do32.m3u8?md5=62nNS6LG3G8ZeY2Dwu3rBA&expires=1786855258
+https://cdn2.zohanayaan.com:1686/hls/do82.m3u8?md5=Kk0nTmHTk7ZNU55T-4wXGQ&expires=1786858372
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Colorado Rapids vs Sporting KC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Colorado Rapids vs Sporting KC | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Carlton Blues vs Western Bulldogs | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Carlton Blues vs Western Bulldogs | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do37.m3u8?md5=vcGsKrBuDmksgkW5Bpy1_w&expires=1786855259
-
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Real Salt Lake vs Minnesota United | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Real Salt Lake vs Minnesota United | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do38.m3u8?md5=k4BIYmpxHXqvJ7Afc0KDhg&expires=1786855260
-
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[World Rally Championship] Czech Rally | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[World Rally Championship] Czech Rally | SE (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do76.m3u8?md5=9eJJXiszQY7WQxyhiL-tCQ&expires=1786855261
-
-#EXTINF:-1 tvg-chno="12" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] West Coast Eagles vs Greater Western Sydney Giants | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] West Coast Eagles vs Greater Western Sydney Giants | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do82.m3u8?md5=RiEFTHnyEH7FYf5DDSdOkQ&expires=1786855265
-
-#EXTINF:-1 tvg-chno="13" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Essendon Bombers vs Sydney Swans | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Essendon Bombers vs Sydney Swans | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do82.m3u8?md5=RiEFTHnyEH7FYf5DDSdOkQ&expires=1786855265
-
-#EXTINF:-1 tvg-chno="14" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Carlton Blues vs Western Bulldogs | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Carlton Blues vs Western Bulldogs | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=ZBvVVaKea0oJ2FzoBvCycg&expires=1786855267
+https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=9yr9XHilCoQ7RrEggqubUg&expires=1786858375
 
