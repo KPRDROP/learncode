@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import TypeVar
 from urllib.parse import urlsplit, urlunsplit
 
+import adblock
 import httpx
 from playwright.async_api import (
     Browser,
@@ -23,6 +24,8 @@ from .logger import get_logger
 logger = get_logger(__name__)
 
 T = TypeVar("T")
+
+_TYPE_MAP = {"xhr": "xmlhttprequest", "fetch": "xmlhttprequest"}
 
 
 class Network:
@@ -45,6 +48,12 @@ class Network:
         }
 
         self.client = httpx.AsyncClient(**client_params)
+
+        easylist = (Path(__file__).parent / "easylist.txt").read_text(encoding="utf-8")
+        filter_set = adblock.FilterSet()
+        filter_set.add_filter_list(easylist)
+
+        self.engine = adblock.Engine(filter_set)
 
     async def request(
         self,
@@ -69,7 +78,7 @@ class Network:
                 else f'Failed to fetch "{url}": {e}'
             )
 
-            return ""
+            return
 
     @staticmethod
     def ensure_https(url: str) -> str:
@@ -124,38 +133,30 @@ class Network:
     def stealth_js() -> str:
         return (Path(__file__).parent / "stealth.js").read_text(encoding="utf-8")
 
-    @cache
-    @staticmethod
-    def blocked_domains() -> list[str]:
-        return (
-            (Path(__file__).parent / "easylist.txt")
-            .read_text(encoding="utf-8")
-            .splitlines()
+    def to_block(self, request: Request) -> bool:
+        req_type = _TYPE_MAP.get(request.resource_type, request.resource_type)
+
+        result = self.engine.check_network_urls(
+            url=request.url,
+            source_url=request.frame.url,
+            request_type=req_type,
         )
 
-    @staticmethod
-    def to_block(request: Request) -> bool:
-        hostname = (urlsplit(request.url).hostname or "").lower()
+        return result.matched
 
-        return any(
-            hostname == domain or hostname.endswith(f".{domain}")
-            for domain in Network.blocked_domains()
-        )
-
-    @staticmethod
-    async def _adblock(route: Route) -> None:
+    async def _adblock(self, route: Route) -> None:
         request = route.request
 
-        if request.resource_type not in ["script", "image", "media", "xhr"]:
+        if request.resource_type not in ("script", "image", "media", "xhr", "fetch"):
             await route.continue_()
 
             return
 
-        await route.abort() if Network.to_block(request) else await route.continue_()
+        await route.abort() if self.to_block(request) else await route.continue_()
 
-    @staticmethod
     @asynccontextmanager
     async def event_context(
+        self,
         browser: Browser,
         stealth: bool = True,
         ignore_https: bool = False,
@@ -166,7 +167,7 @@ class Network:
         try:
             if stealth:
                 context = await browser.new_context(
-                    user_agent=Network.UA,
+                    user_agent=self.UA,
                     ignore_https_errors=ignore_https,
                     viewport={"width": 1366, "height": 768},
                     device_scale_factor=1,
@@ -183,7 +184,7 @@ class Network:
 
                 await context.add_init_script(script=Network.stealth_js())
 
-                await context.route("**/*", Network._adblock)
+                await context.route("**/*", self._adblock)
 
             else:
                 context = await browser.new_context()
