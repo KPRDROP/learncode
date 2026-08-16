@@ -1,5 +1,6 @@
 import asyncio
 import re
+import adblock
 from typing import Any
 from urllib.parse import urljoin, quote
 
