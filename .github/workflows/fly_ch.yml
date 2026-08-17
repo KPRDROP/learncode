@@ -2,8 +2,8 @@ name: FLY_CH Updater
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Run every 30 minutes
-  workflow_dispatch:  # Allow manual trigger
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -36,7 +36,7 @@ jobs:
           pip install --upgrade pip
           pip install selectolax playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
 
-      - name: Run FLY_CH scraper
+      - name: Run FLY_CH updater
         run: |
           python fly_ch.py
 
