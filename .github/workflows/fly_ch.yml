@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install selectolax playwright httpx[http2] pytz adblock
+          pip install selectolax playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
 
       - name: Run FLY_CH scraper
         run: |
