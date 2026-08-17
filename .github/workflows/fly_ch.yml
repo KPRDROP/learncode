@@ -1,0 +1,61 @@
+name: FLY_CH Updater
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # Run every 30 minutes
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache Python packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install selectolax playwright httpx[http2] pytz adblock
+
+      - name: Run FLY_CH scraper
+        run: |
+          python fly_ch.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Check if playlist files exist and have changes
+          if [ -f "fly_ch_vlc.m3u8" ] && [ -f "fly_ch_tivimate.m3u8" ]; then
+            git add fly_ch_vlc.m3u8 fly_ch_tivimate.m3u8
+            if ! git diff --cached --quiet; then
+              git commit -m "Update FLY_CH playlists [skip ci]"
+              git push
+              echo "Changes pushed successfully"
+            else
+              echo "No changes to commit"
+            fi
+          else
+            echo "Playlist files not found"
+            exit 1
+          fi
