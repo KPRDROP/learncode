@@ -1,21 +1,46 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Coppa Italia] Pisa vs Empoli (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Coppa Italia",[Coppa Italia] Pisa vs Empoli
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[English League Championship] Cardiff City vs Wrexham (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="English League Championship",[English League Championship] Cardiff City vs Wrexham
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/skysportsmainevent-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/skysportsmainevent-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/f124da0014ec0d9c083588758f39554db6173af75081e3825ecd3cc37adcb415/1787006656/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Deportivo La Coruña vs Elche (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Deportivo La Coruña vs Elche
+#EXTVLCOPT:http-referrer=https://epiembeds.online/84/daznlaliga-es
+#EXTVLCOPT:http-origin=https://epiembeds.online/84/daznlaliga-es
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/67123b07c201b24cce9e5d27b42c1e4e0e211a3bb4e4e9237ca1bc094ccb060d/1787006657/daznlaliga-es.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Coppa Italia] Pisa vs Empoli (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Coppa Italia",[Coppa Italia] Pisa vs Empoli
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/premiersports1-ie
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/premiersports1-ie
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/85c2c3df3de5897b8d17f27fdceb9c9100c426e6fd8ce0c89ac114acbb9f7d89/1787003387/premiersports1-ie.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Coppa Italia] Sassuolo vs Cesena (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Coppa Italia",[Coppa Italia] Sassuolo vs Cesena
+https://volder.timst.cfd/main/secure/130efeee103a7b390af41a033a18d6d9b00a31b661ee65d39c265ec818feaaae/1787006657/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Coppa Italia] Sassuolo vs Cesena (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Coppa Italia",[Coppa Italia] Sassuolo vs Cesena
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/premiersports2-ie
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/premiersports2-ie
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/bb0bb9fc7c13007d05a82f1d1c3eeb61faadefeadf8206dcbf215c8655de8fa9/1787003387/premiersports2-ie.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Juventus  vs Juventus Next Gen (FLY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Club Friendly",[Club Friendly] Juventus vs Juventus Next Gen
+https://volder.timst.cfd/main/secure/09a79f0dddf5a33024ba3290a18763daeea094c0e7b74724225ad61f21ce83c6/1787006658/premiersports2-ie.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Coppa Italia] Palermo vs Lecce (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Coppa Italia",[Coppa Italia] Palermo vs Lecce
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/premiersports2-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/premiersports2-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/09a79f0dddf5a33024ba3290a18763daeea094c0e7b74724225ad61f21ce83c6/1787006658/premiersports2-ie.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Juventus  vs Juventus Next Gen (FLY)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Club Friendly",[Club Friendly] Juventus vs Juventus Next Gen
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/dazn1-it
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/dazn1-it
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/a69c12bd8cada441655cbb5693d50d993280694a32a1baec821620b72abc93e6/1787003387/dazn1-it.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs St. Louis Cardinals
+https://volder.timst.cfd/main/secure/1a7885a402aa00ea5bed5e8a78bd5cd92d4c77073224563cb93524259aa8e58a/1787006659/dazn1-it.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Casa Pia vs Benfica (pt 1) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Casa Pia vs Benfica (pt 1)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv1-pt
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv1-pt
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/828b8a82d63bbdccad20e02285addd4d05cca87fea09be343264abe5cec38ba8/1787006659/sporttv1-pt.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Casa Pia vs Benfica (bein usa) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Casa Pia vs Benfica (bein usa)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/66a02947ad77b74d157dbaa0b3c876155f3f8e1901cf4dfe0c1feff625f3bbc1/1787006659/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs St. Louis Cardinals
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/tntsports1-uk
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/tntsports1-uk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/7a76960c0624c585a9f14908d9f4874fdf439e5264871362c64749002ff6b442/1787003388/tntsports1-uk.m3u8
+https://volder.timst.cfd/main/secure/ea9997b012f89ffe74192b507ad5398c0d1335c13707adeda2f2309f226e066a/1787006660/tntsports1-uk.m3u8
