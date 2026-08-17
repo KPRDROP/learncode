@@ -160,8 +160,8 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         API_FILE.write(api_data)
 
-    start_dt = now.delta(hours=-4)
-    end_dt = now.delta(minutes=30)
+    start_dt = now.delta(hours=-5)
+    end_dt = now.delta(minutes=1)
 
     for event_group in api_data:
         if not all(
