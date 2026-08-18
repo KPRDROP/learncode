@@ -1,1 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Copa  America] Universidad Católica vs Estudiantes (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Copa  America",[Copa America] Universidad Católica vs Estudiantes
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/5a6d213f9439ecab5095166dd9bc14c5de4a73d3f2bb2a15893e7c114ba72cf7/1787039347/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[WWE] WWE vs NXT (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="WWE",[WWE] WWE vs NXT
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/foxdeportes-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/foxdeportes-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/2a4baa4465f6b285b4f32acaea4c3407db76e6e7892b463b32a88327d65351ae/1787039348/foxdeportes-usa.m3u8
