@@ -1,1 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Fenerbahçe vs Olympique Lyonnais (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Fenerbahçe vs Olympique Lyonnais
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv5-pt
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv5-pt
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/5003bc44a275ba104fc01bd1dd025bd8c539efc1ea584a85b413b47c31e27f12/1787064538/sporttv5-pt.m3u8
