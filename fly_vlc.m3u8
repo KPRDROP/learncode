@@ -3,19 +3,64 @@
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/tntsports1-uk
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/tntsports1-uk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/3d9c5e053c64f923212144c068dd96d8c0d4acd4a1026ca0f88fbaa819ea040f/1787103723/tntsports1-uk.m3u8
+https://volder.timst.cfd/main/secure/9071837f9d38134e729fa3aa6ea2c5b4a97e8d0c7a6459df85df18842769fd19/1787108731/tntsports1-uk.m3u8
 #EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Levski Sofia vs AEK Athens (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Levski Sofia vs AEK Athens
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/tntsports2-uk
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/tntsports2-uk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/c15c9c16e9cdb4305240bb738698c6d33184d5cec4c4f52589d0b4f39be67ad2/1787103724/tntsports2-uk.m3u8
+https://volder.timst.cfd/main/secure/ad3f334c202221744e35b466db2d2656060384461af8178b293f2e364983e1dc/1787108731/tntsports2-uk.m3u8
 #EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Copa  America] Independiente Rivadavia  vs Fluminense (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Copa  America",[Copa America] Independiente Rivadavia vs Fluminense
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/sporttv1-pt
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/sporttv1-pt
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/70b63f2c798758c717c23adb489504235f0c241ffbd6b681bd3bf78627b32303/1787103724/sporttv1-pt.m3u8
+https://volder.timst.cfd/main/secure/9db1d2941a8b7ee226ff77c38cef53832bc1c92e42108618b0eddd85b4af890d/1787108732/sporttv1-pt.m3u8
 #EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Copa  America] Deportivo Recoleta vs Boca Juniors (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Copa  America",[Copa America] Deportivo Recoleta vs Boca Juniors
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/beinsports-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/beinsports-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/4a8069e08cbd96de1e06f698d9022bc6dd3000b65e715beed22eb2500fd47821/1787103725/beinsports-usa.m3u8
+https://volder.timst.cfd/main/secure/9d7159fe32256ad4df923b4ae53a745b53cf0867ddd13551579730e2e44c1da5/1787108733/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Baltimore Orioles vs New York Yankees (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Baltimore Orioles vs New York Yankees
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-orioles
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-orioles
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/46e81467f92c154ddcf562451ef8434dc5066586d0b60a11073b4d175f6dbb20/1787108733/mlb-orioles.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Pittsburgh Pirates vs Detroit Tigers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Pittsburgh Pirates vs Detroit Tigers
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-pirates
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-pirates
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/3a3272d909f5ae0c742060b251a327a75016a414f0c361bf7b3183f7b7839ae8/1787108734/mlb-pirates.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs Miami Marlins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Philadelphia Phillies vs Miami Marlins
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-phillies
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-phillies
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/31e62f54fc4c708fea6db33b2dceebc51b2d09bc19590b98a22d9dd27a55a04b/1787108734/mlb-phillies.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs San Francisco Giants (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs San Francisco Giants
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-guardians
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-guardians
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/e842fb7eb5562b794c16aa34f6e84bd77c455a70d06991da7437f26ce8dc3d93/1787108735/mlb-guardians.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs St. Louis Cardinals
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-reds
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-reds
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/e1ea45cafffa039806ba474ed6a750ebdab689ae3e0a9f7e66e2f4c560f4e35b/1787108735/mlb-reds.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays  vs Toronto Blue Jays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Tampa Bay Rays vs Toronto Blue Jays
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-rays
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-rays
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/bfea833468b41dae309e70604d69581286a2009c84771fe9f0ff486e94717805/1787108736/mlb-rays.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Boston Red Sox vs Arizona Diamondbacks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Boston Red Sox vs Arizona Diamondbacks
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-mets
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-mets
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/41878b5b6b69b6bc66c690cda4f76ae402299e77904b9c97431fe99a019632e3/1787108736/mlb-mets.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Mets vs San Diego Padres (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] New York Mets vs San Diego Padres
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-mets
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-mets
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/41878b5b6b69b6bc66c690cda4f76ae402299e77904b9c97431fe99a019632e3/1787108736/mlb-mets.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Toronto Tempo vs Indiana Fever (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Toronto Tempo vs Indiana Fever
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/espn-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/espn-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/255aa7800975e6f6231485eb497b90a5a64bba271b31f6b80412ba29cf9be7e8/1787108737/espn-usa.m3u8
