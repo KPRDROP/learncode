@@ -3,5 +3,17 @@
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do10.m3u8?md5=w6hKo86Br2o594rqfxmxIQ&expires=1787184699
+https://cdn1.zohanayaan.com:1686/hls/do10.m3u8?md5=472cF4GiicXn1XqLu3g9ig&expires=1787185898
+
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Canadian Premier League] Forge vs Supra du Quebec | EN (PLAY)" tvg-logo="https://i.gyazo.com/f61986e2ccfbf88f7d753b4e7f2c9fdc.png" group-title="Live Events",[Canadian Premier League] Forge vs Supra du Quebec | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/do82.m3u8?md5=BV6FLSKkaJHmP-dGy_WBlw&expires=1787185900
+
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Canadian Premier League] Atlético Ottawa vs Vancouver FC | EN (PLAY)" tvg-logo="https://i.gyazo.com/f61986e2ccfbf88f7d753b4e7f2c9fdc.png" group-title="Live Events",[Canadian Premier League] Atlético Ottawa vs Vancouver FC | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=PnBNdMBRvyf6TokPacMNlA&expires=1787185901
 
