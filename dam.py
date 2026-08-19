@@ -100,7 +100,7 @@ async def get_events(
     except (TypeError, ValueError):
         future_days = 14.0
 
-    start_dt = now.delta(minutes=-(past_hours * 60))
+    start_dt = now.delta(minutes=-(past_hours * 30))
     end_dt = now.delta(minutes=(future_days * 24 * 60))
 
     log.info(
