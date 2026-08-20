@@ -1,1 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Sky F1 UK 24/7 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Sky F1 UK 24/7
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/skysportsf1-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/skysportsf1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/133c29c540e1c4d838140e3ac1dacbaf854077f92deb40467fc7f9be2a44b09d/1787237634/skysportsf1-uk.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Dazn F1 Spain 24/7 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Dazn F1 Spain 24/7
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/daznf1-es
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/daznf1-es
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/b2fac6153f8d371ab5aba75f0c63a663566b3aee9d5553d991c909c8a7f4fff1/1787237635/daznf1-es.m3u8
