@@ -1,31 +1,41 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs St. Louis Cardinals
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Rayo Vallecano vs Deportivo Alavés (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Rayo Vallecano vs Deportivo Alavés
+#EXTVLCOPT:http-referrer=https://epiembeds.online/84/daznlaliga-es
+#EXTVLCOPT:http-origin=https://epiembeds.online/84/daznlaliga-es
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/2e23f759237e9e360639d254b02f13bb6ffed396e3c3bf67d434768d1bc940be/1787266006/daznlaliga-es.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[England - League One] Sheffield Wednesday vs Bradford City (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="England - League One",[England - League One] Sheffield Wednesday vs Bradford City
+#EXTVLCOPT:http-referrer=https://epiembeds.online/embed/skysportsmainevent-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/embed/skysportsmainevent-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/f4fc7aca4700b6caf8d6e5dca1f4868cfd91955e03b7e08e8fa36159578cc23c/1787266006/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cincinnati Reds vs St. Louis Cardinals
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-reds
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-reds
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/e63007a09602d1b113cab87f9e29293513f013113cd6b5b8aa4fbdba3b345b94/1787262794/mlb-reds.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs San Francisco Giants (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs San Francisco Giants
+https://volder.timst.cfd/main/secure/20195a9270de59315d65f0774698cc55ffd59927d70cb7a2eea1f1a381b16810/1787266007/mlb-reds.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs San Francisco Giants (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs San Francisco Giants
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-guardians
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-guardians
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/5bfd2f5033ea2fdf46859ac586731c077c911ebcd2aa27e6973f1bd6cd6b969a/1787262795/mlb-guardians.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays vs Toronto Blue Jays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Tampa Bay Rays vs Toronto Blue Jays
+https://volder.timst.cfd/main/secure/e0c5c2697782b75cf6382bd21e4a63b34150287e42adf83d926132101d3e299f/1787266007/mlb-guardians.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays vs Toronto Blue Jays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Tampa Bay Rays vs Toronto Blue Jays
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-rays
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-rays
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/7d0355a861427c4b126e86c3815fe427478b1a124ef3730444de85e5f758d143/1787262796/mlb-rays.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs Oakland Athletics (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Kansas City Royals vs Oakland Athletics
+https://volder.timst.cfd/main/secure/6c82695982b6c70a2712f1f562bee29f520d3af42df178aa51f859f25bfb3369/1787266008/mlb-rays.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs Oakland Athletics (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Kansas City Royals vs Oakland Athletics
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-brewers
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-brewers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/86c30e45f0e1934c9e0c76e7cbb678b4f472a8d57bc4ea89464ddd025391dfba/1787262796/mlb-brewers.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs Seattle Mariners (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Milwaukee Brewers vs Seattle Mariners
+https://volder.timst.cfd/main/secure/1e67dd3c55bb3239d6446266d75135d97680d56a6249d7d854880ff0ec6593e0/1787266008/mlb-brewers.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs Seattle Mariners (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Milwaukee Brewers vs Seattle Mariners
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-red-sox
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-red-sox
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/a536eb23989b2970bc0fae54185ac305c77972fbc403980910077f542824d403/1787262796/mlb-red-sox.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox  vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago White Sox vs Atlanta Braves
+https://volder.timst.cfd/main/secure/ad0d2135346c846a0ed6f09fdc9df85776667d304f6f379d0ce74aff94ef3db0/1787266009/mlb-red-sox.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox  vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago White Sox vs Atlanta Braves
 #EXTVLCOPT:http-referrer=https://epiembeds.online/embed/mlb-white-sox
 #EXTVLCOPT:http-origin=https://epiembeds.online/embed/mlb-white-sox
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/e4a41d1dd617d9993e22bfd5bee9867d52e1a37f597da94c5baafe7424cc079a/1787262797/mlb-white-sox.m3u8
+https://volder.timst.cfd/main/secure/dccff355ec6896a8b6501111f2d861a4e45fe233922a132d44b0cb1f610cdd38/1787266009/mlb-white-sox.m3u8
