@@ -624,6 +624,7 @@
           "aliases": [
             "BULGARIA - VTORA LIGA",
             "BULGARIA 2ND LEAGUE",
+            "BULGARIA VTORA LEAGUE",
             "BULGARIA VTORA LIGA",
             "BULGARIAN SECOND LEAGUE",
             "VTORA LIGA"
@@ -1061,6 +1062,12 @@
         }
       },
       {
+        "EGYPTIAN PREMIER LEAGUE": {
+          "logo": "https://assets.football-logos.cc/logos/egypt/1500x1500/egyptian-premier-league.9574aa34.png",
+          "aliases": ["EGYPT PREMIER LEAGUE", "EL DAWRY", "ORA LEAGUE"]
+        }
+      },
+      {
         "EKSTRAKLASA": {
           "logo": "https://i.gyazo.com/362e31efdd0dad03b00858f4fb0901b5.png",
           "aliases": [
@@ -1187,6 +1194,17 @@
         }
       },
       {
+        "GERMAN CUP": {
+          "logo": "https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png",
+          "aliases": [
+            "DFB POKAL",
+            "DFB-POKAL",
+            "GERMAN DFB POKAL",
+            "GERMANY DFB POKAL"
+          ]
+        }
+      },
+      {
         "GREECE CUP": {
           "logo": "https://i.gyazo.com/f80306df9b94a90f991b3cce386dc2b5.png",
           "aliases": ["BETSSON GREECE UP", "GREEK CUP", "GREEK FOOTBALL CUP"]
@@ -1303,6 +1321,7 @@
             "LALIGA",
             "PRIMERA DIVISION",
             "PRIMERA DIVISIÓN",
+            "SPAIN - LA LIGA",
             "SPAIN LA LIGA",
             "SPAIN LALIGA",
             "SPANISH LA LIGA",
@@ -1574,7 +1593,12 @@
       {
         "LIGUE 1": {
           "logo": "https://ligue1.com/images/Logo_Ligue_1.webp",
-          "aliases": ["FRANCE LIGUE 1", "FRENCH LIGUE 1", "LIGUE 1 FRANCE"]
+          "aliases": [
+            "FRANCE - LIGUE 1",
+            "FRANCE LIGUE 1",
+            "FRENCH LIGUE 1",
+            "LIGUE 1 FRANCE"
+          ]
         }
       },
       {
@@ -1647,6 +1671,7 @@
         "PREMIER LEAGUE": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png",
           "aliases": [
+            "ENGLAND - PREMIER LEAGUE",
             "ENGLISH PREMIER LEAGUE",
             "EPL",
             "PREMIER LEAGUE SUMMER",
@@ -1682,6 +1707,12 @@
             "LIGA DE COLOMBIA",
             "LIGA DIMAYOR"
           ]
+        }
+      },
+      {
+        "QATAR STARS LEAGUE": {
+          "logo": "https://www.qsl.qa/sites/default/files/2021-09/QSL_Logo_Port_CMYK3.png",
+          "aliases": ["DOHA BANK STARS LEAGUE", "QATAR QSL", "QATAR SL", "QSL"]
         }
       },
       {
