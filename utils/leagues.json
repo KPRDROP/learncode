@@ -50,7 +50,7 @@
       {
         "CRICKET": {
           "logo": "https://i.gyazo.com/f008a3e3b9e6b0187857985b6c44782b.png",
-          "aliases": ["CRICKET CPL", "CRICKET TEST SERIES"]
+          "aliases": ["CRICKET CPL", "CRICKET CPL T20", "CRICKET TEST SERIES"]
         }
       },
       {
@@ -349,7 +349,7 @@
       {
         "RUGBY": {
           "logo": null,
-          "aliases": ["RUGBY FRIENDLY"]
+          "aliases": ["RUGBY FRIENDLY", "RUGBY NZ NPC"]
         }
       },
       {
@@ -727,7 +727,14 @@
       {
         "CONCACAF CARIBBEAN CUP": {
           "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_CONCACAF_Caribbean_Cup.svg",
-          "aliases": ["COPA CARIBE DE LA CONCACAF"]
+          "aliases": [
+            "CAMPEONATO DE CLUBES DEL CARIBE",
+            "CARIBBEAN CLUB CHAMPIONSHIP",
+            "CFU CLUB CHAMPIONS CUP",
+            "CFU CLUB CHAMPIONS' CUP",
+            "CFU CLUB CHAMPIONSHIP",
+            "COPA CARIBE DE LA CONCACAF"
+          ]
         }
       },
       {
@@ -810,7 +817,7 @@
       {
         "COPA BOLIVIA": {
           "logo": "https://copadebolivia.com/wp-content/uploads/2025/11/Copa-de-Bolivia.png",
-          "aliases": []
+          "aliases": ["BOLIVIA COPA"]
         }
       },
       {
