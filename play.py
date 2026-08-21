@@ -91,7 +91,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
             Event(
                 sport=sport,
                 name=f"{event_name} | {lang}",
-                link=f"https://s1.playfa.st/ch.php?id={event_num}",
+                link=f"https://s1.kora.st/ch.php?id={event_num}",
                 timestamp=now.timestamp(),
             )
             for event_num, lang in event_urls.items()
