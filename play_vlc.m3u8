@@ -1,67 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Spain La Liga] Espanyol vs Real Madrid | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spain La Liga] Espanyol vs Real Madrid | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Rams vs New Orleans Saints | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Los Angeles Rams vs New Orleans Saints | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do2.m3u8?md5=IMSWCtwf55diGuZu_DKViA&expires=1787440651
+https://cdn4.zohanayaan.com:1686/hls/do7.m3u8?md5=7JPkZwJtflgFizcmidm-9A&expires=1787442307
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Spain La Liga] Espanyol vs Real Madrid | AU (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spain La Liga] Espanyol vs Real Madrid | AU (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Miami Dolphins vs New York Giants | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Miami Dolphins vs New York Giants | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do32.m3u8?md5=ItJYKKylTOI4voCyS_IfmQ&expires=1787440653
+https://cdn10.zohanayaan.com:1686/hls/do9.m3u8?md5=rO7zrQB5_0bjc6ZKG_MXaw&expires=1787442309
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Spain La Liga] Espanyol vs Real Madrid | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Live Events",[Spain La Liga] Espanyol vs Real Madrid | ES (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Canada Canadian Premier League] Cavalry vs Atl. Ottawa | EN (PLAY)" tvg-logo="https://i.gyazo.com/b0b49528463ce3833cf287ba2e2e2d5d.png" group-title="Live Events",[Canada Canadian Premier League] Cavalry vs Atl. Ottawa | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do86.m3u8?md5=QhdhA3e2DyUa3CXG6qaRpg&expires=1787440654
+https://cdn5.zohanayaan.com:1686/hls/do83.m3u8?md5=08b8xYBNRElWR2LUY98NiQ&expires=1787442310
 
-#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Rams vs New Orleans Saints | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Los Angeles Rams vs New Orleans Saints | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Prelimin | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Prelimin | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do7.m3u8?md5=U6rC3YA4DwGDcetH2b8GUw&expires=1787440655
+https://cdn3.zohanayaan.com:1686/hls/do6.m3u8?md5=e4VGZaKbFgeOks-e26_Ipw&expires=1787442311
 
-#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Miami Dolphins vs New York Giants | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Miami Dolphins vs New York Giants | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Brasil Brasileirão] Internacional vs Atlético Mineiro | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" group-title="Live Events",[Brasil Brasileirão] Internacional vs Atlético Mineiro | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do9.m3u8?md5=eXA_qe0XoOlshuDpcCBc1Q&expires=1787440657
+https://cdn9.zohanayaan.com:1686/hls/do19.m3u8?md5=ZIQenW8SzZKl4p_jzOxviQ&expires=1787442312
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Portugal Primeira Liga] Sporting CP vs Alverca | PT (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Live Events",[Portugal Primeira Liga] Sporting CP vs Alverca | PT (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[IndyCar] Freedom 250 Grand Prix of Washington, D.C. | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[IndyCar] Freedom 250 Grand Prix of Washington, D.C. | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do21.m3u8?md5=OtMRoVe3eTZhYi4scJaZlg&expires=1787440658
-
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Spain Segunda Division] Eldense vs Cádiz | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" group-title="Live Events",[Spain Segunda Division] Eldense vs Cádiz | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do26.m3u8?md5=actxxILB9NJBxMYFUwromA&expires=1787440659
-
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Canada Canadian Premier League] Cavalry vs Atl. Ottawa | EN (PLAY)" tvg-logo="https://i.gyazo.com/b0b49528463ce3833cf287ba2e2e2d5d.png" group-title="Live Events",[Canada Canadian Premier League] Cavalry vs Atl. Ottawa | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do83.m3u8?md5=5Si5QJKpknIScpkqfzSmRA&expires=1787440660
-
-#EXTINF:-1 tvg-chno="9" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Prelimin | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Prelimin | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do6.m3u8?md5=exPXcKDCcH7DDztxH-zIMQ&expires=1787440661
-
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Brasil Brasileirão] Internacional vs Atlético Mineiro | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/85.png" group-title="Live Events",[Brasil Brasileirão] Internacional vs Atlético Mineiro | DE (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do19.m3u8?md5=7EZpt_fxrEPNrt7DplgwZw&expires=1787440663
-
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[IndyCar] Freedom 250 Grand Prix of Washington, D.C. | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[IndyCar] Freedom 250 Grand Prix of Washington, D.C. | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do82.m3u8?md5=tND8fj8DZEqb2HrvEtEkWg&expires=1787440664
+https://cdn10.zohanayaan.com:1686/hls/do82.m3u8?md5=fwDVELbQC-y279TSIF48kg&expires=1787442313
 
