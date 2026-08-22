@@ -1,10 +1,19 @@
 #EXTM3U
 #EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Pittsburgh Steelers vs New York Jets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Pittsburgh Steelers vs New York Jets | EN (PLAY)
-https://cdn9.zohanayaan.com:1686/hls/do1.m3u8?md5=V6wmIDlB3OOkPEBUnaYg2w&expires=1787363269|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+https://cdn10.zohanayaan.com:1686/hls/do1.m3u8?md5=xkKnzDRWd-m68v0ZNpw3zg&expires=1787367500|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Jacksonville Jaguars vs Carolina Panthers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Jacksonville Jaguars vs Carolina Panthers | EN (PLAY)
-https://cdn5.zohanayaan.com:1686/hls/do2.m3u8?md5=bugupGaYLSALugN8DESX5A&expires=1787363271|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+https://cdn7.zohanayaan.com:1686/hls/do2.m3u8?md5=2u2tOGF79Ol7_mulTuiPxw&expires=1787367501|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[BKFC] BKFC Fight Night | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[BKFC] BKFC Fight Night | CA (PLAY)
-https://cdn8.zohanayaan.com:1686/hls/do33.m3u8?md5=zS78EGDyCFoVIM1nO9iN5g&expires=1787363272|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-chno="3" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Denver Broncos vs Green Bay Packers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Denver Broncos vs Green Bay Packers | EN (PLAY)
+https://cdn9.zohanayaan.com:1686/hls/do3.m3u8?md5=j_pTgjDiS49UABSlb2VG9Q&expires=1787367502|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[New Zealand NPC] Tasman vs Southland | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[New Zealand NPC] Tasman vs Southland | NZ (PLAY)
+https://cdn5.zohanayaan.com:1686/hls/do32.m3u8?md5=Oo0eQxpK0W35SSHyoQ5rFg&expires=1787367503|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[BKFC] BKFC Fight Night | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[BKFC] BKFC Fight Night | CA (PLAY)
+https://cdn10.zohanayaan.com:1686/hls/do33.m3u8?md5=cItAnfLiGq9MGlvQuXcgdQ&expires=1787367504|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tigres UANL vs Atlante | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tigres UANL vs Atlante | EN (PLAY)
+https://cdn3.zohanayaan.com:1686/hls/do82.m3u8?md5=dyVs6Hc8ghFJXoid8e7U8w&expires=1787367505|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
