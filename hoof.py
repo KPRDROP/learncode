@@ -1,7 +1,6 @@
 import asyncio
 import json
 import os
-import adblock
 from collections.abc import KeysView
 from functools import partial
 from typing import Any
@@ -70,7 +69,6 @@ async def pre_process(url: str, url_num: int) -> str | None:
         return
 
     # Handle different response structures
-    # If it's a list, get the first item
     if isinstance(api_data, list):
         if not api_data:
             log.warning(f"URL {url_num}) Empty list in response.")
@@ -186,44 +184,52 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
     # Log the structure for debugging
     log.debug(f"API Response type: {type(api_data)}")
-    if isinstance(api_data, list) and api_data:
-        log.debug(f"First item type: {type(api_data[0])}")
-        if isinstance(api_data[0], dict):
-            log.debug(f"First item keys: {api_data[0].keys()}")
-
+    
     # Handle different response structures
     events_list = []
-    if isinstance(api_data, list):
-        events_list = api_data
-    elif isinstance(api_data, dict):
-        # Check if it's a single event or has a data/events key
-        if "data" in api_data:
-            events_list = api_data["data"] if isinstance(api_data["data"], list) else [api_data["data"]]
+    
+    if isinstance(api_data, dict):
+        # Check for live events in the response
+        if "live" in api_data:
+            events_list = api_data["live"] if isinstance(api_data["live"], list) else []
+        elif "data" in api_data:
+            events_list = api_data["data"] if isinstance(api_data["data"], list) else []
         elif "events" in api_data:
-            events_list = api_data["events"] if isinstance(api_data["events"], list) else [api_data["events"]]
+            events_list = api_data["events"] if isinstance(api_data["events"], list) else []
         else:
+            # Maybe the entire dict is one event
             events_list = [api_data]
+    elif isinstance(api_data, list):
+        events_list = api_data
     else:
         log.warning(f"Unexpected API response type: {type(api_data)}")
         return events
+
+    if not events_list:
+        log.info("No events found in API response.")
+        return events
+
+    log.info(f"Found {len(events_list)} events in API response")
 
     for event_data in events_list:
         if not isinstance(event_data, dict):
             log.debug(f"Skipping non-dict item: {type(event_data)}")
             continue
             
-        # Skip if not live
-        status = event_data.get("Status", "")
+        # Check if event is live - support both "Status" and "status" keys
+        status = event_data.get("Status") or event_data.get("status", "")
+        
+        # Only process live events
         if status != "Live":
             continue
 
-        event_id = event_data.get("id")
+        event_id = str(event_data.get("id", ""))
         if not event_id:
             continue
 
-        match_name = event_data.get("Match", "Unknown Match")
-        sport = event_data.get("Sport", "Unknown Sport")
-        leagues = event_data.get("League", "Unknown League")
+        match_name = event_data.get("Match") or event_data.get("title") or event_data.get("name", "Unknown Match")
+        sport = event_data.get("Sport") or event_data.get("sport") or event_data.get("category", "Unknown Sport")
+        league = event_data.get("League") or event_data.get("league", "")
 
         # Create cache key
         cache_key = f"[{sport}] {match_name} ({TAG})"
@@ -233,15 +239,19 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         event_url = build_event_url(event_id)
 
-        events.append(
-            Event(
-                sport=sport,
-                name=match_name,
-                link=event_url,
-                league=league,
-            )
+        # Create Event object without league parameter
+        event = Event(
+            sport=sport,
+            name=match_name,
+            link=event_url,
         )
+        # Store league as an attribute if needed
+        if league:
+            event.league = league
+        
+        events.append(event)
 
+    log.info(f"Created {len(events)} Event objects for live events")
     return events
 
 
@@ -360,7 +370,7 @@ async def scrape(browser: Browser) -> None:
                         "tvg-id": tvg_id or "Live.Event.us",
                         "link": ev.link,
                         "sport": ev.sport,
-                        "league": ev.league if hasattr(ev, 'league') else "",
+                        "league": getattr(ev, 'league', ""),
                     }
 
                     cached_urls[key] = entry
