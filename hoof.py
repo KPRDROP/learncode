@@ -1,7 +1,6 @@
 import asyncio
 import json
 import os
-import adblock
 from collections.abc import KeysView
 from functools import partial
 from typing import Any
@@ -29,11 +28,11 @@ OUTPUT_TIVIMATE = "hoof_tivimate.m3u8"
 
 # Headers for m3u8 streams
 REFERER = "https://hoofoot.ru/"
-ORIGIN = "https://hoofoot.ru"
+ORIGIN = "https://hoofoot.ru/"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
 
 
-def build_wfty_url(live: bool = True) -> str:
+def build_api_url(live: bool = True) -> str:
     """Build the API URL for fetching events."""
     params = {
         "live": str(live).lower(),
@@ -60,7 +59,7 @@ async def pre_process(url: str, url_num: int) -> str | None:
         return
 
     try:
-        api_data: list[dict] = event_data.json()
+        api_data = event_data.json()
     except json.JSONDecodeError:
         log.warning(f"URL {url_num}) Invalid JSON response.")
         return
@@ -69,11 +68,18 @@ async def pre_process(url: str, url_num: int) -> str | None:
         log.warning(f"URL {url_num}) No API data found.")
         return
 
-    # Get the first event from the list
-    event = api_data[0] if isinstance(api_data, list) else api_data
-    
-    if not event:
-        log.warning(f"URL {url_num}) No event data found.")
+    # Handle different response structures
+    # If it's a list, get the first item
+    if isinstance(api_data, list):
+        if not api_data:
+            log.warning(f"URL {url_num}) Empty list in response.")
+            return
+        event = api_data[0]
+    else:
+        event = api_data
+
+    if not isinstance(event, dict):
+        log.warning(f"URL {url_num}) Unexpected data type: {type(event)}")
         return
 
     # Check if event has channels with valid stream URLs
@@ -84,11 +90,12 @@ async def pre_process(url: str, url_num: int) -> str | None:
 
     # Find the first channel with an ID
     for channel in channels:
-        channel_id = channel.get("id")
-        if channel_id:
-            stream_url = build_stream_url(channel_id)
-            log.info(f"URL {url_num}) Found stream: {stream_url}")
-            return stream_url
+        if isinstance(channel, dict):
+            channel_id = channel.get("id")
+            if channel_id:
+                stream_url = build_stream_url(channel_id)
+                log.info(f"URL {url_num}) Found stream: {stream_url}")
+                return stream_url
 
     log.warning(f"URL {url_num}) No valid channel ID found.")
     return
@@ -161,23 +168,52 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     """Fetch events from the API."""
     events: list[Event] = []
 
-    live_url = build_wfty_url(live=True)
+    live_url = build_api_url(live=True)
 
     if not (live_data := await network.request(live_url, log=log)):
         return events
 
     try:
-        api_data: list[dict[str, Any]] = live_data.json()
+        api_data = live_data.json()
     except json.JSONDecodeError:
         log.warning("Invalid JSON response from API.")
         return events
 
     if not api_data:
+        log.info("No data returned from API.")
         return events
 
-    for event_data in api_data:
+    # Log the structure for debugging
+    log.debug(f"API Response type: {type(api_data)}")
+    if isinstance(api_data, list) and api_data:
+        log.debug(f"First item type: {type(api_data[0])}")
+        if isinstance(api_data[0], dict):
+            log.debug(f"First item keys: {api_data[0].keys()}")
+
+    # Handle different response structures
+    events_list = []
+    if isinstance(api_data, list):
+        events_list = api_data
+    elif isinstance(api_data, dict):
+        # Check if it's a single event or has a data/events key
+        if "data" in api_data:
+            events_list = api_data["data"] if isinstance(api_data["data"], list) else [api_data["data"]]
+        elif "events" in api_data:
+            events_list = api_data["events"] if isinstance(api_data["events"], list) else [api_data["events"]]
+        else:
+            events_list = [api_data]
+    else:
+        log.warning(f"Unexpected API response type: {type(api_data)}")
+        return events
+
+    for event_data in events_list:
+        if not isinstance(event_data, dict):
+            log.debug(f"Skipping non-dict item: {type(event_data)}")
+            continue
+            
         # Skip if not live
-        if event_data.get("Status") != "Live":
+        status = event_data.get("Status", "")
+        if status != "Live":
             continue
 
         event_id = event_data.get("id")
@@ -217,6 +253,9 @@ def write_m3u8_files(events_data: dict[str, dict]) -> None:
     # Tivimate format (with headers)
     tivimate_lines = ["#EXTM3U"]
     
+    # Count valid streams
+    stream_count = 0
+    
     for key, data in events_data.items():
         if not data.get("source"):
             continue
@@ -237,17 +276,27 @@ def write_m3u8_files(events_data: dict[str, dict]) -> None:
         vlc_lines.append(f"#EXTINF:-1,{sport_part} - {name_part}")
         vlc_lines.append(stream_url)
         
-        # Tivimate format
+        # Tivimate format with encoded user agent
         encoded_ua = USER_AGENT.replace("%", "%25").replace(" ", "%20")
         tivimate_line = f"{stream_url}|referer={REFERER}|origin={ORIGIN}|user-agent={encoded_ua}"
         tivimate_lines.append(f"#EXTINF:-1,{sport_part} - {name_part}")
         tivimate_lines.append(tivimate_line)
+        stream_count += 1
+    
+    if stream_count == 0:
+        log.warning("No streams to write to m3u8 files.")
+        # Create empty files with just the header
+        with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+        with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+        return
     
     # Write VLC file
     try:
         with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
             f.write("\n".join(vlc_lines))
-        log.info(f"VLC playlist written to {OUTPUT_VLC} with {len(vlc_lines)-1} streams")
+        log.info(f"VLC playlist written to {OUTPUT_VLC} with {stream_count} streams")
     except Exception as e:
         log.error(f"Failed to write VLC playlist: {e}")
     
@@ -255,7 +304,7 @@ def write_m3u8_files(events_data: dict[str, dict]) -> None:
     try:
         with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
             f.write("\n".join(tivimate_lines))
-        log.info(f"Tivimate playlist written to {OUTPUT_TIVIMATE} with {len(tivimate_lines)-1} streams")
+        log.info(f"Tivimate playlist written to {OUTPUT_TIVIMATE} with {stream_count} streams")
     except Exception as e:
         log.error(f"Failed to write Tivimate playlist: {e}")
 
