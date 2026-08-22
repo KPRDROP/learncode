@@ -3,34 +3,29 @@
 #EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/nflnetwork-usa
 #EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/nflnetwork-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/e82dd56cc87ee6512330b912ecf2e1a5b811e58f799cc675c49baf5db97c10c0/1787367911/nflnetwork-usa.m3u8
+https://volder.timst.cfd/main/secure/fb27a200ab85ef1ff1bc23db453ec28adbf595f2bdee532f31f7c3ada0d90f66/1787373513/nflnetwork-usa.m3u8
 #EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Jacksonville Jaguars  vs Carolina Panthers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Jacksonville Jaguars vs Carolina Panthers
 #EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/espn-usa
 #EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/espn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/42ae500d319a5b14b1ff17fc301316095d4181dd8b3142f69cf7cf069886e187/1787367912/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[England - Premier League] Arsenal vs Coventry City (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="England - Premier League",[England - Premier League] Arsenal vs Coventry City
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/usanetwork-usa
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/usanetwork-usa
+https://volder.timst.cfd/main/secure/01a1efba92ab6b73f49a884e63395ad973dabb777bf5da3eb98ba0c9d550e033/1787373514/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Denver Broncos vs Green Bay Packers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Denver Broncos vs Green Bay Packers
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/nflnetwork-usa
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/nflnetwork-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/6450fa017bcff04c04f78633a2bee70cc99d38ce4a077a7b6d792451b1fa1371/1787367912/usanetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[France - Ligue 1] Olympique Marseille vs Strasbourg (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="France - Ligue 1",[France - Ligue 1] Olympique Marseille vs Strasbourg
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/beinsports-usa
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/beinsports-usa
+https://volder.timst.cfd/main/secure/711e5200dbfe7fc62847cafc8f161b5ae206f91e4e48cc458c8ac424d8e502c1/1787373514/nflnetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Liga MX] Tigres UANL vs Atlante (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Liga MX",[Liga MX] Tigres UANL vs Atlante
+#EXTVLCOPT:http-referrer=https://cdx-08192.website/embed/foxdeportes-usa
+#EXTVLCOPT:http-origin=https://cdx-08192.website/embed/foxdeportes-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/66ca272f79e1bf3c26623c717b9c5520923b7bc23b1624255dfc8358752af8e3/1787367913/beinsports-usa.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Spain - La Liga] Real Betis vs Real Sociedad (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spain - La Liga",[Spain - La Liga] Real Betis vs Real Sociedad
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/espndeportes-usa
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/espndeportes-usa
+https://volder.timst.cfd/main/secure/1b9e12073f38f301a13db60efca96a9486ca126453dbea87c50b545f76550d7d/1787373515/foxdeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Liga MX] León vs Monterrey (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Liga MX",[Liga MX] León vs Monterrey
+#EXTVLCOPT:http-referrer=https://cdx-08192.website/embed/tudn-usa
+#EXTVLCOPT:http-origin=https://cdx-08192.website/embed/tudn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/e786c2d07cf9b6a896037a9efd782b6d637c9e4ab16ac9cb3db8e583776ee1ea/1787367913/espndeportes-usa.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Saudi Arabia - Pro League] Al Quadisiya vs Al Ittihad (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2488.png" group-title="Saudi Arabia - Pro League",[Saudi Arabia - Pro League] Al Quadisiya vs Al Ittihad
-#EXTVLCOPT:http-referrer=https://cdx-08192.website/embed/foxsoccerplus-usa
-#EXTVLCOPT:http-origin=https://cdx-08192.website/embed/foxsoccerplus-usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/8bee6c5abcfa768394920227435753112b03390c35ef44d3c82aef9ad24ea47b/1787367924/foxsoccerplus-usa.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[BKFC Fight Night] Bryce Henry vs Carlos Trinidad (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="BKFC Fight Night",[BKFC Fight Night] Bryce Henry vs Carlos Trinidad
+https://volder.timst.cfd/main/secure/38bf5c2b5400bb861b4d1c4113308abcdfc92d17f7d7eae7fb98f039b8a76bae/1787373515/tudn-usa.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[BKFC Fight Night] Bryce Henry vs Carlos Trinidad (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="BKFC Fight Night",[BKFC Fight Night] Bryce Henry vs Carlos Trinidad
 #EXTVLCOPT:http-referrer=https://cdx-08192.website/embed/canalsport-pl
 #EXTVLCOPT:http-origin=https://cdx-08192.website/embed/canalsport-pl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/ec256428326289b08339b08519eeaee5eb75fba1aa7b9948cb71e0c8e58585a1/1787367935/canalsport-pl.m3u8
+https://volder.timst.cfd/main/secure/0e67ca9f553b54b3988948e81b7bae7c8fe830adc289ab9603d26c274a40888a/1787373516/canalsport-pl.m3u8
