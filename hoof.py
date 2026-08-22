@@ -223,7 +223,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         match_name = event_data.get("Match", "Unknown Match")
         sport = event_data.get("Sport", "Unknown Sport")
-        league = event_data.get("League", "Unknown League")
+        leagues = event_data.get("League", "Unknown League")
 
         # Create cache key
         cache_key = f"[{sport}] {match_name} ({TAG})"
