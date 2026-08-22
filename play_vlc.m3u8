@@ -3,35 +3,47 @@
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do6.m3u8?md5=Wxfqsba1IZo4SITskXeLLA&expires=1787399953
+https://cdn2.zohanayaan.com:1686/hls/do6.m3u8?md5=MzKGQWRSeUB3UDj-4VkWBA&expires=1787403041
 
 #EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Dutch Grand Prix | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Dutch Grand Prix | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do7.m3u8?md5=oAbyNQvX9IzFjDtgUxDNFA&expires=1787399954
+https://cdn10.zohanayaan.com:1686/hls/do7.m3u8?md5=y3VCr_IT-aM1mKn970Xxrw&expires=1787403042
 
 #EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Dutch Grand Prix | ES (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Dutch Grand Prix | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do29.m3u8?md5=SFgbmOzRDqlFmST7WQwuwg&expires=1787399955
+https://cdn9.zohanayaan.com:1686/hls/do29.m3u8?md5=D5VrnyO2N3RsOkALsPGmOw&expires=1787403043
 
 #EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Dutch Grand Prix | CA (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Dutch Grand Prix | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do35.m3u8?md5=Z7ZepPesE7VbNoiqJS4Ntw&expires=1787399957
+https://cdn8.zohanayaan.com:1686/hls/do35.m3u8?md5=s39_nrVagJq0GQy4t6Z7KQ&expires=1787403044
 
-#EXTINF:-1 tvg-chno="5" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Adelaide Crows vs GWS Giants | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Adelaide Crows vs GWS Giants | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Germany DFB Pokal] Wehen Wiesbaden vs Bayer Leverkusen | DE (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png" group-title="Live Events",[Germany DFB Pokal] Wehen Wiesbaden vs Bayer Leverkusen | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do82.m3u8?md5=kjr4orRWOEDfx3iA3olcxw&expires=1787399958
+https://cdn2.zohanayaan.com:1686/hls/do13.m3u8?md5=YqWpRaSDSa0I967VR2HcaA&expires=1787403045
 
-#EXTINF:-1 tvg-chno="6" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Geelong Cats vs Richmond Tigers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Geelong Cats vs Richmond Tigers | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Germany DFB Pokal] Energie Cottbus vs Augsburg | DE (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png" group-title="Live Events",[Germany DFB Pokal] Energie Cottbus vs Augsburg | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do83.m3u8?md5=GIEFe20OaH8BSYzpctLTiA&expires=1787399959
+https://cdn5.zohanayaan.com:1686/hls/do14.m3u8?md5=7v9HrIDux79qoiV0WgbVAg&expires=1787403046
+
+#EXTINF:-1 tvg-chno="7" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Adelaide Crows vs GWS Giants | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Adelaide Crows vs GWS Giants | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do82.m3u8?md5=BCbKU8R343waW4OyPftA9Q&expires=1787403047
+
+#EXTINF:-1 tvg-chno="8" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Geelong Cats vs Richmond Tigers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Geelong Cats vs Richmond Tigers | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/do83.m3u8?md5=ybZK5EBKXAiuP_-lHWKUMw&expires=1787403048
 
