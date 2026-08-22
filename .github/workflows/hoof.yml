@@ -31,9 +31,16 @@ jobs:
         playwright install chromium
         playwright install-deps
     
+    - name: Test API response
+      run: |
+        echo "Testing API response structure..."
+        curl -s "https://hoofoot.ru/api/events?live=true" | head -c 500 || echo "API call failed"
+    
     - name: Run hoofoot scraper
       run: |
         python hoof.py
+      env:
+        PYTHONUNBUFFERED: 1
     
     - name: Commit and push if changes
       run: |
