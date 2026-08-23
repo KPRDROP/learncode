@@ -1,6 +1,46 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[England Championship] West Bromwich Albion vs Burnley (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="England Championship",[England Championship] West Bromwich Albion vs Burnley
+#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Sky F1 UK 24/7 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Sky F1 UK 24/7
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/skysportsf1-uk
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/skysportsf1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/8f372b40f6550ca71459a6187f67635cbc383a4335d0f22fde958b48d892e9aa/1787503369/skysportsf1-uk.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Dazn F1 Spain 24/7 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Dazn F1 Spain 24/7
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/daznf1-es
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/daznf1-es
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/d00b7f6dc85060c901a72371a0e58fce40227a2eab9f3946d0341ad9f90438a6/1787503370/daznf1-es.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Sky 1 NZ 24/7 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Sky 1 NZ 24/7
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/skysport1-nz
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/skysport1-nz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/db1814c71b7c4ac2ff67e411dbb57deb17f82a8ba24a63fc08754e69198f7050/1787503370/skysport1-nz.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Apple TV (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Apple TV
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/apple-tv
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/apple-tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/494bdbbb71342ebc25b69e941a0bf69b3ff0fe2c12aed5e620f60409d1157f11/1787503370/apple-tv.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Heineken Dutch GP vs Sky f1 IT (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Heineken Dutch GP vs Sky f1 IT
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/skysportf1-it
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/skysportf1-it
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/b4a45de4005aef71fd9526f8d271992931b7efdd80029f6d7223d7afe606d464/1787503371/skysportf1-it.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Brighton & Hove Albion vs Aston Villa (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Brighton & Hove Albion vs Aston Villa
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/skysportspremierleague-uk
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/skysportspremierleague-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/80886310b11ded0d89f22dee013a109a3f1c0c8a2cf61ff2da18edef36a0bc46/1787503371/skysportspremierleague-uk.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Manchester City vs AFC Bournemouth (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Manchester City vs AFC Bournemouth
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/usanetwork-usa
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/usanetwork-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/bf1f5d72424fdd73de10330b6f9b1fe6ae79ccb4afecd609b01b46523679e7b4/1787503372/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Angers vs Lille (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Angers vs Lille
+#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/beinsports-usa
+#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/a4fe2d33649e9d57503ccd8c1e0f6906187120029094fb2af9243f7eaa15e454/1787503372/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[England Championship] West Bromwich Albion vs Burnley (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="England Championship",[England Championship] West Bromwich Albion vs Burnley
 #EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/skysportsmainevent-uk
 #EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/skysportsmainevent-uk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/b5ccb8ed7da9b3af7f4b7b825a17fdcdadd309fcd3b0ad524e4d57e7625eaec6/1787500463/skysportsmainevent-uk.m3u8
+https://volder.timst.cfd/main/secure/02c06a497478dabc1896c0966b2d280734a9ee59889a9ffb112fc0f7b6f5e9af/1787503373/skysportsmainevent-uk.m3u8
