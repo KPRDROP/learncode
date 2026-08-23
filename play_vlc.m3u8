@@ -1,79 +1,157 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[England Championship] West Bromwich Albion vs Burnley | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="Live Events",[England Championship] West Bromwich Albion vs Burnley | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[England Premier League] Brighton & Hove Albion vs Aston Villa | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[England Premier League] Brighton & Hove Albion vs Aston Villa | NZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do6.m3u8?md5=CN4c1d6hhFrY815gU0fSWA&expires=1787493604
+https://cdn10.zohanayaan.com:1686/hls/do4.m3u8?md5=Y_Olev4zBL2FTNkGNxTMOA&expires=1787496744
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Germany DFB Pokal] Greuther Fürth vs Bochum | DE (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png" group-title="Live Events",[Germany DFB Pokal] Greuther Fürth vs Bochum | DE (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[England Premier League] Brighton & Hove Albion vs Aston Villa | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[England Premier League] Brighton & Hove Albion vs Aston Villa | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do13.m3u8?md5=LvGJkwlzFtBscec7w5Vvzg&expires=1787493606
+https://cdn9.zohanayaan.com:1686/hls/do77.m3u8?md5=jjwThs9wMokcylorDoYCsQ&expires=1787496746
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Germany DFB Pokal] Jeddeloh vs Heidenheim | DE (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png" group-title="Live Events",[Germany DFB Pokal] Jeddeloh vs Heidenheim | DE (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Dutch Grand Prix | CA (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Dutch Grand Prix | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do14.m3u8?md5=VJPd4OY2QadAVG5-HKvBKA&expires=1787493607
+https://cdn7.zohanayaan.com:1686/hls/do5.m3u8?md5=Ww2T6CM2ZnK8a1mjEWubSw&expires=1787496747
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Switzerland Super League] Young Boys vs Vaduz | CH (PLAY)" tvg-logo="https://i.gyazo.com/ecd3368b394b6f5778be7023d4c564d6.png" group-title="Live Events",[Switzerland Super League] Young Boys vs Vaduz | CH (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Dutch Grand Prix | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Dutch Grand Prix | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do20.m3u8?md5=WNPKSkBq2coSMtOityRUFg&expires=1787493608
+https://cdn7.zohanayaan.com:1686/hls/do7.m3u8?md5=E4HYHTe9XV5Cwz_HZ6zx-Q&expires=1787496748
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Denmark Super Liga] AGF vs OB | DK (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/Danish-Superliga-logo.png" group-title="Live Events",[Denmark Super Liga] AGF vs OB | DK (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Dutch Grand Prix | ES (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Dutch Grand Prix | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do68.m3u8?md5=dTZAffESroNBbTuWKqDWcQ&expires=1787493610
+https://cdn10.zohanayaan.com:1686/hls/do29.m3u8?md5=hvT1SGWLL60XhGt0bhw4Kw&expires=1787496749
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Denmark Super Liga] SønderjyskE vs Nordsjælland | DK (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/Danish-Superliga-logo.png" group-title="Live Events",[Denmark Super Liga] SønderjyskE vs Nordsjælland | DK (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[England Championship] West Bromwich Albion vs Burnley | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="Live Events",[England Championship] West Bromwich Albion vs Burnley | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do69.m3u8?md5=h-vw7sy2BhP94GiBxMwBpA&expires=1787493611
+https://cdn8.zohanayaan.com:1686/hls/do6.m3u8?md5=q69PPF1m7oXut5zM3WxspA&expires=1787496750
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Denmark Super Liga] Midtjylland vs Randers | DK (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/Danish-Superliga-logo.png" group-title="Live Events",[Denmark Super Liga] Midtjylland vs Randers | DK (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[England Premier League] Manchester City vs AFC Bournemouth | NZ (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[England Premier League] Manchester City vs AFC Bournemouth | NZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do69.m3u8?md5=h-vw7sy2BhP94GiBxMwBpA&expires=1787493611
+https://cdn5.zohanayaan.com:1686/hls/do9.m3u8?md5=CxqCmEzNeMB85aU0cfkIaA&expires=1787496751
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Sweden Allsvenskan] Västerås SK vs Kalmar | SE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/16.png" group-title="Live Events",[Sweden Allsvenskan] Västerås SK vs Kalmar | SE (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[England Premier League] Manchester City vs AFC Bournemouth | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[England Premier League] Manchester City vs AFC Bournemouth | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/do71.m3u8?md5=yyet535gHUwxn6J-40RXiA&expires=1787493614
+https://cdn6.zohanayaan.com:1686/hls/do10.m3u8?md5=bGaHPzBcSRJvcmW8j0Grhg&expires=1787496752
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Sweden Allsvenskan] IFK Göteborg vs Elfsborg | SE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/16.png" group-title="Live Events",[Sweden Allsvenskan] IFK Göteborg vs Elfsborg | SE (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[England Premier League] Manchester City vs AFC Bournemouth | DE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[England Premier League] Manchester City vs AFC Bournemouth | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do74.m3u8?md5=_cvin7ctzzTL3GB0rmqGsQ&expires=1787493615
+https://cdn4.zohanayaan.com:1686/hls/do18.m3u8?md5=FXh6A3VDBnXZx77u4GA1aw&expires=1787496753
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Veikkausliiga] KuPS vs Mariehamn | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2022/01/Veikkausliiga-logo.png" group-title="Live Events",[Finland Veikkausliiga] KuPS vs Mariehamn | FI (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[England Premier League] Manchester City vs AFC Bournemouth | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[England Premier League] Manchester City vs AFC Bournemouth | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do79.m3u8?md5=kwQD2gJifioJA7VNFD8cNQ&expires=1787493616
+https://cdn7.zohanayaan.com:1686/hls/do78.m3u8?md5=v7XAB9zqvzjfGtM6eGUA-g&expires=1787496754
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Veikkausliiga] HJK vs Gnistan | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2022/01/Veikkausliiga-logo.png" group-title="Live Events",[Finland Veikkausliiga] HJK vs Gnistan | FI (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Germany DFB Pokal] Greuther Fürth vs Bochum | DE (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png" group-title="Live Events",[Germany DFB Pokal] Greuther Fürth vs Bochum | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do80.m3u8?md5=UQJXcNFHLB_zN6YcBv55pg&expires=1787493617
+https://cdn10.zohanayaan.com:1686/hls/do13.m3u8?md5=I37GPj8evSOvjiNj1GLr4g&expires=1787496755
 
-#EXTINF:-1 tvg-chno="12" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] West Coast Eagles vs Hawthorn Hawks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] West Coast Eagles vs Hawthorn Hawks | EN (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Germany DFB Pokal] Jeddeloh vs Heidenheim | DE (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/germany/1500x1500/dfb-pokal.368025c3.png" group-title="Live Events",[Germany DFB Pokal] Jeddeloh vs Heidenheim | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do82.m3u8?md5=FBatMmxNhLZJ-UcMIElhNQ&expires=1787493618
+https://cdn9.zohanayaan.com:1686/hls/do14.m3u8?md5=OUpAcDGAvaNjcMQOncd52A&expires=1787496757
 
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Netherlands Eredivisie] Go Ahead Eagles vs ADO Den Haag | NL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/11.png" group-title="Live Events",[Netherlands Eredivisie] Go Ahead Eagles vs ADO Den Haag | NL (PLAY)
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Netherlands Eredivisie] PSV vs Groningen | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/11.png" group-title="Live Events",[Netherlands Eredivisie] PSV vs Groningen | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do88.m3u8?md5=Zz8dnYyFD0tbqDirk2jxyQ&expires=1787493620
+https://cdn3.zohanayaan.com:1686/hls/do19.m3u8?md5=Et3Gv1MH0DpY9rgsLKWf-w&expires=1787496758
+
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Netherlands Eredivisie] PSV vs Groningen | NL (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/11.png" group-title="Live Events",[Netherlands Eredivisie] PSV vs Groningen | NL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/do88.m3u8?md5=N-28Ommf_VSe8eLoq6L_HQ&expires=1787496759
+
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Switzerland Super League] Young Boys vs Vaduz | CH (PLAY)" tvg-logo="https://i.gyazo.com/ecd3368b394b6f5778be7023d4c564d6.png" group-title="Live Events",[Switzerland Super League] Young Boys vs Vaduz | CH (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do20.m3u8?md5=gwF-H2bhfFLBjDlB0742TQ&expires=1787496760
+
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[France Ligue 1] Angers SCO vs Lille | EN (PLAY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="Live Events",[France Ligue 1] Angers SCO vs Lille | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do39.m3u8?md5=v6qNcNHZHSMMlnRfPHD-dQ&expires=1787496761
+
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[France Ligue 1] Angers SCO vs Lille | FR (PLAY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="Live Events",[France Ligue 1] Angers SCO vs Lille | FR (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/do50.m3u8?md5=-ibtGfbZDfvUwq8dUxz_YQ&expires=1787496762
+
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[Czech Republic 1. liga] Jablonec vs Baník Ostrava | CZ (PLAY)" tvg-logo="https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe4cde8ecaae94ebe64622_chance-liga-footballlogos-org.webp" group-title="Live Events",[Czech Republic 1. liga] Jablonec vs Baník Ostrava | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/do41.m3u8?md5=eyUo2epkvEA_3HWFGc0GTg&expires=1787496764
+
+#EXTINF:-1 tvg-chno="19" tvg-id="Soccer.Dummy.us" tvg-name="[Poland Ekstraklasa] Radomiak Radom vs Zagłębie Lubin | PL (PLAY)" tvg-logo="https://i.gyazo.com/362e31efdd0dad03b00858f4fb0901b5.png" group-title="Live Events",[Poland Ekstraklasa] Radomiak Radom vs Zagłębie Lubin | PL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/do60.m3u8?md5=btIZdxCSpdzG7Z_fSHTtag&expires=1787496765
+
+#EXTINF:-1 tvg-chno="20" tvg-id="Soccer.Dummy.us" tvg-name="[Denmark Super Liga] AGF vs OB | DK (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/Danish-Superliga-logo.png" group-title="Live Events",[Denmark Super Liga] AGF vs OB | DK (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do68.m3u8?md5=rgHUt7nVeSkROd1ZB0WrMg&expires=1787496766
+
+#EXTINF:-1 tvg-chno="21" tvg-id="Soccer.Dummy.us" tvg-name="[Denmark Super Liga] Midtjylland vs Randers | DK (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/Danish-Superliga-logo.png" group-title="Live Events",[Denmark Super Liga] Midtjylland vs Randers | DK (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/do69.m3u8?md5=dxE4_N3obF1fEAqMkLEKCw&expires=1787496767
+
+#EXTINF:-1 tvg-chno="22" tvg-id="Soccer.Dummy.us" tvg-name="[Sweden Allsvenskan] Västerås SK vs Kalmar | SE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/16.png" group-title="Live Events",[Sweden Allsvenskan] Västerås SK vs Kalmar | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/do71.m3u8?md5=BzmDZ9tgZvO4Be0yb7gJyg&expires=1787496768
+
+#EXTINF:-1 tvg-chno="23" tvg-id="Soccer.Dummy.us" tvg-name="[Sweden Allsvenskan] IFK Göteborg vs Elfsborg | SE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/16.png" group-title="Live Events",[Sweden Allsvenskan] IFK Göteborg vs Elfsborg | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/do74.m3u8?md5=et_UB0G4euXukoFzPtnreQ&expires=1787496769
+
+#EXTINF:-1 tvg-chno="24" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Veikkausliiga] KuPS vs Mariehamn | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2022/01/Veikkausliiga-logo.png" group-title="Live Events",[Finland Veikkausliiga] KuPS vs Mariehamn | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/do79.m3u8?md5=RJhacVWlIJygFe3lCfYg9Q&expires=1787496770
+
+#EXTINF:-1 tvg-chno="25" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Veikkausliiga] HJK vs Gnistan | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2022/01/Veikkausliiga-logo.png" group-title="Live Events",[Finland Veikkausliiga] HJK vs Gnistan | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/do80.m3u8?md5=aCYDz2z4a4YMlqcHswlFfw&expires=1787496771
+
+#EXTINF:-1 tvg-chno="26" tvg-id="Live.Event.us" tvg-name="[IndyCar] Freedom 250 Grand Prix of Washington, D.C. | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[IndyCar] Freedom 250 Grand Prix of Washington, D.C. | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/do81.m3u8?md5=klqWkNsJzqTCdZij1YCXLw&expires=1787496773
 
