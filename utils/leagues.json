@@ -335,7 +335,7 @@
       {
         "RACING": {
           "logo": null,
-          "aliases": []
+          "aliases": ["LA VUELTA A ESPAÑA", "MOTORSPORTS"]
         }
       }
     ],
@@ -1113,6 +1113,7 @@
             "DUTCH EERSTE DIVISIE",
             "DUTCH EERSTE EREDIVISIE",
             "DUTCH EREDIVISIE",
+            "DUTCH WOMEN EREDIVISIE",
             "NETHERLANDS EERSTE DIVISIE",
             "NETHERLANDS EREDIVISIE",
             "VRIENDENLOTERIJ EREDIVISIE"
@@ -1279,7 +1280,12 @@
       {
         "J1 LEAGUE": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2199.png",
-          "aliases": ["J.LEAGUE", "JAPANESE J.LEAGUE", "MEIJI YASUDA J1 LEAGUE"]
+          "aliases": [
+            "J.LEAGUE",
+            "JAPAN J LEAGUE",
+            "JAPANESE J.LEAGUE",
+            "MEIJI YASUDA J1 LEAGUE"
+          ]
         }
       },
       {
@@ -1298,7 +1304,7 @@
       {
         "K LEAGUE 1": {
           "logo": "https://i.gyazo.com/721eba6c954e2015d999ead7a0bd5c69.png",
-          "aliases": []
+          "aliases": ["SOUTH KOREA K LEAGUE"]
         }
       },
       {
@@ -1510,8 +1516,7 @@
             "ROMANIA SUPERLIGA",
             "ROMANIA – LIGA I",
             "ROMANIAN LIGA 1",
-            "ROMANIAN LIGA I",
-            "SUPERLIGA"
+            "ROMANIAN LIGA I"
           ]
         }
       },
@@ -1614,6 +1619,12 @@
         }
       },
       {
+        "MALAYSIA SUPER LEAGUE": {
+          "logo": "https://static.wikia.nocookie.net/logopedia/images/7/73/Malaysian_Super_League_%282023%29.svg/revision/latest/scale-to-width-down/150",
+          "aliases": ["LIGA SUPER MALAYSIA"]
+        }
+      },
+      {
         "MLS": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png",
           "aliases": [
@@ -1625,6 +1636,12 @@
             "MLS NEXT PRO",
             "USA/CANADA MAJOR LEAGUE SOCCER"
           ]
+        }
+      },
+      {
+        "MTN 8": {
+          "logo": "https://assets.football-logos.cc/logos/south-africa/1500x1500/mtn-8.40640b4e.png",
+          "aliases": ["MTN 8 CUP", "SOUTH AFRICA MTN8 CUP"]
         }
       },
       {
@@ -1672,6 +1689,7 @@
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png",
           "aliases": [
             "ENGLAND - PREMIER LEAGUE",
+            "ENGLAND PREMIER LEAGUE",
             "ENGLISH PREMIER LEAGUE",
             "EPL",
             "PREMIER LEAGUE SUMMER",
