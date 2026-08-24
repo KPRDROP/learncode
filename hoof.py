@@ -353,7 +353,7 @@ async def scrape(browser: Browser) -> None:
                         handler,
                         url_num=i,
                         timeout_return=(None, None),
-                        semaphore=network.PW_S,
+                        semaphore=network.HTTP_S,
                         log=log,
                         timeout=20,
                     )
