@@ -3,39 +3,9 @@
 #EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/fox-usa
 #EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/fox-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/818acafee2d5757477389b90d7d0c6ea0c28984a5e0439732935f078b8ebf8c5/1787546775/fox-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Elche vs Barcelona (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Elche vs Barcelona
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/espndeportes-usa
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/espndeportes-usa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/32d2ed6b609fb26eb9ec427f3e63a74cf3b18454c3ba8cea34170da5edfae9b4/1787546775/espndeportes-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] FC Porto vs Arouca (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] FC Porto vs Arouca
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/sporttv1-pt
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/sporttv1-pt
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/c982cf5c4235cee45c2a2c06ce670f8ba8a0f049abfe08e5314c626a21331993/1787546776/sporttv1-pt.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs Chicago Cubs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Seattle Mariners vs Chicago Cubs
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/mlb-mariners
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/mlb-mariners
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/db61da4acb2ed45ead0e99806b6480eae90ccf2683fc0ebf5672d04df2ecfdc8/1787546776/mlb-mariners.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs Minnesota Twins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Diego Padres vs Minnesota Twins
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/mlb-padres
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/mlb-padres
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/d9bc0b6250317c755d6e71ea72ee8d9562eb18c48ad3a703ffce37b6ebca2b32/1787546777/mlb-padres.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Los Angeles Dodgers vs Pittsburgh Pirates
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/mlb-dodgers
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/mlb-dodgers
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/752debf2fa79ac4e90710cbeeb3de81b7045589c790ee7de67fd7e4572b4f11b/1787546777/mlb-dodgers.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Arizona Diamondbacks vs Cincinnati Reds (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Arizona Diamondbacks vs Cincinnati Reds
-#EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/mlb-diamondbacks
-#EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/mlb-diamondbacks
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/5833d42a0dc9d5a63bceb3e839a68802a6a9d091eaf0c944a2c632f270b046fc/1787546778/mlb-diamondbacks.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Milwaukee Brewers vs Atlanta Braves
+https://volder.timst.cfd/main/secure/8a62ccf600544a16d6694a4e3646280f828f13fd500c4a31adb7aafd329e8395/1787552026/fox-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Milwaukee Brewers vs Atlanta Braves
 #EXTVLCOPT:http-referrer=https://epic.cdx-08192.website/embed/mlb-brewers
 #EXTVLCOPT:http-origin=https://epic.cdx-08192.website/embed/mlb-brewers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/f1bf817d2275f576673420fb5249eddad1745f8aeb5a6ff093c5ea04e3e9affc/1787546778/mlb-brewers.m3u8
+https://volder.timst.cfd/main/secure/bd6e4c95b9e7063efd72bf82c471daaae1e457b03d302f135e702c441f68a2e2/1787552027/mlb-brewers.m3u8
