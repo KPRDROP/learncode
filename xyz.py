@@ -23,7 +23,7 @@ SPORTS = [
     "WNBA",
     "NBA",
     "NHL",
-    "NFL": "nflembed",
+    "NFL",
 ]
 
 SPORT_URLS = {sport: urljoin(BASE_URL, sport.lower()) for sport in SPORTS}
@@ -34,7 +34,7 @@ API_URLS = [
         "baseball/mlb",
         "basketball/nba",
         "basketball/wnba",
-        "football/nfl",
+        "football/"nflembed",
         "hockey/nhl",
     ]
 ]
