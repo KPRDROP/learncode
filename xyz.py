@@ -34,7 +34,7 @@ API_URLS = [
         "baseball/mlb",
         "basketball/nba",
         "basketball/wnba",
-        "football/"nflembed",
+        "football/nflembed",
         "hockey/nhl",
     ]
 ]
