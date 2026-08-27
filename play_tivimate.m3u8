@@ -1,13 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Wrestling] AEW vs Dynamite | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Wrestling] AEW vs Dynamite | CA (PLAY)
-https://cdn10.zohanayaan.com:1686/hls/do2.m3u8?md5=8kMc5GNiS4h-91xUzkTZkQ&expires=1787796412|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="2" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Connecticut Sun vs Golden State Valkyries | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] Connecticut Sun vs Golden State Valkyries | CA (PLAY)
-https://cdn4.zohanayaan.com:1686/hls/do4.m3u8?md5=nmYYOSv_TK5q0kEQySXPMg&expires=1787796414|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Toluca vs Austin | ES (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Toluca vs Austin | ES (PLAY)
-https://cdn1.zohanayaan.com:1686/hls/do30.m3u8?md5=pJqbhqY9SgS5pi31UIAPTQ&expires=1787796415|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Toluca vs Austin | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Toluca vs Austin | EN (PLAY)
-https://cdn9.zohanayaan.com:1686/hls/do81.m3u8?md5=jK7keiQA8IX2aDgi2c3KYw&expires=1787796416|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[NRL] Melborne Storm vs BrisbaneBroncos | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Melborne Storm vs BrisbaneBroncos | EN (PLAY)
+https://cdn8.zohanayaan.com:1686/hls/do82.m3u8?md5=OGEH-S4TrRhSkbr1iyJD5w&expires=1787831146|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
