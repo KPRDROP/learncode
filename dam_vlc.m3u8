@@ -1,16 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Cape Verde vs. Guinea (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7a70acf5bc3faffd6fff52dbd102d51d-thumbnail.jpg" group-title="Basketball",[Basketball] Cape Verde vs. Guinea (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Jordan vs. Philippines (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5fbf09ad2970c67a1b7d269a12ad05d1-thumbnail.jpg" group-title="Basketball",[Basketball] Jordan vs. Philippines (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-asia/2026-08-28/jor-phl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-asia/2026-08-28/jor-phl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/fiba-asia/2026-08-28/jor-phl/playlist.m3u8?tk=zi4SiHghGWut9smVK5NHxA&e=1787973695
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Cape Verde vs. Guinea (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7a70acf5bc3faffd6fff52dbd102d51d-thumbnail.jpg" group-title="Basketball",[Basketball] Cape Verde vs. Guinea (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-africa/2026-08-28/cpv-gin
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-africa/2026-08-28/cpv-gin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-africa/2026-08-28/cpv-gin/playlist.m3u8?tk=vVIDzdcGCz48jKFJvn-Qcg&e=1787973575
-#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Georgia vs. Montenegro (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5755211b4c5f966cee5be363ba889f75-thumbnail.jpg" group-title="Basketball",[Basketball] Georgia vs. Montenegro (DAM)
+https://messi.damitv.st/live-hls/channel/fiba-africa/2026-08-28/cpv-gin/playlist.m3u8?tk=zi4SiHghGWut9smVK5NHxA&e=1787973695
+#EXTINF:-1 tvg-chno="3" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Georgia vs. Montenegro (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5755211b4c5f966cee5be363ba889f75-thumbnail.jpg" group-title="Basketball",[Basketball] Georgia vs. Montenegro (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-europe/2026-08-28/geo-mne
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-europe/2026-08-28/geo-mne
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-europe/2026-08-28/geo-mne/playlist.m3u8?tk=vVIDzdcGCz48jKFJvn-Qcg&e=1787973575
-#EXTINF:-1 tvg-chno="3" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Ukraine vs. Greece (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9d864c508b32f69eec77b459fc56eb3c-thumbnail.jpg" group-title="Basketball",[Basketball] Ukraine vs. Greece (DAM)
+https://messi.damitv.st/live-hls/channel/fiba-europe/2026-08-28/geo-mne/playlist.m3u8?tk=zi4SiHghGWut9smVK5NHxA&e=1787973695
+#EXTINF:-1 tvg-chno="4" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Ukraine vs. Greece (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9d864c508b32f69eec77b459fc56eb3c-thumbnail.jpg" group-title="Basketball",[Basketball] Ukraine vs. Greece (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-europe/2026-08-28/ukr-grc
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-europe/2026-08-28/ukr-grc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-europe/2026-08-28/ukr-grc/playlist.m3u8?tk=vVIDzdcGCz48jKFJvn-Qcg&e=1787973575
+https://messi.damitv.st/live-hls/channel/fiba-europe/2026-08-28/ukr-grc/playlist.m3u8?tk=zi4SiHghGWut9smVK5NHxA&e=1787973695
