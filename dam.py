@@ -4,7 +4,6 @@ from functools import partial
 from urllib.parse import urljoin, quote
 import os
 import asyncio
-import adblock
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
@@ -19,7 +18,7 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 API_FILE = Cache(f"{TAG}-api", exp=3_600)
 
 # Use environment variable or fallback to default
-BASE_URL = os.getenv("DAM_BASE_URL")
+BASE_URL = os.getenv("DAM_BASE_URL", "https://damitv.st")
 
 
 @dataclass(kw_only=True, slots=True)
@@ -52,23 +51,23 @@ async def process_event(stream_id: str, url_num: int) -> str | None:
     return m3u8
 
 
-async def get_events(
-    cached_urls: dict[str, dict[str, str | float]],
-) -> list[DAMIEvent]:
-    now = Time.clean(Time.now())
+async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAMIEvent]:
+    # Use Time.rn() instead of Time.clean(Time.now())
+    now = Time.rn()
 
     events: list[DAMIEvent] = []
 
-    if not (api_data := API_FILE.load(per_entry=False)):
+    if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
-        api_data = {"timestamp": now.timestamp()}
+        api_data = [{"timestamp": now.timestamp()}]
 
         if r := await network.request(
             urljoin(BASE_URL, "papi/api/streams"),
             log=log,
         ):
             api_data = r.json()
+            api_data[-1]["timestamp"] = now.timestamp()
 
         API_FILE.write(api_data)
 
@@ -100,7 +99,7 @@ async def get_events(
     except (TypeError, ValueError):
         future_days = 14.0
 
-    start_dt = now.delta(minutes=-(past_hours * 30))
+    start_dt = now.delta(minutes=-(past_hours * 60))
     end_dt = now.delta(minutes=(future_days * 24 * 60))
 
     log.info(
@@ -137,8 +136,12 @@ async def get_events(
             if stream_id.lower().startswith("dl-"):
                 continue
 
+            if stream_id.startswith("247") or sport.startswith("24/7"):
+                continue
+
             try:
-                event_dt = Time.from_ts(start_ts)
+                # Handle timestamp conversion similar to original
+                event_dt = Time.from_ts(int(f"{start_ts}"[:-3]) if isinstance(start_ts, (int, float)) and len(str(int(start_ts))) > 10 else start_ts)
             except (TypeError, ValueError, OverflowError):
                 log.warning(
                     "Invalid starts_at for %s: %r",
@@ -243,7 +246,7 @@ def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
 async def scrape() -> None:
     cached_urls = CACHE_FILE.load()
 
-    valid_urls = {k: v for k, v in cached_urls.items() if v["source"]}
+    valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
 
     valid_count = cached_count = len(valid_urls)
 
@@ -257,7 +260,6 @@ async def scrape() -> None:
         log.info(f"Processing {len(events)} new URL(s)")
 
         for i, ev in enumerate(events, start=1):
-
             handler = partial(
                 process_event,
                 stream_id=ev.stream_id,
@@ -267,7 +269,7 @@ async def scrape() -> None:
             source = await network.safe_process(
                 handler,
                 url_num=i,
-                semaphore=network.PW_S,
+                semaphore=network.HTTP_S,
                 log=log,
             )
 
