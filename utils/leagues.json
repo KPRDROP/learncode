@@ -30,7 +30,13 @@
       {
         "BASKETBALL": {
           "logo": "https://1000logos.net/wp-content/uploads/2024/04/Basketball-Emoji-1536x864.png",
-          "aliases": ["BALONCESTO", "CEBL", "THE BASKETBALL TOURNAMENT"]
+          "aliases": [
+            "BALONCESTO",
+            "BASKETBALL EUROBASKET QUALIFICATION",
+            "BASKETBALL WORLD CUP QUALIFICATION",
+            "CEBL",
+            "THE BASKETBALL TOURNAMENT"
+          ]
         }
       },
       {
@@ -116,6 +122,7 @@
           "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png",
           "aliases": [
             "BASEBALL (MLB)",
+            "MAJOR BASEBALL LEAGUE",
             "MAJOR LEAGUE BASEBALL",
             "MLB BASEBALL",
             "MLB PLAYOFFS"
@@ -235,8 +242,10 @@
         "FIGHTING": {
           "logo": null,
           "aliases": [
+            "BARE KNUCKLES",
             "COMBAT SPORTS",
             "ESPN KNOCKOUT",
+            "MIXED MARTIAL ARTS",
             "MMA",
             "MMA FIGHTING",
             "MMA ONE",
@@ -266,6 +275,8 @@
           "aliases": [
             "AEW",
             "AEW WRESTLING",
+            "PRO WRESTLING",
+            "PROFESSIONAL WRESTLING",
             "TNA WRESTLING",
             "WRESTLING (NXT)",
             "WWE",
@@ -335,7 +346,13 @@
       {
         "RACING": {
           "logo": null,
-          "aliases": ["LA VUELTA A ESPAÑA", "MOTORSPORTS"]
+          "aliases": [
+            "DIRTVISION",
+            "FLORACING",
+            "FORMULA ONE/TWO/TREE",
+            "LA VUELTA A ESPAÑA",
+            "MOTORSPORTS"
+          ]
         }
       }
     ],
@@ -1029,10 +1046,13 @@
           "aliases": [
             "CARABAO CUP",
             "EFL CUP",
+            "ENGLAND - LEAGUE CUP",
             "ENGLAND LEAGUE CUP",
+            "ENGLISH - LEAGUE CUP",
             "ENGLISH CARABAO CUP",
             "ENGLISH EFL CUP",
             "ENGLISH FOOTBALL LEAGUE CUP",
+            "ENGLISH LEAGUE CUP",
             "LEAGUE CUP"
           ]
         }
@@ -1101,6 +1121,12 @@
         }
       },
       {
+        "ENGLISH NATIONAL LEAGUE": {
+          "logo": "https://r2.thesportsdb.com/images/media/league/badge/5mq9v01752167973.png",
+          "aliases": ["NATIONAL LEAGUE CUP"]
+        }
+      },
+      {
         "ENGLISH NATIONAL LEAGUE CUP": {
           "logo": "https://gateshead-fc.com/wp-content/uploads/2024/09/nl-cup.png",
           "aliases": ["NATIONAL LEAGUE CUP"]
@@ -1157,6 +1183,12 @@
         "FIFA CLUB WORLD CUP": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1932.png",
           "aliases": ["FIFA CWC"]
+        }
+      },
+      {
+        "FIFA INTERCONTINENTAL CUP": {
+          "logo": "https://assets.football-logos.cc/logos/tournaments/700x700/fifa-intercontinental-cup--white.2f3d9a5d.png",
+          "aliases": []
         }
       },
       {
@@ -1402,6 +1434,7 @@
         "LIGA 1": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1813.png",
           "aliases": [
+            "COPA DE LA LIGA",
             "LIGA 1 DE FUTBOL PROFESIONAL",
             "LIGA 1 DE FÚTBOL PROFESIONAL",
             "LIGA 1 TE APUESTO",
@@ -1601,15 +1634,26 @@
           "aliases": [
             "FRANCE - LIGUE 1",
             "FRANCE LIGUE 1",
+            "FRANCE LIGUE ONE",
             "FRENCH LIGUE 1",
-            "LIGUE 1 FRANCE"
+            "FRENCH LIGUE ONE",
+            "LIGUE 1 FRANCE",
+            "LIGUE ONE"
           ]
         }
       },
       {
         "LIGUE 2": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/96.png",
-          "aliases": ["FRANCE LIGUE 2", "FRENCH LIGUE 2"]
+          "aliases": [
+            "FRANCE - LIGUE 2",
+            "FRANCE LIGUE 2",
+            "FRANCE LIGUE TWO",
+            "FRENCH LIGUE 2",
+            "FRENCH LIGUE TWO",
+            "LIGUE 2 FRANCE",
+            "LIGUE TWO"
+          ]
         }
       },
       {
@@ -2112,7 +2156,8 @@
             "UCL",
             "UCL QUALIFIER",
             "UCL QUALIFIERS",
-            "UCL QUALIFYING"
+            "UCL QUALIFYING",
+            "UEFA WOMEN'S CHAMPIONS LEAGUE QUALIFYING"
           ]
         }
       },
@@ -2175,6 +2220,12 @@
         }
       },
       {
+        "URUGUAY COPA": {
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/2/27/COPA_AUFURUGUAY.png",
+          "aliases": ["COPA AUF URUGUAY", "COPA URUGUAY"]
+        }
+      },
+      {
         "USL CHAMPIONSHIP": {
           "logo": "https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2292.png",
           "aliases": ["UNITED SOCCER LEAGUE CHAMPIONSHIP", "USLC"]
@@ -2183,7 +2234,11 @@
       {
         "USL CUP": {
           "logo": "https://i.gyazo.com/d4b236306f77980094ebd1488138d837.png",
-          "aliases": ["USL CUP SOCCER"]
+          "aliases": [
+            "USL CUP SOCCER",
+            "USL JAGERMEISTER CUP",
+            "USL JÄGERMEISTER CUP"
+          ]
         }
       },
       {
