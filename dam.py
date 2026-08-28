@@ -176,7 +176,7 @@ def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
         
         # Get sport from event name or use default
         sport = "Live Events"
-        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "Football", "Soccer", "Basketball", "Leagues Cup"]:
+        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "AFL", "American Football", "Combat Sports", "Tennis", "Motorsports", "Baseball", "Football", "Soccer", "Basketball", "Leagues Cup", "Criket", "Rugby", "24/7 Streams"]:
             if s in event_name:
                 sport = s
                 break
