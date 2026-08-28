@@ -2,7 +2,6 @@ import asyncio
 import re
 import os
 import json
-import adblock
 from collections.abc import KeysView
 from functools import partial
 from typing import Dict
@@ -142,11 +141,13 @@ async def process_event(
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
-    now = Time.clean(Time.now())
+    # Fix: Use Time.rn() which exists in your Time class
+    now = Time.rn()
 
     events: list[Event] = []
 
-     if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
+    # Fix: Use ts_index=-1 instead of index=-1
+    if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
         api_data = [{"timestamp": now.timestamp()}]
@@ -161,8 +162,9 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         API_FILE.write(api_data)
 
+    # Adjust time window for more events
     start_dt = now.delta(hours=-6)
-    end_dt = now.delta(minutes=2)
+    end_dt = now.delta(minutes=60)  # Increased from 2 to 60 minutes
 
     for event_group in api_data:
         if not all(
@@ -182,6 +184,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         sport, away, home, date, time, link = values
 
+        # Fix: Use tz_name parameter correctly
         event_dt = Time.from_str(f"{date} {time}", tz_name="UTC")
 
         if not start_dt <= event_dt <= end_dt:
@@ -215,7 +218,7 @@ async def scrape() -> None:
 
     log.info(f"Loaded {cached_count} event(s) from cache")
 
-    log.info('Scraping from "flyembed"')
+    log.info('Scraping from "https://flyembed.xyz"')
 
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
@@ -228,7 +231,7 @@ async def scrape() -> None:
             )
             
             try:
-                async with network.event_context(browser, stealth=False) as context:
+                async with network.event_context(browser) as context:
                     for i, ev in enumerate(events, start=1):
                         async with network.event_page(context) as page:
                             handler = partial(
