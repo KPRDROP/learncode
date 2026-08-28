@@ -5,7 +5,7 @@ from .config import Time
 
 
 class Cache:
-    now_ts: float = Time.now().timestamp()
+    now_ts: float = Time.rn().timestamp()
 
     def __init__(self, filename: str, exp: int | float) -> None:
         self.file = Path(__file__).parent.parent / "caches" / f"{filename.lower()}.json"
@@ -15,14 +15,12 @@ class Cache:
     def is_fresh(self, entry: dict) -> bool:
         ts: float | int = entry.get("timestamp", Time.default_8())
 
-        dt_ts = Time.clean(Time.from_ts(ts)).timestamp()
-
-        return self.now_ts - dt_ts < self.exp
+        return self.now_ts - ts < self.exp
 
     def load(
         self,
         per_entry: bool = True,
-        index: int | None = None,
+        ts_index: int | None = None,
     ) -> dict[str, dict[str, str | float]]:
 
         try:
@@ -34,14 +32,12 @@ class Cache:
             return {k: v for k, v in data.items() if self.is_fresh(v)}
 
         ts: float | int = (
-            data[index].get("timestamp", Time.default_8())
-            if index
+            data[ts_index].get("timestamp", Time.default_8())
+            if ts_index
             else data.get("timestamp", Time.default_8())
         )
 
-        dt_ts = Time.clean(Time.from_ts(ts)).timestamp()
-
-        return data if self.is_fresh({"timestamp": dt_ts}) else {}
+        return data if self.is_fresh({"timestamp": ts}) else {}
 
     def write(self, data: dict) -> None:
         self.file.parent.mkdir(parents=True, exist_ok=True)
