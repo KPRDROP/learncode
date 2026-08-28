@@ -18,7 +18,7 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 API_FILE = Cache(f"{TAG}-api", exp=3_600)
 
 # Use environment variable or fallback to default
-BASE_URL = os.getenv("DAM_BASE_URL", "https://damitv.st")
+BASE_URL = os.getenv("DAM_BASE_URL")
 
 
 @dataclass(kw_only=True, slots=True)
