@@ -5,7 +5,6 @@ from urllib.parse import urljoin, quote
 from pathlib import Path
 import os
 import asyncio
-import adblock
 
 from playwright.async_api import Browser, async_playwright
 
@@ -40,9 +39,8 @@ OUT_TIVI = Path("play_tivimate.m3u8")
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
-    # Use Time.now() which should exist in your utils
-    now = Time.now()
-    now = Time.clean(now)
+    # Use Time.rn() which exists in the Time class
+    now = Time.rn()
 
     if not (api_data := API_FILE.load(per_entry=False)):
         log.info("Refreshing API cache")
@@ -67,9 +65,9 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         "US": "EN",
     }
 
-    # Original time window from working code
-    start_dt = now.delta(hours=-3)
-    end_dt = now.delta(minutes=30)
+    # Expanded time window to catch more events
+    start_dt = now.delta(hours=-6)
+    end_dt = now.delta(hours=6)
 
     for info in api_data.get("matches", []):
         event_name, sport = info["matchstr"], info["league"]
@@ -91,7 +89,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
             Event(
                 sport=sport,
                 name=f"{event_name} | {lang}",
-                link=f"https://s1.kora.st/ch.php?id={event_num}",
+                link=f"https://s1.playfa.st/ch.php?id={event_num}",
                 timestamp=now.timestamp(),
             )
             for event_num, lang in event_urls.items()
