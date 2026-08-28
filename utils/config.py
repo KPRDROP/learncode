@@ -1,6 +1,5 @@
 import json
 import re
-import time as emit
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -32,8 +31,8 @@ class Time(datetime):
     TZ = ZONES["ET"]
 
     @classmethod
-    def now(cls) -> "Time":
-        return cls.fromtimestamp(emit.time(), tz=cls.TZ)
+    def rn(cls) -> "Time":
+        return cls.now(tz=cls.TZ).replace(second=0, microsecond=0)
 
     @classmethod
     def from_ts(cls, ts: int | float) -> "Time":
@@ -46,17 +45,11 @@ class Time(datetime):
     def delta(self, **kwargs) -> "Time":
         return self + timedelta(**kwargs)
 
-    def clean(self) -> "Time":
-        return self.__class__.fromtimestamp(
-            self.replace(second=0, microsecond=0).timestamp(),
-            tz=self.TZ,
-        )
-
     def to_tz(self, tzone: str) -> "Time":
         return self.__class__.fromtimestamp(self.timestamp(), tz=self.ZONES[tzone])
 
     @classmethod
-    def _to_class_tz(cls, dt: datetime) -> "Time":
+    def __to_class_tz(cls, dt: datetime) -> "Time":
         return cls.fromtimestamp(dt.timestamp(), tz=cls.TZ)
 
     @classmethod
@@ -66,7 +59,8 @@ class Time(datetime):
         fmt: str | None = None,
         tz_name: str | None = None,
     ) -> "Time":
-        tz: ZoneInfo = cls.ZONES.get(tz_name, cls.TZ)
+
+        tz = cls.ZONES[tz_name] if tz_name else cls.TZ
 
         if fmt:
             dt = datetime.strptime(s, fmt).replace(tzinfo=tz)
@@ -88,6 +82,7 @@ class Time(datetime):
                 "%Y-%m-%d %I:%M %p",
                 "%Y-%m-%d %H:%M %p",
                 "%Y-%m-%dT%H:%M:%S",
+                "%Y-%m-%dT%H:%M",
                 "%Y/%m/%d %H:%M",
                 "%Y/%m/%d %H:%M:%S",
                 "%m/%d/%Y %H:%M",
@@ -111,7 +106,7 @@ class Time(datetime):
             if not dt.tzinfo:
                 dt = dt.replace(tzinfo=tz)
 
-        return cls._to_class_tz(dt)
+        return cls.__to_class_tz(dt)
 
 
 class Leagues:
@@ -119,7 +114,7 @@ class Leagues:
 
     def __init__(self) -> None:
         self.data = json.loads(
-            (Path(__file__).parent / "leagues.json").read_text(encoding="utf-8")
+            (Path(__file__).parent / "sports.json").read_text(encoding="utf-8")
         )
 
     def teams(self, league: str) -> list[str]:
@@ -156,6 +151,8 @@ class Leagues:
             t1, t2 = pattern.split(event)[:2]
 
             return any(t in self.teams(league) for t in (t1.strip(), t2.strip()))
+
+        return False
 
     def get_tvg_info(
         self,
