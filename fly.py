@@ -146,7 +146,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
     events: list[Event] = []
 
-    if not (api_data := API_FILE.load(per_entry=False, index=-1)):
+     if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
         api_data = [{"timestamp": now.timestamp()}]
