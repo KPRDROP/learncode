@@ -1,6 +1,5 @@
 import asyncio
 import re
-import adblock
 from typing import Any
 from urllib.parse import urljoin, quote
 
@@ -28,13 +27,14 @@ SPORTS = [
 
 SPORT_URLS = {sport: urljoin(BASE_URL, sport.lower()) for sport in SPORTS}
 
+# Fixed NFL URL - was "nflembed" but should be "nfl"
 API_URLS = [
     urljoin("https://site.api.espn.com/apis/site/v2/sports/", f"{sport}/scoreboard")
     for sport in [
         "baseball/mlb",
         "basketball/nba",
         "basketball/wnba",
-        "football/nflembed",
+        "football/nfl",
         "hockey/nhl",
     ]
 ]
@@ -126,11 +126,13 @@ async def get_sports_map() -> dict[str, dict[str, dict[str, str]]]:
 
 
 async def get_events() -> dict[str, dict[str, str | float]]:
-    now = Time.clean(Time.now())
+    # Fixed: Changed from Time.clean(Time.now()) to Time.rn()
+    now = Time.rn()
 
     events = {}
 
-    if not (api_data := API_FILE.load(per_entry=False, index=-1)):
+    # Fixed: Changed index=-1 to ts_index=-1
+    if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
         api_data = await refresh_api_cache(now)
@@ -236,7 +238,7 @@ def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
 
 async def scrape() -> None:
     if cached_urls := CACHE_FILE.load():
-        urls.update({k: v for k, v in cached_urls.items() if v["source"]})
+        urls.update({k: v for k, v in cached_urls.items() if v.get("source")})
 
         log.info(f"Loaded {len(urls)} event(s) from cache")
 
@@ -249,11 +251,10 @@ async def scrape() -> None:
 
     urls.update(await get_events())
 
-    (
+    if new_urls := len(urls):
         log.info(f"Collected and cached {new_urls} event(s)")
-        if (new_urls := len(urls))
-        else log.info("No events found")
-    )
+    else:
+        log.info("No events found")
 
     CACHE_FILE.write(urls)
     
