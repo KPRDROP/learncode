@@ -18,7 +18,7 @@ CACHE_FILE = Cache(TAG, exp=10_800)
 API_FILE = Cache(f"{TAG}-api", exp=3_600)
 
 # Use environment variable or fallback to default
-BASE_URL = os.getenv("DAM_BASE_URL")
+BASE_URL = os.getenv("DAM_BASE_URL", "https://damitv.st")
 
 
 @dataclass(kw_only=True, slots=True)
@@ -52,24 +52,48 @@ async def process_event(stream_id: str, url_num: int) -> str | None:
 
 
 async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAMIEvent]:
-    # Use Time.rn() instead of Time.clean(Time.now())
     now = Time.rn()
 
     events: list[DAMIEvent] = []
 
-    if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
+    # Load API cache - handle both dict and list formats
+    api_data = API_FILE.load(per_entry=False)
+    
+    # If cache is empty or not a list, refresh it
+    if not api_data or not isinstance(api_data, list):
         log.info("Refreshing API cache")
 
-        api_data = [{"timestamp": now.timestamp()}]
+        api_data = []
 
         if r := await network.request(
             urljoin(BASE_URL, "papi/api/streams"),
             log=log,
         ):
             api_data = r.json()
-            api_data[-1]["timestamp"] = now.timestamp()
+            # Ensure api_data is a list and add timestamp
+            if isinstance(api_data, dict):
+                # If it's a dict with a 'streams' key, extract it
+                if "streams" in api_data:
+                    api_data = api_data.get("streams", [])
+                else:
+                    api_data = [api_data]
+            
+            # Add timestamp to the last item if it's a list
+            if isinstance(api_data, list) and api_data:
+                if isinstance(api_data[-1], dict):
+                    api_data[-1]["timestamp"] = now.timestamp()
+                else:
+                    # If last item isn't a dict, create a timestamp entry
+                    api_data.append({"timestamp": now.timestamp()})
+            else:
+                api_data = [{"timestamp": now.timestamp()}]
 
         API_FILE.write(api_data)
+
+    # Ensure api_data is a list
+    if not isinstance(api_data, list):
+        log.error(f"API data is not a list: {type(api_data)}")
+        return events
 
     # ---------------------------------------------------------------
     # Capture both live and upcoming events.
@@ -111,65 +135,74 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
         future_days,
     )
 
-    for stream_group in api_data.get("streams", []):
-        if stream_group.get("category") == "24/7-streams":
+    # Process events from the API data
+    for event in api_data:
+        # Skip timestamp entries
+        if "timestamp" in event and len(event) == 1:
+            continue
+            
+        values = [
+            event.get(x)
+            for x in (
+                "name",
+                "league",
+                "starts_at",
+                "id",
+            )
+        ]
+
+        if not all(values):
             continue
 
-        for event in stream_group.get("streams", []):
-            values = [
-                event.get(x)
-                for x in (
-                    "name",
-                    "league",
-                    "starts_at",
-                    "id",
-                )
-            ]
+        name, sport, start_ts, stream_id = values
 
-            if not all(values):
-                continue
+        stream_id = str(stream_id)
 
-            name, sport, start_ts, stream_id = values
+        if stream_id.lower().startswith("dl-"):
+            continue
 
-            stream_id = str(stream_id)
+        if stream_id.startswith("247") or (sport and sport.startswith("24/7")):
+            continue
 
-            if stream_id.lower().startswith("dl-"):
-                continue
-
-            if stream_id.startswith("247") or sport.startswith("24/7"):
-                continue
-
-            try:
-                # Handle timestamp conversion similar to original
-                event_dt = Time.from_ts(int(f"{start_ts}"[:-3]) if isinstance(start_ts, (int, float)) and len(str(int(start_ts))) > 10 else start_ts)
-            except (TypeError, ValueError, OverflowError):
-                log.warning(
-                    "Invalid starts_at for %s: %r",
-                    name,
-                    start_ts,
-                )
-                continue
-
-            key = f"[{sport}] {name} ({TAG})"
-
-            cached_event = cached_urls.get(key)
-
-            if cached_event and cached_event.get("source"):
-                continue
-
-            # Accept live/recent + upcoming events.
-            if not start_dt <= event_dt <= end_dt:
-                continue
-
-            events.append(
-                DAMIEvent(
-                    sport=sport,
-                    name=name,
-                    logo=event.get("poster"),
-                    stream_id=stream_id,
-                    timestamp=event_dt.timestamp(),
-                )
+        try:
+            # Convert timestamp - handle different formats
+            if isinstance(start_ts, (int, float)):
+                # If timestamp is in milliseconds, convert to seconds
+                if len(str(int(start_ts))) > 10:
+                    start_ts = int(start_ts) / 1000
+                event_dt = Time.from_ts(start_ts)
+            else:
+                # Try to parse as string
+                event_dt = Time.from_str(str(start_ts))
+        except (TypeError, ValueError, OverflowError) as e:
+            log.warning(
+                "Invalid starts_at for %s: %r (error: %s)",
+                name,
+                start_ts,
+                str(e),
             )
+            continue
+
+        key = f"[{sport}] {name} ({TAG})"
+
+        cached_event = cached_urls.get(key)
+
+        if cached_event and cached_event.get("source"):
+            continue
+
+        # Accept live/recent + upcoming events.
+        if not start_dt <= event_dt <= end_dt:
+            continue
+
+        events.append(
+            DAMIEvent(
+                sport=sport,
+                name=name,
+                logo=event.get("poster"),
+                stream_id=stream_id,
+                timestamp=event_dt.timestamp(),
+            )
+        )
 
     log.info(
         "Found %d eligible live/upcoming event(s)",
