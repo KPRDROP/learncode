@@ -1,12 +1,14 @@
+import asyncio
+import os
+
 from collections.abc import KeysView
 from dataclasses import dataclass
 from functools import partial
-from urllib.parse import urljoin, quote
 from typing import Any
-import os
-import asyncio
+from urllib.parse import urljoin, quote
 
 from utils import Cache, Event, Time, get_logger, leagues, network
+
 
 log = get_logger(__name__)
 
@@ -15,11 +17,24 @@ urls: dict[str, dict[str, str | float]] = {}
 TAG = "DAM"
 
 CACHE_FILE = Cache(TAG, exp=10_800)
-
 API_FILE = Cache(f"{TAG}-api", exp=28_800)
 
-# Use environment variable or fallback to default
+# BASE_URL is supplied by GitHub Actions Secrets/Variables.
 BASE_URL = os.getenv("DAM_BASE_URL")
+
+# User-Agent used in generated VLC/TiviMate playlists.
+USER_AGENT = os.getenv(
+    "DAM_USER_AGENT",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/151.0.0.0 Safari/537.36",
+)
+
+# Output files
+VLC_OUTPUT = "dam_vlc.m3u8"
+TIVIMATE_OUTPUT = "dam_tivimate.m3u8"
+
+GROUP_TITLE = "Live Events"
 
 
 @dataclass(kw_only=True, slots=True)
@@ -30,6 +45,14 @@ class DAMIEvent(Event):
 
 
 async def process_event(stream_id: str, url_num: int) -> str | None:
+    """
+    Extract the HLS/M3U8 URL for a DAM stream.
+    """
+
+    if not BASE_URL:
+        log.error("DAM_BASE_URL is not configured.")
+        return None
+
     if not (
         event_data := await network.request(
             urljoin(BASE_URL, f"papi/extract-url/{stream_id}"),
@@ -37,15 +60,24 @@ async def process_event(stream_id: str, url_num: int) -> str | None:
             log=log,
         )
     ):
-        return
+        return None
 
-    elif not (api_data := event_data.json()).get("success"):
-        log.warning(f"URL {url_num}) Unsuccessful Request: {api_data.get('error')}")
-        return
+    try:
+        api_data = event_data.json()
+    except Exception as exc:
+        log.warning(f"URL {url_num}) Invalid JSON response: {exc}")
+        return None
+
+    if not api_data.get("success"):
+        log.warning(
+            f"URL {url_num}) Unsuccessful Request: "
+            f"{api_data.get('error')}"
+        )
+        return None
 
     if not (m3u8 := api_data.get("hlsUrl", api_data.get("sdUrl"))):
         log.warning(f"URL {url_num}) No source found.")
-        return
+        return None
 
     log.info(f"URL {url_num}) Captured M3U8")
 
@@ -53,11 +85,15 @@ async def process_event(stream_id: str, url_num: int) -> str | None:
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
+    """
+    Retrieve today's DAM events and return only events that
+    are within the configured time window and are not cached.
+    """
+
     now = Time.rn()
 
     events: list[DAMIEvent] = []
 
-    # Load API cache with ts_index=-1 as in original
     if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
@@ -67,30 +103,25 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
             urljoin(BASE_URL, "papi/matches/all-today"),
             log=log,
         ):
-            api_data = r.json()
-            # Add timestamp to the last item
-            if api_data and isinstance(api_data, list):
-                api_data[-1]["timestamp"] = now.timestamp()
+            try:
+                response_data = r.json()
+
+                if isinstance(response_data, list):
+                    api_data = response_data
+
+                    if api_data:
+                        api_data[-1]["timestamp"] = now.timestamp()
+
+            except Exception as exc:
+                log.warning(f"Unable to parse API response: {exc}")
 
         API_FILE.write(api_data)
 
-    # Use 30-minute window as in original
+    # Keep the existing ±30 minute event window.
     start_dt = now.delta(minutes=-30)
     end_dt = now.delta(minutes=30)
 
-    log.info(
-        "Event window: %s -> %s (30 minutes before/after)",
-        start_dt,
-        end_dt,
-    )
-
-    # Process events using original field names
     for event in api_data:
-        # Skip timestamp entries
-        if isinstance(event, dict) and "timestamp" in event and len(event) == 1:
-            continue
-
-        # Use original field names: title, league, date, id
         if not all(
             values := [
                 event.get(x)
@@ -106,37 +137,31 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
 
         name, sport, start_ts, stream_id = values
 
-        stream_id = str(stream_id)
+        if not isinstance(stream_id, str):
+            continue
 
-        # Skip unwanted streams as in original
         if stream_id.lower().startswith("dl-"):
             continue
 
-        elif stream_id.startswith("247") or (sport and sport.startswith("24/7")):
+        if stream_id.startswith("247") or (
+            isinstance(sport, str) and sport.startswith("24/7")
+        ):
             continue
 
-        # Convert timestamp as in original
         try:
-            # Original uses: Time.from_ts(int(f"{start_ts}"[:-3]))
-            # This handles timestamps with milliseconds
             event_dt = Time.from_ts(int(f"{start_ts}"[:-3]))
-        except (TypeError, ValueError, OverflowError) as e:
+        except (ValueError, TypeError):
             log.warning(
-                "Invalid timestamp for %s: %r (error: %s)",
-                name,
-                start_ts,
-                str(e),
+                f"Invalid event timestamp for {name}: {start_ts}"
             )
             continue
 
         key = f"[{sport}] {name} ({TAG})"
 
-        # Skip if already cached as in original
         if key in cached_keys:
             continue
 
-        # Check if event is within the 30-minute window
-        elif not start_dt <= event_dt <= end_dt:
+        if not start_dt <= event_dt <= end_dt:
             continue
 
         events.append(
@@ -149,93 +174,156 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
             )
         )
 
-    log.info(
-        "Found %d eligible live event(s) within 30-minute window",
-        len(events),
-    )
-
     return events
 
 
-def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
-    """Generate VLC and TiviMate M3U8 files from events data."""
-    
-    vlc_filename = f"{TAG.lower()}_vlc.m3u8"
-    tivimate_filename = f"{TAG.lower()}_tivimate.m3u8"
-    
-    vlc_content = ['#EXTM3U']
-    tivimate_content = ['#EXTM3U']
-    
-    channel_counter = 1
-    
-    for event_name, event_info in events_data.items():
-        source_url = event_info.get("source")
-        
-        # Skip if no source URL
-        if not source_url:
+def write_playlists() -> None:
+    """
+    Generate the VLC and TiviMate M3U8 playlist files.
+
+    dam_vlc.m3u8:
+        Uses EXTVLCOPT headers.
+
+    dam_tivimate.m3u8:
+        Uses pipe-separated headers and a URL-encoded User-Agent.
+    """
+
+    log.info("Generating playlist files")
+
+    # URL-encode the complete User-Agent for TiviMate.
+    encoded_user_agent = quote(USER_AGENT, safe="")
+
+    vlc_lines: list[str] = ["#EXTM3U"]
+    tivimate_lines: list[str] = ["#EXTM3U"]
+
+    channel_number = 1
+
+    for key, entry in urls.items():
+        source = entry.get("source")
+
+        if not source:
             continue
-        
-        # Get sport from event name or use default
-        sport = "Live Events"
-        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "Football", "Soccer", "Basketball", "Leagues Cup"]:
-            if s in event_name:
-                sport = s
-                break
-        
-        tvg_id = event_info.get("tvg-id", "Live.Event.us")
-        logo = event_info.get("logo", "")
-        referer = event_info.get("refer", BASE_URL)
-        
-        # VLC format
-        vlc_entry = f'#EXTINF:-1 tvg-chno="{channel_counter}" tvg-id="{tvg_id}" tvg-name="{event_name}" tvg-logo="{logo}" group-title="{sport}",{event_name}'
-        vlc_content.append(vlc_entry)
-        vlc_content.append(f'#EXTVLCOPT:http-referrer={referer}')
-        vlc_content.append(f'#EXTVLCOPT:http-origin={referer}')
-        vlc_content.append('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0')
-        vlc_content.append(source_url)
-        
-        # TiviMate format (pipe-separated with encoded user agent)
-        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
-        encoded_user_agent = quote(user_agent, safe='')
-        
-        tivimate_entry = f'#EXTINF:-1 tvg-chno="{channel_counter}" tvg-id="{tvg_id}" tvg-name="{event_name}" tvg-logo="{logo}" group-title="{sport}",{event_name}'
-        tivimate_content.append(tivimate_entry)
-        tivimate_content.append(f'{source_url}|referer={referer}|origin={referer}|user-agent={encoded_user_agent}')
-        
-        channel_counter += 1
-    
-    # Write VLC file
-    try:
-        with open(vlc_filename, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(vlc_content))
-        log.info(f"Generated VLC M3U8 file: {vlc_filename}")
-    except Exception as e:
-        log.error(f"Error writing VLC M3U8 file: {e}")
-    
-    # Write TiviMate file
-    try:
-        with open(tivimate_filename, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(tivimate_content))
-        log.info(f"Generated TiviMate M3U8 file: {tivimate_filename}")
-    except Exception as e:
-        log.error(f"Error writing TiviMate M3U8 file: {e}")
+
+        source = str(source)
+
+        logo = entry.get("logo") or ""
+        tvg_id = entry.get("tvg-id") or "Live.Event.us"
+        refer = entry.get("refer") or BASE_URL
+
+        # Convert values to strings safely.
+        logo = str(logo)
+        tvg_id = str(tvg_id)
+        refer = str(refer)
+
+        # ---------------------------------------------------------
+        # VLC playlist
+        # ---------------------------------------------------------
+
+        vlc_lines.append(
+            f'#EXTINF:-1 '
+            f'tvg-chno="{channel_number}" '
+            f'tvg-id="{tvg_id}" '
+            f'tvg-name="{key}" '
+            f'tvg-logo="{logo}" '
+            f'group-title="{GROUP_TITLE}",'
+            f'{key}'
+        )
+
+        vlc_lines.append(
+            f"#EXTVLCOPT:http-referrer={refer}"
+        )
+
+        vlc_lines.append(
+            f"#EXTVLCOPT:http-origin={refer}"
+        )
+
+        vlc_lines.append(
+            f"#EXTVLCOPT:http-user-agent={USER_AGENT}"
+        )
+
+        vlc_lines.append(source)
+
+        # ---------------------------------------------------------
+        # TiviMate playlist
+        # ---------------------------------------------------------
+
+        tivimate_lines.append(
+            f'#EXTINF:-1 '
+            f'tvg-chno="{channel_number}" '
+            f'tvg-id="{tvg_id}" '
+            f'tvg-name="{key}" '
+            f'tvg-logo="{logo}" '
+            f'group-title="{GROUP_TITLE}",'
+            f'{key}'
+        )
+
+        tivimate_lines.append(
+            f"{source}"
+            f"|referer={refer}"
+            f"|origin={refer}"
+            f"|user-agent={encoded_user_agent}"
+        )
+
+        channel_number += 1
+
+    # Always write both files, even when there are currently no
+    # valid events. This prevents stale output files from remaining.
+    with open(VLC_OUTPUT, "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(vlc_lines) + "\n")
+
+    with open(
+        TIVIMATE_OUTPUT,
+        "w",
+        encoding="utf-8",
+        newline="\n",
+    ) as f:
+        f.write("\n".join(tivimate_lines) + "\n")
+
+    valid_entries = channel_number - 1
+
+    log.info(
+        f"Generated {VLC_OUTPUT} with {valid_entries} event(s)"
+    )
+
+    log.info(
+        f"Generated {TIVIMATE_OUTPUT} with {valid_entries} event(s)"
+    )
 
 
 async def scrape() -> None:
+    """
+    Main scraper process.
+    """
+
+    if not BASE_URL:
+        raise RuntimeError(
+            "DAM_BASE_URL environment variable is not configured."
+        )
+
     cached_urls = CACHE_FILE.load()
 
-    valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
+    valid_urls = {
+        k: v
+        for k, v in cached_urls.items()
+        if v.get("source")
+    }
 
     valid_count = cached_count = len(valid_urls)
 
     urls.update(valid_urls)
 
-    log.info(f"Loaded {cached_count} event(s) from cache")
+    log.info(
+        f"Loaded {cached_count} event(s) from cache"
+    )
 
-    log.info(f'Scraping from "{BASE_URL}"')
+    log.info(
+        f'Scraping from "{BASE_URL}"'
+    )
 
     if events := await get_events(cached_urls.keys()):
-        log.info(f"Processing {len(events)} new URL(s)")
+        log.info(
+            f"Processing {len(events)} new URL(s)"
+        )
 
         for i, ev in enumerate(events, start=1):
             handler = partial(
@@ -247,18 +335,24 @@ async def scrape() -> None:
             source = await network.safe_process(
                 handler,
                 url_num=i,
-                semaphore=network.PW_S,
+                semaphore=network.HTTP_S,
                 log=log,
             )
 
             key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+            tvg_id, logo = leagues.get_tvg_info(
+                ev.sport,
+                ev.name,
+            )
 
             entry = {
                 "source": source,
                 "logo": ev.logo or logo,
-                "refer": urljoin(BASE_URL, f"embed/?id={ev.stream_id}"),
+                "refer": urljoin(
+                    BASE_URL,
+                    f"embed/?id={ev.stream_id}",
+                ),
                 "timestamp": ev.timestamp,
                 "tvg-id": tvg_id or "Live.Event.us",
             }
@@ -268,30 +362,35 @@ async def scrape() -> None:
             if source:
                 valid_count += 1
                 urls[key] = entry
-                log.info(f"Added event: {key}")
 
-        log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
+        log.info(
+            f"Collected and cached "
+            f"{valid_count - cached_count} new event(s)"
+        )
 
     else:
         log.info("No new events found")
 
+    # Save scraper cache.
     CACHE_FILE.write(cached_urls)
-    
-    # Generate M3U8 files after scraping
-    generate_m3u8_files(urls)
+
+    # Generate the two playlist files from all currently valid
+    # cached events plus any newly discovered events.
+    write_playlists()
 
 
 async def main() -> None:
-    """Main entry point for the script."""
-    try:
-        log.info(f"Starting {TAG} updater...")
-        log.info(f"Using BASE_URL: {BASE_URL}")
-        await scrape()
-        log.info(f"{TAG} updater completed successfully")
-    except Exception as e:
-        log.error(f"{TAG} updater failed: {e}")
-        raise
+    """
+    Application entry point.
+    """
+
+    log.info("Starting DAM updater")
+
+    await scrape()
+
+    log.info("DAM updater finished successfully")
 
 
 if __name__ == "__main__":
     asyncio.run(main())
+```
