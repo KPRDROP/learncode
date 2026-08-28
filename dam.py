@@ -56,34 +56,39 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
 
     events: list[DAMIEvent] = []
 
-    # Load API cache - handle both dict and list formats
+    # Load API cache
     api_data = API_FILE.load(per_entry=False)
     
-    # If cache is empty or not a list, refresh it
+    # If cache is empty or not valid, refresh it
     if not api_data or not isinstance(api_data, list):
         log.info("Refreshing API cache")
-
-        api_data = []
 
         if r := await network.request(
             urljoin(BASE_URL, "papi/api/streams"),
             log=log,
         ):
             api_data = r.json()
-            # Ensure api_data is a list and add timestamp
+            
+            # Handle different response formats
             if isinstance(api_data, dict):
-                # If it's a dict with a 'streams' key, extract it
+                # If it has a 'streams' key, use that
                 if "streams" in api_data:
                     api_data = api_data.get("streams", [])
                 else:
+                    # If it's a dict with other data, wrap it
                     api_data = [api_data]
             
-            # Add timestamp to the last item if it's a list
-            if isinstance(api_data, list) and api_data:
+            # Ensure it's a list
+            if not isinstance(api_data, list):
+                log.error(f"Unexpected API response format: {type(api_data)}")
+                return events
+            
+            # Add timestamp to the list
+            if api_data:
+                # If last item is a dict, add timestamp to it
                 if isinstance(api_data[-1], dict):
                     api_data[-1]["timestamp"] = now.timestamp()
                 else:
-                    # If last item isn't a dict, create a timestamp entry
                     api_data.append({"timestamp": now.timestamp()})
             else:
                 api_data = [{"timestamp": now.timestamp()}]
@@ -95,88 +100,66 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
         log.error(f"API data is not a list: {type(api_data)}")
         return events
 
-    # ---------------------------------------------------------------
-    # Capture both live and upcoming events.
-    #
-    # Default:
-    #   24 hours before now
-    #   14 days after now
-    #
-    # Override with:
-    #   DAM_EVENT_PAST_HOURS
-    #   DAM_EVENT_FUTURE_DAYS
-    # ---------------------------------------------------------------
-
-    try:
-        past_hours = max(
-            0.0,
-            float(os.getenv("DAM_EVENT_PAST_HOURS", "24")),
-        )
-    except (TypeError, ValueError):
-        past_hours = 24.0
-
-    try:
-        future_days = max(
-            0.0,
-            float(os.getenv("DAM_EVENT_FUTURE_DAYS", "14")),
-        )
-    except (TypeError, ValueError):
-        future_days = 14.0
-
-    start_dt = now.delta(minutes=-(past_hours * 60))
-    end_dt = now.delta(minutes=(future_days * 24 * 60))
+    # Use the original 30-minute window from working code
+    start_dt = now.delta(minutes=-30)
+    end_dt = now.delta(minutes=30)
 
     log.info(
-        "Event window: %s -> %s "
-        "(past=%.1fh, future=%.1fd)",
+        "Event window: %s -> %s (30 minutes before/after)",
         start_dt,
         end_dt,
-        past_hours,
-        future_days,
     )
 
     # Process events from the API data
     for event in api_data:
         # Skip timestamp entries
-        if "timestamp" in event and len(event) == 1:
+        if isinstance(event, dict) and "timestamp" in event and len(event) == 1:
             continue
             
-        values = [
-            event.get(x)
-            for x in (
-                "name",
-                "league",
-                "starts_at",
-                "id",
-            )
-        ]
-
-        if not all(values):
+        # Get event data - handle different field names
+        name = event.get("name") or event.get("title")
+        sport = event.get("league") or event.get("sport")
+        start_ts = event.get("starts_at") or event.get("date") or event.get("start")
+        stream_id = event.get("id") or event.get("stream_id")
+        
+        # Skip if missing required fields
+        if not all([name, sport, start_ts, stream_id]):
             continue
-
-        name, sport, start_ts, stream_id = values
 
         stream_id = str(stream_id)
 
+        # Skip unwanted streams
         if stream_id.lower().startswith("dl-"):
             continue
 
-        if stream_id.startswith("247") or (sport and sport.startswith("24/7")):
+        if stream_id.startswith("247") or (sport and "24/7" in str(sport).lower()):
             continue
 
         try:
             # Convert timestamp - handle different formats
             if isinstance(start_ts, (int, float)):
-                # If timestamp is in milliseconds, convert to seconds
+                # If timestamp is in milliseconds (13 digits), convert to seconds
                 if len(str(int(start_ts))) > 10:
                     start_ts = int(start_ts) / 1000
                 event_dt = Time.from_ts(start_ts)
-            else:
+            elif isinstance(start_ts, str):
                 # Try to parse as string
-                event_dt = Time.from_str(str(start_ts))
+                try:
+                    # Try as numeric string
+                    num_ts = float(start_ts)
+                    if len(str(int(num_ts))) > 10:
+                        num_ts = num_ts / 1000
+                    event_dt = Time.from_ts(num_ts)
+                except (ValueError, TypeError):
+                    # Try as date string
+                    event_dt = Time.from_str(start_ts)
+            else:
+                log.warning(f"Unsupported timestamp format for {name}: {type(start_ts)}")
+                continue
+                
         except (TypeError, ValueError, OverflowError) as e:
             log.warning(
-                "Invalid starts_at for %s: %r (error: %s)",
+                "Invalid timestamp for %s: %r (error: %s)",
                 name,
                 start_ts,
                 str(e),
@@ -185,27 +168,31 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
 
         key = f"[{sport}] {name} ({TAG})"
 
+        # Check if already cached with source
         cached_event = cached_urls.get(key)
-
         if cached_event and cached_event.get("source"):
             continue
 
-        # Accept live/recent + upcoming events.
+        # Check if event is within the 30-minute window
         if not start_dt <= event_dt <= end_dt:
+            log.debug(f"Event outside window: {name} at {event_dt}")
             continue
+
+        # Get poster/logo
+        logo = event.get("poster") or event.get("logo") or event.get("image")
 
         events.append(
             DAMIEvent(
                 sport=sport,
                 name=name,
-                logo=event.get("poster"),
+                logo=logo,
                 stream_id=stream_id,
                 timestamp=event_dt.timestamp(),
             )
         )
 
     log.info(
-        "Found %d eligible live/upcoming event(s)",
+        "Found %d eligible live event(s) within 30-minute window",
         len(events),
     )
 
@@ -232,30 +219,30 @@ def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
         
         # Get sport from event name or use default
         sport = "Live Events"
-        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "Football", "Soccer", "Leagues Cup"]:
+        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "Football", "Soccer", "Basketball", "Leagues Cup"]:
             if s in event_name:
                 sport = s
                 break
         
         tvg_id = event_info.get("tvg-id", "Live.Event.us")
         logo = event_info.get("logo", "")
-        referer = BASE_URL
+        referer = event_info.get("refer", BASE_URL)
         
         # VLC format
         vlc_entry = f'#EXTINF:-1 tvg-chno="{channel_counter}" tvg-id="{tvg_id}" tvg-name="{event_name}" tvg-logo="{logo}" group-title="{sport}",{event_name}'
         vlc_content.append(vlc_entry)
-        vlc_content.append(f'#EXTVLCOPT:http-referrer={referer}/')
+        vlc_content.append(f'#EXTVLCOPT:http-referrer={referer}')
         vlc_content.append(f'#EXTVLCOPT:http-origin={referer}')
-        vlc_content.append('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36')
+        vlc_content.append('#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0')
         vlc_content.append(source_url)
         
         # TiviMate format (pipe-separated with encoded user agent)
-        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
         encoded_user_agent = quote(user_agent, safe='')
         
         tivimate_entry = f'#EXTINF:-1 tvg-chno="{channel_counter}" tvg-id="{tvg_id}" tvg-name="{event_name}" tvg-logo="{logo}" group-title="{sport}",{event_name}'
         tivimate_content.append(tivimate_entry)
-        tivimate_content.append(f'{source_url}|referer={referer}/|origin={referer}|user-agent={encoded_user_agent}')
+        tivimate_content.append(f'{source_url}|referer={referer}|origin={referer}|user-agent={encoded_user_agent}')
         
         channel_counter += 1
     
@@ -322,8 +309,8 @@ async def scrape() -> None:
 
             if source:
                 valid_count += 1
-
                 urls[key] = entry
+                log.info(f"Added event: {key}")
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
