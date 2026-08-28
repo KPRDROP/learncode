@@ -52,56 +52,29 @@ async def process_event(stream_id: str, url_num: int) -> str | None:
     return m3u8
 
 
-async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAMIEvent]:
+async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
     now = Time.rn()
 
     events: list[DAMIEvent] = []
 
-    # Load API cache
-    api_data = API_FILE.load(per_entry=False)
-    
-    # If cache is empty or not valid, refresh it
-    if not api_data or not isinstance(api_data, list):
+    # Load API cache with ts_index=-1 as in original
+    if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
+        api_data = [{"timestamp": now.timestamp()}]
+
         if r := await network.request(
-            urljoin(BASE_URL, "papi/api/streams"),
+            urljoin(BASE_URL, "papi/matches/all-today"),
             log=log,
         ):
             api_data = r.json()
-            
-            # Handle different response formats
-            if isinstance(api_data, dict):
-                # If it has a 'streams' key, use that
-                if "streams" in api_data:
-                    api_data = api_data.get("streams", [])
-                else:
-                    # If it's a dict with other data, wrap it
-                    api_data = [api_data]
-            
-            # Ensure it's a list
-            if not isinstance(api_data, list):
-                log.error(f"Unexpected API response format: {type(api_data)}")
-                return events
-            
-            # Add timestamp to the list
-            if api_data:
-                # If last item is a dict, add timestamp to it
-                if isinstance(api_data[-1], dict):
-                    api_data[-1]["timestamp"] = now.timestamp()
-                else:
-                    api_data.append({"timestamp": now.timestamp()})
-            else:
-                api_data = [{"timestamp": now.timestamp()}]
+            # Add timestamp to the last item
+            if api_data and isinstance(api_data, list):
+                api_data[-1]["timestamp"] = now.timestamp()
 
         API_FILE.write(api_data)
 
-    # Ensure api_data is a list
-    if not isinstance(api_data, list):
-        log.error(f"API data is not a list: {type(api_data)}")
-        return events
-
-    # Use the original 30-minute window from working code
+    # Use 30-minute window as in original
     start_dt = now.delta(minutes=-30)
     end_dt = now.delta(minutes=30)
 
@@ -111,53 +84,42 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
         end_dt,
     )
 
-    # Process events from the API data
+    # Process events using original field names
     for event in api_data:
         # Skip timestamp entries
         if isinstance(event, dict) and "timestamp" in event and len(event) == 1:
             continue
-            
-        # Get event data - handle different field names
-        name = event.get("name") or event.get("title")
-        sport = event.get("league") or event.get("sport")
-        start_ts = event.get("starts_at") or event.get("date") or event.get("start")
-        stream_id = event.get("id") or event.get("stream_id")
-        
-        # Skip if missing required fields
-        if not all([name, sport, start_ts, stream_id]):
+
+        # Use original field names: title, league, date, id
+        if not all(
+            values := [
+                event.get(x)
+                for x in (
+                    "title",
+                    "league",
+                    "date",
+                    "id",
+                )
+            ]
+        ):
             continue
+
+        name, sport, start_ts, stream_id = values
 
         stream_id = str(stream_id)
 
-        # Skip unwanted streams
+        # Skip unwanted streams as in original
         if stream_id.lower().startswith("dl-"):
             continue
 
-        if stream_id.startswith("247") or (sport and "24/7" in str(sport).lower()):
+        elif stream_id.startswith("247") or (sport and sport.startswith("24/7")):
             continue
 
+        # Convert timestamp as in original
         try:
-            # Convert timestamp - handle different formats
-            if isinstance(start_ts, (int, float)):
-                # If timestamp is in milliseconds (13 digits), convert to seconds
-                if len(str(int(start_ts))) > 10:
-                    start_ts = int(start_ts) / 1000
-                event_dt = Time.from_ts(start_ts)
-            elif isinstance(start_ts, str):
-                # Try to parse as string
-                try:
-                    # Try as numeric string
-                    num_ts = float(start_ts)
-                    if len(str(int(num_ts))) > 10:
-                        num_ts = num_ts / 1000
-                    event_dt = Time.from_ts(num_ts)
-                except (ValueError, TypeError):
-                    # Try as date string
-                    event_dt = Time.from_str(start_ts)
-            else:
-                log.warning(f"Unsupported timestamp format for {name}: {type(start_ts)}")
-                continue
-                
+            # Original uses: Time.from_ts(int(f"{start_ts}"[:-3]))
+            # This handles timestamps with milliseconds
+            event_dt = Time.from_ts(int(f"{start_ts}"[:-3]))
         except (TypeError, ValueError, OverflowError) as e:
             log.warning(
                 "Invalid timestamp for %s: %r (error: %s)",
@@ -169,24 +131,19 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
 
         key = f"[{sport}] {name} ({TAG})"
 
-        # Check if already cached with source
-        cached_event = cached_urls.get(key)
-        if cached_event and cached_event.get("source"):
+        # Skip if already cached as in original
+        if key in cached_keys:
             continue
 
         # Check if event is within the 30-minute window
-        if not start_dt <= event_dt <= end_dt:
-            log.debug(f"Event outside window: {name} at {event_dt}")
+        elif not start_dt <= event_dt <= end_dt:
             continue
-
-        # Get poster/logo
-        logo = event.get("poster") or event.get("logo") or event.get("image")
 
         events.append(
             DAMIEvent(
                 sport=sport,
                 name=name,
-                logo=logo,
+                logo=event.get("poster"),
                 stream_id=stream_id,
                 timestamp=event_dt.timestamp(),
             )
@@ -277,7 +234,7 @@ async def scrape() -> None:
 
     log.info(f'Scraping from "{BASE_URL}"')
 
-    if events := await get_events(cached_urls):
+    if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
         for i, ev in enumerate(events, start=1):
