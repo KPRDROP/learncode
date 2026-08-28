@@ -73,9 +73,9 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
 
         API_FILE.write(api_data)
 
-    # Use 30-minute window as in original
-    start_dt = now.delta(minutes=-30)
-    end_dt = now.delta(minutes=30)
+    # Use 30-minute window
+    start_dt = now.delta(minutes=-120)
+    end_dt = now.delta(minutes=60)
 
     log.info(
         "Event window: %s -> %s (30 minutes before/after)",
