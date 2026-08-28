@@ -102,7 +102,7 @@ async def get_events(cached_urls: dict[str, dict[str, str | float]]) -> list[DAM
         return events
 
     # Use the original 30-minute window from working code
-    start_dt = now.delta(minutes=-60)
+    start_dt = now.delta(minutes=-30)
     end_dt = now.delta(minutes=30)
 
     log.info(
