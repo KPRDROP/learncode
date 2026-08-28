@@ -163,7 +163,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         API_FILE.write(api_data)
 
     # Adjust time window for more events
-    start_dt = now.delta(hours=-6)
+    start_dt = now.delta(hours=-8)
     end_dt = now.delta(minutes=60)  # Increased from 2 to 60 minutes
 
     for event_group in api_data:
