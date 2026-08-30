@@ -185,7 +185,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         sport, away, home, date, time, link = values
 
         # Fix: Use tz_name parameter correctly
-        event_dt = Time.from_str(f"{date} {time}", tz_name="UTC")
+        event_dt = Time.from_str(f"{date.replace(' ','')} {time}", tz_name="GMT")
 
         if not start_dt <= event_dt <= end_dt:
             continue
