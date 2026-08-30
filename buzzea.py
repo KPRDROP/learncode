@@ -4,7 +4,7 @@ from functools import partial
 from urllib.parse import urljoin
 from pathlib import Path
 import os
-import adblock
+import asyncio
 
 from playwright.async_api import Browser
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
@@ -22,7 +22,7 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 HTML_FILE = Cache(f"{TAG}-html", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL")
+BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://exposestrat.com")
 
 # Constants for output files
 REFERER = "https://exposestrat.com/"
@@ -76,9 +76,11 @@ async def refresh_html_cache(now: Time) -> dict[str, dict[str, str | float]]:
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
-    now = Time.clean(Time.now())
+    # Fixed: Changed from Time.clean(Time.now()) to Time.rn()
+    now = Time.rn()
 
-    if not (events := HTML_FILE.load()):
+    # Fixed: Changed from HTML_FILE.load() to HTML_FILE.load(per_entry=False, ts_index=-1)
+    if not (events := HTML_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing HTML cache")
 
         events = await refresh_html_cache(now)
@@ -141,30 +143,35 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
         tivimate_lines.append("")  # Empty line for separation
     
     # Write VLC file
-    vlc_output_path = Path("buzzea_vlc.m3u8")
-    with open(vlc_output_path, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        f.write("\n".join(vlc_lines))
+    try:
+        vlc_output_path = Path(f"{TAG.lower()}_vlc.m3u8")
+        with open(vlc_output_path, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            f.write("\n".join(vlc_lines))
+        log.info(f"Generated {vlc_output_path} with {valid_streams} streams")
+    except Exception as e:
+        log.error(f"Error writing VLC M3U8 file: {e}")
     
     # Write TiviMate file
-    tivimate_output_path = Path("buzzea_tivimate.m3u8")
-    with open(tivimate_output_path, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        f.write("\n".join(tivimate_lines))
-    
-    log.info(f"Generated {vlc_output_path} with {valid_streams} streams")
-    log.info(f"Generated {tivimate_output_path} with {valid_streams} streams")
+    try:
+        tivimate_output_path = Path(f"{TAG.lower()}_tivimate.m3u8")
+        with open(tivimate_output_path, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+            f.write("\n".join(tivimate_lines))
+        log.info(f"Generated {tivimate_output_path} with {valid_streams} streams")
+    except Exception as e:
+        log.error(f"Error writing TiviMate M3U8 file: {e}")
     
     # Verify files were created
     if vlc_output_path.exists():
-        log.info(f" {vlc_output_path} exists ({vlc_output_path.stat().st_size} bytes)")
+        log.info(f"✓ {vlc_output_path} exists ({vlc_output_path.stat().st_size} bytes)")
     else:
-        log.error(f" {vlc_output_path} was not created!")
+        log.error(f"✗ {vlc_output_path} was not created!")
         
     if tivimate_output_path.exists():
-        log.info(f" {tivimate_output_path} exists ({tivimate_output_path.stat().st_size} bytes)")
+        log.info(f"✓ {tivimate_output_path} exists ({tivimate_output_path.stat().st_size} bytes)")
     else:
-        log.error(f" {tivimate_output_path} was not created!")
+        log.error(f"✗ {tivimate_output_path} was not created!")
 
 
 async def scrape(browser: Browser) -> None:
@@ -234,30 +241,25 @@ async def scrape(browser: Browser) -> None:
 
 async def main() -> None:
     """Main function to run the updater"""
-    log.info("Starting BUZZEA updater...")
-    
-    # Browser is passed from the calling script
-    # This function is meant to be called with a browser instance
-    # If called directly, it will raise an error
-    
-    # Note: This is a placeholder - the actual browser is passed from the main script
-    # that imports and calls this function
-    log.info("BUZZEA updater needs to be called with a browser instance")
-    
-    # The actual scraping is done in the scrape() function which requires a browser
-    # This main function is just for consistency with other modules
-
-
-if __name__ == "__main__":
-    import asyncio
-    from playwright.async_api import async_playwright
-    
-    async def run():
+    try:
+        log.info(f"Starting {TAG} updater...")
+        log.info(f"Using BASE_URL: {BASE_URL}")
+        
+        # Initialize playwright and run scraper
+        from playwright.async_api import async_playwright
+        
         async with async_playwright() as p:
             browser = await p.chromium.launch(headless=True)
             try:
                 await scrape(browser)
+                log.info(f"{TAG} updater completed successfully")
             finally:
                 await browser.close()
-    
-    asyncio.run(run())
+                
+    except Exception as e:
+        log.error(f"{TAG} updater failed: {e}")
+        raise
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
