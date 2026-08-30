@@ -1,26 +1,41 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Cricket.Dummy.us" tvg-name="[Cricket] 2nd Test - England vs. Pakistan (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9850be85a2f794d2de9f780e7dba1385-thumbnail.jpg" group-title="Live Events",[Cricket] 2nd Test - England vs. Pakistan (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cricket/2026-08-30/eng-pak
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cricket/2026-08-30/eng-pak
+#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs. Washington Nationals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2d92612490a910ad935ec94127d0ba41-thumbnail.jpg" group-title="MLB",[MLB] Miami Marlins vs. Washington Nationals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-30/mia-wsh
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-30/mia-wsh
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cricket/2026-08-30/eng-pak/playlist.m3u8?tk=wsFgxuuk4HdsPRt0cysslA&e=1788133127
-#EXTINF:-1 tvg-chno="2" tvg-id="Darts.Dummy.us" tvg-name="[Darts] Hungarian Darts Trophy | Day 3 - Afternoon Session (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc95a728710d04a9889239cfbc7ec835-thumbnail.jpg" group-title="Live Events",[Darts] Hungarian Darts Trophy | Day 3 - Afternoon Session (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=hungarian-darts-trophy--day-3---afternoon-session
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=hungarian-darts-trophy--day-3---afternoon-session
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-30/mia-wsh/playlist.m3u8?tk=KGWqkYWMbf2zXhey_yizgw&e=1788150334
+#EXTINF:-1 tvg-chno="2" tvg-id="Darts.Dummy.us" tvg-name="[Darts] Hungarian Darts Trophy | Day 3 - Evening Session (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc95a728710d04a9889239cfbc7ec835-thumbnail.jpg" group-title="Live Events",[Darts] Hungarian Darts Trophy | Day 3 - Evening Session (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=hungarian-darts-trophy--day-3---evening-session
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=hungarian-darts-trophy--day-3---evening-session
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/hungarian-darts-trophy--day-3---afternoon-session/playlist.m3u8?tk=wsFgxuuk4HdsPRt0cysslA&e=1788133127
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] 1. FC Magdeburg vs. Holstein Kiel (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f7bfbf320beeacffc36da79c54e9900d-thumbnail.jpg" group-title="Football",[Football] 1. FC Magdeburg vs. Holstein Kiel (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=2-bundesliga/2026-08-30/fcm-ksv
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=2-bundesliga/2026-08-30/fcm-ksv
+https://messi.damitv.st/live-hls/channel/hungarian-darts-trophy--day-3---evening-session/playlist.m3u8?tk=KGWqkYWMbf2zXhey_yizgw&e=1788150334
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Real Madrid vs. Málaga (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bd89fdb7a228904658b33994fa4a78cf-thumbnail.jpg" group-title="Live Events",[La Liga] Real Madrid vs. Málaga (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-08-30/rma-mcf
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-08-30/rma-mcf
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/2-bundesliga/2026-08-30/fcm-ksv/playlist.m3u8?tk=wsFgxuuk4HdsPRt0cysslA&e=1788133127
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] St. Pauli vs. Kaiserslautern (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/955455a5bab16ef58d412f8ba7d729ce-thumbnail.jpg" group-title="Football",[Football] St. Pauli vs. Kaiserslautern (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=2-bundesliga/2026-08-30/stp-fck
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=2-bundesliga/2026-08-30/stp-fck
+https://messi.damitv.st/live-hls/channel/laliga/2026-08-30/rma-mcf/playlist.m3u8?tk=KGWqkYWMbf2zXhey_yizgw&e=1788150334
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Ligue 1] Stade Rennais vs. Le Mans (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2fe6d3fb0b248cc0dd85d6a775bf0973-thumbnail.jpg" group-title="Live Events",[Ligue 1] Stade Rennais vs. Le Mans (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ligue1/2026-08-30/ren-mns
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ligue1/2026-08-30/ren-mns
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/2-bundesliga/2026-08-30/stp-fck/playlist.m3u8?tk=wsFgxuuk4HdsPRt0cysslA&e=1788133127
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] SV Darmstadt 98 vs. Hannover 96 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/75a16aede857baf3634e665da513e923-thumbnail.jpg" group-title="Football",[Football] SV Darmstadt 98 vs. Hannover 96 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=2-bundesliga/2026-08-30/svd-h96
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=2-bundesliga/2026-08-30/svd-h96
+https://messi.damitv.st/live-hls/channel/ligue1/2026-08-30/ren-mns/playlist.m3u8?tk=KGWqkYWMbf2zXhey_yizgw&e=1788150334
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Bundesliga] FC Augsburg vs. Schalke 04 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/616ab0a8d58e80fc69350c9987f360ba-thumbnail.jpg" group-title="Live Events",[Bundesliga] FC Augsburg vs. Schalke 04 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=bundesliga/2026-08-30/fca-s04
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=bundesliga/2026-08-30/fca-s04
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/2-bundesliga/2026-08-30/svd-h96/playlist.m3u8?tk=wsFgxuuk4HdsPRt0cysslA&e=1788133127
+https://messi.damitv.st/live-hls/channel/bundesliga/2026-08-30/fca-s04/playlist.m3u8?tk=KIIvM16-3khKAZyyI0YQTQ&e=1788150335
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Manchester United vs. Ipswich Town (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2fc0306c8e258ed574dd5464fd4b0a36-thumbnail.jpg" group-title="Live Events",[Premier League] Manchester United vs. Ipswich Town (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=pl/2026-08-30/mun-ips
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=pl/2026-08-30/mun-ips
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/pl/2026-08-30/mun-ips/playlist.m3u8?tk=KIIvM16-3khKAZyyI0YQTQ&e=1788150335
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Napoli vs. Como (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/58ec48eeb4914fd6182d70bd2cdd375d-thumbnail.jpg" group-title="Live Events",[Serie A] Napoli vs. Como (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-08-30/nap-como
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-08-30/nap-como
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/seriea/2026-08-30/nap-como/playlist.m3u8?tk=KIIvM16-3khKAZyyI0YQTQ&e=1788150335
+#EXTINF:-1 tvg-chno="8" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[AEW] AEW All In: London (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/76e36061c5851cfbf1d7bb1cd45487b9-thumbnail.jpg" group-title="Live Events",[AEW] AEW All In: London (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=aew-all-in-2026
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=aew-all-in-2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/aew-all-in-2026/playlist.m3u8?tk=KIIvM16-3khKAZyyI0YQTQ&e=1788150335
