@@ -1,6 +1,61 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Lecce vs Roma (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Lecce vs Roma
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Arsenal vs Aston Villa (USA Network) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Arsenal vs Aston Villa (USA Network)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/usanetwork-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/usanetwork-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/036eb20e2e111b31df20a9883b86ba39334f4fa71da6c696ad87941114d104e4/1788219706/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Arsenal vs Aston Villa (sky main event) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Arsenal vs Aston Villa (sky main event)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportsmainevent-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportsmainevent-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/c9d7bc63c54d68eba1bc78c4ebc434df88d1e01958c5d0047cc5ebb2f015ee48/1788219708/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Arsenal vs Aston Villa (sky 8 nz) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Arsenal vs Aston Villa (sky 8 nz)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysport8-nz
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysport8-nz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/deee91e8bdf1e1cb247a6476b45365e2515e8f66ae4f3809caa5e6645c373eae/1788219709/skysport8-nz.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Spain - La Liga] Osasuna vs Getafe (espn deportes) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spain - La Liga",[Spain - La Liga] Osasuna vs Getafe (espn deportes)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/33002a96b2d09f65e1833947b60f54b8e7e113cfb6208c42e5caf967e80d181e/1788219709/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Spain - La Liga] Osasuna vs Getafe (premier 1 eng) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spain - La Liga",[Spain - La Liga] Osasuna vs Getafe (premier 1 eng)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/2709e89eee8dd4c8949f82177d530ff6f3f173847f2e2af0499c77f19533c6c1/1788219710/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Spain - La Liga] Barcelona vs Rayo Vallecano (dazn laliga) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spain - La Liga",[Spain - La Liga] Barcelona vs Rayo Vallecano (dazn laliga)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/daznlaliga-es
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/daznlaliga-es
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/9820a6df01e0c9e0fda1821326df8c878145bc428f8eddb769ca3f4973c3474e/1788219711/daznlaliga-es.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Spain - La Liga] Barcelona vs Rayo Vallecano (premier 1 eng) (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spain - La Liga",[Spain - La Liga] Barcelona vs Rayo Vallecano (premier 1 eng)
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/d9b6e3c27fd0f3663eb424202bc9bc5f3fd9a8a4792755402357eec9bc181ffb/1788219712/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Lecce vs Roma (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Lecce vs Roma
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/cbssportsgolazo-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/cbssportsgolazo-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/e47c517219cb89823a22032a703c74f07046ddf997b923c23d6615f47752a13c/1788199685/cbssportsgolazo-usa.m3u8
+https://hdesx.cdx-08192.website/main/secure/7d314205428935332285cdb8df5f705fcf7c97c00e650e738e7cfef88e977537/1788219713/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Atalanta vs Bologna (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Atalanta vs Bologna
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/a2171b41e18782c00bc1b041d41aa80d13524b676a587a8a9981a1f63344dbd9/1788219714/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Benfica vs Estoril (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Benfica vs Estoril
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/sportdigitalfussball-de
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/sportdigitalfussball-de
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/147d513a683fc2bb03facb305538e252c4b94f9cc8ba6d8a7d16cda2b063e947/1788219714/sportdigitalfussball-de.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Sporting Braga vs Vitória Guimarães (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Sporting Braga vs Vitória Guimarães
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/sporttv1-pt
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/sporttv1-pt
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/5381fe4d2d61286aefa8cd71112ba45d1ed031b742a246225b5b23b3c3c7eeb3/1788219715/sporttv1-pt.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Atlanta Braves vs San Francisco Giants (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Atlanta Braves vs San Francisco Giants
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-giants
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-giants
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/3a11eef5922d4ddd028b444c7fd95401eb39a7757cf062cff5e51f9c1965b052/1788219716/mlb-giants.m3u8
