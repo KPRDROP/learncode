@@ -1,1 +1,41 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Lithuania vs. Bosnia and Herzegovina (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ee1425856a56936f0190ee8b0d2a68ce-thumbnail.jpg" group-title="Basketball",[Basketball] Lithuania vs. Bosnia and Herzegovina (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ltu-bih
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ltu-bih
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/fiba-european-qualifiers/2026-08-31/ltu-bih/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Greece vs. Spain (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9c5b4ff244e9ac544060760e5d27e9be-thumbnail.jpg" group-title="Basketball",[Basketball] Greece vs. Spain (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-europe/2026-08-31/grc-spa
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-europe/2026-08-31/grc-spa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/fiba-europe/2026-08-31/grc-spa/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
+#EXTINF:-1 tvg-chno="3" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Italy vs. Serbia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3b9f70b0e859d077dfe1dbee81b0e7db-thumbnail.jpg" group-title="Basketball",[Basketball] Italy vs. Serbia (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ita-srb
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ita-srb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/fiba-european-qualifiers/2026-08-31/ita-srb/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Lecce vs. AS Roma (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4efe281086085962c4ad7a8cce93f2a2-thumbnail.jpg" group-title="Live Events",[Serie A] Lecce vs. AS Roma (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-08-31/lec-roma
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-08-31/lec-roma
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/seriea/2026-08-31/lec-roma/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] Djurgården vs. Mjällby AIF (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1dfef9364f5d5ff1b21ec40b6be57bd6-thumbnail.jpg" group-title="Live Events",[Allsvenskan] Djurgården vs. Mjällby AIF (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/dju-mja
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/dju-mja
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/swedish-allsvenskan/2026-08-31/dju-mja/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] GAIS vs. IF Brommapojkarna (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/02d5f189a79fd14c7795a01489546b4e-thumbnail.jpg" group-title="Live Events",[Allsvenskan] GAIS vs. IF Brommapojkarna (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/gais-bro
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/gais-bro
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/swedish-allsvenskan/2026-08-31/gais-bro/playlist.m3u8?tk=e6wbkV4RH6kEIun02Z4oPA&e=1788238586
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] IK Sirius vs. Malmö FF (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/de0b86d87f659db75bd3086e9fb3e5d2-thumbnail.jpg" group-title="Live Events",[Allsvenskan] IK Sirius vs. Malmö FF (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/sir-mal
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/sir-mal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/swedish-allsvenskan/2026-08-31/sir-mal/playlist.m3u8?tk=e6wbkV4RH6kEIun02Z4oPA&e=1788238586
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Osasuna vs. Getafe (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc15b5d4310b7f610965d3a961de12c0-thumbnail.jpg" group-title="Live Events",[La Liga] Osasuna vs. Getafe (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-08-31/osa-get
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-08-31/osa-get
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/laliga/2026-08-31/osa-get/playlist.m3u8?tk=e6wbkV4RH6kEIun02Z4oPA&e=1788238586
