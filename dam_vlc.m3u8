@@ -1,41 +1,41 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Lithuania vs. Bosnia and Herzegovina (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ee1425856a56936f0190ee8b0d2a68ce-thumbnail.jpg" group-title="Basketball",[Basketball] Lithuania vs. Bosnia and Herzegovina (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ltu-bih
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ltu-bih
+#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs. Atlanta Braves (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d68c152bd94576836fa89b9a72993fa3-thumbnail.jpg" group-title="MLB",[MLB] San Francisco Giants vs. Atlanta Braves (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/sf-atl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/sf-atl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-european-qualifiers/2026-08-31/ltu-bih/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
-#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Greece vs. Spain (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9c5b4ff244e9ac544060760e5d27e9be-thumbnail.jpg" group-title="Basketball",[Basketball] Greece vs. Spain (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-europe/2026-08-31/grc-spa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-europe/2026-08-31/grc-spa
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/sf-atl/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Mets vs. Tampa Bay Rays (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ce64f2c5afe53cf57fefe5b55bb4fb98-thumbnail.jpg" group-title="MLB",[MLB] New York Mets vs. Tampa Bay Rays (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/nym-tb
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/nym-tb
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-europe/2026-08-31/grc-spa/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
-#EXTINF:-1 tvg-chno="3" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Italy vs. Serbia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3b9f70b0e859d077dfe1dbee81b0e7db-thumbnail.jpg" group-title="Basketball",[Basketball] Italy vs. Serbia (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ita-srb
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/ita-srb
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/nym-tb/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs. Cincinnati Reds (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ea92a27be8faddd4ed257d313795191f-thumbnail.jpg" group-title="MLB",[MLB] San Diego Padres vs. Cincinnati Reds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/sd-cin
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/sd-cin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-european-qualifiers/2026-08-31/ita-srb/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Lecce vs. AS Roma (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4efe281086085962c4ad7a8cce93f2a2-thumbnail.jpg" group-title="Live Events",[Serie A] Lecce vs. AS Roma (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-08-31/lec-roma
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-08-31/lec-roma
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/sd-cin/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs. Washington Nationals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2d92612490a910ad935ec94127d0ba41-thumbnail.jpg" group-title="MLB",[MLB] Miami Marlins vs. Washington Nationals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/mia-wsh
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/mia-wsh
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/seriea/2026-08-31/lec-roma/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] Djurgården vs. Mjällby AIF (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1dfef9364f5d5ff1b21ec40b6be57bd6-thumbnail.jpg" group-title="Live Events",[Allsvenskan] Djurgården vs. Mjällby AIF (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/dju-mja
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/dju-mja
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/mia-wsh/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs. Boston Red Sox (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7704ce830bbbb94ad873ec6d5ef7e7c6-thumbnail.jpg" group-title="MLB",[MLB] Seattle Mariners vs. Boston Red Sox (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/sea-bos
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/sea-bos
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/swedish-allsvenskan/2026-08-31/dju-mja/playlist.m3u8?tk=dVRPY6QH-FpTbM3PVFvIhQ&e=1788238585
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] GAIS vs. IF Brommapojkarna (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/02d5f189a79fd14c7795a01489546b4e-thumbnail.jpg" group-title="Live Events",[Allsvenskan] GAIS vs. IF Brommapojkarna (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/gais-bro
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/gais-bro
+https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/sea-bos/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="6" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Iceland vs. Turkey (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/224faa4a9abc815eff1fbc29d0d3551c-thumbnail.jpg" group-title="Basketball",[Basketball] Iceland vs. Turkey (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/isl-tur
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-european-qualifiers/2026-08-31/isl-tur
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/swedish-allsvenskan/2026-08-31/gais-bro/playlist.m3u8?tk=e6wbkV4RH6kEIun02Z4oPA&e=1788238586
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] IK Sirius vs. Malmö FF (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/de0b86d87f659db75bd3086e9fb3e5d2-thumbnail.jpg" group-title="Live Events",[Allsvenskan] IK Sirius vs. Malmö FF (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/sir-mal
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=swedish-allsvenskan/2026-08-31/sir-mal
+https://messi.damitv.st/live-hls/channel/fiba-european-qualifiers/2026-08-31/isl-tur/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Barcelona vs. Rayo Vallecano (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/23edf67100ab6959b5405d6f9ea007c2-thumbnail.jpg" group-title="Live Events",[La Liga] Barcelona vs. Rayo Vallecano (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-08-31/bar-ray
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-08-31/bar-ray
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/swedish-allsvenskan/2026-08-31/sir-mal/playlist.m3u8?tk=e6wbkV4RH6kEIun02Z4oPA&e=1788238586
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Osasuna vs. Getafe (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc15b5d4310b7f610965d3a961de12c0-thumbnail.jpg" group-title="Live Events",[La Liga] Osasuna vs. Getafe (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-08-31/osa-get
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-08-31/osa-get
+https://messi.damitv.st/live-hls/channel/laliga/2026-08-31/bar-ray/playlist.m3u8?tk=slIAwqwPUpq_eYIsHr0TMw&e=1788256303
+#EXTINF:-1 tvg-chno="8" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/laliga/2026-08-31/osa-get/playlist.m3u8?tk=e6wbkV4RH6kEIun02Z4oPA&e=1788238586
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=JuMxFrNgn9D_VvPSz3ObVw&e=1788256304
