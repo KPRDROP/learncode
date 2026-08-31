@@ -1,16 +1,1 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Connecticut Sun vs. Dallas Wings (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a6c091279876bc86f633835989f070a1-thumbnail.jpg" group-title="NBA",[WNBA] Connecticut Sun vs. Dallas Wings (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-08-30/con-dal
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-08-30/con-dal
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-08-30/con-dal/playlist.m3u8?tk=fIceGgA113gJ_Uu_hOWlvw&e=1788182142
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Toluca vs. FC Juarez (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a85d73443f8aa4c464c8b3b60b9564d2-thumbnail.jpg" group-title="Football",[Football] Toluca vs. FC Juarez (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-08-30/tol-jua
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-08-30/tol-jua
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-08-30/tol-jua/playlist.m3u8?tk=cgSaKmWu-vZ6rjzziXgx0Q&e=1788182143
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Monterrey vs. Atlético de San Luis (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/b55766217df046bb95db37ee8b649aeb-thumbnail.jpg" group-title="Football",[Football] Monterrey vs. Atlético de San Luis (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-08-30/mty-asl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-08-30/mty-asl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-08-30/mty-asl/playlist.m3u8?tk=cgSaKmWu-vZ6rjzziXgx0Q&e=1788182143
