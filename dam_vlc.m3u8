@@ -1,41 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs. Texas Rangers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/facc8b95030df208bebdf2cb37aa058b-thumbnail.jpg" group-title="MLB",[MLB] Athletics vs. Texas Rangers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/ath-tex
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/ath-tex
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/ath-tex/playlist.m3u8?tk=9ubCFxEStn3tL09sP0U0fQ&e=1788268103
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs. Houston Astros (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7f5822da98796eb5e97d2dbd2ff99fe4-thumbnail.jpg" group-title="MLB",[MLB] Chicago White Sox vs. Houston Astros (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/chw-hou
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/chw-hou
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/chw-hou/playlist.m3u8?tk=9ubCFxEStn3tL09sP0U0fQ&e=1788268103
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Baltimore Orioles vs. Colorado Rockies (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/96e52472fc5573f7a87f50dd04ce833a-thumbnail.jpg" group-title="MLB",[MLB] Baltimore Orioles vs. Colorado Rockies (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/bal-col
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/bal-col
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/bal-col/playlist.m3u8?tk=DXwXIY9-j8sUpspxhvUNjw&e=1788268104
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c9d6c79cee6987ed52767c3391197707-thumbnail.jpg" group-title="MLB",[MLB] New York Yankees vs. Los Angeles Angels (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/nyy-laa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/nyy-laa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/nyy-laa/playlist.m3u8?tk=DXwXIY9-j8sUpspxhvUNjw&e=1788268104
-#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. Arizona Diamondbacks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8bebdbbc8d385d60f22782a907f36984-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. Arizona Diamondbacks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-08-31/phi-ari
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-08-31/phi-ari
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-08-31/phi-ari/playlist.m3u8?tk=DXwXIY9-j8sUpspxhvUNjw&e=1788268104
-#EXTINF:-1 tvg-chno="6" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Dominican Republic vs. Chile (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3e65b2f45c6b7bd4bd9a2f2aa4adddfb-thumbnail.jpg" group-title="Basketball",[Basketball] Dominican Republic vs. Chile (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-americas-qualifiers/2026-08-31/dom-chl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-americas-qualifiers/2026-08-31/dom-chl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-americas-qualifiers/2026-08-31/dom-chl/playlist.m3u8?tk=DXwXIY9-j8sUpspxhvUNjw&e=1788268104
-#EXTINF:-1 tvg-chno="7" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Bahamas vs. Panama (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/39c13116d2b8515d4153328a548bc3cd-thumbnail.jpg" group-title="Basketball",[Basketball] Bahamas vs. Panama (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=fiba-americas-qualifiers/2026-08-31/bhs-pan
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=fiba-americas-qualifiers/2026-08-31/bhs-pan
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/fiba-americas-qualifiers/2026-08-31/bhs-pan/playlist.m3u8?tk=DXwXIY9-j8sUpspxhvUNjw&e=1788268104
-#EXTINF:-1 tvg-chno="8" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=DXwXIY9-j8sUpspxhvUNjw&e=1788268104
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=fLROSqe-f9-IfzPE-OjD-Q&e=1788291259
