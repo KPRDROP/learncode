@@ -1,1 +1,31 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Italy - Coppa Italia] Parma vs Cremonese (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Parma vs Cremonese
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/c6cb7e3ebd1633ec681fbecd4f700e1c594604a3e7a3022db4d86d78700fba71/1788284865/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Tennis Channel (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Tennis Channel
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tennischannel-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tennischannel-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/0a020bb50191064aa65c1c9f5bf9112ed076ed77e0260dc76a8ba2abd927fca9/1788284867/tennischannel-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN USA (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN USA
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espn-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espn-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/458307e7c094b1d67c5df72382cdc99650aff671f648930b06af92d9854366ca/1788284868/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ABC Tennis (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ABC Tennis
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/abc-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/abc-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/b791c0cb2594b61d1f7ecb4585af3ed2e61a3c2b4e4d1132be1de3d1fbd4c48d/1788284870/abc-usa.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN Deportes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN Deportes
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/ae3f606aa1f347313908b8018796e2182e0f4c1bf0af09e33a0535747d284419/1788284871/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Movistar Spain (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Movistar Spain
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportsmainevent-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportsmainevent-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/38c176cf456df05430e2160679342badd1d32bb88c495e2d4121a207dae23ce5/1788284872/skysportsmainevent-uk.m3u8
