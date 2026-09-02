@@ -1,4 +1,34 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Brazil Copa do Brasil] Atlético Mineiro vs Cruzeiro | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/528.png" group-title="Live Events",[Brazil Copa do Brasil] Atlético Mineiro vs Cruzeiro | ES (PLAY)
-https://cdn2.zohanayaan.com:1686/hls/do87.m3u8?md5=p4-CmwctB0vxv53smarlbQ&expires=1788319514|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Italy Coppa Italia] Sassuolo vs Frosinone | EN (PLAY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Live Events",[Italy Coppa Italia] Sassuolo vs Frosinone | EN (PLAY)
+https://cdn2.zohanayaan.com:1686/hls/do1.m3u8?md5=F_XAaCyYrg8XOMhwSeMh-Q&expires=1788354986|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Italy Coppa Italia] Udinese vs Venezia | EN (PLAY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Live Events",[Italy Coppa Italia] Udinese vs Venezia | EN (PLAY)
+https://cdn2.zohanayaan.com:1686/hls/do1.m3u8?md5=F_XAaCyYrg8XOMhwSeMh-Q&expires=1788354986|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Greece Greek Cup] Nestos Chrysoupolis vs AEK Athens | GR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Greece Greek Cup] Nestos Chrysoupolis vs AEK Athens | GR (PLAY)
+https://cdn3.zohanayaan.com:1686/hls/do23.m3u8?md5=U4nKFc8g-tzB29D2gK_IVQ&expires=1788354988|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Greece Greek Cup] AEL Larissa vs Olympiacos | GR (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Greece Greek Cup] AEL Larissa vs Olympiacos | GR (PLAY)
+https://cdn3.zohanayaan.com:1686/hls/do23.m3u8?md5=U4nKFc8g-tzB29D2gK_IVQ&expires=1788354988|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Czech Republic 1. liga] Zbrojovka Brno vs Hradec Králové | CZ (PLAY)" tvg-logo="https://cdn.prod.website-files.com/68f550992570ca0322737dc2/68fe4cde8ecaae94ebe64622_chance-liga-footballlogos-org.webp" group-title="Live Events",[Czech Republic 1. liga] Zbrojovka Brno vs Hradec Králové | CZ (PLAY)
+https://cdn1.zohanayaan.com:1686/hls/do41.m3u8?md5=Odc_xzacAqoybAbQrPBVxg&expires=1788354990|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Bulgaria Parva Liga] Slavia Sofia vs Levski Sofia | BG (PLAY)" tvg-logo="https://i.gyazo.com/60bc0d6690696ab68e344568841e590b.png" group-title="Live Events",[Bulgaria Parva Liga] Slavia Sofia vs Levski Sofia | BG (PLAY)
+https://cdn2.zohanayaan.com:1686/hls/do48.m3u8?md5=pGNJp8jsTv6B42os5a8e1Q&expires=1788354991|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[Presezon] IK Oskarshamn vs Kalmar HC | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Presezon] IK Oskarshamn vs Kalmar HC | SE (PLAY)
+https://cdn10.zohanayaan.com:1686/hls/do71.m3u8?md5=7QzTXaegmvFZlITnhS9NiA&expires=1788354992|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[Presezon] BIK Karlskoga vs AIK | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Presezon] BIK Karlskoga vs AIK | SE (PLAY)
+https://cdn4.zohanayaan.com:1686/hls/do72.m3u8?md5=uzK9F5gnHp3LnP6gYOhQJQ&expires=1788354993|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[Presezon] Almtuna IS vs Västerås IK | SE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Presezon] Almtuna IS vs Västerås IK | SE (PLAY)
+https://cdn8.zohanayaan.com:1686/hls/do73.m3u8?md5=0Dn5K9HjXgDeloGHVMqOQA&expires=1788354994|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Sweden Svenska Cupen] Olympic vs IFK Göteborg | SE (PLAY)" tvg-logo="https://www.cfclassics.co/images/cups/sweden/svenskacupen/svenska-cupen-600x400.png" group-title="Live Events",[Sweden Svenska Cupen] Olympic vs IFK Göteborg | SE (PLAY)
+https://cdn10.zohanayaan.com:1686/hls/do76.m3u8?md5=6YCgTsLg10_8w67j7PzBRA&expires=1788354995|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Austria Bundesliga] Austria Wien vs WSG Tirol | AT (PLAY)" tvg-logo="https://i.gyazo.com/83d851fb1110f1e395690403f9cf01bb.webp" group-title="Live Events",[Austria Bundesliga] Austria Wien vs WSG Tirol | AT (PLAY)
+https://cdn9.zohanayaan.com:1686/hls/do99.m3u8?md5=PCMHhSDpnHsIjkkqKjzZaw&expires=1788354996|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
