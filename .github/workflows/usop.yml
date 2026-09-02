@@ -1,0 +1,42 @@
+name: US Open Scraper
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
+    
+    - name: Run US Open updater
+      env:
+        USOP_API_URL: ${{ secrets.USOP_API_URL }}
+        OUTPUT_DIR: .
+      run: |
+        python -c "import asyncio; from usop import main; asyncio.run(main())"
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add usop_vlc.m3u8 usop_tivimate.m3u8
+        git diff --staged --quiet || git commit -m "Update US Open playlists [skip ci]"
+        git push
