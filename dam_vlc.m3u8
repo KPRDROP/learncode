@@ -1,6 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Sassuolo vs. Frosinone (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/84a8b0089c90950973f2c15c9d412318-thumbnail.jpg" group-title="Football",[Football] Sassuolo vs. Frosinone (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=coppa-italia/2026-09-02/sas-fro
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=coppa-italia/2026-09-02/sas-fro
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/coppa-italia/2026-09-02/sas-fro/playlist.m3u8?tk=bvRSMgnb9fGffZALJf7Lpw&e=1788398876
+#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=YPVR7BQGSmldMZx55LNB-A&e=1788381555
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=bvRSMgnb9fGffZALJf7Lpw&e=1788398876
