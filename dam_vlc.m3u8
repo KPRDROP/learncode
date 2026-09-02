@@ -1,21 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c9d6c79cee6987ed52767c3391197707-thumbnail.jpg" group-title="MLB",[MLB] New York Yankees vs. Los Angeles Angels (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-01/nyy-laa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-01/nyy-laa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-01/nyy-laa/playlist.m3u8?tk=xrq4OrBZ6u1kGDDTChp4-A&e=1788364411
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. Arizona Diamondbacks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8bebdbbc8d385d60f22782a907f36984-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. Arizona Diamondbacks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-01/phi-ari
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-01/phi-ari
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-01/phi-ari/playlist.m3u8?tk=xrq4OrBZ6u1kGDDTChp4-A&e=1788364411
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] St. Louis Cardinals vs. Los Angeles Dodgers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f198ea05b3ff2b5f9b0eb49bd88841a9-thumbnail.jpg" group-title="MLB",[MLB] St. Louis Cardinals vs. Los Angeles Dodgers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-01/stl-lad
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-01/stl-lad
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-01/stl-lad/playlist.m3u8?tk=xrq4OrBZ6u1kGDDTChp4-A&e=1788364411
-#EXTINF:-1 tvg-chno="4" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=xrq4OrBZ6u1kGDDTChp4-A&e=1788364411
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=YPVR7BQGSmldMZx55LNB-A&e=1788381555
