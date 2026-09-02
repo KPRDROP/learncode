@@ -1,25 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Toluca vs León | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Toluca vs León | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] América vs Monterrey | ES (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] América vs Monterrey | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do31.m3u8?md5=kMdKO3X6MZrQtAVvOo93ew&expires=1788391145
+https://cdn6.zohanayaan.com:1686/hls/do30.m3u8?md5=0GJb_7kR7RVd2tKbmpRRTw&expires=1788398937
 
-#EXTINF:-1 tvg-chno="2" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Fighting] AEW Dynamite | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Fighting] AEW Dynamite | CA (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] América vs Monterrey | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] América vs Monterrey | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do32.m3u8?md5=WmPJB_OyYdTP2vmoB9oAuA&expires=1788391146
+https://cdn9.zohanayaan.com:1686/hls/do31.m3u8?md5=SFBMUyIIkt72q5MkzNuaQg&expires=1788398939
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Championship] Vancouver Whitecaps vs CF Montréal | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Championship] Vancouver Whitecaps vs CF Montréal | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[North America Leagues Cup] Toluca vs León | EN (PLAY)" tvg-logo="https://brandlogos.net/wp-content/uploads/2025/02/leagues_cup-logo_brandlogos.net_gxi1m-512x512.png" group-title="Live Events",[North America Leagues Cup] Toluca vs León | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do82.m3u8?md5=9r1Nb0HMvOega2OxSJ0y_Q&expires=1788391147
+https://cdn9.zohanayaan.com:1686/hls/do31.m3u8?md5=SFBMUyIIkt72q5MkzNuaQg&expires=1788398939
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Brazil Copa do Brasil] Santos vs Palmeiras | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/528.png" group-title="Live Events",[Brazil Copa do Brasil] Santos vs Palmeiras | ES (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Fighting] AEW Dynamite | CA (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Fighting] AEW Dynamite | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do87.m3u8?md5=T7BLjKi5aIefIQ4zrBR49Q&expires=1788391149
+https://cdn9.zohanayaan.com:1686/hls/do32.m3u8?md5=IBW7grCMWlkuY1niVfJtwA&expires=1788398942
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Canada Canadian Championship] Vancouver Whitecaps vs CF Montréal | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Canada Canadian Championship] Vancouver Whitecaps vs CF Montréal | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/do82.m3u8?md5=nNfCjfmww6mmG1prQQ5WoA&expires=1788398943
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Brazil Copa do Brasil] Santos vs Palmeiras | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/528.png" group-title="Live Events",[Brazil Copa do Brasil] Santos vs Palmeiras | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/do87.m3u8?md5=cjZOsd-EnAvmi62sK2wQhw&expires=1788398944
 
