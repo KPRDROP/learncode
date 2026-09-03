@@ -1,26 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c9d6c79cee6987ed52767c3391197707-thumbnail.jpg" group-title="MLB",[MLB] New York Yankees vs. Los Angeles Angels (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-02/nyy-laa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-02/nyy-laa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-02/nyy-laa/playlist.m3u8?tk=y_hgX70UBDgqupsknhmFNQ&e=1788450725
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] St. Louis Cardinals vs. Los Angeles Dodgers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f198ea05b3ff2b5f9b0eb49bd88841a9-thumbnail.jpg" group-title="MLB",[MLB] St. Louis Cardinals vs. Los Angeles Dodgers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-02/stl-lad
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-02/stl-lad
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-02/stl-lad/playlist.m3u8?tk=y_hgX70UBDgqupsknhmFNQ&e=1788450725
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Toluca vs. León (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f731d56b2607c019db12d56aae1a72c9-thumbnail.jpg" group-title="Football",[Football] Toluca vs. León (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=leagues-cup/2026-09-02/tol-leo
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=leagues-cup/2026-09-02/tol-leo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/leagues-cup/2026-09-02/tol-leo/playlist.m3u8?tk=eFFRBHTihCWysD9wI-4jew&e=1788450726
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] América vs. Monterrey (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc218261b37318aa1e3fa640093543e6-thumbnail.jpg" group-title="Football",[Football] América vs. Monterrey (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=leagues-cup/2026-09-02/ame-mty
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=leagues-cup/2026-09-02/ame-mty
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/leagues-cup/2026-09-02/ame-mty/playlist.m3u8?tk=eFFRBHTihCWysD9wI-4jew&e=1788450726
-#EXTINF:-1 tvg-chno="5" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=eFFRBHTihCWysD9wI-4jew&e=1788450726
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=-ZYQ9xRZvlf0g6stF8gC7w&e=1788468459
