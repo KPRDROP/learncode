@@ -1,26 +1,66 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Tennis Channel (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Tennis Channel
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Italy - Coppa Italia] Palermo vs Mantova (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Palermo vs Mantova
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/c2025a6d45e370feff002fdc4045771844df876636863e257ec8f1f238fa1155/1788468140/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Italy - Coppa Italia] Cagliari vs Hellas Verona (FLY)" tvg-logo="https://i.gyazo.com/8fd7660cca8f8b690f50979b72b295c3.png" group-title="Italy - Coppa Italia",[Italy - Coppa Italia] Cagliari vs Hellas Verona
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/a4048073fa9408e2e4c74b941f07ec1a0e3c753b7f1286c72859ea2751a4a302/1788468142/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Real Sociedad vs Celta de  Vigo (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Real Sociedad vs Celta de Vigo
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports2-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports2-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/bb23c79badb2d2ee50941229b3a6a29deb83a013d61757fbcd5b5a6f179543ae/1788468144/premiersports2-ie.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Toulouse vs Lille (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Toulouse vs Lille
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/b30df35ed00b61215f2f1eaeb7354efb9caa1db81a40af31b34f30577116220d/1788468145/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Scottish Premiership] Hibernian vs Hearts (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/45.png" group-title="Scottish Premiership",[Scottish Premiership] Hibernian vs Hearts
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports1-ie
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/40d0e65d71e5142f26443419460a9de4e5cbdb7b194ed4aa518260a9c33fa1a7/1788468146/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Tennis Channel (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Tennis Channel
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tennischannel-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tennischannel-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/3f465b2a146195218cc93e5eafee65cb61fba6dccd88e84540745ce79f4f7b71/1788455834/tennischannel-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN USA (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN USA
+https://hdesx.cdx-08192.website/main/secure/afd5014335dc3c90df0a9a74fec15b25b04cb2893614d86d268c8b60bf54721a/1788468147/tennischannel-usa.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN USA (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN USA
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espn-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/75efc3f3272e8c3d03532221bb5c644bc14e0d759fad864a796ccf3d1a076ee6/1788455835/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ABC Tennis (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ABC Tennis
+https://hdesx.cdx-08192.website/main/secure/1851e81eab73d783358c2ff61bc5d7574bf48f38fdbc65ab2a706879a1dfc8ae/1788468148/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ABC Tennis (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ABC Tennis
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/abc-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/abc-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/3b16c6479b5e9b8ce237881d80d33cca54b64e2f52b131c3011162f2b68cc442/1788455836/abc-usa.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN Deportes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN Deportes
+https://hdesx.cdx-08192.website/main/secure/6a9b1c2f2597bdde4f433c0e9b7bd1a8686b7ee3a9fb9daeb3517e188d749760/1788468149/abc-usa.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN Deportes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN Deportes
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/c883038ff6ad06ed847bc528aab5bfb6ea9a936179382e74662220160d9d2f84/1788455837/espndeportes-usa.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Movistar Spain (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Movistar Spain
+https://hdesx.cdx-08192.website/main/secure/f98a71bf88447f41dce0d78c2c9abce5d9e5a3db683256a0f3b99da8ec5bea27/1788468151/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Movistar Spain (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Movistar Spain
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportsmainevent-uk
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportsmainevent-uk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/c2e008d2c4eeb0371eae8c9dc7906fd0249c6615e69767c65e52ad234b6292b2/1788455837/skysportsmainevent-uk.m3u8
+https://hdesx.cdx-08192.website/main/secure/c4cce1debcfa7b6008a768d2f408c01443ccdd629e09286d2425dc591be119e5/1788468152/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Pittsburgh Pirates vs San Francisco Giants (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Pittsburgh Pirates vs San Francisco Giants
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-giants
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-giants
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/3400223371e78f4512247675b071efc70e5de126b62c7759ceba567dbbb60000/1788468153/mlb-giants.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs Toronto Blue Jays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs Toronto Blue Jays
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-guardians
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-guardians
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/f4ee72f52510c98fc711596d38a718d73126acf639e8875ad9aecb5ae96de455/1788468154/mlb-guardians.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Houston Astros vs Chicago White Sox (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Houston Astros vs Chicago White Sox
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-astros
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-astros
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hdesx.cdx-08192.website/main/secure/a63e11a1cd33f8086630a895acaefd511569c707d1173e9ab5de645942830cf0/1788468156/mlb-astros.m3u8
