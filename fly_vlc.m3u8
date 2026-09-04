@@ -1,106 +1,66 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Sky Sports F1 Uk (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Sky Sports F1 Uk
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportsf1-uk
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportsf1-uk
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/78d0ad903a6abc223171bd3b788e6a90b7c63bf2b1077fc12d653bce827bcd15/1788556225/skysportsf1-uk.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Dazn F1 Spain (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Dazn F1 Spain
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/daznf1-es
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/daznf1-es
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/0f055fa9e712cf37665023130a2efd41b72a34da7ae0d80c4efb82dadecc5439/1788556227/daznf1-es.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Apple Tv (PPV) (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Apple Tv (PPV)
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/apple-tv
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/apple-tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/2ccd882fd5a638dfa936e27b93bebfe69f40375ecfbf53fc486449dd2e2cfeb5/1788556227/apple-tv.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Sky Sports F1 DE (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Sky Sports F1 DE
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportf1-de
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportf1-de
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/57812a834725741f3994cec599a7e76db2a2bdde482da8f79ba1cc45373ec77d/1788556228/skysportf1-de.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Sky Sports 3 NZ (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Sky Sports 3 NZ
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysport3-nz
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysport3-nz
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/049e247de6c2bd4d9efb415dd7f71c52deb8e235a0dce567e466f0c7cdaba221/1788556229/skysport3-nz.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Fox Sports 506 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Fox Sports 506
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/fox-sports-506
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/fox-sports-506
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/69f1eb0258d6c251064f34eaf2ce19f5aa3830d3ad94dfd77246d7ba6ad64448/1788556230/fox-sports-506.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Apple Tv (PPV 4k) only Race (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Apple Tv (PPV 4k) only Race
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/apple-tv-uhd
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/apple-tv-uhd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/32cd5a235659cae31fbd8986a862676e16c6299d895b69b34dde8debd8877eea/1788556230/apple-tv-uhd.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Pirelli Italian GP vs Sky Sports F1 IT (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Pirelli Italian GP vs Sky Sports F1 IT
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportf1-it
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportf1-it
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/4ecc3cd22aaf779d0be5197c8a86cec04010b18032d3c7bf658fbae8fb509fdb/1788556231/skysportf1-it.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Ipswich Town vs Liverpool (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Ipswich Town vs Liverpool
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Ipswich Town vs Liverpool (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Ipswich Town vs Liverpool
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/usanetwork-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/usanetwork-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/826d419a1cce467099a7894901b4b919a8fb33e5b7814bcbb126699753a309d0/1788556232/usanetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Real Betis vs Real Madrid (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Real Betis vs Real Madrid
+https://hdesx.cdx-08192.website/main/secure/c2b1f78df08d14a75d59772d632a691560fcb0398d1a15519178c23ac8e2418a/1788565097/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Real Betis vs Real Madrid (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Real Betis vs Real Madrid
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/d1491f342f58e56c25b318880f689da1d2ffe078b990f81a5d929f53febbd8a1/1788556233/espndeportes-usa.m3u8
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Genoa vs Como (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Genoa vs Como
+https://hdesx.cdx-08192.website/main/secure/ed0fab63f372253ad6e939a089cc7960b840b5e6420f874bd0aeb6a8de42b83f/1788565098/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Genoa vs Como (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Genoa vs Como
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/sporttv2-pt
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/sporttv2-pt
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/67d22740ec6cfda5523a8e39aff43a8c480d01ea24b7c569994cd31698a171a7/1788556233/sporttv2-pt.m3u8
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] VfB Stuttgart vs FC Cologne (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] VfB Stuttgart vs FC Cologne
+https://hdesx.cdx-08192.website/main/secure/3677e03a76244c0d1cac56a668bf9b518ee55935f7801ffa99ab4aa0691b005d/1788565099/sporttv2-pt.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] VfB Stuttgart vs FC Cologne (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] VfB Stuttgart vs FC Cologne
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884808
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884808
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/4aa6006c923673730bf493fa9764a2bfdac00407301c58b4e1fa7f6d41ea9b3b/1788556234/bundesliga-401884808.m3u8
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Olympique Lyonnais vs AJ Auxerre (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Olympique Lyonnais vs AJ Auxerre
+https://hdesx.cdx-08192.website/main/secure/a409f06d30edae102c1eb08018641312fa3dfff9ee67aebf856ac59bb915a5b8/1788565100/bundesliga-401884808.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Olympique Lyonnais vs AJ Auxerre (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Olympique Lyonnais vs AJ Auxerre
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/beinsports-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/beinsports-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/776631dbfd22857c93350725fb0bcc13494bd1b4ca3de0f97cc4d037e2cf95db/1788556235/beinsports-usa.m3u8
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Paris Saint-Germain vs AS Monaco (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Paris Saint-Germain vs AS Monaco
+https://hdesx.cdx-08192.website/main/secure/b4682d5506f5c27295bc998d37e02463e309d9f5b8b34efd030725f828b674e8/1788565101/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Paris Saint-Germain vs AS Monaco (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Paris Saint-Germain vs AS Monaco
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/beinsports-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/beinsports-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/776631dbfd22857c93350725fb0bcc13494bd1b4ca3de0f97cc4d037e2cf95db/1788556235/beinsports-usa.m3u8
-#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] FC Porto vs Moreirense (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] FC Porto vs Moreirense
+https://hdesx.cdx-08192.website/main/secure/b4682d5506f5c27295bc998d37e02463e309d9f5b8b34efd030725f828b674e8/1788565101/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] FC Porto vs Moreirense (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] FC Porto vs Moreirense
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premiersports1-ie
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premiersports1-ie
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/0761baa695ae4d6bc5abdb882b9c3d15907f00030e9e6beacecb4e7cc90a5be8/1788556236/premiersports1-ie.m3u8
-#EXTINF:-1 tvg-chno="16" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Tennis Channel (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Tennis Channel
+https://hdesx.cdx-08192.website/main/secure/5f6dd7abfb62d4f69d2d0de9f157783632fce295bc4f2833c2337c767e7926a8/1788565102/premiersports1-ie.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Tennis Channel (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Tennis Channel
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tennischannel-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tennischannel-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/1a55dc2860a0830c4b3583b8f0b46a099639ce49b15ad70e760a20b69b1639ad/1788556237/tennischannel-usa.m3u8
-#EXTINF:-1 tvg-chno="17" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN USA (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN USA
+https://hdesx.cdx-08192.website/main/secure/d0cff20a311b178ac7da442936569eacda7baeb06ee512bb3078b803b72277dd/1788565102/tennischannel-usa.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN USA (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN USA
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espn-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espn-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/824b844c7209c3ffdaf3a9c8a051d8032b892257a108ed282d0975c5f576c9d8/1788556238/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="18" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ABC Tennis (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ABC Tennis
+https://hdesx.cdx-08192.website/main/secure/1f628d67b1d4268a150075e508761f890bb36e90e916698cdb6b49ba77c82858/1788565103/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ABC Tennis (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ABC Tennis
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/abc-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/abc-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/588596ace059154ccd9113cf6c69d4c9ee462e528f789b6cc12a836eb856989d/1788556238/abc-usa.m3u8
-#EXTINF:-1 tvg-chno="19" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN Deportes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN Deportes
+https://hdesx.cdx-08192.website/main/secure/744512691b34ac98b0ec678039cb6878004106d6dd2df51343e1b8eb57705d4e/1788565104/abc-usa.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs ESPN Deportes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs ESPN Deportes
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/47a65216fb44f42cc99c978ae4bec96c68334ed27ca17a6c389e75a4f8debcd0/1788556239/espndeportes-usa.m3u8
-#EXTINF:-1 tvg-chno="20" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Sky Main Event (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Sky Main Event
+https://hdesx.cdx-08192.website/main/secure/5cdd0c9f7fde9de3509aead9a3d3c925746ddd339e0bf13ed10d05f693fcfde8/1788565104/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Grand Slam Tennis vs Sky Main Event (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Grand Slam Tennis vs Sky Main Event
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/skysportsmainevent-uk
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/skysportsmainevent-uk
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/38b714e8b7a6a8b078d63aeac2ccc9ac9ab286f534f2019821ce3085dd2230ce/1788556240/skysportsmainevent-uk.m3u8
-#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs Detroit Tigers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs Detroit Tigers
+https://hdesx.cdx-08192.website/main/secure/36121870da7ecd3c2d7e96652da43fe75f43edc24416b8768b101b86ed2e3b23/1788565105/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs Detroit Tigers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs Detroit Tigers
 #EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-tigers
 #EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-tigers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hdesx.cdx-08192.website/main/secure/1b2a1dab54582419f26945fb5b5189cc2aefe62d223f61c180d1ca023df47665/1788556240/mlb-tigers.m3u8
+https://hdesx.cdx-08192.website/main/secure/ee758f5c535d92a142433a7975da7c332ebc00232b75161345cab8efcf61698d/1788565106/mlb-tigers.m3u8
