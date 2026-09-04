@@ -1,7 +1,25 @@
 #EXTM3U
 #EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 3] Monza Qualification | EN (PLAY)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5b/FIA_F3_Championship_logo.png" group-title="Live Events",[Formula 3] Monza Qualification | EN (PLAY)
-https://cdn8.zohanayaan.com:1686/hls/do7.m3u8?md5=Rd8HVvU-P9mCMh1QP6dEvg&expires=1788491351|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+https://cdn6.zohanayaan.com:1686/hls/do7.m3u8?md5=qEC0j9IwH9bgakzaryXLHQ&expires=1788508413|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="2" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Fighting] Lenar Perez vs Thabiso Mchunu | DE (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Fighting] Lenar Perez vs Thabiso Mchunu | DE (PLAY)
-https://cdn6.zohanayaan.com:1686/hls/do11.m3u8?md5=mGcjGKKgnztTqoIEyQTAuA&expires=1788491352|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 2] Monza Qualification | EN (PLAY)" tvg-logo="https://r2.thesportsdb.com/images/media/league/badgearchive/q5o1b81768918140.png" group-title="Live Events",[Formula 2] Monza Qualification | EN (PLAY)
+https://cdn6.zohanayaan.com:1686/hls/do7.m3u8?md5=qEC0j9IwH9bgakzaryXLHQ&expires=1788508413|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Italian Grand Prix | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Italian Grand Prix | EN (PLAY)
+https://cdn6.zohanayaan.com:1686/hls/do7.m3u8?md5=qEC0j9IwH9bgakzaryXLHQ&expires=1788508413|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Italian Grand Prix | DE (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Italian Grand Prix | DE (PLAY)
+https://cdn1.zohanayaan.com:1686/hls/do18.m3u8?md5=4s8LTFluxJkSIR1Jug6sdQ&expires=1788508416|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Italian Grand Prix | ES (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Italian Grand Prix | ES (PLAY)
+https://cdn6.zohanayaan.com:1686/hls/do30.m3u8?md5=UG2cByqdKdILwcafVg0xHA&expires=1788508417|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Geelong Cats vs Carlton Blues | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Geelong Cats vs Carlton Blues | EN (PLAY)
+https://cdn5.zohanayaan.com:1686/hls/do82.m3u8?md5=4FOiib3C726GoovquHZgGA&expires=1788508418|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[NRL] Gold Coast Titans vs Dolphins | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] Gold Coast Titans vs Dolphins | EN (PLAY)
+https://cdn8.zohanayaan.com:1686/hls/do83.m3u8?md5=fkWe2WbAeVtkYfgFoNjqLQ&expires=1788508420|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[NRL] South Sydney Rabbitohs vs Sydney Roosters | EN (PLAY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NRL] South Sydney Rabbitohs vs Sydney Roosters | EN (PLAY)
+https://cdn8.zohanayaan.com:1686/hls/do83.m3u8?md5=fkWe2WbAeVtkYfgFoNjqLQ&expires=1788508420|referer=https://exposestrat.com/|origin=https://exposestrat.com|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36
 
