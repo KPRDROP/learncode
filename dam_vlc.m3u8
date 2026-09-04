@@ -1,16 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Geelong Cats vs. Carlton (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2ad88107349a232f88cdcef445128a7f-thumbnail.jpg" group-title="AFL",[AFL] Geelong Cats vs. Carlton (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=afl/2026-09-04/geel-carl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=afl/2026-09-04/geel-carl
+#EXTINF:-1 tvg-chno="1" tvg-id="Darts.Dummy.us" tvg-name="[Darts] Czech Darts Open | Day 1 - Afternoon Session (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc95a728710d04a9889239cfbc7ec835-thumbnail.jpg" group-title="Live Events",[Darts] Czech Darts Open | Day 1 - Afternoon Session (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=darts/2026-09-04/afternoon
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=darts/2026-09-04/afternoon
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/afl/2026-09-04/geel-carl/playlist.m3u8?tk=DhWNYJhB9lwlFFjm9riP6A&e=1788554602
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[NRL] Titans vs. Dolphins (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bb719e2aecda2694ab0f2854cb76689d-thumbnail.jpg" group-title="Live Events",[NRL] Titans vs. Dolphins (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nrl/2026-09-04/gol-dol
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nrl/2026-09-04/gol-dol
+https://messi.damitv.st/live-hls/channel/darts/2026-09-04/afternoon/playlist.m3u8?tk=cpEn1flAwIHzA6z8ds58gg&e=1788571260
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Italian Grand Prix - Practice 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/07b3a21d2a208498797104e803cc00f6-thumbnail.jpg" group-title="Motorsports",[Motorsports] Italian Grand Prix - Practice 2 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=f1/2026/italy/fp2
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=f1/2026/italy/fp2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nrl/2026-09-04/gol-dol/playlist.m3u8?tk=DhWNYJhB9lwlFFjm9riP6A&e=1788554602
+https://messi.damitv.st/live-hls/channel/f1/2026/italy/fp2/playlist.m3u8?tk=cpEn1flAwIHzA6z8ds58gg&e=1788571260
 #EXTINF:-1 tvg-chno="3" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=DhWNYJhB9lwlFFjm9riP6A&e=1788554602
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=cpEn1flAwIHzA6z8ds58gg&e=1788571260
