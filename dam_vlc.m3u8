@@ -1,26 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[American Football] Idaho Vandals at Utah Utes (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2d80b847d112c0f4f61106666e038478-thumbnail.jpg" group-title="American Football",[American Football] Idaho Vandals at Utah Utes (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-03/idho-utah
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-03/idho-utah
+#EXTINF:-1 tvg-chno="1" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Geelong Cats vs. Carlton (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2ad88107349a232f88cdcef445128a7f-thumbnail.jpg" group-title="AFL",[AFL] Geelong Cats vs. Carlton (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=afl/2026-09-04/geel-carl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=afl/2026-09-04/geel-carl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-03/idho-utah/playlist.m3u8?tk=-EmMsGxp4vE4E3i4o_15YA&e=1788537245
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs. Seattle Mariners (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/802581528299a16da6c2e54b09eff160-thumbnail.jpg" group-title="MLB",[MLB] Athletics vs. Seattle Mariners (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-03/ath-sea
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-03/ath-sea
+https://messi.damitv.st/live-hls/channel/afl/2026-09-04/geel-carl/playlist.m3u8?tk=DhWNYJhB9lwlFFjm9riP6A&e=1788554602
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[NRL] Titans vs. Dolphins (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bb719e2aecda2694ab0f2854cb76689d-thumbnail.jpg" group-title="Live Events",[NRL] Titans vs. Dolphins (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nrl/2026-09-04/gol-dol
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nrl/2026-09-04/gol-dol
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-03/ath-sea/playlist.m3u8?tk=-EmMsGxp4vE4E3i4o_15YA&e=1788537245
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] St. Louis Cardinals vs. Los Angeles Dodgers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f198ea05b3ff2b5f9b0eb49bd88841a9-thumbnail.jpg" group-title="MLB",[MLB] St. Louis Cardinals vs. Los Angeles Dodgers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-03/stl-lad
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-03/stl-lad
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-03/stl-lad/playlist.m3u8?tk=iO5QP2-8HO9yfg-qfo-SDQ&e=1788537246
-#EXTINF:-1 tvg-chno="4" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
+https://messi.damitv.st/live-hls/channel/nrl/2026-09-04/gol-dol/playlist.m3u8?tk=DhWNYJhB9lwlFFjm9riP6A&e=1788554602
+#EXTINF:-1 tvg-chno="3" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: ESPN & ESPN2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86d26eb02ca24e8a1075cdfb1b9b569f-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: ESPN & ESPN2 (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=iO5QP2-8HO9yfg-qfo-SDQ&e=1788537246
-#EXTINF:-1 tvg-chno="5" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Wrestling] TNA Impact (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg" group-title="Live Events",[Wrestling] TNA Impact (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=tna/2026-09-03
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=tna/2026-09-03
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/tna/2026-09-03/playlist.m3u8?tk=iO5QP2-8HO9yfg-qfo-SDQ&e=1788537246
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=DhWNYJhB9lwlFFjm9riP6A&e=1788554602
