@@ -1,11 +1,151 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Newcastle United vs AFC Bournemouth (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Newcastle United vs AFC Bournemouth
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/usanetwork-usa
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/usanetwork-usa
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Brentford vs Sunderland (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Brentford vs Sunderland
+#EXTVLCOPT:http-referrer=https://embed.st/embed/admin/ppv-brentford-vs-sunderland/1
+#EXTVLCOPT:http-origin=https://embed.st/embed/admin/ppv-brentford-vs-sunderland/1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/9eea9b33fa5c13406839683839e1d4319a3cb894da9ad7670a0387511aa59130/1788615056/usanetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[England - Championship] Preston North End vs Blackburn Rovers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="England - Championship",[England - Championship] Preston North End vs Blackburn Rovers
-#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/sporttv4-pt
-#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/sporttv4-pt
+https://lb13.strmd.st/secure/gmqLEahWlsdAAhtIamCeWnnoaKADaNNM/admin/stream/ppv-brentford-vs-sunderland/1/playlist.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Brighton & Hove Albion vs Leeds United (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Brighton & Hove Albion vs Leeds United
+#EXTVLCOPT:http-referrer=https://embed.st/embed/admin/ppv-brighton-hove-albion-vs-leeds-united/1
+#EXTVLCOPT:http-origin=https://embed.st/embed/admin/ppv-brighton-hove-albion-vs-leeds-united/1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://volder.timst.cfd/main/secure/cfb69b54b5a5dce8abed3d59e92747d24a2fd5365cdfb63e36f8a91b4ae9b5f5/1788615057/sporttv4-pt.m3u8
+https://lb6.strmd.st/secure/LfGdhDsvLxKMpgSvpWtmuUrciJbybQox/admin/stream/ppv-brighton-hove-albion-vs-leeds-united/1/playlist.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Fulham vs Crystal Palace (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Fulham vs Crystal Palace
+#EXTVLCOPT:http-referrer=https://embed.st/embed/admin/ppv-fulham-vs-crystal-palace/1
+#EXTVLCOPT:http-origin=https://embed.st/embed/admin/ppv-fulham-vs-crystal-palace/1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lb6.strmd.st/secure/YanlQJCJgROwdxVRaTLvXWBBcAGweivD/admin/stream/ppv-fulham-vs-crystal-palace/1/playlist.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Manchester City vs Coventry City (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Manchester City vs Coventry City
+#EXTVLCOPT:http-referrer=https://embed.st/embed/admin/ppv-manchester-city-vs-coventry-city/1
+#EXTVLCOPT:http-origin=https://embed.st/embed/admin/ppv-manchester-city-vs-coventry-city/1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lb6.strmd.st/secure/tEoAagBPaBpLbFmNBPaXXtSvejWVrVFQ/admin/stream/ppv-manchester-city-vs-coventry-city/1/playlist.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Nottingham Forest vs Tottenham Hotspur (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Nottingham Forest vs Tottenham Hotspur
+#EXTVLCOPT:http-referrer=https://embed.st/embed/admin/ppv-nottingham-forest-vs-tottenham-hotspur/1
+#EXTVLCOPT:http-origin=https://embed.st/embed/admin/ppv-nottingham-forest-vs-tottenham-hotspur/1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lb6.strmd.st/secure/VmGCNdzUFbwTmZXnyUbpszdvHMLqWwFn/admin/stream/ppv-nottingham-forest-vs-tottenham-hotspur/1/playlist.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[English Premier League] Hull City vs Aston Villa (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/23.png" group-title="English Premier League",[English Premier League] Hull City vs Aston Villa
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/premierleague-401878781
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/premierleague-401878781
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/8672e56d454c1839c1852a279d0d6cf075fae5c05607c234208a04d76a3e94d1/1788650356/premierleague-401878781.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Athletic Club vs Atlético Madrid (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Athletic Club vs Atlético Madrid
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/7d074d1f49c594226ec01baea7d48b64eaf6c1d60c9ee2322a0663f5dc4abdd5/1788650357/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Rayo Vallecano vs Racing Santander (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Rayo Vallecano vs Racing Santander
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/dd1f9662c8e874f110749e8c6288e08ad15ae28a0cad7d9bb4f74451c12b1a5d/1788650358/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Villarreal vs Deportivo Alaves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Villarreal vs Deportivo Alaves
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/espndeportes-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/a5b8da3ab1587a19882039337751bc3493c8c2a2fdaf75f39d257a3fe04cbcee/1788650359/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Fiorentina vs Torino (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Fiorentina vs Torino
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/seriea-401874939
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/seriea-401874939
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/0f7fca5ff31ef70dffcc0570a200ef75c9b18cdf0ccc5c368f22600a91207568/1788650360/seriea-401874939.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Internazionale vs Napoli (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Internazionale vs Napoli
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/seriea-401874937
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/seriea-401874937
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/90b6fed07585184dcb1f12ab70fd674e5bedf94c1ae95083b72a1f4b5741a6fb/1788650361/seriea-401874937.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] AS Roma vs Atalanta (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] AS Roma vs Atalanta
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/seriea-401874781
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/seriea-401874781
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/a395c1726ec05403e9306d1c94e6310c85a2cd253b6c0c2bd251980fbf56a2e5/1788650361/seriea-401874781.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] Bayer Leverkusen vs 1. FC Union Berlin (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] Bayer Leverkusen vs 1. FC Union Berlin
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884806
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884806
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/d9fab27693b4738c7bc3f9d34af4426baadcb4f9eaa0209ea178379cd8b7beef/1788650362/bundesliga-401884806.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] Borussia Mönchengladbach vs SV Elversberg (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] Borussia Mönchengladbach vs SV Elversberg
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884804
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884804
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/780392e503b22666e11c109e9c8a4250c75278b66ecf03106d75fb4e1bedf6c6/1788650363/bundesliga-401884804.m3u8
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] SC Paderborn 07 vs SC Freiburg (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] SC Paderborn 07 vs SC Freiburg
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884800
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884800
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/f26ad845bbe254da113849c01e8e24c145dfbd09cc666e53f348d3c1a1bc0dd6/1788650364/bundesliga-401884800.m3u8
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] TSG Hoffenheim vs Borussia Dortmund (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] TSG Hoffenheim vs Borussia Dortmund
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884807
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884807
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/44cbb22f68ad0e7fe58b10425a6a92d1d3740ed586d6194830d2d768b0f68185/1788650365/bundesliga-401884807.m3u8
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] Werder Bremen vs RB Leipzig (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] Werder Bremen vs RB Leipzig
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884802
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884802
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/d12885d9370e3e1834fdc159f9a90a1bc0dd4928d27cfbaeb3d727a0e2b039c9/1788650366/bundesliga-401884802.m3u8
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] Schalke 04 vs Bayern Munich (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] Schalke 04 vs Bayern Munich
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/bundesliga-401884801
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/bundesliga-401884801
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/75e4af10921074b3ed704a221c6f711a2362caef6cf17e67c0a914c3363675f1/1788650367/bundesliga-401884801.m3u8
+#EXTINF:-1 tvg-chno="19" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Lens vs Lorient (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Lens vs Lorient
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/ec31968a2c3f48f57b143b43d07fd085728a87ae0a13b8b45d7cb3f679da75f6/1788650368/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="20" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Nice vs Le Mans (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Nice vs Le Mans
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/beinsports-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/beinsports-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/7aef2060ce72d2c61db7d2abab885d1bdebef99b0cbe4cd8f0ce82200dc549d9/1788650369/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="21" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Estrela vs FC Famalicao (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Estrela vs FC Famalicao
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/dfbaa0b7d0aef15991eff1e61c8f1d823364382355992a38494570aa2bf67ba3/1788650370/tntsports1-uk.m3u8
+#EXTINF:-1 tvg-chno="22" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Alverca vs Braga (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Alverca vs Braga
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/5ba772674b2cb100f4a77ece53c23e4c25fe5453745f43f7702119ca5eac1345/1788650371/tntsports1-uk.m3u8
+#EXTINF:-1 tvg-chno="23" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Maritimo vs Benfica (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Maritimo vs Benfica
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/611cdcfecb15118baf7ab4976730aa48fb2867b06969bc5b2eaa4ec0816a2fa5/1788650372/tntsports1-uk.m3u8
+#EXTINF:-1 tvg-chno="24" tvg-id="Soccer.Dummy.us" tvg-name="[Portuguese Primeira Liga] Sporting CP vs C.D. Nacional (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portuguese Primeira Liga",[Portuguese Primeira Liga] Sporting CP vs C.D. Nacional
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/f0329a1cd6a244456b1abdaf4600ad1b23649b254cb7d657b73678554cf5510d/1788650373/tntsports1-uk.m3u8
+#EXTINF:-1 tvg-chno="25" tvg-id="Soccer.Dummy.us" tvg-name="[England - Championship] Queens Park Rangers vs Middlesbrough (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="England - Championship",[England - Championship] Queens Park Rangers vs Middlesbrough
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/cbssportsgolazo-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/cf234060143652784a621387c4e836a9e988ab613fb36443b1da42f2f14af8ac/1788650374/cbssportsgolazo-usa.m3u8
+#EXTINF:-1 tvg-chno="26" tvg-id="Soccer.Dummy.us" tvg-name="[England - Championship] Burnley  vs Bristol City (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="England - Championship",[England - Championship] Burnley vs Bristol City
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/cbssn-usa
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/cbssn-usa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/efdf62a8d9e8d77dc78621b0b18c26b90968e41fa2be075b6dbb71237b5f0847/1788650375/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="27" tvg-id="Soccer.Dummy.us" tvg-name="[England - Championship] Swansea City vs Wrexham (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/24.png" group-title="England - Championship",[England - Championship] Swansea City vs Wrexham
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/daznppv-1
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/daznppv-1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/5cf97aea9f0c340a54e1db1c074cdd66106f709a1c65340a2dfc0e861901ae51/1788650375/daznppv-1.m3u8
+#EXTINF:-1 tvg-chno="28" tvg-id="Soccer.Dummy.us" tvg-name="[Scottish Premiership] St. Mirren vs Celtic (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/45.png" group-title="Scottish Premiership",[Scottish Premiership] St. Mirren vs Celtic
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/tntsports1-uk
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/35035906095a9f026a789efd0321f908acd2276d2465febf05a329b9faaa7958/1788650376/tntsports1-uk.m3u8
+#EXTINF:-1 tvg-chno="29" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs Chicago Cubs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Miami Marlins vs Chicago Cubs
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-marlins
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-marlins
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/37828badadae3be6d76c4eda988a726f0dbc0c870586af78f88b408611e8fb17/1788650377/mlb-marlins.m3u8
+#EXTINF:-1 tvg-chno="30" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Mets vs San Francisco Giants (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] New York Mets vs San Francisco Giants
+#EXTVLCOPT:http-referrer=https://epiembeds.online/flyemd/mlb-mets
+#EXTVLCOPT:http-origin=https://epiembeds.online/flyemd/mlb-mets
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://volder.timst.cfd/main/secure/83e29445fb2623857886ce4d8d3e06b47ee36ba27f1365f8f90a4717e4cd3490/1788650378/mlb-mets.m3u8
