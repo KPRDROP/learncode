@@ -1,25 +1,25 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] New York City vs Nashville SC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] New York City vs Nashville SC | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 3] Monza Race 1 | EN (PLAY)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5b/FIA_F3_Championship_logo.png" group-title="Live Events",[Formula 3] Monza Race 1 | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do1.m3u8?md5=s62G-9AUzkNnUkgjgUr6sw&expires=1788576078
+https://cdn4.zohanayaan.com:1686/hls/do7.m3u8?md5=3L90CN7QNb7gPAOTDJ7L3A&expires=1788589563
 
 #EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Juárez vs Pachuca | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Juárez vs Pachuca | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do29.m3u8?md5=U1e1RPkw2Jgp6hY22rsPqg&expires=1788576079
+https://cdn4.zohanayaan.com:1686/hls/do29.m3u8?md5=rhZlnrZWpmM0vgEeySvpYw&expires=1788589565
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Toluca | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Toluca | ES (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Sydney Swans vs Brisbane Lions | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Sydney Swans vs Brisbane Lions | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do30.m3u8?md5=AbRKWnPWJasm7ymLNi2AIA&expires=1788576081
+https://cdn1.zohanayaan.com:1686/hls/do32.m3u8?md5=mE44xJa4-f9czLRAWyujHQ&expires=1788589566
 
-#EXTINF:-1 tvg-chno="4" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Sydney Swans vs Brisbane Lions | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Sydney Swans vs Brisbane Lions | CA (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Adelaide Crows vs Western Bulldogs | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/afl.png" group-title="Live Events",[AFL] Adelaide Crows vs Western Bulldogs | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do32.m3u8?md5=AWJOFzkMum9wZ6hOMi_FJw&expires=1788576082
+https://cdn3.zohanayaan.com:1686/hls/do82.m3u8?md5=x-oJsf6qsAQ5-jpgGdz9rA&expires=1788589567
 
