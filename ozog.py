@@ -8,7 +8,7 @@ from urllib.parse import urljoin, quote
 
 from selectolax.parser import HTMLParser
 
-from .utils import Cache, Event, Time, get_logger, leagues, network
+from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
