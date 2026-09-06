@@ -24,7 +24,7 @@ CACHE_FILE = Cache(TAG, exp=28_800)
 
 # ================= CONFIG =================
 
-BASE_URL = os.environ.get("WEBTV_OZOG_BASE_URL", "https://gozo.st/")
+BASE_URL = os.environ.get("WEBTV_OZOG_BASE_URL")
 BASE_URL = BASE_URL.rstrip("/") + "/"
 
 # These are only fallbacks.
