@@ -147,7 +147,7 @@ def decrypt(enc: str, xor_key: int, num_list: list[int]) -> str | None:
 # ---------------------------------------------------------------------------
 
 def extract_decoder_data(text: str) -> tuple[str, int, list[int]] | None:
-    """Extract _dd, _dk and _dri from the OZOG event/player HTML."""
+    """Extract _dd, _dk and _dri from the OZOG player HTML."""
     if not text:
         return None
 
@@ -238,7 +238,7 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
 
     log.info(f'URL {url_num}) Processing "{event_url}"')
 
-    # Fetch the event page
+    # Step 1: Fetch the event page from gozo.st
     html_data = await network.request(event_url, url_num, log=log)
     if not html_data:
         log.error(f'URL {url_num}) Failed to fetch "{event_url}"')
@@ -246,27 +246,12 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
 
     page_text = getattr(html_data, "text", html_data.content)
 
-    # Try to find decoder directly on the event page
-    decoder_data = extract_decoder_data(page_text)
-    if decoder_data:
-        dd, dk, dri = decoder_data
-        log.info(f"URL {url_num}) Found direct OZOG decoder")
-        source = decrypt(dd, dk, dri)
-        source = normalize_source(source, event_url)
-
-        if source:
-            log.info(f"URL {url_num}) Captured stream source: {source}")
-            return source, event_url
-        else:
-            log.warning(f"URL {url_num}) Direct decoder returned invalid source")
-    else:
-        log.info(f"URL {url_num}) Direct decoder not found")
-
-    # Fallback: Look for iframe
+    # Step 2: Look for iframe with the player URL
     soup = HTMLParser(html_data.content)
-    iframe = soup.css_first("iframe")
+    iframe = soup.css_first(".player-box iframe")
+    
     if not iframe:
-        log.warning(f"URL {url_num}) No iframe element found")
+        log.warning(f"URL {url_num}) No player iframe found")
         return None, None
 
     iframe_src = iframe.attributes.get("src")
@@ -274,10 +259,11 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
         log.warning(f"URL {url_num}) Iframe has no src attribute")
         return None, None
 
+    # Make relative iframe URL absolute
     iframe_src = urljoin(event_url, iframe_src)
-    log.info(f"URL {url_num}) Processing iframe: {iframe_src}")
+    log.info(f"URL {url_num}) Found player iframe: {iframe_src}")
 
-    # Fetch iframe with event URL as Referer
+    # Step 3: Fetch the player iframe content (this contains the encrypted stream)
     iframe_data = await network.request(
         iframe_src,
         url_num,
@@ -285,28 +271,31 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
         log=log,
     )
     if not iframe_data:
-        log.warning(f"URL {url_num}) Failed to fetch iframe")
+        log.warning(f"URL {url_num}) Failed to fetch player iframe")
         return None, None
 
     iframe_text = getattr(iframe_data, "text", iframe_data.content)
 
-    # Try decoder inside iframe
+    # Step 4: Extract decoder data from the iframe
     decoder_data = extract_decoder_data(iframe_text)
     if not decoder_data:
-        log.warning(f"URL {url_num}) Failed to gather decoding variables")
+        log.warning(f"URL {url_num}) Failed to extract decoder data from player")
         return None, None
 
     dd, dk, dri = decoder_data
-    log.info(f"URL {url_num}) Found iframe decoder")
+    log.info(f"URL {url_num}) Found player decoder")
 
+    # Step 5: Decrypt the stream URL
     source = decrypt(dd, dk, dri)
     source = normalize_source(source, iframe_src)
 
     if not source:
-        log.warning(f"URL {url_num}) Iframe decoder failed")
+        log.warning(f"URL {url_num}) Failed to decrypt stream URL")
         return None, None
 
     log.info(f"URL {url_num}) Captured stream source: {source}")
+    
+    # Return the stream URL with the event page as referer
     return source, event_url
 
 
