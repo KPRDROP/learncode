@@ -6,9 +6,9 @@ from collections.abc import KeysView
 from functools import partial
 from urllib.parse import urljoin, quote
 
-from selectolax.lexbor import LexborHTMLParser as HTMLParser
+from selectolax.parser import HTMLParser
 
-from utils import Cache, Event, Time, get_logger, leagues, network
+from .utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -20,9 +20,9 @@ CACHE_FILE = Cache(TAG, exp=28_800)
 
 BASE_URL = "https://gozo.st/"
 
-REFERER = "https://unxer123.gozo.st/"
-ORIGIN = "https://unxer123.gozo.st"
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36"
+REFERER = "https://unxer123.gozo.zip/games/juventus-vs-milan/"
+ORIGIN = "https://unxer123.gozo.zip/games/juventus-vs-milan/"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36"
 
 
 def rot13(c: str) -> str:
@@ -64,42 +64,113 @@ def decrypt(enc: str, xor_key: int, num_list: list[int]) -> str | None:
         )[::-1]
 
         return base64.b64decode(reversed_str.encode("utf-8")).decode("utf-8")
-    except Exception:
+    except Exception as e:
+        log.error(f"Decryption error: {e}")
         return
+
+
+def extract_decryption_vars(html: str) -> tuple[str | None, int | None, list[int] | None]:
+    """Extract _dd, _dk, _dri variables from HTML"""
+    dd_ptrn = re.compile(r'const\s+_dd\s*=\s*"([^"]+)"', re.I)
+    dk_ptrn = re.compile(r'const\s+_dk\s*=\s*(\d+)', re.I)
+    dri_ptrn = re.compile(r'const\s+_dri\s*=\s*\[([^\]]+)\]', re.I)
+    
+    dd_match = dd_ptrn.search(html)
+    dk_match = dk_ptrn.search(html)
+    dri_match = dri_ptrn.search(html)
+    
+    if not (dd_match and dk_match and dri_match):
+        return None, None, None
+    
+    dd = dd_match[1]
+    dk = int(dk_match[1])
+    dri = ast.literal_eval(f"[{dri_match[1]}]")
+    
+    return dd, dk, dri
+
+
+def extract_stream_url(html: str) -> str | None:
+    """Extract and decrypt the stream URL from the HTML"""
+    # Look for the direct URL format first
+    direct_pattern = re.compile(r'if\s*\(\s*_M\s*===\s*[\'"]direct[\'"]\s*\)\s*\{[^}]*return\s+_decrypt\(_dd,\s*_dk,\s*_dri\)', re.S)
+    if direct_pattern.search(html):
+        dd, dk, dri = extract_decryption_vars(html)
+        if dd and dk and dri:
+            try:
+                return decrypt(dd, dk, dri)
+            except Exception as e:
+                log.error(f"Failed to decrypt stream URL: {e}")
+    
+    # Look for encrypted URL pattern in the player
+    dd_ptrn = re.compile(r'const\s+_dd\s*=\s*"([^"]+)"', re.I)
+    dk_ptrn = re.compile(r'const\s+_dk\s*=\s*(\d+)', re.I)
+    dri_ptrn = re.compile(r'const\s+_dri\s*=\s*\[([^\]]+)\]', re.I)
+    
+    dd_match = dd_ptrn.search(html)
+    dk_match = dk_ptrn.search(html)
+    dri_match = dri_ptrn.search(html)
+    
+    if dd_match and dk_match and dri_match:
+        dd = dd_match[1]
+        dk = int(dk_match[1])
+        dri = ast.literal_eval(f"[{dri_match[1]}]")
+        try:
+            return decrypt(dd, dk, dri)
+        except Exception as e:
+            log.error(f"Failed to decrypt stream URL: {e}")
+    
+    return None
 
 
 async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
     nones = None, None
 
-    if not (html_data := await network.request(url, url_num, log=log)):
+    if not (html_data := await network.request(url, log=log)):
         return nones
 
-    soup = HTMLParser(html_data.content)
+    html_content = html_data.text if hasattr(html_data, 'text') else html_data.content
+    
+    # Try to extract stream URL from the HTML
+    stream_url = extract_stream_url(html_content)
+    
+    if stream_url:
+        log.info(f"URL {url_num}) Captured M3U8 from embedded player")
+        return stream_url, url
+
+    # Fallback: look for iframe
+    soup = HTMLParser(html_content)
 
     iframe = soup.css_first("iframe")
 
     if not iframe or not (iframe_src := iframe.attributes.get("src")):
-        log.warning(f"URL {url_num}) No iframe element found.")
+        log.warning(f"URL {url_num}) No iframe or stream URL found.")
         return nones
 
     if not (
         iframe_src_data := await network.request(
             iframe_src,
-            url_num,
             headers={"Referer": url},
             log=log,
         )
     ):
         return nones
 
+    # Try to extract from iframe content
+    stream_url = extract_stream_url(iframe_src_data.text if hasattr(iframe_src_data, 'text') else iframe_src_data.content)
+    
+    if stream_url:
+        log.info(f"URL {url_num}) Captured M3U8 from iframe")
+        return stream_url, iframe_src
+
+    # Try old method (for backward compatibility)
     dd_ptrn = re.compile(r'_dd\s?=\s?"(.*)";', re.I)
     dk_ptrn = re.compile(r"_dk\s?=\s?(\d*);", re.I)
     dri_ptrn = re.compile(r"_dri\s?=\s?(.*);", re.I)
 
     if not (
-        (dd_mtch := dd_ptrn.search(iframe_src_data.text))
-        and (dk_mtch := dk_ptrn.search(iframe_src_data.text))
-        and (dri_mtch := dri_ptrn.search(iframe_src_data.text))
+        (dd_mtch := dd_ptrn.search(iframe_src_data.text if hasattr(iframe_src_data, 'text') else iframe_src_data.content))
+        and (dk_mtch := dk_ptrn.search(iframe_src_data.text if hasattr(iframe_src_data, 'text') else iframe_src_data.content))
+        and (dri_mtch := dri_ptrn.search(iframe_src_data.text if hasattr(iframe_src_data, 'text') else iframe_src_data.content))
     ):
         log.warning(f"URL {url_num}) Failed to gather decoding variables")
         return nones
@@ -122,7 +193,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     if not (html_data := await network.request(BASE_URL, log=log)):
         return events
 
-    soup = HTMLParser(html_data.content)
+    soup = HTMLParser(html_data.text if hasattr(html_data, 'text') else html_data.content)
 
     for card in soup.css(".card-inner"):
 
@@ -169,7 +240,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 async def scrape() -> None:
     cached_urls = CACHE_FILE.load()
 
-    valid_urls = {k: v for k, v in cached_urls.items() if v["source"]}
+    valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
 
     valid_count = cached_count = len(valid_urls)
 
@@ -202,11 +273,14 @@ async def scrape() -> None:
             key = f"[{ev.sport}] {ev.name} ({TAG})"
 
             tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+            
+            # Use the event's URL as referer if available
+            referer = iframe or ev.link or REFERER
 
             entry = {
                 "source": source,
                 "logo": logo,
-                "refer": iframe,
+                "refer": referer,
                 "timestamp": now.timestamp(),
                 "tvg-id": tvg_id or "Live.Event.us",
                 "link": ev.link,
@@ -216,8 +290,8 @@ async def scrape() -> None:
 
             if source:
                 valid_count += 1
-
                 urls[key] = entry
+                log.info(f"Added event: {key}")
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -235,13 +309,14 @@ def generate_vlc_m3u8() -> str:
         tvg_id = data.get("tvg-id", "Live.Event.us")
         logo = data.get("logo", "")
         source = data.get("source", "")
+        referer = data.get("refer", REFERER)
         
         if not source:
             continue
             
         content += f'#EXTINF:-1 tvg-chno="{idx}" tvg-id="{tvg_id}" tvg-name="{title}" tvg-logo="{logo}" group-title="Live Events",{title}\n'
-        content += f'#EXTVLCOPT:http-referrer={REFERER}\n'
-        content += f'#EXTVLCOPT:http-origin={ORIGIN}\n'
+        content += f'#EXTVLCOPT:http-referrer={referer}\n'
+        content += f'#EXTVLCOPT:http-origin={referer}\n'
         content += f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n'
         content += f'{source}\n'
     
@@ -258,12 +333,13 @@ def generate_tivimate_m3u8() -> str:
         tvg_id = data.get("tvg-id", "Live.Event.us")
         logo = data.get("logo", "")
         source = data.get("source", "")
+        referer = data.get("refer", REFERER)
         
         if not source:
             continue
             
         content += f'#EXTINF:-1 tvg-chno="{idx}" tvg-id="{tvg_id}" tvg-name="{title}" tvg-logo="{logo}" group-title="Live Events",{title}\n'
-        content += f'{source}|referer={REFERER}|origin={ORIGIN}|user-agent={encoded_user_agent}\n'
+        content += f'{source}|referer={referer}|origin={referer}|user-agent={encoded_user_agent}\n'
     
     return content
 
