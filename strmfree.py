@@ -2,14 +2,17 @@ import os
 import re
 import asyncio
 import json
-from pathlib import Path
+from dataclasses import dataclass
+from functools import partial
 from typing import Any
-from urllib.parse import urljoin, urlparse, quote
+from urllib.parse import urljoin, quote, urlencode
+
+import httpx
 
 from playwright.async_api import Browser
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-from utils import Cache, Time, get_logger, leagues, network
+from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -49,267 +52,164 @@ CATEGORY_IDS = {
     "Cricket": "cricket"
 }
 
-# Sport name to ID mapping (for reverse lookup)
-SPORT_TO_CATEGORY = {v: k for k, v in CATEGORY_IDS.items()}
+
+@dataclass(kw_only=True, slots=True)
+class STFEvent(Event):
+    link: str | None = None
+    logo: str | None = None
+    category: str
+    stream_key: str
 
 
-async def get_event_data() -> dict[str, dict[str, Any]]:
-    """Fetch event data from the API endpoint."""
-    if not API_URL:
-        log.error("STRM_FREE_API_URL environment variable not set")
-        return {}
+async def process_event(
+    stream_key: str,
+    category: str,
+    url_num: int,
+) -> str | None:
+    """Process a single event to extract the M3U8 URL."""
+    
+    # Step 1: Check stream availability
+    if not (
+        quality_data := await network.request(
+            urljoin(BASE_URL, f"api/stream-status/{stream_key}"),
+            url_num,
+            log=log,
+        )
+    ):
+        return
 
-    try:
-        response = await network.request(API_URL, log=log)
-        if not response:
-            log.error("No response from API")
-            return {}
-        
-        # Get the response data
-        try:
-            data = response.json()
-        except Exception as e:
-            log.error(f"Failed to parse JSON response: {e}")
-            return {}
-        
-        # Handle different response formats
-        events = {}
-        
-        # Case 1: Data is a dictionary with a 'streams' or 'events' key
-        if isinstance(data, dict):
-            # Check if it has streams or events
-            if "streams" in data:
-                stream_data = data["streams"]
-            elif "events" in data:
-                stream_data = data["events"]
-            elif "data" in data:
-                stream_data = data["data"]
-            else:
-                # Try to process the dict directly
-                stream_data = data
-            
-            # Process the stream data
-            if isinstance(stream_data, dict):
-                for sport, sport_events in stream_data.items():
-                    # Skip if sport is not a string or is a timestamp
-                    if not isinstance(sport, str) or sport in ["timestamp", "time", "date"]:
-                        continue
-                    
-                    # Get category
-                    category = CATEGORY_IDS.get(sport, sport.lower())
-                    
-                    # Process events for this sport
-                    if isinstance(sport_events, list):
-                        for event in sport_events:
-                            if not isinstance(event, dict):
-                                continue
-                            event_name = event.get("name", "")
-                            if not event_name:
-                                continue
-                                
-                            stream_key = re.sub(r'[^a-z0-9]+', '-', event_name.lower()).strip('-')
-                            
-                            key = f"[{sport}] {event_name} ({TAG})"
-                            events[key] = {
-                                "sport": sport,
-                                "name": event_name,
-                                "category": category,
-                                "stream_key": stream_key,
-                                "thumbnail": event.get("thumbnail", event.get("logo", "")),
-                                "league": event.get("league", sport),
-                                "timestamp": event.get("timestamp", Time.rn().timestamp()),
-                            }
-            
-            # If stream_data is a list, process directly
-            elif isinstance(stream_data, list):
-                for event in stream_data:
-                    if not isinstance(event, dict):
-                        continue
-                    
-                    sport = event.get("sport", event.get("league", "Live Events"))
-                    event_name = event.get("name", event.get("title", ""))
-                    if not event_name:
-                        continue
-                    
-                    category = CATEGORY_IDS.get(sport, sport.lower())
-                    stream_key = re.sub(r'[^a-z0-9]+', '-', event_name.lower()).strip('-')
-                    
-                    key = f"[{sport}] {event_name} ({TAG})"
-                    events[key] = {
-                        "sport": sport,
-                        "name": event_name,
-                        "category": category,
-                        "stream_key": stream_key,
-                        "thumbnail": event.get("thumbnail", event.get("logo", "")),
-                        "league": event.get("league", sport),
-                        "timestamp": event.get("timestamp", Time.rn().timestamp()),
-                    }
-            
-            else:
-                log.error(f"Unexpected stream_data type: {type(stream_data)}")
-                return {}
-        
-        # Case 2: Data is a list directly
-        elif isinstance(data, list):
-            for event in data:
-                if not isinstance(event, dict):
-                    continue
-                
-                sport = event.get("sport", event.get("league", "Live Events"))
-                event_name = event.get("name", event.get("title", ""))
-                if not event_name:
-                    continue
-                
-                category = CATEGORY_IDS.get(sport, sport.lower())
-                stream_key = re.sub(r'[^a-z0-9]+', '-', event_name.lower()).strip('-')
-                
-                key = f"[{sport}] {event_name} ({TAG})"
-                events[key] = {
-                    "sport": sport,
-                    "name": event_name,
-                    "category": category,
-                    "stream_key": stream_key,
-                    "thumbnail": event.get("thumbnail", event.get("logo", "")),
-                    "league": event.get("league", sport),
-                    "timestamp": event.get("timestamp", Time.rn().timestamp()),
-                }
-        
-        else:
-            log.error(f"Unexpected data type: {type(data)}")
-            return {}
-        
-        log.info(f"Processed {len(events)} events from API")
-        return events
-        
-    except Exception as e:
-        log.error(f"Error fetching event data: {e}")
-        import traceback
-        traceback.print_exc()
-        return {}
+    quality_info: dict[str, str | Any] = quality_data.json()
+
+    if not quality_info.get("available"):
+        log.warning(f"URL {url_num}) Stream is unavailable.")
+        return
+
+    elif not (sources := quality_info.get("sources")):
+        log.warning(f"URL {url_num}) No Sources found.")
+        return
+
+    # Step 2: Get available qualities
+    quality_sources = {
+        f"{quality}{source_num}": value
+        for source_num, source_data in sources.items()
+        for quality, value in source_data["qualities"].items()
+    }
+
+    available_quals: list[tuple[str, str]] = sorted(
+        [qual.split("p") for qual, flag in quality_sources.items() if flag],
+        key=lambda x: int(x[-1]),
+    )
+
+    if not available_quals:
+        log.warning(f"URL {url_num}) No available qualities found.")
+        return
+
+    qual, num = f"{available_quals[0][0]}p", available_quals[0][-1]
+    num = "" if num == "1" else num
+
+    # Step 3: Get server name
+    server_name = "cdn"
+    if server_info := await network.request(
+        urljoin(BASE_URL, f"get-stream-key/{stream_key}"),
+        url_num,
+        log=log,
+    ):
+        server_name = server_info.json().get("server_name", "cdn")
+
+    # Step 4: Get stream data
+    if not (
+        stream_data := await network.request(
+            urljoin(BASE_URL, f"embed/{category}/{stream_key}{num}"),
+            url_num,
+            params={"quality": qual, "category": category},
+            timeout=httpx.Timeout(25.0),
+            log=log,
+        )
+    ):
+        return
+
+    # Step 5: Extract M3U8 info
+    ptrn = re.compile(r"_0x\s+=\s+(.*?);", re.S)
+
+    if not (match := ptrn.search(stream_data.text)):
+        log.warning(f"URL {url_num}) Unable to find stream information.")
+        return
+
+    m3u_info: dict[str, dict[str, Any]] = json.loads(match[1])[qual]
+    query = urlencode(m3u_info)
+
+    log.info(f"URL {url_num}) Captured M3U8")
+
+    return urljoin(
+        BASE_URL,
+        f"live-{server_name}/{stream_key}{qual}{num}/index.m3u8?{query}",
+    )
 
 
-async def process_event(event_url: str, url_num: int, page) -> str | None:
-    """Process a single event page to extract the M3U8 URL."""
-    try:
-        await page.goto(event_url, wait_until="networkidle", timeout=30000)
-        
-        # Wait for video element or source
-        try:
-            await page.wait_for_selector("video", timeout=10000)
-        except:
-            # Try to find M3U8 in page source
-            content = await page.content()
-            m3u8_match = re.search(r'https?://[^\s"\']+\.m3u8[^\s"\']*', content)
-            if m3u8_match:
-                m3u8_url = m3u8_match.group(0)
-                log.info(f"URL {url_num}) Captured M3U8 from page source")
-                return m3u8_url
-            return None
-        
-        # Get the M3U8 URL from the video source
-        m3u8_url = await page.evaluate("""
-            () => {
-                // Check video element
-                const video = document.querySelector('video');
-                if (video) {
-                    const src = video.src || video.currentSrc;
-                    if (src && src.includes('.m3u8')) {
-                        return src;
-                    }
-                }
-                // Check source elements
-                const sources = document.querySelectorAll('source[src*=".m3u8"]');
-                for (const source of sources) {
-                    if (source.src && source.src.includes('.m3u8')) {
-                        return source.src;
-                    }
-                }
-                // Check for any element with m3u8 in src or href
-                const elements = document.querySelectorAll('[src*=".m3u8"], [href*=".m3u8"]');
-                for (const el of elements) {
-                    const src = el.src || el.href;
-                    if (src && src.includes('.m3u8')) {
-                        return src;
-                    }
-                }
-                // Check script tags for m3u8 URLs
-                const scripts = document.querySelectorAll('script');
-                for (const script of scripts) {
-                    if (script.textContent && script.textContent.includes('.m3u8')) {
-                        const match = script.textContent.match(/https?:[^\\s"']+\\.m3u8[^\\s"']*/);
-                        if (match) {
-                            return match[0];
-                        }
-                    }
-                }
-                return null;
-            }
-        """)
-        
-        if m3u8_url:
-            log.info(f"URL {url_num}) Captured M3U8")
-            return m3u8_url
-        
-        log.warning(f"URL {url_num}) No M3U8 found")
-        return None
-        
-    except Exception as e:
-        log.warning(f"URL {url_num}) Error processing: {e}")
-        return None
-
-
-async def get_events(cached_keys: list[str]) -> list[dict[str, Any]]:
+async def get_events(cached_keys: list[str]) -> list[STFEvent]:
     """Get events from API or cache."""
-    # Fixed: Changed from Time.clean(Time.now()) to Time.rn()
     now = Time.rn()
 
-    # Load from cache
-    events = API_CACHE.load(per_entry=False)
-    
-    # If cache is empty or not a dict, refresh it
-    if not events or not isinstance(events, dict):
-        log.info("Refreshing event cache")
-        
-        events = await get_event_data()
-        
-        if events and isinstance(events, dict):
-            # Add timestamp to the cache
-            events["_timestamp"] = now.timestamp()
-            API_CACHE.write(events)
-        else:
-            log.warning("No events retrieved from API")
-            return []
+    events: list[STFEvent] = []
 
-    # Process events - remove timestamp
-    if isinstance(events, dict):
-        # Remove timestamp entry
-        events.pop("_timestamp", None)
+    # Load from cache
+    if not (api_data := API_CACHE.load(per_entry=False)):
+        log.info("Refreshing API cache")
+
+        api_data = {"timestamp": now.timestamp()}
+
+        if r := await network.request(
+            urljoin(BASE_URL, "api/v1/streams"),
+            log=log,
+        ):
+            api_data = r.json()
+            api_data["timestamp"] = now.timestamp()
+
+        API_CACHE.write(api_data)
+
+    # Event window: 3 hours before now
+    start_ts = now.delta(hours=-3).timestamp()
+    now_ts = now.timestamp()
+
+    for stream_info in api_data.get("streams", []):
+        if not all(
+            values := [
+                stream_info.get(x)
+                for x in (
+                    "league",
+                    "category",
+                    "name",
+                    "match_timestamp",
+                    "stream_key",
+                )
+            ]
+        ):
+            continue
+
+        sport, category, name, event_time, stream_key = values
+
+        key = f"[{sport}] {name} ({TAG})"
         
-        # Process each event
-        event_list = []
-        for key, event_data in events.items():
-            if key in cached_keys:
-                continue
-                
-            # Skip if missing required data
-            if not event_data.get("stream_key"):
-                continue
-                
-            # Check if event is within time window (30 minutes before/after)
-            event_ts = event_data.get("timestamp", now.timestamp())
-            if not (now.delta(minutes=-30).timestamp() <= event_ts <= now.delta(minutes=30).timestamp()):
-                continue
-            
-            event_list.append({
-                "key": key,
-                **event_data
-            })
-        
-        log.info(f"Found {len(event_list)} eligible event(s)")
-        return event_list
-    
-    log.warning(f"Unexpected events format: {type(events)}")
-    return []
+        if key in cached_keys:
+            continue
+
+        # Check if event is within time window (3 hours before now)
+        if not start_ts <= (event_time + 1800) <= now_ts:
+            continue
+
+        events.append(
+            STFEvent(
+                sport=sport,
+                name=name,
+                category=category,
+                stream_key=quote(stream_key),
+                logo=stream_info.get("thumbnail_url"),
+                timestamp=now_ts,
+            )
+        )
+
+    log.info(f"Found {len(events)} eligible event(s)")
+    return events
 
 
 def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
@@ -390,56 +290,65 @@ def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
         log.error(f"Error writing TiviMate M3U8 file: {e}")
 
 
-async def scrape(browser: Browser) -> None:
+async def scrape() -> None:
     """Main scraping function."""
     cached_urls = CACHE_FILE.load()
-    
+
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
-    
+
     valid_count = cached_count = len(valid_urls)
-    
+
     urls.update(valid_urls)
-    
+
     log.info(f"Loaded {cached_count} event(s) from cache")
-    log.info(f'Scraping from "{API_URL}"')
-    
+
+    log.info(f'Scraping from "{BASE_URL}"')
+
     if events := await get_events(list(cached_urls.keys())):
         log.info(f"Processing {len(events)} new URL(s)")
-        
-        async with network.event_context(browser) as context:
-            for i, ev in enumerate(events, start=1):
-                # Build event URL
-                event_url = f"{BASE_URL}/player/{ev['category']}/{ev['stream_key']}"
-                
-                async with network.event_page(context) as page:
-                    source = await process_event(event_url, i, page)
-                    
-                    tvg_id, logo = leagues.get_tvg_info(ev['sport'], ev['name'])
-                    
-                    key = ev['key']
-                    
-                    entry = {
-                        "source": source,
-                        "logo": logo,
-                        "refer": event_url,
-                        "timestamp": ev.get("timestamp", Time.rn().timestamp()),
-                        "tvg-id": tvg_id or "Live.Event.us",
-                        "sport": ev['sport'],
-                        "category": ev['category'],
-                        "stream_key": ev['stream_key'],
-                    }
-                    
-                    cached_urls[key] = entry
-                    
-                    if source:
-                        valid_count += 1
-                        urls[key] = entry
-                        log.info(f"Added event: {key}")
-        
+
+        for i, ev in enumerate(events, start=1):
+            handler = partial(
+                process_event,
+                stream_key=ev.stream_key,
+                category=ev.category,
+                url_num=i,
+            )
+
+            source = await network.safe_process(
+                handler,
+                url_num=i,
+                semaphore=network.HTTP_S,
+                log=log,
+            )
+
+            key = f"[{ev.sport}] {ev.name} ({TAG})"
+
+            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+
+            entry = {
+                "source": source,
+                "logo": ev.logo or logo,
+                "refer": f"{BASE_URL}/player/{ev.category}/{ev.stream_key}",
+                "timestamp": ev.timestamp,
+                "tvg-id": tvg_id or "Live.Event.us",
+                "sport": ev.sport,
+                "category": ev.category,
+                "stream_key": ev.stream_key,
+            }
+
+            cached_urls[key] = entry
+
+            if source:
+                valid_count += 1
+                urls[key] = entry
+                log.info(f"Added event: {key}")
+
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
+
     else:
         log.info("No new events found")
-    
+
     CACHE_FILE.write(cached_urls)
     
     # Generate M3U8 files after updating cache
@@ -451,20 +360,8 @@ async def main() -> None:
     try:
         log.info(f"Starting {TAG} updater")
         log.info(f"Using API URL: {API_URL}")
-        
-        # Initialize playwright and run scraper
-        from playwright.async_api import async_playwright
-        
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(
-                headless=True,
-                args=['--no-sandbox', '--disable-setuid-sandbox']
-            )
-            try:
-                await scrape(browser)
-                log.info(f"{TAG} updater completed successfully")
-            finally:
-                await browser.close()
+        await scrape()
+        log.info(f"{TAG} updater completed successfully")
                 
     except Exception as e:
         log.error(f"{TAG} updater failed: {e}")
