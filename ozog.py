@@ -10,7 +10,6 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
-
 log = get_logger(__name__)
 
 urls: dict[str, dict[str, str | float]] = {}
@@ -26,7 +25,6 @@ CACHE_FILE = Cache(TAG, exp=28_800)
 BASE_URL = "https://gozo.st/"
 
 REFERER = "https://unxer123.gozo.zip/"
-
 ORIGIN = "https://unxer123.gozo.zip"
 
 USER_AGENT = (
@@ -41,69 +39,38 @@ USER_AGENT = (
 # ---------------------------------------------------------------------------
 
 def get_origin(url: str) -> str:
-    """
-    Return scheme + hostname from a URL.
-
-    Example:
-        https://unxer123.gozo.zip/games/juventus-vs-milan/
-
-    returns:
-        https://unxer123.gozo.zip
-    """
-
+    """Return scheme + hostname from a URL."""
     try:
         parsed = urlparse(url)
-
         if parsed.scheme and parsed.netloc:
             return f"{parsed.scheme}://{parsed.netloc}"
-
     except Exception:
         pass
-
     return ORIGIN
 
 
-def normalize_source(
-    source: str | None,
-    base_url: str,
-) -> str | None:
-    """
-    Convert a decoded stream/source URL into an absolute HTTP/HTTPS URL.
-    """
-
+def normalize_source(source: str | None, base_url: str) -> str | None:
+    """Convert a decoded stream/source URL into an absolute HTTP/HTTPS URL."""
     if not source:
         return None
 
-    source = source.strip()
-    source = source.strip("\"'")
-
+    source = source.strip().strip("\"'")
     if not source:
         return None
 
-    # JavaScript escaped slashes.
+    # JavaScript escaped slashes
     source = source.replace("\\/", "/")
 
-    # Protocol-relative URL.
+    # Protocol-relative URL
     if source.startswith("//"):
         scheme = urlparse(base_url).scheme or "https"
         source = f"{scheme}:{source}"
 
-    # Relative URL.
-    elif not re.match(
-        r"^https?://",
-        source,
-        re.IGNORECASE,
-    ):
-        source = urljoin(
-            base_url,
-            source,
-        )
+    # Relative URL
+    elif not re.match(r"^https?://", source, re.IGNORECASE):
+        source = urljoin(base_url, source)
 
-    if re.match(
-        r"^https?://",
-        source,
-        re.IGNORECASE,
-    ):
+    if re.match(r"^https?://", source, re.IGNORECASE):
         return source
 
     return None
@@ -114,157 +81,64 @@ def normalize_source(
 # ---------------------------------------------------------------------------
 
 def rot13(c: str) -> str:
-    """
-    Same ROT13 operation used by the original OZOG JavaScript.
-    """
-
+    """Same ROT13 operation used by the original OZOG JavaScript."""
     code = ord(c)
-
     if "A" <= c <= "Z":
         base = ord("A")
     elif "a" <= c <= "z":
         base = ord("a")
     else:
         return c
-
-    return chr(
-        (code - base + 13) % 26 + base
-    )
+    return chr((code - base + 13) % 26 + base)
 
 
 # ---------------------------------------------------------------------------
 # OZOG decrypt
 # ---------------------------------------------------------------------------
 
-def decrypt(
-    enc: str,
-    xor_key: int,
-    num_list: list[int],
-) -> str | None:
+def decrypt(enc: str, xor_key: int, num_list: list[int]) -> str | None:
     """
     Python equivalent of the original OZOG JavaScript _decrypt().
-
-    Processing order:
-
-        1. Unshuffle
-        2. XOR
-        3. Hex decode
-        4. ROT13
-        5. Reverse
-        6. Base64 decode
+    Processing order: 1. Unshuffle 2. XOR 3. Hex decode 4. ROT13 5. Reverse 6. Base64 decode
     """
-
     try:
-        if not enc:
-            return None
-
-        if len(enc) % 2 != 0:
-            log.debug(
-                "OZOG decoder: encoded string has odd length"
-            )
+        if not enc or len(enc) % 2 != 0:
             return None
 
         if len(num_list) != len(enc):
-            log.debug(
-                "OZOG decoder: _dri length does not match _dd length"
-            )
             return None
 
-        # ---------------------------------------------------------------
         # Layer 6: unshuffle
-        # ---------------------------------------------------------------
-
         chars = list(enc)
-
         unshuffled = [""] * len(chars)
-
         for i, num in enumerate(num_list):
-
-            if not isinstance(num, int):
+            if not isinstance(num, int) or num < 0 or num >= len(chars):
                 return None
-
-            if num < 0 or num >= len(chars):
-                return None
-
             unshuffled[num] = chars[i]
+        xor_encoded = "".join(unshuffled)
 
-        xor_encoded = "".join(
-            unshuffled
-        )
-
-        # ---------------------------------------------------------------
         # Layer 5: XOR
-        # ---------------------------------------------------------------
-
         hex_encoded = ""
+        for i in range(0, len(xor_encoded), 2):
+            byte = int(xor_encoded[i:i + 2], 16)
+            hex_encoded += chr(byte ^ xor_key)
 
-        for i in range(
-            0,
-            len(xor_encoded),
-            2,
-        ):
-
-            byte = int(
-                xor_encoded[i:i + 2],
-                16,
-            )
-
-            hex_encoded += chr(
-                byte ^ xor_key
-            )
-
-        # ---------------------------------------------------------------
         # Layer 4: Hex decode
-        # ---------------------------------------------------------------
-
         rot13_string = ""
+        for i in range(0, len(hex_encoded), 2):
+            rot13_string += chr(int(hex_encoded[i:i + 2], 16))
 
-        for i in range(
-            0,
-            len(hex_encoded),
-            2,
-        ):
-
-            rot13_string += chr(
-                int(
-                    hex_encoded[i:i + 2],
-                    16,
-                )
-            )
-
-        # ---------------------------------------------------------------
         # Layer 3: ROT13
-        # ---------------------------------------------------------------
+        rotated = "".join(rot13(c) for c in rot13_string)
 
-        rotated = "".join(
-            rot13(c)
-            for c in rot13_string
-        )
-
-        # ---------------------------------------------------------------
         # Layer 2: Reverse
-        # ---------------------------------------------------------------
-
         base64_data = rotated[::-1]
 
-        # ---------------------------------------------------------------
         # Layer 1: Base64 decode
-        # ---------------------------------------------------------------
-
-        return base64.b64decode(
-            base64_data.encode(
-                "utf-8"
-            )
-        ).decode(
-            "utf-8"
-        )
+        return base64.b64decode(base64_data.encode("utf-8")).decode("utf-8")
 
     except Exception as exc:
-
-        log.debug(
-            f"OZOG decoder failed: {exc}"
-        )
-
+        log.debug(f"OZOG decoder failed: {exc}")
         return None
 
 
@@ -272,28 +146,12 @@ def decrypt(
 # Extract decoder variables
 # ---------------------------------------------------------------------------
 
-def extract_decoder_data(
-    text: str,
-) -> tuple[str, int, list[int]] | None:
-    """
-    Extract _dd, _dk and _dri from the OZOG event/player HTML.
-
-    Supports:
-
-        const _dk = 87;
-        const _dd = "...";
-        const _dri = [...];
-
-    and var/let/no declaration variants.
-    """
-
+def extract_decoder_data(text: str) -> tuple[str, int, list[int]] | None:
+    """Extract _dd, _dk and _dri from the OZOG event/player HTML."""
     if not text:
         return None
 
-    # -----------------------------------------------------------------------
     # _dd
-    # -----------------------------------------------------------------------
-
     dd_match = re.search(
         r"""
         (?:
@@ -311,18 +169,11 @@ def extract_decoder_data(
         text,
         re.IGNORECASE | re.DOTALL | re.VERBOSE,
     )
-
     if not dd_match:
         return None
+    dd = dd_match.group("value")
 
-    dd = dd_match.group(
-        "value"
-    )
-
-    # -----------------------------------------------------------------------
     # _dk
-    # -----------------------------------------------------------------------
-
     dk_match = re.search(
         r"""
         (?:
@@ -338,24 +189,14 @@ def extract_decoder_data(
         text,
         re.IGNORECASE | re.VERBOSE,
     )
-
     if not dk_match:
         return None
-
     try:
-        dk = int(
-            dk_match.group(
-                "value"
-            )
-        )
-
+        dk = int(dk_match.group("value"))
     except ValueError:
         return None
 
-    # -----------------------------------------------------------------------
     # _dri
-    # -----------------------------------------------------------------------
-
     dri_match = re.search(
         r"""
         (?:
@@ -371,403 +212,141 @@ def extract_decoder_data(
         text,
         re.IGNORECASE | re.DOTALL | re.VERBOSE,
     )
-
     if not dri_match:
         return None
-
     try:
-        dri = ast.literal_eval(
-            dri_match.group(
-                "value"
-            )
-        )
-
-    except (
-        ValueError,
-        SyntaxError,
-    ):
+        dri = ast.literal_eval(dri_match.group("value"))
+    except (ValueError, SyntaxError):
         return None
 
-    if not isinstance(
-        dri,
-        list,
-    ):
+    if not isinstance(dri, list) or not all(isinstance(item, int) for item in dri):
         return None
 
-    if not all(
-        isinstance(
-            item,
-            int,
-        )
-        for item in dri
-    ):
-        return None
-
-    return (
-        dd,
-        dk,
-        dri,
-    )
-
-
-# ---------------------------------------------------------------------------
-# Request helper
-# ---------------------------------------------------------------------------
-
-async def request_page(
-    url: str,
-    url_num: int,
-    headers: dict[str, str] | None = None,
-):
-    """
-    Request a page using the existing network helper.
-
-    The original OZOG code uses network.request(), so this keeps the
-    existing project networking behavior intact.
-    """
-
-    request_headers = {
-        "User-Agent": USER_AGENT,
-    }
-
-    if headers:
-        request_headers.update(
-            headers
-        )
-
-    return await network.request(
-        url,
-        url_num,
-        headers=request_headers,
-        log=log,
-    )
+    return (dd, dk, dri)
 
 
 # ---------------------------------------------------------------------------
 # Process event
 # ---------------------------------------------------------------------------
 
-async def process_event(
-    url: str,
-    url_num: int,
-) -> tuple[str | None, str | None]:
-
+async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
     if not url:
         return None, None
 
-    # Keep the complete event page URL.
+    # Ensure the URL has a trailing slash for proper joining
     event_url = url.rstrip("/") + "/"
 
-    log.info(
-        f'URL {url_num}) Processing "{event_url}"'
-    )
+    log.info(f'URL {url_num}) Processing "{event_url}"')
 
-    # -----------------------------------------------------------------------
-    # STEP 1
-    #
-    # Fetch the event page.
-    #
-    # IMPORTANT:
-    # The current OZOG event page contains the direct decoder variables
-    # directly in the event HTML.
-    # -----------------------------------------------------------------------
-
-    html_data = await request_page(
-        event_url,
-        url_num,
-    )
-
+    # Fetch the event page
+    html_data = await network.request(event_url, url_num, log=log)
     if not html_data:
-
-        log.error(
-            f'URL {url_num}) Failed to fetch "{event_url}"'
-        )
-
+        log.error(f'URL {url_num}) Failed to fetch "{event_url}"')
         return None, None
 
-    page_text = getattr(
-        html_data,
-        "text",
-        "",
-    )
+    page_text = getattr(html_data, "text", html_data.content)
 
-    if not page_text:
-
-        page_text = html_data.content
-
-    # -----------------------------------------------------------------------
-    # STEP 2
-    #
-    # PRIMARY STREAM METHOD
-    #
-    # Look for _dd/_dk/_dri directly on the event page.
-    # -----------------------------------------------------------------------
-
-    decoder_data = extract_decoder_data(
-        page_text
-    )
-
+    # Try to find decoder directly on the event page
+    decoder_data = extract_decoder_data(page_text)
     if decoder_data:
-
         dd, dk, dri = decoder_data
-
-        log.info(
-            f"URL {url_num}) Found direct OZOG decoder"
-        )
-
-        source = decrypt(
-            dd,
-            dk,
-            dri,
-        )
-
-        source = normalize_source(
-            source,
-            event_url,
-        )
+        log.info(f"URL {url_num}) Found direct OZOG decoder")
+        source = decrypt(dd, dk, dri)
+        source = normalize_source(source, event_url)
 
         if source:
-
-            log.info(
-                f"URL {url_num}) Captured stream source: "
-                f"{source}"
-            )
-
-            # The event page is the required Referer.
-            return (
-                source,
-                event_url,
-            )
-
-        log.warning(
-            f"URL {url_num}) Direct decoder returned "
-            f"an invalid source"
-        )
-
+            log.info(f"URL {url_num}) Captured stream source: {source}")
+            return source, event_url
+        else:
+            log.warning(f"URL {url_num}) Direct decoder returned invalid source")
     else:
+        log.info(f"URL {url_num}) Direct decoder not found")
 
-        log.info(
-            f"URL {url_num}) Direct decoder not found"
-        )
-
-    # -----------------------------------------------------------------------
-    # STEP 3
-    #
-    # FALLBACK TO ORIGINAL IFRAME METHOD
-    #
-    # This preserves compatibility with older/different OZOG event pages.
-    # -----------------------------------------------------------------------
-
-    soup = HTMLParser(
-        html_data.content
-    )
-
-    iframe = soup.css_first(
-        "iframe"
-    )
-
+    # Fallback: Look for iframe
+    soup = HTMLParser(html_data.content)
+    iframe = soup.css_first("iframe")
     if not iframe:
-
-        log.warning(
-            f"URL {url_num}) No iframe element found"
-        )
-
+        log.warning(f"URL {url_num}) No iframe element found")
         return None, None
 
-    iframe_src = iframe.attributes.get(
-        "src"
-    )
-
+    iframe_src = iframe.attributes.get("src")
     if not iframe_src:
-
-        log.warning(
-            f"URL {url_num}) Iframe has no src attribute"
-        )
-
+        log.warning(f"URL {url_num}) Iframe has no src attribute")
         return None, None
 
-    # Make relative iframe URL absolute.
-    iframe_src = urljoin(
-        event_url,
-        iframe_src,
-    )
+    iframe_src = urljoin(event_url, iframe_src)
+    log.info(f"URL {url_num}) Processing iframe: {iframe_src}")
 
-    log.info(
-        f"URL {url_num}) Processing iframe: "
-        f"{iframe_src}"
-    )
-
-    # -----------------------------------------------------------------------
-    # STEP 4
-    #
-    # Fetch iframe with the EVENT PAGE as Referer.
-    # -----------------------------------------------------------------------
-
-    iframe_data = await request_page(
+    # Fetch iframe with event URL as Referer
+    iframe_data = await network.request(
         iframe_src,
         url_num,
-        headers={
-            "Referer": event_url,
-        },
+        headers={"Referer": event_url},
+        log=log,
     )
-
     if not iframe_data:
-
-        log.warning(
-            f"URL {url_num}) Failed to fetch iframe"
-        )
-
+        log.warning(f"URL {url_num}) Failed to fetch iframe")
         return None, None
 
-    iframe_text = getattr(
-        iframe_data,
-        "text",
-        "",
-    )
+    iframe_text = getattr(iframe_data, "text", iframe_data.content)
 
-    if not iframe_text:
-
-        iframe_text = iframe_data.content
-
-    # -----------------------------------------------------------------------
-    # STEP 5
-    #
-    # Try decoder inside iframe.
-    # -----------------------------------------------------------------------
-
-    decoder_data = extract_decoder_data(
-        iframe_text
-    )
-
+    # Try decoder inside iframe
+    decoder_data = extract_decoder_data(iframe_text)
     if not decoder_data:
-
-        log.warning(
-            f"URL {url_num}) Failed to gather "
-            f"decoding variables"
-        )
-
+        log.warning(f"URL {url_num}) Failed to gather decoding variables")
         return None, None
 
     dd, dk, dri = decoder_data
+    log.info(f"URL {url_num}) Found iframe decoder")
 
-    log.info(
-        f"URL {url_num}) Found iframe decoder"
-    )
-
-    source = decrypt(
-        dd,
-        dk,
-        dri,
-    )
-
-    source = normalize_source(
-        source,
-        iframe_src,
-    )
+    source = decrypt(dd, dk, dri)
+    source = normalize_source(source, iframe_src)
 
     if not source:
-
-        log.warning(
-            f"URL {url_num}) Iframe decoder failed"
-        )
-
+        log.warning(f"URL {url_num}) Iframe decoder failed")
         return None, None
 
-    log.info(
-        f"URL {url_num}) Captured stream source: "
-        f"{source}"
-    )
-
-    # Keep the event URL as Referer, matching the desired playlist format.
-    return (
-        source,
-        event_url,
-    )
+    log.info(f"URL {url_num}) Captured stream source: {source}")
+    return source, event_url
 
 
 # ---------------------------------------------------------------------------
 # Event discovery
 # ---------------------------------------------------------------------------
 
-async def get_events(
-    cached_keys: KeysView[str],
-) -> list[Event]:
-
+async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     events: list[Event] = []
 
-    if not (
-        html_data := await network.request(
-            BASE_URL,
-            log=log,
-        )
-    ):
-
-        log.error(
-            f'Failed to fetch "{BASE_URL}"'
-        )
-
+    if not (html_data := await network.request(BASE_URL, log=log)):
+        log.error(f'Failed to fetch "{BASE_URL}"')
         return events
 
-    soup = HTMLParser(
-        html_data.content
-    )
+    soup = HTMLParser(html_data.content)
 
-    for card in soup.css(
-        ".card-inner"
-    ):
-
+    for card in soup.css(".card-inner"):
         if not all(
             values := [
                 card.css_first(selector)
-                for selector in (
-                    ".sport-tag",
-                    ".teams",
-                    "a.watch-btn",
-                )
+                for selector in (".sport-tag", ".teams", "a.watch-btn")
             ]
         ):
             continue
 
-        (
-            sport_elem,
-            teams_elem,
-            watch_btn_elem,
-        ) = values
+        sport_elem, teams_elem, watch_btn_elem = values
+        sport = sport_elem.text(strip=True).capitalize()
+        sport = "Live Event" if sport == "Sports" else sport
 
-        sport = sport_elem.text(
-            strip=True
-        ).capitalize()
-
-        if sport == "Sports":
-            sport = "Live Event"
-
-        teams = teams_elem.css(
-            ".team-name"
-        )
-
+        teams = teams_elem.css(".team-name")
         if not teams:
             continue
 
-        event_name = " vs ".join(
-            team.text(
-                strip=True
-            )
-            for team in teams
-        )
-
-        key = (
-            f"[{sport}] "
-            f"{event_name} "
-            f"({TAG})"
-        )
+        event_name = " vs ".join(team.text(strip=True) for team in teams)
+        key = f"[{sport}] {event_name} ({TAG})"
 
         if key in cached_keys:
             continue
 
-        href = watch_btn_elem.attributes.get(
-            "href"
-        )
-
+        href = watch_btn_elem.attributes.get("href")
         if not href:
             continue
 
@@ -775,10 +354,7 @@ async def get_events(
             Event(
                 sport=sport,
                 name=event_name,
-                link=urljoin(
-                    BASE_URL,
-                    href,
-                ),
+                link=urljoin(BASE_URL, href),
             )
         )
 
@@ -790,144 +366,61 @@ async def get_events(
 # ---------------------------------------------------------------------------
 
 async def scrape() -> None:
-
     cached_urls = CACHE_FILE.load()
-
-    valid_urls = {
-        key: value
-        for key, value in cached_urls.items()
-        if value.get("source")
-    }
-
-    valid_count = cached_count = len(
-        valid_urls
-    )
+    valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
+    valid_count = cached_count = len(valid_urls)
 
     urls.clear()
-    urls.update(
-        valid_urls
-    )
+    urls.update(valid_urls)
 
-    log.info(
-        f"Loaded {cached_count} event(s) from cache"
-    )
+    log.info(f"Loaded {cached_count} event(s) from cache")
+    log.info(f'Scraping from "{BASE_URL}"')
 
-    log.info(
-        f'Scraping from "{BASE_URL}"'
-    )
-
-    events = await get_events(
-        cached_urls.keys()
-    )
-
+    events = await get_events(cached_urls.keys())
     if not events:
-
-        log.info(
-            "No new events found"
-        )
-
-        CACHE_FILE.write(
-            cached_urls
-        )
-
+        log.info("No new events found")
+        CACHE_FILE.write(cached_urls)
         return
 
-    log.info(
-        f"Processing {len(events)} new URL(s)"
-    )
-
+    log.info(f"Processing {len(events)} new URL(s)")
     now = Time.rn()
 
-    for i, ev in enumerate(
-        events,
-        start=1,
-    ):
-
-        handler = partial(
-            process_event,
-            url=ev.link,
-            url_num=i,
-        )
-
+    for i, ev in enumerate(events, start=1):
+        handler = partial(process_event, url=ev.link, url_num=i)
         source, referer = await network.safe_process(
             handler,
             url_num=i,
-            timeout_return=(
-                None,
-                None,
-            ),
+            timeout_return=(None, None),
             semaphore=network.HTTP_S,
             log=log,
         )
 
-        key = (
-            f"[{ev.sport}] "
-            f"{ev.name} "
-            f"({TAG})"
-        )
-
-        tvg_id, logo = leagues.get_tvg_info(
-            ev.sport,
-            ev.name,
-        )
-
-        event_url = (
-            ev.link.rstrip("/")
-            + "/"
-        )
-
-        # Dynamic origin from the actual event URL.
-        event_origin = get_origin(
-            event_url
-        )
+        key = f"[{ev.sport}] {ev.name} ({TAG})"
+        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+        event_url = ev.link.rstrip("/") + "/"
+        event_origin = get_origin(event_url)
 
         entry = {
             "source": source,
             "logo": logo,
-            "refer": (
-                referer
-                or event_url
-                or REFERER
-            ),
-            "origin": (
-                event_origin
-                or ORIGIN
-            ),
+            "refer": referer or event_url or REFERER,
+            "origin": event_origin or ORIGIN,
             "timestamp": now.timestamp(),
-            "tvg-id": (
-                tvg_id
-                or "Live.Event.us"
-            ),
+            "tvg-id": tvg_id or "Live.Event.us",
             "link": event_url,
         }
 
         cached_urls[key] = entry
 
         if source:
-
             valid_count += 1
-
             urls[key] = entry
-
-            log.info(
-                f"URL {i}) Saved event: {key}"
-            )
-
+            log.info(f"URL {i}) Saved event: {key}")
         else:
+            log.warning(f"No stream source for: {key}")
 
-            log.warning(
-                f"No stream source for: {key}"
-            )
-
-    log.info(
-        f"Collected and cached "
-        f"{valid_count - cached_count} "
-        f"new event(s)"
-    )
-
-    CACHE_FILE.write(
-        cached_urls
-    )
+    log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
+    CACHE_FILE.write(cached_urls)
 
 
 # ---------------------------------------------------------------------------
@@ -935,41 +428,19 @@ async def scrape() -> None:
 # ---------------------------------------------------------------------------
 
 def generate_vlc_m3u8() -> str:
-
     content = "#EXTM3U\n"
-
     playlist_index = 0
 
     for title, data in urls.items():
-
-        source = data.get(
-            "source"
-        )
-
+        source = data.get("source")
         if not source:
             continue
 
         playlist_index += 1
-
-        tvg_id = data.get(
-            "tvg-id",
-            "Live.Event.us",
-        )
-
-        logo = data.get(
-            "logo",
-            "",
-        )
-
-        referer = data.get(
-            "refer",
-            REFERER,
-        )
-
-        origin = data.get(
-            "origin",
-            ORIGIN,
-        )
+        tvg_id = data.get("tvg-id", "Live.Event.us")
+        logo = data.get("logo", "")
+        referer = data.get("refer", REFERER)
+        origin = data.get("origin", ORIGIN)
 
         content += (
             f'#EXTINF:-1 '
@@ -980,25 +451,10 @@ def generate_vlc_m3u8() -> str:
             f'group-title="Live Events",'
             f'{title}\n'
         )
-
-        content += (
-            f"#EXTVLCOPT:http-referrer="
-            f"{referer}\n"
-        )
-
-        content += (
-            f"#EXTVLCOPT:http-origin="
-            f"{origin}\n"
-        )
-
-        content += (
-            f"#EXTVLCOPT:http-user-agent="
-            f"{USER_AGENT}\n"
-        )
-
-        content += (
-            f"{source}\n"
-        )
+        content += f"#EXTVLCOPT:http-referrer={referer}\n"
+        content += f"#EXTVLCOPT:http-origin={origin}\n"
+        content += f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n"
+        content += f"{source}\n"
 
     return content
 
@@ -1008,47 +464,20 @@ def generate_vlc_m3u8() -> str:
 # ---------------------------------------------------------------------------
 
 def generate_tivimate_m3u8() -> str:
-
     content = "#EXTM3U\n"
-
-    # URL encode ONLY the User-Agent.
-    encoded_user_agent = quote(
-        USER_AGENT,
-        safe="",
-    )
-
+    encoded_user_agent = quote(USER_AGENT, safe="")
     playlist_index = 0
 
     for title, data in urls.items():
-
-        source = data.get(
-            "source"
-        )
-
+        source = data.get("source")
         if not source:
             continue
 
         playlist_index += 1
-
-        tvg_id = data.get(
-            "tvg-id",
-            "Live.Event.us",
-        )
-
-        logo = data.get(
-            "logo",
-            "",
-        )
-
-        referer = data.get(
-            "refer",
-            REFERER,
-        )
-
-        origin = data.get(
-            "origin",
-            ORIGIN,
-        )
+        tvg_id = data.get("tvg-id", "Live.Event.us")
+        logo = data.get("logo", "")
+        referer = data.get("refer", REFERER)
+        origin = data.get("origin", ORIGIN)
 
         content += (
             f'#EXTINF:-1 '
@@ -1059,7 +488,6 @@ def generate_tivimate_m3u8() -> str:
             f'group-title="Live Events",'
             f'{title}\n'
         )
-
         content += (
             f"{source}"
             f"|referer={referer}"
@@ -1075,61 +503,21 @@ def generate_tivimate_m3u8() -> str:
 # ---------------------------------------------------------------------------
 
 def write_output_files() -> None:
+    output_dir = os.getenv("OUTPUT_DIR", ".")
+    os.makedirs(output_dir, exist_ok=True)
 
-    output_dir = "."
-
-    os.makedirs(
-        output_dir,
-        exist_ok=True,
-    )
-
-    # -----------------------------------------------------------------------
     # VLC
-    # -----------------------------------------------------------------------
+    vlc_file = os.path.join(output_dir, "ozog_vlc.m3u8")
+    with open(vlc_file, "w", encoding="utf-8", newline="\n") as f:
+        f.write(generate_vlc_m3u8())
 
-    vlc_file = os.path.join(
-        output_dir,
-        "ozog_vlc.m3u8",
-    )
-
-    with open(
-        vlc_file,
-        "w",
-        encoding="utf-8",
-        newline="\n",
-    ) as file:
-
-        file.write(
-            generate_vlc_m3u8()
-        )
-
-    # -----------------------------------------------------------------------
     # TiviMate
-    # -----------------------------------------------------------------------
+    tivimate_file = os.path.join(output_dir, "ozog_tivimate.m3u8")
+    with open(tivimate_file, "w", encoding="utf-8", newline="\n") as f:
+        f.write(generate_tivimate_m3u8())
 
-    tivimate_file = os.path.join(
-        output_dir,
-        "ozog_tivimate.m3u8",
-    )
-
-    with open(
-        tivimate_file,
-        "w",
-        encoding="utf-8",
-        newline="\n",
-    ) as file:
-
-        file.write(
-            generate_tivimate_m3u8()
-        )
-
-    log.info(
-        f"Generated VLC playlist: {vlc_file}"
-    )
-
-    log.info(
-        f"Generated TiviMate playlist: {tivimate_file}"
-    )
+    log.info(f"Generated VLC playlist: {vlc_file}")
+    log.info(f"Generated TiviMate playlist: {tivimate_file}")
 
 
 # ---------------------------------------------------------------------------
@@ -1137,28 +525,14 @@ def write_output_files() -> None:
 # ---------------------------------------------------------------------------
 
 async def main() -> None:
-
-    log.info(
-        "Starting OZOG updater"
-    )
-
+    log.info("Starting OZOG updater")
     await scrape()
 
     if urls:
-
         write_output_files()
-
-        log.info(
-            f"Successfully processed "
-            f"{len(urls)} event(s)"
-        )
-
+        log.info(f"Successfully processed {len(urls)} event(s)")
     else:
-
-        log.warning(
-            "No events found to write "
-            "to output files"
-        )
+        log.warning("No events found to write to output files")
 
 
 # ---------------------------------------------------------------------------
@@ -1166,9 +540,5 @@ async def main() -> None:
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-
     import asyncio
-
-    asyncio.run(
-        main()
-    )
+    asyncio.run(main())
