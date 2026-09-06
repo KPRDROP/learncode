@@ -19,6 +19,17 @@ TAG = "OZOG"
 
 CACHE_FILE = Cache(TAG, exp=28_800)
 
+
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+
+# IMPORTANT:
+# Never allow BASE_URL to become None.
+#
+# OZOG_BASE_URL is optional. If it does not exist, gozo.st is used.
+BASE_URL = os.getenv("OZOG_BASE_URL").strip()
+
 if not BASE_URL:
     BASE_URL = "https://gozo.st/"
 
@@ -1017,7 +1028,7 @@ def write_output_files() -> None:
 async def main() -> None:
 
     log.info(
-        "Starting OZOG scraper"
+        "Starting OZOG updater"
     )
 
     await scrape()
