@@ -19,33 +19,26 @@ TAG = "OZOG"
 
 CACHE_FILE = Cache(TAG, exp=28_800)
 
-
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
 
-# IMPORTANT:
-# Never allow BASE_URL to become None.
-#
-# OZOG_BASE_URL is optional. If it does not exist, gozo.st is used.
-BASE_URL = os.getenv("OZOG_BASE_URL")
+BASE_URL = os.getenv(
+    "OZOG_BASE_URL",
+).strip()
 
 if not BASE_URL:
     BASE_URL = "https://gozo.st/"
 
 BASE_URL = BASE_URL.rstrip("/") + "/"
 
-
-DEFAULT_REFERER = os.getenv("OZOG_REFERER", "").strip()
-
-DEFAULT_ORIGIN = os.getenv("OZOG_ORIGIN", "").strip()
-
-
 USER_AGENT = os.getenv(
     "OZOG_USER_AGENT",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/152.0.0.0 Safari/537.36",
+    (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/152.0.0.0 Safari/537.36"
+    ),
 ).strip()
 
 
@@ -53,12 +46,13 @@ USER_AGENT = os.getenv(
 # URL helpers
 # ---------------------------------------------------------------------------
 
-def origin_from_url(url: str) -> str:
+def get_origin(url: str) -> str:
     """
-    Return the origin of a URL.
+    Return scheme + hostname (+ port when present).
 
     Example:
         https://unxer123.gozo.zip/games/test/
+
     becomes:
         https://unxer123.gozo.zip
     """
@@ -68,22 +62,22 @@ def origin_from_url(url: str) -> str:
     if parsed.scheme and parsed.netloc:
         return f"{parsed.scheme}://{parsed.netloc}"
 
-    if DEFAULT_ORIGIN:
-        return DEFAULT_ORIGIN.rstrip("/")
-
     return ""
 
 
-def normalize_url(source: str, base_url: str) -> str | None:
+def normalize_source(
+    source: str | None,
+    base_url: str,
+) -> str | None:
     """
-    Convert a decoded source into a valid absolute HTTP/HTTPS URL.
+    Convert a decoded source into an absolute HTTP/HTTPS URL.
     """
 
     if not source:
         return None
 
     source = source.strip()
-    source = source.strip("'\"")
+    source = source.strip("\"'")
 
     if not source:
         return None
@@ -107,19 +101,25 @@ def normalize_url(source: str, base_url: str) -> str | None:
 
 
 # ---------------------------------------------------------------------------
-# Decoder
+# Original OZOG decoder
 # ---------------------------------------------------------------------------
 
 def rot13(c: str) -> str:
     """
-    ROT13 for alphabetic characters.
+    Same ROT13 implementation used by the original OZOG JavaScript.
     """
 
     if "A" <= c <= "Z":
-        return chr((ord(c) - 65 + 13) % 26 + 65)
+        return chr(
+            (ord(c) - ord("A") + 13) % 26
+            + ord("A")
+        )
 
     if "a" <= c <= "z":
-        return chr((ord(c) - 97 + 13) % 26 + 97)
+        return chr(
+            (ord(c) - ord("a") + 13) % 26
+            + ord("a")
+        )
 
     return c
 
@@ -130,24 +130,41 @@ def decrypt(
     num_list: list[int],
 ) -> str | None:
     """
-    Decode OZOG's _dd/_dk/_dri encoded source.
+    Python equivalent of the original JavaScript _decrypt().
+
+    Original order:
+
+        1. Unshuffle
+        2. XOR
+        3. Hex decode
+        4. ROT13
+        5. Reverse
+        6. Base64 decode
     """
 
     try:
         if not enc:
             return None
 
-        if len(enc) % 2:
+        if len(enc) % 2 != 0:
             return None
 
         if len(num_list) != len(enc):
+            log.debug(
+                "Decoder: _dri length does not match _dd length"
+            )
             return None
+
+        # ---------------------------------------------------------------
+        # Layer 6: unshuffle
+        # ---------------------------------------------------------------
 
         chars = list(enc)
 
         unshuffled = [""] * len(chars)
 
         for i, num in enumerate(num_list):
+
             if not isinstance(num, int):
                 return None
 
@@ -156,68 +173,118 @@ def decrypt(
 
             unshuffled[num] = chars[i]
 
-        xor_enc = "".join(unshuffled)
-
-        if len(xor_enc) % 2:
-            return None
-
-        # Hex -> XOR.
-        hex_enc = "".join(
-            chr(
-                int(
-                    xor_enc[i:i + 2],
-                    16,
-                )
-                ^ xor_key
-            )
-            for i in range(0, len(xor_enc), 2)
+        xor_encoded = "".join(
+            unshuffled
         )
 
-        if len(hex_enc) % 2:
-            return None
+        # ---------------------------------------------------------------
+        # Layer 5: XOR
+        # ---------------------------------------------------------------
 
-        # Hex -> characters.
-        decoded = "".join(
-            chr(
+        hex_encoded = ""
+
+        for i in range(
+            0,
+            len(xor_encoded),
+            2,
+        ):
+
+            byte = int(
+                xor_encoded[i:i + 2],
+                16,
+            )
+
+            hex_encoded += chr(
+                byte ^ xor_key
+            )
+
+        # ---------------------------------------------------------------
+        # Layer 4: hex decode
+        # ---------------------------------------------------------------
+
+        rot13_str = ""
+
+        for i in range(
+            0,
+            len(hex_encoded),
+            2,
+        ):
+
+            rot13_str += chr(
                 int(
-                    hex_enc[i:i + 2],
+                    hex_encoded[i:i + 2],
                     16,
                 )
             )
-            for i in range(0, len(hex_enc), 2)
+
+        # ---------------------------------------------------------------
+        # Layer 3: ROT13
+        # ---------------------------------------------------------------
+
+        reversed_text = "".join(
+            rot13(c)
+            if (
+                "a" <= c <= "z"
+                or "A" <= c <= "Z"
+            )
+            else c
+            for c in rot13_str
         )
 
-        # ROT13, then reverse.
-        decoded = "".join(rot13(c) for c in decoded)
-        decoded = decoded[::-1]
+        # ---------------------------------------------------------------
+        # Layer 2: reverse
+        # ---------------------------------------------------------------
 
-        # Base64.
-        return base64.b64decode(
-            decoded.encode("utf-8"),
-            validate=True,
-        ).decode("utf-8")
+        encoded_base64 = (
+            reversed_text[::-1]
+        )
 
-    except (
-        ValueError,
-        TypeError,
-        UnicodeDecodeError,
-        base64.binascii.Error,
-    ):
+        # ---------------------------------------------------------------
+        # Layer 1: Base64
+        # ---------------------------------------------------------------
+
+        decoded = base64.b64decode(
+            encoded_base64.encode(
+                "utf-8"
+            )
+        ).decode(
+            "utf-8"
+        )
+
+        return decoded
+
+    except Exception as exc:
+        log.debug(
+            f"Decoder failed: {exc}"
+        )
         return None
 
 
-def extract_decode_variables(
+# ---------------------------------------------------------------------------
+# Extract _dd / _dk / _dri
+# ---------------------------------------------------------------------------
+
+def extract_decoder_data(
     text: str,
 ) -> tuple[str, int, list[int]] | None:
     """
-    Extract:
+    Extract the direct-stream encryption variables from the event page.
 
-        _dd = "...";
-        _dk = 123;
-        _dri = [...];
+    Supports:
 
-    from the player HTML/JavaScript.
+        const _dk = 87;
+        const _dd = "...";
+        const _dri = [...];
+
+    as well as var/let/no declaration.
     """
+
+    if not text:
+        return None
+
+    # ---------------------------------------------------------------
+    # _dd
+    # ---------------------------------------------------------------
 
     dd_match = re.search(
         r"""
@@ -228,14 +295,25 @@ def extract_decode_variables(
         )?
         _dd
         \s*=\s*
-        (['"])
-        (.*?)
-        \1
+        (?P<quote>["'])
+        (?P<value>.*?)
+        (?P=quote)
         \s*;
         """,
         text,
         re.IGNORECASE | re.DOTALL | re.VERBOSE,
     )
+
+    if not dd_match:
+        return None
+
+    dd = dd_match.group(
+        "value"
+    )
+
+    # ---------------------------------------------------------------
+    # _dk
+    # ---------------------------------------------------------------
 
     dk_match = re.search(
         r"""
@@ -246,12 +324,28 @@ def extract_decode_variables(
         )?
         _dk
         \s*=\s*
-        (-?\d+)
+        (?P<value>-?\d+)
         \s*;
         """,
         text,
         re.IGNORECASE | re.VERBOSE,
     )
+
+    if not dk_match:
+        return None
+
+    try:
+        dk = int(
+            dk_match.group(
+                "value"
+            )
+        )
+    except ValueError:
+        return None
+
+    # ---------------------------------------------------------------
+    # _dri
+    # ---------------------------------------------------------------
 
     dri_match = re.search(
         r"""
@@ -262,141 +356,87 @@ def extract_decode_variables(
         )?
         _dri
         \s*=\s*
-        (\[[^;]*\])
+        (?P<value>\[[^\]]*\])
         \s*;
         """,
         text,
         re.IGNORECASE | re.DOTALL | re.VERBOSE,
     )
 
-    if not (
-        dd_match
-        and dk_match
-        and dri_match
-    ):
+    if not dri_match:
         return None
 
     try:
-        dd = dd_match.group(2)
-
-        dk = int(
-            dk_match.group(1)
-        )
-
         dri = ast.literal_eval(
-            dri_match.group(1)
+            dri_match.group(
+                "value"
+            )
         )
-
-        if not isinstance(dri, list):
-            return None
-
-        if not all(
-            isinstance(x, int)
-            for x in dri
-        ):
-            return None
-
-        return dd, dk, dri
-
     except (
         ValueError,
         SyntaxError,
     ):
         return None
 
+    if not isinstance(
+        dri,
+        list,
+    ):
+        return None
+
+    if not all(
+        isinstance(
+            item,
+            int,
+        )
+        for item in dri
+    ):
+        return None
+
+    return (
+        dd,
+        dk,
+        dri,
+    )
+
 
 # ---------------------------------------------------------------------------
-# Page fetching
+# HTTP request
 # ---------------------------------------------------------------------------
 
 async def request_page(
     url: str,
     url_num: int,
-    referer: str | None = None,
+    headers: dict[str, str] | None = None,
+    params: dict[str, str] | None = None,
 ):
     """
-    Fetch a page using the project's network helper.
+    Use the existing project network.request() implementation.
 
-    If that fails, use Playwright as a browser fallback.
+    This intentionally keeps the same network layer used by the
+    original working OZOG code.
     """
 
-    headers = {
+    request_headers = {
         "User-Agent": USER_AGENT,
     }
 
-    if referer:
-        headers["Referer"] = referer
+    if headers:
+        request_headers.update(
+            headers
+        )
 
-    result = await network.request(
+    return await network.request(
         url,
         url_num,
-        headers=headers,
+        headers=request_headers,
+        params=params,
         log=log,
     )
 
-    if result:
-        return result
-
-    log.warning(
-        f"URL {url_num}) HTTP request failed, "
-        f"trying browser fallback: {url}"
-    )
-
-    try:
-        from playwright.async_api import async_playwright
-
-        async with async_playwright() as playwright:
-
-            browser = await playwright.chromium.launch(
-                headless=True
-            )
-
-            context = await browser.new_context(
-                user_agent=USER_AGENT,
-            )
-
-            page = await context.new_page()
-
-            await page.goto(
-                url,
-                wait_until="domcontentloaded",
-                timeout=30_000,
-            )
-
-            content = await page.content()
-            final_url = page.url
-
-            await browser.close()
-
-        class BrowserResponse:
-            def __init__(
-                self,
-                content: str,
-                url: str,
-            ):
-                self.content = content
-                self.text = content
-                self.url = url
-
-        log.info(
-            f"URL {url_num}) Browser fallback fetched page"
-        )
-
-        return BrowserResponse(
-            content,
-            final_url,
-        )
-
-    except Exception as exc:
-        log.error(
-            f"URL {url_num}) Browser fallback failed: {exc}"
-        )
-
-        return None
-
 
 # ---------------------------------------------------------------------------
-# Event processing
+# Process event
 # ---------------------------------------------------------------------------
 
 async def process_event(
@@ -407,11 +447,20 @@ async def process_event(
     if not url:
         return None, None
 
-    # This is the URL that must be used as the playlist referer.
+    # Normalize event URL.
     event_url = url.rstrip("/") + "/"
 
+    log.info(
+        f'URL {url_num}) Processing "{event_url}"'
+    )
+
     # -----------------------------------------------------------------------
-    # Fetch event page
+    # STEP 1
+    #
+    # Load the EVENT PAGE.
+    #
+    # This is important because the current OZOG page contains _dd/_dk/_dri
+    # directly in the event HTML.
     # -----------------------------------------------------------------------
 
     html_data = await request_page(
@@ -421,150 +470,218 @@ async def process_event(
 
     if not html_data:
         log.error(
-            f"URL {url_num}) Failed to fetch "
-            f"\"{event_url}\""
+            f'URL {url_num}) Failed to fetch "{event_url}"'
         )
 
         return None, None
 
-    page_url = getattr(
+    page_text = getattr(
         html_data,
-        "url",
-        None,
-    ) or event_url
+        "text",
+        "",
+    )
+
+    if not page_text:
+        page_text = html_data.content
+
+    # -----------------------------------------------------------------------
+    # STEP 2
+    #
+    # PRIMARY METHOD:
+    #
+    # Decode the direct source directly from the event page.
+    # -----------------------------------------------------------------------
+
+    decoder_data = extract_decoder_data(
+        page_text
+    )
+
+    if decoder_data:
+
+        dd, dk, dri = decoder_data
+
+        log.info(
+            f"URL {url_num}) Found direct "
+            f"_dd/_dk/_dri configuration"
+        )
+
+        source = decrypt(
+            dd,
+            dk,
+            dri,
+        )
+
+        source = normalize_source(
+            source,
+            event_url,
+        )
+
+        if source:
+
+            log.info(
+                f"URL {url_num}) Captured stream source"
+            )
+
+            # IMPORTANT:
+            # Return the EVENT URL as referer.
+            return (
+                source,
+                event_url,
+            )
+
+        log.warning(
+            f"URL {url_num}) Direct decoder "
+            f"returned an invalid source"
+        )
+
+    else:
+
+        log.info(
+            f"URL {url_num}) No direct decoder "
+            f"found on event page"
+        )
+
+    # -----------------------------------------------------------------------
+    # STEP 3
+    #
+    # FALLBACK:
+    #
+    # Preserve the original working iframe method.
+    # -----------------------------------------------------------------------
 
     soup = HTMLParser(
         html_data.content
     )
 
-    # -----------------------------------------------------------------------
-    # Find iframe
-    # -----------------------------------------------------------------------
-
     iframe = (
         soup.css_first(
+            'iframe[name="srcFrame"]'
+        )
+        or soup.css_first(
             'iframe[src*="stream"]'
         )
         or soup.css_first(
             'iframe[src*="player"]'
         )
-        or soup.css_first("iframe")
+        or soup.css_first(
+            "iframe"
+        )
     )
 
     if not iframe:
+
         log.warning(
-            f"URL {url_num}) No iframe element found"
+            f"URL {url_num}) No iframe element found "
+            f"and no direct stream configuration"
         )
 
         return None, None
 
     iframe_src = iframe.attributes.get(
-        "src",
-        "",
-    ).strip()
+        "src"
+    )
 
     if not iframe_src:
+
         log.warning(
-            f"URL {url_num}) Iframe has no src"
+            f"URL {url_num}) No iframe source found"
         )
 
         return None, None
 
     # Correct relative iframe URLs.
     iframe_src = urljoin(
-        page_url,
+        event_url,
         iframe_src,
     )
 
     log.info(
-        f"URL {url_num}) Player iframe: "
+        f"URL {url_num}) Found iframe: "
         f"{iframe_src}"
     )
 
     # -----------------------------------------------------------------------
-    # Fetch iframe/player
+    # STEP 4
+    #
+    # Fetch iframe using EVENT URL as Referer.
     # -----------------------------------------------------------------------
 
     iframe_data = await request_page(
         iframe_src,
         url_num,
-        referer=event_url,
+        headers={
+            "Referer": event_url,
+        },
     )
 
     if not iframe_data:
-        log.error(
-            f"URL {url_num}) Failed to fetch player iframe"
-        )
 
-        return None, None
-
-    # -----------------------------------------------------------------------
-    # Extract decoder variables
-    # -----------------------------------------------------------------------
-
-    variables = extract_decode_variables(
-        iframe_data.text
-    )
-
-    if not variables:
         log.warning(
-            f"URL {url_num}) Failed to gather "
-            f"decoding variables"
+            f"URL {url_num}) Failed to fetch iframe source"
         )
 
         return None, None
 
-    dd, dk, dri = variables
-
-    log.info(
-        f"URL {url_num}) Found decoding variables "
-        f"(_dd/_dk/_dri)"
+    iframe_text = getattr(
+        iframe_data,
+        "text",
+        "",
     )
+
+    if not iframe_text:
+        iframe_text = iframe_data.content
 
     # -----------------------------------------------------------------------
-    # Decode source
-    # -----------------------------------------------------------------------
-
-    source = decrypt(
-        dd,
-        dk,
-        dri,
-    )
-
-    if not source:
-        log.warning(
-            f"URL {url_num}) Decoding method failed"
-        )
-
-        return None, None
-
-    source = normalize_url(
-        source,
-        iframe_src,
-    )
-
-    if not source:
-        log.warning(
-            f"URL {url_num}) Decoded source is not "
-            f"a valid HTTP/HTTPS URL"
-        )
-
-        return None, None
-
-    log.info(
-        f"URL {url_num}) Captured stream source: "
-        f"{source}"
-    )
-
-    # IMPORTANT:
-    # Return the EVENT PAGE as the referer.
+    # STEP 5
     #
-    # Desired:
-    # https://unxer123.gozo.zip/games/juventus-vs-milan/
-    #
-    # NOT:
-    # https://fingersoon.st/...
-    return source, event_url
+    # Try the same _dd/_dk/_dri decoder inside the iframe.
+    # -----------------------------------------------------------------------
+
+    decoder_data = extract_decoder_data(
+        iframe_text
+    )
+
+    if decoder_data:
+
+        dd, dk, dri = decoder_data
+
+        log.info(
+            f"URL {url_num}) Found decoder "
+            f"inside iframe"
+        )
+
+        source = decrypt(
+            dd,
+            dk,
+            dri,
+        )
+
+        source = normalize_source(
+            source,
+            iframe_src,
+        )
+
+        if source:
+
+            log.info(
+                f"URL {url_num}) Captured stream source "
+                f"from iframe"
+            )
+
+            return (
+                source,
+                event_url,
+            )
+
+    # -----------------------------------------------------------------------
+    # No supported stream configuration found.
+    # -----------------------------------------------------------------------
+
+    log.warning(
+        f"URL {url_num}) Failed to extract stream source"
+    )
+
+    return None, None
 
 
 # ---------------------------------------------------------------------------
@@ -577,16 +694,15 @@ async def get_events(
 
     events: list[Event] = []
 
-    html_data = await request_page(
+    html_data = await network.request(
         BASE_URL,
-        0,
+        log=log,
     )
 
     if not html_data:
         log.error(
-            f"Failed to fetch OZOG homepage: {BASE_URL}"
+            f'Failed to fetch "{BASE_URL}"'
         )
-
         return events
 
     soup = HTMLParser(
@@ -667,13 +783,14 @@ async def get_events(
 
 
 # ---------------------------------------------------------------------------
-# Scraper
+# Scrape
 # ---------------------------------------------------------------------------
 
 async def scrape() -> None:
 
     cached_urls = CACHE_FILE.load()
 
+    # Keep compatibility with both old and new cache entries.
     valid_urls = {
         key: value
         for key, value in cached_urls.items()
@@ -699,6 +816,7 @@ async def scrape() -> None:
     )
 
     if not events:
+
         log.info(
             "No new events found"
         )
@@ -753,7 +871,7 @@ async def scrape() -> None:
             + "/"
         )
 
-        event_origin = origin_from_url(
+        origin = get_origin(
             event_url
         )
 
@@ -764,7 +882,7 @@ async def scrape() -> None:
                 referer
                 or event_url
             ),
-            "origin": event_origin,
+            "origin": origin,
             "timestamp": now.timestamp(),
             "tvg-id": (
                 tvg_id
@@ -782,7 +900,7 @@ async def scrape() -> None:
             urls[key] = entry
 
             log.info(
-                f"Saved event: {key}"
+                f"URL {i}) Stream saved: {key}"
             )
 
         else:
@@ -835,8 +953,7 @@ def generate_vlc_m3u8() -> str:
 
         referer = data.get(
             "refer",
-            DEFAULT_REFERER
-            or data.get(
+            data.get(
                 "link",
                 "",
             ),
@@ -844,8 +961,7 @@ def generate_vlc_m3u8() -> str:
 
         origin = data.get(
             "origin",
-            DEFAULT_ORIGIN
-            or origin_from_url(
+            get_origin(
                 str(referer)
             ),
         )
@@ -890,6 +1006,7 @@ def generate_tivimate_m3u8() -> str:
 
     content = "#EXTM3U\n"
 
+    # Keep User-Agent URL encoded.
     encoded_user_agent = quote(
         USER_AGENT,
         safe="",
@@ -920,8 +1037,7 @@ def generate_tivimate_m3u8() -> str:
 
         referer = data.get(
             "refer",
-            DEFAULT_REFERER
-            or data.get(
+            data.get(
                 "link",
                 "",
             ),
@@ -929,8 +1045,7 @@ def generate_tivimate_m3u8() -> str:
 
         origin = data.get(
             "origin",
-            DEFAULT_ORIGIN
-            or origin_from_url(
+            get_origin(
                 str(referer)
             ),
         )
@@ -945,8 +1060,10 @@ def generate_tivimate_m3u8() -> str:
             f'{title}\n'
         )
 
-        # Referer and Origin remain plain text.
-        # Only User-Agent is URL encoded.
+        # IMPORTANT:
+        # Referer = plain text
+        # Origin  = plain text
+        # User-Agent = URL encoded
         content += (
             f"{source}"
             f"|referer={referer}"
@@ -958,7 +1075,7 @@ def generate_tivimate_m3u8() -> str:
 
 
 # ---------------------------------------------------------------------------
-# Write playlist files
+# Write output files
 # ---------------------------------------------------------------------------
 
 def write_output_files() -> None:
@@ -976,19 +1093,16 @@ def write_output_files() -> None:
         exist_ok=True,
     )
 
+    # ---------------------------------------------------------------
+    # VLC
+    # ---------------------------------------------------------------
+
     vlc_file = os.path.join(
         output_dir,
         "ozog_vlc.m3u8",
     )
 
-    tivimate_file = os.path.join(
-        output_dir,
-        "ozog_tivimate.m3u8",
-    )
-
     vlc_content = generate_vlc_m3u8()
-
-    tivimate_content = generate_tivimate_m3u8()
 
     with open(
         vlc_file,
@@ -996,9 +1110,23 @@ def write_output_files() -> None:
         encoding="utf-8",
         newline="\n",
     ) as file:
+
         file.write(
             vlc_content
         )
+
+    # ---------------------------------------------------------------
+    # TiviMate
+    # ---------------------------------------------------------------
+
+    tivimate_file = os.path.join(
+        output_dir,
+        "ozog_tivimate.m3u8",
+    )
+
+    tivimate_content = (
+        generate_tivimate_m3u8()
+    )
 
     with open(
         tivimate_file,
@@ -1006,6 +1134,7 @@ def write_output_files() -> None:
         encoding="utf-8",
         newline="\n",
     ) as file:
+
         file.write(
             tivimate_content
         )
@@ -1039,7 +1168,7 @@ async def main() -> None:
 
         log.info(
             f"Successfully processed "
-            f"{len(urls)} events"
+            f"{len(urls)} event(s)"
         )
 
     else:
@@ -1050,7 +1179,14 @@ async def main() -> None:
         )
 
 
+# ---------------------------------------------------------------------------
+# Run
+# ---------------------------------------------------------------------------
+
 if __name__ == "__main__":
+
     import asyncio
 
-    asyncio.run(main())
+    asyncio.run(
+        main()
+    )
