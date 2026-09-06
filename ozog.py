@@ -1,4 +1,3 @@
-```python
 import ast
 import asyncio
 import base64
@@ -1357,4 +1356,3 @@ async def main() -> None:
 
 if __name__ == "__main__":
     asyncio.run(main())
-```
