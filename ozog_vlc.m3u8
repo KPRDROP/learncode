@@ -1,19 +1,19 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Everton vs Manchester United (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Everton vs Manchester United (OZOG)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Live Event] F1 Italy Grand Prix (OZOG)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] F1 Italy Grand Prix (OZOG)
+#EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
+#EXTVLCOPT:http-origin=https://unxer123.gozo.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+https://fingersoon.st/scripts/application4
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Everton vs Manchester United (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Everton vs Manchester United (OZOG)
 #EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
 #EXTVLCOPT:http-origin=https://unxer123.gozo.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
 https://fingersoon.st/scripts/application1
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Arsenal vs Chelsea (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Arsenal vs Chelsea (OZOG)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Arsenal vs Chelsea (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Arsenal vs Chelsea (OZOG)
 #EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
 #EXTVLCOPT:http-origin=https://unxer123.gozo.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
 https://fingersoon.st/scripts/application1
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Valencia vs Barcelona (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Valencia vs Barcelona (OZOG)
-#EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
-#EXTVLCOPT:http-origin=https://unxer123.gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
-https://fingersoon.st/ziangel1/application5
 #EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Juventus vs Milan (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Juventus vs Milan (OZOG)
 #EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
 #EXTVLCOPT:http-origin=https://unxer123.gozo.st
