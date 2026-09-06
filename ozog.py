@@ -28,7 +28,7 @@ CACHE_FILE = Cache(TAG, exp=28_800)
 # Never allow BASE_URL to become None.
 #
 # OZOG_BASE_URL is optional. If it does not exist, gozo.st is used.
-BASE_URL = os.getenv("OZOG_BASE_URL").strip()
+BASE_URL = os.getenv("OZOG_BASE_URL")
 
 if not BASE_URL:
     BASE_URL = "https://gozo.st/"
