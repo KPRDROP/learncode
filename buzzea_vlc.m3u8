@@ -1,4 +1,5 @@
 #EXTM3U
+
 #EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="NFL vs RedZone" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" group-title="American Football",NFL vs RedZone
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
@@ -238,4 +239,3 @@ https://streamed.buzz/get.php?136
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
 https://streamed.buzz/get.php?106
-
