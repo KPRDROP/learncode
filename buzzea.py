@@ -23,8 +23,8 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL")
-API_URL = os.getenv("BUZZEA_API_URL")
+BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
+API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
 
 # Constants for output files
 REFERER = "https://exposestrat.st/"
@@ -125,9 +125,19 @@ async def process_event(stream_link: str, url_num: int) -> str | None:
 
         # Normalize the URL
         normalized_link = normalize_url(stream_link)
-        log.debug(f"URL {url_num}) Normalized link: {normalized_link}")
+        log.info(f"URL {url_num}) Fetching: {normalized_link}")
 
-        if not (response := await network.request(normalized_link, url_num, log=log)):
+        # Add headers to mimic a browser request
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+        }
+
+        if not (response := await network.request(normalized_link, url_num, headers=headers, log=log)):
             return None
 
         # Look for M3U8 URL in the response
@@ -147,8 +157,9 @@ async def process_event(stream_link: str, url_num: int) -> str | None:
         iframe_match = re.search(iframe_pattern, content)
         if iframe_match:
             iframe_url = normalize_url(iframe_match.group(1))
+            log.info(f"URL {url_num}) Following iframe: {iframe_url}")
             # Follow iframe
-            if iframe_response := await network.request(iframe_url, url_num, log=log):
+            if iframe_response := await network.request(iframe_url, url_num, headers=headers, log=log):
                 iframe_content = iframe_response.text
                 m3u8_match = re.search(m3u8_pattern, iframe_content)
                 if m3u8_match:
