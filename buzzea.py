@@ -56,8 +56,23 @@ class BZEvent(Event):
     status: str
     league: str
     category: str
-    # link is inherited from Event, but we need to pass it
     link: str | None = None
+
+
+def normalize_url(url: str) -> str:
+    """Ensure URL has proper protocol."""
+    if not url:
+        return url
+    
+    # If URL starts with //, add https:
+    if url.startswith('//'):
+        return f'https:{url}'
+    
+    # If URL doesn't have protocol, add https://
+    if not url.startswith(('http://', 'https://')):
+        return f'https://{url}'
+    
+    return url
 
 
 async def refresh_api_cache(now: Time) -> list[dict]:
@@ -108,7 +123,11 @@ async def process_event(stream_link: str, url_num: int) -> str | None:
             log.warning(f"URL {url_num}) No stream link provided")
             return None
 
-        if not (response := await network.request(stream_link, url_num, log=log)):
+        # Normalize the URL
+        normalized_link = normalize_url(stream_link)
+        log.debug(f"URL {url_num}) Normalized link: {normalized_link}")
+
+        if not (response := await network.request(normalized_link, url_num, log=log)):
             return None
 
         # Look for M3U8 URL in the response
@@ -127,7 +146,7 @@ async def process_event(stream_link: str, url_num: int) -> str | None:
         iframe_pattern = r'<iframe[^>]+src=["\']([^"\']+)["\']'
         iframe_match = re.search(iframe_pattern, content)
         if iframe_match:
-            iframe_url = iframe_match.group(1)
+            iframe_url = normalize_url(iframe_match.group(1))
             # Follow iframe
             if iframe_response := await network.request(iframe_url, url_num, log=log):
                 iframe_content = iframe_response.text
@@ -214,7 +233,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
             BZEvent(
                 sport=sport,
                 name=title,
-                link=stream_link,  # Required by Event base class
+                link=stream_link,
                 league=league,
                 category=category,
                 status=status,
