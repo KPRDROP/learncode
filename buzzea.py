@@ -1,13 +1,11 @@
 from collections.abc import KeysView
 from dataclasses import dataclass
-from functools import partial
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs, urljoin
 import os
 import asyncio
 import re
 
-from playwright.async_api import Browser
 from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
@@ -25,8 +23,8 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL")
-API_URL = os.getenv("BUZZEA_API_URL")
+BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
+API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
 
 # Constants for output files
 REFERER = "https://exposestrat.st/"
@@ -298,13 +296,17 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
 
 
 # ============================================================
-# STREAM PROCESSING - USING HTTP REQUEST INSTEAD OF PLAYWRIGHT
+# STREAM PROCESSING - FETCH get.php AND EXTRACT M3U8
 # ============================================================
 
 async def process_event(stream_link: str, url_num: int) -> str | None:
     """
-    Process the stream link to extract the M3U8 URL using HTTP request.
-    This avoids the adblock handler issues with Playwright.
+    Process the get.php URL to extract the M3U8 URL.
+    
+    The get.php URL returns a page that either:
+    1. Contains the M3U8 URL directly in the HTML
+    2. Redirects to the M3U8 URL
+    3. Contains the M3U8 URL in a script tag or iframe
     """
     try:
         if not stream_link:
@@ -333,7 +335,7 @@ async def process_event(stream_link: str, url_num: int) -> str | None:
 
         content = response.text
 
-        # Look for M3U8 URL in the page
+        # Look for M3U8 URL in the page - this is the primary method
         m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
         match = re.search(m3u8_pattern, content)
 
@@ -342,29 +344,31 @@ async def process_event(stream_link: str, url_num: int) -> str | None:
             log.info(f"URL {url_num}) Captured M3U8: {m3u8_url[:50]}...")
             return m3u8_url
 
-        # Try to find in iframes
+        # Try to find in script tags
+        script_pattern = r'<script[^>]*>.*?(https?://[^\s"\']+\.m3u8[^\s"\']*).*?</script>'
+        script_match = re.search(script_pattern, content, re.DOTALL | re.IGNORECASE)
+        if script_match:
+            m3u8_url = script_match.group(1)
+            log.info(f"URL {url_num}) Captured M3U8 from script")
+            return m3u8_url
+
+        # Try to find in iframes - but be careful not to follow to embed3
         iframe_pattern = r'<iframe[^>]+src=["\']([^"\']+)["\']'
         iframe_match = re.search(iframe_pattern, content)
         if iframe_match:
             iframe_url = normalize_url(iframe_match.group(1))
-            log.info(f"URL {url_num}) Following iframe: {iframe_url}")
-            
-            iframe_response = await network.request(iframe_url, url_num, headers=headers, log=log)
-            if iframe_response:
-                iframe_content = iframe_response.text
-                m3u8_match = re.search(m3u8_pattern, iframe_content)
-                if m3u8_match:
-                    log.info(f"URL {url_num}) Captured M3U8 from iframe")
-                    return m3u8_match.group(0)
-
-        # Try to find in script tags
-        script_pattern = r'<script[^>]*>.*?https?://[^\s"\']+\.m3u8[^\s"\']*.*?</script>'
-        script_match = re.search(script_pattern, content, re.DOTALL)
-        if script_match:
-            m3u8_match = re.search(m3u8_pattern, script_match.group(0))
-            if m3u8_match:
-                log.info(f"URL {url_num}) Captured M3U8 from script")
-                return m3u8_match.group(0)
+            # Only follow iframe if it's not the problematic embed3
+            if "/embed3/" not in iframe_url.lower():
+                log.info(f"URL {url_num}) Following iframe: {iframe_url}")
+                iframe_response = await network.request(iframe_url, url_num, headers=headers, log=log)
+                if iframe_response:
+                    iframe_content = iframe_response.text
+                    m3u8_match = re.search(m3u8_pattern, iframe_content)
+                    if m3u8_match:
+                        log.info(f"URL {url_num}) Captured M3U8 from iframe")
+                        return m3u8_match.group(0)
+            else:
+                log.info(f"URL {url_num}) Skipping embed3 iframe")
 
         log.warning(f"URL {url_num}) No M3U8 found")
         return None
@@ -450,11 +454,11 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
 
 
 # ============================================================
-# MAIN SCRAPER - WITHOUT PLAYWRIGHT
+# MAIN SCRAPER
 # ============================================================
 
 async def scrape() -> None:
-    """Main scraping function - uses HTTP requests instead of Playwright."""
+    """Main scraping function."""
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
