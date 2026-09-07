@@ -23,8 +23,8 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
-API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
+BASE_URL = os.getenv("BUZZEA_BASE_URL")
+API_URL = os.getenv("BUZZEA_API_URL")
 
 # Constants for output files
 REFERER = "https://exposestrat.st/"
