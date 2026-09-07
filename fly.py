@@ -164,7 +164,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
     # Adjust time window for more events
     start_dt = now.delta(hours=-8)
-    end_dt = now.delta(minutes=60)  # Increased from 2 to 60 minutes
+    end_dt = now.delta(minutes=60)
 
     for event_group in api_data:
         if not all(
@@ -185,7 +185,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         sport, away, home, date, time, link = values
 
         # Fix: Use tz_name parameter correctly
-        event_dt = Time.from_str(f"{date.replace(' ','')} {time}", tz_name="GMT")
+        event_dt = Time.from_str(f"{date} {time}", tz_name="UTC")
 
         if not start_dt <= event_dt <= end_dt:
             continue
@@ -218,7 +218,7 @@ async def scrape() -> None:
 
     log.info(f"Loaded {cached_count} event(s) from cache")
 
-    log.info('Scraping from "flyembed"')
+    log.info('Scraping from "https://flyembed.xyz"')
 
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
@@ -231,47 +231,55 @@ async def scrape() -> None:
             )
             
             try:
-                async with network.event_context(browser) as context:
-                    for i, ev in enumerate(events, start=1):
-                        async with network.event_page(context) as page:
-                            handler = partial(
-                                process_event,
-                                url=ev.link,
-                                url_num=i,
-                                page=page,
-                            )
+                # Create context with adblock disabled to avoid service worker errors
+                context = await browser.new_context(
+                    viewport={'width': 1280, 'height': 720},
+                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                )
+                
+                for i, ev in enumerate(events, start=1):
+                    page = await context.new_page()
+                    try:
+                        handler = partial(
+                            process_event,
+                            url=ev.link,
+                            url_num=i,
+                            page=page,
+                        )
 
-                            source, iframe = await network.safe_process(
-                                handler,
-                                url_num=i,
-                                timeout_return=(None, None),
-                                semaphore=network.HTTP_S,
-                                log=log,
-                            )
+                        source, iframe = await network.safe_process(
+                            handler,
+                            url_num=i,
+                            timeout_return=(None, None),
+                            semaphore=network.HTTP_S,
+                            log=log,
+                        )
 
-                            key = f"[{ev.sport}] {ev.name} ({TAG})"
+                        key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+                        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                            entry = {
-                                "source": source,
-                                "logo": logo,
-                                "refer": iframe,
-                                "timestamp": ev.timestamp,
-                                "tvg-id": tvg_id or "Live.Event.us",
-                                "link": ev.link,
-                                "sport": ev.sport,
-                                "name": ev.name,
-                            }
+                        entry = {
+                            "source": source,
+                            "logo": logo,
+                            "refer": iframe,
+                            "timestamp": ev.timestamp,
+                            "tvg-id": tvg_id or "Live.Event.us",
+                            "link": ev.link,
+                            "sport": ev.sport,
+                            "name": ev.name,
+                        }
 
-                            cached_urls[key] = entry
+                        cached_urls[key] = entry
 
-                            if source:
-                                valid_count += 1
-
-                                entry["source"] = clean_m3u(source)
-
-                                urls[key] = entry
+                        if source:
+                            valid_count += 1
+                            entry["source"] = clean_m3u(source)
+                            urls[key] = entry
+                    finally:
+                        await page.close()
+                
+                await context.close()
             finally:
                 await browser.close()
 
@@ -435,9 +443,9 @@ async def main() -> None:
     """
     Main function to run the scraper and generate M3U8 files.
     """
-    log.info(f"Starting {TAG} scraper")
+    log.info(f"Starting {TAG} updater")
     await scrape()
-    log.info(f"{TAG} scraper completed")
+    log.info(f"{TAG} updater completed")
 
 
 if __name__ == "__main__":
