@@ -25,8 +25,8 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
-API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
+BASE_URL = os.getenv("BUZZEA_BASE_URL")
+API_URL = os.getenv("BUZZEA_API_URL")
 
 # Constants for output files
 REFERER = "https://exposestrat.st/"
@@ -298,13 +298,13 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
 
 
 # ============================================================
-# STREAM PROCESSING - THIS IS THE KEY FIX
+# STREAM PROCESSING - USING HTTP REQUEST INSTEAD OF PLAYWRIGHT
 # ============================================================
 
-async def process_event(stream_link: str, url_num: int, page) -> str | None:
+async def process_event(stream_link: str, url_num: int) -> str | None:
     """
-    Process the stream link to extract the M3U8 URL.
-    Uses Playwright to handle JavaScript and extract the actual M3U8 URL.
+    Process the stream link to extract the M3U8 URL using HTTP request.
+    This avoids the adblock handler issues with Playwright.
     """
     try:
         if not stream_link:
@@ -315,14 +315,23 @@ async def process_event(stream_link: str, url_num: int, page) -> str | None:
         normalized_link = normalize_url(stream_link)
         log.info(f"URL {url_num}) Fetching: {normalized_link}")
 
-        # Navigate to the page
-        await page.goto(normalized_link, wait_until="networkidle", timeout=30000)
+        # Make HTTP request with proper headers
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "Referer": "https://streamed.buzz/",
+        }
 
-        # Wait a bit for any JavaScript to execute
-        await page.wait_for_timeout(3000)
+        response = await network.request(normalized_link, url_num, headers=headers, log=log)
+        if not response:
+            log.warning(f"URL {url_num}) Failed to fetch page")
+            return None
 
-        # Get page content
-        content = await page.content()
+        content = response.text
 
         # Look for M3U8 URL in the page
         m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
@@ -333,54 +342,29 @@ async def process_event(stream_link: str, url_num: int, page) -> str | None:
             log.info(f"URL {url_num}) Captured M3U8: {m3u8_url[:50]}...")
             return m3u8_url
 
-        # Try to find in video elements
-        m3u8_url = await page.evaluate("""
-            () => {
-                // Check video element
-                const video = document.querySelector('video');
-                if (video) {
-                    const src = video.src || video.currentSrc;
-                    if (src && src.includes('.m3u8')) {
-                        return src;
-                    }
-                }
-                // Check source elements
-                const sources = document.querySelectorAll('source[src*=".m3u8"]');
-                for (const source of sources) {
-                    if (source.src && source.src.includes('.m3u8')) {
-                        return source.src;
-                    }
-                }
-                // Check for any element with m3u8
-                const elements = document.querySelectorAll('[src*=".m3u8"], [href*=".m3u8"]');
-                for (const el of elements) {
-                    const src = el.src || el.href;
-                    if (src && src.includes('.m3u8')) {
-                        return src;
-                    }
-                }
-                return null;
-            }
-        """)
-
-        if m3u8_url:
-            log.info(f"URL {url_num}) Captured M3U8 from video: {m3u8_url[:50]}...")
-            return m3u8_url
-
         # Try to find in iframes
-        iframes = await page.query_selector_all('iframe')
-        for iframe in iframes:
-            src = await iframe.get_attribute('src')
-            if src:
-                try:
-                    frame = await page.frame_locator(f'iframe[src="{src}"]')
-                    frame_content = await frame.locator('body').inner_html()
-                    match = re.search(m3u8_pattern, frame_content)
-                    if match:
-                        log.info(f"URL {url_num}) Captured M3U8 from iframe")
-                        return match.group(0)
-                except:
-                    pass
+        iframe_pattern = r'<iframe[^>]+src=["\']([^"\']+)["\']'
+        iframe_match = re.search(iframe_pattern, content)
+        if iframe_match:
+            iframe_url = normalize_url(iframe_match.group(1))
+            log.info(f"URL {url_num}) Following iframe: {iframe_url}")
+            
+            iframe_response = await network.request(iframe_url, url_num, headers=headers, log=log)
+            if iframe_response:
+                iframe_content = iframe_response.text
+                m3u8_match = re.search(m3u8_pattern, iframe_content)
+                if m3u8_match:
+                    log.info(f"URL {url_num}) Captured M3U8 from iframe")
+                    return m3u8_match.group(0)
+
+        # Try to find in script tags
+        script_pattern = r'<script[^>]*>.*?https?://[^\s"\']+\.m3u8[^\s"\']*.*?</script>'
+        script_match = re.search(script_pattern, content, re.DOTALL)
+        if script_match:
+            m3u8_match = re.search(m3u8_pattern, script_match.group(0))
+            if m3u8_match:
+                log.info(f"URL {url_num}) Captured M3U8 from script")
+                return m3u8_match.group(0)
 
         log.warning(f"URL {url_num}) No M3U8 found")
         return None
@@ -466,11 +450,11 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
 
 
 # ============================================================
-# MAIN SCRAPER
+# MAIN SCRAPER - WITHOUT PLAYWRIGHT
 # ============================================================
 
-async def scrape(browser: Browser) -> None:
-    """Main scraping function."""
+async def scrape() -> None:
+    """Main scraping function - uses HTTP requests instead of Playwright."""
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
@@ -486,34 +470,34 @@ async def scrape(browser: Browser) -> None:
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
-        async with network.event_context(browser) as context:
-            for i, ev in enumerate(events, start=1):
-                async with network.event_page(context) as page:
-                    # Process the stream link to get M3U8
-                    source = await process_event(ev.stream_link, i, page)
+        for i, ev in enumerate(events, start=1):
+            log.info(f"URL {i}) {ev.name}")
 
-                    tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+            # Process the stream link to get M3U8
+            source = await process_event(ev.stream_link, i)
 
-                    key = f"[{ev.sport}] {ev.name} ({TAG})"
+            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                    entry = {
-                        "source": source,
-                        "logo": logo,
-                        "refer": REFERER,
-                        "event_ts": ev.event_ts,
-                        "timestamp": ev.timestamp,
-                        "tvg-id": tvg_id or "Live.Event.us",
-                        "stream_link": ev.stream_link,
-                        "sport": ev.sport,
-                        "status": ev.status,
-                    }
+            key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                    cached_urls[key] = entry
+            entry = {
+                "source": source,
+                "logo": logo,
+                "refer": REFERER,
+                "event_ts": ev.event_ts,
+                "timestamp": ev.timestamp,
+                "tvg-id": tvg_id or "Live.Event.us",
+                "stream_link": ev.stream_link,
+                "sport": ev.sport,
+                "status": ev.status,
+            }
 
-                    if source:
-                        valid_count += 1
-                        urls[key] = entry
-                        log.info(f"Added event: {key}")
+            cached_urls[key] = entry
+
+            if source:
+                valid_count += 1
+                urls[key] = entry
+                log.info(f"Added event: {key}")
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -537,18 +521,8 @@ async def main() -> None:
         log.info(f"Using BASE_URL: {BASE_URL}")
         log.info(f"Using API_URL: {API_URL}")
 
-        from playwright.async_api import async_playwright
-
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(
-                headless=True,
-                args=['--no-sandbox', '--disable-setuid-sandbox']
-            )
-            try:
-                await scrape(browser)
-                log.info(f"{TAG} updater completed successfully")
-            finally:
-                await browser.close()
+        await scrape()
+        log.info(f"{TAG} updater completed successfully")
 
     except Exception as e:
         log.error(f"{TAG} updater failed: {e}")
