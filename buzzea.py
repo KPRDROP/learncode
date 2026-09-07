@@ -5,6 +5,7 @@ from urllib.parse import urljoin
 from pathlib import Path
 import os
 import asyncio
+import re
 
 from playwright.async_api import Browser
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
@@ -19,83 +20,201 @@ TAG = "BUZZEA"
 
 CACHE_FILE = Cache(TAG, exp=5_400)
 
-HTML_FILE = Cache(f"{TAG}-html", exp=28_800)
+API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL")
+BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
+API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
 
 # Constants for output files
-REFERER = "https://exposestrat.com/"
-ORIGIN = "https://exposestrat.com"
+REFERER = "https://exposestrat.st/"
+ORIGIN = "https://exposestrat.st"
 USER_AGENT = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
 USER_AGENT_ENCODED = "Mozilla%2F5.0%20(Linux%3B%20Android%2010%3B%20K)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F120.0.0.0%20Mobile%20Safari%2F537.36"
+
+# Category mapping for display
+CATEGORY_MAP = {
+    "football": "Football",
+    "american-football": "American Football",
+    "baseball": "Baseball",
+    "basketball": "Basketball",
+    "hockey": "Hockey",
+    "motor-sports": "Motor Sports",
+    "fight": "Fight",
+    "soccer": "Soccer",
+    "tennis": "Tennis",
+    "cricket": "Cricket",
+    "racing": "Racing",
+    "combat": "Combat",
+}
 
 
 @dataclass(kw_only=True, slots=True)
 class BZEvent(Event):
     event_ts: int | float
+    stream_link: str
+    status: str
+    league: str
+    category: str
 
 
-async def refresh_html_cache(now: Time) -> dict[str, dict[str, str | float]]:
-    events = {}
+async def refresh_api_cache(now: Time) -> list[dict]:
+    """Fetch events from the API endpoint."""
+    events = []
 
-    if not (html_data := await network.request(BASE_URL, log=log)):
+    if not (response := await network.request(API_URL, log=log)):
+        log.warning("Failed to fetch API data")
         return events
 
-    soup = HTMLParser(html_data.content)
+    try:
+        data = response.json()
+    except Exception as e:
+        log.error(f"Failed to parse API response: {e}")
+        return events
 
-    for game in soup.css("tr.event-group"):
-        if not all(
-            values := [
-                game.css_first(x)
-                for x in (
-                    "td.category-name",
-                    "td.team-name",
-                    "td",
-                    "a.watch-btn",
-                )
-            ]
-        ):
-            continue
+    # Handle different response formats
+    if isinstance(data, dict):
+        # Check for 'matches' key (from the JSON example)
+        if "matches" in data:
+            events = data["matches"]
+        elif "days" in data:
+            # Flatten days into items
+            for day in data.get("days", []):
+                events.extend(day.get("items", []))
+        else:
+            # Try to find any list in the response
+            for key, value in data.items():
+                if isinstance(value, list) and value and isinstance(value[0], dict):
+                    events = value
+                    break
+    
+    elif isinstance(data, list):
+        events = data
 
-        sport, event_name, event_date, ch_id = (x.text(strip=True) for x in values)
-
-        event_dt = Time.from_str(event_date.replace("\t", " "), timezone="UTC")
-
-        key = f"[{sport}] {event_name} ({TAG})"
-
-        events[key] = {
-            "sport": sport,
-            "name": event_name,
-            "link": urljoin(str(html_data.url), f"get.php?{ch_id}"),
-            "event_ts": event_dt.timestamp(),
-            "timestamp": now.timestamp(),
-        }
-
+    log.info(f"Found {len(events)} events from API")
     return events
 
 
+async def process_event(stream_link: str, url_num: int) -> str | None:
+    """Process a single event to extract the M3U8 URL."""
+    try:
+        if not (response := await network.request(stream_link, url_num, log=log)):
+            return None
+
+        # Look for M3U8 URL in the response
+        content = response.text
+        
+        # Try to find M3U8 URL in the page
+        m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
+        match = re.search(m3u8_pattern, content)
+        
+        if match:
+            m3u8_url = match.group(0)
+            log.info(f"URL {url_num}) Captured M3U8")
+            return m3u8_url
+        
+        # Try to find in script tags or iframe
+        iframe_pattern = r'<iframe[^>]+src=["\']([^"\']+)["\']'
+        iframe_match = re.search(iframe_pattern, content)
+        if iframe_match:
+            iframe_url = iframe_match.group(1)
+            # Follow iframe
+            if iframe_response := await network.request(iframe_url, url_num, log=log):
+                iframe_content = iframe_response.text
+                m3u8_match = re.search(m3u8_pattern, iframe_content)
+                if m3u8_match:
+                    log.info(f"URL {url_num}) Captured M3U8 from iframe")
+                    return m3u8_match.group(0)
+
+        log.warning(f"URL {url_num}) No M3U8 found")
+        return None
+
+    except Exception as e:
+        log.warning(f"URL {url_num}) Error processing: {e}")
+        return None
+
+
 async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
-    # Fixed: Changed from Time.clean(Time.now()) to Time.rn()
+    """Get events from API or cache."""
     now = Time.rn()
 
-    # Fixed: Changed from HTML_FILE.load() to HTML_FILE.load(per_entry=False, ts_index=-1)
-    if not (events := HTML_FILE.load(per_entry=False, ts_index=-1)):
-        log.info("Refreshing HTML cache")
+    # Load from cache
+    if not (events_data := API_CACHE.load(per_entry=False, ts_index=-1)):
+        log.info("Refreshing API cache")
+        
+        events_data = await refresh_api_cache(now)
+        
+        if events_data:
+            # Add timestamp to cache
+            if isinstance(events_data, list):
+                events_data.append({"timestamp": now.timestamp()})
+            API_CACHE.write(events_data)
+        else:
+            return []
 
-        events = await refresh_html_cache(now)
+    # Process events
+    event_list = []
+    
+    # Get timestamp from cache if available
+    if isinstance(events_data, list) and events_data:
+        # Remove timestamp entry if present
+        if events_data and isinstance(events_data[-1], dict) and "timestamp" in events_data[-1]:
+            events_data.pop()
 
-        HTML_FILE.write(events)
-
-    # Expanded time window to get more events (6 hours before to 2 hours after)
+    # Time window: 6 hours before to 2 hours after
     start_ts = now.delta(hours=-6).timestamp()
     end_ts = now.delta(hours=2).timestamp()
 
-    return [
-        BZEvent(**v)
-        for k, v in events.items()
-        if k not in cached_keys and start_ts <= v["event_ts"] <= end_ts
-    ]
+    for event in events_data:
+        if not isinstance(event, dict):
+            continue
+
+        # Get event fields
+        category = event.get("category", "")
+        league = event.get("league", "")
+        title = event.get("title", "")
+        event_time = event.get("ts_et", 0)
+        status = event.get("status", "UPCOMING")
+        streams = event.get("streams", [])
+
+        # Skip if missing required fields
+        if not all([category, title, event_time]):
+            continue
+
+        # Get first stream link
+        if not streams or not streams[0].get("link"):
+            continue
+        
+        stream_link = streams[0]["link"]
+
+        # Format sport name
+        sport = CATEGORY_MAP.get(category, category.title())
+
+        key = f"[{sport}] {title} ({TAG})"
+
+        # Skip if already cached
+        if key in cached_keys:
+            continue
+
+        # Check if event is within time window
+        if not start_ts <= event_time <= end_ts:
+            continue
+
+        event_list.append(
+            BZEvent(
+                sport=sport,
+                name=title,
+                league=league,
+                category=category,
+                status=status,
+                stream_link=stream_link,
+                event_ts=event_time,
+                timestamp=now.timestamp(),
+            )
+        )
+
+    log.info(f"Found {len(event_list)} eligible event(s)")
+    return event_list
 
 
 def generate_m3u8_files(events_data: dict[str, dict]) -> None:
@@ -104,7 +223,7 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
     # Sort events by sport and time for better organization
     sorted_events = sorted(
         [(k, v) for k, v in events_data.items() if v.get("source")],
-        key=lambda x: (x[1].get("sport", ""), x[1].get("timestamp", 0))
+        key=lambda x: (x[1].get("sport", ""), x[1].get("event_ts", 0))
     )
     
     vlc_lines = []
@@ -118,7 +237,6 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
         valid_streams += 1
         
         # Extract event info from key
-        # Key format: "[Sport] Event Name (TAG)"
         key_clean = key.replace(f" ({TAG})", "")
         sport_part = key_clean.split("] ", 1)
         sport = sport_part[0].strip("[")
@@ -175,6 +293,7 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
 
 
 async def scrape(browser: Browser) -> None:
+    """Main scraping function."""
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
@@ -193,20 +312,8 @@ async def scrape(browser: Browser) -> None:
         async with network.event_context(browser) as context:
             for i, ev in enumerate(events, start=1):
                 async with network.event_page(context) as page:
-                    handler = partial(
-                        network.process_event,
-                        url=ev.link,
-                        url_num=i,
-                        page=page,
-                        log=log,
-                    )
-
-                    source = await network.safe_process(
-                        handler,
-                        url_num=i,
-                        semaphore=network.PW_S,
-                        log=log,
-                    )
+                    # Process the stream link to get M3U8
+                    source = await process_event(ev.stream_link, i)
 
                     tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
@@ -216,10 +323,12 @@ async def scrape(browser: Browser) -> None:
                         "source": source,
                         "logo": logo,
                         "refer": REFERER,
-                        "timestamp": ev.event_ts,
+                        "event_ts": ev.event_ts,
+                        "timestamp": ev.timestamp,
                         "tvg-id": tvg_id or "Live.Event.us",
-                        "link": ev.link,
-                        "sport": ev.sport,  # Store sport for sorting
+                        "stream_link": ev.stream_link,
+                        "sport": ev.sport,
+                        "status": ev.status,
                     }
 
                     cached_urls[key] = entry
@@ -227,6 +336,7 @@ async def scrape(browser: Browser) -> None:
                     if source:
                         valid_count += 1
                         urls[key] = entry
+                        log.info(f"Added event: {key}")
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -244,12 +354,16 @@ async def main() -> None:
     try:
         log.info(f"Starting {TAG} updater...")
         log.info(f"Using BASE_URL: {BASE_URL}")
+        log.info(f"Using API_URL: {API_URL}")
         
         # Initialize playwright and run scraper
         from playwright.async_api import async_playwright
         
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
+            browser = await p.chromium.launch(
+                headless=True,
+                args=['--no-sandbox', '--disable-setuid-sandbox']
+            )
             try:
                 await scrape(browser)
                 log.info(f"{TAG} updater completed successfully")
@@ -258,6 +372,8 @@ async def main() -> None:
                 
     except Exception as e:
         log.error(f"{TAG} updater failed: {e}")
+        import traceback
+        traceback.print_exc()
         raise
 
 
