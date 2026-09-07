@@ -25,8 +25,8 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL")
-API_URL = os.getenv("BUZZEA_API_URL")
+BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
+API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
 
 # Constants for output files
 REFERER = "https://exposestrat.st/"
@@ -312,45 +312,61 @@ async def process_event_with_network(browser: Browser, events: list[BZEvent], ca
         for i, ev in enumerate(events, start=1):
             log.info(f"URL {i}) {ev.name}")
             
-            async with network.event_page(context) as page:
-                # Use the network.process_event handler
-                handler = partial(
-                    network.process_event,
-                    url=ev.link,
-                    url_num=i,
-                    page=page,
-                    log=log,
-                )
+            try:
+                async with network.event_page(context) as page:
+                    # Use the network.process_event handler
+                    handler = partial(
+                        network.process_event,
+                        url=ev.link,
+                        url_num=i,
+                        page=page,
+                        log=log,
+                    )
 
-                source = await network.safe_process(
-                    handler,
-                    url_num=i,
-                    semaphore=network.PW_S,
-                    log=log,
-                )
+                    source = await network.safe_process(
+                        handler,
+                        url_num=i,
+                        semaphore=network.PW_S,
+                        log=log,
+                    )
 
-                tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+                    tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                key = f"[{ev.sport}] {ev.name} ({TAG})"
+                    key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                entry = {
-                    "source": source,
-                    "logo": logo,
-                    "refer": REFERER,
-                    "event_ts": ev.event_ts,
-                    "timestamp": ev.timestamp,
-                    "tvg-id": tvg_id or "Live.Event.us",
-                    "stream_link": ev.stream_link,
-                    "sport": ev.sport,
-                    "status": ev.status,
-                }
+                    entry = {
+                        "source": source,
+                        "logo": logo,
+                        "refer": REFERER,
+                        "event_ts": ev.event_ts,
+                        "timestamp": ev.timestamp,
+                        "tvg-id": tvg_id or "Live.Event.us",
+                        "stream_link": ev.stream_link,
+                        "sport": ev.sport,
+                        "status": ev.status,
+                    }
 
-                cached_urls[key] = entry
+                    cached_urls[key] = entry
 
-                if source:
-                    valid_count += 1
-                    urls[key] = entry
-                    log.info(f"Added event: {key}")
+                    if source:
+                        valid_count += 1
+                        urls[key] = entry
+                        log.info(f"Added event: {key}")
+                        
+            except Exception as e:
+                # Catch page close errors from adblock handler
+                if "Service Worker requests do not have an associated frame" in str(e):
+                    log.warning(f"URL {i}) Page close error (service worker), continuing...")
+                    # If we already processed the event, it might still be valid
+                    # Check if we have a source for this event
+                    key = f"[{ev.sport}] {ev.name} ({TAG})"
+                    if key in cached_urls and cached_urls[key].get("source"):
+                        valid_count += 1
+                        urls[key] = cached_urls[key]
+                        log.info(f"URL {i}) Event was processed successfully despite page close error")
+                else:
+                    log.warning(f"URL {i}) Error processing: {e}")
+                continue
 
     return cached_urls, valid_count
 
