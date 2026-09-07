@@ -7,7 +7,7 @@ import os
 import asyncio
 import re
 
-from playwright.async_api import Browser, BrowserContext
+from playwright.async_api import Browser
 from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
@@ -298,118 +298,61 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
 
 
 # ============================================================
-# STREAM PROCESSING - USING PLAYWRIGHT WITHOUT ADBLOCK
+# STREAM PROCESSING - USING network.process_event
 # ============================================================
 
-async def process_event_with_playwright(stream_link: str, url_num: int, browser: Browser) -> str | None:
+async def process_event_with_network(browser: Browser, events: list[BZEvent], cached_urls: dict) -> tuple[dict, int]:
     """
-    Process the get.php URL using Playwright to execute JavaScript.
-    Creates a fresh context without adblock handlers.
+    Process events using the network.event_context and network.process_event.
+    This properly handles the adblock and JavaScript execution.
     """
-    try:
-        if not stream_link:
-            log.warning(f"URL {url_num}) No stream link provided")
-            return None
+    valid_count = 0
+    
+    async with network.event_context(browser) as context:
+        for i, ev in enumerate(events, start=1):
+            log.info(f"URL {i}) {ev.name}")
+            
+            async with network.event_page(context) as page:
+                # Use the network.process_event handler
+                handler = partial(
+                    network.process_event,
+                    url=ev.link,
+                    url_num=i,
+                    page=page,
+                    log=log,
+                )
 
-        normalized_link = normalize_url(stream_link)
-        log.info(f"URL {url_num}) Fetching with Playwright: {normalized_link}")
+                source = await network.safe_process(
+                    handler,
+                    url_num=i,
+                    semaphore=network.PW_S,
+                    log=log,
+                )
 
-        # Create a fresh context without adblock
-        context: BrowserContext = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 720},
-        )
+                tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-        page = await context.new_page()
+                key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-        try:
-            # Navigate to the URL
-            await page.goto(normalized_link, wait_until="domcontentloaded", timeout=30000)
-
-            # Wait a bit for JavaScript to execute
-            await page.wait_for_timeout(5000)
-
-            # Get page content
-            content = await page.content()
-
-            # Look for M3U8 URL in the page
-            m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
-            match = re.search(m3u8_pattern, content)
-
-            if match:
-                m3u8_url = match.group(0)
-                log.info(f"URL {url_num}) Captured M3U8: {m3u8_url[:50]}...")
-                return m3u8_url
-
-            # Try to find in video elements
-            m3u8_url = await page.evaluate("""
-                () => {
-                    // Check video element
-                    const video = document.querySelector('video');
-                    if (video) {
-                        const src = video.src || video.currentSrc;
-                        if (src && src.includes('.m3u8')) {
-                            return src;
-                        }
-                    }
-                    // Check source elements
-                    const sources = document.querySelectorAll('source[src*=".m3u8"]');
-                    for (const source of sources) {
-                        if (source.src && source.src.includes('.m3u8')) {
-                            return source.src;
-                        }
-                    }
-                    // Check for any element with m3u8
-                    const elements = document.querySelectorAll('[src*=".m3u8"], [href*=".m3u8"]');
-                    for (const el of elements) {
-                        const src = el.src || el.href;
-                        if (src && src.includes('.m3u8')) {
-                            return src;
-                        }
-                    }
-                    // Check script tags
-                    const scripts = document.querySelectorAll('script');
-                    for (const script of scripts) {
-                        if (script.textContent && script.textContent.includes('.m3u8')) {
-                            const match = script.textContent.match(/https?:[^\\s"']+\\.m3u8[^\\s"']*/);
-                            if (match) {
-                                return match[0];
-                            }
-                        }
-                    }
-                    return null;
+                entry = {
+                    "source": source,
+                    "logo": logo,
+                    "refer": REFERER,
+                    "event_ts": ev.event_ts,
+                    "timestamp": ev.timestamp,
+                    "tvg-id": tvg_id or "Live.Event.us",
+                    "stream_link": ev.stream_link,
+                    "sport": ev.sport,
+                    "status": ev.status,
                 }
-            """)
 
-            if m3u8_url:
-                log.info(f"URL {url_num}) Captured M3U8 from video/script: {m3u8_url[:50]}...")
-                return m3u8_url
+                cached_urls[key] = entry
 
-            # Try to find in iframes
-            iframes = await page.query_selector_all('iframe')
-            for iframe in iframes:
-                src = await iframe.get_attribute('src')
-                if src and "/embed3/" not in src:
-                    try:
-                        frame = await page.frame_locator(f'iframe[src="{src}"]')
-                        frame_content = await frame.locator('body').inner_html()
-                        match = re.search(m3u8_pattern, frame_content)
-                        if match:
-                            log.info(f"URL {url_num}) Captured M3U8 from iframe")
-                            return match.group(0)
-                    except:
-                        pass
+                if source:
+                    valid_count += 1
+                    urls[key] = entry
+                    log.info(f"Added event: {key}")
 
-            log.warning(f"URL {url_num}) No M3U8 found")
-            return None
-
-        finally:
-            await page.close()
-            await context.close()
-
-    except Exception as e:
-        log.warning(f"URL {url_num}) Error processing: {e}")
-        return None
+    return cached_urls, valid_count
 
 
 # ============================================================
@@ -488,11 +431,11 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
 
 
 # ============================================================
-# MAIN SCRAPER - USING PLAYWRIGHT
+# MAIN SCRAPER
 # ============================================================
 
 async def scrape(browser: Browser) -> None:
-    """Main scraping function using Playwright."""
+    """Main scraping function using network.event_context."""
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
@@ -508,36 +451,11 @@ async def scrape(browser: Browser) -> None:
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
-        for i, ev in enumerate(events, start=1):
-            log.info(f"URL {i}) {ev.name}")
+        # Process events using the network context
+        cached_urls, new_count = await process_event_with_network(browser, events, cached_urls)
+        valid_count += new_count
 
-            # Process the stream link using Playwright
-            source = await process_event_with_playwright(ev.stream_link, i, browser)
-
-            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
-
-            key = f"[{ev.sport}] {ev.name} ({TAG})"
-
-            entry = {
-                "source": source,
-                "logo": logo,
-                "refer": REFERER,
-                "event_ts": ev.event_ts,
-                "timestamp": ev.timestamp,
-                "tvg-id": tvg_id or "Live.Event.us",
-                "stream_link": ev.stream_link,
-                "sport": ev.sport,
-                "status": ev.status,
-            }
-
-            cached_urls[key] = entry
-
-            if source:
-                valid_count += 1
-                urls[key] = entry
-                log.info(f"Added event: {key}")
-
-        log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
+        log.info(f"Collected and cached {new_count} new event(s)")
 
     else:
         log.info("No new events found")
