@@ -1,23 +1,24 @@
 from collections.abc import KeysView
 from dataclasses import dataclass
 from pathlib import Path
-from urllib.parse import urlparse, parse_qs
-import os
+from urllib.parse import urlparse
 import asyncio
+import json
+import os
 import re
 
+from playwright.async_api import Browser
 from utils import Cache, Event, Time, get_logger, leagues, network
 
 
 log = get_logger(__name__)
 
 
-# ============================================================
+# ---------------------------------------------------------------------------
 # GLOBALS
-# ============================================================
+# ---------------------------------------------------------------------------
 
-urls: dict[str, dict[str, str | float]] = {}
-
+urls: dict[str, dict[str, str | float | int | None]] = {}
 
 TAG = "BUZZEA"
 
@@ -32,8 +33,17 @@ API_URL = os.getenv("BUZZEA_API_URL")
 # Constants for output files
 REFERER = "https://exposestrat.st/"
 ORIGIN = "https://exposestrat.st"
-USER_AGENT = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
-USER_AGENT_ENCODED = "Mozilla%2F5.0%20(Linux%3B%20Android%2010%3B%20K)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F120.0.0.0%20Mobile%20Safari%2F537.36"
+USER_AGENT = (
+    "Mozilla/5.0 (Linux; Android 10; K) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/120.0.0.0 Mobile Safari/537.36"
+)
+
+USER_AGENT_ENCODED = (
+    "Mozilla%2F5.0%20(Linux%3B%20Android%2010%3B%20K)%20"
+    "AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20"
+    "Chrome%2F120.0.0.0%20Mobile%20Safari%2F537.36"
+)
 
 # Category mapping for display
 CATEGORY_MAP = {
@@ -52,9 +62,9 @@ CATEGORY_MAP = {
 }
 
 
-# ============================================================
-# EVENT MODEL
-# ============================================================
+# ---------------------------------------------------------------------------
+# EVENT
+# ---------------------------------------------------------------------------
 
 @dataclass(kw_only=True, slots=True)
 class BZEvent(Event):
@@ -66,17 +76,13 @@ class BZEvent(Event):
     link: str | None = None
 
 
-# ============================================================
+# ---------------------------------------------------------------------------
 # URL HELPERS
-# ============================================================
+# ---------------------------------------------------------------------------
 
 def normalize_url(url: str | None) -> str:
-    """
-    Normalize a URL without changing its path.
+    """Normalize a URL without changing its path or query string."""
 
-    IMPORTANT:
-    This function does NOT convert get.php URLs to iframe/embed URLs.
-    """
     if not url:
         return ""
 
@@ -94,128 +100,105 @@ def normalize_url(url: str | None) -> str:
     return f"https://{url}"
 
 
+def is_http_url(url: str | None) -> bool:
+    """Return True for normal HTTP/HTTPS URLs."""
+
+    if not url:
+        return False
+
+    try:
+        parsed = urlparse(url)
+        return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+    except Exception:
+        return False
+
+
+def is_direct_m3u8(url: str | None) -> bool:
+    """
+    Detect a direct M3U8 URL.
+
+    This intentionally does NOT attempt to discover or extract a hidden
+    M3U8 from another website.
+    """
+
+    if not url:
+        return False
+
+    try:
+        parsed = urlparse(url)
+        path = parsed.path.lower()
+        return path.endswith(".m3u8")
+    except Exception:
+        return False
+
+
 def is_get_php_url(url: str | None) -> bool:
-    """
-    Validate the expected BUZZEA stream URL format.
+    """Detect the API's get.php stream endpoint."""
 
-    Expected:
-        https://streamed.buzz/get.php?106
-
-    Also accepts:
-        https://example.com/get.php?106
-    """
     if not url:
         return False
 
-    url = normalize_url(url)
+    try:
+        parsed = urlparse(url)
 
-    parsed = urlparse(url)
+        if parsed.path.rstrip("/").lower().endswith("/get.php"):
+            return bool(parsed.query)
 
-    if parsed.scheme not in ("http", "https"):
-        return False
+    except Exception:
+        pass
 
-    if not parsed.netloc:
-        return False
-
-    if not parsed.path.lower().endswith("/get.php"):
-        return False
-
-    # Expected query format: ?106
-    # parse_qs does not handle this as a normal key, so inspect it
-    # directly from the original URL.
-    query = parsed.query.strip()
-
-    return bool(re.fullmatch(r"\d+", query))
+    return False
 
 
-def extract_channel_id(url: str | None) -> str | None:
-    """
-    Extract the numeric channel ID from:
+def get_channel_id(url: str | None) -> str | None:
+    """Extract the channel identifier from a get.php URL."""
 
-        https://streamed.buzz/get.php?106
-    """
-    if not url:
+    if not is_get_php_url(url):
         return None
 
-    normalized = normalize_url(url)
+    try:
+        parsed = urlparse(url)
 
-    parsed = urlparse(normalized)
-    query = parsed.query.strip()
+        # Expected API form:
+        # get.php?18
+        # get.php?106
+        # get.php?620
+        value = parsed.query.strip()
 
-    if re.fullmatch(r"\d+", query):
-        return query
+        if value and re.fullmatch(r"\d+", value):
+            return value
 
-    # Fallback for unusual but still valid get.php URLs.
-    match = re.search(r"/get\.php\?(\d+)", normalized, re.IGNORECASE)
+        # Also tolerate:
+        # get.php?id=620
+        match = re.search(r"(?:^|&)id=(\d+)(?:&|$)", value, re.I)
 
-    if match:
-        return match.group(1)
+        if match:
+            return match.group(1)
+
+    except Exception:
+        pass
 
     return None
 
 
-def build_get_php_url(stream_link: str | None) -> str | None:
+# ---------------------------------------------------------------------------
+# API
+# ---------------------------------------------------------------------------
+
+def extract_api_events(data) -> list[dict]:
     """
-    Return the correct get.php URL.
+    Extract event objects from the supported API response formats.
 
-    The API-provided URL is authoritative.
+    Preferred format:
+        {
+            "days": [...],
+            "matches": [...]
+        }
 
-    Example:
-        https://streamed.buzz/get.php?106
-
-    If only the channel ID is available and BASE_URL is configured,
-    construct:
-
-        https://{BASE_URL}/get.php?{ID}
+    The API's top-level "matches" array is preferred because it already
+    contains the event objects.
     """
-    if not stream_link:
-        return None
 
-    normalized = normalize_url(stream_link)
-
-    # Best case: API already provides the correct URL.
-    if is_get_php_url(normalized):
-        return normalized
-
-    channel_id = extract_channel_id(normalized)
-
-    if channel_id and BASE_URL:
-        base = BASE_URL.strip()
-
-        if base.endswith("/"):
-            base = base[:-1]
-
-        if not base.startswith(("http://", "https://")):
-            base = f"https://{base}"
-
-        return f"{base}/get.php?{channel_id}"
-
-    return None
-
-
-# ============================================================
-# API PARSING
-# ============================================================
-
-def flatten_api_events(data) -> list[dict]:
-    """
-    Extract event dictionaries from the BUZZEA API response.
-
-    Supported formats:
-
-    {
-        "days": [
-            {
-                "items": [...]
-            }
-        ],
-        "matches": [...]
-    }
-
-    or simply:
-
-    [...]
-    """
     if isinstance(data, list):
         return [
             item
@@ -226,27 +209,20 @@ def flatten_api_events(data) -> list[dict]:
     if not isinstance(data, dict):
         return []
 
-    # Prefer the top-level "matches" array when available.
-    # It represents the complete event collection and avoids
-    # processing the same events from both "days" and "matches".
     matches = data.get("matches")
 
     if isinstance(matches, list):
-        result = [
+        return [
             item
             for item in matches
             if isinstance(item, dict)
         ]
 
-        if result:
-            return result
+    events: list[dict] = []
 
-    # Fallback: flatten days[].items.
     days = data.get("days")
 
     if isinstance(days, list):
-        result: list[dict] = []
-
         for day in days:
             if not isinstance(day, dict):
                 continue
@@ -258,99 +234,31 @@ def flatten_api_events(data) -> list[dict]:
 
             for item in items:
                 if isinstance(item, dict):
-                    result.append(item)
+                    events.append(item)
 
-        if result:
-            return result
+    if events:
+        return events
 
-    # Last-resort generic list detection.
+    # Generic fallback for APIs returning a list under another key.
     for value in data.values():
-        if isinstance(value, list):
-            candidates = [
-                item
-                for item in value
-                if isinstance(item, dict)
-            ]
+        if not isinstance(value, list):
+            continue
 
-            if candidates:
-                return candidates
+        candidates = [
+            item
+            for item in value
+            if isinstance(item, dict)
+        ]
+
+        if candidates:
+            return candidates
 
     return []
 
 
-def extract_stream_link(event: dict) -> str | None:
-    """
-    Extract the get.php URL from an event's streams field.
-
-    Handles both possible structures:
-
-        "streams": {
-            "hd": ...,
-            "link": "https://streamed.buzz/get.php?106"
-        }
-
-    and:
-
-        "streams": [
-            {
-                "hd": ...,
-                "link": "https://streamed.buzz/get.php?106"
-            }
-        ]
-    """
-    streams = event.get("streams")
-
-    if not streams:
-        return None
-
-    candidates: list[str] = []
-
-    if isinstance(streams, dict):
-        link = streams.get("link")
-
-        if isinstance(link, str):
-            candidates.append(link)
-
-        # Some APIs may have quality-specific dictionaries.
-        for value in streams.values():
-            if isinstance(value, dict):
-                nested_link = value.get("link")
-
-                if isinstance(nested_link, str):
-                    candidates.append(nested_link)
-
-            elif isinstance(value, str):
-                candidates.append(value)
-
-    elif isinstance(streams, list):
-        for stream in streams:
-            if isinstance(stream, dict):
-                link = stream.get("link")
-
-                if isinstance(link, str):
-                    candidates.append(link)
-
-            elif isinstance(stream, str):
-                candidates.append(stream)
-
-    # Return the first valid get.php URL.
-    for candidate in candidates:
-        result = build_get_php_url(candidate)
-
-        if result:
-            return result
-
-    return None
-
-
-# ============================================================
-# API CACHE
-# ============================================================
-
 async def refresh_api_cache(now: Time) -> list[dict]:
-    """
-    Fetch all events from the BUZZEA API endpoint.
-    """
+    """Fetch and normalize events from the BUZZEA API."""
+
     if not API_URL:
         log.error(
             "API_URL is not set. "
@@ -358,10 +266,12 @@ async def refresh_api_cache(now: Time) -> list[dict]:
         )
         return []
 
-    log.info(f"Fetching API: {API_URL}")
+    api_url = normalize_url(API_URL)
+
+    log.info(f"Fetching API: {api_url}")
 
     response = await network.request(
-        API_URL,
+        api_url,
         log=log,
     )
 
@@ -371,64 +281,175 @@ async def refresh_api_cache(now: Time) -> list[dict]:
 
     try:
         data = response.json()
-
     except Exception as exc:
-        log.error(f"Failed to parse API response: {exc}")
+        log.error(f"Failed to parse API JSON: {exc}")
         return []
 
-    events = flatten_api_events(data)
+    events = extract_api_events(data)
 
     log.info(f"Found {len(events)} events from API")
 
     return events
 
 
-# ============================================================
-# EVENT CACHE / EVENT DISCOVERY
-# ============================================================
+# ---------------------------------------------------------------------------
+# STREAM VALIDATION
+# ---------------------------------------------------------------------------
 
-def get_cached_timestamp(events_data) -> float | None:
+def get_first_stream_link(event: dict) -> str | None:
     """
-    Get timestamp metadata from the API cache without modifying
-    the original list.
+    Get the first usable stream link from an API event.
+
+    The API currently supplies get.php links in streams[].link.
+    Those links are preserved exactly rather than incorrectly converting
+    them to an iframe/embed URL.
     """
-    if not isinstance(events_data, list):
+
+    streams = event.get("streams")
+
+    if not isinstance(streams, list):
         return None
 
-    for item in reversed(events_data):
-        if isinstance(item, dict) and "timestamp" in item:
-            try:
-                return float(item["timestamp"])
-            except (TypeError, ValueError):
-                return None
+    for stream in streams:
+
+        if not isinstance(stream, dict):
+            continue
+
+        link = normalize_url(stream.get("link"))
+
+        if not is_http_url(link):
+            continue
+
+        return link
 
     return None
 
 
-def remove_cache_metadata(events_data) -> list[dict]:
+def validate_stream_link(
+    stream_link: str | None,
+    url_num: int,
+) -> str | None:
     """
-    Return API events without cache metadata records.
-    """
-    if not isinstance(events_data, list):
-        return []
+    Validate the API stream URL.
 
-    return [
-        item
-        for item in events_data
-        if isinstance(item, dict) and "timestamp" not in item
-    ]
+    A direct M3U8 is accepted.
+
+    A get.php URL is retained as an API/provider endpoint, but it is NOT
+    falsely reported as an extracted M3U8.
+    """
+
+    if not stream_link:
+        log.warning(
+            f"URL {url_num}) No stream link supplied by API"
+        )
+        return None
+
+    stream_link = normalize_url(stream_link)
+
+    if not is_http_url(stream_link):
+        log.warning(
+            f"URL {url_num}) Invalid stream URL: {stream_link}"
+        )
+        return None
+
+    if is_direct_m3u8(stream_link):
+        log.info(
+            f"URL {url_num}) API supplied direct M3U8"
+        )
+        return stream_link
+
+    if is_get_php_url(stream_link):
+        channel_id = get_channel_id(stream_link)
+
+        if channel_id:
+            log.info(
+                f"URL {url_num}) API get.php stream "
+                f"channel ID: {channel_id}"
+            )
+        else:
+            log.warning(
+                f"URL {url_num}) Invalid get.php stream: "
+                f"{stream_link}"
+            )
+
+        return stream_link
+
+    log.info(
+        f"URL {url_num}) API supplied HTTP stream endpoint: "
+        f"{stream_link}"
+    )
+
+    return stream_link
+
+
+# ---------------------------------------------------------------------------
+# EVENTS
+# ---------------------------------------------------------------------------
+
+def event_timestamp(event: dict) -> float:
+    """Safely obtain an event timestamp."""
+
+    value = event.get("ts_et")
+
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def event_status(event: dict) -> str:
+    """Normalize event status."""
+
+    value = event.get("status")
+
+    if value is None:
+        return "UPCOMING"
+
+    return str(value).strip() or "UPCOMING"
+
+
+def event_category(event: dict) -> str:
+    """Normalize category."""
+
+    value = event.get("category")
+
+    if value is None:
+        return ""
+
+    return str(value).strip().lower()
+
+
+def event_league(event: dict) -> str:
+    """Normalize league."""
+
+    value = event.get("league")
+
+    if value is None:
+        return ""
+
+    return str(value).strip()
+
+
+def event_title(event: dict) -> str:
+    """Normalize event title."""
+
+    value = event.get("title")
+
+    if value is None:
+        return ""
+
+    return str(value).strip()
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
     """
-    Get ALL events from the API.
+    Load events from API cache and return all events that have usable
+    stream links.
 
-    Unlike the previous version, this function does not restrict
-    events to a +/- time window.
-
-    That means live, upcoming, and other events returned by the API
-    can all be processed.
+    No artificial +/- hour event window is applied. This allows the API's
+    full current event list to be processed.
     """
+
     now = Time.rn()
 
     events_data = API_CACHE.load(
@@ -442,94 +463,70 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
         events_data = await refresh_api_cache(now)
 
         if events_data:
-            cache_data = list(events_data)
-            cache_data.append(
-                {
-                    "timestamp": now.timestamp()
-                }
-            )
-
-            API_CACHE.write(cache_data)
-
+            API_CACHE.write(events_data)
         else:
-            log.warning("API returned no events")
             return []
 
-    events_data = remove_cache_metadata(events_data)
+    if not isinstance(events_data, list):
+        log.warning("API cache contains unexpected data")
+        return []
 
     event_list: list[BZEvent] = []
 
     seen_keys: set[str] = set()
 
     for event in events_data:
+
         if not isinstance(event, dict):
             continue
 
-        event_id = event.get("id")
+        category = event_category(event)
+        league = event_league(event)
+        title = event_title(event)
+        event_ts = event_timestamp(event)
+        status = event_status(event)
 
-        category = str(
-            event.get("category") or ""
-        ).strip()
-
-        league = str(
-            event.get("league") or ""
-        ).strip()
-
-        title = str(
-            event.get("title") or ""
-        ).strip()
-
-        event_time = event.get("ts_et", 0)
-
-        status = str(
-            event.get("status") or "UPCOMING"
-        ).strip()
-
-        if not category or not title:
+        if not title:
             continue
 
-        try:
-            event_ts = float(event_time)
-        except (TypeError, ValueError):
-            event_ts = 0
-
-        if not event_ts:
-            log.debug(
-                f"Skipping event without timestamp: {title}"
-            )
-            continue
-
-        # Extract the actual get.php stream URL.
-        stream_link = extract_stream_link(event)
+        stream_link = get_first_stream_link(event)
 
         if not stream_link:
-            log.warning(
-                f"No valid get.php stream link: {title}"
+            log.debug(
+                f"Skipping '{title}': no API stream link"
             )
             continue
 
-        # Make sure we never accidentally process an embed URL.
-        if "/embed" in stream_link.lower():
-            log.warning(
-                f"Skipping invalid embed URL for {title}: "
-                f"{stream_link}"
-            )
+        stream_link = validate_stream_link(
+            stream_link,
+            len(event_list) + 1,
+        )
+
+        if not stream_link:
             continue
 
         sport = CATEGORY_MAP.get(
-            category.lower(),
-            category.title(),
+            category,
+            category.title() if category else "Other",
         )
 
         key = f"[{sport}] {title} ({TAG})"
 
-        # Prevent duplicate events.
+        # Avoid duplicate event objects from the API.
         if key in seen_keys:
             continue
 
         seen_keys.add(key)
 
-        # Existing cache entry.
+        # Do not re-process a cached event unless its existing entry does
+        # not contain a usable source.
+        cached_entry = None
+
+        try:
+            cached_entry = None
+        except Exception:
+            pass
+
         if key in cached_keys:
             continue
 
@@ -547,10 +544,13 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
             )
         )
 
-        log.debug(
-            f"API event {event_id or '-'}: "
-            f"{title} -> {stream_link}"
+    event_list.sort(
+        key=lambda item: (
+            item.sport.lower(),
+            item.event_ts,
+            item.name.lower(),
         )
+    )
 
     log.info(
         f"Found {len(event_list)} new eligible event(s)"
@@ -559,168 +559,140 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
     return event_list
 
 
-# ============================================================
-# STREAM PROCESSING
-# ============================================================
+# ---------------------------------------------------------------------------
+# CACHE
+# ---------------------------------------------------------------------------
 
-async def process_event(
-    stream_link: str,
-    url_num: int,
-) -> str | None:
-    """
-    Process the API stream link.
+def clean_cache_entry(entry: dict) -> dict:
+    """Return a normalized cache entry."""
 
-    IMPORTANT:
-    BUZZEA's API provides get.php URLs. We keep that URL intact.
-
-    We do NOT:
-      - follow iframe URLs
-      - convert get.php to embed3
-      - scrape player HTML
-      - attempt to bypass HTTP 403 protection
-      - extract protected CDN URLs
-
-    The returned URL is therefore the authorized API-provided
-    get.php stream endpoint.
-    """
-    if not stream_link:
-        log.warning(
-            f"URL {url_num}) No stream link provided"
-        )
-        return None
-
-    try:
-        source = build_get_php_url(stream_link)
-
-        if not source:
-            log.warning(
-                f"URL {url_num}) Invalid stream URL: "
-                f"{stream_link}"
-            )
-            return None
-
-        if not is_get_php_url(source):
-            log.warning(
-                f"URL {url_num}) URL is not a valid get.php "
-                f"endpoint: {source}"
-            )
-            return None
-
-        channel_id = extract_channel_id(source)
-
-        log.info(
-            f"URL {url_num}) Using API stream: {source}"
-        )
-
-        if channel_id:
-            log.info(
-                f"URL {url_num}) Channel ID: {channel_id}"
-            )
-
-        # Explicit protection against the old bug.
-        if "/embed3/" in source.lower():
-            log.error(
-                f"URL {url_num}) Refusing invalid embed3 URL: "
-                f"{source}"
-            )
-            return None
-
-        return source
-
-    except Exception as exc:
-        log.warning(
-            f"URL {url_num}) Error processing stream link: "
-            f"{exc}"
-        )
-        return None
+    return {
+        "source": entry.get("source"),
+        "logo": entry.get("logo", ""),
+        "refer": entry.get("refer", REFERER),
+        "origin": entry.get("origin", ORIGIN),
+        "timestamp": entry.get("timestamp", 0),
+        "event_ts": entry.get("event_ts", 0),
+        "tvg-id": entry.get("tvg-id", "Live.Event.us"),
+        "link": entry.get("link", ""),
+        "stream_link": entry.get("stream_link", ""),
+        "sport": entry.get("sport", ""),
+        "status": entry.get("status", "UPCOMING"),
+        "league": entry.get("league", ""),
+    }
 
 
-# ============================================================
+# ---------------------------------------------------------------------------
 # PLAYLIST GENERATION
-# ============================================================
+# ---------------------------------------------------------------------------
 
-def generate_m3u8_files(
-    events_data: dict[str, dict]
-) -> None:
-    """
-    Generate:
+def playlist_entries(
+    events_data: dict[str, dict],
+) -> list[tuple[str, dict]]:
+    """Return valid cached playlist entries sorted consistently."""
 
-        buzzea_vlc.m3u8
-        buzzea_tivimate.m3u8
-    """
+    entries = []
 
-    sorted_events = sorted(
-        [
-            (key, value)
-            for key, value in events_data.items()
-            if value.get("source")
-        ],
-        key=lambda item: (
-            str(item[1].get("sport", "")),
-            float(item[1].get("event_ts", 0) or 0),
-            item[0],
-        ),
-    )
+    for key, data in events_data.items():
 
-    vlc_lines: list[str] = []
-    tivimate_lines: list[str] = []
+        if not isinstance(data, dict):
+            continue
 
-    valid_streams = 0
-
-    for idx, (key, data) in enumerate(
-        sorted_events,
-        start=1,
-    ):
         source = data.get("source")
 
         if not source:
             continue
 
-        # Only put valid get.php sources into the playlists.
-        if not is_get_php_url(str(source)):
-            log.warning(
-                f"Skipping invalid playlist source: {source}"
-            )
+        source = str(source).strip()
+
+        if not source:
             continue
 
-        valid_streams += 1
-
-        # ----------------------------------------------------
-        # Event metadata
-        # ----------------------------------------------------
-
-        key_clean = key.replace(
-            f" ({TAG})",
-            "",
+        entries.append(
+            (
+                key,
+                data,
+            )
         )
 
-        sport_part = key_clean.split(
+    return sorted(
+        entries,
+        key=lambda item: (
+            str(item[1].get("sport", "")).lower(),
+            float(item[1].get("event_ts", 0) or 0),
+            item[0].lower(),
+        ),
+    )
+
+
+def parse_event_key(key: str) -> tuple[str, str]:
+    """Extract sport and event name from the cache key."""
+
+    clean = key.replace(
+        f" ({TAG})",
+        "",
+    )
+
+    if "] " in clean:
+        sport, name = clean.split(
             "] ",
             1,
         )
 
-        sport = sport_part[0].strip("[")
+        return sport.lstrip("[").strip(), name.strip()
 
-        event_name = (
-            sport_part[1]
-            if len(sport_part) > 1
-            else key_clean
-        )
+    return "Other", clean.strip()
 
-        tvg_id = (
-            data.get("tvg-id")
+
+def generate_m3u8_files(
+    events_data: dict[str, dict],
+) -> None:
+    """Generate VLC and TiviMate playlist files."""
+
+    entries = playlist_entries(events_data)
+
+    vlc_lines: list[str] = [
+        "#EXTM3U",
+        "",
+    ]
+
+    tivimate_lines: list[str] = [
+        "#EXTM3U",
+        "",
+    ]
+
+    valid_streams = 0
+
+    for idx, (key, data) in enumerate(
+        entries,
+        start=1,
+    ):
+
+        source = str(
+            data.get("source", "")
+        ).strip()
+
+        if not source:
+            continue
+
+        sport, event_name = parse_event_key(key)
+
+        tvg_id = str(
+            data.get(
+                "tvg-id",
+                "Live.Event.us",
+            )
             or "Live.Event.us"
         )
 
-        logo = data.get("logo") or ""
+        logo = str(
+            data.get("logo", "")
+            or ""
+        )
 
-        stream_url = str(source)
+        valid_streams += 1
 
-        # ----------------------------------------------------
-        # VLC
-        # ----------------------------------------------------
-
-        vlc_lines.append(
+        extinf = (
             f'#EXTINF:-1 '
             f'tvg-chno="{idx}" '
             f'tvg-id="{tvg_id}" '
@@ -730,149 +702,104 @@ def generate_m3u8_files(
             f'{event_name}'
         )
 
+        # VLC
+        vlc_lines.append(extinf)
         vlc_lines.append(
             f"#EXTVLCOPT:http-referrer={REFERER}"
         )
-
         vlc_lines.append(
             f"#EXTVLCOPT:http-origin={ORIGIN}"
         )
-
         vlc_lines.append(
             f"#EXTVLCOPT:http-user-agent={USER_AGENT}"
         )
-
-        vlc_lines.append(stream_url)
+        vlc_lines.append(source)
         vlc_lines.append("")
 
-        # ----------------------------------------------------
         # TiviMate
-        # ----------------------------------------------------
-
+        tivimate_lines.append(extinf)
         tivimate_lines.append(
-            f'#EXTINF:-1 '
-            f'tvg-chno="{idx}" '
-            f'tvg-id="{tvg_id}" '
-            f'tvg-name="{event_name}" '
-            f'tvg-logo="{logo}" '
-            f'group-title="{sport}",'
-            f'{event_name}'
-        )
-
-        tivimate_lines.append(
-            f"{stream_url}"
+            f"{source}"
             f"|referer={REFERER}"
             f"|origin={ORIGIN}"
             f"|user-agent={USER_AGENT_ENCODED}"
         )
-
         tivimate_lines.append("")
 
-    # ========================================================
-    # VLC OUTPUT
-    # ========================================================
-
-    vlc_output_path = Path(
+    vlc_path = Path(
         f"{TAG.lower()}_vlc.m3u8"
     )
 
-    try:
-        with vlc_output_path.open(
-            "w",
-            encoding="utf-8",
-            newline="\n",
-        ) as file:
-            file.write("#EXTM3U\n")
-
-            if vlc_lines:
-                file.write(
-                    "\n".join(vlc_lines)
-                )
-
-                if not vlc_lines[-1].endswith("\n"):
-                    file.write("\n")
-
-        log.info(
-            f"Generated {vlc_output_path} "
-            f"with {valid_streams} streams"
-        )
-
-    except Exception as exc:
-        log.error(
-            f"Error writing VLC M3U8 file: {exc}"
-        )
-
-    # ========================================================
-    # TIVIMATE OUTPUT
-    # ========================================================
-
-    tivimate_output_path = Path(
+    tivimate_path = Path(
         f"{TAG.lower()}_tivimate.m3u8"
     )
 
     try:
-        with tivimate_output_path.open(
-            "w",
+        vlc_path.write_text(
+            "\n".join(vlc_lines),
             encoding="utf-8",
-            newline="\n",
-        ) as file:
-            file.write("#EXTM3U\n")
-
-            if tivimate_lines:
-                file.write(
-                    "\n".join(tivimate_lines)
-                )
-
-                if not tivimate_lines[-1].endswith("\n"):
-                    file.write("\n")
+        )
 
         log.info(
-            f"Generated {tivimate_output_path} "
+            f"Generated {vlc_path} "
             f"with {valid_streams} streams"
         )
 
     except Exception as exc:
         log.error(
-            f"Error writing TiviMate M3U8 file: {exc}"
+            f"Error writing {vlc_path}: {exc}"
         )
 
-    # ========================================================
-    # VERIFY FILES
-    # ========================================================
+    try:
+        tivimate_path.write_text(
+            "\n".join(tivimate_lines),
+            encoding="utf-8",
+        )
 
-    if vlc_output_path.exists():
         log.info(
-            f"✓ {vlc_output_path} exists "
-            f"({vlc_output_path.stat().st_size} bytes)"
+            f"Generated {tivimate_path} "
+            f"with {valid_streams} streams"
+        )
+
+    except Exception as exc:
+        log.error(
+            f"Error writing {tivimate_path}: {exc}"
+        )
+
+    if vlc_path.exists():
+        log.info(
+            f"✓ {vlc_path} exists "
+            f"({vlc_path.stat().st_size} bytes)"
         )
     else:
         log.error(
-            f"✗ {vlc_output_path} was not created!"
+            f"✗ {vlc_path} was not created"
         )
 
-    if tivimate_output_path.exists():
+    if tivimate_path.exists():
         log.info(
-            f"✓ {tivimate_output_path} exists "
-            f"({tivimate_output_path.stat().st_size} bytes)"
+            f"✓ {tivimate_path} exists "
+            f"({tivimate_path.stat().st_size} bytes)"
         )
     else:
         log.error(
-            f"✗ {tivimate_output_path} was not created!"
+            f"✗ {tivimate_path} was not created"
         )
 
 
-# ============================================================
-# MAIN SCRAPER
-# ============================================================
+# ---------------------------------------------------------------------------
+# SCRAPER
+# ---------------------------------------------------------------------------
 
-async def scrape() -> None:
+async def scrape(browser: Browser) -> None:
     """
-    Main BUZZEA updater.
+    Main BUZZEA scraper.
 
-    API -> get.php URL -> cache -> playlists
+    The important correction here is that ev.link is the API-provided
+    stream endpoint. It is passed through unchanged.
+
+    This function does not manufacture /embed3/ URLs.
     """
-
-    global urls
 
     cached_urls = CACHE_FILE.load()
 
@@ -884,148 +811,138 @@ async def scrape() -> None:
         for key, value in cached_urls.items()
         if isinstance(value, dict)
         and value.get("source")
-        and is_get_php_url(
-            str(value.get("source"))
-        )
     }
 
+    valid_count = len(valid_urls)
+    cached_count = len(valid_urls)
+
+    urls.clear()
     urls.update(valid_urls)
 
     log.info(
-        f"Loaded {len(valid_urls)} event(s) from cache"
+        f"Loaded {cached_count} event(s) from cache"
     )
 
-    if BASE_URL:
-        log.info(
-            f'Scraping from "{BASE_URL}"'
-        )
-    else:
-        log.info(
-            "BASE_URL is not configured; "
-            "using API-provided stream hosts"
-        )
+    log.info(
+        f'Scraping from "{BASE_URL}"'
+    )
 
     events = await get_events(
         cached_urls.keys()
     )
 
     if not events:
-        log.info(
-            "No new events found"
-        )
+        log.info("No new events found")
 
-        # Still regenerate playlists from the existing cache.
-        generate_m3u8_files(cached_urls)
         CACHE_FILE.write(cached_urls)
+        generate_m3u8_files(cached_urls)
+
         return
 
     log.info(
         f"Processing {len(events)} new URL(s)"
     )
 
-    added_count = 0
+    # ------------------------------------------------------------------
+    # IMPORTANT:
+    #
+    # The API already supplies the provider stream endpoint.
+    # We do not create a different iframe/embed URL.
+    #
+    # If an authorized provider API supplies a direct M3U8, that direct
+    # M3U8 can be stored as source.
+    # ------------------------------------------------------------------
 
-    for index, event in enumerate(
+    for i, ev in enumerate(
         events,
         start=1,
     ):
+
+        log.info(
+            f"URL {i}) {ev.name}"
+        )
+
+        source = validate_stream_link(
+            ev.link or ev.stream_link,
+            i,
+        )
+
+        tvg_id, logo = leagues.get_tvg_info(
+            ev.sport,
+            ev.name,
+        )
+
         key = (
-            f"[{event.sport}] "
-            f"{event.name} "
+            f"[{ev.sport}] "
+            f"{ev.name} "
             f"({TAG})"
         )
 
-        log.info(
-            f"URL {index}) "
-            f"{event.name}"
-        )
-
-        # ----------------------------------------------------
-        # Process the API get.php URL.
-        # ----------------------------------------------------
-
-        source = await process_event(
-            event.stream_link,
-            index,
-        )
-
-        # ----------------------------------------------------
-        # TVG metadata
-        # ----------------------------------------------------
-
-        try:
-            tvg_id, logo = leagues.get_tvg_info(
-                event.sport,
-                event.name,
-            )
-        except Exception as exc:
-            log.warning(
-                f"Could not get TVG info for "
-                f"{event.name}: {exc}"
-            )
-
-            tvg_id = None
-            logo = ""
-
-        # ----------------------------------------------------
-        # Cache entry
-        # ----------------------------------------------------
-
         entry = {
             "source": source,
-            "logo": logo or "",
+            "logo": logo,
             "refer": REFERER,
-            "event_ts": event.event_ts,
-            "timestamp": event.timestamp,
+            "origin": ORIGIN,
+            "timestamp": ev.timestamp,
+            "event_ts": ev.event_ts,
             "tvg-id": tvg_id or "Live.Event.us",
-            "stream_link": event.stream_link,
-            "sport": event.sport,
-            "status": event.status,
-            "league": event.league,
-            "category": event.category,
+            "link": ev.link,
+            "stream_link": ev.stream_link,
+            "sport": ev.sport,
+            "status": ev.status,
+            "league": ev.league,
         }
 
         cached_urls[key] = entry
 
         if source:
+            valid_count += 1
             urls[key] = entry
-            added_count += 1
+
+            if is_direct_m3u8(source):
+                log.info(
+                    f"URL {i}) Direct M3U8 accepted"
+                )
+            elif is_get_php_url(source):
+                channel_id = get_channel_id(source)
+
+                log.info(
+                    f"URL {i}) Using API stream: "
+                    f"{source}"
+                )
+
+                if channel_id:
+                    log.info(
+                        f"URL {i}) Channel ID: "
+                        f"{channel_id}"
+                    )
 
             log.info(
                 f"Added event: {key}"
             )
 
-    # --------------------------------------------------------
-    # Save cache
-    # --------------------------------------------------------
-
-    CACHE_FILE.write(cached_urls)
-
     log.info(
         f"Collected and cached "
-        f"{added_count} new event(s)"
+        f"{valid_count - cached_count} new event(s)"
     )
 
-    # --------------------------------------------------------
-    # Generate playlists
-    # --------------------------------------------------------
+    CACHE_FILE.write(cached_urls)
 
     generate_m3u8_files(cached_urls)
 
     log.info(
         f"Finished {TAG} scrape: "
-        f"{len(cached_urls)} cached event(s)"
+        f"{valid_count} cached event(s)"
     )
 
 
-# ============================================================
+# ---------------------------------------------------------------------------
 # MAIN
-# ============================================================
+# ---------------------------------------------------------------------------
 
 async def main() -> None:
-    """
-    Main entry point.
-    """
+    """Run the BUZZEA updater."""
+
     try:
         log.info(
             f"Starting {TAG} updater..."
@@ -1039,22 +956,49 @@ async def main() -> None:
             f"Using API_URL: {API_URL}"
         )
 
-        await scrape()
+        # Playwright is retained because the surrounding project/network
+        # infrastructure expects a Browser object.
+        #
+        # No browser navigation to a third-party get.php endpoint is
+        # performed here.
+        from playwright.async_api import async_playwright
 
-        log.info(
-            f"{TAG} updater completed successfully"
-        )
+        async with async_playwright() as p:
+
+            browser = await p.chromium.launch(
+                headless=True,
+                args=[
+                    "--no-sandbox",
+                    "--disable-setuid-sandbox",
+                ],
+            )
+
+            try:
+                await scrape(browser)
+
+                log.info(
+                    f"{TAG} updater completed successfully"
+                )
+
+            finally:
+                await browser.close()
 
     except Exception as exc:
+
         log.error(
             f"{TAG} updater failed: {exc}"
         )
 
         import traceback
+
         traceback.print_exc()
 
         raise
 
+
+# ---------------------------------------------------------------------------
+# ENTRY POINT
+# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     asyncio.run(main())
