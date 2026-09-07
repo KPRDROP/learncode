@@ -31,10 +31,11 @@ jobs:
         playwright install chromium
     
     - name: Run BUZZEA scraper
-      env:
-        BUZZEA_BASE_URL: ${{ secrets.BUZZEA_BASE_URL }}
       run: |
-        python buzzea.py
+          python buzzea.py
+      env:
+          BUZZEA_BASE_URL: ${{ secrets.BUZZEA_BASE_URL }}
+          BUZZEA_API_URL: ${{ secrets.BUZZEA_API_URL }}
     
     - name: Push files
       run: |
