@@ -1,11 +1,13 @@
 from collections.abc import KeysView
 from dataclasses import dataclass
+from functools import partial
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs, urljoin
 import os
 import asyncio
 import re
 
+from playwright.async_api import Browser, BrowserContext
 from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
@@ -23,8 +25,8 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 API_CACHE = Cache(f"{TAG}-api", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_UR")
-API_URL = os.getenv("BUZZEA_API_URL")
+BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://streamed.buzz/")
+API_URL = os.getenv("BUZZEA_API_URL", "https://streamed.buzz/api.php")
 
 # Constants for output files
 REFERER = "https://exposestrat.st/"
@@ -296,82 +298,114 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
 
 
 # ============================================================
-# STREAM PROCESSING - FETCH get.php AND EXTRACT M3U8
+# STREAM PROCESSING - USING PLAYWRIGHT WITHOUT ADBLOCK
 # ============================================================
 
-async def process_event(stream_link: str, url_num: int) -> str | None:
+async def process_event_with_playwright(stream_link: str, url_num: int, browser: Browser) -> str | None:
     """
-    Process the get.php URL to extract the M3U8 URL.
-    
-    The get.php URL returns a page that either:
-    1. Contains the M3U8 URL directly in the HTML
-    2. Redirects to the M3U8 URL
-    3. Contains the M3U8 URL in a script tag or iframe
+    Process the get.php URL using Playwright to execute JavaScript.
+    Creates a fresh context without adblock handlers.
     """
     try:
         if not stream_link:
             log.warning(f"URL {url_num}) No stream link provided")
             return None
 
-        # Normalize the URL
         normalized_link = normalize_url(stream_link)
-        log.info(f"URL {url_num}) Fetching: {normalized_link}")
+        log.info(f"URL {url_num}) Fetching with Playwright: {normalized_link}")
 
-        # Make HTTP request with proper headers
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Connection": "keep-alive",
-            "Upgrade-Insecure-Requests": "1",
-            "Referer": "https://streamed.buzz/",
-        }
+        # Create a fresh context without adblock
+        context: BrowserContext = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            viewport={"width": 1280, "height": 720},
+        )
 
-        response = await network.request(normalized_link, url_num, headers=headers, log=log)
-        if not response:
-            log.warning(f"URL {url_num}) Failed to fetch page")
+        page = await context.new_page()
+
+        try:
+            # Navigate to the URL
+            await page.goto(normalized_link, wait_until="domcontentloaded", timeout=30000)
+
+            # Wait a bit for JavaScript to execute
+            await page.wait_for_timeout(5000)
+
+            # Get page content
+            content = await page.content()
+
+            # Look for M3U8 URL in the page
+            m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
+            match = re.search(m3u8_pattern, content)
+
+            if match:
+                m3u8_url = match.group(0)
+                log.info(f"URL {url_num}) Captured M3U8: {m3u8_url[:50]}...")
+                return m3u8_url
+
+            # Try to find in video elements
+            m3u8_url = await page.evaluate("""
+                () => {
+                    // Check video element
+                    const video = document.querySelector('video');
+                    if (video) {
+                        const src = video.src || video.currentSrc;
+                        if (src && src.includes('.m3u8')) {
+                            return src;
+                        }
+                    }
+                    // Check source elements
+                    const sources = document.querySelectorAll('source[src*=".m3u8"]');
+                    for (const source of sources) {
+                        if (source.src && source.src.includes('.m3u8')) {
+                            return source.src;
+                        }
+                    }
+                    // Check for any element with m3u8
+                    const elements = document.querySelectorAll('[src*=".m3u8"], [href*=".m3u8"]');
+                    for (const el of elements) {
+                        const src = el.src || el.href;
+                        if (src && src.includes('.m3u8')) {
+                            return src;
+                        }
+                    }
+                    // Check script tags
+                    const scripts = document.querySelectorAll('script');
+                    for (const script of scripts) {
+                        if (script.textContent && script.textContent.includes('.m3u8')) {
+                            const match = script.textContent.match(/https?:[^\\s"']+\\.m3u8[^\\s"']*/);
+                            if (match) {
+                                return match[0];
+                            }
+                        }
+                    }
+                    return null;
+                }
+            """)
+
+            if m3u8_url:
+                log.info(f"URL {url_num}) Captured M3U8 from video/script: {m3u8_url[:50]}...")
+                return m3u8_url
+
+            # Try to find in iframes
+            iframes = await page.query_selector_all('iframe')
+            for iframe in iframes:
+                src = await iframe.get_attribute('src')
+                if src and "/embed3/" not in src:
+                    try:
+                        frame = await page.frame_locator(f'iframe[src="{src}"]')
+                        frame_content = await frame.locator('body').inner_html()
+                        match = re.search(m3u8_pattern, frame_content)
+                        if match:
+                            log.info(f"URL {url_num}) Captured M3U8 from iframe")
+                            return match.group(0)
+                    except:
+                        pass
+
+            log.warning(f"URL {url_num}) No M3U8 found")
             return None
 
-        content = response.text
-
-        # Look for M3U8 URL in the page - this is the primary method
-        m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
-        match = re.search(m3u8_pattern, content)
-
-        if match:
-            m3u8_url = match.group(0)
-            log.info(f"URL {url_num}) Captured M3U8: {m3u8_url[:50]}...")
-            return m3u8_url
-
-        # Try to find in script tags
-        script_pattern = r'<script[^>]*>.*?(https?://[^\s"\']+\.m3u8[^\s"\']*).*?</script>'
-        script_match = re.search(script_pattern, content, re.DOTALL | re.IGNORECASE)
-        if script_match:
-            m3u8_url = script_match.group(1)
-            log.info(f"URL {url_num}) Captured M3U8 from script")
-            return m3u8_url
-
-        # Try to find in iframes - but be careful not to follow to embed3
-        iframe_pattern = r'<iframe[^>]+src=["\']([^"\']+)["\']'
-        iframe_match = re.search(iframe_pattern, content)
-        if iframe_match:
-            iframe_url = normalize_url(iframe_match.group(1))
-            # Only follow iframe if it's not the problematic embed3
-            if "/embed3/" not in iframe_url.lower():
-                log.info(f"URL {url_num}) Following iframe: {iframe_url}")
-                iframe_response = await network.request(iframe_url, url_num, headers=headers, log=log)
-                if iframe_response:
-                    iframe_content = iframe_response.text
-                    m3u8_match = re.search(m3u8_pattern, iframe_content)
-                    if m3u8_match:
-                        log.info(f"URL {url_num}) Captured M3U8 from iframe")
-                        return m3u8_match.group(0)
-            else:
-                log.info(f"URL {url_num}) Skipping embed3 iframe")
-
-        log.warning(f"URL {url_num}) No M3U8 found")
-        return None
+        finally:
+            await page.close()
+            await context.close()
 
     except Exception as e:
         log.warning(f"URL {url_num}) Error processing: {e}")
@@ -454,11 +488,11 @@ def generate_m3u8_files(events_data: dict[str, dict]) -> None:
 
 
 # ============================================================
-# MAIN SCRAPER
+# MAIN SCRAPER - USING PLAYWRIGHT
 # ============================================================
 
-async def scrape() -> None:
-    """Main scraping function."""
+async def scrape(browser: Browser) -> None:
+    """Main scraping function using Playwright."""
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
@@ -477,8 +511,8 @@ async def scrape() -> None:
         for i, ev in enumerate(events, start=1):
             log.info(f"URL {i}) {ev.name}")
 
-            # Process the stream link to get M3U8
-            source = await process_event(ev.stream_link, i)
+            # Process the stream link using Playwright
+            source = await process_event_with_playwright(ev.stream_link, i, browser)
 
             tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
@@ -525,8 +559,18 @@ async def main() -> None:
         log.info(f"Using BASE_URL: {BASE_URL}")
         log.info(f"Using API_URL: {API_URL}")
 
-        await scrape()
-        log.info(f"{TAG} updater completed successfully")
+        from playwright.async_api import async_playwright
+
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(
+                headless=True,
+                args=['--no-sandbox', '--disable-setuid-sandbox']
+            )
+            try:
+                await scrape(browser)
+                log.info(f"{TAG} updater completed successfully")
+            finally:
+                await browser.close()
 
     except Exception as e:
         log.error(f"{TAG} updater failed: {e}")
