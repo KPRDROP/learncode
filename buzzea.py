@@ -67,7 +67,7 @@ async def refresh_html_cache(now: Time) -> dict[str, dict[str, str | float]]:
         events[key] = {
             "sport": sport,
             "name": event_name,
-            "link": urljoin(str(html_data.url), f"set.php?{ch_id}"),
+            "link": urljoin(str(html_data.url), f"get.php?{ch_id}"),
             "event_ts": event_dt.timestamp(),
             "timestamp": now.timestamp(),
         }
