@@ -56,11 +56,17 @@ class BZEvent(Event):
     status: str
     league: str
     category: str
+    # link is inherited from Event, but we need to pass it
+    link: str | None = None
 
 
 async def refresh_api_cache(now: Time) -> list[dict]:
     """Fetch events from the API endpoint."""
     events = []
+
+    if not API_URL:
+        log.error("API_URL is not set. Please set BUZZEA_API_URL environment variable.")
+        return events
 
     if not (response := await network.request(API_URL, log=log)):
         log.warning("Failed to fetch API data")
@@ -98,6 +104,10 @@ async def refresh_api_cache(now: Time) -> list[dict]:
 async def process_event(stream_link: str, url_num: int) -> str | None:
     """Process a single event to extract the M3U8 URL."""
     try:
+        if not stream_link:
+            log.warning(f"URL {url_num}) No stream link provided")
+            return None
+
         if not (response := await network.request(stream_link, url_num, log=log)):
             return None
 
@@ -204,6 +214,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[BZEvent]:
             BZEvent(
                 sport=sport,
                 name=title,
+                link=stream_link,  # Required by Event base class
                 league=league,
                 category=category,
                 status=status,
