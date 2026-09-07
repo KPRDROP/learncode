@@ -22,7 +22,7 @@ CACHE_FILE = Cache(TAG, exp=5_400)
 HTML_FILE = Cache(f"{TAG}-html", exp=28_800)
 
 # Use environment variable with fallback
-BASE_URL = os.getenv("BUZZEA_BASE_URL", "https://exposestrat.com")
+BASE_URL = os.getenv("BUZZEA_BASE_URL")
 
 # Constants for output files
 REFERER = "https://exposestrat.com/"
