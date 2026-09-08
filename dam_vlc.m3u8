@@ -1,26 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Borussia Dortmund vs. Villarreal (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fbac7f09efd5e8bc88f1d0b9c7430561-thumbnail.jpg" group-title="Live Events",[Champions League] Borussia Dortmund vs. Villarreal (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-08/dor-vil
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-08/dor-vil
+#EXTINF:-1 tvg-chno="1" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] Dana White's Contender Series (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a5f35940ef6309a61060dede0638e1d3-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] Dana White's Contender Series (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=dwcs/2026-09-08
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=dwcs/2026-09-08
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-08/dor-vil/playlist.m3u8?tk=TXLp6ELnRTGTcSotqpgD4g&e=1788944242
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] FC Porto vs. Manchester City (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1cd096e8bcd39ea9b17c3495d8b13547-thumbnail.jpg" group-title="Live Events",[Champions League] FC Porto vs. Manchester City (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-08/fcp-mci
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-08/fcp-mci
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-08/fcp-mci/playlist.m3u8?tk=TXLp6ELnRTGTcSotqpgD4g&e=1788944242
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Lille vs. Real Betis (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f7df1466cf8f1a957ac14d0662bef0c6-thumbnail.jpg" group-title="Live Events",[Champions League] Lille vs. Real Betis (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-08/lill-bet
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-08/lill-bet
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-08/lill-bet/playlist.m3u8?tk=oDWJMyt5BF5ZFKjjgUKaYQ&e=1788944243
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Real Madrid vs. Inter Milan (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/91a7884c065eaed6984ea9168160da50-thumbnail.jpg" group-title="Live Events",[Champions League] Real Madrid vs. Inter Milan (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-08/rma-int
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-08/rma-int
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-08/rma-int/playlist.m3u8?tk=oDWJMyt5BF5ZFKjjgUKaYQ&e=1788944243
-#EXTINF:-1 tvg-chno="5" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+https://messi.damitv.st/live-hls/channel/dwcs/2026-09-08/playlist.m3u8?tk=bl7WGFC4y4aoszxkKGMkjg&e=1788952719
+#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=oDWJMyt5BF5ZFKjjgUKaYQ&e=1788944243
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=bl7WGFC4y4aoszxkKGMkjg&e=1788952719
