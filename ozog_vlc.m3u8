@@ -1,11 +1,36 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Arsenal vs Chelsea (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Arsenal vs Chelsea (OZOG)
-#EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
-#EXTVLCOPT:http-origin=https://unxer123.gozo.st
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Club Brugge vs Aston Villa (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Club Brugge vs Aston Villa (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=club-brugge-vs-aston-villa
+#EXTVLCOPT:http-origin=https://gozo.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
 https://fingersoon.st/scripts/application1
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Juventus vs Milan (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Juventus vs Milan (OZOG)
-#EXTVLCOPT:http-referrer=https://unxer123.gozo.st/
-#EXTVLCOPT:http-origin=https://unxer123.gozo.st
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Live Event] AEK Athens vs LASK Linz (OZOG)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] AEK Athens vs LASK Linz (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=aek-athens-vs-lask-linz
+#EXTVLCOPT:http-origin=https://gozo.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
 https://fingersoon.st/scripts/application2
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Real Madrid vs Internazionale (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Real Madrid vs Internazionale (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=real-madrid-vs-internazionale
+#EXTVLCOPT:http-origin=https://gozo.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+https://fingersoon.st/scripts/application1
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Porto vs Manchester City (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Porto vs Manchester City (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=porto-vs-manchester-city
+#EXTVLCOPT:http-origin=https://gozo.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+https://fingersoon.st/scripts/application2
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Borussia Dortmund vs Villarreal (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Borussia Dortmund vs Villarreal (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=borussia-dortmund-vs-villarreal
+#EXTVLCOPT:http-origin=https://gozo.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+https://fingersoon.st/scripts/application3
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Live Event] Lille vs Real Betis (OZOG)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Lille vs Real Betis (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=lille-vs-real-betis
+#EXTVLCOPT:http-origin=https://gozo.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+https://fingersoon.st/scripts/application4
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Newcastle United vs Millwall (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Newcastle United vs Millwall (OZOG)
+#EXTVLCOPT:http-referrer=https://gozo.st/?game=newcastle-united-vs-millwall
+#EXTVLCOPT:http-origin=https://gozo.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+https://fingersoon.st/scripts/application5
