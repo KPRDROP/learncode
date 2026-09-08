@@ -1,240 +1,498 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="NFL vs RedZone" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" group-title="American Football",NFL vs RedZone
+#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="Seattle Seahawks - New England Patriots" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Seattle Seahawks - New England Patriots
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/nnflredzone.m3u8?md5=N6xaoFUBy7DHyb93FaiMFQ&expires=1788827649
+https://cdn14.zohanayaan.com:1686/hls/mseattleseahawks.m3u8?md5=hk6ekr9j608KrK-lMQFlkA&expires=1788844944
 
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Cincinnati Reds - Milwaukee Brewers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Cincinnati Reds - Milwaukee Brewers
+#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="Los Angeles Rams - San Francisco 49ers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Los Angeles Rams - San Francisco 49ers
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/mcincinnatireds.m3u8?md5=4Aw5h_i6isIUwG8qAVJSaw&expires=1788827647
+https://cdn12.zohanayaan.com:1686/hls/mlosangelesrams.m3u8?md5=NqrYV3geG7JteRBc5-gFmA&expires=1788844960
 
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Philadelphia Phillies - Atlanta Braves" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Philadelphia Phillies - Atlanta Braves
+#EXTINF:-1 tvg-chno="3" tvg-id="Football.Dummy.us" tvg-name="NFL vs RedZone" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" group-title="American Football",NFL vs RedZone
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/mphiladelphiaphillies.m3u8?md5=s0uERJgufWbSqH2ZY07Bkw&expires=1788827652
+https://cdn12.zohanayaan.com:1686/hls/nnflredzone.m3u8?md5=2g9iurZDCeDuTm78yMdxKA&expires=1788845193
 
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Baltimore Orioles - Boston Red Sox" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Baltimore Orioles - Boston Red Sox
+#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="Cincinnati Bengals - Tampa Bay Buccaneers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Cincinnati Bengals - Tampa Bay Buccaneers
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/mbaltimoreorioles.m3u8?md5=7VgAkSIFYDmXB0afmCN4rg&expires=1788827654
+https://cdn13.zohanayaan.com:1686/hls/mcincinnatibengals.m3u8?md5=tJTpNDQTLXjKWqszeEdspA&expires=1788845195
 
-#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Pittsburgh Pirates - Los Angeles Angels" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Pittsburgh Pirates - Los Angeles Angels
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="Detroit Lions - New Orleans Saints" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Detroit Lions - New Orleans Saints
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/mpittsburghpirates.m3u8?md5=h1oWtmKuamiYqru1kOVADQ&expires=1788827657
+https://cdn14.zohanayaan.com:1686/hls/mdetroitlions.m3u8?md5=8w_UNZAxeLQf4spJV2HUKA&expires=1788845197
 
-#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Cleveland Guardians - Detroit Tigers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Cleveland Guardians - Detroit Tigers
+#EXTINF:-1 tvg-chno="6" tvg-id="NFL.Dummy.us" tvg-name="Tennessee Titans - New York Jets" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Tennessee Titans - New York Jets
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/mclevelandguardians.m3u8?md5=0U3TOIgpfOyWq74JesE5YQ&expires=1788827659
+https://cdn15.zohanayaan.com:1686/hls/mtennesseetitans.m3u8?md5=TE9fR-51JIHKxpLU5NTikA&expires=1788845200
 
-#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Miami Marlins - Chicago Cubs" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Miami Marlins - Chicago Cubs
+#EXTINF:-1 tvg-chno="7" tvg-id="NFL.Dummy.us" tvg-name="Indianapolis Colts - Baltimore Ravens" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Indianapolis Colts - Baltimore Ravens
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/mmiamimarlins.m3u8?md5=rSQKtbEWvgR2T0A1G898hQ&expires=1788827661
+https://cdn14.zohanayaan.com:1686/hls/mindianapoliscolts.m3u8?md5=ke0vCUxLTpvJrcC1jrmOwQ&expires=1788845202
 
-#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="New York Mets - San Francisco Giants" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",New York Mets - San Francisco Giants
+#EXTINF:-1 tvg-chno="8" tvg-id="NFL.Dummy.us" tvg-name="Pittsburgh Steelers - Atlanta Falcons" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Pittsburgh Steelers - Atlanta Falcons
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/mnewyorkmets.m3u8?md5=mR5M4Pf8kcspFCSpeuBrgw&expires=1788827664
+https://cdn13.zohanayaan.com:1686/hls/mpittsburghsteelers.m3u8?md5=l--FObbWYZYzi5iC242tZA&expires=1788845204
 
-#EXTINF:-1 tvg-chno="9" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Houston Astros - Arizona Diamondbacks" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Houston Astros - Arizona Diamondbacks
+#EXTINF:-1 tvg-chno="9" tvg-id="NFL.Dummy.us" tvg-name="Carolina Panthers - Chicago Bears" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Carolina Panthers - Chicago Bears
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/mhoustonastros.m3u8?md5=XTjAfpufkWU9qnKohcA9Tg&expires=1788827666
+https://cdn13.zohanayaan.com:1686/hls/mcarolinapanthers.m3u8?md5=vnnr1fXSU5-pG2T_W4AlkQ&expires=1788845206
 
-#EXTINF:-1 tvg-chno="10" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Kansas City Royals - Toronto Blue Jays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Kansas City Royals - Toronto Blue Jays
+#EXTINF:-1 tvg-chno="10" tvg-id="NFL.Dummy.us" tvg-name="Jacksonville Jaguars - Cleveland Browns" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Jacksonville Jaguars - Cleveland Browns
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/mkansascityroyals.m3u8?md5=vI5Po0G14e59DHqheKlq2A&expires=1788827669
+https://cdn12.zohanayaan.com:1686/hls/mjacksonvillejaguars.m3u8?md5=uE9LFqbvoVOBCpH-NdNWMA&expires=1788845208
 
-#EXTINF:-1 tvg-chno="11" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Texas Rangers - Tampa Bay Rays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Texas Rangers - Tampa Bay Rays
+#EXTINF:-1 tvg-chno="11" tvg-id="NFL.Dummy.us" tvg-name="Houston Texans - Buffalo Bills" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Houston Texans - Buffalo Bills
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/mtexasrangers.m3u8?md5=z4iQILpYqs7avufEJ57TpA&expires=1788827671
+https://cdn15.zohanayaan.com:1686/hls/mhoustontexans.m3u8?md5=Uvm3Bt6POY8LLvQiOaK-rQ&expires=1788845211
 
-#EXTINF:-1 tvg-chno="12" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Colorado Rockies - St. Louis Cardinals" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Colorado Rockies - St. Louis Cardinals
+#EXTINF:-1 tvg-chno="12" tvg-id="NFL.Dummy.us" tvg-name="Las Vegas Raiders - Miami Dolphins" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Las Vegas Raiders - Miami Dolphins
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/mcoloradorockies.m3u8?md5=jwBkF_VkTqq7865-OJk2eA&expires=1788827673
+https://cdn12.zohanayaan.com:1686/hls/mlasvegasraiders.m3u8?md5=OuDKP18U2AuihEow6at1ag&expires=1788845213
 
-#EXTINF:-1 tvg-chno="13" tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Diego Padres - New York Yankees" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",San Diego Padres - New York Yankees
+#EXTINF:-1 tvg-chno="13" tvg-id="NFL.Dummy.us" tvg-name="Minnesota Vikings - Green Bay Packers" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Minnesota Vikings - Green Bay Packers
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/msandiegopadres.m3u8?md5=D6rl0wLbcr_gdgO1PPqVpA&expires=1788827676
+https://cdn15.zohanayaan.com:1686/hls/mminnesotavikings.m3u8?md5=we0k-VsO_Telce3kT6eCAw&expires=1788845215
 
-#EXTINF:-1 tvg-chno="14" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Seattle Mariners - Athletics" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Seattle Mariners - Athletics
+#EXTINF:-1 tvg-chno="14" tvg-id="NFL.Dummy.us" tvg-name="Philadelphia Eagles - Washington Commanders" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Philadelphia Eagles - Washington Commanders
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/mseattlemariners.m3u8?md5=cgHU2lyisZD2n5BaIxs4IA&expires=1788827678
+https://cdn14.zohanayaan.com:1686/hls/mphiladelphiaeagles.m3u8?md5=kP8DNV81_wg8_b2QA5NXIQ&expires=1788845217
 
-#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Chicago White Sox - Minnesota Twins" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Chicago White Sox - Minnesota Twins
+#EXTINF:-1 tvg-chno="15" tvg-id="NFL.Dummy.us" tvg-name="Los Angeles Chargers - Arizona Cardinals" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",Los Angeles Chargers - Arizona Cardinals
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/mchicagowhitesox.m3u8?md5=kYweGDTipozFxHZsy1RluA&expires=1788827683
+https://cdn13.zohanayaan.com:1686/hls/mlosangeleschargers.m3u8?md5=asq7laTjbDXbk_74ggsGGA&expires=1788845220
 
-#EXTINF:-1 tvg-chno="16" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Los Angeles Dodgers - Washington Nationals" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Los Angeles Dodgers - Washington Nationals
+#EXTINF:-1 tvg-chno="16" tvg-id="NFL.Dummy.us" tvg-name="New York Giants - Dallas Cowboys" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="American Football",New York Giants - Dallas Cowboys
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/mlosangelesdodgers.m3u8?md5=1EN0RQ35clMDjdSyMQr9jA&expires=1788827693
+https://cdn11.zohanayaan.com:1686/hls/mnewyorkgiants.m3u8?md5=r_Z7uVu8NkEnYJH8bIX3pQ&expires=1788845222
 
-#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Miami Marlins - New York Mets" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Miami Marlins - New York Mets
+#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Francisco Giants - St. Louis Cardinals" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",San Francisco Giants - St. Louis Cardinals
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/mmiamimarlins.m3u8?md5=5_b6xVyox62WSIAupCJ8YA&expires=1788827695
+https://cdn13.zohanayaan.com:1686/hls/msanfranciscogiants.m3u8?md5=joqTyGsKTLl5GyoUiqUGVQ&expires=1788844878
 
-#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Baltimore Orioles - Cleveland Guardians" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Baltimore Orioles - Cleveland Guardians
+#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Los Angeles Dodgers - Cincinnati Reds" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Los Angeles Dodgers - Cincinnati Reds
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mbaltimoreorioles.m3u8?md5=-4stPMFfkIy6XvMBsH7MQA&expires=1788827697
+https://cdn11.zohanayaan.com:1686/hls/mlosangelesdodgers.m3u8?md5=M6ibzwbMORpHoTiiWw7r6Q&expires=1788844881
 
-#EXTINF:-1 tvg-chno="19" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Boston Red Sox - Los Angeles Angels" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Boston Red Sox - Los Angeles Angels
+#EXTINF:-1 tvg-chno="19" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Athletics - Toronto Blue Jays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Athletics - Toronto Blue Jays
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mbostonredsox.m3u8?md5=bsso_8-JV8l3HXFLsaktIg&expires=1788827700
+https://cdn14.zohanayaan.com:1686/hls/moaklandathletics.m3u8?md5=NQkOeRALILf9b7psuLr7fQ&expires=1788844888
 
-#EXTINF:-1 tvg-chno="20" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Kansas City Royals - Arizona Diamondbacks" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Kansas City Royals - Arizona Diamondbacks
+#EXTINF:-1 tvg-chno="20" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Baltimore Orioles - Cleveland Guardians" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Baltimore Orioles - Cleveland Guardians
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/mkansascityroyals.m3u8?md5=Z3EouSYt4Bx1I25LUJ_4uQ&expires=1788827702
+https://cdn13.zohanayaan.com:1686/hls/mbaltimoreorioles.m3u8?md5=rFYf5S2HtcjwUj_6WhjRxA&expires=1788844903
 
-#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Milwaukee Brewers - Chicago Cubs" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Milwaukee Brewers - Chicago Cubs
+#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Philadelphia Phillies - Houston Astros" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Philadelphia Phillies - Houston Astros
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mmilwaukeebrewers.m3u8?md5=GP2jR4c3FGTX0AW1gbIl4w&expires=1788827704
+https://cdn13.zohanayaan.com:1686/hls/mphiladelphiaphillies.m3u8?md5=aqOsvxx8wQR2iV8bvqX5RQ&expires=1788844906
 
 #EXTINF:-1 tvg-chno="22" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Detroit Tigers - Minnesota Twins" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Detroit Tigers - Minnesota Twins
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/mdetroittigers.m3u8?md5=AuKcctnE6X7qoHFgS6oIlw&expires=1788827706
+https://cdn12.zohanayaan.com:1686/hls/mdetroittigers.m3u8?md5=LXAB5uS0hY0h_AZjNAe_Cg&expires=1788844909
 
-#EXTINF:-1 tvg-chno="23" tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Diego Padres - Washington Nationals" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",San Diego Padres - Washington Nationals
+#EXTINF:-1 tvg-chno="23" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Miami Marlins - New York Mets" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Miami Marlins - New York Mets
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/msandiegopadres.m3u8?md5=OFPyURPu7mkb1oLX0hG9Ww&expires=1788827709
+https://cdn15.zohanayaan.com:1686/hls/mmiamimarlins.m3u8?md5=svZM135w6U746EWL-5Yq4w&expires=1788844912
 
-#EXTINF:-1 tvg-chno="24" tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Francisco Giants - St. Louis Cardinals" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",San Francisco Giants - St. Louis Cardinals
+#EXTINF:-1 tvg-chno="24" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Boston Red Sox - Los Angeles Angels" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Boston Red Sox - Los Angeles Angels
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/msanfranciscogiants.m3u8?md5=cPisEHIFEwWU0dhtMagQOg&expires=1788827711
+https://cdn12.zohanayaan.com:1686/hls/mbostonredsox.m3u8?md5=o571gsIXGdgeI7niu-d_DA&expires=1788844915
 
-#EXTINF:-1 tvg-chno="25" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Los Angeles Dodgers - Cincinnati Reds" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Los Angeles Dodgers - Cincinnati Reds
+#EXTINF:-1 tvg-chno="25" tvg-id="MLB.Baseball.Dummy.us" tvg-name="New York Yankees - Colorado Rockies" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",New York Yankees - Colorado Rockies
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/mlosangelesdodgers.m3u8?md5=S6xovSuVE_Vs1oh-lrH0SQ&expires=1788827713
+https://cdn13.zohanayaan.com:1686/hls/mnewyorkyankees.m3u8?md5=Vq0NSeoh8LlgzLIyTzOc9A&expires=1788844917
 
-#EXTINF:-1 tvg-chno="26" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Athletics - Toronto Blue Jays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Athletics - Toronto Blue Jays
+#EXTINF:-1 tvg-chno="26" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Atlanta Braves - Tampa Bay Rays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Atlanta Braves - Tampa Bay Rays
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/moaklandathletics.m3u8?md5=YyCOdwXHfvksxlyvHt8yBw&expires=1788827717
+https://cdn13.zohanayaan.com:1686/hls/matlantabraves.m3u8?md5=vuJLSN7GEvTd_Wuj5VGzNA&expires=1788844920
 
-#EXTINF:-1 tvg-chno="27" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Philadelphia Phillies - Houston Astros" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Philadelphia Phillies - Houston Astros
+#EXTINF:-1 tvg-chno="27" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Chicago White Sox - Pittsburgh Pirates" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Chicago White Sox - Pittsburgh Pirates
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/mphiladelphiaphillies.m3u8?md5=i0sn3tNmauyEZslb-nIZYA&expires=1788827720
+https://cdn14.zohanayaan.com:1686/hls/mchicagowhitesox.m3u8?md5=RvgPl339nu47CafHXKCrBg&expires=1788844922
 
-#EXTINF:-1 tvg-chno="28" tvg-id="MLB.Baseball.Dummy.us" tvg-name="New York Yankees - Colorado Rockies" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",New York Yankees - Colorado Rockies
+#EXTINF:-1 tvg-chno="28" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Kansas City Royals - Arizona Diamondbacks" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Kansas City Royals - Arizona Diamondbacks
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/mnewyorkyankees.m3u8?md5=dIb6BUpfjRxdRb3FE5GD1Q&expires=1788827722
+https://cdn14.zohanayaan.com:1686/hls/mkansascityroyals.m3u8?md5=wUw3xGGjPaXQCRflByVP0g&expires=1788844924
 
-#EXTINF:-1 tvg-chno="29" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Atlanta Braves - Tampa Bay Rays" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Atlanta Braves - Tampa Bay Rays
+#EXTINF:-1 tvg-chno="29" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Milwaukee Brewers - Chicago Cubs" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Milwaukee Brewers - Chicago Cubs
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/matlantabraves.m3u8?md5=skr4qVDIPbFgpbYHfeKm_g&expires=1788827724
+https://cdn12.zohanayaan.com:1686/hls/mmilwaukeebrewers.m3u8?md5=5VMRAzHfErOpkHynalhbNg&expires=1788844927
 
-#EXTINF:-1 tvg-chno="30" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Chicago White Sox - Pittsburgh Pirates" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Baseball",Chicago White Sox - Pittsburgh Pirates
+#EXTINF:-1 tvg-chno="30" tvg-id="Live.Event.us" tvg-name="WWE Monday Night RAW" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Fight",WWE Monday Night RAW
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/mchicagowhitesox.m3u8?md5=DYQ3TInlSi4mLgQ-PcyDFQ&expires=1788827726
+https://cdn14.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=gaqu4Z4bCOXQSz1GizXP4g&expires=1788844885
 
-#EXTINF:-1 tvg-chno="31" tvg-id="Live.Event.us" tvg-name="WWE Sunday Night MAIN EVENT" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Fight",WWE Sunday Night MAIN EVENT
+#EXTINF:-1 tvg-chno="31" tvg-id="Live.Event.us" tvg-name="Dana Whites Contender Series season 10 Week 5" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Fight",Dana Whites Contender Series season 10 Week 5
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/mevent1.m3u8?md5=6dXxKRrWuG-TFtDuO7nbVA&expires=1788827685
+https://cdn11.zohanayaan.com:1686/hls/mevent1.m3u8?md5=JE84MQpRTzEpthuVflUtkw&expires=1788844929
 
-#EXTINF:-1 tvg-chno="32" tvg-id="Live.Event.us" tvg-name="Dana Whites Contender Series season 10 Week 5" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Fight",Dana Whites Contender Series season 10 Week 5
+#EXTINF:-1 tvg-chno="32" tvg-id="Soccer.Dummy.us" tvg-name="SMU Mustangs - Florida State Seminoles" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",SMU Mustangs - Florida State Seminoles
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/mevent1.m3u8?md5=VidpWN5PRZOXJyNxReDDUQ&expires=1788827729
+https://cdn15.zohanayaan.com:1686/hls/nespnhd.m3u8?md5=Zaga5SpPfDRwH8TjzwAh7w&expires=1788844883
 
-#EXTINF:-1 tvg-chno="33" tvg-id="Soccer.Dummy.us" tvg-name="Everton - Manchester United" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Everton - Manchester United
+#EXTINF:-1 tvg-chno="33" tvg-id="Soccer.Dummy.us" tvg-name="Club Brugge - Aston Villa" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Club Brugge - Aston Villa
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/neverton.m3u8?md5=oYnHBp7A1HbahFPZnqwjqQ&expires=1788827637
+https://cdn15.zohanayaan.com:1686/hls/mevent11.m3u8?md5=ouAg7oOPYX2rC8sW6nK8Jg&expires=1788844890
 
-#EXTINF:-1 tvg-chno="34" tvg-id="Soccer.Dummy.us" tvg-name="Valencia - Barcelona" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Valencia - Barcelona
+#EXTINF:-1 tvg-chno="34" tvg-id="Soccer.Dummy.us" tvg-name="AEK Athens - LASK" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",AEK Athens - LASK
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/nbarcelona.m3u8?md5=72JSgM-i6ZLwrNk672QgFg&expires=1788827642
+https://cdn14.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=O-DVf6QvTrw3dIt1bjw0Vg&expires=1788844892
 
-#EXTINF:-1 tvg-chno="35" tvg-id="Soccer.Dummy.us" tvg-name="Arsenal - Chelsea" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Arsenal - Chelsea
+#EXTINF:-1 tvg-chno="35" tvg-id="Soccer.Dummy.us" tvg-name="Lille - Real Betis" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Lille - Real Betis
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/narsenal.m3u8?md5=9nZ4ZBzJc38Vv_9Typqxpw&expires=1788827644
+https://cdn14.zohanayaan.com:1686/hls/mevent12.m3u8?md5=CF5YD204kyfG8rpRn878TQ&expires=1788844894
 
-#EXTINF:-1 tvg-chno="36" tvg-id="Soccer.Dummy.us" tvg-name="Washington State Cougars - Washington Huskies" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Washington State Cougars - Washington Huskies
+#EXTINF:-1 tvg-chno="36" tvg-id="Soccer.Dummy.us" tvg-name="Borussia Dortmund - Villarreal" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Borussia Dortmund - Villarreal
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/nnbchd.m3u8?md5=3acMEiWKZAmpeEjCnCO33Q&expires=1788827680
+https://cdn12.zohanayaan.com:1686/hls/mevent14.m3u8?md5=PixRi7Tfs-1wS-fGboPfYw&expires=1788844896
 
-#EXTINF:-1 tvg-chno="37" tvg-id="Soccer.Dummy.us" tvg-name="Wisconsin Badgers - Notre Dame Fighting Irish" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Wisconsin Badgers - Notre Dame Fighting Irish
+#EXTINF:-1 tvg-chno="37" tvg-id="Soccer.Dummy.us" tvg-name="Porto - Manchester City" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Porto - Manchester City
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/nnbchd.m3u8?md5=FjVIoNxU6nQZOfU6iMGVwA&expires=1788827688
+https://cdn14.zohanayaan.com:1686/hls/mevent15.m3u8?md5=tZOi7QSv0NvbcJijrd5RsA&expires=1788844899
 
-#EXTINF:-1 tvg-chno="38" tvg-id="Soccer.Dummy.us" tvg-name="Louisville Cardinals - Ole Miss Rebels" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Louisville Cardinals - Ole Miss Rebels
+#EXTINF:-1 tvg-chno="38" tvg-id="Soccer.Dummy.us" tvg-name="Real Madrid - Inter Milan" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Real Madrid - Inter Milan
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/nabchd.m3u8?md5=OK7nCj5pfbQyRkR2N3dqpA&expires=1788827690
+https://cdn15.zohanayaan.com:1686/hls/mevent13.m3u8?md5=8dZHVl4KObHMxWFmIt_rFA&expires=1788844901
 
-#EXTINF:-1 tvg-chno="39" tvg-id="Soccer.Dummy.us" tvg-name="SMU Mustangs - Florida State Seminoles" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",SMU Mustangs - Florida State Seminoles
+#EXTINF:-1 tvg-chno="39" tvg-id="Soccer.Dummy.us" tvg-name="Stuttgart - Viking" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Stuttgart - Viking
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/nespnhd.m3u8?md5=MnEgUF5k6Obbx6ZAboNn4Q&expires=1788827715
+https://cdn14.zohanayaan.com:1686/hls/mevent11.m3u8?md5=bLd42jIpgOx7JovKHV6bQg&expires=1788844931
 
-#EXTINF:-1 tvg-chno="40" tvg-id="Live.Event.us" tvg-name="Italian Grand Prix" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Motor Sports",Italian Grand Prix
+#EXTINF:-1 tvg-chno="40" tvg-id="Soccer.Dummy.us" tvg-name="Barcelona - Feyenoord" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Barcelona - Feyenoord
 #EXTVLCOPT:http-referrer=https://exposestrat.st/
 #EXTVLCOPT:http-origin=https://exposestrat.st
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/skysfor1.m3u8?md5=tBzgOFzyteR2a0s3OWTJYg&expires=1788827639
+https://cdn11.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=mgyn8WPeJ05b4UjoWsWBEg&expires=1788844933
+
+#EXTINF:-1 tvg-chno="41" tvg-id="Soccer.Dummy.us" tvg-name="Liverpool - Atlético Madrid" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Liverpool - Atlético Madrid
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/mevent13.m3u8?md5=H531YOU2FXHJcnaUS_MglA&expires=1788844935
+
+#EXTINF:-1 tvg-chno="42" tvg-id="Soccer.Dummy.us" tvg-name="Paris Saint-Germain - Slovan Bratislava" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Paris Saint-Germain - Slovan Bratislava
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/mevent15.m3u8?md5=o2crhde2XiDp7qGgyUZbaQ&expires=1788844938
+
+#EXTINF:-1 tvg-chno="43" tvg-id="Soccer.Dummy.us" tvg-name="Sporting CP - Galatasaray" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Sporting CP - Galatasaray
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/mevent14.m3u8?md5=72m-VQ1weKPliEC9XA40Bw&expires=1788844940
+
+#EXTINF:-1 tvg-chno="44" tvg-id="Soccer.Dummy.us" tvg-name="Napoli - Arsenal" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Napoli - Arsenal
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/mevent12.m3u8?md5=-rd2LOXDyqBH19XDtmowKg&expires=1788844942
+
+#EXTINF:-1 tvg-chno="45" tvg-id="Soccer.Dummy.us" tvg-name="PSV Eindhoven - Shakhtar Donetsk" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",PSV Eindhoven - Shakhtar Donetsk
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/mevent11.m3u8?md5=IzouN6k6rKqANyLT-QoEgQ&expires=1788844947
+
+#EXTINF:-1 tvg-chno="46" tvg-id="Soccer.Dummy.us" tvg-name="Fenerbahçe - Roma" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Fenerbahçe - Roma
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/mmevent10.m3u8?md5=LvajmCfc9wM1g9agCkjQmA&expires=1788844949
+
+#EXTINF:-1 tvg-chno="47" tvg-id="Soccer.Dummy.us" tvg-name="Manchester United - Sabah Baku" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Manchester United - Sabah Baku
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/mevent15.m3u8?md5=_MmvfqzWp5Iu4Ky_p8cJcQ&expires=1788844951
+
+#EXTINF:-1 tvg-chno="48" tvg-id="Soccer.Dummy.us" tvg-name="Bayern Munich - Bodø/Glimt" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Bayern Munich - Bodø/Glimt
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/mevent14.m3u8?md5=X3MHhF7KrvBMPC_rMBsMYQ&expires=1788844953
+
+#EXTINF:-1 tvg-chno="49" tvg-id="Soccer.Dummy.us" tvg-name="Slavia Prague - Lens" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Slavia Prague - Lens
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/mevent13.m3u8?md5=lXwgw6WXFZoBRo8zlqn6zA&expires=1788844955
+
+#EXTINF:-1 tvg-chno="50" tvg-id="Soccer.Dummy.us" tvg-name="Como - RB Leipzig" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Como - RB Leipzig
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/mevent12.m3u8?md5=q6xU5_4d1KIZmMxM8hx8Xw&expires=1788844957
+
+#EXTINF:-1 tvg-chno="51" tvg-id="Soccer.Dummy.us" tvg-name="Florida A&M Rattlers - Miami Hurricanes" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Florida A&M Rattlers - Miami Hurricanes
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/naccn.m3u8?md5=K3zNQ3VF6MHmxx5F47ll2Q&expires=1788844963
+
+#EXTINF:-1 tvg-chno="52" tvg-id="Soccer.Dummy.us" tvg-name="Villanova Wildcats - Louisville Cardinals" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Villanova Wildcats - Louisville Cardinals
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/naccn.m3u8?md5=pQpqA-G0wjgpR7Q3TTd8GA&expires=1788844966
+
+#EXTINF:-1 tvg-chno="53" tvg-id="Soccer.Dummy.us" tvg-name="Missouri Tigers - Kansas Jayhawks" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Missouri Tigers - Kansas Jayhawks
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/nfoxhd.m3u8?md5=yALTIP4RUTOXgLQ4EZE5FA&expires=1788844990
+
+#EXTINF:-1 tvg-chno="54" tvg-id="Soccer.Dummy.us" tvg-name="Oregon Ducks - Oklahoma State Cowboys" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Oregon Ducks - Oklahoma State Cowboys
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/nespnhd.m3u8?md5=CL-Ff8MZoeqJ_yySlsK13g&expires=1788844993
+
+#EXTINF:-1 tvg-chno="55" tvg-id="Soccer.Dummy.us" tvg-name="Howard Bison - Indiana Hoosiers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Howard Bison - Indiana Hoosiers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/nbtn.m3u8?md5=nJdUj1F0aPONOFrtgFtPMA&expires=1788844996
+
+#EXTINF:-1 tvg-chno="56" tvg-id="Soccer.Dummy.us" tvg-name="Arizona State Sun Devils - Texas A&M Aggies" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Arizona State Sun Devils - Texas A&M Aggies
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/nabchd.m3u8?md5=B-_K0qQG6RMlmSSNM4H28g&expires=1788844998
+
+#EXTINF:-1 tvg-chno="57" tvg-id="Soccer.Dummy.us" tvg-name="Oklahoma Sooners - Michigan Wolverines" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Oklahoma Sooners - Michigan Wolverines
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/nfoxhd.m3u8?md5=UTBeSGkcrTfFQ076TnIdKQ&expires=1788845001
+
+#EXTINF:-1 tvg-chno="58" tvg-id="Soccer.Dummy.us" tvg-name="Washington State Cougars - Kansas State Wildcats" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Washington State Cougars - Kansas State Wildcats
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/ntnt.m3u8?md5=CXZEgHmmAG88pSy14RKphg&expires=1788845014
+
+#EXTINF:-1 tvg-chno="59" tvg-id="Soccer.Dummy.us" tvg-name="East Tennessee State Buccaneers - North Carolina Tar Heels" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",East Tennessee State Buccaneers - North Carolina Tar Heels
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/naccn.m3u8?md5=oXBaX5hDX6KWT1_ZnmHJOQ&expires=1788845016
+
+#EXTINF:-1 tvg-chno="60" tvg-id="Soccer.Dummy.us" tvg-name="Wake Forest Demon Deacons - Purdue Boilermakers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Wake Forest Demon Deacons - Purdue Boilermakers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/nfsonehd.m3u8?md5=YBewXkViWYmWeZdctTr-dQ&expires=1788845029
+
+#EXTINF:-1 tvg-chno="61" tvg-id="Soccer.Dummy.us" tvg-name="South Florida Bulls - Army Black Knights" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",South Florida Bulls - Army Black Knights
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/ncbsn.m3u8?md5=s9bcM3276C-ZKYeTcKh9cg&expires=1788845032
+
+#EXTINF:-1 tvg-chno="62" tvg-id="Soccer.Dummy.us" tvg-name="Rice Owls - Notre Dame Fighting Irish" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Rice Owls - Notre Dame Fighting Irish
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/nnbchd.m3u8?md5=4wuIKvaZWcql4lwuxakaTg&expires=1788845056
+
+#EXTINF:-1 tvg-chno="63" tvg-id="Soccer.Dummy.us" tvg-name="Alabama Crimson Tide - Kentucky Wildcats" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Alabama Crimson Tide - Kentucky Wildcats
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/nabchd.m3u8?md5=DxsOr0rWAG5DQOF6dYdwkA&expires=1788845058
+
+#EXTINF:-1 tvg-chno="64" tvg-id="Soccer.Dummy.us" tvg-name="Arizona Wildcats - BYU Cougars" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Arizona Wildcats - BYU Cougars
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/nfoxhd.m3u8?md5=E8xp4k0o59_70d0tka8N0Q&expires=1788845060
+
+#EXTINF:-1 tvg-chno="65" tvg-id="Soccer.Dummy.us" tvg-name="Utah State Aggies - Washington Huskies" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Utah State Aggies - Washington Huskies
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/nbtn.m3u8?md5=6HuAtWc2hVaFPm_MiEv8WA&expires=1788845062
+
+#EXTINF:-1 tvg-chno="66" tvg-id="Soccer.Dummy.us" tvg-name="Mississippi State Bulldogs - Minnesota Golden Gophers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Mississippi State Bulldogs - Minnesota Golden Gophers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/ncbshd.m3u8?md5=5DZF0F-il6wkdc7j60nJbw&expires=1788845065
+
+#EXTINF:-1 tvg-chno="67" tvg-id="Soccer.Dummy.us" tvg-name="California Golden Bears - Syracuse Orange" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",California Golden Bears - Syracuse Orange
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/naccn.m3u8?md5=whQjJiTlRd5ktssrr54ahg&expires=1788845078
+
+#EXTINF:-1 tvg-chno="68" tvg-id="Soccer.Dummy.us" tvg-name="Duke Blue Devils - Illinois Fighting Illini" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Duke Blue Devils - Illinois Fighting Illini
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/nfsonehd.m3u8?md5=aj2WG3WfnfhOu58CcjrTyA&expires=1788845080
+
+#EXTINF:-1 tvg-chno="69" tvg-id="Soccer.Dummy.us" tvg-name="Eastern Michigan Eagles - Michigan State Spartans" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Eastern Michigan Eagles - Michigan State Spartans
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/nbtn.m3u8?md5=WjzCRhOOadRDDMCchaXIDw&expires=1788845082
+
+#EXTINF:-1 tvg-chno="70" tvg-id="Soccer.Dummy.us" tvg-name="Maryland Terrapins - UConn Huskies" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Maryland Terrapins - UConn Huskies
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/ncbsn.m3u8?md5=63WJ1ceUc8FogOv1EEquvw&expires=1788845085
+
+#EXTINF:-1 tvg-chno="71" tvg-id="Soccer.Dummy.us" tvg-name="Tennessee Volunteers - Georgia Tech Yellow Jackets" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Tennessee Volunteers - Georgia Tech Yellow Jackets
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/nespnhd.m3u8?md5=Udz04Q1KeXMmCN6kHTaf6w&expires=1788845120
+
+#EXTINF:-1 tvg-chno="72" tvg-id="Soccer.Dummy.us" tvg-name="Bowling Green Falcons - Nebraska Cornhuskers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Bowling Green Falcons - Nebraska Cornhuskers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/nfsonehd.m3u8?md5=qem6OsIXjguZ7WgNA3PbmA&expires=1788845123
+
+#EXTINF:-1 tvg-chno="73" tvg-id="Soccer.Dummy.us" tvg-name="Southern Utah Thunderbirds - Colorado State Rams" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Southern Utah Thunderbirds - Colorado State Rams
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/ncbsn.m3u8?md5=rVHgDTOpfRfGMDv-Br7ytQ&expires=1788845125
+
+#EXTINF:-1 tvg-chno="74" tvg-id="Soccer.Dummy.us" tvg-name="San Diego State Aztecs - UCLA Bruins" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",San Diego State Aztecs - UCLA Bruins
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/nbtn.m3u8?md5=YhMXYDSETp-Sbq7JH-8yRg&expires=1788845127
+
+#EXTINF:-1 tvg-chno="75" tvg-id="Soccer.Dummy.us" tvg-name="Western Illinois Leathernecks - Wisconsin Badgers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Western Illinois Leathernecks - Wisconsin Badgers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn11.zohanayaan.com:1686/hls/nbtn.m3u8?md5=4kAVRAadfpnokksm9Y1rog&expires=1788845129
+
+#EXTINF:-1 tvg-chno="76" tvg-id="Soccer.Dummy.us" tvg-name="Ohio State Buckeyes - Texas Longhorns" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Ohio State Buckeyes - Texas Longhorns
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/nabchd.m3u8?md5=xQxHTgoy4Gw24XiyPUPeAw&expires=1788845131
+
+#EXTINF:-1 tvg-chno="77" tvg-id="Soccer.Dummy.us" tvg-name="Texas Tech Red Raiders - Oregon State Beavers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Texas Tech Red Raiders - Oregon State Beavers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/ncbshd.m3u8?md5=Udl_HpovCAvz4jku8e4T5w&expires=1788845134
+
+#EXTINF:-1 tvg-chno="78" tvg-id="Soccer.Dummy.us" tvg-name="Iowa State Cyclones - Iowa Hawkeyes" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Iowa State Cyclones - Iowa Hawkeyes
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/nnbchd.m3u8?md5=NMzuPqiPXy83h9lLcG7I0A&expires=1788845136
+
+#EXTINF:-1 tvg-chno="79" tvg-id="Soccer.Dummy.us" tvg-name="Georgia Southern Eagles - Clemson Tigers" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Georgia Southern Eagles - Clemson Tigers
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn12.zohanayaan.com:1686/hls/naccn.m3u8?md5=dVq8b29aVBYO51lOvPvqPw&expires=1788845138
+
+#EXTINF:-1 tvg-chno="80" tvg-id="Soccer.Dummy.us" tvg-name="North Dakota State Bison - Air Force Falcons" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",North Dakota State Bison - Air Force Falcons
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn15.zohanayaan.com:1686/hls/nfsonehd.m3u8?md5=teI8n2DRtbGOUCcReHRmKQ&expires=1788845173
+
+#EXTINF:-1 tvg-chno="81" tvg-id="Soccer.Dummy.us" tvg-name="Arkansas Razorbacks - Utah Utes" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Arkansas Razorbacks - Utah Utes
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/nespnhd.m3u8?md5=u-aNCGCJgM1p1h2PW5z7eA&expires=1788845175
+
+#EXTINF:-1 tvg-chno="82" tvg-id="Soccer.Dummy.us" tvg-name="Sacramento State Hornets - Fresno State Bulldogs" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Sacramento State Hornets - Fresno State Bulldogs
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn13.zohanayaan.com:1686/hls/ncbsn.m3u8?md5=0nLhCHkTGD_mo2uWVROciA&expires=1788845178
+
+#EXTINF:-1 tvg-chno="83" tvg-id="Soccer.Dummy.us" tvg-name="Louisiana Ragin' Cajuns - USC Trojans" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Football",Louisiana Ragin' Cajuns - USC Trojans
+#EXTVLCOPT:http-referrer=https://exposestrat.st/
+#EXTVLCOPT:http-origin=https://exposestrat.st
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://cdn14.zohanayaan.com:1686/hls/nbtn.m3u8?md5=bOnHMgs-gYWq450-c7-wcw&expires=1788845191
