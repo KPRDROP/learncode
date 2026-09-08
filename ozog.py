@@ -8,7 +8,7 @@ from urllib.parse import quote, urljoin, urlparse
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-from utils import Cache, Event, Time, get_logger, leagues, network
+from .utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -81,15 +81,9 @@ def normalize_source(source: str | None, base_url: str) -> str | None:
 # ---------------------------------------------------------------------------
 
 def rot13(c: str) -> str:
-    """Same ROT13 operation used by the original OZOG JavaScript."""
     code = ord(c)
-    if "A" <= c <= "Z":
-        base = ord("A")
-    elif "a" <= c <= "z":
-        base = ord("a")
-    else:
-        return c
-    return chr((code - base + 13) % 26 + base)
+    base = 90 if c <= "Z" else 122
+    return chr(code + 13 if base >= (code + 13) else code - 13)
 
 
 # ---------------------------------------------------------------------------
@@ -97,132 +91,39 @@ def rot13(c: str) -> str:
 # ---------------------------------------------------------------------------
 
 def decrypt(enc: str, xor_key: int, num_list: list[int]) -> str | None:
-    """
-    Python equivalent of the original OZOG JavaScript _decrypt().
-    Processing order: 1. Unshuffle 2. XOR 3. Hex decode 4. ROT13 5. Reverse 6. Base64 decode
-    """
+    hex_enc_list = []
+    rot13_list = []
+
     try:
-        if not enc or len(enc) % 2 != 0:
-            return None
-
-        if len(num_list) != len(enc):
-            return None
-
-        # Layer 6: unshuffle
         chars = list(enc)
+
         unshuffled = [""] * len(chars)
+
         for i, num in enumerate(num_list):
-            if not isinstance(num, int) or num < 0 or num >= len(chars):
-                return None
             unshuffled[num] = chars[i]
-        xor_encoded = "".join(unshuffled)
 
-        # Layer 5: XOR
-        hex_encoded = ""
-        for i in range(0, len(xor_encoded), 2):
-            byte = int(xor_encoded[i:i + 2], 16)
-            hex_encoded += chr(byte ^ xor_key)
+        xor_enc = "".join(unshuffled)
 
-        # Layer 4: Hex decode
-        rot13_string = ""
-        for i in range(0, len(hex_encoded), 2):
-            rot13_string += chr(int(hex_encoded[i:i + 2], 16))
+        hex_enc_list.extend(
+            chr(int(xor_enc[i : i + 2], 16) ^ xor_key)
+            for i in range(0, len(xor_enc), 2)
+        )
 
-        # Layer 3: ROT13
-        rotated = "".join(rot13(c) for c in rot13_string)
+        hex_enc = "".join(hex_enc_list)
 
-        # Layer 2: Reverse
-        base64_data = rotated[::-1]
+        rot13_list.extend(
+            chr(int(hex_enc[i : i + 2], 16)) for i in range(0, len(hex_enc), 2)
+        )
 
-        # Layer 1: Base64 decode
-        return base64.b64decode(base64_data.encode("utf-8")).decode("utf-8")
+        rot13_str = "".join(rot13_list)
 
-    except Exception as exc:
-        log.debug(f"OZOG decoder failed: {exc}")
-        return None
+        reversed_str = "".join(
+            [rot13(c) if "a" <= c <= "z" or "A" <= c <= "Z" else c for c in rot13_str]
+        )[::-1]
 
-
-# ---------------------------------------------------------------------------
-# Extract decoder variables
-# ---------------------------------------------------------------------------
-
-def extract_decoder_data(text: str) -> tuple[str, int, list[int]] | None:
-    """Extract _dd, _dk and _dri from the OZOG player HTML."""
-    if not text:
-        return None
-
-    # _dd
-    dd_match = re.search(
-        r"""
-        (?:
-            var\s+|
-            let\s+|
-            const\s+
-        )?
-        _dd
-        \s*=\s*
-        (?P<quote>["'])
-        (?P<value>.*?)
-        (?P=quote)
-        \s*;
-        """,
-        text,
-        re.IGNORECASE | re.DOTALL | re.VERBOSE,
-    )
-    if not dd_match:
-        return None
-    dd = dd_match.group("value")
-
-    # _dk
-    dk_match = re.search(
-        r"""
-        (?:
-            var\s+|
-            let\s+|
-            const\s+
-        )?
-        _dk
-        \s*=\s*
-        (?P<value>-?\d+)
-        \s*;
-        """,
-        text,
-        re.IGNORECASE | re.VERBOSE,
-    )
-    if not dk_match:
-        return None
-    try:
-        dk = int(dk_match.group("value"))
-    except ValueError:
-        return None
-
-    # _dri
-    dri_match = re.search(
-        r"""
-        (?:
-            var\s+|
-            let\s+|
-            const\s+
-        )?
-        _dri
-        \s*=\s*
-        (?P<value>\[[^\]]*\])
-        \s*;
-        """,
-        text,
-        re.IGNORECASE | re.DOTALL | re.VERBOSE,
-    )
-    if not dri_match:
-        return None
-    try:
-        dri = ast.literal_eval(dri_match.group("value"))
-    except (ValueError, SyntaxError):
-        return None
-
-    if not isinstance(dri, list) or not all(isinstance(item, int) for item in dri):
-        return None
-
-    return (dd, dk, dri)
+        return base64.b64decode(reversed_str.encode("utf-8")).decode("utf-8")
+    except Exception:
+        return
 
 
 # ---------------------------------------------------------------------------
@@ -230,73 +131,53 @@ def extract_decoder_data(text: str) -> tuple[str, int, list[int]] | None:
 # ---------------------------------------------------------------------------
 
 async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
-    if not url:
-        return None, None
+    nones = None, None
 
-    # Ensure the URL has a trailing slash for proper joining
-    event_url = url.rstrip("/") + "/"
+    if not (html_data := await network.request(url, url_num, log=log)):
+        return nones
 
-    log.info(f'URL {url_num}) Processing "{event_url}"')
-
-    # Step 1: Fetch the event page from gozo.st
-    html_data = await network.request(event_url, url_num, log=log)
-    if not html_data:
-        log.error(f'URL {url_num}) Failed to fetch "{event_url}"')
-        return None, None
-
-    page_text = getattr(html_data, "text", html_data.content)
-
-    # Step 2: Look for iframe with the player URL
     soup = HTMLParser(html_data.content)
-    iframe = soup.css_first(".player-box iframe")
-    
-    if not iframe:
-        log.warning(f"URL {url_num}) No player iframe found")
-        return None, None
 
-    iframe_src = iframe.attributes.get("src")
-    if not iframe_src:
-        log.warning(f"URL {url_num}) Iframe has no src attribute")
-        return None, None
+    iframe = soup.css_first("iframe")
 
-    # Make relative iframe URL absolute
-    iframe_src = urljoin(event_url, iframe_src)
-    log.info(f"URL {url_num}) Found player iframe: {iframe_src}")
+    if not iframe or not (iframe_src := iframe.attributes.get("src")):
+        log.warning(f"URL {url_num}) No iframe element found.")
+        return nones
 
-    # Step 3: Fetch the player iframe content (this contains the encrypted stream)
-    iframe_data = await network.request(
-        iframe_src,
-        url_num,
-        headers={"Referer": event_url},
-        log=log,
-    )
-    if not iframe_data:
-        log.warning(f"URL {url_num}) Failed to fetch player iframe")
-        return None, None
+    if not (
+        iframe_src_data := await network.request(
+            iframe_src,
+            url_num,
+            headers={"Referer": url},
+            log=log,
+        )
+    ):
+        return nones
 
-    iframe_text = getattr(iframe_data, "text", iframe_data.content)
+    # Regex patterns
+    dd_ptrn = re.compile(r'_dd\s?=\s?"(.*)"(;|,)', re.I)
+    dk_ptrn = re.compile(r"_dk\s?=\s?(\d*)(;|,)", re.I)
+    dri_ptrn = re.compile(r"_dri\s?=\s?(\[.*\]);fu", re.I)
 
-    # Step 4: Extract decoder data from the iframe
-    decoder_data = extract_decoder_data(iframe_text)
-    if not decoder_data:
-        log.warning(f"URL {url_num}) Failed to extract decoder data from player")
-        return None, None
+    if not (
+        (dd_mtch := dd_ptrn.search(iframe_src_data.text))
+        and (dk_mtch := dk_ptrn.search(iframe_src_data.text))
+        and (dri_mtch := dri_ptrn.search(iframe_src_data.text))
+    ):
+        log.warning(f"URL {url_num}) Failed to gather decoding variables")
+        return nones
 
-    dd, dk, dri = decoder_data
-    log.info(f"URL {url_num}) Found player decoder")
+    dd, dk = dd_mtch[1], int(dk_mtch[1])
+    dri: list[int] = ast.literal_eval(dri_mtch[1])
 
-    # Step 5: Decrypt the stream URL
-    source = decrypt(dd, dk, dri)
-    source = normalize_source(source, iframe_src)
+    if not (m3u_src := decrypt(dd, dk, dri)):
+        log.warning(f"URL {url_num}) Decoding method failed")
+        return nones
 
-    if not source:
-        log.warning(f"URL {url_num}) Failed to decrypt stream URL")
-        return None, None
+    log.info(f"URL {url_num}) Captured M3U8")
 
-    log.info(f"URL {url_num}) Captured stream source: {source}")
-    
-    # Return the stream URL with the event page as referer
-    return source, event_url
+    # Return the stream URL with the event URL as referer
+    return m3u_src, url
 
 
 # ---------------------------------------------------------------------------
@@ -307,36 +188,39 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     events: list[Event] = []
 
     if not (html_data := await network.request(BASE_URL, log=log)):
-        log.error(f'Failed to fetch "{BASE_URL}"')
         return events
 
     soup = HTMLParser(html_data.content)
 
     for card in soup.css(".card-inner"):
+
         if not all(
             values := [
-                card.css_first(selector)
-                for selector in (".sport-tag", ".teams", "a.watch-btn")
+                card.css_first(x)
+                for x in (
+                    ".sport-tag",
+                    ".teams",
+                    "a.watch-btn",
+                )
             ]
         ):
             continue
 
         sport_elem, teams_elem, watch_btn_elem = values
+
         sport = sport_elem.text(strip=True).capitalize()
+
         sport = "Live Event" if sport == "Sports" else sport
 
-        teams = teams_elem.css(".team-name")
-        if not teams:
+        if not (teams := teams_elem.css(".team-name")):
             continue
 
         event_name = " vs ".join(team.text(strip=True) for team in teams)
-        key = f"[{sport}] {event_name} ({TAG})"
 
-        if key in cached_keys:
+        if f"[{sport}] {event_name} ({TAG})" in cached_keys:
             continue
 
-        href = watch_btn_elem.attributes.get("href")
-        if not href:
+        elif not (href := watch_btn_elem.attributes.get("href")):
             continue
 
         events.append(
@@ -356,59 +240,69 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
 async def scrape() -> None:
     cached_urls = CACHE_FILE.load()
+
     valid_urls = {k: v for k, v in cached_urls.items() if v.get("source")}
+
     valid_count = cached_count = len(valid_urls)
 
     urls.clear()
     urls.update(valid_urls)
 
     log.info(f"Loaded {cached_count} event(s) from cache")
+
     log.info(f'Scraping from "{BASE_URL}"')
 
-    events = await get_events(cached_urls.keys())
-    if not events:
+    if events := await get_events(cached_urls.keys()):
+        log.info(f"Processing {len(events)} new URL(s)")
+
+        now = Time.rn()
+
+        for i, ev in enumerate(events, start=1):
+            handler = partial(
+                process_event,
+                url=ev.link,
+                url_num=i,
+            )
+
+            source, referer = await network.safe_process(
+                handler,
+                url_num=i,
+                timeout_return=(None, None),
+                semaphore=network.HTTP_S,
+                log=log,
+            )
+
+            key = f"[{ev.sport}] {ev.name} ({TAG})"
+
+            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+            
+            event_url = ev.link.rstrip("/") + "/"
+            event_origin = get_origin(event_url)
+
+            entry = {
+                "source": source,
+                "logo": logo,
+                "refer": referer or event_url or REFERER,
+                "origin": event_origin or ORIGIN,
+                "timestamp": now.timestamp(),
+                "tvg-id": tvg_id or "Live.Event.us",
+                "link": event_url,
+            }
+
+            cached_urls[key] = entry
+
+            if source:
+                valid_count += 1
+                urls[key] = entry
+                log.info(f"URL {i}) Saved event: {key}")
+            else:
+                log.warning(f"No stream source for: {key}")
+
+        log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
+
+    else:
         log.info("No new events found")
-        CACHE_FILE.write(cached_urls)
-        return
 
-    log.info(f"Processing {len(events)} new URL(s)")
-    now = Time.rn()
-
-    for i, ev in enumerate(events, start=1):
-        handler = partial(process_event, url=ev.link, url_num=i)
-        source, referer = await network.safe_process(
-            handler,
-            url_num=i,
-            timeout_return=(None, None),
-            semaphore=network.HTTP_S,
-            log=log,
-        )
-
-        key = f"[{ev.sport}] {ev.name} ({TAG})"
-        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
-        event_url = ev.link.rstrip("/") + "/"
-        event_origin = get_origin(event_url)
-
-        entry = {
-            "source": source,
-            "logo": logo,
-            "refer": referer or event_url or REFERER,
-            "origin": event_origin or ORIGIN,
-            "timestamp": now.timestamp(),
-            "tvg-id": tvg_id or "Live.Event.us",
-            "link": event_url,
-        }
-
-        cached_urls[key] = entry
-
-        if source:
-            valid_count += 1
-            urls[key] = entry
-            log.info(f"URL {i}) Saved event: {key}")
-        else:
-            log.warning(f"No stream source for: {key}")
-
-    log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
     CACHE_FILE.write(cached_urls)
 
 
