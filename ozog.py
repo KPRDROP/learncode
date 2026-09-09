@@ -8,7 +8,7 @@ from urllib.parse import quote, urljoin
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-from utils import Cache, Event, Time, get_logger, leagues, network
+from .utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -51,62 +51,45 @@ REQUEST_HEADERS = {
 
 
 # ---------------------------------------------------------------------------
-# Request helper with cloudscraper fallback
+# Cloudscraper request helper
 # ---------------------------------------------------------------------------
 
-async def request_with_headers(url: str, url_num: int = 0, headers: dict = None) -> any:
-    """Make request with proper headers and cloudscraper fallback"""
-    
-    request_headers = REQUEST_HEADERS.copy()
-    if headers:
-        request_headers.update(headers)
-    
-    # Try normal request first
-    try:
-        result = await network.request(
-            url,
-            url_num,
-            headers=request_headers,
-            log=log,
-        )
-        if result:
-            return result
-    except Exception as e:
-        log.debug(f"Normal request failed: {e}")
-    
-    # If normal request fails, try with cloudscraper
+async def fetch_page(url: str) -> str | None:
+    """Fetch page content using cloudscraper with browser headers"""
     try:
         import cloudscraper
-        scraper = cloudscraper.create_scraper()
         
+        # Create scraper with browser settings
+        scraper = cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'mobile': False,
+                'desktop': True,
+            },
+            delay=1,
+            interpreter='nodejs',  # Use nodejs interpreter for better Cloudflare bypass
+        )
+        
+        # Make request with headers
         response = scraper.get(
             url,
-            headers=request_headers,
+            headers=REQUEST_HEADERS,
             timeout=30,
         )
         
         if response.status_code == 200:
-            # Create a mock response object that matches the expected structure
-            class MockResponse:
-                def __init__(self, content, text, status_code):
-                    self.content = content
-                    self.text = text
-                    self.status_code = status_code
-            
-            return MockResponse(
-                content=response.content,
-                text=response.text,
-                status_code=response.status_code
-            )
+            log.debug(f"Successfully fetched {url}")
+            return response.text
         else:
-            log.error(f"Cloudscraper request failed with status {response.status_code}")
+            log.error(f"Failed to fetch {url} - Status: {response.status_code}")
             return None
             
     except ImportError:
-        log.warning("cloudscraper not installed, falling back to normal request")
+        log.error("cloudscraper not installed. Please install: pip install cloudscraper")
         return None
     except Exception as e:
-        log.error(f"Cloudscraper request error: {e}")
+        log.error(f"Cloudscraper error: {e}")
         return None
 
 
@@ -160,22 +143,16 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
 
     log.info(f"URL {url_num}) Processing event page")
 
-    # Fetch the event page with proper headers
-    html_data = await request_with_headers(url, url_num)
+    # Fetch the event page using cloudscraper
+    page_content = await fetch_page(url)
     
-    if not html_data:
+    if not page_content:
         log.error(f"URL {url_num}) Failed to fetch event page")
-        return nones
-
-    # Get the text content
-    page_text = getattr(html_data, "text", html_data.content)
-    if not page_text:
-        log.warning(f"URL {url_num}) No content received")
         return nones
 
     # Extract the stream URL from var sourceUrl
     source_pattern = re.compile(r'var\s+sourceUrl\s*=\s*"([^"]+)"', re.IGNORECASE)
-    source_match = source_pattern.search(page_text)
+    source_match = source_pattern.search(page_content)
     
     if not source_match:
         log.warning(f"URL {url_num}) No sourceUrl found in page")
@@ -203,14 +180,14 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
     log.info(f'Fetching events from "{BASE_URL}"')
     
-    # Fetch the main page with proper headers
-    html_data = await request_with_headers(BASE_URL)
+    # Fetch the main page using cloudscraper
+    page_content = await fetch_page(BASE_URL)
     
-    if not html_data:
+    if not page_content:
         log.error(f'Failed to fetch "{BASE_URL}"')
         return events
 
-    soup = HTMLParser(html_data.content)
+    soup = HTMLParser(page_content)
 
     # Find all event cards
     for card in soup.css(".card"):
