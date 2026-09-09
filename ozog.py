@@ -8,7 +8,7 @@ from urllib.parse import quote, urljoin
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-from utils import Cache, Event, Time, get_logger, leagues, network
+from .utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
@@ -33,11 +33,11 @@ USER_AGENT = (
     "Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
 )
 
-# Headers to avoid 403 Forbidden
+# Browser headers to avoid 403 Forbidden
 REQUEST_HEADERS = {
     "User-Agent": USER_AGENT,
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
@@ -46,7 +46,68 @@ REQUEST_HEADERS = {
     "Sec-Fetch-Site": "none",
     "Sec-Fetch-User": "?1",
     "Cache-Control": "max-age=0",
+    "DNT": "1",
 }
+
+
+# ---------------------------------------------------------------------------
+# Request helper with cloudscraper fallback
+# ---------------------------------------------------------------------------
+
+async def request_with_headers(url: str, url_num: int = 0, headers: dict = None) -> any:
+    """Make request with proper headers and cloudscraper fallback"""
+    
+    request_headers = REQUEST_HEADERS.copy()
+    if headers:
+        request_headers.update(headers)
+    
+    # Try normal request first
+    try:
+        result = await network.request(
+            url,
+            url_num,
+            headers=request_headers,
+            log=log,
+        )
+        if result:
+            return result
+    except Exception as e:
+        log.debug(f"Normal request failed: {e}")
+    
+    # If normal request fails, try with cloudscraper
+    try:
+        import cloudscraper
+        scraper = cloudscraper.create_scraper()
+        
+        response = scraper.get(
+            url,
+            headers=request_headers,
+            timeout=30,
+        )
+        
+        if response.status_code == 200:
+            # Create a mock response object that matches the expected structure
+            class MockResponse:
+                def __init__(self, content, text, status_code):
+                    self.content = content
+                    self.text = text
+                    self.status_code = status_code
+            
+            return MockResponse(
+                content=response.content,
+                text=response.text,
+                status_code=response.status_code
+            )
+        else:
+            log.error(f"Cloudscraper request failed with status {response.status_code}")
+            return None
+            
+    except ImportError:
+        log.warning("cloudscraper not installed, falling back to normal request")
+        return None
+    except Exception as e:
+        log.error(f"Cloudscraper request error: {e}")
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -97,16 +158,10 @@ def normalize_source(source: str | None) -> str | None:
 async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
     nones = None, None
 
-    # Log the URL being processed
     log.info(f"URL {url_num}) Processing event page")
 
     # Fetch the event page with proper headers
-    html_data = await network.request(
-        url, 
-        url_num, 
-        headers=REQUEST_HEADERS,
-        log=log
-    )
+    html_data = await request_with_headers(url, url_num)
     
     if not html_data:
         log.error(f"URL {url_num}) Failed to fetch event page")
@@ -149,11 +204,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     log.info(f'Fetching events from "{BASE_URL}"')
     
     # Fetch the main page with proper headers
-    html_data = await network.request(
-        BASE_URL, 
-        headers=REQUEST_HEADERS,
-        log=log
-    )
+    html_data = await request_with_headers(BASE_URL)
     
     if not html_data:
         log.error(f'Failed to fetch "{BASE_URL}"')
