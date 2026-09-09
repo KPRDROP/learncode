@@ -1,6 +1,41 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Barcelona vs. Feyenoord Rotterdam (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d8b2911ad948bc43947d92cc3b597feb-thumbnail.jpg" group-title="Live Events",[Champions League] Barcelona vs. Feyenoord Rotterdam (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-09/bar-fey
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-09/bar-fey
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-09-09/bar-fey/playlist.m3u8?tk=zrsGxsW8gxmCb_j-kwZZWA&e=1789021476
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] VfB Stuttgart vs. Viking FK (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/eb9bd4b53c7a9757f583bc76991642cb-thumbnail.jpg" group-title="Live Events",[Champions League] VfB Stuttgart vs. Viking FK (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-09/vfb-vik
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-09/vfb-vik
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-09-09/vfb-vik/playlist.m3u8?tk=zrsGxsW8gxmCb_j-kwZZWA&e=1789021476
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] FC Twente vs. Telstar (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f3f08664c1e2cbb5b37afa393c2fe3a9-thumbnail.jpg" group-title="Football",[Football] FC Twente vs. Telstar (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=eredivisie/2026-09-09/twe-tel
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=eredivisie/2026-09-09/twe-tel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/eredivisie/2026-09-09/twe-tel/playlist.m3u8?tk=zrsGxsW8gxmCb_j-kwZZWA&e=1789021476
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Liverpool vs. Atlético Madrid (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/044719e2246b23060a5746b37e4e58c0-thumbnail.jpg" group-title="Live Events",[Champions League] Liverpool vs. Atlético Madrid (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-09/liv-atm
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-09/liv-atm
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-09-09/liv-atm/playlist.m3u8?tk=lyw4RxGOZzyu6wm8_NHQtA&e=1789021477
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Napoli vs. Arsenal (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/69503ff6def4a7be3d740f9de11a4e97-thumbnail.jpg" group-title="Live Events",[Champions League] Napoli vs. Arsenal (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-09/nap-ars
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-09/nap-ars
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-09-09/nap-ars/playlist.m3u8?tk=lyw4RxGOZzyu6wm8_NHQtA&e=1789021477
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Paris Saint-Germain vs. Slovan Bratislava (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6c4dc8510852f7ae9efd54711db3e7ad-thumbnail.jpg" group-title="Live Events",[Champions League] Paris Saint-Germain vs. Slovan Bratislava (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-09/psg-slb
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-09/psg-slb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-09-09/psg-slb/playlist.m3u8?tk=lyw4RxGOZzyu6wm8_NHQtA&e=1789021477
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Sporting CP vs. Galatasaray (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d33e424f4fee85b618d5759c3c4bf95e-thumbnail.jpg" group-title="Live Events",[Champions League] Sporting CP vs. Galatasaray (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-09/scp-gal
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-09/scp-gal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-09-09/scp-gal/playlist.m3u8?tk=lyw4RxGOZzyu6wm8_NHQtA&e=1789021477
+#EXTINF:-1 tvg-chno="8" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=9bCWuUdofRkqyhEe77Pu_Q&e=1788989367
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=lyw4RxGOZzyu6wm8_NHQtA&e=1789021477
