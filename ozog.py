@@ -22,7 +22,7 @@ TAG = "OZOG"
 
 CACHE_FILE = Cache(TAG, exp=28_800)
 
-BASE_URL = "https://ovostream.net/"
+BASE_URL = "https://gozowatch.top/updates"
 #"https://gozo.st/"
 
 REFERER = "https://unxer123.gozo.zip/"
