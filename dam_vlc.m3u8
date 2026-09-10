@@ -1,26 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Bayern Munich vs. Bodo/Glimt (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/09c6c9dad91ae9ccd7e11feac1fb2aa1-thumbnail.jpg" group-title="Live Events",[Champions League] Bayern Munich vs. Bodo/Glimt (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-10/mun-bodo
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-10/mun-bodo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-10/mun-bodo/playlist.m3u8?tk=cwlcwlEVHwVwS_VX-TpnKw&e=1789118971
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Como vs. RB Leipzig (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d6c5212aa16cf048ad223efbb108d3a2-thumbnail.jpg" group-title="Live Events",[Champions League] Como vs. RB Leipzig (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-10/como-rbl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-10/como-rbl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-10/como-rbl/playlist.m3u8?tk=cwlcwlEVHwVwS_VX-TpnKw&e=1789118971
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Manchester United vs. Sabah FK (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/72ac44b95b6fcf79192cbf3050e16681-thumbnail.jpg" group-title="Live Events",[Champions League] Manchester United vs. Sabah FK (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-10/mun-sab
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-10/mun-sab
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-10/mun-sab/playlist.m3u8?tk=cwlcwlEVHwVwS_VX-TpnKw&e=1789118971
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Slavia Prague vs. Lens (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4bdac4649f85220e5a6d99819915ef4e-thumbnail.jpg" group-title="Live Events",[Champions League] Slavia Prague vs. Lens (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ucl/2026-09-10/slp-rcl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ucl/2026-09-10/slp-rcl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ucl/2026-09-10/slp-rcl/playlist.m3u8?tk=5e6CFj09zpO7zNAh6jrITQ&e=1789118972
-#EXTINF:-1 tvg-chno="5" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=5e6CFj09zpO7zNAh6jrITQ&e=1789118972
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=2glL7iemBE6n8V2_mt1qpQ&e=1789127592
