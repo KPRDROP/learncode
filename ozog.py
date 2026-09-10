@@ -51,30 +51,19 @@ REQUEST_HEADERS = {
 
 
 # ---------------------------------------------------------------------------
-# Cloudscraper request helper
+# Request helper (Using curl_cffi for advanced TLS fingerprint spoofing)
 # ---------------------------------------------------------------------------
 
 async def fetch_page(url: str) -> str | None:
-    """Fetch page content using cloudscraper with browser headers"""
+    """Fetch page content using curl_cffi to bypass Cloudflare 403 blocks"""
     try:
-        import cloudscraper
+        from curl_cffi import requests as cffi_requests
         
-        # Create scraper with browser settings
-        scraper = cloudscraper.create_scraper(
-            browser={
-                'browser': 'chrome',
-                'platform': 'windows',
-                'mobile': False,
-                'desktop': True,
-            },
-            delay=1,
-            interpreter='nodejs',  # Use nodejs interpreter for better Cloudflare bypass
-        )
-        
-        # Make request with headers
-        response = scraper.get(
+        # impersonate="chrome" spoofs the exact TLS/JA4 fingerprint of Google Chrome
+        response = cffi_requests.get(
             url,
             headers=REQUEST_HEADERS,
+            impersonate="chrome",
             timeout=30,
         )
         
@@ -86,10 +75,10 @@ async def fetch_page(url: str) -> str | None:
             return None
             
     except ImportError:
-        log.error("cloudscraper not installed. Please install: pip install cloudscraper")
+        log.error("curl_cffi not installed. Please install: pip install curl_cffi")
         return None
     except Exception as e:
-        log.error(f"Cloudscraper error: {e}")
+        log.error(f"Curl_cffi error: {e}")
         return None
 
 
@@ -99,10 +88,8 @@ async def fetch_page(url: str) -> str | None:
 
 def fix_event_name(name: str) -> str:
     """Fix event name capitalization and replace VS with vs"""
-    # Replace VS with vs
     name = name.replace(" VS ", " vs ")
     
-    # Split by space and capitalize each word properly
     words = []
     for word in name.split():
         if word.lower() == "vs":
@@ -124,10 +111,8 @@ def normalize_source(source: str | None) -> str | None:
     if not source:
         return None
 
-    # Remove trailing slash if present
     source = source.rstrip("/")
 
-    # Ensure it starts with http:// or https://
     if not re.match(r"^https?://", source, re.IGNORECASE):
         return None
 
@@ -143,14 +128,12 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
 
     log.info(f"URL {url_num}) Processing event page")
 
-    # Fetch the event page using cloudscraper
     page_content = await fetch_page(url)
     
     if not page_content:
         log.error(f"URL {url_num}) Failed to fetch event page")
         return nones
 
-    # Extract the stream URL from var sourceUrl
     source_pattern = re.compile(r'var\s+sourceUrl\s*=\s*"([^"]+)"', re.IGNORECASE)
     source_match = source_pattern.search(page_content)
     
@@ -167,7 +150,6 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
 
     log.info(f"URL {url_num}) Captured stream source: {stream_url}")
     
-    # Return the stream URL with the referer
     return stream_url, url
 
 
@@ -180,7 +162,6 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
     log.info(f'Fetching events from "{BASE_URL}"')
     
-    # Fetch the main page using cloudscraper
     page_content = await fetch_page(BASE_URL)
     
     if not page_content:
@@ -189,14 +170,11 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
     soup = HTMLParser(page_content)
 
-    # Find all event cards
     for card in soup.css(".card"):
-        # Get the data-search attribute for event name
         data_search = card.attributes.get("data-search")
         if not data_search:
             continue
 
-        # Get the sport tag
         sport_elem = card.css_first(".sport-tag")
         if not sport_elem:
             continue
@@ -204,10 +182,8 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         sport = sport_elem.text(strip=True).capitalize()
         sport = "Live Event" if sport == "Sports" else sport
 
-        # Fix the event name
         event_name = fix_event_name(data_search)
 
-        # Get the watch button link
         watch_btn = card.css_first("a.watch-btn")
         if not watch_btn:
             continue
@@ -216,13 +192,10 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         if not href:
             continue
 
-        # Build the full event URL
         event_url = urljoin(BASE_URL, href)
         
-        # Create the key for caching
         key = f"[{sport}] {event_name} ({TAG})"
 
-        # Skip if already cached
         if key in cached_keys:
             continue
 
@@ -389,12 +362,10 @@ def write_output_files() -> None:
     output_dir = os.getenv("OUTPUT_DIR", ".")
     os.makedirs(output_dir, exist_ok=True)
 
-    # VLC
     vlc_file = os.path.join(output_dir, "ozog_vlc.m3u8")
     with open(vlc_file, "w", encoding="utf-8", newline="\n") as f:
         f.write(generate_vlc_m3u8())
 
-    # TiviMate
     tivimate_file = os.path.join(output_dir, "ozog_tivimate.m3u8")
     with open(tivimate_file, "w", encoding="utf-8", newline="\n") as f:
         f.write(generate_tivimate_m3u8())
