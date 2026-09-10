@@ -6,7 +6,7 @@ from collections.abc import KeysView
 from functools import partial
 from typing import Dict
 
-from playwright.async_api import async_playwright, Browser, Page
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from utils import Cache, Event, Time, get_logger, leagues, network
 
@@ -25,6 +25,10 @@ FLY_API_URL = os.getenv("FLY_API_URL")
 FLY_BASE_URL = os.getenv("FLY_BASE_URL")
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
 TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
+
+# Referer and origin for streams
+REFERER = "https://epiembeds.online/"
+ORIGIN = "https://epiembeds.online"
 
 
 def clean_name(s: str) -> str:
@@ -54,6 +58,20 @@ def clean_display_name(name: str) -> str:
     return cleaned
 
 
+def normalize_vs(name: str) -> str:
+    """
+    Normalize 'VS' to 'vs' in event names.
+    
+    Args:
+        name: Event name
+        
+    Returns:
+        Normalized event name
+    """
+    # Replace VS, Vs, vS with vs (case insensitive)
+    return re.sub(r'\bVS\b', 'vs', name, flags=re.I)
+
+
 def encode_user_agent(user_agent: str) -> str:
     """
     Encode the user agent for URL parameters.
@@ -73,80 +91,68 @@ def encode_user_agent(user_agent: str) -> str:
     return encoded
 
 
-async def process_event(
-    url: str,
-    url_num: int,
-    page: Page,
-    timeout: int | float = 10,
-) -> tuple[str | None, str | None]:
-
+async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
+    """Process event URL to extract M3U8 stream from encrypted iframe HTML."""
     nones = None, None
 
-    captured: list[str] = []
-
-    got_one = asyncio.Event()
-
-    handler = partial(
-        network.capture_req,
-        captured=captured,
-        got_one=got_one,
-    )
-
-    page.on("request", handler)
-
-    try:
-        resp = await page.goto(
-            url,
-            wait_until="domcontentloaded",
-            timeout=6_000,
-        )
-
-        if not resp or resp.status != 200:
-            log.warning(
-                f"URL {url_num}) Status Code: {resp.status if resp else 'None'}"
-            )
-            return nones
-
-        iframe = page.locator("iframe")
-
-        iframe_src = await iframe.get_attribute("src", timeout=1_500)
-
-        wait_task = asyncio.create_task(got_one.wait())
-
-        try:
-            await asyncio.wait_for(wait_task, timeout=timeout)
-        except TimeoutError:
-            log.warning(f"URL {url_num}) Timed out waiting for M3U8.")
-            return nones
-
-        finally:
-            if not wait_task.done():
-                wait_task.cancel()
-
-                try:
-                    await wait_task
-                except asyncio.CancelledError:
-                    pass
-
-        if captured:
-            log.info(f"URL {url_num}) Captured M3U8")
-            return captured[0], iframe_src
-
-    except Exception as e:
-        log.warning(f"URL {url_num}) {e}")
+    if not (html_data := await network.request(url, url_num, log=log)):
         return nones
 
-    finally:
-        page.remove_listener("request", handler)
+    soup = HTMLParser(html_data.content)
+
+    iframe = soup.css_first("iframe")
+
+    if not iframe or not (iframe_src := iframe.attributes.get("src")):
+        log.warning(f"URL {url_num}) No iframe source found.")
+        return nones
+
+    elif not (
+        iframe_src_data := await network.request(
+            iframe_src,
+            url_num,
+            headers={"Referer": url},
+            log=log,
+        )
+    ):
+        return nones
+
+    num_list_ptrn = re.compile(r"var\s+_(\w+)=\[([^\]]*)\],", re.S)
+
+    index_ptrn = re.compile(r"(_[a-z]+\d+)=(\d+)")
+
+    m3u_ptrn = re.compile(r'(var\s?signed_)?url\s?=\s?"(.*)";', re.I)
+
+    if not (num_list_mtch := num_list_ptrn.findall(iframe_src_data.text)):
+        log.warning(f"URL {url_num}) Unable to decipher m3u encryption.")
+        return nones
+
+    elif not (index_mtch := index_ptrn.findall(iframe_src_data.text)):
+        log.warning(f"URL {url_num}) Unable to decipher m3u encryption.")
+        return nones
+
+    num_list = (int(n.strip()) for n in num_list_mtch[-1][-1].split(","))
+
+    if len(index_mtch) > 2:
+        index_mtch.pop()
+
+    x, y = (int(i[-1].strip()) for i in index_mtch)
+
+    js = "".join(chr(((i ^ x) - y + 256) & 255) for i in num_list)
+
+    if not (m3u_mtch := m3u_ptrn.search(js)):
+        log.warning(f"URL {url_num}) No M3U8 source found.")
+        return nones
+
+    log.info(f"URL {url_num}) Captured M3U8")
+
+    return json.loads(f'"{m3u_mtch[2]}"'), iframe_src
 
 
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
-    # Fix: Use Time.rn() which exists in your Time class
     now = Time.rn()
 
     events: list[Event] = []
 
-    # Fix: Use ts_index=-1 instead of index=-1
     if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
 
@@ -162,9 +168,9 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         API_FILE.write(api_data)
 
-    # Adjust time window for more events
-    start_dt = now.delta(hours=-8)
-    end_dt = now.delta(minutes=60)
+    # Expanded time window to get more events
+    start_dt = now.delta(hours=-12)
+    end_dt = now.delta(hours=24)
 
     for event_group in api_data:
         if not all(
@@ -184,13 +190,19 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         sport, away, home, date, time, link = values
 
-        # Fix: Use tz_name parameter correctly
-        event_dt = Time.from_str(f"{date} {time}", tz_name="UTC")
+        try:
+            event_dt = Time.from_str(f"{date.replace(' ','')} {time}", tz_name="GMT")
+        except Exception as e:
+            log.debug(f"Failed to parse date for {away} vs {home}: {e}")
+            continue
 
         if not start_dt <= event_dt <= end_dt:
             continue
 
-        sport, name = clean_name(sport), clean_name(f"{away} vs {home}")
+        # Clean and normalize names
+        sport = clean_name(sport)
+        name = clean_name(f"{away} vs {home}")
+        name = normalize_vs(name)
 
         if f"[{sport}] {name} ({TAG})" in cached_keys:
             continue
@@ -223,65 +235,42 @@ async def scrape() -> None:
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
-        # Launch browser using playwright directly
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(
-                headless=True,
-                args=['--no-sandbox', '--disable-setuid-sandbox']
+        for i, ev in enumerate(events, start=1):
+            handler = partial(
+                process_event,
+                url=ev.link,
+                url_num=i,
             )
-            
-            try:
-                # Create context with adblock disabled to avoid service worker errors
-                context = await browser.new_context(
-                    viewport={'width': 1280, 'height': 720},
-                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-                )
-                
-                for i, ev in enumerate(events, start=1):
-                    page = await context.new_page()
-                    try:
-                        handler = partial(
-                            process_event,
-                            url=ev.link,
-                            url_num=i,
-                            page=page,
-                        )
 
-                        source, iframe = await network.safe_process(
-                            handler,
-                            url_num=i,
-                            timeout_return=(None, None),
-                            semaphore=network.HTTP_S,
-                            log=log,
-                        )
+            source, iframe = await network.safe_process(
+                handler,
+                url_num=i,
+                timeout_return=(None, None),
+                semaphore=network.HTTP_S,
+                log=log,
+            )
 
-                        key = f"[{ev.sport}] {ev.name} ({TAG})"
+            key = f"[{ev.sport}] {ev.name} ({TAG})"
 
-                        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
-                        entry = {
-                            "source": source,
-                            "logo": logo,
-                            "refer": iframe,
-                            "timestamp": ev.timestamp,
-                            "tvg-id": tvg_id or "Live.Event.us",
-                            "link": ev.link,
-                            "sport": ev.sport,
-                            "name": ev.name,
-                        }
+            entry = {
+                "source": source,
+                "logo": logo,
+                "refer": iframe,
+                "timestamp": ev.timestamp,
+                "tvg-id": tvg_id or "Live.Event.us",
+                "link": ev.link,
+                "sport": ev.sport,
+                "name": ev.name,
+            }
 
-                        cached_urls[key] = entry
+            cached_urls[key] = entry
 
-                        if source:
-                            valid_count += 1
-                            entry["source"] = clean_m3u(source)
-                            urls[key] = entry
-                    finally:
-                        await page.close()
-                
-                await context.close()
-            finally:
-                await browser.close()
+            if source:
+                valid_count += 1
+                entry["source"] = clean_m3u(source)
+                urls[key] = entry
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
 
@@ -377,13 +366,10 @@ def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> 
               f'group-title="{sport}",'
               f'{display_name}')
     
-    # Get referrer from channel data or use default
-    referer = channel.get("refer", FLY_BASE_URL)
-    
     # Add VLC options
     options = [
-        f"#EXTVLCOPT:http-referrer={referer}",
-        f"#EXTVLCOPT:http-origin={referer}",
+        f"#EXTVLCOPT:http-referrer={REFERER}",
+        f"#EXTVLCOPT:http-origin={ORIGIN}",
         f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
     ]
     
@@ -425,14 +411,11 @@ def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int
     # Encode the user agent for Tivimate
     encoded_user_agent = encode_user_agent(TIVIMATE_USER_AGENT)
     
-    # Get referrer from channel data or use default
-    referer = channel.get("refer", FLY_BASE_URL)
-    
     # Build the URL with parameters
     url = channel.get("source", "")
     params = [
-        f"referer={referer}/",
-        f"origin={referer}",
+        f"referer={REFERER}",
+        f"origin={ORIGIN}",
         f"user-agent={encoded_user_agent}"
     ]
     
