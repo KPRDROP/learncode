@@ -6,7 +6,7 @@ from urllib.parse import quote, urljoin
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
-from .utils import Cache, Event, Time, get_logger, leagues, network
+from utils import Cache, Event, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
