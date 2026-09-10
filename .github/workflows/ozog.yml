@@ -26,7 +26,8 @@ jobs:
         python -m pip install --upgrade pip
         python -m playwright install --with-deps chromium
         pip install playwright
-        pip install playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
+        playwright install --with-deps
+        pip install "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
         pip install curl_cffi selectolax
     
     - name: Run OZOG updater
