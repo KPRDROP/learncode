@@ -24,11 +24,12 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m playwright install --with-deps chromium
-        pip install playwright
-        playwright install --with-deps
-        pip install "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
+        pip install playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
         pip install curl_cffi selectolax
+
+    - name: Install Playwright Chromium
+      run: |
+        run: python -m playwright install --with-deps chromium
     
     - name: Run OZOG updater
       env:
