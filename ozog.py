@@ -33,152 +33,40 @@ USER_AGENT = (
 
 DEFAULT_LOGO = "https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png"
 
-# Browser headers to bypass 403 Forbidden
-REQUEST_HEADERS = {
-    "User-Agent": USER_AGENT,
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Cache-Control": "max-age=0",
-    "DNT": "1",
-}
-
 
 # ---------------------------------------------------------------------------
-# Request helper with cloudscraper fallback
+# Name helper
 # ---------------------------------------------------------------------------
 
-async def fetch_page(url: str, url_num: int = 0) -> str | None:
-    """Fetch page content with proper headers and cloudscraper fallback"""
-    
-    # Try normal request first
-    try:
-        result = await network.request(
-            url,
-            url_num,
-            headers=REQUEST_HEADERS,
-            log=log,
+def fix_name(n: str) -> str:
+    """Fix event name: hyphens to spaces, proper capitalization, VS to vs"""
+    return " ".join(
+        (
+            i.upper()
+            if len(i) <= 4 and i.lower() != "vs"
+            else i.capitalize().replace("Vs", "vs")
         )
-        if result:
-            content = getattr(result, "text", result.content)
-            if content and len(content) > 100:
-                return content
-    except Exception as e:
-        log.debug(f"Normal request failed: {e}")
-    
-    # Fallback to cloudscraper
-    try:
-        import cloudscraper
-        scraper = cloudscraper.create_scraper(
-            browser={
-                'browser': 'chrome',
-                'platform': 'windows',
-                'mobile': False,
-                'desktop': True,
-            },
-            delay=1,
-        )
-        response = scraper.get(url, headers=REQUEST_HEADERS, timeout=30)
-        if response.status_code == 200:
-            return response.text
-        log.error(f"Cloudscraper request failed with status {response.status_code}")
-    except ImportError:
-        log.warning("cloudscraper not installed")
-    except Exception as e:
-        log.error(f"Cloudscraper request error: {e}")
-    
-    return None
-
-
-# ---------------------------------------------------------------------------
-# URL helpers
-# ---------------------------------------------------------------------------
-
-def fix_event_name(name: str) -> str:
-    """Fix event name capitalization and replace VS with vs"""
-    # Replace hyphens with spaces
-    name = name.replace("-", " ")
-    
-    # Replace VS with vs
-    name = name.replace(" VS ", " vs ")
-    
-    # Split by space and capitalize each word properly
-    words = []
-    for word in name.split():
-        if word.lower() == "vs":
-            words.append("vs")
-        elif len(word) <= 4 and word.isupper():
-            words.append(word.upper())
-        else:
-            words.append(word.capitalize())
-    
-    return " ".join(words)
-
-
-def normalize_source(source: str | None) -> str | None:
-    """Clean up and validate the source URL"""
-    if not source:
-        return None
-
-    source = source.strip().strip("\"'")
-    if not source:
-        return None
-
-    # Remove trailing slash if present
-    source = source.rstrip("/")
-
-    # Ensure it starts with http:// or https://
-    if not re.match(r"^https?://", source, re.IGNORECASE):
-        return None
-
-    return source
+        for i in n.split("-")
+    )
 
 
 # ---------------------------------------------------------------------------
 # Process event
 # ---------------------------------------------------------------------------
 
-async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
-    nones = None, None
+async def process_event(url: str, url_num: int) -> str | None:
+    if not (html_data := await network.request(url, url_num, log=log)):
+        return
 
-    log.info(f"URL {url_num}) Processing event page")
+    ptrn = re.compile(r'var\s?sourceurl\s?=\s?"(.*)";', re.I)
 
-    # Fetch the event page
-    page_content = await fetch_page(url, url_num)
-    
-    if not page_content:
-        log.error(f"URL {url_num}) Failed to fetch event page")
-        return nones
+    if not (match := ptrn.search(html_data.text)):
+        log.warning(f"URL {url_num}) No source url found.")
+        return
 
-    # Extract the stream URL from var sourceUrl
-    source_pattern = re.compile(r'var\s+sourceUrl\s*=\s*"([^"]+)"', re.IGNORECASE)
-    source_match = source_pattern.search(page_content)
-    
-    if not source_match:
-        # Try alternative pattern
-        source_pattern = re.compile(r'sourceUrl\s*=\s*"([^"]+)"', re.IGNORECASE)
-        source_match = source_pattern.search(page_content)
-    
-    if not source_match:
-        log.warning(f"URL {url_num}) No sourceUrl found in page")
-        return nones
+    log.info(f"URL {url_num}) Captured M3U8")
 
-    stream_url = source_match[1]
-    stream_url = normalize_source(stream_url)
-    
-    if not stream_url:
-        log.warning(f"URL {url_num}) Invalid stream URL extracted")
-        return nones
-
-    log.info(f"URL {url_num}) Captured stream source: {stream_url}")
-    
-    return stream_url, url
+    return match[1]
 
 
 # ---------------------------------------------------------------------------
@@ -188,69 +76,43 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     events: list[Event] = []
 
-    log.info(f'Fetching events from "{BASE_URL}"')
-    
-    # Fetch the main page
-    page_content = await fetch_page(BASE_URL)
-    
-    if not page_content:
-        log.error(f'Failed to fetch "{BASE_URL}"')
+    if not (html_data := await network.request(BASE_URL, log=log)):
         return events
 
-    soup = HTMLParser(page_content)
+    soup = HTMLParser(html_data.content)
 
-    # Find all event rows in the directory listing
-    # The links are in <td> elements with <a> tags
-    for link in soup.css("a"):
-        href = link.attributes.get("href")
-        if not href:
-            continue
-        
-        # Skip parent directory and other non-event links
-        if href in ("/", "../", "?ND", "?MA", "?SA"):
-            continue
-        
-        # Check if it's an event directory (ends with /)
-        if not href.endswith("/"):
-            continue
-        
-        # Extract event name from href
-        # Example: /updates/barcelona-vs-feyenoord/
-        parts = href.strip("/").split("/")
-        if len(parts) < 2:
-            continue
-        
-        event_slug = parts[-1]
-        
-        # Skip if it's not a valid event slug (should contain "vs")
-        if "vs" not in event_slug.lower() and "v" not in event_slug.lower():
-            continue
-        
-        # Fix the event name
-        event_name = fix_event_name(event_slug)
-        
-        # Build the full event URL
-        event_url = urljoin(BASE_URL, href)
-        
-        # Determine sport from event name (simple heuristic)
-        sport = "Live Event"
-        
-        # Create the key for caching
-        key = f"[{sport}] {event_name} ({TAG})"
-        
-        # Skip if already cached
-        if key in cached_keys:
-            continue
-        
-        events.append(
-            Event(
-                sport=sport,
-                name=event_name,
-                link=event_url,
+    if not (table := soup.css_first("table#table-content")):
+        return events
+
+    sport = "Live Event"
+
+    for row in table.css("tr"):
+        for game in (cell for cell in row.css("td > a") if cell):
+            if not (href := game.attributes.get("href")) or href == "/":
+                continue
+
+            # Skip non-event links (sorting, parent directory, etc.)
+            if href in ("/", "../") or href.startswith("?"):
+                continue
+
+            # Get the event name from the link text
+            raw_name = game.text(strip=True)
+            if not raw_name or raw_name.lower() == "parent directory":
+                continue
+
+            event_name = fix_name(raw_name)
+
+            if f"[{sport}] {event_name} ({TAG})" in cached_keys:
+                continue
+
+            events.append(
+                Event(
+                    sport=sport,
+                    name=event_name,
+                    link=urljoin(BASE_URL, href),
+                )
             )
-        )
 
-    log.info(f"Found {len(events)} new event(s)")
     return events
 
 
@@ -269,56 +131,54 @@ async def scrape() -> None:
     urls.update(valid_urls)
 
     log.info(f"Loaded {cached_count} event(s) from cache")
+
     log.info(f'Scraping from "{BASE_URL}"')
 
-    events = await get_events(cached_urls.keys())
-    if not events:
+    if events := await get_events(cached_urls.keys()):
+        log.info(f"Processing {len(events)} new URL(s)")
+
+        now = Time.rn()
+
+        for i, ev in enumerate(events, start=1):
+            handler = partial(
+                process_event,
+                url=ev.link,
+                url_num=i,
+            )
+
+            source = await network.safe_process(
+                handler,
+                url_num=i,
+                timeout_return=None,
+                semaphore=network.HTTP_S,
+                log=log,
+            )
+
+            key = f"[{ev.sport}] {ev.name} ({TAG})"
+
+            tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
+
+            entry = {
+                "source": source,
+                "logo": logo or DEFAULT_LOGO,
+                "refer": ev.link,
+                "origin": ORIGIN,
+                "timestamp": now.timestamp(),
+                "tvg-id": tvg_id or "Live.Event.us",
+            }
+
+            cached_urls[key] = entry
+
+            if source:
+                valid_count += 1
+                urls[key] = entry
+                log.info(f"URL {i}) Saved event: {key}")
+
+        log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
+
+    else:
         log.info("No new events found")
-        CACHE_FILE.write(cached_urls)
-        return
 
-    log.info(f"Processing {len(events)} new URL(s)")
-    now = Time.rn()
-
-    for i, ev in enumerate(events, start=1):
-        handler = partial(
-            process_event,
-            url=ev.link,
-            url_num=i,
-        )
-
-        source, referer = await network.safe_process(
-            handler,
-            url_num=i,
-            timeout_return=(None, None),
-            semaphore=network.HTTP_S,
-            log=log,
-        )
-
-        key = f"[{ev.sport}] {ev.name} ({TAG})"
-
-        tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
-
-        entry = {
-            "source": source,
-            "logo": logo or DEFAULT_LOGO,
-            "refer": referer or REFERER,
-            "origin": ORIGIN,
-            "timestamp": now.timestamp(),
-            "tvg-id": tvg_id or "Live.Event.us",
-            "link": ev.link,
-        }
-
-        cached_urls[key] = entry
-
-        if source:
-            valid_count += 1
-            urls[key] = entry
-            log.info(f"URL {i}) Saved event: {key}")
-        else:
-            log.warning(f"No stream source for: {key}")
-
-    log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
     CACHE_FILE.write(cached_urls)
 
 
