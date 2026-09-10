@@ -5,6 +5,7 @@ import re
 from collections.abc import KeysView
 from functools import partial
 from urllib.parse import quote, urljoin
+from curl_cffi import requests
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
