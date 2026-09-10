@@ -1,36 +1,66 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Club Brugge vs Aston Villa (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Club Brugge vs Aston Villa (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=club-brugge-vs-aston-villa
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Live Event] Barcelona vs Feyenoord (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Barcelona vs Feyenoord (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/barcelona-vs-feyenoord/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://fingersoon.st/scripts/application1
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Live Event] AEK Athens vs LASK Linz (OZOG)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] AEK Athens vs LASK Linz (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=aek-athens-vs-lask-linz
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Live Event] Bayern Munchen vs BODO Glimt (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Bayern Munchen vs BODO Glimt (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/bayern-munchen-vs-bodo-glimt/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://fingersoon.st/scripts/application2
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Real Madrid vs Internazionale (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Real Madrid vs Internazionale (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=real-madrid-vs-internazionale
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
-https://fingersoon.st/scripts/application1
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Porto vs Manchester City (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Porto vs Manchester City (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=porto-vs-manchester-city
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
-https://fingersoon.st/scripts/application2
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Borussia Dortmund vs Villarreal (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Borussia Dortmund vs Villarreal (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=borussia-dortmund-vs-villarreal
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
-https://fingersoon.st/scripts/application3
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Live Event] Lille vs Real Betis (OZOG)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Lille vs Real Betis (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=lille-vs-real-betis
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
-https://fingersoon.st/scripts/application4
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Newcastle United vs Millwall (OZOG)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[Football] Newcastle United vs Millwall (OZOG)
-#EXTVLCOPT:http-referrer=https://gozo.st/?game=newcastle-united-vs-millwall
-#EXTVLCOPT:http-origin=https://gozo.st
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Live Event] Chelsea vs Leeds United (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Chelsea vs Leeds United (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/chelsea-vs-leeds-united/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
 https://fingersoon.st/scripts/application5
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Live Event] COMO vs RB Leipzig (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] COMO vs RB Leipzig (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/como-vs-rb-leipzig/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application4
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Live Event] Fenerbahce vs ROMA (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Fenerbahce vs ROMA (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/fenerbahce-vs-roma/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application2
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Live Event] Liverpool vs Atletico Madrid (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Liverpool vs Atletico Madrid (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/liverpool-vs-atletico-madrid/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application1
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[Live Event] Manchester United vs Sabah (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Manchester United vs Sabah (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/manchester-united-vs-sabah/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application1
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[Live Event] Napoli vs Arsenal (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Napoli vs Arsenal (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/napoli-vs-arsenal/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application2
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[Live Event] PSG vs Slovan Bratislava (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] PSG vs Slovan Bratislava (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/psg-vs-slovan-bratislava/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application3
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[Live Event] PSV vs Shakhtar Donetsk (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] PSV vs Shakhtar Donetsk (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/psv-vs-shakhtar-donetsk/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application1
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[Live Event] Slavia Praha vs LENS (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Slavia Praha vs LENS (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/slavia-praha-vs-lens/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application3
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Live Event] Sporting CP vs Galatasaray (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Sporting CP vs Galatasaray (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/sporting-cp-vs-galatasaray/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application4
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Live Event] Stuttgart vs Viking (OVOGOZO)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Live Event] Stuttgart vs Viking (OVOGOZO)
+#EXTVLCOPT:http-referrer=https://gozowatch.top/updates/stuttgart-vs-viking/
+#EXTVLCOPT:http-origin=https://gozowatch.top
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://fingersoon.st/scripts/application2
