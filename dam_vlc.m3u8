@@ -1,31 +1,26 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Atlanta United FC vs. Orlando City SC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7c0f56fa5cb0b78ce185820b8eecfb83-thumbnail.jpg" group-title="Live Events",[MLS] Atlanta United FC vs. Orlando City SC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/atl-orl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/atl-orl
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] LAFC vs. Red Bull New York (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6bcffaee369a979f428989e62ff66dcd-thumbnail.jpg" group-title="Live Events",[MLS] LAFC vs. Red Bull New York (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/lafc-rbny
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/lafc-rbny
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-09/atl-orl/playlist.m3u8?tk=6VUXXNH8UH6yv-6ZTOQwYg&e=1789041410
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] CF Montréal vs. Charlotte FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/538e36a4c57ce52198e06b12c8f8e5d5-thumbnail.jpg" group-title="Live Events",[MLS] CF Montréal vs. Charlotte FC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/mtl-clt
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/mtl-clt
+https://messi.damitv.st/live-hls/channel/mls/2026-09-09/lafc-rbny/playlist.m3u8?tk=Mio6bfcG_xusLvKMXbYPYA&e=1789057497
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Portland Timbers vs. St. Louis CITY SC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c390eeda381c4aa2f2da56a792094b2e-thumbnail.jpg" group-title="Live Events",[MLS] Portland Timbers vs. St. Louis CITY SC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/por-stl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/por-stl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-09/mtl-clt/playlist.m3u8?tk=6VUXXNH8UH6yv-6ZTOQwYg&e=1789041410
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] D.C. United vs. Columbus Crew (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/aec426799af979ef0526a4f77cc9318c-thumbnail.jpg" group-title="Live Events",[MLS] D.C. United vs. Columbus Crew (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/dc-clb
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/dc-clb
+https://messi.damitv.st/live-hls/channel/mls/2026-09-09/por-stl/playlist.m3u8?tk=Mio6bfcG_xusLvKMXbYPYA&e=1789057497
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] San Diego FC vs. San Jose Earthquakes (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/55a9883445e6ea6d88b5dc80fa829020-thumbnail.jpg" group-title="Live Events",[MLS] San Diego FC vs. San Jose Earthquakes (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/sd-sj
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/sd-sj
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-09/dc-clb/playlist.m3u8?tk=6VUXXNH8UH6yv-6ZTOQwYg&e=1789041410
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Philadelphia Union vs. FC Cincinnati (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5e395ada23ac35fd68fefc1cd4a55174-thumbnail.jpg" group-title="Live Events",[MLS] Philadelphia Union vs. FC Cincinnati (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/phi-cin
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/phi-cin
+https://messi.damitv.st/live-hls/channel/mls/2026-09-09/sd-sj/playlist.m3u8?tk=Mio6bfcG_xusLvKMXbYPYA&e=1789057497
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Vancouver Whitecaps vs. LA Galaxy (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6c7988b9d95b537bddc321288610688e-thumbnail.jpg" group-title="Live Events",[MLS] Vancouver Whitecaps vs. LA Galaxy (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/van-la
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/van-la
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-09/phi-cin/playlist.m3u8?tk=6VUXXNH8UH6yv-6ZTOQwYg&e=1789041410
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Toronto FC vs. Nashville SC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4bbbe87529b3d2a96166006c9b1dc2bf-thumbnail.jpg" group-title="Live Events",[MLS] Toronto FC vs. Nashville SC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-09/tor-nsh
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-09/tor-nsh
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-09/tor-nsh/playlist.m3u8?tk=6VUXXNH8UH6yv-6ZTOQwYg&e=1789041410
-#EXTINF:-1 tvg-chno="6" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+https://messi.damitv.st/live-hls/channel/mls/2026-09-09/van-la/playlist.m3u8?tk=XaHOxeFD2EFyjU8eZVOGfg&e=1789057498
+#EXTINF:-1 tvg-chno="5" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=MRgw5RgCinNqTq5aWHT4uA&e=1789041411
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=XaHOxeFD2EFyjU8eZVOGfg&e=1789057498
