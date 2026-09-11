@@ -1,6 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Pumas UNAM vs. León (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f600a28ce8fd7070b23f403de97d2105-thumbnail.jpg" group-title="Football",[Football] Pumas UNAM vs. León (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-10/unam-leo
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-10/unam-leo
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-10/unam-leo/playlist.m3u8?tk=NKIwsGXkR5_G46f4AwoeEA&e=1789142361
+#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=2glL7iemBE6n8V2_mt1qpQ&e=1789127592
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=NKIwsGXkR5_G46f4AwoeEA&e=1789142361
+#EXTINF:-1 tvg-chno="3" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Wrestling] TNA Impact (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/78f581ee61589a76f6bcdeb095f95c12-thumbnail.jpg" group-title="Live Events",[Wrestling] TNA Impact (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=tna/2026-09-10
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=tna/2026-09-10
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/tna/2026-09-10/playlist.m3u8?tk=NKIwsGXkR5_G46f4AwoeEA&e=1789142361
