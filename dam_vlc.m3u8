@@ -1,11 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[NRL] Rabbitohs vs. Knights (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a98a3cc02ff5f07e40783af817a64458-thumbnail.jpg" group-title="Live Events",[NRL] Rabbitohs vs. Knights (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nrl/2026-09-11/sou-new
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nrl/2026-09-11/sou-new
+#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[NFL] NFL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5ed7ea60fe8e3842203b0741187f0fd7-thumbnail.jpg" group-title="NFL",[NFL] NFL Network (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nrl/2026-09-11/sou-new/playlist.m3u8?tk=4t6LS0yPYVlKzJoXHNFDJA&e=1789159911
-#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=Rz0AYD3LzHBfsTWhNV6dCw&e=1789176362
+#EXTINF:-1 tvg-chno="2" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] ONE The Inner Circle 30: Rambolek vs. Yod-IQ (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/949571d368cfbe1add06e5e7574afdf6-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] ONE The Inner Circle 30: Rambolek vs. Yod-IQ (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=one-the-inner-circle-30-rambolek-vs-yod-iq
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=one-the-inner-circle-30-rambolek-vs-yod-iq
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/one-the-inner-circle-30-rambolek-vs-yod-iq/playlist.m3u8?tk=Rz0AYD3LzHBfsTWhNV6dCw&e=1789176362
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Spanish Grand Prix - Practice 1 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/df38c4bf663dd6516e4adc600c10fa29-thumbnail.jpg" group-title="Motorsports",[Motorsports] Spanish Grand Prix - Practice 1 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=f1/2026/spain/fp1
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=f1/2026/spain/fp1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/f1/2026/spain/fp1/playlist.m3u8?tk=Rz0AYD3LzHBfsTWhNV6dCw&e=1789176362
+#EXTINF:-1 tvg-chno="4" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=4t6LS0yPYVlKzJoXHNFDJA&e=1789159911
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=Rz0AYD3LzHBfsTWhNV6dCw&e=1789176362
