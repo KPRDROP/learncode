@@ -1,91 +1,106 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Rams vs San Francisco 49ers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Los Angeles Rams vs San Francisco 49ers
+#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Tag Heuer Spanish GP vs Sky F1 UK (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Tag Heuer Spanish GP vs Sky F1 UK
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/3dcc53583da41d24b521d1e4610981e4ff404536b0d19b6277e4f54abac886bd/1789100701/tsn1-ca.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Tennis  vs Espn 1 usa (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Tennis vs Espn 1 usa
+https://epidd.hundxvision.co.uk/main/secure/2729f0555da434fbfe5c92506b446cf8bebe016248effffa7dce79434f802900/1789118255/skysportsf1-uk.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Tag Heuer Spanish GP vs Dazn f1 es (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Tag Heuer Spanish GP vs Dazn f1 es
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/7f5c29613a1a06f958eb41293bce8a2d1ed0dd8ffe69709c33b818e1bbf967a2/1789100702/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Tennis  vs Espn 2 usa (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Tennis vs Espn 2 usa
+https://epidd.hundxvision.co.uk/main/secure/da0b2807ff1804add0f8f79d42b86ee232f7eae9facbaef47cb2dba7d06bd272/1789118255/daznf1-es.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Tag Heuer Spanish GP vs Fox 506 AU (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Tag Heuer Spanish GP vs Fox 506 AU
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/9046362e8924aa728bc9ae97bea89fa7dff20c6377992bd6df85bcb5450e75bf/1789100703/espn2-usa.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Fenerbahce vs AS Roma (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Fenerbahce vs AS Roma
+https://epidd.hundxvision.co.uk/main/secure/55a0de5d06c8160db47bc277dbc868697b95b37ae0ec38afef10c02c524407ea/1789118256/fox-sports-506.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] MotoGP San Marino vs TNT 2 UK (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="MotoGP",[MotoGP] MotoGP San Marino vs TNT 2 UK
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/9f4cf04dacb1edb702e8bc1eb277801973c66ca724f26823956f0fbf64c99932/1789100705/tntsports2-uk.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] PSV Eindhoven vs Shakhtar Donetsk (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] PSV Eindhoven vs Shakhtar Donetsk
+https://epidd.hundxvision.co.uk/main/secure/60b0690d0ce50e4222f10f6e98c9eeaea923f545ae1322a25cffeda4164c94d1/1789118257/tntsports2-uk.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] MotoGP San Marino vs MotoGP Channel (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="MotoGP",[MotoGP] MotoGP San Marino vs MotoGP Channel
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/0014f8c6ffab65dc75220ea40903611fe0a885b01fe58e5847badc37b96574af/1789100706/tntsports3-uk.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Bayern Munich vs Bodo/Glimt (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Bayern Munich vs Bodo/Glimt
+https://epidd.hundxvision.co.uk/main/secure/03ee70b38b39b78badd0c0c1f6f21cc906929da00776ab132c7362c1a65d596f/1789118257/motpgp-tv.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Tennis  vs Espn 1 usa (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Tennis vs Espn 1 usa
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/dea2025ff905442f69445a2a94e3574e2f74ebb5d52207067826f5084f8306f0/1789100707/tntsports2-uk.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Como vs RB Leipzig (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Como vs RB Leipzig
+https://epidd.hundxvision.co.uk/main/secure/089c6b97f34d7d74432ba6baa8becf7df44b4982af62eceb41baa550ea7dcbf6/1789118258/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Tennis.Dummy.us" tvg-name="[US Open] US Open Tennis  vs Espn 2 usa (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/US_OPEN_Logo.png" group-title="US Open",[US Open] US Open Tennis vs Espn 2 usa
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/7d6214172e9ee54bdacd5bf914411b6fa8f3c1e271af599fdf105fcf504cdaa0/1789100708/tntsports3-uk.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Manchester United vs Sabah FK (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Manchester United vs Sabah FK
+https://epidd.hundxvision.co.uk/main/secure/97be1925198ca1cbe77751645e07ce835956ce732642226b43f292bfb9d97197/1789118258/espn2-usa.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Spanish LALIGA] Sevilla vs Valencia (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/15.png" group-title="Spanish LALIGA",[Spanish LALIGA] Sevilla vs Valencia
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/ecdc2b9fc8b32d401af2175dd05c2b55f764d66ca8142146845d8a2503c9bb79/1789100711/tntsports1-uk.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Champions League] Slavia Prague vs Lens (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2.png" group-title="UEFA Champions League",[UEFA Champions League] Slavia Prague vs Lens
+https://epidd.hundxvision.co.uk/main/secure/6360c29e9779abfb5b621dc438ffd2b4392391684762e3bafd61489f11b01843/1789118258/premiersports2-ie.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Italian Serie A] Venezia vs Fiorentina (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/12.png" group-title="Italian Serie A",[Italian Serie A] Venezia vs Fiorentina
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/ec6d028dd200f673be7faf9077a56a70af66471e19dacb99511bf40455674654/1789100714/ucl-401915440.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[England - League One] Stevenage vs Luton Town (FLY)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="England - League One",[England - League One] Stevenage vs Luton Town
+https://epidd.hundxvision.co.uk/main/secure/0a220128e5086d1e926dda4d48a96c1287b95f010c5f58fe9624d83e0481089f/1789118259/dazn1-it.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[German Bundesliga] 1. FC Union Berlin vs Schalke 04 (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/10.png" group-title="German Bundesliga",[German Bundesliga] 1. FC Union Berlin vs Schalke 04
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/aea872fc41fff90d510f5e83f7c3df38c71ec48469bc746aac581db3ccf0d4b5/1789100715/skysportsfootball-uk.m3u8
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Portugal - Primeira Liga] Estrela vs Sporting Braga (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/14.png" group-title="Portugal - Primeira Liga",[Portugal - Primeira Liga] Estrela vs Sporting Braga
+https://epidd.hundxvision.co.uk/main/secure/a1f5dd720ba1e4aa370f391f7e2904caf55d18b011d8839a68b55085ca2f0d8b/1789118259/universo-usa.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[French Ligue 1] Stade Rennais vs Olympique Marseille (FLY)" tvg-logo="https://ligue1.com/images/Logo_Ligue_1.webp" group-title="French Ligue 1",[French Ligue 1] Stade Rennais vs Olympique Marseille
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/2ecfc746c2615ad270265338765be4097eed5b65e9d75dd5615f7bfff6ad1c04/1789100716/beinsports-usa.m3u8
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[South America - Copa] Independiente del Valle vs Flamengo (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1208.png" group-title="South America - Copa",[South America - Copa] Independiente del Valle vs Flamengo
+https://epidd.hundxvision.co.uk/main/secure/dea64e6760cd3419b7731bc0139240972db9dbd5075a825c37af1f9e56f18369/1789118260/beinsports-usa.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Liga MX] Necaxa vs Puebla (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Liga MX",[Liga MX] Necaxa vs Puebla
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/97d5e678d115bc14d7c6f6f4a31e31c2d39d06576550e923eeb42d8e3aad4860/1789100718/beinsports-usa.m3u8
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[South America - Copa] Cienciano vs Torque (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1208.png" group-title="South America - Copa",[South America - Copa] Cienciano vs Torque
+https://epidd.hundxvision.co.uk/main/secure/d7b2f91a81c114ef81247b7c51f232d59388e31491cafd2f8139d8c0dea9339b/1789118260/foxdeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Liga MX] Tijuana vs Querétaro (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Liga MX",[Liga MX] Tijuana vs Querétaro
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/7204095ead9f23826ea9a46187894fbae8e5a5fa45f39133d6e1fdc5f674e5af/1789100718/sporttv2-pt.m3u8
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Liga MX] Pumas UNAM vs León (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Liga MX",[Liga MX] Pumas UNAM vs León
+https://epidd.hundxvision.co.uk/main/secure/cce384ceba18624a430e0baae17b6ccecc1e99b6e87b240564dcfccd9b48cc5e/1789118261/tudn-usa.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago Cubs vs Pittsburgh Pirates
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/694a4372c07267ab842882abe5de4e83d4e1c27a18c9e3a98c9f4dedb84c6f72/1789100721/tudn-usa.m3u8
-#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Atlanta Braves vs Tampa Bay Rays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Atlanta Braves vs Tampa Bay Rays
+https://epidd.hundxvision.co.uk/main/secure/54fb1b48b12f0651d60bd24f5dccbc9fdc9d20018317782bb52d0e25175a15bf/1789118261/mlb-pirates.m3u8
+#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs Colorado Rockies (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Detroit Tigers vs Colorado Rockies
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/9c5a67c0e2f947a0f1d19a0a550d8e2ca891601bb84082bcb752522d2c19aa10/1789100722/mlb-braves.m3u8
-#EXTINF:-1 tvg-chno="16" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs Houston Astros (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Philadelphia Phillies vs Houston Astros
+https://epidd.hundxvision.co.uk/main/secure/29ab220a29d65a604fcbc15742eaaccdcf06b578383f910cc00009b18de8d7db/1789118261/mlb-astros.m3u8
+#EXTINF:-1 tvg-chno="16" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Washington Nationals vs  Los Angeles Angels (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Washington Nationals vs Los Angeles Angels
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/58e3efc0506a05fb2b06d812d708e12b06f69d323ead4084e3f4fa24a4ff083c/1789100726/mlb-astros.m3u8
-#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs Texas Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Seattle Mariners vs Texas Rangers
+https://epidd.hundxvision.co.uk/main/secure/6aaa20e63389883e58b078f1f60c0fb57dc623a4aba8d6da6b95cda70f6f3750/1789118262/mlb-rangers.m3u8
+#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs Cleveland Guardians (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Minnesota Twins vs Cleveland Guardians
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/67f2d8d28f74a2bcb384f6bc440d9cdd727bbb250578eb34cd87cadb3db5d599/1789100732/mlb-rangers.m3u8
-#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago White Sox vs Pittsburgh Pirates
+https://epidd.hundxvision.co.uk/main/secure/98f8251a0c6ebac084abfdfa5c93bf9c03f8cd30761277fcdd89371f924444a2/1789118262/mlb-braves.m3u8
+#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] St. Louis Cardinals  vs Chicago White Sox (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] St. Louis Cardinals vs Chicago White Sox
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://epidd.hundxvision.co.uk/main/secure/1b057791596f8742feed845a90365daa8566f106a13ed21af027e4d5cbd79622/1789100736/mlb-pirates.m3u8
+https://epidd.hundxvision.co.uk/main/secure/81948f2bbf383b7b6af59cdd69e23cc592d0e9264c9aef995610f9da52f8172c/1789118263/mlb-royals.m3u8
+#EXTINF:-1 tvg-chno="19" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Oakland Athletics vs Seattle Mariners (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Oakland Athletics vs Seattle Mariners
+#EXTVLCOPT:http-referrer=https://epiembeds.online/
+#EXTVLCOPT:http-origin=https://epiembeds.online
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://epidd.hundxvision.co.uk/main/secure/eb476bd8dfc6c29688cea46a124ee87462d7e01cf66132e22c2a206a2fc0ada3/1789118263/mlb-brewers.m3u8
+#EXTINF:-1 tvg-chno="20" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Arizona Diamondbacks vs Texas Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Arizona Diamondbacks vs Texas Rangers
+#EXTVLCOPT:http-referrer=https://epiembeds.online/
+#EXTVLCOPT:http-origin=https://epiembeds.online
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://epidd.hundxvision.co.uk/main/secure/ec03873a698676066d4ed05240db85f2e838c41093bf53c1a6e503d02758482d/1789118264/mlb-white-sox.m3u8
+#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs San Diego Padres (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Francisco Giants vs San Diego Padres
+#EXTVLCOPT:http-referrer=https://epiembeds.online/
+#EXTVLCOPT:http-origin=https://epiembeds.online
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://epidd.hundxvision.co.uk/main/secure/6a7243d2a3eb7e1d3c049446f1b32a4e9a0181c09caebef9e057f7cb970c3c6a/1789118264/mlb-dodgers.m3u8
