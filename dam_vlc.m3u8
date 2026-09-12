@@ -3,34 +3,39 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=cjzf_F_L2h-hHqwcSCLX1Q&e=1789228879
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs. Athletics (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/26ce42d01d2a6091dc18833552818f45-thumbnail.jpg" group-title="MLB",[MLB] Seattle Mariners vs. Athletics (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-11/sea-ath
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-11/sea-ath
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=9_qk_vLLsqaDqy7eYy2xVA&e=1789247270
+#EXTINF:-1 tvg-chno="2" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Brisbane Lions vs. Adelaide Crows (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2a549b818acb2a87fb6ed509c100cecf-thumbnail.jpg" group-title="AFL",[AFL] Brisbane Lions vs. Adelaide Crows (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=afl/2026-09-12/bl-adel
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=afl/2026-09-12/bl-adel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-11/sea-ath/playlist.m3u8?tk=cjzf_F_L2h-hHqwcSCLX1Q&e=1789228879
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Texas Rangers vs. Arizona Diamondbacks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f0172b7d210e95e88d2f2f1e3daabcd3-thumbnail.jpg" group-title="MLB",[MLB] Texas Rangers vs. Arizona Diamondbacks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-11/tex-ari
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-11/tex-ari
+https://messi.damitv.st/live-hls/channel/afl/2026-09-12/bl-adel/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
+#EXTINF:-1 tvg-chno="3" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] ONE Samurai 3 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/cca32e8d4aa6d191400e99ecb750ce7d-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] ONE Samurai 3 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=one-samurai-3-28538
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=one-samurai-3-28538
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-11/tex-ari/playlist.m3u8?tk=cjzf_F_L2h-hHqwcSCLX1Q&e=1789228879
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs. San Francisco Giants (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c50ee31e8ce305a699c52bf63b98a669-thumbnail.jpg" group-title="MLB",[MLB] San Diego Padres vs. San Francisco Giants (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-11/sd-sf
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-11/sd-sf
+https://messi.damitv.st/live-hls/channel/one-samurai-3-28538/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
+#EXTINF:-1 tvg-chno="4" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] 2026 ADCC World Championships | Day 1 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/299c81acbbeb37d19647fbcd54d8bb56-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] 2026 ADCC World Championships | Day 1 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=2026-adcc-world-championships--day-1-28555
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=2026-adcc-world-championships--day-1-28555
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-11/sd-sf/playlist.m3u8?tk=cjzf_F_L2h-hHqwcSCLX1Q&e=1789228879
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Atlante vs. Pachuca (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/268ac50e8f0337282918e26232d77042-thumbnail.jpg" group-title="Football",[Football] Atlante vs. Pachuca (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-11/atl-pac
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-11/atl-pac
+https://messi.damitv.st/live-hls/channel/2026-adcc-world-championships--day-1-28555/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
+#EXTINF:-1 tvg-chno="5" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] Eternal MMA 110: Gold Coast (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a445e91780469eabe5dd0348786c9a80-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] Eternal MMA 110: Gold Coast (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=eternal-mma-110-gold-coast-28565
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=eternal-mma-110-gold-coast-28565
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-11/atl-pac/playlist.m3u8?tk=cjzf_F_L2h-hHqwcSCLX1Q&e=1789228879
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Tijuana vs. Querétaro (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f34a9bef474c994ffb8ffe97e45a63c3-thumbnail.jpg" group-title="Football",[Football] Tijuana vs. Querétaro (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-11/tij-qro
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-11/tij-qro
+https://messi.damitv.st/live-hls/channel/eternal-mma-110-gold-coast-28565/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
+#EXTINF:-1 tvg-chno="6" tvg-id="Cricket.Dummy.us" tvg-name="[Cricket] 3rd Test: England vs. Pakistan (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9850be85a2f794d2de9f780e7dba1385-thumbnail.jpg" group-title="Live Events",[Cricket] 3rd Test: England vs. Pakistan (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=3rd-test-england-vs-pakistan-28559
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=3rd-test-england-vs-pakistan-28559
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-11/tij-qro/playlist.m3u8?tk=H71UFw7hi5vNGgVshfggFw&e=1789228880
-#EXTINF:-1 tvg-chno="7" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+https://messi.damitv.st/live-hls/channel/3rd-test-england-vs-pakistan-28559/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[NRL] Sharks vs. Cowboys (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/45f97b671fe53d57d19b7f9edf4bb891-thumbnail.jpg" group-title="Live Events",[NRL] Sharks vs. Cowboys (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nrl/2026-09-12/cro-nor
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nrl/2026-09-12/cro-nor
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nrl/2026-09-12/cro-nor/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
+#EXTINF:-1 tvg-chno="8" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=H71UFw7hi5vNGgVshfggFw&e=1789228880
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=puSlnupt94a0gFAYHw775A&e=1789247271
