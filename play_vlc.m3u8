@@ -1,127 +1,115 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[CFL] Winnipeg Blue Bombers vs Saskatchewan Roughriders | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Winnipeg Blue Bombers vs Saskatchewan Roughriders | CA (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[CFL] Edmonton Elks vs Calgary Stampeders | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Edmonton Elks vs Calgary Stampeders | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do36.m3u8?md5=JFbmygTDr32hFaFxOozVBQ&expires=1789259828
+https://cdn2.zohanayaan.com:1686/hls/do1.m3u8?md5=-Z7emQVjGQtfuuNJtrK9tw&expires=1789266144
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[CFL] Edmonton Elks vs Calgary Stampeders | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] Edmonton Elks vs Calgary Stampeders | CA (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[CFL] BC Lions vs Montreal Alouettes | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] BC Lions vs Montreal Alouettes | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do1.m3u8?md5=6NC7eL3fOl4p66--EBMWkw&expires=1789259829
+https://cdn2.zohanayaan.com:1686/hls/do1.m3u8?md5=-Z7emQVjGQtfuuNJtrK9tw&expires=1789266144
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Football.Dummy.us" tvg-name="[CFL] BC Lions vs Montreal Alouettes | CA (PLAY)" tvg-logo="https://i.gyazo.com/52d415fe2f1c6acfbbc4a928feb2f7ab.png" group-title="Live Events",[CFL] BC Lions vs Montreal Alouettes | CA (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Orlando City SC vs Toronto FC | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Orlando City SC vs Toronto FC | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do1.m3u8?md5=6NC7eL3fOl4p66--EBMWkw&expires=1789259829
+https://cdn3.zohanayaan.com:1686/hls/do3.m3u8?md5=YC02ldyHTlywljwdUXw_ww&expires=1789266147
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Orlando City SC vs Toronto FC | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Orlando City SC vs Toronto FC | CA (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Toluca vs Atlas | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Toluca vs Atlas | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/do3.m3u8?md5=kNdQxf907-Ib0msiHZaMDQ&expires=1789259831
+https://cdn4.zohanayaan.com:1686/hls/do30.m3u8?md5=BwsiG33Af0BqNR_Zoj2mdQ&expires=1789266148
 
-#EXTINF:-1 tvg-chno="5" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Jean Silva vs Jose Delgado | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2017/06/Logo-UFC-500x313.png" group-title="Live Events",[UFC] Jean Silva vs Jose Delgado | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Monterrey vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Monterrey vs Tigres UANL | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/do4.m3u8?md5=w1672RYm91goQQZjiEaZmg&expires=1789259832
+https://cdn4.zohanayaan.com:1686/hls/do30.m3u8?md5=BwsiG33Af0BqNR_Zoj2mdQ&expires=1789266148
 
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Toluca vs Atlas | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Toluca vs Atlas | ES (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Cruz Azul vs América | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Cruz Azul vs América | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do30.m3u8?md5=TYzVMysG258WLvUnXNVI4A&expires=1789259833
+https://cdn4.zohanayaan.com:1686/hls/do30.m3u8?md5=BwsiG33Af0BqNR_Zoj2mdQ&expires=1789266148
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Monterrey vs Tigres UANL | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Monterrey vs Tigres UANL | ES (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Columbus Crew vs New York RB | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Columbus Crew vs New York RB | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do30.m3u8?md5=TYzVMysG258WLvUnXNVI4A&expires=1789259833
+https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=ThuZSZIbNqLwpNQOPCrqng&expires=1789266152
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Cruz Azul vs América | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Cruz Azul vs América | ES (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] LA Galaxy vs Seattle Sounders FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] LA Galaxy vs Seattle Sounders FC | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do30.m3u8?md5=TYzVMysG258WLvUnXNVI4A&expires=1789259833
+https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=ThuZSZIbNqLwpNQOPCrqng&expires=1789266152
 
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Columbus Crew vs New York RB | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Columbus Crew vs New York RB | EN (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] DC United vs Atlanta United | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] DC United vs Atlanta United | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=E824rYAMOib09nQe-inGhw&expires=1789259836
+https://cdn10.zohanayaan.com:1686/hls/do32.m3u8?md5=k0S1gIoe0TAXYV7XY87lKQ&expires=1789266154
 
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] LA Galaxy vs Seattle Sounders FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] LA Galaxy vs Seattle Sounders FC | EN (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] SJ Earthquakes vs Houston Dynamo | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] SJ Earthquakes vs Houston Dynamo | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do31.m3u8?md5=E824rYAMOib09nQe-inGhw&expires=1789259836
+https://cdn10.zohanayaan.com:1686/hls/do32.m3u8?md5=k0S1gIoe0TAXYV7XY87lKQ&expires=1789266154
 
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] DC United vs Atlanta United | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] DC United vs Atlanta United | EN (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Cincinnati vs Charlotte | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Cincinnati vs Charlotte | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do32.m3u8?md5=IhEnxAbmmJ8cYf1fmwf7Rg&expires=1789259838
+https://cdn5.zohanayaan.com:1686/hls/do33.m3u8?md5=XJOebD1gZsqOltmIXqWeWA&expires=1789266156
 
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] SJ Earthquakes vs Houston Dynamo | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] SJ Earthquakes vs Houston Dynamo | EN (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Inter Miami vs Nashville SC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Inter Miami vs Nashville SC | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/do32.m3u8?md5=IhEnxAbmmJ8cYf1fmwf7Rg&expires=1789259838
+https://cdn2.zohanayaan.com:1686/hls/do34.m3u8?md5=xGR_ZYAmhLv6JuGhmfwhYQ&expires=1789266157
 
-#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Cincinnati vs Charlotte | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Cincinnati vs Charlotte | EN (PLAY)
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Dallas vs Portland Timbers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Dallas vs Portland Timbers | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/do33.m3u8?md5=3gR4h02eJzIpd4KH-0vk2g&expires=1789259840
+https://cdn5.zohanayaan.com:1686/hls/do35.m3u8?md5=qe-w7rTQhrihJT0_g77ycQ&expires=1789266159
 
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Inter Miami vs Nashville SC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Inter Miami vs Nashville SC | EN (PLAY)
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Sporting KC vs Los Angeles FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Sporting KC vs Los Angeles FC | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/do34.m3u8?md5=D6_eaqBWVRC-7-Zr1f6nKw&expires=1789259841
+https://cdn4.zohanayaan.com:1686/hls/do36.m3u8?md5=LGWTF6CY7slsqzhneHUGdg&expires=1789266160
 
-#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Dallas vs Portland Timbers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Dallas vs Portland Timbers | EN (PLAY)
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] St. Louis City vs Minnesota United | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] St. Louis City vs Minnesota United | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do35.m3u8?md5=ygq03uefrVzi7QifkA3-WQ&expires=1789259842
+https://cdn9.zohanayaan.com:1686/hls/do37.m3u8?md5=Jf-tfu99LNwAYvVXVhu63w&expires=1789266161
 
-#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Sporting KC vs Los Angeles FC | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Sporting KC vs Los Angeles FC | EN (PLAY)
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Colorado Rapids vs CF Montréal | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Colorado Rapids vs CF Montréal | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do36.m3u8?md5=JFbmygTDr32hFaFxOozVBQ&expires=1789259828
+https://cdn3.zohanayaan.com:1686/hls/do38.m3u8?md5=WxdYhR2bNVc-0CqeOj-6bA&expires=1789266162
 
-#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] St. Louis City vs Minnesota United | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] St. Louis City vs Minnesota United | EN (PLAY)
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Real Salt Lake vs New York City | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Real Salt Lake vs New York City | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do37.m3u8?md5=sC_4iHCOYf7Q80Tav2w26g&expires=1789259844
+https://cdn10.zohanayaan.com:1686/hls/do39.m3u8?md5=fxzwpCYJRB3KZ3jpnDUN8w&expires=1789266164
 
-#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Colorado Rapids vs CF Montréal | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Colorado Rapids vs CF Montréal | EN (PLAY)
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[Canada Canadian Premier League] Forge vs Atl. Ottawa | EN (PLAY)" tvg-logo="https://i.gyazo.com/b0b49528463ce3833cf287ba2e2e2d5d.png" group-title="Live Events",[Canada Canadian Premier League] Forge vs Atl. Ottawa | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/do38.m3u8?md5=a3DHKGqPW6fpcoXjk0nPMQ&expires=1789259845
+https://cdn10.zohanayaan.com:1686/hls/do83.m3u8?md5=u37u72NioS-2p9CJUdv3KQ&expires=1789266165
 
-#EXTINF:-1 tvg-chno="19" tvg-id="Soccer.Dummy.us" tvg-name="[USA/Canada Major League Soccer] Real Salt Lake vs New York City | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/19.png" group-title="Live Events",[USA/Canada Major League Soccer] Real Salt Lake vs New York City | EN (PLAY)
+#EXTINF:-1 tvg-chno="19" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Talleres Córdoba vs Unión Santa Fe | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Talleres Córdoba vs Unión Santa Fe | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/do39.m3u8?md5=-nuyHP-zC2s9UrN8vTJtXg&expires=1789259847
-
-#EXTINF:-1 tvg-chno="20" tvg-id="Soccer.Dummy.us" tvg-name="[Canada Canadian Premier League] Forge vs Atl. Ottawa | EN (PLAY)" tvg-logo="https://i.gyazo.com/b0b49528463ce3833cf287ba2e2e2d5d.png" group-title="Live Events",[Canada Canadian Premier League] Forge vs Atl. Ottawa | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/do83.m3u8?md5=oUJgjpckDq_GWe-QiivO3w&expires=1789259847
-
-#EXTINF:-1 tvg-chno="21" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera División] Talleres Córdoba vs Unión Santa Fe | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera División] Talleres Córdoba vs Unión Santa Fe | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/do84.m3u8?md5=SmbWJUN9A_8vEjClNgKfDw&expires=1789259849
+https://cdn7.zohanayaan.com:1686/hls/do84.m3u8?md5=QS72ukamB50aKc1JXPssGg&expires=1789266166
 
