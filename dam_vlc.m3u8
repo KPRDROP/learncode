@@ -3,14 +3,54 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=_YXOcE0hLIV5RpHBkgSSoQ&e=1789466722
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=XUhDMm1Vs6tg1FPUQZBMoQ&e=1789472790
 #EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d508ecf6e7a4ce01370c6d1a5df71412-thumbnail.jpg" group-title="MLB",[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/chw-cle
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/chw-cle
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/chw-cle/playlist.m3u8?tk=5ORUkyy4QsCSNjPO21BDRQ&e=1789466723
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/chw-cle/playlist.m3u8?tk=XUhDMm1Vs6tg1FPUQZBMoQ&e=1789472790
 #EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/942b1474035c0323062207100fdbd298-thumbnail.jpg" group-title="MLB",[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/lad-cin
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/lad-cin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/lad-cin/playlist.m3u8?tk=5ORUkyy4QsCSNjPO21BDRQ&e=1789466723
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/lad-cin/playlist.m3u8?tk=XUhDMm1Vs6tg1FPUQZBMoQ&e=1789472790
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs. Toronto Blue Jays (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2edc37f0dcaea44f27c4e3e6f9ceb622-thumbnail.jpg" group-title="MLB",[MLB] Detroit Tigers vs. Toronto Blue Jays (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/det-tor
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/det-tor
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/det-tor/playlist.m3u8?tk=XUhDMm1Vs6tg1FPUQZBMoQ&e=1789472790
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Baltimore Orioles vs. New York Mets (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e92b62a11e68ff1c30443d6c4cc92fb6-thumbnail.jpg" group-title="MLB",[MLB] Baltimore Orioles vs. New York Mets (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/bal-nym
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/bal-nym
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/bal-nym/playlist.m3u8?tk=hB3c60K5nyYlbNZ5z3EXNA&e=1789472791
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Atlanta Braves vs. Chicago Cubs (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ef9f5f28e0c641fa98bf3531e318ef2c-thumbnail.jpg" group-title="MLB",[MLB] Atlanta Braves vs. Chicago Cubs (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/atl-chc
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/atl-chc
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/atl-chc/playlist.m3u8?tk=dB_JxG6wEEZnmMgtafSDhg&e=1789472792
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs. Minnesota Twins (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/53af4d3639ad4487bbae972e24189c47-thumbnail.jpg" group-title="MLB",[MLB] New York Yankees vs. Minnesota Twins (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/nyy-min
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/nyy-min
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/nyy-min/playlist.m3u8?tk=dB_JxG6wEEZnmMgtafSDhg&e=1789472792
+#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs. St. Louis Cardinals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/41528d1d1a4c4f5f2ee616901f2ced95-thumbnail.jpg" group-title="MLB",[MLB] San Francisco Giants vs. St. Louis Cardinals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/sf-stl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/sf-stl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/sf-stl/playlist.m3u8?tk=dB_JxG6wEEZnmMgtafSDhg&e=1789472792
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[football] Bahia vs Remo (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rAAzBNZFLDBSQ3EHxAGUpkJcQmIhgsCQU+w2fV0qUXMGXhEsszyZaMG8xUQggA.webp" group-title="Live Events",[football] Bahia vs Remo (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~bahia-vs-remo-football-1492371
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~bahia-vs-remo-football-1492371
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/bahia-vs-remo-football-1492371/playlist.m3u8?tk=rqaUx56L4akvLGe1rVAc_g&e=1789472793
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[football] Deportivo Riestra vs Lanús (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rEM01ZKoENxB8QUkCiMHzx4xKZIKfYbPoowKlFxfl620W6a0wLmKiEEA.webp" group-title="Live Events",[football] Deportivo Riestra vs Lanús (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~deportivo-riestra-vs-lanus-football-1493127
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~deportivo-riestra-vs-lanus-football-1493127
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/deportivo-riestra-vs-lanus-football-1493127/playlist.m3u8?tk=rqaUx56L4akvLGe1rVAc_g&e=1789472793
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[football] Banfield vs Barracas Central (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VEiBQhuIRBpDaQfEFM0mjF0xpgFgSCn2Gz6KMCpRc35ellkemtGBuYqIQQA.webp" group-title="Live Events",[football] Banfield vs Barracas Central (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~banfield-vs-barracas-central-football-1493124
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~banfield-vs-barracas-central-football-1493124
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/banfield-vs-barracas-central-football-1493124/playlist.m3u8?tk=rqaUx56L4akvLGe1rVAc_g&e=1789472793
