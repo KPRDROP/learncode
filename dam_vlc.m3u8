@@ -3,44 +3,9 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=AyuG3ENSH5glMja1y4Qqsg&e=1789387166
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs. San Francisco Giants (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c50ee31e8ce305a699c52bf63b98a669-thumbnail.jpg" group-title="MLB",[MLB] San Diego Padres vs. San Francisco Giants (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-13/sd-sf
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-13/sd-sf
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-13/sd-sf/playlist.m3u8?tk=qgSChX0ZwUqE19j741u_5w&e=1789387167
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Chicago Fire FC vs. New England Revolution (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9029e684b5e758fc40a5a73e6cf700a5-thumbnail.jpg" group-title="Live Events",[MLS] Chicago Fire FC vs. New England Revolution (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-13/chi-ne
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-13/chi-ne
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-13/chi-ne/playlist.m3u8?tk=qgSChX0ZwUqE19j741u_5w&e=1789387167
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Vancouver Whitecaps vs. Austin FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3abee4b956cffc982979ee3b92b5cb76-thumbnail.jpg" group-title="Live Events",[MLS] Vancouver Whitecaps vs. Austin FC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-13/van-atx
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-13/van-atx
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-13/van-atx/playlist.m3u8?tk=qgSChX0ZwUqE19j741u_5w&e=1789387167
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Club Deportivo Marathón vs. Club Deportivo Olimpia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/82a9569ab014f980365bbbc109562686-thumbnail.jpg" group-title="Football",[Football] Club Deportivo Marathón vs. Club Deportivo Olimpia (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=honduran-liga-nacional/2026-09-13/mar-oli
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=honduran-liga-nacional/2026-09-13/mar-oli
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/honduran-liga-nacional/2026-09-13/mar-oli/playlist.m3u8?tk=qgSChX0ZwUqE19j741u_5w&e=1789387167
-#EXTINF:-1 tvg-chno="6" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=sfFMji3RAsXzVd7S195FgQ&e=1789404345
+#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[Tennis] US Open: 24/7 streams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e8148b55e20882ab01d187342e73178c-thumbnail.jpg" group-title="Tennis",[Tennis] US Open: 24/7 streams (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=us-open-espn--espn2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=D5aar6GqfkWn2Q4tgflmoA&e=1789387168
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[football] Once Caldas vs Deportivo Cali (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VHKIEQQtKSG4g9fECRDaDGwyBQFgSCn2Gz6KMCpRc35ellkemtGBuYqIQQA.webp" group-title="Live Events",[football] Once Caldas vs Deportivo Cali (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~once-caldas-vs-deportivo-cali-football-1549780
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~once-caldas-vs-deportivo-cali-football-1549780
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/once-caldas-vs-deportivo-cali-football-1549780/playlist.m3u8?tk=D5aar6GqfkWn2Q4tgflmoA&e=1789387168
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[football] Independiente vs San Lorenzo (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rFAxDcQMWRC0g+IKSBTHDFk0cbAkFPsL3swKjWxfl6WWRqa0wLmKiEEA.webp" group-title="Live Events",[football] Independiente vs San Lorenzo (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~independiente-vs-san-lorenzo-football-1493130
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~independiente-vs-san-lorenzo-football-1493130
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/independiente-vs-san-lorenzo-football-1493130/playlist.m3u8?tk=D5aar6GqfkWn2Q4tgflmoA&e=1789387168
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[football] Pacific vs Cavalry (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VLHRDww3MDJzcQfECYggYWkChCGzCpkgp9hs+ijAqUXD+XobRXky0YB5iohBAA.webp" group-title="Live Events",[football] Pacific vs Cavalry (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~pacific-fc-vs-cavalry-fc-football-1517347
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~pacific-fc-vs-cavalry-fc-football-1517347
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/pacific-fc-vs-cavalry-fc-football-1517347/playlist.m3u8?tk=D5aar6GqfkWn2Q4tgflmoA&e=1789387168
+https://messi.damitv.st/live-hls/channel/us-open-espn--espn2/playlist.m3u8?tk=sfFMji3RAsXzVd7S195FgQ&e=1789404345
