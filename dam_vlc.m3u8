@@ -3,29 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=8JBddNvlP4hdolRsJnO49g&e=1789462176
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Inter Milan vs. Udinese (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/42eed3750f7e496a018c9b4008a3b3f2-thumbnail.jpg" group-title="Live Events",[Serie A] Inter Milan vs. Udinese (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-09-14/int-udi
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-09-14/int-udi
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=_YXOcE0hLIV5RpHBkgSSoQ&e=1789466722
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d508ecf6e7a4ce01370c6d1a5df71412-thumbnail.jpg" group-title="MLB",[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/chw-cle
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/chw-cle
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/seriea/2026-09-14/int-udi/playlist.m3u8?tk=8JBddNvlP4hdolRsJnO49g&e=1789462176
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Villarreal vs. Real Betis (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c42fed5f61e2343b886f87323525c9ad-thumbnail.jpg" group-title="Live Events",[La Liga] Villarreal vs. Real Betis (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-09-14/vil-bet
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-09-14/vil-bet
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/chw-cle/playlist.m3u8?tk=5ORUkyy4QsCSNjPO21BDRQ&e=1789466723
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/942b1474035c0323062207100fdbd298-thumbnail.jpg" group-title="MLB",[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/lad-cin
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/lad-cin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/laliga/2026-09-14/vil-bet/playlist.m3u8?tk=8JBddNvlP4hdolRsJnO49g&e=1789462176
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Leeds United vs. Newcastle United (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4b892153806c62facf4070704d612346-thumbnail.jpg" group-title="Live Events",[Premier League] Leeds United vs. Newcastle United (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=pl/2026-09-14/lee-new
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=pl/2026-09-14/lee-new
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/pl/2026-09-14/lee-new/playlist.m3u8?tk=P6pD5kSaJxRDeYKXQ_G3xQ&e=1789462177
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[football] Braga vs Estoril Praia (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VelmIgQcRNxB9tIKQZD7tKUxKZIKfYbPoowKlFxfkNst01pgXYqIQQA.webp" group-title="Live Events",[football] Braga vs Estoril Praia (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~sc-braga-vs-estoril-football-1575494
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~sc-braga-vs-estoril-football-1575494
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/sc-braga-vs-estoril-football-1575494/playlist.m3u8?tk=P6pD5kSaJxRDeYKXQ_G3xQ&e=1789462177
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[football] Moreirense vs Maritimo (DAM)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[football] Moreirense vs Maritimo (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~moreirense-vs-maritimo-football-1575497
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~moreirense-vs-maritimo-football-1575497
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/moreirense-vs-maritimo-football-1575497/playlist.m3u8?tk=P6pD5kSaJxRDeYKXQ_G3xQ&e=1789462177
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/lad-cin/playlist.m3u8?tk=5ORUkyy4QsCSNjPO21BDRQ&e=1789466723
