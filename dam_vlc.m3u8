@@ -3,4 +3,29 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=hdD4vy21LQzGtqJYiZyjMg&e=1789424875
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=7qSVt2b9DKVdpyqw-K8rmg&e=1789447990
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Como vs. Parma (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e428a0e53e3cbafc159cc552b9ac520e-thumbnail.jpg" group-title="Live Events",[Serie A] Como vs. Parma (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-09-14/como-par
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-09-14/como-par
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/seriea/2026-09-14/como-par/playlist.m3u8?tk=qywt4kGOmO1vhM147BMhUg&e=1789447991
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Torino vs. AS Roma (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6ab5cb7f52ab93fef8720ad32dd34038-thumbnail.jpg" group-title="Live Events",[Serie A] Torino vs. AS Roma (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-09-14/tor-roma
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-09-14/tor-roma
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/seriea/2026-09-14/tor-roma/playlist.m3u8?tk=qywt4kGOmO1vhM147BMhUg&e=1789447991
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Djurgården vs. GAIS (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5f463e989dd6626aa18e159a8eddb02a-thumbnail.jpg" group-title="Football",[Football] Djurgården vs. GAIS (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=allsvenskan/2026-09-14/dju-gais
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=allsvenskan/2026-09-14/dju-gais
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/allsvenskan/2026-09-14/dju-gais/playlist.m3u8?tk=qywt4kGOmO1vhM147BMhUg&e=1789447991
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] IK Sirius vs. Degerfors IF (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/71190919f2a610497659c6f9783d82b5-thumbnail.jpg" group-title="Football",[Football] IK Sirius vs. Degerfors IF (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=allsvenskan/2026-09-14/sir-deg
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=allsvenskan/2026-09-14/sir-deg
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/allsvenskan/2026-09-14/sir-deg/playlist.m3u8?tk=qywt4kGOmO1vhM147BMhUg&e=1789447991
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[football] Bayer Leverkusen Women vs Bayern Munich Women (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rJMCRhuIEiBi4QOvrpAnEekPpBSQCplpj9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[football] Bayer Leverkusen Women vs Bayern Munich Women (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~bayer-leverkusen-w-vs-bayern-munich-w-football-1593128
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~bayer-leverkusen-w-vs-bayern-munich-w-football-1593128
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/bayer-leverkusen-w-vs-bayern-munich-w-football-1593128/playlist.m3u8?tk=qywt4kGOmO1vhM147BMhUg&e=1789447991
