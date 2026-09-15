@@ -3,59 +3,49 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=iUaGwA_XtQnZmUYt7nANeA&e=1789548182
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Peterborough United vs. Barnsley (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7de652447c27dcc1d11a6f22dd1bb482-thumbnail.jpg" group-title="Football",[Football] Peterborough United vs. Barnsley (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=carabao-cup/2026-09-15/pet-bar
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=carabao-cup/2026-09-15/pet-bar
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=f7rZOpRz3arYt4sTv0eJXQ&e=1789552825
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs. Tampa Bay Rays (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7b9d1f7fdcbe02ca52d0eda916b6b75e-thumbnail.jpg" group-title="MLB",[MLB] Athletics vs. Tampa Bay Rays (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-15/ath-tb
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-15/ath-tb
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/carabao-cup/2026-09-15/pet-bar/playlist.m3u8?tk=iUaGwA_XtQnZmUYt7nANeA&e=1789548182
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Championship] Bristol City vs. Lincoln City (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/0395090e28759f5bb7438cfffe3d8e8a-thumbnail.jpg" group-title="Live Events",[EFL Championship] Bristol City vs. Lincoln City (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=efl-championship/2026-09-15/brc-lcn
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=efl-championship/2026-09-15/brc-lcn
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-15/ath-tb/playlist.m3u8?tk=f7rZOpRz3arYt4sTv0eJXQ&e=1789552825
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d508ecf6e7a4ce01370c6d1a5df71412-thumbnail.jpg" group-title="MLB",[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-15/chw-cle
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-15/chw-cle
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/efl-championship/2026-09-15/brc-lcn/playlist.m3u8?tk=iUaGwA_XtQnZmUYt7nANeA&e=1789548182
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Championship] Middlesbrough vs. Millwall (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/461b4738013d82bc47c35cadf5851327-thumbnail.jpg" group-title="Live Events",[EFL Championship] Middlesbrough vs. Millwall (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=efl-championship/2026-09-15/mid-mil
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=efl-championship/2026-09-15/mid-mil
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-15/chw-cle/playlist.m3u8?tk=f7rZOpRz3arYt4sTv0eJXQ&e=1789552825
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/942b1474035c0323062207100fdbd298-thumbnail.jpg" group-title="MLB",[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-15/lad-cin
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-15/lad-cin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/efl-championship/2026-09-15/mid-mil/playlist.m3u8?tk=iUaGwA_XtQnZmUYt7nANeA&e=1789548182
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] West Ham United vs. Fulham (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/288654513db40648384b3fa52bc89a1e-thumbnail.jpg" group-title="Football",[Football] West Ham United vs. Fulham (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=carabao-cup/2026-09-15/whu-ful
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=carabao-cup/2026-09-15/whu-ful
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-15/lad-cin/playlist.m3u8?tk=f7rZOpRz3arYt4sTv0eJXQ&e=1789552825
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs. Pittsburgh Pirates (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f3dfbdac35804ab2e8a49b65d8651fcd-thumbnail.jpg" group-title="MLB",[MLB] Milwaukee Brewers vs. Pittsburgh Pirates (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-15/mil-pit
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-15/mil-pit
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/carabao-cup/2026-09-15/whu-ful/playlist.m3u8?tk=PaeyzvmFH7lIlhDVDP_T9w&e=1789548183
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Ipswich Town vs. Arsenal (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1041887faa0854f83c2ad3e83597a8c2-thumbnail.jpg" group-title="Football",[Football] Ipswich Town vs. Arsenal (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=carabao-cup/2026-09-15/ips-ars
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=carabao-cup/2026-09-15/ips-ars
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-15/mil-pit/playlist.m3u8?tk=XFTM9AKhLQNNaZ-DthS2zg&e=1789552826
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. Washington Nationals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a1dc42daf5e2a817cc7bc04def148aed-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. Washington Nationals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-15/phi-wsh
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-15/phi-wsh
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/carabao-cup/2026-09-15/ips-ars/playlist.m3u8?tk=PaeyzvmFH7lIlhDVDP_T9w&e=1789548183
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Liverpool vs. Tottenham Hotspur (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3cea8c6bfb2db505c11a2cfd7bb73fdc-thumbnail.jpg" group-title="Football",[Football] Liverpool vs. Tottenham Hotspur (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=carabao-cup/2026-09-15/liv-tot
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=carabao-cup/2026-09-15/liv-tot
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-15/phi-wsh/playlist.m3u8?tk=XFTM9AKhLQNNaZ-DthS2zg&e=1789552826
+#EXTINF:-1 tvg-chno="7" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] Dana White's Contender Series (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a5f35940ef6309a61060dede0638e1d3-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] Dana White's Contender Series (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=dwcs/2026-09-15
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=dwcs/2026-09-15
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/carabao-cup/2026-09-15/liv-tot/playlist.m3u8?tk=PaeyzvmFH7lIlhDVDP_T9w&e=1789548183
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Reading vs. Brentford (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bf221d597028648d58474c3d83f18447-thumbnail.jpg" group-title="Football",[Football] Reading vs. Brentford (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=carabao-cup/2026-09-15/rea-bre
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=carabao-cup/2026-09-15/rea-bre
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/carabao-cup/2026-09-15/rea-bre/playlist.m3u8?tk=PaeyzvmFH7lIlhDVDP_T9w&e=1789548183
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Fiorentina vs. Pisa (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/43f22865dde6819f5635d5e81971d993-thumbnail.jpg" group-title="Football",[Football] Fiorentina vs. Pisa (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=coppa-italia/2026-09-15/fio-pis
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=coppa-italia/2026-09-15/fio-pis
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/coppa-italia/2026-09-15/fio-pis/playlist.m3u8?tk=PaeyzvmFH7lIlhDVDP_T9w&e=1789548183
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Elche vs. Real Madrid (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3da3fedfe5c22d7a6d043869b3a50456-thumbnail.jpg" group-title="Live Events",[La Liga] Elche vs. Real Madrid (DAM)
+https://messi.damitv.st/live-hls/channel/dwcs/2026-09-15/playlist.m3u8?tk=XFTM9AKhLQNNaZ-DthS2zg&e=1789552826
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Elche vs. Real Madrid (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3da3fedfe5c22d7a6d043869b3a50456-thumbnail.jpg" group-title="Live Events",[La Liga] Elche vs. Real Madrid (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-09-15/elc-rma
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-09-15/elc-rma
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/laliga/2026-09-15/elc-rma/playlist.m3u8?tk=Zm_PqS-fHDmt4CH-Da_Uig&e=1789548184
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[football] Deportivo Pereira vs Santa Fe (DAM)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[football] Deportivo Pereira vs Santa Fe (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~deportivo-pereira-vs-santa-fe-football-1549712
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~deportivo-pereira-vs-santa-fe-football-1549712
+https://messi.damitv.st/live-hls/channel/laliga/2026-09-15/elc-rma/playlist.m3u8?tk=XFTM9AKhLQNNaZ-DthS2zg&e=1789552826
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[football] Ipswich Town vs Arsenal (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VUbySUQ3MFJ0g+IY8aPGc+-TALAkFPsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[football] Ipswich Town vs Arsenal (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-golf~1368
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-golf~1368
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/deportivo-pereira-vs-santa-fe-football-1549712/playlist.m3u8?tk=Zm_PqS-fHDmt4CH-Da_Uig&e=1789548184
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[football] Hibernian vs Kilmarnock (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEAJkkQ4JJBDcNO3AZAoQiHMYLA9MfsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[football] Hibernian vs Kilmarnock (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~hibernian-vs-kilmarnock-football-1556642
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~hibernian-vs-kilmarnock-football-1556642
+https://messi.damitv.st/live-sd/streamed/golf/1368/playlist.m3u8?tk=QqyuWHIw7TH9ui9bZCPaVQ&e=1789552827
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[football] Liverpool vs Tottenham Hotspur (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VECES9uIenxA79GjUdwgpIEuYLAkFPsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[football] Liverpool vs Tottenham Hotspur (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-golf~1366
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-golf~1366
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/hibernian-vs-kilmarnock-football-1556642/playlist.m3u8?tk=Zm_PqS-fHDmt4CH-Da_Uig&e=1789548184
+https://messi.damitv.st/live-sd/streamed/golf/1366/playlist.m3u8?tk=QqyuWHIw7TH9ui9bZCPaVQ&e=1789552827
