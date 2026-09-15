@@ -3,14 +3,4 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=o85evIm5T4YFybcJ8-HlBQ&e=1789489162
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4fc3b635270aa6d6ea2395a15eae5b76-thumbnail.jpg" group-title="MLB",[MLB] Seattle Mariners vs. Los Angeles Angels (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/sea-laa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/sea-laa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/sea-laa/playlist.m3u8?tk=o85evIm5T4YFybcJ8-HlBQ&e=1789489162
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs. Arizona Diamondbacks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1cedfd2d4ac99e6863d5b2fee4e644e9-thumbnail.jpg" group-title="MLB",[MLB] Miami Marlins vs. Arizona Diamondbacks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-14/mia-ari
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-14/mia-ari
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-14/mia-ari/playlist.m3u8?tk=DU7WkT4P8QK_RFHjPVPWfA&e=1789489163
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=1r3RltNaTw6afUVEIZbBQw&e=1789509202
