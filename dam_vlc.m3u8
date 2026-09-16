@@ -3,4 +3,9 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=yEWnI1EESGUF1dTK5dD4-A&e=1789586897
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=HRUmdTyJz3bu-LNg8XmmDg&e=1789607910
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[football] Niki Volos vs Asteras Tripolis (DAM)" tvg-logo="https://i.gyazo.com/1c4aa937f5ea01b0f29bb27adb59884c.png" group-title="Live Events",[football] Niki Volos vs Asteras Tripolis (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~niki-volos-vs-asteras-tripolis-football-1638574
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~niki-volos-vs-asteras-tripolis-football-1638574
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/niki-volos-vs-asteras-tripolis-football-1638574/playlist.m3u8?tk=HRUmdTyJz3bu-LNg8XmmDg&e=1789607910
