@@ -3,4 +3,59 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=3hP7FobS-x8qFsQpUoHJDw&e=1789687279
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=LdA2UqJjGVO6Ww5niUXbJg&e=1789706315
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs. Pittsburgh Pirates (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f3dfbdac35804ab2e8a49b65d8651fcd-thumbnail.jpg" group-title="MLB",[MLB] Milwaukee Brewers vs. Pittsburgh Pirates (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/mil-pit
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/mil-pit
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/mil-pit/playlist.m3u8?tk=LdA2UqJjGVO6Ww5niUXbJg&e=1789706315
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/942b1474035c0323062207100fdbd298-thumbnail.jpg" group-title="MLB",[MLB] Los Angeles Dodgers vs. Cincinnati Reds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/lad-cin
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/lad-cin
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/lad-cin/playlist.m3u8?tk=LdA2UqJjGVO6Ww5niUXbJg&e=1789706315
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs. Tampa Bay Rays (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7b9d1f7fdcbe02ca52d0eda916b6b75e-thumbnail.jpg" group-title="MLB",[MLB] Athletics vs. Tampa Bay Rays (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/ath-tb
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/ath-tb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/ath-tb/playlist.m3u8?tk=BJemnzMcSkOJKebb98Y0Zg&e=1789706316
+#EXTINF:-1 tvg-chno="5" tvg-id="Darts.Dummy.us" tvg-name="[Darts] World Series of Darts Finals - Day 1 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/60dd5428936c68c6dcf88f77d664eb57-thumbnail.jpg" group-title="Live Events",[Darts] World Series of Darts Finals - Day 1 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=world-series-of-darts-finals---day-1-28910
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=world-series-of-darts-finals---day-1-28910
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/world-series-of-darts-finals---day-1-28910/playlist.m3u8?tk=BJemnzMcSkOJKebb98Y0Zg&e=1789706316
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Europa League] Levski Sofia vs. RB Salzburg (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/602b435359984424616bde193394f578-thumbnail.jpg" group-title="Live Events",[Europa League] Levski Sofia vs. RB Salzburg (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uel/2026-09-17/levs-slz
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uel/2026-09-17/levs-slz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uel/2026-09-17/levs-slz/playlist.m3u8?tk=BJemnzMcSkOJKebb98Y0Zg&e=1789706316
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Europa League] OFI Crete vs. TSG Hoffenheim (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/62a8768ca848819e1e2f48a2090d98b2-thumbnail.jpg" group-title="Live Events",[Europa League] OFI Crete vs. TSG Hoffenheim (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uel/2026-09-17/ofi-tsg
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uel/2026-09-17/ofi-tsg
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uel/2026-09-17/ofi-tsg/playlist.m3u8?tk=Akuu1gyTb6u6lIGbFCUoQA&e=1789706317
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Real Betis vs. Getafe (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/adf7e65bb523ddf0c3c36c90e2953cc7-thumbnail.jpg" group-title="Live Events",[La Liga] Real Betis vs. Getafe (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-09-17/bet-get
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-09-17/bet-get
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/laliga/2026-09-17/bet-get/playlist.m3u8?tk=Akuu1gyTb6u6lIGbFCUoQA&e=1789706317
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[football] AEK Athens vs Panserraikos (DAM)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Live Events",[football] AEK Athens vs Panserraikos (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~aek-athens-fc-vs-panserraikos-football-1635495
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~aek-athens-fc-vs-panserraikos-football-1635495
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/aek-athens-fc-vs-panserraikos-football-1635495/playlist.m3u8?tk=Akuu1gyTb6u6lIGbFCUoQA&e=1789706317
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[football] OFI vs Hoffenheim (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VGJRApiMgAwhuIPiBPGUIRMZImjBYEgp9hs+ijArtbd+XpZZ2plowdzFRCCA.webp" group-title="Live Events",[football] OFI vs Hoffenheim (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-ofi-crete-vs-tsg-hoffenheim
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-ofi-crete-vs-tsg-hoffenheim
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-ofi-crete-vs-tsg-hoffenheim/playlist.m3u8?tk=jCXM9taEGMCZoMvNI7tdrw&e=1789706318
+#EXTINF:-1 tvg-chno="11" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Eisbären Berlin vs Straubing Tigers (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VLGDIhgMtCAghuIPiBLH9IGCCmWQiKQWBIKfYbPopNbFF03l6WLI+TLRgXvSiEEA.webp" group-title="Live Events",[hockey] Eisbären Berlin vs Straubing Tigers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~eisbaren-berlin-vs-straubing-tigers-hockey-433609
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~eisbaren-berlin-vs-straubing-tigers-hockey-433609
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/eisbaren-berlin-vs-straubing-tigers-hockey-433609/playlist.m3u8?tk=jCXM9taEGMCZoMvNI7tdrw&e=1789706318
+#EXTINF:-1 tvg-chno="12" tvg-id="Cricket.Dummy.us" tvg-name="[cricket] England Cricket vs Sri Lanka Cricket (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rMNhAhgABkggIIbiD5aQiUyVzWcCpkgp9hs+ijAqUXd+XpZZnploNUXoQoA.webp" group-title="Live Events",[cricket] England Cricket vs Sri Lanka Cricket (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~england-vs-sri-lanka-second-t20-international-cricket-hundred-1
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~england-vs-sri-lanka-second-t20-international-cricket-hundred-1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/echo/england-vs-sri-lanka-second-t20-international-cricket-hundred-1/playlist.m3u8?tk=jCXM9taEGMCZoMvNI7tdrw&e=1789706318
