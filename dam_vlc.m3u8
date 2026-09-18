@@ -3,19 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d8d5465b8eec2d83ee0ee4d3bd4ba356-thumbnail.jpg" group-title="MLB",[MLB] Minnesota Twins vs. Los Angeles Angels (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/min-laa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/min-laa
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=uTa6yLc_xqBpkJRjNi5Ohg&e=1789767031
+#EXTINF:-1 tvg-chno="2" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Sydney Swans vs. Fremantle (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/38562e3add40fd794bdb5edb1dc6cba8-thumbnail.jpg" group-title="AFL",[AFL] Sydney Swans vs. Fremantle (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=afl/2026-09-18/syd-fre
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=afl/2026-09-18/syd-fre
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/min-laa/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
-#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Phoenix Mercury vs. Portland Fire (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f14b406e4fadd166ea03767c1d8ba356-thumbnail.jpg" group-title="NBA",[WNBA] Phoenix Mercury vs. Portland Fire (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-17/phx-por
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-17/phx-por
+https://messi.damitv.st/live-hls/channel/afl/2026-09-18/syd-fre/playlist.m3u8?tk=uTa6yLc_xqBpkJRjNi5Ohg&e=1789767031
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Austria - Practice 1 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8207ecb1874bcda4c0fea1e6b5cebec1-thumbnail.jpg" group-title="Motorsports",[Motorsports] Austria - Practice 1 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=motogp/2026/austria/practice-1
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=motogp/2026/austria/practice-1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-09-17/phx-por/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
-#EXTINF:-1 tvg-chno="4" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Las Vegas Aces vs. Seattle Storm (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c4654a309b60326c9092be81f5f63124-thumbnail.jpg" group-title="NBA",[WNBA] Las Vegas Aces vs. Seattle Storm (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-17/lv-sea
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-17/lv-sea
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-09-17/lv-sea/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
+https://messi.damitv.st/live-hls/channel/motogp/2026/austria/practice-1/playlist.m3u8?tk=uTa6yLc_xqBpkJRjNi5Ohg&e=1789767031
