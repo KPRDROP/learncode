@@ -3,39 +3,24 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=tQWd13bNWYJGGTPChVd3zQ&e=1789798369
-#EXTINF:-1 tvg-chno="2" tvg-id="Darts.Dummy.us" tvg-name="[Darts] World Series of Darts Finals - Day 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/60dd5428936c68c6dcf88f77d664eb57-thumbnail.jpg" group-title="Live Events",[Darts] World Series of Darts Finals - Day 2 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=world-series-of-darts-finals---day-2-28912
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=world-series-of-darts-finals---day-2-28912
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=gwXnohzhKss-0I9MFQQyYg&e=1789810329
+#EXTINF:-1 tvg-chno="2" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Post Eagles vs Lindenwood Lady Lions (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Post Eagles vs Lindenwood Lady Lions (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_post-eagles-lindenwood-lady-lions-live-streaming-623860272
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_post-eagles-lindenwood-lady-lions-live-streaming-623860272
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/world-series-of-darts-finals---day-2-28912/playlist.m3u8?tk=HHBV9Mkh2qOPUu732mCO1Q&e=1789798370
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] FC Groningen vs. PEC Zwolle (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d51425df65dd9816e04852dfc031e164-thumbnail.jpg" group-title="Football",[Football] FC Groningen vs. PEC Zwolle (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=eredivisie/2026-09-18/gro-pec
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=eredivisie/2026-09-18/gro-pec
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_post-eagles-lindenwood-lady-lions-live-streaming-623860272/playlist.m3u8?tk=gwXnohzhKss-0I9MFQQyYg&e=1789810329
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[football] Espanyol vs Elche (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEHxAkQ4blv4g9mnRBAoQMEKdPmzTJBT7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[football] Espanyol vs Elche (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-espanyol-vs-elche
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-espanyol-vs-elche
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/eredivisie/2026-09-18/gro-pec/playlist.m3u8?tk=HHBV9Mkh2qOPUu732mCO1Q&e=1789798370
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Bundesliga] Bayern Munich vs. 1. FC Union Berlin (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/eff357d324629442eb123dc275423f6f-thumbnail.jpg" group-title="Live Events",[Bundesliga] Bayern Munich vs. 1. FC Union Berlin (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=bundesliga/2026-09-18/bay-fcu
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=bundesliga/2026-09-18/bay-fcu
+https://messi.damitv.st/live-sd/streamed/admin/ppv-espanyol-vs-elche/playlist.m3u8?tk=IRiHIlPFggRc9AsIKcnMKw&e=1789810330
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[football] Brentford vs Chelsea (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rMMBmj6JEChDcQfECd37Eh3YikFgSCn2Gz6KMCpRc35ellkemtGBuYtpAA.webp" group-title="Live Events",[football] Brentford vs Chelsea (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-brentford-vs-chelsea
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-brentford-vs-chelsea
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/bundesliga/2026-09-18/bay-fcu/playlist.m3u8?tk=HHBV9Mkh2qOPUu732mCO1Q&e=1789798370
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Monza vs. Sassuolo (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fb4dc8e2fec89d91d26b22dab97c0123-thumbnail.jpg" group-title="Live Events",[Serie A] Monza vs. Sassuolo (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=seriea/2026-09-18/mon-sas
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=seriea/2026-09-18/mon-sas
+https://messi.damitv.st/live-sd/streamed/admin/ppv-brentford-vs-chelsea/playlist.m3u8?tk=IRiHIlPFggRc9AsIKcnMKw&e=1789810330
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[football] Monza vs Sassuolo (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VEKRAaADJRBSQ3EHy0gYplCEvWzBYEgp9hs+ijAqUXd+XpZZnplowdzFRCCA.webp" group-title="Live Events",[football] Monza vs Sassuolo (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-foxtrot~sassuolo-v-monza-401874756
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-foxtrot~sassuolo-v-monza-401874756
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/seriea/2026-09-18/mon-sas/playlist.m3u8?tk=HHBV9Mkh2qOPUu732mCO1Q&e=1789798370
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Ligue 1] AS Monaco vs. Lens (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f87ee329427c9782a187b3a33a45c6a5-thumbnail.jpg" group-title="Live Events",[Ligue 1] AS Monaco vs. Lens (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=ligue1/2026-09-18/mon-rcl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=ligue1/2026-09-18/mon-rcl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ligue1/2026-09-18/mon-rcl/playlist.m3u8?tk=HHBV9Mkh2qOPUu732mCO1Q&e=1789798370
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Espanyol vs. Elche (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/b181072bb5f04de5d12c3f295216f158-thumbnail.jpg" group-title="Live Events",[La Liga] Espanyol vs. Elche (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=laliga/2026-09-18/esp-elc
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=laliga/2026-09-18/esp-elc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/laliga/2026-09-18/esp-elc/playlist.m3u8?tk=ulRmbWZ-R1tdngi8GZhkog&e=1789798371
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Brentford vs. Chelsea (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/23afd284c6e99a6c71e43df32f3c76d8-thumbnail.jpg" group-title="Live Events",[Premier League] Brentford vs. Chelsea (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=pl/2026-09-18/bre-che
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=pl/2026-09-18/bre-che
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/pl/2026-09-18/bre-che/playlist.m3u8?tk=ulRmbWZ-R1tdngi8GZhkog&e=1789798371
+https://messi.damitv.st/live-sd/streamed/foxtrot/sassuolo-v-monza-401874756/playlist.m3u8?tk=IRiHIlPFggRc9AsIKcnMKw&e=1789810330
