@@ -3,14 +3,9 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=uTa6yLc_xqBpkJRjNi5Ohg&e=1789767031
-#EXTINF:-1 tvg-chno="2" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Sydney Swans vs. Fremantle (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/38562e3add40fd794bdb5edb1dc6cba8-thumbnail.jpg" group-title="AFL",[AFL] Sydney Swans vs. Fremantle (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=afl/2026-09-18/syd-fre
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=afl/2026-09-18/syd-fre
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=G9cmcKhTcsCo1JSmmIdeBg&e=1789784118
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Austria - Practice (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bf1c2241470073898f54c70ce5a2a076-thumbnail.jpg" group-title="Motorsports",[Motorsports] Austria - Practice (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=motogp/2026/austria/practice
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=motogp/2026/austria/practice
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/afl/2026-09-18/syd-fre/playlist.m3u8?tk=uTa6yLc_xqBpkJRjNi5Ohg&e=1789767031
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Austria - Practice 1 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8207ecb1874bcda4c0fea1e6b5cebec1-thumbnail.jpg" group-title="Motorsports",[Motorsports] Austria - Practice 1 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=motogp/2026/austria/practice-1
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=motogp/2026/austria/practice-1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/motogp/2026/austria/practice-1/playlist.m3u8?tk=uTa6yLc_xqBpkJRjNi5Ohg&e=1789767031
+https://messi.damitv.st/live-hls/channel/motogp/2026/austria/practice/playlist.m3u8?tk=G9cmcKhTcsCo1JSmmIdeBg&e=1789784118
