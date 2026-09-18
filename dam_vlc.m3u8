@@ -3,39 +3,19 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=DlvjbbVnErNvMgBUGKASWQ&e=1789730854
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. New York Mets (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a144b8430c294ba06ffa43ffe20e5f90-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. New York Mets (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/phi-nym
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/phi-nym
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d8d5465b8eec2d83ee0ee4d3bd4ba356-thumbnail.jpg" group-title="MLB",[MLB] Minnesota Twins vs. Los Angeles Angels (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/min-laa
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/min-laa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/phi-nym/playlist.m3u8?tk=DlvjbbVnErNvMgBUGKASWQ&e=1789730854
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs. Houston Astros (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/cfe094046b8e26e4056a92e5dbef7d60-thumbnail.jpg" group-title="MLB",[MLB] Kansas City Royals vs. Houston Astros (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/kc-hou
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/kc-hou
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/min-laa/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
+#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Phoenix Mercury vs. Portland Fire (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f14b406e4fadd166ea03767c1d8ba356-thumbnail.jpg" group-title="NBA",[WNBA] Phoenix Mercury vs. Portland Fire (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-17/phx-por
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-17/phx-por
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/kc-hou/playlist.m3u8?tk=DlvjbbVnErNvMgBUGKASWQ&e=1789730854
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs. Chicago White Sox (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3b458bd35284fafce87d00b837f34387-thumbnail.jpg" group-title="MLB",[MLB] Detroit Tigers vs. Chicago White Sox (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-17/det-chw
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-17/det-chw
+https://messi.damitv.st/live-hls/channel/wnba/2026-09-17/phx-por/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
+#EXTINF:-1 tvg-chno="4" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Las Vegas Aces vs. Seattle Storm (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c4654a309b60326c9092be81f5f63124-thumbnail.jpg" group-title="NBA",[WNBA] Las Vegas Aces vs. Seattle Storm (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-17/lv-sea
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-17/lv-sea
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-17/det-chw/playlist.m3u8?tk=h8ocQjIHqW3L_s3OAOaoJA&e=1789730855
-#EXTINF:-1 tvg-chno="5" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Connecticut Sun vs. Atlanta Dream (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/93b5e11fcfbd3c173aceca48bf8f6af9-thumbnail.jpg" group-title="NBA",[WNBA] Connecticut Sun vs. Atlanta Dream (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-17/con-atl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-17/con-atl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-09-17/con-atl/playlist.m3u8?tk=a0kK9rygjkj4Vzplh7sPSQ&e=1789730856
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[american-football] vs (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] vs (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-echo~vs-american-football-23487
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-echo~vs-american-football-23487
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/echo/vs-american-football-23487/playlist.m3u8?tk=a0kK9rygjkj4Vzplh7sPSQ&e=1789730856
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[american-football] Concord Mountain Lions vs Charleston Golden Eagles (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Concord Mountain Lions vs Charleston Golden Eagles (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_concord-mountain-lions-charleston-golden-eagles-live-streaming-587786544
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_concord-mountain-lions-charleston-golden-eagles-live-streaming-587786544
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_concord-mountain-lions-charleston-golden-eagles-live-streaming-587786544/playlist.m3u8?tk=a0kK9rygjkj4Vzplh7sPSQ&e=1789730856
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[american-football] Pittsburgh vs Syracuse (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rFMDDAZYMDJIhuIKSBQhEMEBFxWQd00yQU+w2fRRgVGtp-L0sshpMtLqi9GFAA.webp" group-title="Live Events",[american-football] Pittsburgh vs Syracuse (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_pittsburgh-syracuse-live-streaming-587786976
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_pittsburgh-syracuse-live-streaming-587786976
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_pittsburgh-syracuse-live-streaming-587786976/playlist.m3u8?tk=B1kEXglzUPVzaKfvC3_RBg&e=1789730857
+https://messi.damitv.st/live-hls/channel/wnba/2026-09-17/lv-sea/playlist.m3u8?tk=Bt28jv2CtES0dd6wvzZoGA&e=1789747518
