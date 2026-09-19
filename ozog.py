@@ -20,7 +20,7 @@ TAG = "OVOGOZO"
 
 CACHE_FILE = Cache(TAG, exp=28_800)
 
-BASE_URL = "https://gozowatch.top/updates/"
+BASE_URL = "https://monperson.shop/updates"
 
 REFERER = "https://gozowatch.top/"
 ORIGIN = "https://gozowatch.top"
