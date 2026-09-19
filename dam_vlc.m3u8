@@ -3,14 +3,54 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=T02kpg4EVmEJDcDMTEuBNg&e=1789839394
-#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Austria - Practice 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bdf157c11e1a23821ba2dddaf2de4503-thumbnail.jpg" group-title="Motorsports",[Motorsports] Austria - Practice 2 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=motogp/2026/austria/practice-2
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=motogp/2026/austria/practice-2
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=-ZpZ7vIwhRItR_2ZQsORtQ&e=1789857515
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Melbourne United vs. Adelaide 36ers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7fbe55774a0951175bcfb592ad429ff9-thumbnail.jpg" group-title="Basketball",[Basketball] Melbourne United vs. Adelaide 36ers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-19/mel-adl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-19/mel-adl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/motogp/2026/austria/practice-2/playlist.m3u8?tk=Qtw3sT27hfqJoqVfCI4JTg&e=1789839395
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[football] Juárez vs Tigres UANL (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEDOBgkuECpDcQfECYggzMPSEtmUBYEgp9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[football] Juárez vs Tigres UANL (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-fc-juarez-vs-tigres-uanl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-fc-juarez-vs-tigres-uanl
+https://messi.damitv.st/live-hls/channel/nbl/2026-09-19/mel-adl/playlist.m3u8?tk=-ZpZ7vIwhRItR_2ZQsORtQ&e=1789857515
+#EXTINF:-1 tvg-chno="3" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Perth Wildcats vs. South East Melbourne Phoenix (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1698c1e015599a61ef6b6d327a3c6ac7-thumbnail.jpg" group-title="Basketball",[Basketball] Perth Wildcats vs. South East Melbourne Phoenix (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-19/per-pnx
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-19/per-pnx
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-fc-juarez-vs-tigres-uanl/playlist.m3u8?tk=Qtw3sT27hfqJoqVfCI4JTg&e=1789839395
+https://messi.damitv.st/live-hls/channel/nbl/2026-09-19/per-pnx/playlist.m3u8?tk=-ZpZ7vIwhRItR_2ZQsORtQ&e=1789857515
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Tottenham Hotspur vs. Aston Villa (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4394f09331b0e6ed2a90c915d8f4203b-thumbnail.jpg" group-title="Live Events",[Premier League] Tottenham Hotspur vs. Aston Villa (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=pl/2026-09-19/tot-avl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=pl/2026-09-19/tot-avl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/pl/2026-09-19/tot-avl/playlist.m3u8?tk=-ZpZ7vIwhRItR_2ZQsORtQ&e=1789857515
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Championship] Stoke City vs. Sheffield United (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/87393dcbb732585419ae8b57614bc3a6-thumbnail.jpg" group-title="Live Events",[EFL Championship] Stoke City vs. Sheffield United (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=efl-championship/2026-09-19/stk-shu
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=efl-championship/2026-09-19/stk-shu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/efl-championship/2026-09-19/stk-shu/playlist.m3u8?tk=zPxanyOKo3JI97o8zTK_3Q&e=1789857516
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Championship] Millwall vs. West Ham United (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/0159f83a0c15068c4fd3a670d35e88f3-thumbnail.jpg" group-title="Live Events",[EFL Championship] Millwall vs. West Ham United (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=efl-championship/2026-09-19/mil-whu
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=efl-championship/2026-09-19/mil-whu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/efl-championship/2026-09-19/mil-whu/playlist.m3u8?tk=zPxanyOKo3JI97o8zTK_3Q&e=1789857516
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Rochdale vs. Oldham Athletic (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c189973296a7efe5b8a0c301c99f2f14-thumbnail.jpg" group-title="Football",[Football] Rochdale vs. Oldham Athletic (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=efl-league-two/2026-09-19/rch-old
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=efl-league-two/2026-09-19/rch-old
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/efl-league-two/2026-09-19/rch-old/playlist.m3u8?tk=zPxanyOKo3JI97o8zTK_3Q&e=1789857516
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[National League] Hartlepool United vs. Worthing (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c44cb9b2f42a947b6ff0e7337fb62aa3-thumbnail.jpg" group-title="Live Events",[National League] Hartlepool United vs. Worthing (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=national-league/2026-09-19/har-wor
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=national-league/2026-09-19/har-wor
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/national-league/2026-09-19/har-wor/playlist.m3u8?tk=zPxanyOKo3JI97o8zTK_3Q&e=1789857516
+#EXTINF:-1 tvg-chno="9" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=zPxanyOKo3JI97o8zTK_3Q&e=1789857516
+#EXTINF:-1 tvg-chno="10" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Austria - Qualifying (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/67a42dc4726b12ccd3d93b937fc95819-thumbnail.jpg" group-title="Motorsports",[Motorsports] Austria - Qualifying (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=motogp/2026/austria/qualifying
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=motogp/2026/austria/qualifying
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/motogp/2026/austria/qualifying/playlist.m3u8?tk=W42wPCmbKO6A0ZkW4BC_7Q&e=1789857517
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[NRL] Roosters vs. Sharks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ba99588a531aca3b621324630ac2fcc0-thumbnail.jpg" group-title="Live Events",[NRL] Roosters vs. Sharks (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nrl/2026-09-19/syd-cro
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nrl/2026-09-19/syd-cro
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nrl/2026-09-19/syd-cro/playlist.m3u8?tk=W42wPCmbKO6A0ZkW4BC_7Q&e=1789857517
