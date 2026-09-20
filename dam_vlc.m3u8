@@ -3,469 +3,644 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=26L23Z1FGZfd1cLvXDGTpg&e=1789901270
-#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[American Football] Western Kentucky Hilltoppers at Indiana Hoosiers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/cd5fd73d087b508059d2f31dd62f2eaa-thumbnail.jpg" group-title="American Football",[American Football] Western Kentucky Hilltoppers at Indiana Hoosiers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/wku-iu
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/wku-iu
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=gBymI_90-e610wtLR40zYw&e=1789908726
+#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[American Football] UTSA Roadrunners at Texas Longhorns (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8a19770e0d23790e16ea80aeb40f8848-thumbnail.jpg" group-title="American Football",[American Football] UTSA Roadrunners at Texas Longhorns (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/utsa-tex
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/utsa-tex
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/wku-iu/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="3" tvg-id="Football.Dummy.us" tvg-name="[American Football] Northern Iowa Panthers at Iowa Hawkeyes (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4ad301da072786e50e4711a28827fa59-thumbnail.jpg" group-title="American Football",[American Football] Northern Iowa Panthers at Iowa Hawkeyes (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/uni-iowa
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/uni-iowa
+https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/utsa-tex/playlist.m3u8?tk=gBymI_90-e610wtLR40zYw&e=1789908726
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs. Colorado Rockies (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/b105ceb21b5c90b7af7a018db2740891-thumbnail.jpg" group-title="MLB",[MLB] Seattle Mariners vs. Colorado Rockies (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/sea-col
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/sea-col
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/uni-iowa/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="4" tvg-id="Football.Dummy.us" tvg-name="[American Football] SE Louisiana Lions at UL Monroe Warhawks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4c370c72a46b286626d0dd1f209bd1ab-thumbnail.jpg" group-title="American Football",[American Football] SE Louisiana Lions at UL Monroe Warhawks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/sela-ulm
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/sela-ulm
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/sea-col/playlist.m3u8?tk=o-s9yugGxhUZvEqgZw4jhw&e=1789908727
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs. Arizona Diamondbacks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f073663a579db82a719afc7d488d2416-thumbnail.jpg" group-title="MLB",[MLB] New York Yankees vs. Arizona Diamondbacks (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/nyy-ari
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/nyy-ari
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/sela-ulm/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="5" tvg-id="Football.Dummy.us" tvg-name="[American Football] Ottawa RedBlacks at Calgary Stampeders (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3e8b64350c2cddb2e81ddb5634a28559-thumbnail.jpg" group-title="American Football",[American Football] Ottawa RedBlacks at Calgary Stampeders (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfl/2026-09-19/ott-cgy
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfl/2026-09-19/ott-cgy
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/nyy-ari/playlist.m3u8?tk=o-s9yugGxhUZvEqgZw4jhw&e=1789908727
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs. San Diego Padres (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ba6debfd52797c521c79e144a7647770-thumbnail.jpg" group-title="MLB",[MLB] Miami Marlins vs. San Diego Padres (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/mia-sd
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/mia-sd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfl/2026-09-19/ott-cgy/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="6" tvg-id="Football.Dummy.us" tvg-name="[American Football] Troy Trojans at Missouri Tigers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a9db86ee1f40d8d8877d70d0ea005e1e-thumbnail.jpg" group-title="American Football",[American Football] Troy Trojans at Missouri Tigers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/troy-miz
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/troy-miz
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/mia-sd/playlist.m3u8?tk=o-s9yugGxhUZvEqgZw4jhw&e=1789908727
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs. Los Angeles Dodgers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/646808e8525cc130d0edc63b0e66a61b-thumbnail.jpg" group-title="MLB",[MLB] San Francisco Giants vs. Los Angeles Dodgers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/sf-lad
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/sf-lad
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/troy-miz/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="7" tvg-id="Football.Dummy.us" tvg-name="[American Football] Florida Gators at Auburn Tigers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/99c4e1ebdb88cfcb00ceb11fb31fc8c6-thumbnail.jpg" group-title="American Football",[American Football] Florida Gators at Auburn Tigers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/fla-aub
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/fla-aub
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/sf-lad/playlist.m3u8?tk=o-s9yugGxhUZvEqgZw4jhw&e=1789908727
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs. Los Angeles Angels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d8d5465b8eec2d83ee0ee4d3bd4ba356-thumbnail.jpg" group-title="MLB",[MLB] Minnesota Twins vs. Los Angeles Angels (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/min-laa
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/min-laa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/fla-aub/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="8" tvg-id="Football.Dummy.us" tvg-name="[American Football] Michigan State Spartans at Notre Dame Fighting Irish (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a3dcd42ccd485f8865fb7157de3a201c-thumbnail.jpg" group-title="American Football",[American Football] Michigan State Spartans at Notre Dame Fighting Irish (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/msu-nd
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/msu-nd
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/min-laa/playlist.m3u8?tk=ZPNFTOh8BBkfur6XAH_ZKQ&e=1789908728
+#EXTINF:-1 tvg-chno="8" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Seattle Storm vs. Golden State Valkyries (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d8c3eac2dd05b75485bdc00417275ca1-thumbnail.jpg" group-title="NBA",[WNBA] Seattle Storm vs. Golden State Valkyries (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-19/sea-gs
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-19/sea-gs
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/msu-nd/playlist.m3u8?tk=44ozstM10xQQNpEyB15REQ&e=1789901271
-#EXTINF:-1 tvg-chno="9" tvg-id="Football.Dummy.us" tvg-name="[American Football] LSU Tigers at Ole Miss Rebels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1de35d7b75840e7cd76ae6b266d195dd-thumbnail.jpg" group-title="American Football",[American Football] LSU Tigers at Ole Miss Rebels (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/lsu-miss
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/lsu-miss
+https://messi.damitv.st/live-hls/channel/wnba/2026-09-19/sea-gs/playlist.m3u8?tk=ZPNFTOh8BBkfur6XAH_ZKQ&e=1789908728
+#EXTINF:-1 tvg-chno="9" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] Cruz vs. Bravo (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3c330162ae1900eaa8c369151c46543b-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] Cruz vs. Bravo (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cruz-vs-bravo-29073
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cruz-vs-bravo-29073
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/lsu-miss/playlist.m3u8?tk=VODrUrF038zzeecWgC3wKg&e=1789901272
-#EXTINF:-1 tvg-chno="10" tvg-id="Football.Dummy.us" tvg-name="[American Football] BYU Cougars at Colorado State Rams (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/68d36f0b9d956fe8e771222337e96213-thumbnail.jpg" group-title="American Football",[American Football] BYU Cougars at Colorado State Rams (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/byu-csu
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/byu-csu
+https://messi.damitv.st/live-hls/channel/cruz-vs-bravo-29073/playlist.m3u8?tk=ZPNFTOh8BBkfur6XAH_ZKQ&e=1789908728
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] FC Dallas vs. Austin FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c252bc3eef429bcf2432ed335f448760-thumbnail.jpg" group-title="Live Events",[MLS] FC Dallas vs. Austin FC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/dal-atx
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/dal-atx
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/byu-csu/playlist.m3u8?tk=VODrUrF038zzeecWgC3wKg&e=1789901272
-#EXTINF:-1 tvg-chno="11" tvg-id="Football.Dummy.us" tvg-name="[American Football] New Mexico Lobos at Oklahoma Sooners (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8549e7b689c5aafacc6eb55dc34b3571-thumbnail.jpg" group-title="American Football",[American Football] New Mexico Lobos at Oklahoma Sooners (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/unm-ou
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/unm-ou
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/dal-atx/playlist.m3u8?tk=ZPNFTOh8BBkfur6XAH_ZKQ&e=1789908728
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Houston Dynamo FC vs. FC Cincinnati (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d7039608ac96fa55e6dcc28763d3abbc-thumbnail.jpg" group-title="Live Events",[MLS] Houston Dynamo FC vs. FC Cincinnati (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/hou-cin
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/hou-cin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/unm-ou/playlist.m3u8?tk=VODrUrF038zzeecWgC3wKg&e=1789901272
-#EXTINF:-1 tvg-chno="12" tvg-id="Football.Dummy.us" tvg-name="[American Football] West Virginia Mountaineers at Virginia Cavaliers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e09fb47529cd7bc7f5d28c4069afbc3d-thumbnail.jpg" group-title="American Football",[American Football] West Virginia Mountaineers at Virginia Cavaliers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/wvu-uva
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/wvu-uva
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/hou-cin/playlist.m3u8?tk=ZPNFTOh8BBkfur6XAH_ZKQ&e=1789908728
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Minnesota United FC vs. LA Galaxy (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/eec5a12a037423a823177886768c6eea-thumbnail.jpg" group-title="Live Events",[MLS] Minnesota United FC vs. LA Galaxy (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/min-la
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/min-la
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/wvu-uva/playlist.m3u8?tk=VODrUrF038zzeecWgC3wKg&e=1789901272
-#EXTINF:-1 tvg-chno="13" tvg-id="Football.Dummy.us" tvg-name="[American Football] Kennesaw State Owls at Tennessee Volunteers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/cc0bfeec145fda4e16498a823d16b1d2-thumbnail.jpg" group-title="American Football",[American Football] Kennesaw State Owls at Tennessee Volunteers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cfb/2026-09-19/kenn-tenn
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cfb/2026-09-19/kenn-tenn
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/min-la/playlist.m3u8?tk=DzaXb6ouCEW5lcLQ1uEEdg&e=1789908729
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Sporting Kansas City vs. Philadelphia Union (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5a36546a57a4db376857e2189f3998c4-thumbnail.jpg" group-title="Live Events",[MLS] Sporting Kansas City vs. Philadelphia Union (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/skc-phi
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/skc-phi
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-09-19/kenn-tenn/playlist.m3u8?tk=VODrUrF038zzeecWgC3wKg&e=1789901272
-#EXTINF:-1 tvg-chno="14" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs. Baltimore Orioles (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7e9c1c3ff24e449ca0e216f67382056e-thumbnail.jpg" group-title="MLB",[MLB] Milwaukee Brewers vs. Baltimore Orioles (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/mil-bal
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/mil-bal
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/skc-phi/playlist.m3u8?tk=DzaXb6ouCEW5lcLQ1uEEdg&e=1789908729
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] St. Louis CITY SC vs. Toronto FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/42120d27eaaa59679e1dd9efc05c4885-thumbnail.jpg" group-title="Live Events",[MLS] St. Louis CITY SC vs. Toronto FC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/stl-tor
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/stl-tor
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/mil-bal/playlist.m3u8?tk=diaEeBnC9SNJBbawFBCK4A&e=1789901273
-#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Boston Red Sox vs. Tampa Bay Rays (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7891b4ed4f15aded1d290f579eda60eb-thumbnail.jpg" group-title="MLB",[MLB] Boston Red Sox vs. Tampa Bay Rays (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/bos-tb
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/bos-tb
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/stl-tor/playlist.m3u8?tk=DzaXb6ouCEW5lcLQ1uEEdg&e=1789908729
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Monterrey vs. Cruz Azul (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e72ca76b82e814a4b9c458efff1cbbf5-thumbnail.jpg" group-title="Football",[Football] Monterrey vs. Cruz Azul (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-19/mty-caz
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-19/mty-caz
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/bos-tb/playlist.m3u8?tk=diaEeBnC9SNJBbawFBCK4A&e=1789901273
-#EXTINF:-1 tvg-chno="16" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. New York Mets (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a144b8430c294ba06ffa43ffe20e5f90-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. New York Mets (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/phi-nym
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/phi-nym
+https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-19/mty-caz/playlist.m3u8?tk=DzaXb6ouCEW5lcLQ1uEEdg&e=1789908729
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Colorado Rapids vs. Seattle Sounders FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c1db2a4333aba68839acc04fe1d1e3e2-thumbnail.jpg" group-title="Live Events",[MLS] Colorado Rapids vs. Seattle Sounders FC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/col-sea
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/col-sea
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/phi-nym/playlist.m3u8?tk=diaEeBnC9SNJBbawFBCK4A&e=1789901273
-#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs. Cleveland Guardians (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a6075f5042cc33833654f5446c030b2e-thumbnail.jpg" group-title="MLB",[MLB] Athletics vs. Cleveland Guardians (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/ath-cle
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/ath-cle
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/col-sea/playlist.m3u8?tk=DzaXb6ouCEW5lcLQ1uEEdg&e=1789908729
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Nashville SC vs. Chicago Fire FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6999a3f47248a32c7e07deb0d9e79f82-thumbnail.jpg" group-title="Live Events",[MLS] Nashville SC vs. Chicago Fire FC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/nsh-chi
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/nsh-chi
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/ath-cle/playlist.m3u8?tk=diaEeBnC9SNJBbawFBCK4A&e=1789901273
-#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs. Cincinnati Reds (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a07d1a6cf275a69ba97c12631b31a059-thumbnail.jpg" group-title="MLB",[MLB] Chicago Cubs vs. Cincinnati Reds (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/chc-cin
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/chc-cin
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/nsh-chi/playlist.m3u8?tk=KbjbVkyxaGeC51U3Z4T45w&e=1789908730
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Real Salt Lake vs. Vancouver Whitecaps (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a69bd9c6b636e2e1ab1fde35c4a8c810-thumbnail.jpg" group-title="Live Events",[MLS] Real Salt Lake vs. Vancouver Whitecaps (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/rsl-van
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/rsl-van
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/chc-cin/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="19" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs. Pittsburgh Pirates (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ebe5395d2649820b7b0106b4a96e731b-thumbnail.jpg" group-title="MLB",[MLB] Kansas City Royals vs. Pittsburgh Pirates (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/kc-pit
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/kc-pit
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/kc-pit/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="20" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Toronto Blue Jays vs. Texas Rangers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6a334c78011546be1fbc7ca4ef375dea-thumbnail.jpg" group-title="MLB",[MLB] Toronto Blue Jays vs. Texas Rangers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/tor-tex
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/tor-tex
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/tor-tex/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Atlanta Braves vs. Houston Astros (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/75b54b6c573517f896f7bb06c0f1848a-thumbnail.jpg" group-title="MLB",[MLB] Atlanta Braves vs. Houston Astros (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/atl-hou
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/atl-hou
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/atl-hou/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="22" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Washington Nationals vs. St. Louis Cardinals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4d03ec857d7f7a79c820940c6b922413-thumbnail.jpg" group-title="MLB",[MLB] Washington Nationals vs. St. Louis Cardinals (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-19/wsh-stl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-19/wsh-stl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-19/wsh-stl/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="23" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Chicago Sky vs. Atlanta Dream (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e57df26ebae5eba01d1885991b86b59f-thumbnail.jpg" group-title="NBA",[WNBA] Chicago Sky vs. Atlanta Dream (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-19/chi-atl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-19/chi-atl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-09-19/chi-atl/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="24" tvg-id="UFC.247.Dummy.us" tvg-name="[UFC] Crypto.com UFC 331: Van vs. Pantoja 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5a7f80d9385b7041c4e00ad4269dbe95-thumbnail.jpg" group-title="Live Events",[UFC] Crypto.com UFC 331: Van vs. Pantoja 2 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=cryptocom-ufc-331-van-vs-pantoja-2-29012
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=cryptocom-ufc-331-van-vs-pantoja-2-29012
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cryptocom-ufc-331-van-vs-pantoja-2-29012/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="25" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Atlas vs. Pumas UNAM (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2dc7a1d4961ce85921b8c659b55b4ce1-thumbnail.jpg" group-title="Football",[Football] Atlas vs. Pumas UNAM (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-19/ats-unam
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-19/ats-unam
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-19/ats-unam/playlist.m3u8?tk=97auMRf5IAtURI5rMY6w4Q&e=1789901274
-#EXTINF:-1 tvg-chno="26" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Atlético de San Luis vs. Necaxa (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1582154253d25ad4a7353197d03fe8aa-thumbnail.jpg" group-title="Football",[Football] Atlético de San Luis vs. Necaxa (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-19/asl-ncx
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-19/asl-ncx
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-19/asl-ncx/playlist.m3u8?tk=GUhDpzH5GSKoaDBaGqmb3A&e=1789901275
-#EXTINF:-1 tvg-chno="27" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] CF Montréal vs. Columbus Crew (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ffdcd0db3cd750cf3ddbd2b01bcd6898-thumbnail.jpg" group-title="Live Events",[MLS] CF Montréal vs. Columbus Crew (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/mtl-clb
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/mtl-clb
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-19/mtl-clb/playlist.m3u8?tk=GUhDpzH5GSKoaDBaGqmb3A&e=1789901275
-#EXTINF:-1 tvg-chno="28" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] D.C. United vs. Charlotte FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3c0810d7928b51a493c5edba5ec706c1-thumbnail.jpg" group-title="Live Events",[MLS] D.C. United vs. Charlotte FC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/dc-clt
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/dc-clt
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-19/dc-clt/playlist.m3u8?tk=GUhDpzH5GSKoaDBaGqmb3A&e=1789901275
-#EXTINF:-1 tvg-chno="29" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] New England Revolution vs. Orlando City SC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/aa88655e085f1d0e61ba3db240bcc562-thumbnail.jpg" group-title="Live Events",[MLS] New England Revolution vs. Orlando City SC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/ne-orl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/ne-orl
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-19/ne-orl/playlist.m3u8?tk=GUhDpzH5GSKoaDBaGqmb3A&e=1789901275
-#EXTINF:-1 tvg-chno="30" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] San Jose Earthquakes vs. LAFC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d9a46427f2e399170407e19dab89d2ff-thumbnail.jpg" group-title="Live Events",[MLS] San Jose Earthquakes vs. LAFC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-19/sj-lafc
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-19/sj-lafc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-19/sj-lafc/playlist.m3u8?tk=GUhDpzH5GSKoaDBaGqmb3A&e=1789901275
-#EXTINF:-1 tvg-chno="31" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/mls/2026-09-19/rsl-van/playlist.m3u8?tk=KbjbVkyxaGeC51U3Z4T45w&e=1789908730
+#EXTINF:-1 tvg-chno="19" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=GUhDpzH5GSKoaDBaGqmb3A&e=1789901275
-#EXTINF:-1 tvg-chno="32" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Montreal Canadiens vs. Toronto Maple Leafs (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c4a03829dc94b00115521ff382c64a5b-thumbnail.jpg" group-title="NHL",[NHL] Montreal Canadiens vs. Toronto Maple Leafs (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-19/mtl-tor
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-19/mtl-tor
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=KbjbVkyxaGeC51U3Z4T45w&e=1789908730
+#EXTINF:-1 tvg-chno="20" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Chicago Blackhawks vs. Minnesota Wild (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3bcfd4cdc48fa5c2a5f385d9a2a1736d-thumbnail.jpg" group-title="NHL",[NHL] Chicago Blackhawks vs. Minnesota Wild (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-19/chi-min
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-19/chi-min
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-09-19/mtl-tor/playlist.m3u8?tk=xg0ndr_m2_yqdO_6GmR-KA&e=1789901276
-#EXTINF:-1 tvg-chno="33" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Bristol Motor Speedway -  Bass Pro Shops Night Race (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c8e4b20117912a3f7d3228f61a44a94a-thumbnail.jpg" group-title="Motorsports",[Motorsports] Bristol Motor Speedway -  Bass Pro Shops Night Race (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=bristol-motor-speedway---bass-pro-shops-night-race-29016
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=bristol-motor-speedway---bass-pro-shops-night-race-29016
+https://messi.damitv.st/live-hls/channel/nhl/2026-09-19/chi-min/playlist.m3u8?tk=KbjbVkyxaGeC51U3Z4T45w&e=1789908730
+#EXTINF:-1 tvg-chno="21" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Vegas Golden Knights vs. Los Angeles Kings (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7f13cae45af5c05d53ba489b6e708d33-thumbnail.jpg" group-title="NHL",[NHL] Vegas Golden Knights vs. Los Angeles Kings (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-19/vgk-la
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-19/vgk-la
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/bristol-motor-speedway---bass-pro-shops-night-race-29016/playlist.m3u8?tk=xg0ndr_m2_yqdO_6GmR-KA&e=1789901276
-#EXTINF:-1 tvg-chno="34" tvg-id="Live.Event.us" tvg-name="[american-football] Lyon College Scots vs Greenville Panthers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lyon College Scots vs Greenville Panthers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lyon-college-scots-greenville-panthers-live-streaming-610714080
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lyon-college-scots-greenville-panthers-live-streaming-610714080
+https://messi.damitv.st/live-hls/channel/nhl/2026-09-19/vgk-la/playlist.m3u8?tk=KbjbVkyxaGeC51U3Z4T45w&e=1789908730
+#EXTINF:-1 tvg-chno="22" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Vancouver Canucks vs. Seattle Kraken (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/185b38f0fe7f93516a4a5c8bac98495c-thumbnail.jpg" group-title="NHL",[NHL] Vancouver Canucks vs. Seattle Kraken (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-19/van-sea
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-19/van-sea
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lyon-college-scots-greenville-panthers-live-streaming-610714080/playlist.m3u8?tk=xg0ndr_m2_yqdO_6GmR-KA&e=1789901276
-#EXTINF:-1 tvg-chno="35" tvg-id="Live.Event.us" tvg-name="[american-football] Edward Waters Tigers vs Savannah State Tigers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Edward Waters Tigers vs Savannah State Tigers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_edward-waters-tigers-savannah-st-live-streaming-587816352
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_edward-waters-tigers-savannah-st-live-streaming-587816352
+https://messi.damitv.st/live-hls/channel/nhl/2026-09-19/van-sea/playlist.m3u8?tk=KbjbVkyxaGeC51U3Z4T45w&e=1789908730
+#EXTINF:-1 tvg-chno="23" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[AEW] AEW Saturday Night Collision (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6e29b1bb679dd5133c85bbaadc2c4b13-thumbnail.jpg" group-title="Live Events",[AEW] AEW Saturday Night Collision (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=aew/2026-09-19
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=aew/2026-09-19
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_edward-waters-tigers-savannah-st-live-streaming-587816352/playlist.m3u8?tk=xg0ndr_m2_yqdO_6GmR-KA&e=1789901276
-#EXTINF:-1 tvg-chno="36" tvg-id="Live.Event.us" tvg-name="[american-football] Missouri State vs Marshall (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Missouri State vs Marshall (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_missouri-state-marshall-live-streaming-587839680
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_missouri-state-marshall-live-streaming-587839680
+https://messi.damitv.st/live-hls/channel/aew/2026-09-19/playlist.m3u8?tk=2MOiynv7E1gvc8sjfeA9Yg&e=1789908731
+#EXTINF:-1 tvg-chno="24" tvg-id="Live.Event.us" tvg-name="[fight] Pitbull vs Bravo (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAY29lBWWMATmAFNhKVyThS0wRhr9gth5RgBDS2Z4GmCF4BDoKoNOKSDVFCI5YABMeYCmEjoVAsHPQgUBEN0P40aJmVppzIYiBiPHjE24dlzttJ6z27MGJI-FjUfNbwsqQULOKaFIoJQA.webp" group-title="Live Events",[fight] Pitbull vs Bravo (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-foxtrot~pitbull-vs-bravo
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-foxtrot~pitbull-vs-bravo
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_missouri-state-marshall-live-streaming-587839680/playlist.m3u8?tk=xg0ndr_m2_yqdO_6GmR-KA&e=1789901276
-#EXTINF:-1 tvg-chno="37" tvg-id="Live.Event.us" tvg-name="[american-football] John Carroll Blue Streaks vs Kenyon Lords (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] John Carroll Blue Streaks vs Kenyon Lords (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_john-carroll-blue-streaks-kenyon-lords-live-streaming-610715376
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_john-carroll-blue-streaks-kenyon-lords-live-streaming-610715376
+https://messi.damitv.st/live-sd/streamed/foxtrot/pitbull-vs-bravo/playlist.m3u8?tk=2MOiynv7E1gvc8sjfeA9Yg&e=1789908731
+#EXTINF:-1 tvg-chno="25" tvg-id="Live.Event.us" tvg-name="[american-football] Trinity Tigers vs Pacific Lutheran Lutes (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Trinity Tigers vs Pacific Lutheran Lutes (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_trinity-tigers-pacific-lutheran-lutes-live-streaming-610720560
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_trinity-tigers-pacific-lutheran-lutes-live-streaming-610720560
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_john-carroll-blue-streaks-kenyon-lords-live-streaming-610715376/playlist.m3u8?tk=xg0ndr_m2_yqdO_6GmR-KA&e=1789901276
-#EXTINF:-1 tvg-chno="38" tvg-id="Live.Event.us" tvg-name="[american-football] Greensboro Pride vs Bluefield Rams (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Greensboro Pride vs Bluefield Rams (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_greensboro-pride-bluefield-rams-live-streaming-610714944
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_greensboro-pride-bluefield-rams-live-streaming-610714944
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_trinity-tigers-pacific-lutheran-lutes-live-streaming-610720560/playlist.m3u8?tk=2MOiynv7E1gvc8sjfeA9Yg&e=1789908731
+#EXTINF:-1 tvg-chno="26" tvg-id="Live.Event.us" tvg-name="[american-football] Macalester Scots vs Carleton Knights (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Macalester Scots vs Carleton Knights (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_macalester-scots-carleton-knights-live-streaming-610720128
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_macalester-scots-carleton-knights-live-streaming-610720128
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_greensboro-pride-bluefield-rams-live-streaming-610714944/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="39" tvg-id="Live.Event.us" tvg-name="[american-football] Anderson	Ravens vs Kalamazoo Hornets (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Anderson	Ravens vs Kalamazoo Hornets (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_andersonravens-kalamazoo-hornets-live-streaming-610714512
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_andersonravens-kalamazoo-hornets-live-streaming-610714512
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_macalester-scots-carleton-knights-live-streaming-610720128/playlist.m3u8?tk=2MOiynv7E1gvc8sjfeA9Yg&e=1789908731
+#EXTINF:-1 tvg-chno="27" tvg-id="Live.Event.us" tvg-name="[american-football] Crown Storm vs Martin Luther Knights (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Crown Storm vs Martin Luther Knights (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_crown-storm-martin-luther-knights-live-streaming-610719696
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_crown-storm-martin-luther-knights-live-streaming-610719696
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_andersonravens-kalamazoo-hornets-live-streaming-610714512/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="40" tvg-id="Live.Event.us" tvg-name="[american-football] Wingate Bulldogs vs Newberry Wolves (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Wingate Bulldogs vs Newberry Wolves (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_wingate-bulldogs-newberry-wolves-live-streaming-587819376
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_wingate-bulldogs-newberry-wolves-live-streaming-587819376
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_crown-storm-martin-luther-knights-live-streaming-610719696/playlist.m3u8?tk=2MOiynv7E1gvc8sjfeA9Yg&e=1789908731
+#EXTINF:-1 tvg-chno="28" tvg-id="Live.Event.us" tvg-name="[american-football] Bethel Royals vs Gustavus Adolphus	Gusties (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Bethel Royals vs Gustavus Adolphus	Gusties (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_bethel-royals-gustavus-adolphusgusties-live-streaming-610719264
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_bethel-royals-gustavus-adolphusgusties-live-streaming-610719264
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_wingate-bulldogs-newberry-wolves-live-streaming-587819376/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="41" tvg-id="Live.Event.us" tvg-name="[american-football] Virginia Union Panthers vs Bluefield State Big Blues (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Virginia Union Panthers vs Bluefield State Big Blues (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-union-panthers-bluefield-state-big-blues-live-streaming-587818944
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-union-panthers-bluefield-state-big-blues-live-streaming-587818944
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_bethel-royals-gustavus-adolphusgusties-live-streaming-610719264/playlist.m3u8?tk=2MOiynv7E1gvc8sjfeA9Yg&e=1789908731
+#EXTINF:-1 tvg-chno="29" tvg-id="Live.Event.us" tvg-name="[american-football] Texas A&M Kingsville Javelinas vs Eastern New Mexico Greyhounds (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Texas A&M Kingsville Javelinas vs Eastern New Mexico Greyhounds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_texas-am-kingsville-javelinas-eastern-new-mexico-greyhounds-live-streaming-587826288
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_texas-am-kingsville-javelinas-eastern-new-mexico-greyhounds-live-streaming-587826288
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_virginia-union-panthers-bluefield-state-big-blues-live-streaming-587818944/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="42" tvg-id="Live.Event.us" tvg-name="[american-football] Virginia-Wise Cavaliers vs Carson-Newman Eagles (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Virginia-Wise Cavaliers vs Carson-Newman Eagles (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-wise-cavaliers-carson-newman-eagles-live-streaming-587818512
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-wise-cavaliers-carson-newman-eagles-live-streaming-587818512
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_texas-am-kingsville-javelinas-eastern-new-mexico-greyhounds-live-streaming-587826288/playlist.m3u8?tk=Ehc6ihROZqZEBnn3dpvvEw&e=1789908732
+#EXTINF:-1 tvg-chno="30" tvg-id="Live.Event.us" tvg-name="[american-football] Sul Ross State Lobos vs Texas-Permian Basin Falcons (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Sul Ross State Lobos vs Texas-Permian Basin Falcons (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_sul-ross-state-lobos-texas-permian-basin-falcons-live-streaming-587825856
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_sul-ross-state-lobos-texas-permian-basin-falcons-live-streaming-587825856
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_virginia-wise-cavaliers-carson-newman-eagles-live-streaming-587818512/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="43" tvg-id="Live.Event.us" tvg-name="[american-football] Lock Haven Bald Eagles vs Kutztown Golden Bears (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lock Haven Bald Eagles vs Kutztown Golden Bears (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lock-haven-bald-eagles-kutztown-golden-bears-live-streaming-587817648
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lock-haven-bald-eagles-kutztown-golden-bears-live-streaming-587817648
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_sul-ross-state-lobos-texas-permian-basin-falcons-live-streaming-587825856/playlist.m3u8?tk=Ehc6ihROZqZEBnn3dpvvEw&e=1789908732
+#EXTINF:-1 tvg-chno="31" tvg-id="Live.Event.us" tvg-name="[american-football] Harding Bisons vs Southern Arkansas Muleriders (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Harding Bisons vs Southern Arkansas Muleriders (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_harding-bisons-southern-arkansas-muleriders-live-streaming-587825424
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_harding-bisons-southern-arkansas-muleriders-live-streaming-587825424
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lock-haven-bald-eagles-kutztown-golden-bears-live-streaming-587817648/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="44" tvg-id="Live.Event.us" tvg-name="[american-football] Livingstone Blue Bears vs Winston-Salem State Rams (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Livingstone Blue Bears vs Winston-Salem State Rams (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_livingstone-blue-bears-winston-salem-state-rams-live-streaming-587817216
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_livingstone-blue-bears-winston-salem-state-rams-live-streaming-587817216
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_harding-bisons-southern-arkansas-muleriders-live-streaming-587825424/playlist.m3u8?tk=Ehc6ihROZqZEBnn3dpvvEw&e=1789908732
+#EXTINF:-1 tvg-chno="32" tvg-id="Live.Event.us" tvg-name="[american-football] Fort Hays State Tigers vs Pittsburg State Gorillas (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Fort Hays State Tigers vs Pittsburg State Gorillas (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_fort-hays-state-tigers-pittsburg-state-gorillas-live-streaming-587824992
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_fort-hays-state-tigers-pittsburg-state-gorillas-live-streaming-587824992
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_livingstone-blue-bears-winston-salem-state-rams-live-streaming-587817216/playlist.m3u8?tk=jBCfWPNBS4ItddjsJDLRMw&e=1789901277
-#EXTINF:-1 tvg-chno="45" tvg-id="Live.Event.us" tvg-name="[american-football] Lenoir Rhyne Bears vs Mars Hill Lions (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lenoir Rhyne Bears vs Mars Hill Lions (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lenoir-rhyne-bears-mars-hill-lions-live-streaming-587816784
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lenoir-rhyne-bears-mars-hill-lions-live-streaming-587816784
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_fort-hays-state-tigers-pittsburg-state-gorillas-live-streaming-587824992/playlist.m3u8?tk=Ehc6ihROZqZEBnn3dpvvEw&e=1789908732
+#EXTINF:-1 tvg-chno="33" tvg-id="Live.Event.us" tvg-name="[american-football] Arkansas Tech Wonder Boys vs Ouachita Baptist Tigers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Arkansas Tech Wonder Boys vs Ouachita Baptist Tigers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_arkansas-tech-wonder-boys-ouachita-baptist-tigers-live-streaming-587820240
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_arkansas-tech-wonder-boys-ouachita-baptist-tigers-live-streaming-587820240
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lenoir-rhyne-bears-mars-hill-lions-live-streaming-587816784/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="46" tvg-id="Live.Event.us" tvg-name="[american-football] Clark Atlanta Panthers vs Miles Golden Bears (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Clark Atlanta Panthers vs Miles Golden Bears (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_clark-atlanta-panthers-miles-golden-bears-live-streaming-587815920
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_clark-atlanta-panthers-miles-golden-bears-live-streaming-587815920
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_arkansas-tech-wonder-boys-ouachita-baptist-tigers-live-streaming-587820240/playlist.m3u8?tk=Ehc6ihROZqZEBnn3dpvvEw&e=1789908732
+#EXTINF:-1 tvg-chno="34" tvg-id="Live.Event.us" tvg-name="[american-football] Mckendree Bearcats vs Indianapolis Greyhounds (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Mckendree Bearcats vs Indianapolis Greyhounds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_mckendree-bearcats-indianapolis-greyhounds-live-streaming-587807280
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_mckendree-bearcats-indianapolis-greyhounds-live-streaming-587807280
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_clark-atlanta-panthers-miles-golden-bears-live-streaming-587815920/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="47" tvg-id="Live.Event.us" tvg-name="[american-football] Chowan Hawks vs Barton Bulldogs (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Chowan Hawks vs Barton Bulldogs (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_chowan-hawks-barton-bulldogs-live-streaming-587815488
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_chowan-hawks-barton-bulldogs-live-streaming-587815488
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_mckendree-bearcats-indianapolis-greyhounds-live-streaming-587807280/playlist.m3u8?tk=IKe98T76HTiCFCjsPY1TDQ&e=1789908733
+#EXTINF:-1 tvg-chno="35" tvg-id="Live.Event.us" tvg-name="[american-football] Tulsa Golden Hurricane vs East Texas A&M-Commerce Lions (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Tulsa Golden Hurricane vs East Texas A&M-Commerce Lions (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_tulsa-east-texas-am-commerce-live-streaming-587856528
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_tulsa-east-texas-am-commerce-live-streaming-587856528
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_chowan-hawks-barton-bulldogs-live-streaming-587815488/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="48" tvg-id="Live.Event.us" tvg-name="[american-football] Catawba Indians vs Emory And Henry Wasps (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Catawba Indians vs Emory And Henry Wasps (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_catawba-indians-emory-and-henry-wasps-live-streaming-587815056
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_catawba-indians-emory-and-henry-wasps-live-streaming-587815056
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_tulsa-east-texas-am-commerce-live-streaming-587856528/playlist.m3u8?tk=IKe98T76HTiCFCjsPY1TDQ&e=1789908733
+#EXTINF:-1 tvg-chno="36" tvg-id="Live.Event.us" tvg-name="[american-football] Louisiana Ragin Cajuns vs UAB Blazers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Louisiana Ragin Cajuns vs UAB Blazers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lafayette-uab-live-streaming-587846592
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lafayette-uab-live-streaming-587846592
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_catawba-indians-emory-and-henry-wasps-live-streaming-587815056/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="49" tvg-id="Live.Event.us" tvg-name="[american-football] Lane Dragons vs Morehouse Maroon Tigers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lane Dragons vs Morehouse Maroon Tigers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lane-dragons-morehouse-maroon-tigers-live-streaming-587814192
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lane-dragons-morehouse-maroon-tigers-live-streaming-587814192
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lafayette-uab-live-streaming-587846592/playlist.m3u8?tk=IKe98T76HTiCFCjsPY1TDQ&e=1789908733
+#EXTINF:-1 tvg-chno="37" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Edmonton Oilers vs Winnipeg Jets (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rVuCnYQIHiG4g+IKSBg6QKC1Z3wCwJBT7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[hockey] Edmonton Oilers vs Winnipeg Jets (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_nhl-preseason_oilers-jets-live-streaming-610736544
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_nhl-preseason_oilers-jets-live-streaming-610736544
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lane-dragons-morehouse-maroon-tigers-live-streaming-587814192/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="50" tvg-id="Live.Event.us" tvg-name="[american-football] Campbell Fighting Camels vs North Carolina A&T Aggies (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Campbell Fighting Camels vs North Carolina A&T Aggies (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_campbell-north-carolina-at-live-streaming-623877120
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_campbell-north-carolina-at-live-streaming-623877120
+https://messi.damitv.st/live-sd/streamed/delta/live_nhl-preseason_oilers-jets-live-streaming-610736544/playlist.m3u8?tk=IKe98T76HTiCFCjsPY1TDQ&e=1789908733
+#EXTINF:-1 tvg-chno="38" tvg-id="Live.Event.us" tvg-name="[american-football] UT Rio Grande Valley vs McNeese State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] UT Rio Grande Valley vs McNeese State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_ut-rio-grande-valley-mcneese-state-live-streaming-623881440
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_ut-rio-grande-valley-mcneese-state-live-streaming-623881440
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_campbell-north-carolina-at-live-streaming-623877120/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="51" tvg-id="Live.Event.us" tvg-name="[american-football] Charleston Southern vs Point University (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Charleston Southern vs Point University (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_charleston-southern-point-university-skyhawks-live-streaming-623866752
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_charleston-southern-point-university-skyhawks-live-streaming-623866752
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_ut-rio-grande-valley-mcneese-state-live-streaming-623881440/playlist.m3u8?tk=IKe98T76HTiCFCjsPY1TDQ&e=1789908733
+#EXTINF:-1 tvg-chno="39" tvg-id="Live.Event.us" tvg-name="[american-football] Northern Colorado vs Northeastern State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Northern Colorado vs Northeastern State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_northern-colorado-bears-northeastern-state-riverhawks-live-streaming-623868912
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_northern-colorado-bears-northeastern-state-riverhawks-live-streaming-623868912
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_charleston-southern-point-university-skyhawks-live-streaming-623866752/playlist.m3u8?tk=8eNF3U6cXC_-Bau5fs1JjA&e=1789901278
-#EXTINF:-1 tvg-chno="52" tvg-id="Live.Event.us" tvg-name="[american-football] Chattanooga vs Wofford (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Chattanooga vs Wofford (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_chattanooga-wofford-live-streaming-623877552
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_chattanooga-wofford-live-streaming-623877552
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_northern-colorado-bears-northeastern-state-riverhawks-live-streaming-623868912/playlist.m3u8?tk=IKe98T76HTiCFCjsPY1TDQ&e=1789908733
+#EXTINF:-1 tvg-chno="40" tvg-id="Live.Event.us" tvg-name="[american-football] Utah Tech vs Northern Arizona (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Utah Tech vs Northern Arizona (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_utah-tech-trailblazers-northern-arizona-live-streaming-610727472
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_utah-tech-trailblazers-northern-arizona-live-streaming-610727472
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_chattanooga-wofford-live-streaming-623877552/playlist.m3u8?tk=ae08hGEQR2zvwXu3z9OrDw&e=1789901279
-#EXTINF:-1 tvg-chno="53" tvg-id="Live.Event.us" tvg-name="[american-football] Eastern Kentucky vs Dayton (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Eastern Kentucky vs Dayton (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_eastern-kentucky-dayton-flyers-live-streaming-623877984
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_eastern-kentucky-dayton-flyers-live-streaming-623877984
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_utah-tech-trailblazers-northern-arizona-live-streaming-610727472/playlist.m3u8?tk=rZpaju_CASAkfEwAkY9PAw&e=1789908734
+#EXTINF:-1 tvg-chno="41" tvg-id="Live.Event.us" tvg-name="[american-football] Prairie View A and M vs Stephen F. Austin (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Prairie View A and M vs Stephen F. Austin (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_prairie-view-am-stephen-f-austin-live-streaming-623881008
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_prairie-view-am-stephen-f-austin-live-streaming-623881008
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_eastern-kentucky-dayton-flyers-live-streaming-623877984/playlist.m3u8?tk=ae08hGEQR2zvwXu3z9OrDw&e=1789901279
-#EXTINF:-1 tvg-chno="54" tvg-id="Live.Event.us" tvg-name="[american-football] William and  Mary vs Fordham (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] William and  Mary vs Fordham (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_william-mary-fordham-live-streaming-623878848
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_william-mary-fordham-live-streaming-623878848
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_prairie-view-am-stephen-f-austin-live-streaming-623881008/playlist.m3u8?tk=rZpaju_CASAkfEwAkY9PAw&e=1789908734
+#EXTINF:-1 tvg-chno="42" tvg-id="Live.Event.us" tvg-name="[american-football] Weber State vs Northwestern State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Weber State vs Northwestern State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_weber-state-northwestern-st-live-streaming-610727904
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_weber-state-northwestern-st-live-streaming-610727904
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_william-mary-fordham-live-streaming-623878848/playlist.m3u8?tk=ae08hGEQR2zvwXu3z9OrDw&e=1789901279
-#EXTINF:-1 tvg-chno="55" tvg-id="Live.Event.us" tvg-name="[american-football] Gardner-Webb vs North Carolina Central (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Gardner-Webb vs North Carolina Central (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_gardner-webb-north-carolina-central-live-streaming-623878416
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_gardner-webb-north-carolina-central-live-streaming-623878416
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_weber-state-northwestern-st-live-streaming-610727904/playlist.m3u8?tk=rZpaju_CASAkfEwAkY9PAw&e=1789908734
+#EXTINF:-1 tvg-chno="43" tvg-id="Live.Event.us" tvg-name="[american-football] Cal Poly vs San Diego (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VbiBR0wokCD4gNUzSAj6TZ4wc1MkFPsNn0UOtlrY7y9LLK1NaYK70ohBAA.webp" group-title="Live Events",[american-football] Cal Poly vs San Diego (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_cal-poly-mustangs-san-diego-toreros-live-streaming-623880576
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_cal-poly-mustangs-san-diego-toreros-live-streaming-623880576
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_gardner-webb-north-carolina-central-live-streaming-623878416/playlist.m3u8?tk=ae08hGEQR2zvwXu3z9OrDw&e=1789901279
-#EXTINF:-1 tvg-chno="56" tvg-id="Live.Event.us" tvg-name="[american-football] Towson vs Morgan State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Towson vs Morgan State (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_towson-morgan-state-live-streaming-587860848
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_towson-morgan-state-live-streaming-587860848
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_cal-poly-mustangs-san-diego-toreros-live-streaming-623880576/playlist.m3u8?tk=rZpaju_CASAkfEwAkY9PAw&e=1789908734
+#EXTINF:-1 tvg-chno="44" tvg-id="Live.Event.us" tvg-name="[american-football] TCU vs Arkansas State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] TCU vs Arkansas State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_tcu-arkansas-st-live-streaming-587847024
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_tcu-arkansas-st-live-streaming-587847024
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_towson-morgan-state-live-streaming-587860848/playlist.m3u8?tk=ae08hGEQR2zvwXu3z9OrDw&e=1789901279
-#EXTINF:-1 tvg-chno="57" tvg-id="Live.Event.us" tvg-name="[american-football] Elon vs Sacred Heart (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Elon vs Sacred Heart (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_elon-sacred-heart-pioneers-live-streaming-587860416
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_elon-sacred-heart-pioneers-live-streaming-587860416
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_tcu-arkansas-st-live-streaming-587847024/playlist.m3u8?tk=rZpaju_CASAkfEwAkY9PAw&e=1789908734
+#EXTINF:-1 tvg-chno="45" tvg-id="Live.Event.us" tvg-name="[american-football] Tennessee vs Kennesaw State (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE5M8YIhgjgNMmURYQEEGRoRsS0iEVUlIFCBAbDwkOOU6R24MtHl1AodILZ6YQsCS4AxiidhuTnVhUnoXcTAAm1CIIA.webp" group-title="Live Events",[american-football] Tennessee vs Kennesaw State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-kennesaw-state-owls-at-tennessee-volunteers
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-kennesaw-state-owls-at-tennessee-volunteers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_elon-sacred-heart-pioneers-live-streaming-587860416/playlist.m3u8?tk=ae08hGEQR2zvwXu3z9OrDw&e=1789901279
-#EXTINF:-1 tvg-chno="58" tvg-id="Live.Event.us" tvg-name="[american-football] Appalachian State vs Charlotte (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rKDDpgklZiG4gpIFCEQwQJU4ZAQQfAsCQV7rEWJRgVKLp-L0sst5MtGCeYqIQQA.webp" group-title="Live Events",[american-football] Appalachian State vs Charlotte (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_appalachian-st-charlotte-live-streaming-587838384
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_appalachian-st-charlotte-live-streaming-587838384
+https://messi.damitv.st/live-sd/streamed/admin/ppv-kennesaw-state-owls-at-tennessee-volunteers/playlist.m3u8?tk=0DxeU5XMHqEwcs1SiLUPrQ&e=1789908735
+#EXTINF:-1 tvg-chno="46" tvg-id="Live.Event.us" tvg-name="[american-football] BYU Cougars at Colorado State Rams (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IKiBDAIIRDQkwRIFNOUgS44DQ1SNAYxAGsIYSbOJEe0momnjvchFBhBIptnphCwJLj0qhF1YnYVJ6AmB4chdpMIggA.webp" group-title="Live Events",[american-football] BYU Cougars at Colorado State Rams (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-byu-cougars-at-colorado-state-rams
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-byu-cougars-at-colorado-state-rams
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_appalachian-st-charlotte-live-streaming-587838384/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="59" tvg-id="Live.Event.us" tvg-name="[american-football] Old Dominion vs East Carolina (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rFCBj8wIQXxDcQUkBsQwQJEBE0hEfAsCQV7rEWJRgVKLp-L0sst5MtGCeYqIQQA.webp" group-title="Live Events",[american-football] Old Dominion vs East Carolina (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_old-dominion-east-carolina-live-streaming-587839248
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_old-dominion-east-carolina-live-streaming-587839248
+https://messi.damitv.st/live-sd/streamed/admin/ppv-byu-cougars-at-colorado-state-rams/playlist.m3u8?tk=0DxeU5XMHqEwcs1SiLUPrQ&e=1789908735
+#EXTINF:-1 tvg-chno="47" tvg-id="Soccer.Dummy.us" tvg-name="[football] DC United vs Charlotte FC (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aECjrYQ3MCRAHuIPiBggpxnSEQRcuAsCQU+w2fRR62mtnvL0ssppMtGCe9KIQQA.webp" group-title="Live Events",[football] DC United vs Charlotte FC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-d-c-united-vs-charlotte-fc
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-d-c-united-vs-charlotte-fc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_old-dominion-east-carolina-live-streaming-587839248/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="60" tvg-id="Live.Event.us" tvg-name="[american-football] South Carolina vs Mississippi State (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rUNzBlaoECG4gpIFCAgg+xkCRAxzpgsCQU+w2fRRa2KLlvL0sst5MtGCe9KIQQA.webp" group-title="Live Events",[american-football] South Carolina vs Mississippi State (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_south-carolina-mississippi-st-live-streaming-587837952
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_south-carolina-mississippi-st-live-streaming-587837952
+https://messi.damitv.st/live-sd/streamed/admin/ppv-d-c-united-vs-charlotte-fc/playlist.m3u8?tk=0DxeU5XMHqEwcs1SiLUPrQ&e=1789908735
+#EXTINF:-1 tvg-chno="48" tvg-id="Soccer.Dummy.us" tvg-name="[football] New England Revolution vs Orlando City (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rGfCIDCfENxC7d+3SRCIIekCALAkFPsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[football] New England Revolution vs Orlando City (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-new-england-revolution-vs-orlando-city-sc
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-new-england-revolution-vs-orlando-city-sc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_south-carolina-mississippi-st-live-streaming-587837952/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="61" tvg-id="Live.Event.us" tvg-name="[fight] UFC 331 Van vs Pantoja 2 (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAY29lBWSUYAUwVmDTAE5p5gJhqDh61hh1OPgBDYLKQRcOJBt15cyAE1LBCETI3BiOzNCBghZVJGF5gkIXiCwhzKECRARTIatov5gemAJFzGKMKpQ8f5IzUcn7O9GA+4mIQQA.webp" group-title="Live Events",[fight] UFC 331 Van vs Pantoja 2 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-crypto-com-ufc-331-van-vs-pantoja-2
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-crypto-com-ufc-331-van-vs-pantoja-2
+https://messi.damitv.st/live-sd/streamed/admin/ppv-new-england-revolution-vs-orlando-city-sc/playlist.m3u8?tk=0DxeU5XMHqEwcs1SiLUPrQ&e=1789908735
+#EXTINF:-1 tvg-chno="49" tvg-id="Soccer.Dummy.us" tvg-name="[football] CF Montréal vs Columbus Crew (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rJBXAQQ8bCG4g+IGCCmH9O3MdwFgGmP2Gz6KMCpRc35ellkemtGBuYqIQQA.webp" group-title="Live Events",[football] CF Montréal vs Columbus Crew (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-cf-montr-al-vs-columbus-crew
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-cf-montr-al-vs-columbus-crew
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-crypto-com-ufc-331-van-vs-pantoja-2/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="62" tvg-id="Live.Event.us" tvg-name="[american-football] Wayland Baptist Pioneers vs Howard Payne Yellow Jackets (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Wayland Baptist Pioneers vs Howard Payne Yellow Jackets (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_wayland-baptist-pioneers-howard-payne-yellow-jackets-live-streaming-610718400
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_wayland-baptist-pioneers-howard-payne-yellow-jackets-live-streaming-610718400
+https://messi.damitv.st/live-sd/streamed/admin/ppv-cf-montr-al-vs-columbus-crew/playlist.m3u8?tk=0DxeU5XMHqEwcs1SiLUPrQ&e=1789908735
+#EXTINF:-1 tvg-chno="50" tvg-id="Soccer.Dummy.us" tvg-name="[football] San Jose Earthquakes vs Los Angeles FC (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VUYixswIEHxDc9IGCClHDiQ7qkFgSCn2Gz6KMCpRc35eltEemtGBuYqIQQA.webp" group-title="Live Events",[football] San Jose Earthquakes vs Los Angeles FC (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-san-jose-earthquakes-vs-lafc
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-san-jose-earthquakes-vs-lafc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_wayland-baptist-pioneers-howard-payne-yellow-jackets-live-streaming-610718400/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="63" tvg-id="Live.Event.us" tvg-name="[american-football] Minnesota Duluth Bulldogs vs Winona State Warriors (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Minnesota Duluth Bulldogs vs Winona State Warriors (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_minnesota-duluth-bulldogs-winona-state-warriors-live-streaming-587814624
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_minnesota-duluth-bulldogs-winona-state-warriors-live-streaming-587814624
+https://messi.damitv.st/live-sd/streamed/admin/ppv-san-jose-earthquakes-vs-lafc/playlist.m3u8?tk=BGiFJSw6HR4OBIU0IihaeQ&e=1789908736
+#EXTINF:-1 tvg-chno="51" tvg-id="Live.Event.us" tvg-name="[american-football] Notre Dame vs Michigan State (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE52IeMAjAJEELOHTFs2SBBkqqzRvUiQAYxBY1+yaXHYQwkDEPSU5KQKEim2emELAkuPfaFhuTikFMnsCRTAA0zIIIA.webp" group-title="Live Events",[american-football] Notre Dame vs Michigan State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-michigan-state-spartans-at-notre-dame-fighting-irish
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-michigan-state-spartans-at-notre-dame-fighting-irish
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_minnesota-duluth-bulldogs-winona-state-warriors-live-streaming-587814624/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="64" tvg-id="Live.Event.us" tvg-name="[american-football] Emporia State Hornets vs Nebraska Kearney Lopers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Emporia State Hornets vs Nebraska Kearney Lopers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_emporia-state-hornets-nebraska-kearney-lopers-live-streaming-587813760
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_emporia-state-hornets-nebraska-kearney-lopers-live-streaming-587813760
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_emporia-state-hornets-nebraska-kearney-lopers-live-streaming-587813760/playlist.m3u8?tk=j3kTiZgNaUroegu5yyq-8Q&e=1789901280
-#EXTINF:-1 tvg-chno="65" tvg-id="Live.Event.us" tvg-name="[american-football] Southern Connecticut Fighting Owls vs American International Yellow Jackets (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Southern Connecticut Fighting Owls vs American International Yellow Jackets (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-connecticut-fighting-owls-american-international-yellow-jackets-live-streaming-587801664
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-connecticut-fighting-owls-american-international-yellow-jackets-live-streaming-587801664
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_southern-connecticut-fighting-owls-american-international-yellow-jackets-live-streaming-587801664/playlist.m3u8?tk=2pWmYccJbSZN-L3jcywuCQ&e=1789901281
-#EXTINF:-1 tvg-chno="66" tvg-id="Live.Event.us" tvg-name="[american-football] Arkansas-Pine Bluff vs Central State (OH) (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Arkansas-Pine Bluff vs Central State (OH) (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_arkansas-pine-bluff-central-state-marauders-live-streaming-623866320
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_arkansas-pine-bluff-central-state-marauders-live-streaming-623866320
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_arkansas-pine-bluff-central-state-marauders-live-streaming-623866320/playlist.m3u8?tk=2pWmYccJbSZN-L3jcywuCQ&e=1789901281
-#EXTINF:-1 tvg-chno="67" tvg-id="Live.Event.us" tvg-name="[american-football] Western Carolina vs Presbyterian (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Western Carolina vs Presbyterian (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_western-carolina-presbyterian-blue-hose-live-streaming-623874960
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_western-carolina-presbyterian-blue-hose-live-streaming-623874960
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_western-carolina-presbyterian-blue-hose-live-streaming-623874960/playlist.m3u8?tk=2pWmYccJbSZN-L3jcywuCQ&e=1789901281
-#EXTINF:-1 tvg-chno="68" tvg-id="Live.Event.us" tvg-name="[american-football] Lewis And Clark Pioneers vs Pomona Pitzer Sagehens (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lewis And Clark Pioneers vs Pomona Pitzer Sagehens (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lewis-and-clark-pioneers-pomona-pitzer-sagehens-live-streaming-610713648
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lewis-and-clark-pioneers-pomona-pitzer-sagehens-live-streaming-610713648
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lewis-and-clark-pioneers-pomona-pitzer-sagehens-live-streaming-610713648/playlist.m3u8?tk=2pWmYccJbSZN-L3jcywuCQ&e=1789901281
-#EXTINF:-1 tvg-chno="69" tvg-id="Live.Event.us" tvg-name="[american-football] California Lutheran Kingsmen vs Puget Sound Loggers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] California Lutheran Kingsmen vs Puget Sound Loggers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_california-lutheran-kingsmen-puget-sound-loggers-live-streaming-610713216
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_california-lutheran-kingsmen-puget-sound-loggers-live-streaming-610713216
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_california-lutheran-kingsmen-puget-sound-loggers-live-streaming-610713216/playlist.m3u8?tk=2pWmYccJbSZN-L3jcywuCQ&e=1789901281
-#EXTINF:-1 tvg-chno="70" tvg-id="Live.Event.us" tvg-name="[american-football] Tiffin Dragons vs Thomas More	Saints (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Tiffin Dragons vs Thomas More	Saints (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_tiffin-dragons-thomas-moresaints-live-streaming-587813328
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_tiffin-dragons-thomas-moresaints-live-streaming-587813328
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_tiffin-dragons-thomas-moresaints-live-streaming-587813328/playlist.m3u8?tk=2pWmYccJbSZN-L3jcywuCQ&e=1789901281
-#EXTINF:-1 tvg-chno="71" tvg-id="Live.Event.us" tvg-name="[american-football] Allen Yellow Jackets vs Albany State Golden Rams (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Allen Yellow Jackets vs Albany State Golden Rams (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_allen-yellow-jackets-albany-state-golden-rams-live-streaming-587812896
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_allen-yellow-jackets-albany-state-golden-rams-live-streaming-587812896
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_allen-yellow-jackets-albany-state-golden-rams-live-streaming-587812896/playlist.m3u8?tk=QyWAp8Ug-gtfxXmBh2WXcg&e=1789901282
-#EXTINF:-1 tvg-chno="72" tvg-id="Live.Event.us" tvg-name="[american-football] Bethune-Cookman vs Virginia Lynchburg (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Bethune-Cookman vs Virginia Lynchburg (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_bethune-cookman-virginia-lynchburg-dragons-live-streaming-623865888
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_bethune-cookman-virginia-lynchburg-dragons-live-streaming-623865888
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_bethune-cookman-virginia-lynchburg-dragons-live-streaming-623865888/playlist.m3u8?tk=QyWAp8Ug-gtfxXmBh2WXcg&e=1789901282
-#EXTINF:-1 tvg-chno="73" tvg-id="Live.Event.us" tvg-name="[american-football] Idaho vs Abilene Christian (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Idaho vs Abilene Christian (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_idaho-abilene-christian-live-streaming-623876688
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_idaho-abilene-christian-live-streaming-623876688
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_idaho-abilene-christian-live-streaming-623876688/playlist.m3u8?tk=QyWAp8Ug-gtfxXmBh2WXcg&e=1789901282
-#EXTINF:-1 tvg-chno="74" tvg-id="Live.Event.us" tvg-name="[american-football] Norfolk State vs Hampton (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Norfolk State vs Hampton (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_norfolk-st-hampton-pirates-live-streaming-587859984
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_norfolk-st-hampton-pirates-live-streaming-587859984
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_norfolk-st-hampton-pirates-live-streaming-587859984/playlist.m3u8?tk=QyWAp8Ug-gtfxXmBh2WXcg&e=1789901282
-#EXTINF:-1 tvg-chno="75" tvg-id="Live.Event.us" tvg-name="[american-football] Baylor vs Louisiana Tech (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Baylor vs Louisiana Tech (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_baylor-louisiana-tech-live-streaming-587836224
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_baylor-louisiana-tech-live-streaming-587836224
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_baylor-louisiana-tech-live-streaming-587836224/playlist.m3u8?tk=QyWAp8Ug-gtfxXmBh2WXcg&e=1789901282
-#EXTINF:-1 tvg-chno="76" tvg-id="Live.Event.us" tvg-name="[american-football] Liberty vs Ball State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Liberty vs Ball State (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_liberty-flames-ball-state-live-streaming-587837520
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_liberty-flames-ball-state-live-streaming-587837520
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_liberty-flames-ball-state-live-streaming-587837520/playlist.m3u8?tk=QyWAp8Ug-gtfxXmBh2WXcg&e=1789901282
-#EXTINF:-1 tvg-chno="77" tvg-id="Live.Event.us" tvg-name="[american-football] Duke vs Stanford (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Duke vs Stanford (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_duke-stanford-live-streaming-587836656
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_duke-stanford-live-streaming-587836656
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_duke-stanford-live-streaming-587836656/playlist.m3u8?tk=KKiP1wOGm9GorzrKtYdUOA&e=1789901283
-#EXTINF:-1 tvg-chno="78" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] St. Louis Blues vs Dallas Stars (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VRGSh8QKEHu4htUkDB0nz20wqZIKfYbPoowKlFxfl6WWW6a0wLmKiEEA.webp" group-title="Live Events",[hockey] St. Louis Blues vs Dallas Stars (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_nhl-preseason_blues-stars-live-streaming-610735680
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_nhl-preseason_blues-stars-live-streaming-610735680
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_nhl-preseason_blues-stars-live-streaming-610735680/playlist.m3u8?tk=KKiP1wOGm9GorzrKtYdUOA&e=1789901283
-#EXTINF:-1 tvg-chno="79" tvg-id="Live.Event.us" tvg-name="[american-football] Mississippi Valley State vs Delta State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Mississippi Valley State vs Delta State (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_mississippi-valley-state-delta-devils-delta-state-statesmen-live-streaming-623868048
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_mississippi-valley-state-delta-devils-delta-state-statesmen-live-streaming-623868048
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_mississippi-valley-state-delta-devils-delta-state-statesmen-live-streaming-623868048/playlist.m3u8?tk=KKiP1wOGm9GorzrKtYdUOA&e=1789901283
-#EXTINF:-1 tvg-chno="80" tvg-id="Live.Event.us" tvg-name="[american-football] Jackson State vs Tuskegee (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Jackson State vs Tuskegee (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_jackson-state-tuskegee-golden-tigers-live-streaming-623867616
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_jackson-state-tuskegee-golden-tigers-live-streaming-623867616
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_jackson-state-tuskegee-golden-tigers-live-streaming-623867616/playlist.m3u8?tk=KKiP1wOGm9GorzrKtYdUOA&e=1789901283
-#EXTINF:-1 tvg-chno="81" tvg-id="Live.Event.us" tvg-name="[american-football] West Florida vs Austin Peay (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] West Florida vs Austin Peay (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_west-florida-argonauts-austin-peay-live-streaming-587862576
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_west-florida-argonauts-austin-peay-live-streaming-587862576
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_west-florida-argonauts-austin-peay-live-streaming-587862576/playlist.m3u8?tk=KKiP1wOGm9GorzrKtYdUOA&e=1789901283
-#EXTINF:-1 tvg-chno="82" tvg-id="Live.Event.us" tvg-name="[american-football] Incarnate Word vs Houston Baptist (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Incarnate Word vs Houston Baptist (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_incarnate-word-houston-baptist-live-streaming-587861712
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_incarnate-word-houston-baptist-live-streaming-587861712
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_incarnate-word-houston-baptist-live-streaming-587861712/playlist.m3u8?tk=KKiP1wOGm9GorzrKtYdUOA&e=1789901283
-#EXTINF:-1 tvg-chno="83" tvg-id="Live.Event.us" tvg-name="[american-football] Tarleton State vs Merrimack (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Tarleton State vs Merrimack (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_tarleton-state-texans-merrimack-warriors-live-streaming-587858256
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_tarleton-state-texans-merrimack-warriors-live-streaming-587858256
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_tarleton-state-texans-merrimack-warriors-live-streaming-587858256/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="84" tvg-id="Live.Event.us" tvg-name="[american-football] Western Illinois vs Morehead State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Western Illinois vs Morehead State (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_western-illinois-morehead-state-eagles-live-streaming-610727040
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_western-illinois-morehead-state-eagles-live-streaming-610727040
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_western-illinois-morehead-state-eagles-live-streaming-610727040/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="85" tvg-id="Live.Event.us" tvg-name="[american-football] Sam Houston State vs Nicholls (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Sam Houston State vs Nicholls (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_sam-houston-state-nicholls-state-live-streaming-587854800
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_sam-houston-state-nicholls-state-live-streaming-587854800
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_sam-houston-state-nicholls-state-live-streaming-587854800/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="86" tvg-id="Live.Event.us" tvg-name="[american-football] Jacksonville State vs Georgia Southern (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Jacksonville State vs Georgia Southern (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_jacksonville-state-georgia-southern-live-streaming-587840544
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_jacksonville-state-georgia-southern-live-streaming-587840544
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_jacksonville-state-georgia-southern-live-streaming-587840544/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="87" tvg-id="Live.Event.us" tvg-name="[american-football] South Alabama vs Ohio (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] South Alabama vs Ohio (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_south-alabama-ohio-live-streaming-587841840
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_south-alabama-ohio-live-streaming-587841840
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_south-alabama-ohio-live-streaming-587841840/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="88" tvg-id="Live.Event.us" tvg-name="[american-football] Middle Tennessee vs Nevada (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Middle Tennessee vs Nevada (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_middle-tennessee-st-nevada-live-streaming-587840976
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_middle-tennessee-st-nevada-live-streaming-587840976
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_middle-tennessee-st-nevada-live-streaming-587840976/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="89" tvg-id="Live.Event.us" tvg-name="[american-football] Rice vs Western Michigan (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Rice vs Western Michigan (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_rice-western-michigan-live-streaming-587841408
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_rice-western-michigan-live-streaming-587841408
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_rice-western-michigan-live-streaming-587841408/playlist.m3u8?tk=EvjHAphn79Pa8rd1tQTcJw&e=1789901284
-#EXTINF:-1 tvg-chno="90" tvg-id="Live.Event.us" tvg-name="[american-football] Washington vs Eastern Washington (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rEDxBkkYbrBDcQUkChCIYWsyAghbEpjpj9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[american-football] Washington vs Eastern Washington (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_washington-eastern-washington-live-streaming-587856096
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_washington-eastern-washington-live-streaming-587856096
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_washington-eastern-washington-live-streaming-587856096/playlist.m3u8?tk=L-t82R0By4vtBT9L2Z-7CA&e=1789901285
-#EXTINF:-1 tvg-chno="91" tvg-id="Live.Event.us" tvg-name="[american-football] Nebraska vs North Dakota (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Nebraska vs North Dakota (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_nebraska-north-dakota-live-streaming-587855664
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_nebraska-north-dakota-live-streaming-587855664
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_nebraska-north-dakota-live-streaming-587855664/playlist.m3u8?tk=L-t82R0By4vtBT9L2Z-7CA&e=1789901285
-#EXTINF:-1 tvg-chno="92" tvg-id="Live.Event.us" tvg-name="[american-football] Maryland vs Virginia Tech (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Maryland vs Virginia Tech (DAM)
+https://messi.damitv.st/live-sd/streamed/admin/ppv-michigan-state-spartans-at-notre-dame-fighting-irish/playlist.m3u8?tk=BGiFJSw6HR4OBIU0IihaeQ&e=1789908736
+#EXTINF:-1 tvg-chno="52" tvg-id="Live.Event.us" tvg-name="[american-football] Maryland vs Virginia Tech (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Maryland vs Virginia Tech (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_maryland-virginia-tech-live-streaming-587843568
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_maryland-virginia-tech-live-streaming-587843568
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_maryland-virginia-tech-live-streaming-587843568/playlist.m3u8?tk=L-t82R0By4vtBT9L2Z-7CA&e=1789901285
-#EXTINF:-1 tvg-chno="93" tvg-id="Live.Event.us" tvg-name="[american-football] Northwestern vs Colorado (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Northwestern vs Colorado (DAM)
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_maryland-virginia-tech-live-streaming-587843568/playlist.m3u8?tk=BGiFJSw6HR4OBIU0IihaeQ&e=1789908736
+#EXTINF:-1 tvg-chno="53" tvg-id="Live.Event.us" tvg-name="[american-football] Virginia vs West Virginia (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE5MJEDBApgNYSAggAxiHFzp8YAsUjgibVRWaQckLvkSQB6Vhk7EGiNP5hBOgtnphCwJLkXShF1YIHTJpdw0wF01STSA.webp" group-title="Live Events",[american-football] Virginia vs West Virginia (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-west-virginia-mountaineers-at-virginia-cavaliers
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-west-virginia-mountaineers-at-virginia-cavaliers
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-west-virginia-mountaineers-at-virginia-cavaliers/playlist.m3u8?tk=BGiFJSw6HR4OBIU0IihaeQ&e=1789908736
+#EXTINF:-1 tvg-chno="54" tvg-id="Live.Event.us" tvg-name="[american-football] Northwestern vs Colorado (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Northwestern vs Colorado (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_northwestern-colorado-live-streaming-587844000
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_northwestern-colorado-live-streaming-587844000
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_northwestern-colorado-live-streaming-587844000/playlist.m3u8?tk=L-t82R0By4vtBT9L2Z-7CA&e=1789901285
-#EXTINF:-1 tvg-chno="94" tvg-id="Live.Event.us" tvg-name="[american-football] Ole Miss vs LSU (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VGCBRE+IWvhDcQUzbpAaSICCB2IUBYEgp9hs+lpUouYMvCJZZnky0YN5iohBAA.webp" group-title="Live Events",[american-football] Ole Miss vs LSU (DAM)
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_northwestern-colorado-live-streaming-587844000/playlist.m3u8?tk=BGiFJSw6HR4OBIU0IihaeQ&e=1789908736
+#EXTINF:-1 tvg-chno="55" tvg-id="Live.Event.us" tvg-name="[american-football] Oklahoma vs New Mexico (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IcSRAQQKUiADGIkFXEzgiMlmzAaW+OuWklkshAOIzwkBoUgss-mEEim2h4WBJc82UKetLI1kCdXInYDNTIA.webp" group-title="Live Events",[american-football] Oklahoma vs New Mexico (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-new-mexico-lobos-at-oklahoma-sooners
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-new-mexico-lobos-at-oklahoma-sooners
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-new-mexico-lobos-at-oklahoma-sooners/playlist.m3u8?tk=8XXk-APXig2bLfmT36RBZw&e=1789908737
+#EXTINF:-1 tvg-chno="56" tvg-id="Live.Event.us" tvg-name="[american-football] Ole Miss vs LSU (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VGCBRE+IWvhDcQUzbpAaSICCB2IUBYEgp9hs+lpUouYMvCJZZnky0YN5iohBAA.webp" group-title="Live Events",[american-football] Ole Miss vs LSU (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-lsu-tigers-at-ole-miss-rebels
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-lsu-tigers-at-ole-miss-rebels
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-lsu-tigers-at-ole-miss-rebels/playlist.m3u8?tk=L-t82R0By4vtBT9L2Z-7CA&e=1789901285
+https://messi.damitv.st/live-sd/streamed/admin/ppv-lsu-tigers-at-ole-miss-rebels/playlist.m3u8?tk=8XXk-APXig2bLfmT36RBZw&e=1789908737
+#EXTINF:-1 tvg-chno="57" tvg-id="Baseball.Dummy.us" tvg-name="[baseball] St. Louis Cardinals vs Washington Nationals (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEBqkgBSfmC3dtG4yhAQQiGGZAoCwJBT7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[baseball] St. Louis Cardinals vs Washington Nationals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-washington-nationals-vs-st-louis-cardinals
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-washington-nationals-vs-st-louis-cardinals
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-washington-nationals-vs-st-louis-cardinals/playlist.m3u8?tk=8XXk-APXig2bLfmT36RBZw&e=1789908737
+#EXTINF:-1 tvg-chno="58" tvg-id="Live.Event.us" tvg-name="[american-football] Washington vs Eastern Washington (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rEDxBkkYbrBDcQUkChCIYWsyAghbEpjpj9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[american-football] Washington vs Eastern Washington (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-eastern-washington-eagles-at-washington-huskies
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-eastern-washington-eagles-at-washington-huskies
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-eastern-washington-eagles-at-washington-huskies/playlist.m3u8?tk=8XXk-APXig2bLfmT36RBZw&e=1789908737
+#EXTINF:-1 tvg-chno="59" tvg-id="Live.Event.us" tvg-name="[american-football] Nebraska vs North Dakota (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Nebraska vs North Dakota (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_nebraska-north-dakota-live-streaming-587855664
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_nebraska-north-dakota-live-streaming-587855664
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_nebraska-north-dakota-live-streaming-587855664/playlist.m3u8?tk=8XXk-APXig2bLfmT36RBZw&e=1789908737
+#EXTINF:-1 tvg-chno="60" tvg-id="Baseball.Dummy.us" tvg-name="[baseball] Houston Astros vs Atlanta Braves (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEHBRgUc5iCkhuIPiFOmUICCEQxL5pkgp9hs+lpU62YMvCJZZOky0YN5iohBAA.webp" group-title="Live Events",[baseball] Houston Astros vs Atlanta Braves (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-atlanta-braves-vs-houston-astros
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-atlanta-braves-vs-houston-astros
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-atlanta-braves-vs-houston-astros/playlist.m3u8?tk=8XXk-APXig2bLfmT36RBZw&e=1789908737
+#EXTINF:-1 tvg-chno="61" tvg-id="Baseball.Dummy.us" tvg-name="[baseball] Texas Rangers vs Toronto Blue Jays (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rQqPwgQPdiG4g+24yhAQQiGGcMFgSCn2Gz6KMCpRc35ellkemtGBuYqIQQA.webp" group-title="Live Events",[baseball] Texas Rangers vs Toronto Blue Jays (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-toronto-blue-jays-vs-texas-rangers
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-toronto-blue-jays-vs-texas-rangers
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-toronto-blue-jays-vs-texas-rangers/playlist.m3u8?tk=0E-PDnOq9lBHcq-_KDqyTA&e=1789908738
+#EXTINF:-1 tvg-chno="62" tvg-id="Live.Event.us" tvg-name="[american-football] Wilmington Quakers vs Otterbein	Cardinals (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Wilmington Quakers vs Otterbein	Cardinals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_wilmington-quakers-otterbeincardinals-live-streaming-610718832
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_wilmington-quakers-otterbeincardinals-live-streaming-610718832
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_wilmington-quakers-otterbeincardinals-live-streaming-610718832/playlist.m3u8?tk=0E-PDnOq9lBHcq-_KDqyTA&e=1789908738
+#EXTINF:-1 tvg-chno="63" tvg-id="Live.Event.us" tvg-name="[american-football] Ursinus Bears vs Moravian	Greyhounds (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Ursinus Bears vs Moravian	Greyhounds (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_ursinus-bears-moraviangreyhounds-live-streaming-610717968
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_ursinus-bears-moraviangreyhounds-live-streaming-610717968
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_ursinus-bears-moraviangreyhounds-live-streaming-610717968/playlist.m3u8?tk=0E-PDnOq9lBHcq-_KDqyTA&e=1789908738
+#EXTINF:-1 tvg-chno="64" tvg-id="Live.Event.us" tvg-name="[american-football] Schreiner Mountaineers vs Southwestern Pirates (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Schreiner Mountaineers vs Southwestern Pirates (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_schreiner-mountaineers-southwestern-pirates-live-streaming-610717536
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_schreiner-mountaineers-southwestern-pirates-live-streaming-610717536
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_schreiner-mountaineers-southwestern-pirates-live-streaming-610717536/playlist.m3u8?tk=0E-PDnOq9lBHcq-_KDqyTA&e=1789908738
+#EXTINF:-1 tvg-chno="65" tvg-id="Live.Event.us" tvg-name="[american-football] East Texas Baptist Tigers vs Centenary Gents (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] East Texas Baptist Tigers vs Centenary Gents (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_east-texas-baptist-tigers-centenary-gents-live-streaming-610716240
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_east-texas-baptist-tigers-centenary-gents-live-streaming-610716240
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_east-texas-baptist-tigers-centenary-gents-live-streaming-610716240/playlist.m3u8?tk=0E-PDnOq9lBHcq-_KDqyTA&e=1789908738
+#EXTINF:-1 tvg-chno="66" tvg-id="Live.Event.us" tvg-name="[american-football] Allegheny Gators vs Waynesburg Yellow Jackets (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Allegheny Gators vs Waynesburg Yellow Jackets (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_allegheny-gators-waynesburg-yellow-jackets-live-streaming-610715808
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_allegheny-gators-waynesburg-yellow-jackets-live-streaming-610715808
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_allegheny-gators-waynesburg-yellow-jackets-live-streaming-610715808/playlist.m3u8?tk=0E-PDnOq9lBHcq-_KDqyTA&e=1789908738
+#EXTINF:-1 tvg-chno="67" tvg-id="Live.Event.us" tvg-name="[american-football] Ripon Red Hawks vs Knox Prairie Fire (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Ripon Red Hawks vs Knox Prairie Fire (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_ripon-red-hawks-knox-prairie-fire-live-streaming-610705008
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_ripon-red-hawks-knox-prairie-fire-live-streaming-610705008
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_ripon-red-hawks-knox-prairie-fire-live-streaming-610705008/playlist.m3u8?tk=cFApl3302wXNmn9mHBoVzg&e=1789908739
+#EXTINF:-1 tvg-chno="68" tvg-id="Live.Event.us" tvg-name="[american-football] West Alabama Tigers vs North Greenville Crusaders (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] West Alabama Tigers vs North Greenville Crusaders (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_west-alabama-tigers-north-greenville-crusaders-live-streaming-587824128
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_west-alabama-tigers-north-greenville-crusaders-live-streaming-587824128
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_west-alabama-tigers-north-greenville-crusaders-live-streaming-587824128/playlist.m3u8?tk=cFApl3302wXNmn9mHBoVzg&e=1789908739
+#EXTINF:-1 tvg-chno="69" tvg-id="Live.Event.us" tvg-name="[american-football] Wayne State Wildcats vs Jamestown Jimmies (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Wayne State Wildcats vs Jamestown Jimmies (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_wayne-state-wildcats-jamestown-jimmies-live-streaming-587823696
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_wayne-state-wildcats-jamestown-jimmies-live-streaming-587823696
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_wayne-state-wildcats-jamestown-jimmies-live-streaming-587823696/playlist.m3u8?tk=cFApl3302wXNmn9mHBoVzg&e=1789908739
+#EXTINF:-1 tvg-chno="70" tvg-id="Live.Event.us" tvg-name="[american-football] Walsh Cavaliers vs Lake Erie Storm (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Walsh Cavaliers vs Lake Erie Storm (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_walsh-cavaliers-lake-erie-storm-live-streaming-587823264
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_walsh-cavaliers-lake-erie-storm-live-streaming-587823264
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_walsh-cavaliers-lake-erie-storm-live-streaming-587823264/playlist.m3u8?tk=cFApl3302wXNmn9mHBoVzg&e=1789908739
+#EXTINF:-1 tvg-chno="71" tvg-id="Live.Event.us" tvg-name="[american-football] Southwest Baptist Bearcats vs William Jewell Cardinals (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Southwest Baptist Bearcats vs William Jewell Cardinals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_southwest-baptist-bearcats-william-jewell-cardinals-live-streaming-587822400
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_southwest-baptist-bearcats-william-jewell-cardinals-live-streaming-587822400
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_southwest-baptist-bearcats-william-jewell-cardinals-live-streaming-587822400/playlist.m3u8?tk=cFApl3302wXNmn9mHBoVzg&e=1789908739
+#EXTINF:-1 tvg-chno="72" tvg-id="Live.Event.us" tvg-name="[american-football] Southern Nazarene Crimson Storm vs East Central Tigers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Southern Nazarene Crimson Storm vs East Central Tigers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-nazarene-crimson-storm-east-central-tigers-live-streaming-587821968
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-nazarene-crimson-storm-east-central-tigers-live-streaming-587821968
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_southern-nazarene-crimson-storm-east-central-tigers-live-streaming-587821968/playlist.m3u8?tk=cFApl3302wXNmn9mHBoVzg&e=1789908739
+#EXTINF:-1 tvg-chno="73" tvg-id="Live.Event.us" tvg-name="[american-football] Henderson State Reddies vs Arkansas Monticello Boll Weevils (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Henderson State Reddies vs Arkansas Monticello Boll Weevils (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_henderson-state-reddies-arkansas-monticello-boll-weevils-live-streaming-587821104
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_henderson-state-reddies-arkansas-monticello-boll-weevils-live-streaming-587821104
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_henderson-state-reddies-arkansas-monticello-boll-weevils-live-streaming-587821104/playlist.m3u8?tk=z4ZA1ltDdFh6sFbUr2u-2g&e=1789908740
+#EXTINF:-1 tvg-chno="74" tvg-id="Live.Event.us" tvg-name="[american-football] Grand Valley State Lakers vs Judson Eagles (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Grand Valley State Lakers vs Judson Eagles (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_grand-valley-state-lakers-judson-eagles-live-streaming-587820672
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_grand-valley-state-lakers-judson-eagles-live-streaming-587820672
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_grand-valley-state-lakers-judson-eagles-live-streaming-587820672/playlist.m3u8?tk=z4ZA1ltDdFh6sFbUr2u-2g&e=1789908740
+#EXTINF:-1 tvg-chno="75" tvg-id="Live.Event.us" tvg-name="[american-football] Angelo State Rams vs West Texas A&M Buffaloes (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Angelo State Rams vs West Texas A&M Buffaloes (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_angelo-state-rams-west-texas-am-buffaloes-live-streaming-587819808
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_angelo-state-rams-west-texas-am-buffaloes-live-streaming-587819808
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_angelo-state-rams-west-texas-am-buffaloes-live-streaming-587819808/playlist.m3u8?tk=z4ZA1ltDdFh6sFbUr2u-2g&e=1789908740
+#EXTINF:-1 tvg-chno="76" tvg-id="Live.Event.us" tvg-name="[american-football] Furman Paladins vs South Carolina State Bulldogs (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Furman Paladins vs South Carolina State Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_furman-south-carolina-st-live-streaming-623879280
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_furman-south-carolina-st-live-streaming-623879280
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_furman-south-carolina-st-live-streaming-623879280/playlist.m3u8?tk=z4ZA1ltDdFh6sFbUr2u-2g&e=1789908740
+#EXTINF:-1 tvg-chno="77" tvg-id="Live.Event.us" tvg-name="[american-football] Southern University Jaguars vs Louisiana College Wildcats (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Southern University Jaguars vs Louisiana College Wildcats (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-university-louisiana-college-wildcats-live-streaming-623868480
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-university-louisiana-college-wildcats-live-streaming-623868480
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_southern-university-louisiana-college-wildcats-live-streaming-623868480/playlist.m3u8?tk=z4ZA1ltDdFh6sFbUr2u-2g&e=1789908740
+#EXTINF:-1 tvg-chno="78" tvg-id="Live.Event.us" tvg-name="[american-football] Memphis Tigers vs Tennessee-Martin Skyhawks (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Memphis Tigers vs Tennessee-Martin Skyhawks (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_memphis-tennessee-martin-live-streaming-587853936
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_memphis-tennessee-martin-live-streaming-587853936
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_memphis-tennessee-martin-live-streaming-587853936/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="79" tvg-id="Live.Event.us" tvg-name="[american-football] Southern Mississippi Golden Eagles vs Connecticut Huskies (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Southern Mississippi Golden Eagles vs Connecticut Huskies (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-miss-connecticut-live-streaming-587842272
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_southern-miss-connecticut-live-streaming-587842272
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_southern-miss-connecticut-live-streaming-587842272/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="80" tvg-id="Soccer.Dummy.us" tvg-name="[football] Atlético de San Luis vs Necaxa (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aXJwAMYECFokQ3EH10gIZkDBAGrBiUyQU+w2fRRgVKLh-L0ssryZaMA8xUQggA.webp" group-title="Live Events",[football] Atlético de San Luis vs Necaxa (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-atl-tico-de-san-luis-vs-necaxa
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-atl-tico-de-san-luis-vs-necaxa
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-atl-tico-de-san-luis-vs-necaxa/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="81" tvg-id="Soccer.Dummy.us" tvg-name="[football] Atlas vs Pumas UNAM (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rKn1ygQURNxCaQO4zBAkQp8zALAkFPsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[football] Atlas vs Pumas UNAM (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-atlas-vs-pumas-unam
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-atlas-vs-pumas-unam
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-atlas-vs-pumas-unam/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="82" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] St. Louis Blues vs Dallas Stars (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VRGSh8QKEHu4htUkDB0nz20wqZIKfYbPoowKlFxfl6WWW6a0wLmKiEEA.webp" group-title="Live Events",[hockey] St. Louis Blues vs Dallas Stars (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-dallas-stars-vs-st-louis-blues
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-dallas-stars-vs-st-louis-blues
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-dallas-stars-vs-st-louis-blues/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="83" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Montreal Canadiens vs Toronto Maple Leafs (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VEiFrcQyyiG18QUkDBAoT+i+bNMkFPsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[hockey] Montreal Canadiens vs Toronto Maple Leafs (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-toronto-maple-leafs-vs-montreal-canadiens
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-toronto-maple-leafs-vs-montreal-canadiens
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-toronto-maple-leafs-vs-montreal-canadiens/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="84" tvg-id="Basketball.Dummy.us" tvg-name="[basketball] Atlanta Dream vs Chicago Sky (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEHBAhREEFJB8Q3PdqMgU5rSF0w9BYEgp9hs+ijAqUXD+XpZZXky0YB5iOkA.webp" group-title="Live Events",[basketball] Atlanta Dream vs Chicago Sky (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-chicago-sky-vs-atlanta-dream
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-chicago-sky-vs-atlanta-dream
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-chicago-sky-vs-atlanta-dream/playlist.m3u8?tk=EGRGVVguylVhwTB0LGaE_A&e=1789908741
+#EXTINF:-1 tvg-chno="85" tvg-id="Live.Event.us" tvg-name="[american-football] Jackson State vs Tuskegee (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Jackson State vs Tuskegee (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_jackson-state-tuskegee-golden-tigers-live-streaming-623867616
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_jackson-state-tuskegee-golden-tigers-live-streaming-623867616
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_jackson-state-tuskegee-golden-tigers-live-streaming-623867616/playlist.m3u8?tk=857COKu_5YmyriEeFJC1TQ&e=1789908742
+#EXTINF:-1 tvg-chno="86" tvg-id="Live.Event.us" tvg-name="[american-football] Alabama A and M vs Bowie State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Alabama A and M vs Bowie State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_alabama-am-bowie-state-bulldogs-live-streaming-623867184
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_alabama-am-bowie-state-bulldogs-live-streaming-623867184
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_alabama-am-bowie-state-bulldogs-live-streaming-623867184/playlist.m3u8?tk=857COKu_5YmyriEeFJC1TQ&e=1789908742
+#EXTINF:-1 tvg-chno="87" tvg-id="Live.Event.us" tvg-name="[american-football] West Florida vs Austin Peay (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] West Florida vs Austin Peay (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_west-florida-argonauts-austin-peay-live-streaming-587862576
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_west-florida-argonauts-austin-peay-live-streaming-587862576
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_west-florida-argonauts-austin-peay-live-streaming-587862576/playlist.m3u8?tk=857COKu_5YmyriEeFJC1TQ&e=1789908742
+#EXTINF:-1 tvg-chno="88" tvg-id="Live.Event.us" tvg-name="[american-football] Incarnate Word vs Houston Baptist (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Incarnate Word vs Houston Baptist (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_incarnate-word-houston-baptist-live-streaming-587861712
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_incarnate-word-houston-baptist-live-streaming-587861712
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_incarnate-word-houston-baptist-live-streaming-587861712/playlist.m3u8?tk=857COKu_5YmyriEeFJC1TQ&e=1789908742
+#EXTINF:-1 tvg-chno="89" tvg-id="Live.Event.us" tvg-name="[american-football] Tarleton State vs Merrimack (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Tarleton State vs Merrimack (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_tarleton-state-texans-merrimack-warriors-live-streaming-587858256
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_tarleton-state-texans-merrimack-warriors-live-streaming-587858256
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_tarleton-state-texans-merrimack-warriors-live-streaming-587858256/playlist.m3u8?tk=857COKu_5YmyriEeFJC1TQ&e=1789908742
+#EXTINF:-1 tvg-chno="90" tvg-id="Live.Event.us" tvg-name="[american-football] Western Illinois vs Morehead State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Western Illinois vs Morehead State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_western-illinois-morehead-state-eagles-live-streaming-610727040
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_western-illinois-morehead-state-eagles-live-streaming-610727040
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_western-illinois-morehead-state-eagles-live-streaming-610727040/playlist.m3u8?tk=VFfapWOHYpXRVdH7p1WT3g&e=1789908743
+#EXTINF:-1 tvg-chno="91" tvg-id="Live.Event.us" tvg-name="[american-football] Florida A and M vs Tennessee State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Florida A and M vs Tennessee State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_florida-am-tennessee-st-live-streaming-587861280
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_florida-am-tennessee-st-live-streaming-587861280
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_florida-am-tennessee-st-live-streaming-587861280/playlist.m3u8?tk=VFfapWOHYpXRVdH7p1WT3g&e=1789908743
+#EXTINF:-1 tvg-chno="92" tvg-id="Live.Event.us" tvg-name="[american-football] Southeast Missouri State vs Central Arkansas (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Southeast Missouri State vs Central Arkansas (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_southeast-missouri-st-central-arkansas-live-streaming-623880144
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_southeast-missouri-st-central-arkansas-live-streaming-623880144
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_southeast-missouri-st-central-arkansas-live-streaming-623880144/playlist.m3u8?tk=VFfapWOHYpXRVdH7p1WT3g&e=1789908743
+#EXTINF:-1 tvg-chno="93" tvg-id="Live.Event.us" tvg-name="[american-football] Sam Houston State vs Nicholls (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Sam Houston State vs Nicholls (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_sam-houston-state-nicholls-state-live-streaming-587854800
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_sam-houston-state-nicholls-state-live-streaming-587854800
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_sam-houston-state-nicholls-state-live-streaming-587854800/playlist.m3u8?tk=VFfapWOHYpXRVdH7p1WT3g&e=1789908743
+#EXTINF:-1 tvg-chno="94" tvg-id="Live.Event.us" tvg-name="[american-football] Jacksonville State vs Georgia Southern (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Jacksonville State vs Georgia Southern (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_jacksonville-state-georgia-southern-live-streaming-587840544
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_jacksonville-state-georgia-southern-live-streaming-587840544
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_jacksonville-state-georgia-southern-live-streaming-587840544/playlist.m3u8?tk=VFfapWOHYpXRVdH7p1WT3g&e=1789908743
+#EXTINF:-1 tvg-chno="95" tvg-id="Live.Event.us" tvg-name="[american-football] South Alabama vs Ohio (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] South Alabama vs Ohio (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_south-alabama-ohio-live-streaming-587841840
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_south-alabama-ohio-live-streaming-587841840
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_south-alabama-ohio-live-streaming-587841840/playlist.m3u8?tk=VFfapWOHYpXRVdH7p1WT3g&e=1789908743
+#EXTINF:-1 tvg-chno="96" tvg-id="Live.Event.us" tvg-name="[american-football] Middle Tennessee vs Nevada (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Middle Tennessee vs Nevada (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_middle-tennessee-st-nevada-live-streaming-587840976
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_middle-tennessee-st-nevada-live-streaming-587840976
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_middle-tennessee-st-nevada-live-streaming-587840976/playlist.m3u8?tk=ADcpz2Ohfd_JkR5Tm9LPqw&e=1789908744
+#EXTINF:-1 tvg-chno="97" tvg-id="Live.Event.us" tvg-name="[american-football] Rice vs Western Michigan (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Rice vs Western Michigan (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_rice-western-michigan-live-streaming-587841408
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_rice-western-michigan-live-streaming-587841408
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_rice-western-michigan-live-streaming-587841408/playlist.m3u8?tk=ADcpz2Ohfd_JkR5Tm9LPqw&e=1789908744
+#EXTINF:-1 tvg-chno="98" tvg-id="Live.Event.us" tvg-name="[american-football] Auburn vs Florida (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IFOOCIIpEFlIjgM4SFUgpwGvBEgYujWRVY5mnYnlbVUkFRTkZAoYoLZ6YQsCS4AxnaFhuTmUFOxdtMAClBQggA.webp" group-title="Live Events",[american-football] Auburn vs Florida (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-florida-gators-at-auburn-tigers
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-florida-gators-at-auburn-tigers
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-florida-gators-at-auburn-tigers/playlist.m3u8?tk=ADcpz2Ohfd_JkR5Tm9LPqw&e=1789908744
+#EXTINF:-1 tvg-chno="99" tvg-id="Live.Event.us" tvg-name="[american-football] Missouri vs Troy (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEFLBJsdEKJAhuGkChCIYekBENm9BYNpj9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[american-football] Missouri vs Troy (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-troy-trojans-at-missouri-tigers
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-troy-trojans-at-missouri-tigers
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-troy-trojans-at-missouri-tigers/playlist.m3u8?tk=ADcpz2Ohfd_JkR5Tm9LPqw&e=1789908744
+#EXTINF:-1 tvg-chno="100" tvg-id="Live.Event.us" tvg-name="[american-football] Calgary Stampeders vs Ottawa Redblacks (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VGd3K8ADCAghuIPgZCIYIEnpBSQt+AWBIKfYbPoowKlF0-l6WWW8mWjBPMVEIIA.webp" group-title="Live Events",[american-football] Calgary Stampeders vs Ottawa Redblacks (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-ottawa-red-blacks-at-calgary-stampeders
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-ottawa-red-blacks-at-calgary-stampeders
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-ottawa-red-blacks-at-calgary-stampeders/playlist.m3u8?tk=ADcpz2Ohfd_JkR5Tm9LPqw&e=1789908744
+#EXTINF:-1 tvg-chno="101" tvg-id="Live.Event.us" tvg-name="[american-football] Charleston Southern vs Point University (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Charleston Southern vs Point University (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_charleston-southern-point-university-skyhawks-live-streaming-623866752
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_charleston-southern-point-university-skyhawks-live-streaming-623866752
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_charleston-southern-point-university-skyhawks-live-streaming-623866752/playlist.m3u8?tk=_k_pbek17hkT4LNJlmqfGA&e=1789908745
+#EXTINF:-1 tvg-chno="102" tvg-id="Baseball.Dummy.us" tvg-name="[baseball] Pittsburgh Pirates vs Kansas City Royals (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rAAxEUcsL0TcQfEMeMoQEEIhjmQUgsCQU+w2fRRgV2th-L0ss7SZaMA8xUQggA.webp" group-title="Live Events",[baseball] Pittsburgh Pirates vs Kansas City Royals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-kansas-city-royals-vs-pittsburgh-pirates
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-kansas-city-royals-vs-pittsburgh-pirates
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-kansas-city-royals-vs-pittsburgh-pirates/playlist.m3u8?tk=_k_pbek17hkT4LNJlmqfGA&e=1789908745
+#EXTINF:-1 tvg-chno="103" tvg-id="Baseball.Dummy.us" tvg-name="[baseball] Cincinnati Reds vs Chicago Cubs (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rNoRDAADHMghuIPiBMmUICCEQwLIEgWBIKfYbPoowKlF0-l6WWW8mWjBPMVEIIA.webp" group-title="Live Events",[baseball] Cincinnati Reds vs Chicago Cubs (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-chicago-cubs-vs-cincinnati-reds
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-chicago-cubs-vs-cincinnati-reds
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-chicago-cubs-vs-cincinnati-reds/playlist.m3u8?tk=v-2Sb8ybOxbnfPXMOKyB8g&e=1789908746
+#EXTINF:-1 tvg-chno="104" tvg-id="Live.Event.us" tvg-name="[american-football] Lyon College Scots vs Greenville Panthers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lyon College Scots vs Greenville Panthers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lyon-college-scots-greenville-panthers-live-streaming-610714080
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lyon-college-scots-greenville-panthers-live-streaming-610714080
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lyon-college-scots-greenville-panthers-live-streaming-610714080/playlist.m3u8?tk=v-2Sb8ybOxbnfPXMOKyB8g&e=1789908746
+#EXTINF:-1 tvg-chno="105" tvg-id="Live.Event.us" tvg-name="[american-football] Edward Waters Tigers vs Savannah State Tigers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Edward Waters Tigers vs Savannah State Tigers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_edward-waters-tigers-savannah-st-live-streaming-587816352
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_edward-waters-tigers-savannah-st-live-streaming-587816352
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_edward-waters-tigers-savannah-st-live-streaming-587816352/playlist.m3u8?tk=v-2Sb8ybOxbnfPXMOKyB8g&e=1789908746
+#EXTINF:-1 tvg-chno="106" tvg-id="Baseball.Dummy.us" tvg-name="[baseball] Cleveland Guardians vs Athletics (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VJAgaUwIECRDcQfXSZQgIIRDHPmCwDTH7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[baseball] Cleveland Guardians vs Athletics (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-athletics-vs-cleveland-guardians
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-athletics-vs-cleveland-guardians
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/admin/ppv-athletics-vs-cleveland-guardians/playlist.m3u8?tk=v-2Sb8ybOxbnfPXMOKyB8g&e=1789908746
+#EXTINF:-1 tvg-chno="107" tvg-id="Live.Event.us" tvg-name="[american-football] John Carroll Blue Streaks vs Kenyon Lords (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] John Carroll Blue Streaks vs Kenyon Lords (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_john-carroll-blue-streaks-kenyon-lords-live-streaming-610715376
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_john-carroll-blue-streaks-kenyon-lords-live-streaming-610715376
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_john-carroll-blue-streaks-kenyon-lords-live-streaming-610715376/playlist.m3u8?tk=X6NNvpI7txo3GC7FvTF8gw&e=1789908748
+#EXTINF:-1 tvg-chno="108" tvg-id="Live.Event.us" tvg-name="[american-football] Greensboro Pride vs Bluefield Rams (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Greensboro Pride vs Bluefield Rams (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_greensboro-pride-bluefield-rams-live-streaming-610714944
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_greensboro-pride-bluefield-rams-live-streaming-610714944
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_greensboro-pride-bluefield-rams-live-streaming-610714944/playlist.m3u8?tk=X6NNvpI7txo3GC7FvTF8gw&e=1789908748
+#EXTINF:-1 tvg-chno="109" tvg-id="Live.Event.us" tvg-name="[american-football] Anderson	Ravens vs Kalamazoo Hornets (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Anderson	Ravens vs Kalamazoo Hornets (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_andersonravens-kalamazoo-hornets-live-streaming-610714512
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_andersonravens-kalamazoo-hornets-live-streaming-610714512
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_andersonravens-kalamazoo-hornets-live-streaming-610714512/playlist.m3u8?tk=X6NNvpI7txo3GC7FvTF8gw&e=1789908748
+#EXTINF:-1 tvg-chno="110" tvg-id="Live.Event.us" tvg-name="[american-football] Wingate Bulldogs vs Newberry Wolves (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Wingate Bulldogs vs Newberry Wolves (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_wingate-bulldogs-newberry-wolves-live-streaming-587819376
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_wingate-bulldogs-newberry-wolves-live-streaming-587819376
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_wingate-bulldogs-newberry-wolves-live-streaming-587819376/playlist.m3u8?tk=X6NNvpI7txo3GC7FvTF8gw&e=1789908748
+#EXTINF:-1 tvg-chno="111" tvg-id="Live.Event.us" tvg-name="[american-football] Virginia Union Panthers vs Bluefield State Big Blues (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Virginia Union Panthers vs Bluefield State Big Blues (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-union-panthers-bluefield-state-big-blues-live-streaming-587818944
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-union-panthers-bluefield-state-big-blues-live-streaming-587818944
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_virginia-union-panthers-bluefield-state-big-blues-live-streaming-587818944/playlist.m3u8?tk=X6NNvpI7txo3GC7FvTF8gw&e=1789908748
+#EXTINF:-1 tvg-chno="112" tvg-id="Live.Event.us" tvg-name="[american-football] Virginia-Wise Cavaliers vs Carson-Newman Eagles (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Virginia-Wise Cavaliers vs Carson-Newman Eagles (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-wise-cavaliers-carson-newman-eagles-live-streaming-587818512
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_virginia-wise-cavaliers-carson-newman-eagles-live-streaming-587818512
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_virginia-wise-cavaliers-carson-newman-eagles-live-streaming-587818512/playlist.m3u8?tk=v_St13j-lkU7dZMKVNdEVg&e=1789908749
+#EXTINF:-1 tvg-chno="113" tvg-id="Live.Event.us" tvg-name="[american-football] Lock Haven Bald Eagles vs Kutztown Golden Bears (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lock Haven Bald Eagles vs Kutztown Golden Bears (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lock-haven-bald-eagles-kutztown-golden-bears-live-streaming-587817648
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lock-haven-bald-eagles-kutztown-golden-bears-live-streaming-587817648
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lock-haven-bald-eagles-kutztown-golden-bears-live-streaming-587817648/playlist.m3u8?tk=v_St13j-lkU7dZMKVNdEVg&e=1789908749
+#EXTINF:-1 tvg-chno="114" tvg-id="Live.Event.us" tvg-name="[american-football] Livingstone Blue Bears vs Winston-Salem State Rams (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Livingstone Blue Bears vs Winston-Salem State Rams (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_livingstone-blue-bears-winston-salem-state-rams-live-streaming-587817216
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_livingstone-blue-bears-winston-salem-state-rams-live-streaming-587817216
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_livingstone-blue-bears-winston-salem-state-rams-live-streaming-587817216/playlist.m3u8?tk=v_St13j-lkU7dZMKVNdEVg&e=1789908749
+#EXTINF:-1 tvg-chno="115" tvg-id="Live.Event.us" tvg-name="[american-football] Lenoir Rhyne Bears vs Mars Hill Lions (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lenoir Rhyne Bears vs Mars Hill Lions (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lenoir-rhyne-bears-mars-hill-lions-live-streaming-587816784
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lenoir-rhyne-bears-mars-hill-lions-live-streaming-587816784
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lenoir-rhyne-bears-mars-hill-lions-live-streaming-587816784/playlist.m3u8?tk=v_St13j-lkU7dZMKVNdEVg&e=1789908749
+#EXTINF:-1 tvg-chno="116" tvg-id="Live.Event.us" tvg-name="[american-football] Clark Atlanta Panthers vs Miles Golden Bears (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Clark Atlanta Panthers vs Miles Golden Bears (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_clark-atlanta-panthers-miles-golden-bears-live-streaming-587815920
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_clark-atlanta-panthers-miles-golden-bears-live-streaming-587815920
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_clark-atlanta-panthers-miles-golden-bears-live-streaming-587815920/playlist.m3u8?tk=v_St13j-lkU7dZMKVNdEVg&e=1789908749
+#EXTINF:-1 tvg-chno="117" tvg-id="Live.Event.us" tvg-name="[american-football] Chowan Hawks vs Barton Bulldogs (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Chowan Hawks vs Barton Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_chowan-hawks-barton-bulldogs-live-streaming-587815488
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_chowan-hawks-barton-bulldogs-live-streaming-587815488
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_chowan-hawks-barton-bulldogs-live-streaming-587815488/playlist.m3u8?tk=v_St13j-lkU7dZMKVNdEVg&e=1789908749
+#EXTINF:-1 tvg-chno="118" tvg-id="Live.Event.us" tvg-name="[american-football] Catawba Indians vs Emory And Henry Wasps (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Catawba Indians vs Emory And Henry Wasps (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_catawba-indians-emory-and-henry-wasps-live-streaming-587815056
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_catawba-indians-emory-and-henry-wasps-live-streaming-587815056
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_catawba-indians-emory-and-henry-wasps-live-streaming-587815056/playlist.m3u8?tk=RqQ1nvtxLOTgevyuByYoTA&e=1789908750
+#EXTINF:-1 tvg-chno="119" tvg-id="Live.Event.us" tvg-name="[american-football] Lane Dragons vs Morehouse Maroon Tigers (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Lane Dragons vs Morehouse Maroon Tigers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_lane-dragons-morehouse-maroon-tigers-live-streaming-587814192
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_lane-dragons-morehouse-maroon-tigers-live-streaming-587814192
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_lane-dragons-morehouse-maroon-tigers-live-streaming-587814192/playlist.m3u8?tk=RqQ1nvtxLOTgevyuByYoTA&e=1789908750
+#EXTINF:-1 tvg-chno="120" tvg-id="Live.Event.us" tvg-name="[american-football] Campbell Fighting Camels vs North Carolina A&T Aggies (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Campbell Fighting Camels vs North Carolina A&T Aggies (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_campbell-north-carolina-at-live-streaming-623877120
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_campbell-north-carolina-at-live-streaming-623877120
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_campbell-north-carolina-at-live-streaming-623877120/playlist.m3u8?tk=RqQ1nvtxLOTgevyuByYoTA&e=1789908750
+#EXTINF:-1 tvg-chno="121" tvg-id="Live.Event.us" tvg-name="[american-football] Chattanooga vs Wofford (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Chattanooga vs Wofford (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_chattanooga-wofford-live-streaming-623877552
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_chattanooga-wofford-live-streaming-623877552
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_chattanooga-wofford-live-streaming-623877552/playlist.m3u8?tk=RqQ1nvtxLOTgevyuByYoTA&e=1789908750
+#EXTINF:-1 tvg-chno="122" tvg-id="Live.Event.us" tvg-name="[american-football] Eastern Kentucky vs Dayton (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Eastern Kentucky vs Dayton (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_eastern-kentucky-dayton-flyers-live-streaming-623877984
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_eastern-kentucky-dayton-flyers-live-streaming-623877984
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_eastern-kentucky-dayton-flyers-live-streaming-623877984/playlist.m3u8?tk=RqQ1nvtxLOTgevyuByYoTA&e=1789908750
+#EXTINF:-1 tvg-chno="123" tvg-id="Live.Event.us" tvg-name="[american-football] William and  Mary vs Fordham (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] William and  Mary vs Fordham (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_william-mary-fordham-live-streaming-623878848
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_william-mary-fordham-live-streaming-623878848
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_william-mary-fordham-live-streaming-623878848/playlist.m3u8?tk=StVdEcmYgVABQHvwiQLZRA&e=1789908751
+#EXTINF:-1 tvg-chno="124" tvg-id="Live.Event.us" tvg-name="[american-football] Gardner-Webb vs North Carolina Central (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Gardner-Webb vs North Carolina Central (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_gardner-webb-north-carolina-central-live-streaming-623878416
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_gardner-webb-north-carolina-central-live-streaming-623878416
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_gardner-webb-north-carolina-central-live-streaming-623878416/playlist.m3u8?tk=StVdEcmYgVABQHvwiQLZRA&e=1789908751
+#EXTINF:-1 tvg-chno="125" tvg-id="Live.Event.us" tvg-name="[american-football] Towson vs Morgan State (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Towson vs Morgan State (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_towson-morgan-state-live-streaming-587860848
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_towson-morgan-state-live-streaming-587860848
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_towson-morgan-state-live-streaming-587860848/playlist.m3u8?tk=StVdEcmYgVABQHvwiQLZRA&e=1789908751
+#EXTINF:-1 tvg-chno="126" tvg-id="Live.Event.us" tvg-name="[american-football] Elon vs Sacred Heart (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Elon vs Sacred Heart (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_elon-sacred-heart-pioneers-live-streaming-587860416
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_elon-sacred-heart-pioneers-live-streaming-587860416
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_elon-sacred-heart-pioneers-live-streaming-587860416/playlist.m3u8?tk=StVdEcmYgVABQHvwiQLZRA&e=1789908751
+#EXTINF:-1 tvg-chno="127" tvg-id="Live.Event.us" tvg-name="[american-football] Old Dominion vs East Carolina (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rFCBj8wIQXxDcQUkBsQwQJEBE0hEfAsCQV7rEWJRgVKLp-L0sst5MtGCeYqIQQA.webp" group-title="Live Events",[american-football] Old Dominion vs East Carolina (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_old-dominion-east-carolina-live-streaming-587839248
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_old-dominion-east-carolina-live-streaming-587839248
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_old-dominion-east-carolina-live-streaming-587839248/playlist.m3u8?tk=StVdEcmYgVABQHvwiQLZRA&e=1789908751
+#EXTINF:-1 tvg-chno="128" tvg-id="Live.Event.us" tvg-name="[fight] Zachary Pannell - Kevin Ferguson Jr. (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[fight] Zachary Pannell - Kevin Ferguson Jr. (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-golf~1520
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-golf~1520
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/golf/1520/playlist.m3u8?tk=StVdEcmYgVABQHvwiQLZRA&e=1789908751
+#EXTINF:-1 tvg-chno="129" tvg-id="Live.Event.us" tvg-name="[american-football] Appalachian State vs Charlotte (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rKDDpgklZiG4gpIFCEQwQJU4ZAQQfAsCQV7rEWJRgVKLp-L0sst5MtGCeYqIQQA.webp" group-title="Live Events",[american-football] Appalachian State vs Charlotte (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_appalachian-st-charlotte-live-streaming-587838384
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_appalachian-st-charlotte-live-streaming-587838384
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_appalachian-st-charlotte-live-streaming-587838384/playlist.m3u8?tk=MEeF4XF_k-06saLvJoj3Zg&e=1789908752
