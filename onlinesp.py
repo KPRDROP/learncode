@@ -96,6 +96,11 @@ class SportsonlineExtractor:
         parsed = urlparse(url)
         return f"{parsed.scheme}://{parsed.netloc}"
 
+    def _get_referer_from_url(self, url: str) -> str:
+        """Get referer as origin with trailing slash (strips path)."""
+        parsed = urlparse(url)
+        return f"{parsed.scheme}://{parsed.netloc}/"
+
     def _build_page_headers(self) -> dict[str, str]:
         headers = {
             "User-Agent": self._get_request_header("User-Agent", self.base_headers["User-Agent"]),
@@ -233,7 +238,11 @@ class SportsonlineExtractor:
             return raw_body.decode('utf-8', errors='replace')
 
     def _extract_iframe_info(self, html: str, base_url: str) -> Tuple[Optional[str], Optional[str], Optional[str]]:
-        """Extract iframe URL, real referer and origin from the HTML."""
+        """Extract iframe URL, real referer and origin from the HTML.
+        
+        The referer is ALWAYS the origin (scheme://netloc/) of the iframe domain,
+        NOT the full path of the iframe URL.
+        """
         # Look for player iframe
         iframe_patterns = [
             r'<!--player--><iframe[^>]+src=["\']([^"\']+)["\']',
@@ -252,9 +261,10 @@ class SportsonlineExtractor:
             return None, None, None
         
         # Extract real referer and origin from the iframe URL domain
+        # Referer = origin with trailing slash (path stripped)
         parsed_iframe = urlparse(iframe_url)
         real_origin = f"{parsed_iframe.scheme}://{parsed_iframe.netloc}"
-        real_referer = iframe_url
+        real_referer = f"{parsed_iframe.scheme}://{parsed_iframe.netloc}/"
         
         # Also look for any meta referrer tags
         meta_ref = re.search(r'<meta[^>]+name=["\']referrer["\'][^>]+content=["\']([^"\']+)["\']', html, re.IGNORECASE)
@@ -433,10 +443,11 @@ class SportsonlineExtractor:
             else:
                 logger.debug("No iframe found, using main HTML")
                 # Try to find player config in main HTML
-                real_referer = main_url
+                real_referer = self._get_referer_from_url(main_url)
                 real_origin = self._get_origin(main_url)
 
             # Build playback headers with real referer and origin
+            # Referer is ALWAYS origin with trailing slash (path stripped)
             if real_referer and real_origin:
                 playback_headers = {
                     "Referer": real_referer,
@@ -446,7 +457,7 @@ class SportsonlineExtractor:
             else:
                 parsed_iframe = urlparse(iframe_url)
                 playback_headers = {
-                    "Referer": iframe_url,
+                    "Referer": f"{parsed_iframe.scheme}://{parsed_iframe.netloc}/",
                     "Origin": f"{parsed_iframe.scheme}://{parsed_iframe.netloc}",
                     "User-Agent": user_agent,
                 }
