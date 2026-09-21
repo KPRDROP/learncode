@@ -3,44 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=uGC5dO38cHPdQXFDGTKIZg&e=1789991986
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs. Baltimore Orioles (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7e9c1c3ff24e449ca0e216f67382056e-thumbnail.jpg" group-title="MLB",[MLB] Milwaukee Brewers vs. Baltimore Orioles (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-20/mil-bal
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-20/mil-bal
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-20/mil-bal/playlist.m3u8?tk=uGC5dO38cHPdQXFDGTKIZg&e=1789991986
-#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Portland Fire vs. Los Angeles Sparks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/eae569125999fa2234b2e7d33ff46bdb-thumbnail.jpg" group-title="NBA",[WNBA] Portland Fire vs. Los Angeles Sparks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-20/por-la
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-20/por-la
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-09-20/por-la/playlist.m3u8?tk=b0btKPH_y2p9DDK8h9lIVQ&e=1789991987
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Inter Miami CF vs. San Diego FC (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/530f783987872a1f1c17dd0d7226626c-thumbnail.jpg" group-title="Live Events",[MLS] Inter Miami CF vs. San Diego FC (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mls/2026-09-20/mia-sd
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mls/2026-09-20/mia-sd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-09-20/mia-sd/playlist.m3u8?tk=b0btKPH_y2p9DDK8h9lIVQ&e=1789991987
-#EXTINF:-1 tvg-chno="5" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=vBHJtA4nbL7svW8eKuHplw&e=1790009189
+#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=b0btKPH_y2p9DDK8h9lIVQ&e=1789991987
-#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Washington Capitals vs. Boston Bruins (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/38e9fd8b21f242694b59620f15d1596f-thumbnail.jpg" group-title="NHL",[NHL] Washington Capitals vs. Boston Bruins (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-20/wsh-bos
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-20/wsh-bos
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=vBHJtA4nbL7svW8eKuHplw&e=1790009189
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[football] Querétaro vs León (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEKNYyQIKHxDcQ+nRF0gYRjZZQFgSCn2Gz6KMCpRc35ellkemtGBuYqIQQA.webp" group-title="Live Events",[football] Querétaro vs León (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-quer-taro-vs-le-n
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-quer-taro-vs-le-n
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-09-20/wsh-bos/playlist.m3u8?tk=b0btKPH_y2p9DDK8h9lIVQ&e=1789991987
-#EXTINF:-1 tvg-chno="7" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Nashville Predators vs. Tampa Bay Lightning (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/147af7d9d8439e7bbbf01f962d0b2690-thumbnail.jpg" group-title="NHL",[NHL] Nashville Predators vs. Tampa Bay Lightning (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-20/nsh-tb
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-20/nsh-tb
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-09-20/nsh-tb/playlist.m3u8?tk=Mj_463DwnzhEeZmkRWHVDQ&e=1789991988
-#EXTINF:-1 tvg-chno="8" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Utah Mammoth vs. Colorado Avalanche (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1e95e002c0248fd0676f7d00faedd237-thumbnail.jpg" group-title="NHL",[NHL] Utah Mammoth vs. Colorado Avalanche (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-20/uta-col
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-20/uta-col
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-09-20/uta-col/playlist.m3u8?tk=Mj_463DwnzhEeZmkRWHVDQ&e=1789991988
-#EXTINF:-1 tvg-chno="9" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Carolina Hurricanes vs. Florida Panthers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3747e6aff78637abe66c95b622888db7-thumbnail.jpg" group-title="NHL",[NHL] Carolina Hurricanes vs. Florida Panthers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-20/car-fla
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-20/car-fla
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-09-20/car-fla/playlist.m3u8?tk=Mj_463DwnzhEeZmkRWHVDQ&e=1789991988
+https://messi.damitv.st/live-sd/streamed/admin/ppv-quer-taro-vs-le-n/playlist.m3u8?tk=vBHJtA4nbL7svW8eKuHplw&e=1790009189
