@@ -1,76 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[NFL] NFL  vs RedZone (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2024/01/Football-Emoji-500x281.png" group-title="NFL",[NFL] NFL vs RedZone
+#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Jacksonville Jaguars vs Denver Broncos (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Jacksonville Jaguars vs Denver Broncos
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/4a56df7f77226de81a346bcdb462f4e4f4d6607ed90b31845f173cf021cd4454/1789960047/nflredzone-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Atlanta Falcons vs Carolina Panthers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Atlanta Falcons vs Carolina Panthers
+https://juxrd.hundxvision.co.uk/main/secure/861f2ae36aeb8cf77d7db9093d3c0994f840cb842c13a4e6474bb0733763218c/1789978050/nfl-401872940.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Chargers vs Las Vegas Raiders (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Los Angeles Chargers vs Las Vegas Raiders
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/7a2768492ae095a5deac3fa916b4eee64ebbbbcb7646b8cccff675cd99b91439/1789960047/nfl-401872933.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Chicago Bears vs Minnesota Vikings (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Chicago Bears vs Minnesota Vikings
+https://juxrd.hundxvision.co.uk/main/secure/bc5bc56398818e0737f9b3bb161e5551401a02174dbe96bf84134fc301cc42e5/1789978051/nfl-401872941.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Dallas Cowboys vs Washington Commanders (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Dallas Cowboys vs Washington Commanders
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/09f1ff7a64e2e3fa5df0e14b79704294b943a5ff136d45fc2f8cf89cae9797d1/1789960048/nfl-401872937.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Tennessee Titans vs Philadelphia Eagles (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Tennessee Titans vs Philadelphia Eagles
+https://juxrd.hundxvision.co.uk/main/secure/27430ad0bd22b0ed8e00aa2b5ec21eb7b53fbd162a2459be5b5081f3884f8e08/1789978051/nfl-401872944.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Seattle Seahawks vs Arizona Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Seattle Seahawks vs Arizona Cardinals
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/fa50ad988bc5034ff6b980ad8847b16b096faa5c5c4e069765145205042abecb/1789960048/nfl-401872939.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[NFL] New England Patriots vs Pittsburgh Steelers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] New England Patriots vs Pittsburgh Steelers
+https://juxrd.hundxvision.co.uk/main/secure/2f319844f2d1e229b8b129712de92f97e098beb1961c2c2cdc0993174df3598a/1789978052/nfl-401872943.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[NFL] San Francisco 49ers vs Miami Dolphins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] San Francisco 49ers vs Miami Dolphins
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/afe2a29ae3a1fa2a088e0b9b4bd95429e12d478d8812a061d7fd630585236c65/1789960049/nfl-401872946.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="NFL.Dummy.us" tvg-name="[NFL] New York Jets vs Green Bay Packers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] New York Jets vs Green Bay Packers
+https://juxrd.hundxvision.co.uk/main/secure/0ade5fe722a74f460cf00f1eaaa9f03ee4b3c989de11cdd94bd334d717ddbdec/1789978052/nfl-401872942.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Indianapolis Colts vs Kansas City Chiefs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Indianapolis Colts vs Kansas City Chiefs
 #EXTVLCOPT:http-referrer=https://epiembeds.online/
 #EXTVLCOPT:http-origin=https://epiembeds.online
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/a3b19fc7f31d031c9a20d2ff9f2d6fbb3481190b5ca178d285265a4231701d79/1789960049/nfl-401872936.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Tampa Bay Buccaneers  vs Cleveland Browns (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Tampa Bay Buccaneers vs Cleveland Browns
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/c569203c4e0a5aade1a77ef9bac5df8e0f3ec438a0744cb34f2c19fc6fe9acc2/1789960050/nfl-401872935.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Baltimore Ravens vs New Orleans Saints (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Baltimore Ravens vs New Orleans Saints
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/f83ebb1e177f8311a1bd2c76069d482d3d7e96fd969369a97a996e7d5793625c/1789960051/nfl-401872938.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Houston Texans vs Cincinnati Bengals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Houston Texans vs Cincinnati Bengals
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/0762994aa4b70946c124b2e90761f2a277d07369ff451f56e3fe18237a3fd7a9/1789960051/nfl-401872934.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Jacksonville Jaguars vs Denver Broncos (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Jacksonville Jaguars vs Denver Broncos
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/f6c013ae8610461c203a9882d088e35d43a8391a2a6fc0ec96eda28ce31a8712/1789960051/nfl-401872940.m3u8
-#EXTINF:-1 tvg-chno="11" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Chargers vs Las Vegas Raiders (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Los Angeles Chargers vs Las Vegas Raiders
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/86dc9218eab1cf9848fadac4cfc66f42c5579272545b415707ced15815fb8043/1789960052/nfl-401872941.m3u8
-#EXTINF:-1 tvg-chno="12" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Dallas Cowboys vs Washington Commanders (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Dallas Cowboys vs Washington Commanders
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/e3df201b3c2676e55a1f8bb2c3275e3430133df6f09e4c6e4d6e63a0681adb12/1789960052/nfl-401872944.m3u8
-#EXTINF:-1 tvg-chno="13" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Seattle Seahawks vs Arizona Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Seattle Seahawks vs Arizona Cardinals
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/20dbc3f6d312597d7bccf87f6b97e031f45eae191b9799eb5e3fd23ea8dfaaf9/1789960052/nfl-401872943.m3u8
-#EXTINF:-1 tvg-chno="14" tvg-id="NFL.Dummy.us" tvg-name="[NFL] San Francisco 49ers vs Miami Dolphins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] San Francisco 49ers vs Miami Dolphins
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/500ed3ad62bcfab4d83180a8d84a5a5ba5ea656c0736c24a676cda7552b67bd6/1789960053/nfl-401872942.m3u8
-#EXTINF:-1 tvg-chno="15" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Indianapolis Colts vs Kansas City Chiefs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="NFL",[NFL] Indianapolis Colts vs Kansas City Chiefs
-#EXTVLCOPT:http-referrer=https://epiembeds.online/
-#EXTVLCOPT:http-origin=https://epiembeds.online
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/a70d048cf0987c64dd4224d137eb484168d89e212a872a1b50625ad3001cf411/1789960053/nbc-usa.m3u8
+https://juxrd.hundxvision.co.uk/main/secure/caa2c5bdb99895308f29a83dcd0d6343ec042dd59dcbd474395d9873343faef8/1789978053/nbc-usa.m3u8
