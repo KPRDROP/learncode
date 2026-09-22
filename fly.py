@@ -5,6 +5,7 @@ import json
 from collections.abc import KeysView
 from functools import partial
 from typing import Dict
+from urllib.parse import urlsplit
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
@@ -22,14 +23,11 @@ API_FILE = Cache(f"{TAG}-api", exp=19_800)
 
 # Secret variables
 FLY_API_URL = os.getenv("FLY_API_URL")
-FLY_BASE_URL = os.getenv("FLY_BASE_URL")
 VLC_USER_AGENT = os.getenv("VLC_USER_AGENT")
 TIVIMATE_USER_AGENT = os.getenv("TIVIMATE_USER_AGENT")
 
-# Referer and origin for streams
-REFERER = "https://epiembeds.online/"
-ORIGIN = "https://epiembeds.online"
 
+# ---------- helpers ----------
 
 def clean_name(s: str) -> str:
     return re.sub(r"(\r|\n)", "", s).strip()
@@ -40,56 +38,31 @@ def clean_m3u(s: str) -> str:
 
 
 def clean_display_name(name: str) -> str:
-    """
-    Clean display name by removing commas and extra spaces.
-    
-    Args:
-        name: Display name
-        
-    Returns:
-        Cleaned display name
-    """
     if not name:
         return ""
-    # Remove commas but keep the text around them
-    cleaned = re.sub(r',\s*', ' ', name)
-    # Remove extra spaces
-    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    return cleaned
+    cleaned = re.sub(r",\s*", " ", name)
+    return re.sub(r"\s+", " ", cleaned).strip()
 
 
 def normalize_vs(name: str) -> str:
-    """
-    Normalize 'VS' to 'vs' in event names.
-    
-    Args:
-        name: Event name
-        
-    Returns:
-        Normalized event name
-    """
-    # Replace VS, Vs, vS with vs (case insensitive)
-    return re.sub(r'\bVS\b', 'vs', name, flags=re.I)
+    return re.sub(r"\bVS\b", "vs", name, flags=re.I)
 
 
-def encode_user_agent(user_agent: str) -> str:
-    """
-    Encode the user agent for URL parameters.
-    
-    Args:
-        user_agent: User agent string
-        
-    Returns:
-        URL-encoded user agent
-    """
-    # URL encode the user agent
-    encoded = user_agent.replace(' ', '%20')
-    encoded = encoded.replace('(', '%28')
-    encoded = encoded.replace(')', '%29')
-    encoded = encoded.replace(';', '%3B')
-    encoded = encoded.replace(',', '%2C')
-    return encoded
+def encode_user_agent(ua: str) -> str:
+    for a, b in ((" ", "%20"), ("(", "%28"), (")", "%29"),
+                 (";", "%3B"), (",", "%2C")):
+        ua = ua.replace(a, b)
+    return ua
 
+
+def origin_of(url: str) -> str:
+    if not url:
+        return ""
+    p = urlsplit(url)
+    return f"{p.scheme}://{p.netloc}" if p.scheme and p.netloc else ""
+
+
+# ---------- event processing ----------
 
 async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]:
     """Process event URL to extract M3U8 stream from encrypted iframe HTML."""
@@ -99,34 +72,26 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
         return nones
 
     soup = HTMLParser(html_data.content)
-
     iframe = soup.css_first("iframe")
 
     if not iframe or not (iframe_src := iframe.attributes.get("src")):
         log.warning(f"URL {url_num}) No iframe source found.")
         return nones
 
-    elif not (
-        iframe_src_data := await network.request(
-            iframe_src,
-            url_num,
-            headers={"Referer": url},
-            log=log,
-        )
-    ):
+    if not (iframe_src_data := await network.request(
+        iframe_src, url_num, headers={"Referer": url}, log=log
+    )):
         return nones
 
     num_list_ptrn = re.compile(r"var\s+_(\w+)=\[([^\]]*)\],", re.S)
-
     index_ptrn = re.compile(r"(_[a-z]+\d+)=(\d+)")
-
     m3u_ptrn = re.compile(r'(var\s?signed_)?url\s?=\s?"(.*)";', re.I)
 
     if not (num_list_mtch := num_list_ptrn.findall(iframe_src_data.text)):
         log.warning(f"URL {url_num}) Unable to decipher m3u encryption.")
         return nones
 
-    elif not (index_mtch := index_ptrn.findall(iframe_src_data.text)):
+    if not (index_mtch := index_ptrn.findall(iframe_src_data.text)):
         log.warning(f"URL {url_num}) Unable to decipher m3u encryption.")
         return nones
 
@@ -144,46 +109,34 @@ async def process_event(url: str, url_num: int) -> tuple[str | None, str | None]
         return nones
 
     log.info(f"URL {url_num}) Captured M3U8")
-
     return json.loads(f'"{m3u_mtch[2]}"'), iframe_src
 
 
+# ---------- event discovery ----------
+
 async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     now = Time.rn()
-
     events: list[Event] = []
 
     if not (api_data := API_FILE.load(per_entry=False, ts_index=-1)):
         log.info("Refreshing API cache")
-
         api_data = [{"timestamp": now.timestamp()}]
 
-        if r := await network.request(
-            FLY_API_URL,  # Using secret variable
-            log=log,
-        ):
+        if r := await network.request(FLY_API_URL, log=log):
             api_data: list[dict[str, str]] = r.json()
-
             api_data[-1]["timestamp"] = now.timestamp()
 
         API_FILE.write(api_data)
 
-    # Expanded time window to get more events
-    start_dt = now.delta(hours=-12)
-    end_dt = now.delta(hours=24)
+    start_dt = now.delta(hours=-3)
+    end_dt = now.delta(minutes=30)
 
     for event_group in api_data:
         if not all(
             values := [
-                event_group.get(x)
-                for x in (
-                    "League",
-                    "Team 1 ",
-                    "Team2",
-                    "Date",
-                    "Time",
-                    "iframeURL",
-                )
+                event_group.get(k)
+                for k in ("Sport", "Team1", "Team2",
+                          "MatchDate", "MatchStartTime", "IframeURL")
             ]
         ):
             continue
@@ -191,7 +144,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         sport, away, home, date, time, link = values
 
         try:
-            event_dt = Time.from_str(f"{date.replace(' ','')} {time}", tz_name="GMT")
+            event_dt = Time.from_str(f"{date} {time}", tz_name="UTC")
         except Exception as e:
             log.debug(f"Failed to parse date for {away} vs {home}: {e}")
             continue
@@ -199,10 +152,8 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
         if not start_dt <= event_dt <= end_dt:
             continue
 
-        # Clean and normalize names
         sport = clean_name(sport)
-        name = clean_name(f"{away} vs {home}")
-        name = normalize_vs(name)
+        name = normalize_vs(clean_name(f"{away} vs {home}"))
 
         if f"[{sport}] {name} ({TAG})" in cached_keys:
             continue
@@ -219,28 +170,24 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
     return events
 
 
+# ---------- scraper ----------
+
 async def scrape() -> None:
     cached_urls = CACHE_FILE.load()
 
     valid_urls = {k: v for k, v in cached_urls.items() if v["source"]}
-
     valid_count = cached_count = len(valid_urls)
 
     urls.update(valid_urls)
 
     log.info(f"Loaded {cached_count} event(s) from cache")
-
     log.info('Scraping from "https://flyembed.xyz"')
 
     if events := await get_events(cached_urls.keys()):
         log.info(f"Processing {len(events)} new URL(s)")
 
         for i, ev in enumerate(events, start=1):
-            handler = partial(
-                process_event,
-                url=ev.link,
-                url_num=i,
-            )
+            handler = partial(process_event, url=ev.link, url_num=i)
 
             source, iframe = await network.safe_process(
                 handler,
@@ -251,13 +198,12 @@ async def scrape() -> None:
             )
 
             key = f"[{ev.sport}] {ev.name} ({TAG})"
-
             tvg_id, logo = leagues.get_tvg_info(ev.sport, ev.name)
 
             entry = {
                 "source": source,
                 "logo": logo,
-                "refer": iframe,
+                "refer": iframe or "",
                 "timestamp": ev.timestamp,
                 "tvg-id": tvg_id or "Live.Event.us",
                 "link": ev.link,
@@ -273,164 +219,105 @@ async def scrape() -> None:
                 urls[key] = entry
 
         log.info(f"Collected and cached {valid_count - cached_count} new event(s)")
-
     else:
         log.info("No new events found")
 
     CACHE_FILE.write(cached_urls)
-
-    # Generate M3U8 files after scraping
     await generate_m3u8_files(urls)
 
 
-async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]], output_dir: str = ".") -> None:
-    """
-    Generate two M3U8 files from channel data.
-    
-    Args:
-        channels_data: Dictionary containing channel information
-        output_dir: Directory where files will be saved
-    """
-    # Ensure output directory exists
+# ---------- m3u8 output ----------
+
+async def generate_m3u8_files(channels_data: Dict[str, Dict[str, str | float]],
+                              output_dir: str = ".") -> None:
     os.makedirs(output_dir, exist_ok=True)
-    
+
     vlc_path = os.path.join(output_dir, "fly_vlc.m3u8")
     tivimate_path = os.path.join(output_dir, "fly_tivimate.m3u8")
-    
-    # Filter out channels without source
+
     valid_channels = {k: v for k, v in channels_data.items() if v.get("source")}
-    
+
     if not valid_channels:
         log.warning("No valid channels found to generate M3U8 files")
-        # Create empty files with headers
-        with open(vlc_path, 'w', encoding='utf-8') as f:
-            f.write("#EXTM3U\n")
-        with open(tivimate_path, 'w', encoding='utf-8') as f:
-            f.write("#EXTM3U\n")
-        os.chmod(vlc_path, 0o644)
-        os.chmod(tivimate_path, 0o644)
+        for p in (vlc_path, tivimate_path):
+            with open(p, "w", encoding="utf-8") as f:
+                f.write("#EXTM3U\n")
+            os.chmod(p, 0o644)
         return
-    
-    # Generate VLC format
-    with open(vlc_path, 'w', encoding='utf-8') as vlc_file:
+
+    with open(vlc_path, "w", encoding="utf-8") as vlc_file:
         vlc_file.write("#EXTM3U\n")
-        chno = 1
-        for key, channel in valid_channels.items():
-            vlc_line = format_vlc_channel(key, channel, chno)
-            vlc_file.write(vlc_line + "\n")
-            chno += 1
-    
-    # Generate Tivimate format
-    with open(tivimate_path, 'w', encoding='utf-8') as tivimate_file:
+        for chno, (key, channel) in enumerate(valid_channels.items(), 1):
+            vlc_file.write(format_vlc_channel(key, channel, chno) + "\n")
+
+    with open(tivimate_path, "w", encoding="utf-8") as tivimate_file:
         tivimate_file.write("#EXTM3U\n")
-        chno = 1
-        for key, channel in valid_channels.items():
-            tivimate_line = format_tivimate_channel(key, channel, chno)
-            tivimate_file.write(tivimate_line + "\n")
-            chno += 1
-    
-    # Set write permissions (read/write for owner, read for others)
+        for chno, (key, channel) in enumerate(valid_channels.items(), 1):
+            tivimate_file.write(format_tivimate_channel(key, channel, chno) + "\n")
+
     os.chmod(vlc_path, 0o644)
     os.chmod(tivimate_path, 0o644)
-    
-    log.info(f"Generated {vlc_path} with {chno-1} channel(s)")
-    log.info(f"Generated {tivimate_path} with {chno-1} channel(s)")
+
+    log.info(f"Generated {vlc_path} with {len(valid_channels)} channel(s)")
+    log.info(f"Generated {tivimate_path} with {len(valid_channels)} channel(s)")
 
 
 def format_vlc_channel(key: str, channel: Dict[str, str | float], chno: int) -> str:
-    """
-    Format a channel for VLC M3U8 format.
-    
-    Args:
-        key: Channel key
-        channel: Channel data dictionary
-        chno: Channel number
-        
-    Returns:
-        Formatted string for VLC
-    """
-    # Extract channel info
     sport = channel.get("sport", "Live Event")
     name = channel.get("name", key)
-    
-    # Clean display name
+    refer = channel.get("refer", "") or ""
+    origin = origin_of(refer)
+
     display_name = clean_display_name(key.replace(f" ({TAG})", ""))
-    
-    # VLC format
     tvg_name = f"[{sport}] {name} ({TAG})"
-    
+
     extinf = (f'#EXTINF:-1 tvg-chno="{chno}" '
               f'tvg-id="{channel.get("tvg-id", "Live.Event.us")}" '
               f'tvg-name="{tvg_name}" '
               f'tvg-logo="{channel.get("logo", "")}" '
               f'group-title="{sport}",'
               f'{display_name}')
-    
-    # Add VLC options
-    options = [
-        f"#EXTVLCOPT:http-referrer={REFERER}",
-        f"#EXTVLCOPT:http-origin={ORIGIN}",
-        f'#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}'
-    ]
-    
+
+    options = [f"#EXTVLCOPT:http-referrer={refer}"]
+    if origin:
+        options.append(f"#EXTVLCOPT:http-origin={origin}")
+    options.append(f"#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}")
+
     url = channel.get("source", "")
-    
     return f"{extinf}\n" + "\n".join(options) + f"\n{url}"
 
 
 def format_tivimate_channel(key: str, channel: Dict[str, str | float], chno: int) -> str:
-    """
-    Format a channel for Tivimate M3U8 format using pipe separator.
-    
-    Args:
-        key: Channel key
-        channel: Channel data dictionary
-        chno: Channel number
-        
-    Returns:
-        Formatted string for Tivimate
-    """
-    # Extract channel info
     sport = channel.get("sport", "Live Event")
     name = channel.get("name", key)
-    
-    # Clean display name for Tivimate
-    display_name = clean_display_name(key.replace(f" ({TAG})", f" ({TAG}TV)"))
-    
-    # Tivimate format
-    tvg_name = f"[{sport}] {name} ({TAG}TV)"
-    
-    # Tivimate format with pipe separator
+    refer = channel.get("refer", "") or ""
+
+    display_name = clean_display_name(key.replace(f" ({TAG})", f" ({TAG})"))
+    tvg_name = f"[{sport}] {name} ({TAG})"
+
     extinf = (f'#EXTINF:-1 tvg-chno="{chno}" '
               f'tvg-id="{channel.get("tvg-id", "Live.Event.us")}" '
               f'tvg-name="{tvg_name}" '
               f'tvg-logo="{channel.get("logo", "")}" '
               f'group-title="{sport}",'
               f'{display_name}')
-    
-    # Encode the user agent for Tivimate
-    encoded_user_agent = encode_user_agent(TIVIMATE_USER_AGENT)
-    
-    # Build the URL with parameters
+
+    encoded_ua = encode_user_agent(TIVIMATE_USER_AGENT)
+
+    params = [f"referer={refer}"]
+    if origin := origin_of(refer):
+        params.append(f"origin={origin}")
+    params.append(f"user-agent={encoded_ua}")
+
     url = channel.get("source", "")
-    params = [
-        f"referer={REFERER}",
-        f"origin={ORIGIN}",
-        f"user-agent={encoded_user_agent}"
-    ]
-    
     return f"{extinf}\n{url}|{'|'.join(params)}"
 
 
 async def main() -> None:
-    """
-    Main function to run the scraper and generate M3U8 files.
-    """
     log.info(f"Starting {TAG} updater")
     await scrape()
     log.info(f"{TAG} updater completed")
 
 
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
