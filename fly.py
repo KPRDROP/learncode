@@ -128,8 +128,11 @@ async def get_events(cached_keys: KeysView[str]) -> list[Event]:
 
         API_FILE.write(api_data)
 
+    # ===== EXPANDED WINDOW =====
+    # -6h: catch events that already started (still live)
+    # +48h: catch everything through tomorrow (API posts all events for today+tomorrow)
     start_dt = now.delta(hours=-6)
-    end_dt = now.delta(minutes=60)
+    end_dt = now.delta(hours=48)
 
     for event_group in api_data:
         if not all(
