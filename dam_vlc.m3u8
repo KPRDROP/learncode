@@ -3,14 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=Iu7JmuIWBHKpUteggA1JgQ&e=1790113479
-#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Brisbane Bullets vs. New Zealand Breakers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/86ac52fd11dd3f083ea60a86b714b629-thumbnail.jpg" group-title="Basketball",[Basketball] Brisbane Bullets vs. New Zealand Breakers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-22/bri-nzl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-22/bri-nzl
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=epG87U6--s5AdkswC_WL0w&e=1790130766
+#EXTINF:-1 tvg-chno="2" tvg-id="Darts.Dummy.us" tvg-name="[Darts] Players Championship 29 - Den Bosch (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7d4dd33867452558399f05dd8de0efd5-thumbnail.jpg" group-title="Live Events",[Darts] Players Championship 29 - Den Bosch (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=players-championship-29---den-bosch-29227
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=players-championship-29---den-bosch-29227
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nbl/2026-09-22/bri-nzl/playlist.m3u8?tk=Iu7JmuIWBHKpUteggA1JgQ&e=1790113479
+https://messi.damitv.st/live-hls/channel/players-championship-29---den-bosch-29227/playlist.m3u8?tk=epG87U6--s5AdkswC_WL0w&e=1790130766
 #EXTINF:-1 tvg-chno="3" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=vOPzdfto91-ynJbU7rzfQw&e=1790113480
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=epG87U6--s5AdkswC_WL0w&e=1790130766
