@@ -1,21 +1,51 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Atlanta Dream at New York Liberty | ATL Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Atlanta Dream at New York Liberty | ATL Feed (XYZ)
+#EXTINF:-1 tvg-chno="1" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Toronto Tempo at Connecticut Sun | TOR Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Toronto Tempo at Connecticut Sun | TOR Feed (XYZ)
 #EXTVLCOPT:http-referrer=https://xyzstreams.st/
 #EXTVLCOPT:http-origin=https://xyzstreams.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://247v2.dlhd.net/?stream_id=atlantadream&pro_id=sling&index.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Atlanta Dream at New York Liberty | NY Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Atlanta Dream at New York Liberty | NY Feed (XYZ)
+https://247v2.dlhd.net/?stream_id=torontotempo&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Toronto Tempo at Connecticut Sun | CON Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Toronto Tempo at Connecticut Sun | CON Feed (XYZ)
 #EXTVLCOPT:http-referrer=https://xyzstreams.st/
 #EXTVLCOPT:http-origin=https://xyzstreams.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://247v2.dlhd.net/?stream_id=newyorkliberty&pro_id=sling&index.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings at Seattle Storm | DAL Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Dallas Wings at Seattle Storm | DAL Feed (XYZ)
+https://247v2.dlhd.net/?stream_id=connecticutsun&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Chicago Sky at Washington Mystics | CHI Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Chicago Sky at Washington Mystics | CHI Feed (XYZ)
 #EXTVLCOPT:http-referrer=https://xyzstreams.st/
 #EXTVLCOPT:http-origin=https://xyzstreams.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://247v2.dlhd.net/?stream_id=dallaswings&pro_id=sling&index.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings at Seattle Storm | SEA Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Dallas Wings at Seattle Storm | SEA Feed (XYZ)
+https://247v2.dlhd.net/?stream_id=chicagosky&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Chicago Sky at Washington Mystics | WSH Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Chicago Sky at Washington Mystics | WSH Feed (XYZ)
 #EXTVLCOPT:http-referrer=https://xyzstreams.st/
 #EXTVLCOPT:http-origin=https://xyzstreams.st/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
-https://247v2.dlhd.net/?stream_id=seattlestorm&pro_id=sling&index.m3u8
+https://247v2.dlhd.net/?stream_id=washingtonmystics&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Indiana Fever at Minnesota Lynx | IND Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Indiana Fever at Minnesota Lynx | IND Feed (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/
+#EXTVLCOPT:http-origin=https://xyzstreams.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://247v2.dlhd.net/?stream_id=indianafever&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Indiana Fever at Minnesota Lynx | MIN Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Indiana Fever at Minnesota Lynx | MIN Feed (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/
+#EXTVLCOPT:http-origin=https://xyzstreams.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://247v2.dlhd.net/?stream_id=minnesotalynx&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Golden State Valkyries at Los Angeles Sparks | GS Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Golden State Valkyries at Los Angeles Sparks | GS Feed (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/
+#EXTVLCOPT:http-origin=https://xyzstreams.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://247v2.dlhd.net/?stream_id=goldenstatevalkyries&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Golden State Valkyries at Los Angeles Sparks | LA Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Golden State Valkyries at Los Angeles Sparks | LA Feed (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/
+#EXTVLCOPT:http-origin=https://xyzstreams.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://247v2.dlhd.net/?stream_id=losangelessparks&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Las Vegas Aces at Phoenix Mercury | LV Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Las Vegas Aces at Phoenix Mercury | LV Feed (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/
+#EXTVLCOPT:http-origin=https://xyzstreams.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://247v2.dlhd.net/?stream_id=lasvegasaces&pro_id=sling&index.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Las Vegas Aces at Phoenix Mercury | PHX Feed (XYZ)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Las Vegas Aces at Phoenix Mercury | PHX Feed (XYZ)
+#EXTVLCOPT:http-referrer=https://xyzstreams.st/
+#EXTVLCOPT:http-origin=https://xyzstreams.st/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+https://247v2.dlhd.net/?stream_id=phoenixmercury&pro_id=sling&index.m3u8
