@@ -1,1 +1,21 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[NFL] NFL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5ed7ea60fe8e3842203b0741187f0fd7-thumbnail.jpg" group-title="NFL",[NFL] NFL Network (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=Jj4g1-cITZBoec3316mrXQ&e=1790286452
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] South East Melbourne Phoenix vs. Melbourne United (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6578e333472f8a999dfc82823c248552-thumbnail.jpg" group-title="Basketball",[Basketball] South East Melbourne Phoenix vs. Melbourne United (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-24/pnx-mel
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-24/pnx-mel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nbl/2026-09-24/pnx-mel/playlist.m3u8?tk=Jj4g1-cITZBoec3316mrXQ&e=1790286452
+#EXTINF:-1 tvg-chno="3" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=Jj4g1-cITZBoec3316mrXQ&e=1790286452
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Azerbaijan Grand Prix - Practice 1 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7204ceff830f53c47b5a65f714444ec1-thumbnail.jpg" group-title="Motorsports",[Motorsports] Azerbaijan Grand Prix - Practice 1 (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=f1/2026/azerbaijan/fp1
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=f1/2026/azerbaijan/fp1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/f1/2026/azerbaijan/fp1/playlist.m3u8?tk=Jj4g1-cITZBoec3316mrXQ&e=1790286452
