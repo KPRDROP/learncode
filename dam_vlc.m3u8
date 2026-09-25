@@ -3,14 +3,74 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=lJ8bYHanoqmj6UU85NXsGw&e=1790386127
-#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs. Boston Red Sox (Game 1) (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6c7f1d7942bcc6d2cc422a1aa5a204f2-thumbnail.jpg" group-title="MLB",[MLB] Chicago Cubs vs. Boston Red Sox (Game 1) (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/chc-bos
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/chc-bos
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/chc-bos/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Armenia vs. Latvia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/96adc3320d4d01dc1224ec22dcf2dc2e-thumbnail.jpg" group-title="Football",[Football] Armenia vs. Latvia (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/arm-lva
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/arm-lva
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/arm-lva/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Georgia vs. Northern Ireland (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/01c7ef402dd258b8c2068cbf6b6d33de-thumbnail.jpg" group-title="Football",[Football] Georgia vs. Northern Ireland (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/geo-nir
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/geo-nir
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/geo-nir/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Hungary vs. Ukraine (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ddb5e337b40056bd820c9c9a2591602a-thumbnail.jpg" group-title="Football",[Football] Hungary vs. Ukraine (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/hun-ukr
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/hun-ukr
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/hun-ukr/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Italy vs. Belgium (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9b3622c444cce4fd105f333c3c154ae1-thumbnail.jpg" group-title="Football",[Football] Italy vs. Belgium (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/ita-bel
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/ita-bel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/ita-bel/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Montenegro vs. Cyprus (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ca84a482293accfd971ad66e693cbbf2-thumbnail.jpg" group-title="Football",[Football] Montenegro vs. Cyprus (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/mne-cyp
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/mne-cyp
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/mne-cyp/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Poland vs. Bosnia-Herzegovina (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7f95dff749eb8cecd29de9175227d596-thumbnail.jpg" group-title="Football",[Football] Poland vs. Bosnia-Herzegovina (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/pol-bih
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/pol-bih
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/pol-bih/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Sweden vs. Romania (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/20ce1774647c2ccc6e0b133b368cb740-thumbnail.jpg" group-title="Football",[Football] Sweden vs. Romania (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/swe-rou
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/swe-rou
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/swe-rou/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Türkiye vs. France (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4679e710e89934bb1137378c8610ea83-thumbnail.jpg" group-title="Football",[Football] Türkiye vs. France (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/tur-fra
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/tur-fra
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/tur-fra/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
+#EXTINF:-1 tvg-chno="11" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=lJ8bYHanoqmj6UU85NXsGw&e=1790386127
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Azerbaijan Grand Prix - Qualifying (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/47eb6f07e9f0b71c013f0e018ea9d151-thumbnail.jpg" group-title="Motorsports",[Motorsports] Azerbaijan Grand Prix - Qualifying (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=f1/2026/azerbaijan/qualifying
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=f1/2026/azerbaijan/qualifying
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
+#EXTINF:-1 tvg-chno="12" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Merrimack Warriors vs Lindenwood Lady Lions (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Merrimack Warriors vs Lindenwood Lady Lions (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_merrimack-warriors-lindenwood-lady-lions-live-streaming-653305824
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_merrimack-warriors-lindenwood-lady-lions-live-streaming-653305824
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/f1/2026/azerbaijan/qualifying/playlist.m3u8?tk=lJ8bYHanoqmj6UU85NXsGw&e=1790386127
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_merrimack-warriors-lindenwood-lady-lions-live-streaming-653305824/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
+#EXTINF:-1 tvg-chno="13" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Franklin Pierce Ravens vs Union Dutchwomen (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Franklin Pierce Ravens vs Union Dutchwomen (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_franklin-pierce-ravens-union-dutchwomen-live-streaming-653305392
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_franklin-pierce-ravens-union-dutchwomen-live-streaming-653305392
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_franklin-pierce-ravens-union-dutchwomen-live-streaming-653305392/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
+#EXTINF:-1 tvg-chno="14" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Minnesota State Mavericks vs Rensselaer Engineers (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Minnesota State Mavericks vs Rensselaer Engineers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_minnesota-state-mavericks-rensselaer-engineers-live-streaming-653304960
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_minnesota-state-mavericks-rensselaer-engineers-live-streaming-653304960
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_minnesota-state-mavericks-rensselaer-engineers-live-streaming-653304960/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[football] Turkey vs France (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aECmyUuABgYhuIPiBNSN5iLhMh4BYEgp9hs+ppUouYMvCJZZHplowLzFRCCA.webp" group-title="Live Events",[football] Turkey vs France (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-foxtrot~france-v-turkiye-unl-401861053
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-foxtrot~france-v-turkiye-unl-401861053
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/foxtrot/france-v-turkiye-unl-401861053/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
