@@ -1,166 +1,146 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Sky Sports F1 UK (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Sky Sports F1 UK
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/f596f98r-7946
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/036fbb16342145864c3d3df81fd263f9deaf77d251ecb876fc14fd742e4b7fa0/1790371836/skysportsf1-uk.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Dazn F1 Spain (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Dazn F1 Spain
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/f6n7j523
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/3627109fa0edb924a206306d1ca158c610ababa2f57be5ea4481ce09cce34b74/1790371837/daznf1.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Sky Sports F1 IT (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Sky Sports F1 IT
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/t5mpn192
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/b4afa0e029abcfc663e0cdb64b5acff014ef944d7a5e6c425c6e3bf154987942/1790371837/skysportf1-it.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Sky Sports F1 DE (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Qatar Airways Azerbaijan Grand Prix vs Sky Sports F1 DE
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/78hy66n6
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/453dae08a5d6de4753bd085969841081d0da4e3724ef23ed8ef3b2c54967aeb2/1790371838/skysportf1-de.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Armenia vs Latvia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Armenia vs Latvia
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Armenia vs Latvia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Armenia vs Latvia
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6dw9r22a
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/a30ee95de88ddd755aa9835144be2faf18e1427d50e8501bfc82c66000036375/1790371838/sporttv2-pt.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Georgia vs Northern Ireland (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Georgia vs Northern Ireland
+https://juxrd.hundxvision.co.uk/main/secure/a81cb47a6a44bb048012ddb4131d17c62c77be24c735c0d938e4f928abf9483d/1790385911/sporttv2-pt.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Georgia vs Northern Ireland (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Georgia vs Northern Ireland
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/h5flkzrq
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/fbc3027cfaf43c38d5a9802f13ce77ab40ceae4cefc84a904f8fe47cc5210a94/1790371838/foxsoccerplus-usa.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Hungary vs Ukraine (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Hungary vs Ukraine
+https://juxrd.hundxvision.co.uk/main/secure/a432213a4cebe377f8b7738e97452cc53f96edb77d287fb6fd34a345a5d2ab8a/1790385912/foxsoccerplus-usa.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Hungary vs Ukraine (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Hungary vs Ukraine
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/b9c6igh5-6410
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/356c0b7a88e7e92bf8629e19304581c724b661017f4d559924cf8ea8b5294191/1790371839/unl-401861054.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Italy vs Belgium (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Italy vs Belgium
+https://juxrd.hundxvision.co.uk/main/secure/b876e2a164643cde71cc61048403bf87d3eef2074621139ca5faa8d5e6a98e65/1790385912/unl-401861054.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Italy vs Belgium (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Italy vs Belgium
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/yjl69ry8-3802
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/493fabcaa9543a3855205365b7eb070ac4373b922dfcb98ae764fa113ad23783/1790371839/unl-401861052.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Montenegro vs Cyprus (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Montenegro vs Cyprus
+https://juxrd.hundxvision.co.uk/main/secure/6f1fcc171fcfe06a524778d8dd94a6f69ce88b04c01efd59d16a23e866db117c/1790385912/unl-401861052.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Montenegro vs Cyprus (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Montenegro vs Cyprus
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/rwfu9ehh-9402
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/ff7167fe1cca46e01c9436302c46c840084aa31484c5e2f42fbe8cf5908422e4/1790371840/unl-401861056.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Poland vs Bosnia-Herzegovina (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Poland vs Bosnia-Herzegovina
+https://juxrd.hundxvision.co.uk/main/secure/d539487be8f9f49966112403a9dc3a750d6eb93811763264726610e5e8f1b7d0/1790385913/unl-401861056.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Poland vs Bosnia-Herzegovina (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Poland vs Bosnia-Herzegovina
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/3zw4w25n-8362
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/45e8a355ab7dd3725221e62037b4ecc658e2e39903f15f9e3f325a4a2a52bdb7/1790371840/unl-401861055.m3u8
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Sweden vs Romania (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Sweden vs Romania
+https://juxrd.hundxvision.co.uk/main/secure/68984c9924c3cb0b84d7154eb939c7e57e9caa6965c703629b08b441ba7ec647/1790385913/unl-401861055.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Sweden vs Romania (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Sweden vs Romania
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/xahpqbrt-3450
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/0473d73aaf5cb64c12e35252de9f2e4ddd32a7539e4313425ea8539480156ccf/1790371841/unl-401861051.m3u8
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Türkiye vs France (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Türkiye vs France
+https://juxrd.hundxvision.co.uk/main/secure/a079dd6bb0677ee3dd29ba06568e27bcb1902e83ec57786c98ada093ef6f6667/1790385913/unl-401861051.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Türkiye vs France (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Türkiye vs France
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/k25vj3zg-1521
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/741979d643c67eb28e582cdf47887d00377e141f2813575e01f0145896ff5fe6/1790371841/unl-401861053.m3u8
-#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Minnesota Wild vs Dallas Stars (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Minnesota Wild vs Dallas Stars
+https://juxrd.hundxvision.co.uk/main/secure/74eac44ccacfd6402ba45a3fa558954a26798ca290b2345486c8b5fcad3df48d/1790385914/unl-401861053.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Minnesota Wild vs Dallas Stars (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Minnesota Wild vs Dallas Stars
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/kelcwql2
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/d401c874fe5323082b687c06d2aca64520c5443cd54fc6e1dfb5f97dc8376d88/1790371842/nhlnetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="14" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Boston Red Sox vs Chicago Cubs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Boston Red Sox vs Chicago Cubs
+https://juxrd.hundxvision.co.uk/main/secure/525eac6c0e278054e8e405ae99ecaa6c422668c125189b9f062a85ccf5d1728a/1790385914/nhlnetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Boston Red Sox vs Chicago Cubs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Boston Red Sox vs Chicago Cubs
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/72z60gad-3041
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/70251bd38db1168df9b095fa415526894baf2b42a18be2bc4adec7822a5f7cd5/1790371843/mlb-red-sox.m3u8
-#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs Baltimore Orioles (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] New York Yankees vs Baltimore Orioles
+https://juxrd.hundxvision.co.uk/main/secure/a0836c38478cc0e3ee20abda517f5e2b7a59413f394dab122da37998a4143f89/1790385915/mlb-red-sox.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs Baltimore Orioles (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] New York Yankees vs Baltimore Orioles
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/89x9qba2-9499
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/5b5d397dbf0014e82a2a6effcdeba05918c34f1f2cb2fa8ea438d19a376728c8/1790371845/mlb-yankees.m3u8
-#EXTINF:-1 tvg-chno="16" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Detroit Tigers vs Pittsburgh Pirates
+https://juxrd.hundxvision.co.uk/main/secure/00c4923a436a2a16b0f3e20a1364f23b6050205cbe42e84704623f94fcc998c5/1790385916/mlb-yankees.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Detroit Tigers vs Pittsburgh Pirates (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Detroit Tigers vs Pittsburgh Pirates
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/yvcicg4u-3331
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/326d7007ee4a91da8fb072b5040e3499b37d2d290bcc725d3cd3263a33c18d03/1790371843/mlb-tigers.m3u8
-#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs Tampa Bay Rays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Philadelphia Phillies vs Tampa Bay Rays
+https://juxrd.hundxvision.co.uk/main/secure/1c4f3394bb60bba40c21971078f1ff64f6d1fda657e84fe7fee644cdb30cdee1/1790385915/mlb-tigers.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs Tampa Bay Rays (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Philadelphia Phillies vs Tampa Bay Rays
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/ai9s7grs-6701
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/b0f0a19a52a2ce4443a8f8ec05d0796daaeea8b74c95b185d942a0a242954ac4/1790371844/mlb-phillies.m3u8
-#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Washington Nationals vs New York Mets (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Washington Nationals vs New York Mets
+https://juxrd.hundxvision.co.uk/main/secure/0f36d67ce1645c60a59cf5b16355c89f52aa540b52b989f98891378f8bcfcdf9/1790385915/mlb-phillies.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Washington Nationals vs New York Mets (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Washington Nationals vs New York Mets
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/f6admixk-7348
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/034b6020ab288c3f7ff7ac1f85b51687d3b9bf7c37e674a24111357eef7e565e/1790371845/mlb-nationals.m3u8
-#EXTINF:-1 tvg-chno="19" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Toronto Blue Jays vs Cincinnati Reds (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Toronto Blue Jays vs Cincinnati Reds
+https://juxrd.hundxvision.co.uk/main/secure/eede7a9e59b0d97ce3a2d74d6771a253f6360a84c525fb48ca7bd7c97da6ba82/1790385916/mlb-nationals.m3u8
+#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Toronto Blue Jays vs Cincinnati Reds (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Toronto Blue Jays vs Cincinnati Reds
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/xw5m7aky-5476
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/7c5e40f83a77d1eaf44592b3c344829c1ee9f0bc8a17852ce64a67904c9a4fe6/1790371845/mlb-blue-jays.m3u8
-#EXTINF:-1 tvg-chno="20" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Miami Marlins vs Atlanta Braves
+https://juxrd.hundxvision.co.uk/main/secure/bdeaacf02cf1fec5aeb445336162413700c350a95f7bba3679c2fdc8e44b6263/1790385916/mlb-blue-jays.m3u8
+#EXTINF:-1 tvg-chno="16" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Miami Marlins vs Atlanta Braves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Miami Marlins vs Atlanta Braves
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/war1xel4-8378
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/6b7ccf6d65ea685aed691d8347b0da1dc86d883287fc723f3ad08f15ad773cab/1790371846/mlb-marlins.m3u8
-#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs Cleveland Guardians (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Kansas City Royals vs Cleveland Guardians
+https://juxrd.hundxvision.co.uk/main/secure/b866c97f09be302aa00dffb0136d82997b5cde5ae8f61c18d7ef3f712c8b37d9/1790385917/mlb-marlins.m3u8
+#EXTINF:-1 tvg-chno="17" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Kansas City Royals vs Cleveland Guardians (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Kansas City Royals vs Cleveland Guardians
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/m11u8fu3
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/918441a424af84bba6d010caa85649a5cdd27abdb9a76254f64fdff04374f9c7/1790371846/mlb-royals.m3u8
-#EXTINF:-1 tvg-chno="22" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs Colorado Rockies (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago White Sox vs Colorado Rockies
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/1su75il1
+https://juxrd.hundxvision.co.uk/main/secure/356ca82387448ca83466ae07da8826696d9a3eaafaffed5b0f78b7ff175dda4f/1790385917/mlb-royals.m3u8
+#EXTINF:-1 tvg-chno="18" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs Colorado Rockies (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Chicago White Sox vs Colorado Rockies
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/7dv8lh51-1607
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/c4454b6859ecde6e3bdcb1e53f3ac88ad07e9104ce02c866495947f849dff7d8/1790371847/mlb-mariners.m3u8
-#EXTINF:-1 tvg-chno="23" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Milwaukee Brewers vs St. Louis Cardinals
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/l5j1kkxs
+https://juxrd.hundxvision.co.uk/main/secure/d65a63115f36bf4ab4b926a943376e6d2102a9abbc6656d1c4ef8df6a4147907/1790385917/mlb-white-sox.m3u8
+#EXTINF:-1 tvg-chno="19" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs St. Louis Cardinals (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Milwaukee Brewers vs St. Louis Cardinals
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tnwlfyem-3566
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/27d230bebc9f3cf146daa37b652f6c873db84d585e855b714682d0e673ee7ab6/1790371847/mlb-astros.m3u8
-#EXTINF:-1 tvg-chno="24" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs Texas Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Minnesota Twins vs Texas Rangers
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/mv26th9e
+https://juxrd.hundxvision.co.uk/main/secure/56577a12c13c00aee130d097b6000a5bec3a78cb435e9d12d42d7b7f2e3fcb8b/1790385918/mlb-brewers.m3u8
+#EXTINF:-1 tvg-chno="20" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Minnesota Twins vs Texas Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Minnesota Twins vs Texas Rangers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/3c6hy0wv-2159
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/d853bec0a0a71ab7425b6faa3287091d5935c1a5d99b4b90624aa3671f284a06/1790371848/mlb-padres.m3u8
-#EXTINF:-1 tvg-chno="25" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs Arizona Diamondbacks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Diego Padres vs Arizona Diamondbacks
+https://juxrd.hundxvision.co.uk/main/secure/229fbec3c52e3e6ff487b523962bb78ef214777cd7a2484adc38045277e78e22/1790385918/mlb-twins.m3u8
+#EXTINF:-1 tvg-chno="21" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs Arizona Diamondbacks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Diego Padres vs Arizona Diamondbacks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/mv26th9e-5328
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://juxrd.hundxvision.co.uk/main/secure/2ca4349f8e96b0f5b8966d8d2c9819f1949fb14ae7a6e9590506cc3bd331083f/1790385918/mlb-padres.m3u8
+#EXTINF:-1 tvg-chno="22" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs Houston Astros (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Athletics vs Houston Astros
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/5g7i345u-4907
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://juxrd.hundxvision.co.uk/main/secure/8a389311852850dad6f92ac9a58961ad52fe2193daab1b18f587515978a386d6/1790385919/mlb-athletics.m3u8
+#EXTINF:-1 tvg-chno="23" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs Los Angeles Angels (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Seattle Mariners vs Los Angeles Angels
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/1su75il1-773
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://juxrd.hundxvision.co.uk/main/secure/ddc66096306f69175e5f2f860e48c31b234dd0c5da6db3f81a738f474daf0c07/1790385919/mlb-mariners.m3u8
+#EXTINF:-1 tvg-chno="24" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs Los Angeles Dodgers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Francisco Giants vs Los Angeles Dodgers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/c1szcbr3-1068
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://juxrd.hundxvision.co.uk/main/secure/57106d7a99c93fdc87c85b635ea6bff29a4103a8b1b361dc31dcb7ca662f82ec/1790385919/mlb-giants.m3u8
+#EXTINF:-1 tvg-chno="25" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Temple Owls vs Army Black Knights (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Temple Owls vs Army Black Knights
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/c05914f8fc21d7707f3ac472c6481845154494eea3f8676a37a7874d5de0f7d3/1790371848/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="26" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Athletics vs Houston Astros (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Athletics vs Houston Astros
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8tl2ksef
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/adda8a0b686647b4d83f8de05e5607d864907e8ea0de7c2f02cd39b0f5ff1b67/1790371849/nbatv-usa.m3u8
-#EXTINF:-1 tvg-chno="27" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Seattle Mariners vs Los Angeles Angels (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Seattle Mariners vs Los Angeles Angels
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nloc37sc
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/4b2d9d6ba51159fb0e29ff057d760c05d465606e860998b2a4f82d633fda1954/1790371849/usanetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="28" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Francisco Giants vs Los Angeles Dodgers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] San Francisco Giants vs Los Angeles Dodgers
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nloc37sc
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/4b2d9d6ba51159fb0e29ff057d760c05d465606e860998b2a4f82d633fda1954/1790371849/usanetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="29" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Temple Owls vs Army Black Knights (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Temple Owls vs Army Black Knights
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/6075fead2617712e76784bcd7f585cd3594720b8fa569778285fa36b63653300/1790371850/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="30" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Rutgers Scarlet Knights vs Howard Bison (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Rutgers Scarlet Knights vs Howard Bison
+https://juxrd.hundxvision.co.uk/main/secure/6ae4d8e653b17d51a897c7d8d0055af2acd30831fdec35cc90ab28e0f0d99376/1790385919/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="26" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Rutgers Scarlet Knights vs Howard Bison (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Rutgers Scarlet Knights vs Howard Bison
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tkdttav3
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/edee2698a601525d70a42bd355280e6574cce4d9ab03a964cfd0f0c28f37c141/1790371850/big10-usa.m3u8
-#EXTINF:-1 tvg-chno="31" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] UAB Blazers vs Navy Midshipmen (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] UAB Blazers vs Navy Midshipmen
+https://juxrd.hundxvision.co.uk/main/secure/43c3f265a39808d31d5b3d720266d349849f6d7168e3482b0e1342cd8ba845d5/1790385920/big10-usa.m3u8
+#EXTINF:-1 tvg-chno="27" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] UAB Blazers vs Navy Midshipmen (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] UAB Blazers vs Navy Midshipmen
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/6075fead2617712e76784bcd7f585cd3594720b8fa569778285fa36b63653300/1790371850/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="32" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Indiana Hoosiers vs Northwestern Wildcats (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Indiana Hoosiers vs Northwestern Wildcats
+https://juxrd.hundxvision.co.uk/main/secure/0778583e0e35003d268f87f0edb9b799862f955ac0e79fb61275cc4c47c92d5f/1790385920/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="28" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Indiana Hoosiers vs Northwestern Wildcats (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Indiana Hoosiers vs Northwestern Wildcats
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bhg7rkug
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/f5558a12699ade6d67589f6bdc4fd551ac08c857b67449fda19541deb3bdc69a/1790371851/fox-usa.m3u8
-#EXTINF:-1 tvg-chno="33" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] California Golden Bears vs Clemson Tigers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] California Golden Bears vs Clemson Tigers
+https://juxrd.hundxvision.co.uk/main/secure/35ab076b478b2c8c27c5328f1a92b55cc593c7e4e95ddf4df6c190988c36a01b/1790385920/fox-usa.m3u8
+#EXTINF:-1 tvg-chno="29" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] California Golden Bears vs Clemson Tigers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] California Golden Bears vs Clemson Tigers
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://juxrd.hundxvision.co.uk/main/secure/d8b54b6e50f2874af668cb603d01b761f67793f2ddb2f7052fad37089b2f79a7/1790371851/espn-usa.m3u8
+https://juxrd.hundxvision.co.uk/main/secure/0778583e0e35003d268f87f0edb9b799862f955ac0e79fb61275cc4c47c92d5f/1790385920/espn-usa.m3u8
