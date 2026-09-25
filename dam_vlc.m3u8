@@ -3,74 +3,79 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs. Boston Red Sox (Game 1) (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6c7f1d7942bcc6d2cc422a1aa5a204f2-thumbnail.jpg" group-title="MLB",[MLB] Chicago Cubs vs. Boston Red Sox (Game 1) (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/chc-bos
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/chc-bos
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Baltimore Orioles vs. New York Yankees (Game 1) (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f29d84b9d408e6ac70bfad50723c3b4a-thumbnail.jpg" group-title="MLB",[MLB] Baltimore Orioles vs. New York Yankees (Game 1) (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/bal-nyy
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/bal-nyy
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/chc-bos/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Armenia vs. Latvia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/96adc3320d4d01dc1224ec22dcf2dc2e-thumbnail.jpg" group-title="Football",[Football] Armenia vs. Latvia (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/arm-lva
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/arm-lva
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/bal-nyy/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago Cubs vs. Boston Red Sox (Game 2) (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6c7f1d7942bcc6d2cc422a1aa5a204f2-thumbnail.jpg" group-title="MLB",[MLB] Chicago Cubs vs. Boston Red Sox (Game 2) (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/chc-bos/game-2
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/chc-bos/game-2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/arm-lva/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Georgia vs. Northern Ireland (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/01c7ef402dd258b8c2068cbf6b6d33de-thumbnail.jpg" group-title="Football",[Football] Georgia vs. Northern Ireland (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/geo-nir
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/geo-nir
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/chc-bos/game-2/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Pittsburgh Pirates vs. Detroit Tigers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/65ee00711d9c1a467f1b5a1a4747d51d-thumbnail.jpg" group-title="MLB",[MLB] Pittsburgh Pirates vs. Detroit Tigers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/pit-det
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/pit-det
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/geo-nir/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Hungary vs. Ukraine (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ddb5e337b40056bd820c9c9a2591602a-thumbnail.jpg" group-title="Football",[Football] Hungary vs. Ukraine (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/hun-ukr
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/hun-ukr
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/pit-det/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="5" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays vs. Philadelphia Phillies (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/0a4b4a653cd33b10c3848d3ffeb79f61-thumbnail.jpg" group-title="MLB",[MLB] Tampa Bay Rays vs. Philadelphia Phillies (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/tb-phi
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/tb-phi
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/hun-ukr/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Italy vs. Belgium (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9b3622c444cce4fd105f333c3c154ae1-thumbnail.jpg" group-title="Football",[Football] Italy vs. Belgium (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/ita-bel
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/ita-bel
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/tb-phi/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="6" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Mets vs. Washington Nationals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/01f37ccfd4f5614478d9e03b1181a005-thumbnail.jpg" group-title="MLB",[MLB] New York Mets vs. Washington Nationals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/nym-wsh
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/nym-wsh
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/ita-bel/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Montenegro vs. Cyprus (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ca84a482293accfd971ad66e693cbbf2-thumbnail.jpg" group-title="Football",[Football] Montenegro vs. Cyprus (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/mne-cyp
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/mne-cyp
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/nym-wsh/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Baltimore Orioles vs. New York Yankees (Game 2) (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f29d84b9d408e6ac70bfad50723c3b4a-thumbnail.jpg" group-title="MLB",[MLB] Baltimore Orioles vs. New York Yankees (Game 2) (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/bal-nyy/game-2
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/bal-nyy/game-2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/mne-cyp/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Poland vs. Bosnia-Herzegovina (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7f95dff749eb8cecd29de9175227d596-thumbnail.jpg" group-title="Football",[Football] Poland vs. Bosnia-Herzegovina (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/pol-bih
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/pol-bih
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/bal-nyy/game-2/playlist.m3u8?tk=ITE4ne8Fd0x2sxQW-eC1AA&e=1790417250
+#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cincinnati Reds vs. Toronto Blue Jays (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7c9653d855c6b9597026ba0dab5ee3ab-thumbnail.jpg" group-title="MLB",[MLB] Cincinnati Reds vs. Toronto Blue Jays (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=mlb/2026-09-25/cin-tor
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=mlb/2026-09-25/cin-tor
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/pol-bih/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Sweden vs. Romania (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/20ce1774647c2ccc6e0b133b368cb740-thumbnail.jpg" group-title="Football",[Football] Sweden vs. Romania (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/swe-rou
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/swe-rou
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/swe-rou/playlist.m3u8?tk=8OwEtDJUjLXPrX5Qg9TnUw&e=1790403781
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Türkiye vs. France (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4679e710e89934bb1137378c8610ea83-thumbnail.jpg" group-title="Football",[Football] Türkiye vs. France (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/tur-fra
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-25/tur-fra
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-25/tur-fra/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
-#EXTINF:-1 tvg-chno="11" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-25/cin-tor/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="9" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
-#EXTINF:-1 tvg-chno="12" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Merrimack Warriors vs Lindenwood Lady Lions (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Merrimack Warriors vs Lindenwood Lady Lions (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_merrimack-warriors-lindenwood-lady-lions-live-streaming-653305824
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_merrimack-warriors-lindenwood-lady-lions-live-streaming-653305824
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="10" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Boston Bruins vs. Washington Capitals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f145a99d47e64cd9553ff89d916d003a-thumbnail.jpg" group-title="NHL",[NHL] Boston Bruins vs. Washington Capitals (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nhl/2026-09-25/bos-wsh
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nhl/2026-09-25/bos-wsh
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_merrimack-warriors-lindenwood-lady-lions-live-streaming-653305824/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
-#EXTINF:-1 tvg-chno="13" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Franklin Pierce Ravens vs Union Dutchwomen (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Franklin Pierce Ravens vs Union Dutchwomen (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_franklin-pierce-ravens-union-dutchwomen-live-streaming-653305392
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_franklin-pierce-ravens-union-dutchwomen-live-streaming-653305392
+https://messi.damitv.st/live-hls/channel/nhl/2026-09-25/bos-wsh/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="11" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Penn State Nittany Lions vs Ohio State Buckeyes (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Penn State Nittany Lions vs Ohio State Buckeyes (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_penn-state-ohio-state-buckeyes-live-streaming-653307120
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_penn-state-ohio-state-buckeyes-live-streaming-653307120
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_franklin-pierce-ravens-union-dutchwomen-live-streaming-653305392/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
-#EXTINF:-1 tvg-chno="14" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Minnesota State Mavericks vs Rensselaer Engineers (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Minnesota State Mavericks vs Rensselaer Engineers (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_minnesota-state-mavericks-rensselaer-engineers-live-streaming-653304960
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_minnesota-state-mavericks-rensselaer-engineers-live-streaming-653304960
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_penn-state-ohio-state-buckeyes-live-streaming-653307120/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[american-football] Temple vs Army (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Temple vs Army (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_temple-army-live-streaming-587872944
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_temple-army-live-streaming-587872944
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_minnesota-state-mavericks-rensselaer-engineers-live-streaming-653304960/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
-#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[football] Turkey vs France (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aECmyUuABgYhuIPiBNSN5iLhMh4BYEgp9hs+ppUouYMvCJZZHplowLzFRCCA.webp" group-title="Live Events",[football] Turkey vs France (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-foxtrot~france-v-turkiye-unl-401861053
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-foxtrot~france-v-turkiye-unl-401861053
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_temple-army-live-streaming-587872944/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="13" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Assumption Greyhounds vs Saint Michaels Purple Knights (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Assumption Greyhounds vs Saint Michaels Purple Knights (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_assumption-greyhounds-saint-michaels-purple-knights-live-streaming-653306688
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_ncaa-women_assumption-greyhounds-saint-michaels-purple-knights-live-streaming-653306688
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/foxtrot/france-v-turkiye-unl-401861053/playlist.m3u8?tk=dcjZ6PIHi3nCsa8N0v0YwQ&e=1790403782
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_assumption-greyhounds-saint-michaels-purple-knights-live-streaming-653306688/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[american-football] Brown vs Harvard (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Brown vs Harvard (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_brown-bears-harvard-crimson-live-streaming-587875536
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_brown-bears-harvard-crimson-live-streaming-587875536
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_brown-bears-harvard-crimson-live-streaming-587875536/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="15" tvg-id="Live.Event.us" tvg-name="[american-football] UAB vs Navy (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] UAB vs Navy (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_uab-navy-live-streaming-587873808
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_uab-navy-live-streaming-587873808
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_uab-navy-live-streaming-587873808/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
+#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[american-football] Rutgers vs Howard (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Rutgers vs Howard (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-delta~live_cfb_rutgers-howard-live-streaming-587875104
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-delta~live_cfb_rutgers-howard-live-streaming-587875104
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_cfb_rutgers-howard-live-streaming-587875104/playlist.m3u8?tk=mEVY-9a9SnO08Xz0-lsfsw&e=1790417251
