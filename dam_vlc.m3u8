@@ -3,9 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=G9w2giqRa8RaYlr4Vsgx7w&e=1790364380
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=lJ8bYHanoqmj6UU85NXsGw&e=1790386127
 #EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=G9w2giqRa8RaYlr4Vsgx7w&e=1790364380
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=lJ8bYHanoqmj6UU85NXsGw&e=1790386127
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Azerbaijan Grand Prix - Qualifying (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/47eb6f07e9f0b71c013f0e018ea9d151-thumbnail.jpg" group-title="Motorsports",[Motorsports] Azerbaijan Grand Prix - Qualifying (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=f1/2026/azerbaijan/qualifying
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=f1/2026/azerbaijan/qualifying
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/f1/2026/azerbaijan/qualifying/playlist.m3u8?tk=lJ8bYHanoqmj6UU85NXsGw&e=1790386127
