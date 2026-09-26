@@ -1,63 +1,93 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="SPORTSONLINE" tvg-logo="" group-title="Sports", SportsOnline Channels
 
-#EXTINF:-1 tvg-id="" tvg-name="Atlante x Monterrey - HD10 (FRIDAY 02:00)" tvg-logo="" group-title="Sports", Atlante x Monterrey - HD10 (FRIDAY 02:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=ISG1UGbFOjnITtgDmYhhMg&e=1790468210|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="Tijuana x Atlas - HD10 (FRIDAY 04:00)" tvg-logo="" group-title="Sports", Tijuana x Atlas - HD10 (FRIDAY 04:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=ISG1UGbFOjnITtgDmYhhMg&e=1790468210|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="El Salvador x Martinique - HD2 (FRIDAY 04:00)" tvg-logo="" group-title="Sports", El Salvador x Martinique - HD2 (FRIDAY 04:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=e9bk5MntCl4GPk_pVQ_0Dg&e=1790468211|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="F1: Azerbaijan F1 Grand Prix - HD2 (SATURDAY 12:00)" tvg-logo="" group-title="Sports", F1: Azerbaijan F1 Grand Prix - HD2 (SATURDAY 12:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=e9bk5MntCl4GPk_pVQ_0Dg&e=1790468211|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="Slovenia x Scotland - HD1 (SATURDAY 14:00)" tvg-logo="" group-title="Sports", Slovenia x Scotland - HD1 (SATURDAY 14:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=TGmqTnZzZAs21ifpk_pLvA&e=1790468212|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="South Africa x Guinea - HD5 (SATURDAY 14:00)" tvg-logo="" group-title="Sports", South Africa x Guinea - HD5 (SATURDAY 14:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/9pbbu39owf6b9.m3u8?s=Kw5Wkm80FJKttHO2LkKWAw&e=1790468212|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="Bulgaria x Luxembourg - HD11 (SATURDAY 17:00)" tvg-logo="" group-title="Sports", Bulgaria x Luxembourg - HD11 (SATURDAY 17:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=0ABA-lnmOFr5zvFzUZ9k5Q&e=1790468213|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="Czech Republic x Croatia - HD10 (SATURDAY 19:45)" tvg-logo="" group-title="Sports", Czech Republic x Croatia - HD10 (SATURDAY 19:45)
-https://8z09jo.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=m9n0EsVR11vSPmWfC8aoyg&e=1790468213|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="England x Spain - HD1 (SATURDAY 19:45)" tvg-logo="" group-title="Sports", England x Spain - HD1 (SATURDAY 19:45)
-https://8z09jo.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=etZHeEQkTrC4Vm46Tq6LIQ&e=1790468214|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="England x Spain - HD6 (SATURDAY 19:45)" tvg-logo="" group-title="Sports", England x Spain - HD6 (SATURDAY 19:45)
-https://8z09jo.7odxv0l067ka.net:8443/hls/nessgjp115wr8.m3u8?s=cYEadnU31jxMeVPakHpBSw&e=1790468214|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
-#EXTINF:-1 tvg-id="" tvg-name="Mexico x Colombia - HD9 (SATURDAY 21:00)" tvg-logo="" group-title="Sports", Mexico x Colombia - HD9 (SATURDAY 21:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/acgg75tlvrxeh.m3u8?s=_kwKiBPe79XgZCabARRyVg&e=1790468215|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
-
 #EXTINF:-1 tvg-id="" tvg-name="USA x Peru - HD2 (SATURDAY 21:30)" tvg-logo="" group-title="Sports", USA x Peru - HD2 (SATURDAY 21:30)
-https://8z09jo.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=u9t4O2jNCqL7Zil-fb-tkg&e=1790468215|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=OGJDYO0IEkVWXgs1eWtUig&e=1790480852|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="USA x Peru - HD8 (SATURDAY 21:30)" tvg-logo="" group-title="Sports", USA x Peru - HD8 (SATURDAY 21:30)
-https://8z09jo.7odxv0l067ka.net:8443/hls/xzwwj6kynfkx5.m3u8?s=X-C3R9uysqZZFZnHRVKSCw&e=1790468215|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/xzwwj6kynfkx5.m3u8?s=zGJfI8rXsB7qy2pM-w9jtg&e=1790480852|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Deportivo Pereira x Inter Bogotá - HD11 (SATURDAY 22:00)" tvg-logo="" group-title="Sports", Deportivo Pereira x Inter Bogotá - HD11 (SATURDAY 22:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=iMs4P-AL8BoB-cS1gemg5A&e=1790468216|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=EbC4HTMVniNyGSlR1KlIWg&e=1790480853|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Cruz Azul x Toluca - HD10 (SATURDAY 23:50)" tvg-logo="" group-title="Sports", Cruz Azul x Toluca - HD10 (SATURDAY 23:50)
-https://8z09jo.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=Q41OgGH9KdOKpWnBTDRa_w&e=1790468216|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=S9BQ67U9YosrHIahn7ppGw&e=1790480853|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Canada x Chile - HD5 (SATURDAY 00:00)" tvg-logo="" group-title="Sports", Canada x Chile - HD5 (SATURDAY 00:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/9pbbu39owf6b9.m3u8?s=tT8XiomAyGWqjXs-Mqg23A&e=1790468217|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/9pbbu39owf6b9.m3u8?s=1WhuiFBKel_HGtJTCVBTGQ&e=1790480853|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Canada x Chile - HD9 (SATURDAY 00:00)" tvg-logo="" group-title="Sports", Canada x Chile - HD9 (SATURDAY 00:00)
-https://8z09jo.7odxv0l067ka.net:8443/hls/acgg75tlvrxeh.m3u8?s=EHyzLLFw7OAgNf7vSwmk0A&e=1790468217|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/acgg75tlvrxeh.m3u8?s=lKLAt1yzGL0GJRZOVYmtew&e=1790480854|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Guadalajara x Querétaro - HD8 (SATURDAY 00:07)" tvg-logo="" group-title="Sports", Guadalajara x Querétaro - HD8 (SATURDAY 00:07)
-https://8z09jo.7odxv0l067ka.net:8443/hls/xzwwj6kynfkx5.m3u8?s=g51O05KrKU1I0Xe0pe2m8Q&e=1790468217|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/xzwwj6kynfkx5.m3u8?s=PKyEPaQse-zkP9eN3Pmn7A&e=1790480854|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Cúcuta Deportivo x Llaneros - HD11 (SATURDAY 00:15)" tvg-logo="" group-title="Sports", Cúcuta Deportivo x Llaneros - HD11 (SATURDAY 00:15)
-https://8z09jo.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=6owgj0QV0JMrINQzqfStsg&e=1790468218|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=Va022tjgyyvwtn3WF8BxjQ&e=1790480855|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Mexico x Colombia - HD9 (SATURDAY 02:00)" tvg-logo="" group-title="Sports", Mexico x Colombia - HD9 (SATURDAY 02:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/acgg75tlvrxeh.m3u8?s=UjlCfUfL_w9RCPJT1WoS1A&e=1790480855|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
 #EXTINF:-1 tvg-id="" tvg-name="Junior x Medellín - HD11 (SATURDAY 02:20)" tvg-logo="" group-title="Sports", Junior x Medellín - HD11 (SATURDAY 02:20)
-https://8z09jo.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=6owgj0QV0JMrINQzqfStsg&e=1790468218|Referer=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net/|Origin=https://ffcc0c60d4883cf016ec259b0b7d37b2.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=Va022tjgyyvwtn3WF8BxjQ&e=1790480855|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Lithuania x Azerbaijan - HD1 (SUNDAY 14:00)" tvg-logo="" group-title="Sports", Lithuania x Azerbaijan - HD1 (SUNDAY 14:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=YN4uAYjyGwu5TH9j0S5VfQ&e=1790480856|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Serbia x Netherlands - HD1 (SUNDAY 17:00)" tvg-logo="" group-title="Sports", Serbia x Netherlands - HD1 (SUNDAY 17:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=YN4uAYjyGwu5TH9j0S5VfQ&e=1790480856|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Denmark x Wales - HD2 (SUNDAY 17:00)" tvg-logo="" group-title="Sports", Denmark x Wales - HD2 (SUNDAY 17:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=x3yt0TZCs81kyN6RpMvxBA&e=1790480856|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Denmark x Wales - HD8 (SUNDAY 17:00)" tvg-logo="" group-title="Sports", Denmark x Wales - HD8 (SUNDAY 17:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/xzwwj6kynfkx5.m3u8?s=9okulHTdNpcgfcJ9FMtrxw&e=1790480857|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Austria x Kosovo - HD11 (SUNDAY 17:00)" tvg-logo="" group-title="Sports", Austria x Kosovo - HD11 (SUNDAY 17:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=1NPwH1SCfg5_seBX8hnB4g&e=1790480857|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Austria x Kosovo - HD10 (SUNDAY 17:00)" tvg-logo="" group-title="Sports", Austria x Kosovo - HD10 (SUNDAY 17:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=ySx2nsLZPKn3pMZw5nnJzA&e=1790480857|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Germany x Greece - HD1 (SUNDAY 19:45)" tvg-logo="" group-title="Sports", Germany x Greece - HD1 (SUNDAY 19:45)
+https://c2807p.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=328uuTPswCrIiE9FjQAwiA&e=1790480858|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Germany x Greece - HD10 (SUNDAY 19:45)" tvg-logo="" group-title="Sports", Germany x Greece - HD10 (SUNDAY 19:45)
+https://c2807p.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=XqcU8uH_SxdxL1mTb48OhA&e=1790480858|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Norway x Portugal - HD2 (SUNDAY 19:45)" tvg-logo="" group-title="Sports", Norway x Portugal - HD2 (SUNDAY 19:45)
+https://c2807p.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=Chys3OqkdmzXIabOKUE6SA&e=1790480858|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Israel x Ireland Republic - HD5 (SUNDAY 19:45)" tvg-logo="" group-title="Sports", Israel x Ireland Republic - HD5 (SUNDAY 19:45)
+https://c2807p.7odxv0l067ka.net:8443/hls/9pbbu39owf6b9.m3u8?s=wEf0cG4gLQmDinzTaiNuCg&e=1790480858|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Racing Club x Boca Juniors - HD6 (SUNDAY 21:00)" tvg-logo="" group-title="Sports", Racing Club x Boca Juniors - HD6 (SUNDAY 21:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/nessgjp115wr8.m3u8?s=o6GdEgaTVYw4Y1MUxCxTow&e=1790480859|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Bolivia x Paraguay - HD9 (SUNDAY 21:30)" tvg-logo="" group-title="Sports", Bolivia x Paraguay - HD9 (SUNDAY 21:30)
+https://c2807p.7odxv0l067ka.net:8443/hls/acgg75tlvrxeh.m3u8?s=UNMhi5d-od6KSXQDvpJTUA&e=1790480859|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Jaguares de Córdoba x Alianza - HD11 (SUNDAY 22:00)" tvg-logo="" group-title="Sports", Jaguares de Córdoba x Alianza - HD11 (SUNDAY 22:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=VM_n2RvlcRNjBgIKaOWupw&e=1790480859|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Columbus Crew x Inter Miami - HD2 (SUNDAY 00:00)" tvg-logo="" group-title="Sports", Columbus Crew x Inter Miami - HD2 (SUNDAY 00:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/ithh1xe7c01n2.m3u8?s=BKlpYxSdKXMQlsMwS9YM6A&e=1790480860|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Haiti x Costa Rica - HD1 (SUNDAY 00:00)" tvg-logo="" group-title="Sports", Haiti x Costa Rica - HD1 (SUNDAY 00:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=e3hEPa69YfxnktyDuOf4CA&e=1790480860|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Fortaleza CEIF x Deportes Tolima - HD11 (SUNDAY 00:05)" tvg-logo="" group-title="Sports", Fortaleza CEIF x Deportes Tolima - HD11 (SUNDAY 00:05)
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=_sF7e6Bqx7B8zk8Ow1GsOg&e=1790480860|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Tigres UANL x Atlético San Luis - HD9 (SUNDAY 01:06)" tvg-logo="" group-title="Sports", Tigres UANL x Atlético San Luis - HD9 (SUNDAY 01:06)
+https://c2807p.7odxv0l067ka.net:8443/hls/acgg75tlvrxeh.m3u8?s=HG52ebhdNh7F-WnvwMKCGA&e=1790480861|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Trinidad and Tobago x Dominican Republic - HD1 (SUNDAY 02:00)" tvg-logo="" group-title="Sports", Trinidad and Tobago x Dominican Republic - HD1 (SUNDAY 02:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/ulgk1vzsw8aqr.m3u8?s=fwnQMbK5hM5T6NAUNPSWQQ&e=1790480861|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="León x Juárez - HD10 (SUNDAY 02:00)" tvg-logo="" group-title="Sports", León x Juárez - HD10 (SUNDAY 02:00)
+https://c2807p.7odxv0l067ka.net:8443/hls/z700mrpx530rp.m3u8?s=PrxtImdxVPLLPZ2rkB6Txw&e=1790480861|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
+
+#EXTINF:-1 tvg-id="" tvg-name="Deportivo Cali x Rionegro Águilas - HD11 (SUNDAY 02:10)" tvg-logo="" group-title="Sports", Deportivo Cali x Rionegro Águilas - HD11 (SUNDAY 02:10)
+https://c2807p.7odxv0l067ka.net:8443/hls/cd88is8arjavh.m3u8?s=xoj0yg6XrOdv-sx9HZXy6w&e=1790480862|Referer=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net/|Origin=https://5b93abe4b1cf9222f4a1e0552036e3ea.dynproclaim.net|User-Agent=Mozilla%2F5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F138.0.0.0%20Mobile%20Safari%2F537.36
 
