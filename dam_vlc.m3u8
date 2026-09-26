@@ -3,14 +3,24 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=cUS9hJC5zE_VR2l5_NRqvQ&e=1790450476
-#EXTINF:-1 tvg-chno="2" tvg-id="AUS.Rules.Football.Dummy.us" tvg-name="[AFL] Fremantle vs. Brisbane Lions (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ca1606e7d86988424d316d5cff6ee306-thumbnail.jpg" group-title="AFL",[AFL] Fremantle vs. Brisbane Lions (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=afl/2026-09-26/fre-bl
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=afl/2026-09-26/fre-bl
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=pnO2_OTiSY51Hx1zMddNtw&e=1790470312
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Perth Wildcats vs. New Zealand Breakers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/53a5987a6f4340ff0a74cbfe97b94575-thumbnail.jpg" group-title="Basketball",[Basketball] Perth Wildcats vs. New Zealand Breakers (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-26/per-nzl
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-26/per-nzl
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/afl/2026-09-26/fre-bl/playlist.m3u8?tk=cUS9hJC5zE_VR2l5_NRqvQ&e=1790450476
-#EXTINF:-1 tvg-chno="3" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nbl/2026-09-26/per-nzl/playlist.m3u8?tk=pnO2_OTiSY51Hx1zMddNtw&e=1790470312
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Slovenia vs. Scotland (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/bbb0eaf70b05f987efc5dbebb9e86640-thumbnail.jpg" group-title="Football",[Football] Slovenia vs. Scotland (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-26/svn-sco
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-26/svn-sco
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-26/svn-sco/playlist.m3u8?tk=pnO2_OTiSY51Hx1zMddNtw&e=1790470312
+#EXTINF:-1 tvg-chno="4" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=cUS9hJC5zE_VR2l5_NRqvQ&e=1790450476
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=pnO2_OTiSY51Hx1zMddNtw&e=1790470312
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Azerbaijan Grand Prix - Race (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/28b461a0f33fed158ba96eecfec6f6e2-thumbnail.jpg" group-title="Motorsports",[Motorsports] Azerbaijan Grand Prix - Race (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=f1/2026/azerbaijan/race
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=f1/2026/azerbaijan/race
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/f1/2026/azerbaijan/race/playlist.m3u8?tk=pnO2_OTiSY51Hx1zMddNtw&e=1790470312
