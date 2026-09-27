@@ -3,29 +3,14 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=CKQnJQUZmZ2wCh71PiH2YA&e=1790538776
-#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Adelaide 36ers vs. Cairns Taipans (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/abb83bb97a006b9cff8f778b662e4b99-thumbnail.jpg" group-title="Basketball",[Basketball] Adelaide 36ers vs. Cairns Taipans (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-27/adl-cns
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-27/adl-cns
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=28ANDkbFDdAqcUdCcfpn2A&e=1790559847
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Lithuania vs. Azerbaijan (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/b21e52d61e2cdd801a75eb510aa914e3-thumbnail.jpg" group-title="Football",[Football] Lithuania vs. Azerbaijan (DAM)
+#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=uefa-nations-league/2026-09-27/ltu-aze
+#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=uefa-nations-league/2026-09-27/ltu-aze
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nbl/2026-09-27/adl-cns/playlist.m3u8?tk=CKQnJQUZmZ2wCh71PiH2YA&e=1790538776
-#EXTINF:-1 tvg-chno="3" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Sydney Kings vs. Illawarra Hawks (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/cb19316fbaa3626b5e3b5aec76eb0fb6-thumbnail.jpg" group-title="Basketball",[Basketball] Sydney Kings vs. Illawarra Hawks (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nbl/2026-09-27/syd-hwk
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nbl/2026-09-27/syd-hwk
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nbl/2026-09-27/syd-hwk/playlist.m3u8?tk=CKQnJQUZmZ2wCh71PiH2YA&e=1790538776
-#EXTINF:-1 tvg-chno="4" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] Inoue vs. Nasukawa 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8ead095c8b977f65ff045aa19128d709-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] Inoue vs. Nasukawa 2 (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=inoue-vs-nasukawa-2-29473
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=inoue-vs-nasukawa-2-29473
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/inoue-vs-nasukawa-2-29473/playlist.m3u8?tk=CKQnJQUZmZ2wCh71PiH2YA&e=1790538776
-#EXTINF:-1 tvg-chno="5" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-27/ltu-aze/playlist.m3u8?tk=28ANDkbFDdAqcUdCcfpn2A&e=1790559847
+#EXTINF:-1 tvg-chno="3" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=CKQnJQUZmZ2wCh71PiH2YA&e=1790538776
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[NRL] Panthers vs. Knights (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/516ddbc9ec3cd05e2cf91c3633035c61-thumbnail.jpg" group-title="Live Events",[NRL] Panthers vs. Knights (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nrl/2026-09-27/pen-new
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nrl/2026-09-27/pen-new
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nrl/2026-09-27/pen-new/playlist.m3u8?tk=CKQnJQUZmZ2wCh71PiH2YA&e=1790538776
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=28ANDkbFDdAqcUdCcfpn2A&e=1790559847
