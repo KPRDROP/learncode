@@ -3,39 +3,9 @@
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=9snZ7-QsXvJIJDMbOObAUw&e=1790598641
-#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Rams at Denver Broncos (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9e9647e7bdc10f5dbc3e6c25e7d6c9c4-thumbnail.jpg" group-title="NFL",[NFL] Los Angeles Rams at Denver Broncos (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=nfl/2026-09-27/lar-den
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=nfl/2026-09-27/lar-den
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl/2026-09-27/lar-den/playlist.m3u8?tk=HWGlYKrlwVX_nhtc9l6vUg&e=1790598642
-#EXTINF:-1 tvg-chno="3" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings vs. Golden State Valkyries (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e0775e09d18951b1f7cbe0cf744d188e-thumbnail.jpg" group-title="NBA",[WNBA] Dallas Wings vs. Golden State Valkyries (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=wnba/2026-09-27/dal-gs
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=wnba/2026-09-27/dal-gs
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-09-27/dal-gs/playlist.m3u8?tk=HWGlYKrlwVX_nhtc9l6vUg&e=1790598642
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] León vs. FC Juarez (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7b712fc67ecf32b335d2ab8e8754cba5-thumbnail.jpg" group-title="Football",[Football] León vs. FC Juarez (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=liga-mx/2026-09-27/leo-jua
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=liga-mx/2026-09-27/leo-jua
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/liga-mx/2026-09-27/leo-jua/playlist.m3u8?tk=HWGlYKrlwVX_nhtc9l6vUg&e=1790598642
-#EXTINF:-1 tvg-chno="5" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=CGesJdNP-UgRPhw8ov1loQ&e=1790620329
+#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=HWGlYKrlwVX_nhtc9l6vUg&e=1790598642
-#EXTINF:-1 tvg-chno="6" tvg-id="Basketball.Dummy.us" tvg-name="[basketball] Washington Mystics vs. Atlanta Dream (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IceIDGweNmAQQMEFWXYQJZSEQoQCrJpUr9KYDQUrxGmDNLj58k-zCCRTOY8LAkuSSaHPWCFcyEwIbMGd7MgggA.webp" group-title="Live Events",[basketball] Washington Mystics vs. Atlanta Dream (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-washington-mystics-vs-atlanta-dream
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-washington-mystics-vs-atlanta-dream
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-washington-mystics-vs-atlanta-dream/playlist.m3u8?tk=HWGlYKrlwVX_nhtc9l6vUg&e=1790598642
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[football] Columbus Crew vs Inter Miami (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rdWBS4QtbiD18QMEFJCG9iCEZ0FgSCn2Gz6KMCpRc35ellkemtGBuYqIQQA.webp" group-title="Live Events",[football] Columbus Crew vs Inter Miami (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-columbus-crew-vs-inter-miami-cf
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-columbus-crew-vs-inter-miami-cf
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-columbus-crew-vs-inter-miami-cf/playlist.m3u8?tk=HWGlYKrlwVX_nhtc9l6vUg&e=1790598642
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[football] León vs Juárez (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rUPDAywPfiG4g+IYxBCmYIEiAtT9BYEgp9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[football] León vs Juárez (DAM)
-#EXTVLCOPT:http-referrer=https://damitv.st/embed/?id=sd-admin~ppv-le-n-vs-fc-juarez
-#EXTVLCOPT:http-origin=https://damitv.st/embed/?id=sd-admin~ppv-le-n-vs-fc-juarez
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-le-n-vs-fc-juarez/playlist.m3u8?tk=y0J-2AyWFcps8Y3or--GMw&e=1790598643
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=CGesJdNP-UgRPhw8ov1loQ&e=1790620329
