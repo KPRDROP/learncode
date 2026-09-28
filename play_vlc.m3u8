@@ -1,31 +1,91 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Denver Broncos vs Los Angeles Rams | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Denver Broncos vs Los Angeles Rams | CA (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Northern Ireland vs Hungary | GR (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Northern Ireland vs Hungary | GR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://643t8a.7odxv0l067ka.net:8443/hls/cd4vgvhakbwy8.m3u8?s=pq1QD_cgFprrukUQVlkntA&e=1790582358
+https://8z09jo.7odxv0l067ka.net:8443/hls/6rtrm4k81y34s.m3u8?s=kZybK4DWiyV2RpCOUBdu8g&e=1790636251
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] León vs Juárez | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] León vs Juárez | ES (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Turkey vs Italy | IT (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Turkey vs Italy | IT (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://643t8a.7odxv0l067ka.net:8443/hls/yx3xnxj4x9ngn.m3u8?s=80v7Ou_e7VZxEeVwIOF2Sw&e=1790582360
+https://8z09jo.7odxv0l067ka.net:8443/hls/w0j0s7ntj70zf.m3u8?s=7FUJIUOSX2KDEB1liMZsrA&e=1790636253
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Trinidad and Tobago vs Dominican Republic | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Trinidad and Tobago vs Dominican Republic | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Turkey vs Italy | SE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Turkey vs Italy | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://643t8a.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=A5Wxh5vXKbDWrvJbK5peXw&e=1790582361
+https://8z09jo.7odxv0l067ka.net:8443/hls/la6aw18uy61ro.m3u8?s=9jnQIjPa5_Kj5TeVfEeK1w&e=1790636255
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Curaçao vs Nicaragua | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Curaçao vs Nicaragua | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Belgium vs France | FR (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Belgium vs France | FR (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://643t8a.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=qcLW0cBgE7J08zc0lhtbhQ&e=1790582363
+https://8z09jo.7odxv0l067ka.net:8443/hls/ul8ltfesg14qv.m3u8?s=geUq0vyaVfwmCBDz8eRX9g&e=1790636257
 
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Necaxa vs América | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Necaxa vs América | ES (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Belgium vs France | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Belgium vs France | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://643t8a.7odxv0l067ka.net:8443/hls/vgzg9fa2psyi1.m3u8?s=rGLHfilByUO761eKDSO8tg&e=1790582364
+https://8z09jo.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=fL-gOqy6AJb1NhxhJKMgdg&e=1790636258
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Georgia vs Ukraine | PL (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Georgia vs Ukraine | PL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/b1u169kmywt60.m3u8?s=Gnjo-aDmjDi2iGLO3K6JSA&e=1790636259
+
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Romania vs Bosnia and Herzegovina | PL (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Romania vs Bosnia and Herzegovina | PL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/fkdkxjhedpyw4.m3u8?s=WmPZlmE7W9N5rwqex-2zSA&e=1790636261
+
+#EXTINF:-1 tvg-chno="8" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Sweden Hockeyallsvenskan] Nybro Vikings IF vs Modo Hockey | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Sweden Hockeyallsvenskan] Nybro Vikings IF vs Modo Hockey | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/itptkru7ulb03.m3u8?s=QhflYtVOnVaqsx0nVZJZYw&e=1790636262
+
+#EXTINF:-1 tvg-chno="9" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Sweden Hockeyallsvenskan] Västerås IK vs Kalmar HC | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Sweden Hockeyallsvenskan] Västerås IK vs Kalmar HC | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/efcfyqrnjkdce.m3u8?s=_S_F5giGoyho_GjZtAGvsA&e=1790636264
+
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Sweden vs Poland | SE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Sweden vs Poland | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/5svs7jskrxz2c.m3u8?s=TK8rzcLW-a3CfhBxR3NJXQ&e=1790636265
+
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Sweden vs Poland | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Sweden vs Poland | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=TQYKVLwHgLOW-dGHmO_PFg&e=1790636267
+
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Armenia vs Montenegro | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Armenia vs Montenegro | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=Tx-iQzvcBStsyEvNVgs64g&e=1790636268
+
+#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Latvia vs Cyprus | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Latvia vs Cyprus | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=xNE6Lhixh6piza85xa6BQA&e=1790636269
+
+#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Suriname vs Martinique | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Suriname vs Martinique | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=y0xsZMhKHfdi4KbFm0vAyQ&e=1790636271
+
+#EXTINF:-1 tvg-chno="15" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Cuba vs Bonaire | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Cuba vs Bonaire | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=IqJFTYIu552m3yEUhecYrA&e=1790636272
 
