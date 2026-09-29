@@ -20,6 +20,18 @@ API_FILE = Cache(f"{TAG}-api", exp=28_800)
 # Use environment variable or fallback to default
 BASE_URL = os.getenv("DAM_BASE_URL")
 
+# Browser-like headers to avoid 403 errors
+BROWSER_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-origin",
+}
+
 
 @dataclass(kw_only=True, slots=True)
 class DAMIEvent(Event):
@@ -29,16 +41,32 @@ class DAMIEvent(Event):
 
 
 async def process_event(stream_id: str, url_num: int) -> str | None:
+    """Process event with proper headers to avoid 403 errors."""
+    
+    # Build headers with Referer and Origin
+    headers = {
+        **BROWSER_HEADERS,
+        "Referer": f"{BASE_URL}/",
+        "Origin": BASE_URL,
+    }
+    
     if not (
         event_data := await network.request(
             urljoin(BASE_URL, f"papi/extract-url/{stream_id}"),
             url_num,
+            headers=headers,
             log=log,
         )
     ):
         return
 
-    elif not (api_data := event_data.json()).get("success"):
+    try:
+        api_data = event_data.json()
+    except Exception as e:
+        log.warning(f"URL {url_num}) Failed to parse JSON: {e}")
+        return
+
+    if not api_data.get("success"):
         log.warning(f"URL {url_num}) Unsuccessful Request: {api_data.get('error')}")
         return
 
@@ -62,23 +90,35 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
 
         api_data = [{"timestamp": now.timestamp()}]
 
+        # Build headers for API request
+        headers = {
+            **BROWSER_HEADERS,
+            "Referer": f"{BASE_URL}/",
+            "Origin": BASE_URL,
+        }
+
         if r := await network.request(
             urljoin(BASE_URL, "papi/matches/all-today"),
+            headers=headers,
             log=log,
         ):
-            api_data = r.json()
-            # Add timestamp to the last item
-            if api_data and isinstance(api_data, list):
-                api_data[-1]["timestamp"] = now.timestamp()
+            try:
+                api_data = r.json()
+                # Add timestamp to the last item
+                if api_data and isinstance(api_data, list):
+                    api_data[-1]["timestamp"] = now.timestamp()
+            except Exception as e:
+                log.error(f"Failed to parse API response: {e}")
+                return events
 
         API_FILE.write(api_data)
 
-    # Use 30-minute window
+    # Use 3-hour window before and 1 hour after
     start_dt = now.delta(minutes=-180)
     end_dt = now.delta(minutes=60)
 
     log.info(
-        "Event window: %s -> %s (30 minutes before/after)",
+        "Event window: %s -> %s (3 hours before / 1 hour after)",
         start_dt,
         end_dt,
     )
@@ -134,7 +174,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
         if key in cached_keys:
             continue
 
-        # Check if event is within the 30-minute window
+        # Check if event is within the time window
         elif not start_dt <= event_dt <= end_dt:
             continue
 
@@ -149,7 +189,7 @@ async def get_events(cached_keys: KeysView[str]) -> list[DAMIEvent]:
         )
 
     log.info(
-        "Found %d eligible live event(s) within 30-minute window",
+        "Found %d eligible live event(s) within time window",
         len(events),
     )
 
@@ -176,7 +216,9 @@ def generate_m3u8_files(events_data: dict[str, dict[str, str | float]]) -> None:
         
         # Get sport from event name or use default
         sport = "Live Events"
-        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "AFL", "American Football", "Combat Sports", "Tennis", "Motorsports", "Baseball", "Football", "Soccer", "Basketball", "Leagues Cup", "Criket", "Rugby", "24/7 Streams"]:
+        for s in ["MLB", "NBA", "NHL", "NFL", "WNBA", "AFL", "American Football", "Combat Sports", "Tennis", 
+                  "Motorsports", "Baseball", "Football", "Soccer", "Basketball",
+                  "Leagues Cup", "Criket", "Rugby", "24/7 Streams"]:
             if s in event_name:
                 sport = s
                 break
