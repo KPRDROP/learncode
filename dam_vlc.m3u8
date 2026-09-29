@@ -1,1 +1,66 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[NFL] NFL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5ed7ea60fe8e3842203b0741187f0fd7-thumbnail.jpg" group-title="NFL",[NFL] NFL Network (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=G8Tw783HBgFeQiQqR77i3w&e=1790758428
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. Atlanta Braves (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7349d8fd61256dd678ec4033d0de2a26-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. Atlanta Braves (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mlb/2026-09-29/phi-atl
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mlb/2026-09-29/phi-atl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-29/phi-atl/playlist.m3u8?tk=G8Tw783HBgFeQiQqR77i3w&e=1790758428
+#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs. Houston Astros (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7f5822da98796eb5e97d2dbd2ff99fe4-thumbnail.jpg" group-title="MLB",[MLB] Chicago White Sox vs. Houston Astros (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mlb/2026-09-29/chw-hou
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mlb/2026-09-29/chw-hou
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-29/chw-hou/playlist.m3u8?tk=G8Tw783HBgFeQiQqR77i3w&e=1790758428
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Bulgaria vs. Estonia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/347392610eeaba24429129d1e982b4ed-thumbnail.jpg" group-title="Football",[Football] Bulgaria vs. Estonia (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/bul-est
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/bul-est
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/bul-est/playlist.m3u8?tk=G8Tw783HBgFeQiQqR77i3w&e=1790758428
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Czechia vs. England (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8b28cdf167b182c9727d7b62e2867b19-thumbnail.jpg" group-title="Football",[Football] Czechia vs. England (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/cze-eng
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/cze-eng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/cze-eng/playlist.m3u8?tk=G8Tw783HBgFeQiQqR77i3w&e=1790758428
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Luxembourg vs. Iceland (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9794ee77bef3bb6f833deaba7c4e653d-thumbnail.jpg" group-title="Football",[Football] Luxembourg vs. Iceland (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/lux-isl
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/lux-isl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/lux-isl/playlist.m3u8?tk=G8Tw783HBgFeQiQqR77i3w&e=1790758428
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] San Marino vs. Albania (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/28db2d8b74a172349022e11088d58f2e-thumbnail.jpg" group-title="Football",[Football] San Marino vs. Albania (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/smr-alb
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/smr-alb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/smr-alb/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Scotland vs. Switzerland (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/154b0806758154f4c9fe658ac6dd0a3a-thumbnail.jpg" group-title="Football",[Football] Scotland vs. Switzerland (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/sco-sui
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/sco-sui
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/sco-sui/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Slovakia vs. Kazakhstan (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f779b091dc36f751ecac07dbfc9a2c29-thumbnail.jpg" group-title="Football",[Football] Slovakia vs. Kazakhstan (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/svk-kaz
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/svk-kaz
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/svk-kaz/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Slovenia vs. North Macedonia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/84e5407fef6a43c9c69879877d0d2085-thumbnail.jpg" group-title="Football",[Football] Slovenia vs. North Macedonia (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/svn-mkd
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/svn-mkd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/svn-mkd/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Spain vs. Croatia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d5e859ca3b706448902d5272f2e7501c-thumbnail.jpg" group-title="Football",[Football] Spain vs. Croatia (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/esp-cro
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-09-29/esp-cro
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-09-29/esp-cro/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
+#EXTINF:-1 tvg-chno="12" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
+#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Florida Panthers vs. Carolina Hurricanes (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ee3fbe4a353c5f068d047948c85c02fe-thumbnail.jpg" group-title="NHL",[NHL] Florida Panthers vs. Carolina Hurricanes (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl/2026-09-29/fla-car
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl/2026-09-29/fla-car
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-09-29/fla-car/playlist.m3u8?tk=9hDPmX6QxUSg7pGmGbktTA&e=1790758429
