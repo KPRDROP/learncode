@@ -3,9 +3,39 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=Qtrjrsyg1zDnbaRIrHq_Yg&e=1790818181
-#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=EAc9B_QjkHF0UP-z2s96mw&e=1790837967
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Philadelphia Phillies vs. Atlanta Braves (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7349d8fd61256dd678ec4033d0de2a26-thumbnail.jpg" group-title="MLB",[MLB] Philadelphia Phillies vs. Atlanta Braves (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mlb/2026-09-30/phi-atl
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mlb/2026-09-30/phi-atl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-09-30/phi-atl/playlist.m3u8?tk=EAc9B_QjkHF0UP-z2s96mw&e=1790837967
+#EXTINF:-1 tvg-chno="3" tvg-id="Darts.Dummy.us" tvg-name="[Darts] 2026 World Grand Prix | Day 3 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/47d877cec15c6e8841a0fe15f422225c-thumbnail.jpg" group-title="Live Events",[Darts] 2026 World Grand Prix | Day 3 (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=2026-world-grand-prix--day-3-29598
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=2026-world-grand-prix--day-3-29598
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/2026-world-grand-prix--day-3-29598/playlist.m3u8?tk=EAc9B_QjkHF0UP-z2s96mw&e=1790837967
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Roma vs. Barcelona (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6fd606ea0695938cbff5505e93009904-thumbnail.jpg" group-title="Football",[Football] Roma vs. Barcelona (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-womens-champions-league/2026-09-30/roma-bar
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-womens-champions-league/2026-09-30/roma-bar
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-womens-champions-league/2026-09-30/roma-bar/playlist.m3u8?tk=EAc9B_QjkHF0UP-z2s96mw&e=1790837967
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[National League] Eastleigh vs. Southend United (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ad6cf3e532a63568d5ee6e8e722f0eb0-thumbnail.jpg" group-title="Live Events",[National League] Eastleigh vs. Southend United (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=national-league/2026-09-30/elh-sout
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=national-league/2026-09-30/elh-sout
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/national-league/2026-09-30/elh-sout/playlist.m3u8?tk=hgo1IXhCsxY94j7x4w20SQ&e=1790837968
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[National League] Tamworth vs. Sutton United (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/781167e25856160642f39793ae760b93-thumbnail.jpg" group-title="Live Events",[National League] Tamworth vs. Sutton United (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=national-league/2026-09-30/tam-sut
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=national-league/2026-09-30/tam-sut
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/national-league/2026-09-30/tam-sut/playlist.m3u8?tk=hgo1IXhCsxY94j7x4w20SQ&e=1790837968
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] OL Lyonnes vs. Chelsea (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/43f1b3210b3289cc95d4dd251a5e9353-thumbnail.jpg" group-title="Football",[Football] OL Lyonnes vs. Chelsea (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-womens-champions-league/2026-09-30/lyon-che
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-womens-champions-league/2026-09-30/lyon-che
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-womens-champions-league/2026-09-30/lyon-che/playlist.m3u8?tk=hgo1IXhCsxY94j7x4w20SQ&e=1790837968
+#EXTINF:-1 tvg-chno="8" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=TNMP-meWrJvtFinPH1OvGw&e=1790818182
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=hgo1IXhCsxY94j7x4w20SQ&e=1790837968
