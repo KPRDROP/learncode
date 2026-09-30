@@ -1,85 +1,43 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[World Friendly] USA vs Chile | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[World Friendly] USA vs Chile | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs Boston Red Sox | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] New York Yankees vs Boston Red Sox | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/cd4vgvhakbwy8.m3u8?s=0KwUlBw5_vfM9KT_krx5oQ&e=1790745835
+https://643t8a.7odxv0l067ka.net:8443/hls/o9n9d19h322vl.m3u8?s=if0y4_nQ9iAOr-fesW7nrA&e=1790756142
 
-#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] New York Yankees vs Boston Red Sox | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] New York Yankees vs Boston Red Sox | CA (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] New York Liberty vs Minnesota Lynx | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] New York Liberty vs Minnesota Lynx | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/o9n9d19h322vl.m3u8?s=RL2aMJt1hYA30x_yc4CFqA&e=1790745837
+https://643t8a.7odxv0l067ka.net:8443/hls/mbsb6epj4e82p.m3u8?s=RbdpQrw0GQqIgOlbEYL-9A&e=1790756144
 
-#EXTINF:-1 tvg-chno="3" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Houston Astros vs Chicago White Sox | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] Houston Astros vs Chicago White Sox | CA (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[World Friendly] Mexico vs Peru | ES (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[World Friendly] Mexico vs Peru | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/cd4dh6iarhr2p.m3u8?s=UKTdVFDwm1A37hbI3cbO-Q&e=1790745838
+https://643t8a.7odxv0l067ka.net:8443/hls/yx3xnxj4x9ngn.m3u8?s=mZLccOQ6ij9ACsFW5t7AEg&e=1790756145
 
-#EXTINF:-1 tvg-chno="4" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs Chicago Cubs | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] San Diego Padres vs Chicago Cubs | CA (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Boston Bruins vs New York Rangers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Boston Bruins vs New York Rangers | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/cd4dh6iarhr2p.m3u8?s=27H8iEkyDHS3Wv41wQzePQ&e=1790745839
+https://643t8a.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=vvrsRB83N77zVLZlzHwZLw&e=1790756146
 
-#EXTINF:-1 tvg-chno="5" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Fighting] Dana White's Contender Series | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Fighting] Dana White's Contender Series | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Vegas Golden Knights vs Chicago Blackhawks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Vegas Golden Knights vs Chicago Blackhawks | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/cd4dh8la67ol2.m3u8?s=_9Iwihg9RdaahuyH5ppLhg&e=1790745841
+https://643t8a.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=fM9gEd5P05V0aNure9y91w&e=1790756147
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] New York Liberty vs Minnesota Lynx | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] New York Liberty vs Minnesota Lynx | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Edmonton Oilers vs Vancouver Canucks | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Edmonton Oilers vs Vancouver Canucks | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/mbsb6epj4e82p.m3u8?s=G6ixbdGvpEKJCB-qyGtO2A&e=1790745842
+https://643t8a.7odxv0l067ka.net:8443/hls/z7o7fz4xhk0xg.m3u8?s=sEOhZVfMUiIpapRuOuZv2g&e=1790756148
 
-#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[World Friendly] Mexico vs Peru | ES (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[World Friendly] Mexico vs Peru | ES (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Belize vs Saint Vincent and the Grenadines | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Belize vs Saint Vincent and the Grenadines | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/yx3xnxj4x9ngn.m3u8?s=wMn1islLLdG36OKSEeOCEg&e=1790745843
-
-#EXTINF:-1 tvg-chno="8" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Carolina Hurricanes vs Florida Panthers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Carolina Hurricanes vs Florida Panthers | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=mxnDeOV9Ml9xTNwUuw1eGA&e=1790745845
-
-#EXTINF:-1 tvg-chno="9" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Boston Bruins vs New York Rangers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Boston Bruins vs New York Rangers | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=VfZtM7hDciq6-5YgcSWBzg&e=1790745846
-
-#EXTINF:-1 tvg-chno="10" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Vegas Golden Knights vs Chicago Blackhawks | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Vegas Golden Knights vs Chicago Blackhawks | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=kNQQy1Uf-tQKFpqmUn5JnA&e=1790745847
-
-#EXTINF:-1 tvg-chno="11" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Toronto Maple Leafs vs Montreal Canadiens | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Toronto Maple Leafs vs Montreal Canadiens | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/5svsislkrx3kv.m3u8?s=yIes8L3YfGNRZKd_fnRffA&e=1790745849
-
-#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Edmonton Oilers vs Vancouver Canucks | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Edmonton Oilers vs Vancouver Canucks | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/z7o7fz4xhk0xg.m3u8?s=ReRxtx16Smtktay-p7Z-9g&e=1790745850
-
-#EXTINF:-1 tvg-chno="13" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Anguilla vs Aruba | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Anguilla vs Aruba | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=vCHe6FWf3JZmLxoB-9wtDg&e=1790745851
-
-#EXTINF:-1 tvg-chno="14" tvg-id="Live.Event.us" tvg-name="[North America CONCACAF Nations League] Belize vs Saint Vincent and the Grenadines | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[North America CONCACAF Nations League] Belize vs Saint Vincent and the Grenadines | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://e8975o.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=yW1M3Otx7F46YilCsuTPpw&e=1790745853
+https://643t8a.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=qiYUuhuwFwH4ubgyvHbZrQ&e=1790756150
 
