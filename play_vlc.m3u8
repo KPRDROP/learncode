@@ -1,7 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] San Diego Padres vs Chicago Cubs | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] San Diego Padres vs Chicago Cubs | CA (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Hapoel Tel Aviv vs Real Madrid | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Hapoel Tel Aviv vs Real Madrid | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/cd4vgvhakbwy8.m3u8?s=aWHnrI0pOB-pism2nJpyiw&e=1790848168
+https://8z09jo.7odxv0l067ka.net:8443/hls/vgzgprk2xvqer.m3u8?s=QEpqMCw-M2fSldSkrhstRg&e=1790872883
+
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Hapoel Tel Aviv vs Real Madrid | ES (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Hapoel Tel Aviv vs Real Madrid | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/w0j0u0atcts1u.m3u8?s=Ai7xTnancKxX5HmorIPHFg&e=1790872885
+
+#EXTINF:-1 tvg-chno="3" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Sparta Praha vs Ceske Budejovice | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Sparta Praha vs Ceske Budejovice | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/3hbhlwn0eiwi9.m3u8?s=LMXsxgFSGiqlirG3mqfUHg&e=1790872887
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] Kettera vs KeuPa HT | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] Kettera vs KeuPa HT | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/ul8lt18swxcgn.m3u8?s=ZcXQwX1cdy4KlN8CfgL_TA&e=1790872889
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Azerbaijan vs Liechtenstein | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Azerbaijan vs Liechtenstein | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://8z09jo.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=ukt08BakeYsv6Dc0wRAijQ&e=1790872891
 
