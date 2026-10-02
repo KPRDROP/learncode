@@ -1,19 +1,319 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Bahrain Grand Prix | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Bahrain Grand Prix | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[Germany DEL] Augsburger Panther vs Grizzly Wolfsburg | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Germany DEL] Augsburger Panther vs Grizzly Wolfsburg | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/xzhzewbydixea.m3u8?s=wFGrJfzJkI4kKc4n7k4BBA&e=1790946944
+https://e8975o.7odxv0l067ka.net:8443/hls/nelmbo31s1f8g.m3u8?s=9_b--8DO5rmSfbHrElrgOg&e=1790970935
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Bahrain Grand Prix | ES (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Bahrain Grand Prix | ES (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[Germany DEL] Kolner Haie vs EHC Red Bull Munchen | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Germany DEL] Kolner Haie vs EHC Red Bull Munchen | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/w0j0u0atcts1u.m3u8?s=xHD4mJwYGOdzUJHgl8qZzQ&e=1790946946
+https://e8975o.7odxv0l067ka.net:8443/hls/4y0y17frhytwi.m3u8?s=6ynm2z_tYKYk-vba-D2ZcQ&e=1790970936
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Bahrain Grand Prix | IT (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Live Events",[Formula 1] Bahrain Grand Prix | IT (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Germany DEL] Krefeld Pinguine vs ERC Ingolstadt | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Germany DEL] Krefeld Pinguine vs ERC Ingolstadt | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/w0j0s7ntj70zf.m3u8?s=NqP9PO9Q3UvAmaU7yDiTwQ&e=1790946948
+https://e8975o.7odxv0l067ka.net:8443/hls/4y0y17mr3akft.m3u8?s=b02ZTlFNDoBY-kpcv9LuOA&e=1790970938
+
+#EXTINF:-1 tvg-chno="4" tvg-id="Live.Event.us" tvg-name="[Germany DEL] Nurnberg Ice Tigers vs Schwenninger | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Germany DEL] Nurnberg Ice Tigers vs Schwenninger | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/yx3xnio4ue0z.m3u8?s=O4wDVND6VDpd7JQK7BSu8Q&e=1790970939
+
+#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[Germany DEL] Straubing Tigers vs Bremerhaven | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Germany DEL] Straubing Tigers vs Bremerhaven | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/yx3xni74cm1fb.m3u8?s=ZUvR3Og65XGOvjVES7IW4Q&e=1790970940
+
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Kazakhstan vs Moldova | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Kazakhstan vs Moldova | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/acrc321l8sxyb.m3u8?s=lj_dU8YIlr8NtSnTLUoMCQ&e=1790970942
+
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Kazakhstan vs Moldova | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Kazakhstan vs Moldova | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=q-izNTRpeqWjU0ImZOQ9rg&e=1790970943
+
+#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Latvia vs Montenegro | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Latvia vs Montenegro | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/acrc321l8sxyb.m3u8?s=B3WZMDDa0cnm6-QzfWu6Fw&e=1790970944
+
+#EXTINF:-1 tvg-chno="9" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Cyprus vs Armenia | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Cyprus vs Armenia | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/ho1ocpg3knzjn.m3u8?s=OZUaly9pWqQpOlC-ZXZZ_A&e=1790970945
+
+#EXTINF:-1 tvg-chno="10" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Cyprus vs Armenia | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Cyprus vs Armenia | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=eKlic63UKnfWXnt1tAbLJA&e=1790970947
+
+#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Belgium vs Turkey | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Belgium vs Turkey | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/ho1ocpg3knzjn.m3u8?s=QkO9T87dZyhtuVAeS1wfsg&e=1790970948
+
+#EXTINF:-1 tvg-chno="12" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Belgium vs Turkey | BE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Belgium vs Turkey | BE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/suguifu52q069.m3u8?s=oW7PidFf1aj2y19GJxYTZQ&e=1790970949
+
+#EXTINF:-1 tvg-chno="13" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Panathinaikos vs Maccabi Tel Aviv | GR (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Panathinaikos vs Maccabi Tel Aviv | GR (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/4y0y1xpr76w6.m3u8?s=RsNnzTq71Qo8niNvfbsGLg&e=1790970951
+
+#EXTINF:-1 tvg-chno="14" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Panathinaikos vs Maccabi Tel Aviv | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Panathinaikos vs Maccabi Tel Aviv | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/5svs79tk2nxo0.m3u8?s=hYYq1xUjTsgKjNWnRyLf2w&e=1790970952
+
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Spain Segunda Division] Eldense vs Real Oviedo | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/107.png" group-title="Live Events",[Spain Segunda Division] Eldense vs Real Oviedo | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/ho1oc9j3yvwjn.m3u8?s=UClLcauzhlfCGPSV96iddw&e=1790970953
+
+#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[One] One Friday Fights | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[One] One Friday Fights | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/twqw57dijwx1t.m3u8?s=3b5PF3l4h8ZAJF5GUqSyQw&e=1790970954
+
+#EXTINF:-1 tvg-chno="17" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Ocelari Trinec vs Litvinov | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Ocelari Trinec vs Litvinov | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/itptkzk7cnio9.m3u8?s=7jT_pWuxb5aV1tfLigOsqQ&e=1790970956
+
+#EXTINF:-1 tvg-chno="18" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Vitkovice vs Karlovy Vary | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Vitkovice vs Karlovy Vary | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/3hbhlwn0eiwi9.m3u8?s=KLuL1ljYezMZeLBkYOPs9A&e=1790970957
+
+#EXTINF:-1 tvg-chno="19" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Dynamo Pardubice vs Plzen | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Dynamo Pardubice vs Plzen | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/la6awsdun2mm5.m3u8?s=D9-MPaN92iKsEZ9tO5Xd3w&e=1790970958
+
+#EXTINF:-1 tvg-chno="20" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Kometa Brno vs Mlada vs Boleslav | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Kometa Brno vs Mlada vs Boleslav | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/g878pdcv49gvq.m3u8?s=oBagWvqMjOQUy6an-f1mkQ&e=1790970959
+
+#EXTINF:-1 tvg-chno="21" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Bili Tygri Liberec vs Olomouc | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Bili Tygri Liberec vs Olomouc | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/cd4d3unaj752e.m3u8?s=fqbTli-0QoAzs78f81P2jQ&e=1790970961
+
+#EXTINF:-1 tvg-chno="22" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Rytiri Kladno vs Mountfield | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Rytiri Kladno vs Mountfield | CZ (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/4y0yb8kr346sv.m3u8?s=Zeun86tZU1_fYiXOMY8ceg&e=1790970962
+
+#EXTINF:-1 tvg-chno="23" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Hungary vs Georgia | HU (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Hungary vs Georgia | HU (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/g878pdpvwuegj.m3u8?s=XxCDpmMU0tJ9ZVULhQXQsA&e=1790970963
+
+#EXTINF:-1 tvg-chno="24" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] France vs Italy | IT (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] France vs Italy | IT (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/w0j0s7ntj70zf.m3u8?s=iF4fHohvCFXeMlQLWWs3Dw&e=1790970964
+
+#EXTINF:-1 tvg-chno="25" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] France vs Italy | FR (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] France vs Italy | FR (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/ul8ltfesg14qv.m3u8?s=uvgnCKJAaHoRuU_rnnrTmQ&e=1790970966
+
+#EXTINF:-1 tvg-chno="26" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] France vs Italy | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] France vs Italy | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/efcfyojna47ra.m3u8?s=I-5VKSal3FvwUQB5e4o8AQ&e=1790970967
+
+#EXTINF:-1 tvg-chno="27" tvg-id="Soccer.Dummy.us" tvg-name="[Club Friendly] Rapid Bucuresti vs Genoa | RO (PLAY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Live Events",[Club Friendly] Rapid Bucuresti vs Genoa | RO (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/1nlnrphb2dr7e.m3u8?s=-V4X55qM2QTeeuxy1b-_GQ&e=1790970968
+
+#EXTINF:-1 tvg-chno="28" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Ukraine vs Northern Ireland | UA (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Ukraine vs Northern Ireland | UA (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/9pepdw8owozqg.m3u8?s=7L4lfCpT4CUgUo8ixHOqNg&e=1790970969
+
+#EXTINF:-1 tvg-chno="29" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Faroe Islands vs Slovakia | SK (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Faroe Islands vs Slovakia | SK (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/4y0ybvpr2s256.m3u8?s=oSGwZYXt-DmiNhb9-kxf7w&e=1790970971
+
+#EXTINF:-1 tvg-chno="30" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Poland vs Romania | PL (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Poland vs Romania | PL (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/b1u169kmywt60.m3u8?s=Sr4J7FEnTvI7jhWNecjxBA&e=1790970972
+
+#EXTINF:-1 tvg-chno="31" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] Sodertalje SK vs Ostersunds IK | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] Sodertalje SK vs Ostersunds IK | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/neae4qn1lg2uf.m3u8?s=zgRMZ4b0uOTQVVKu5DZ7hQ&e=1790970973
+
+#EXTINF:-1 tvg-chno="32" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] Kalmar HC vs Mora IK | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] Kalmar HC vs Mora IK | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/mbsb8hhjxd79d.m3u8?s=tRtj3zL9Qx50VDy9RaxH6w&e=1790970974
+
+#EXTINF:-1 tvg-chno="33" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] Nybro Vikings IF vs AIK | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] Nybro Vikings IF vs AIK | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/fkdkxjhedpyw4.m3u8?s=q97otgSu77kvpyoJuqs1Ow&e=1790970976
+
+#EXTINF:-1 tvg-chno="34" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] Vasteras IK vs IK Oskarshamn | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] Vasteras IK vs IK Oskarshamn | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/itptkru7ulb03.m3u8?s=REpWGjBbwtyAibNAY-8FzA&e=1790970977
+
+#EXTINF:-1 tvg-chno="35" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] BIK Karlskoga vs Leksands IF | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] BIK Karlskoga vs Leksands IF | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/efcfyqrnjkdce.m3u8?s=mq78czo2Oq9t1qFA8Iw_0w&e=1790970978
+
+#EXTINF:-1 tvg-chno="36" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] Visby/Roma HK vs Modo Hockey | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] Visby/Roma HK vs Modo Hockey | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/xzhzng9y1mpc.m3u8?s=ZVawfOh4pKASgiAy_Nanhg&e=1790970979
+
+#EXTINF:-1 tvg-chno="37" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Hockeyallsvenskan] Vimmerby HC vs Almtuna IS | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Hockeyallsvenskan] Vimmerby HC vs Almtuna IS | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/yx3x1vw4hl6vj.m3u8?s=VQCiwAdRF5-5jZiv613oFA&e=1790970981
+
+#EXTINF:-1 tvg-chno="38" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Tappara vs Jokerit | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Tappara vs Jokerit | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/6rtrjam8g04f.m3u8?s=zphOB5ePyo_V2rF6uexZOg&e=1790970982
+
+#EXTINF:-1 tvg-chno="39" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Assat vs Lukko | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Assat vs Lukko | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/z7o7egjxnf5mr.m3u8?s=afTicX-Dw5usu312625QMw&e=1790970983
+
+#EXTINF:-1 tvg-chno="40" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] HPK vs JYP | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] HPK vs JYP | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/ul8lt18swxcgn.m3u8?s=_u66dtYRhp-5337MbhVlWA&e=1790970984
+
+#EXTINF:-1 tvg-chno="41" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] KalPa vs SaiPa | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] KalPa vs SaiPa | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/1nlnrofbyphvx.m3u8?s=Rvzge4l1SFygmoMBnqIIrA&e=1790970986
+
+#EXTINF:-1 tvg-chno="42" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Kiekko Espoo vs Karpat | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Kiekko Espoo vs Karpat | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/k525zq1fwfbew.m3u8?s=q0dTlfjjSJgfke39q6S1hw&e=1790970987
+
+#EXTINF:-1 tvg-chno="43" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] Hermes vs JoKP | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] Hermes vs JoKP | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/cd4d3ena5x51m.m3u8?s=yWAelXeuWyvhDQtBYOm5Lw&e=1790970988
+
+#EXTINF:-1 tvg-chno="44" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] KeuPa HT vs IPK | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] KeuPa HT vs IPK | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/6rtrjle8eu84k.m3u8?s=dHI9GpreK2Xej7gIQEHxMQ&e=1790970989
+
+#EXTINF:-1 tvg-chno="45" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] RoKi vs K-Vantaa | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] RoKi vs K-Vantaa | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/5svs7j4kmjyzg.m3u8?s=Ox22-XIn90VjGpjVOXZQYw&e=1790970991
+
+#EXTINF:-1 tvg-chno="46" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] TuTo vs Pyry | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] TuTo vs Pyry | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/la6aw18uy61ro.m3u8?s=mqcpIz8m2sMtqS2o_DRkdQ&e=1790970992
+
+#EXTINF:-1 tvg-chno="47" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Bosnia and Herzegovina vs Sweden | SE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Bosnia and Herzegovina vs Sweden | SE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/5svs7jskrxz2c.m3u8?s=j9QX_XDArL96Q4lePnAWmA&e=1790970993
+
+#EXTINF:-1 tvg-chno="48" tvg-id="Live.Event.us" tvg-name="[Europe UEFA Nations League] Bosnia and Herzegovina vs Sweden | EN (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Europe UEFA Nations League] Bosnia and Herzegovina vs Sweden | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=wBgdCTLOEZB-CFfuhmvK4A&e=1790970994
+
+#EXTINF:-1 tvg-chno="49" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Saski Baskonia vs Olimpia Milano | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Saski Baskonia vs Olimpia Milano | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/vgzg9en2xvnrn.m3u8?s=L9N51mDXj3Gzbq62tVoU_A&e=1790970996
+
+#EXTINF:-1 tvg-chno="50" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] FC Bayern Munchen vs Partizan Mozzart Belgrad | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] FC Bayern Munchen vs Partizan Mozzart Belgrad | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/qjkjvzdpus6ma.m3u8?s=xuaK0jCTVNh9IRaVTwGd_w&e=1790970997
+
+#EXTINF:-1 tvg-chno="51" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Lyon Villeurbanne vs Valencia | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Lyon Villeurbanne vs Valencia | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/xzhznapyaab7s.m3u8?s=HGAbTPCTlZ1REccgv9iGEA&e=1790970998
+
+#EXTINF:-1 tvg-chno="52" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Fenerbahce vs Dubai | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Fenerbahce vs Dubai | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/g878pfyvqs1ah.m3u8?s=jOLI1RMfG_hnbMJqP2nVTQ&e=1790970999
+
+#EXTINF:-1 tvg-chno="53" tvg-id="Basketball.Dummy.us" tvg-name="[Euroleague] Besiktas vs Barcelona | DE (PLAY)" tvg-logo="https://www.euroleaguebasketball.net/images/logo-default.png" group-title="Live Events",[Euroleague] Besiktas vs Barcelona | DE (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://e8975o.7odxv0l067ka.net:8443/hls/qjkjvzqpdi3cq.m3u8?s=cr_KEvUsrmNjXeyibWe6Xw&e=1790971000
 
