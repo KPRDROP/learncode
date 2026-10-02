@@ -1,111 +1,101 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] Japan Grand Prix vs TNT Sports 2 (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="MotoGP",[MotoGP] Japan Grand Prix vs TNT Sports 2
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/it7aytqh
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/43cbb566099a45d3d160eeb5ec2e392113ddf572c38a7ea5e969c044623c1b19/1790975810/tntsports2-uk.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] Japan Grand Prix vs Sky MotoGP IT (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="MotoGP",[MotoGP] Japan Grand Prix vs Sky MotoGP IT
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/z1b9nwhr
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/259b44f0efca091313a069d92ffa0fe9e374ef69ccda8948c8b328bb61a8fed3/1790975810/skysportmotogp-it.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Kazakhstan vs Moldova (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Kazakhstan vs Moldova
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Kazakhstan vs Moldova (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Kazakhstan vs Moldova
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p5562bwm
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/9296169f592d8a692b82c634f18350ec8e2042f40e6df42a7c78257e27cde98d/1790975811/fox-sports-2.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Cyprus vs Armenia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Cyprus vs Armenia
+https://justkidding.junksonus.party/main/secure/23ef9a30be0fd39b90c294a32cd9cffdbe4fc710c6cf2c198f2b137f2d1bfb02/1790989786/fox-sports-2.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Cyprus vs Armenia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Cyprus vs Armenia
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/33xtbrhm
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/5efadd1f882a8eb44927d2af58f43fb16fda16ba180ee4c54f8408d8711db2bb/1790975811/foxsoccer.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Latvia vs Montenegro (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Latvia vs Montenegro
+https://justkidding.junksonus.party/main/secure/ab33747093b4fd3b0c1b5e0839d4479161c27f3925da952af992624431bf4427/1790989786/foxsoccer.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Latvia vs Montenegro (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Latvia vs Montenegro
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6dw9r22a
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/06c2387261d187e96a48c0ef1a32f9912a203ed4894cb9eba9da720cc343e0df/1790975812/sporttv2-pt.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Belgium vs Türkiye (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Belgium vs Türkiye
+https://justkidding.junksonus.party/main/secure/b912567f86012cfd269990048c7e155c265bd38a050be4859aa289c08e9a1ca6/1790989786/sporttv2-pt.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Belgium vs Türkiye (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Belgium vs Türkiye
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/iy2zdevh-3973
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/8b9168a3631424e46dfb2f2cda4229619217c59dea678b833de07a887bcc64d7/1790975812/unl-401861109.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Bosnia-Herzegovina vs Sweden (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Bosnia-Herzegovina vs Sweden
+https://justkidding.junksonus.party/main/secure/c6cc08941c4d6f54b6c82952b47cb71a74b1d1c38c0f1c0cb945e4cfc5a10ccf/1790989787/unl-401861109.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Bosnia-Herzegovina vs Sweden (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Bosnia-Herzegovina vs Sweden
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/33xtbrhm
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/d9d5bd29c893984e072cf0e04c8085e34a6eb1c8daa3be036544450242f98629/1790975812/foxsoccer.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Faroe Islands vs Slovakia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Faroe Islands vs Slovakia
+https://justkidding.junksonus.party/main/secure/2359a9daa5f454fc1cf77699215726ef6d286ea5cc5c42a42b9300999792ffb7/1790989787/foxsoccer.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Faroe Islands vs Slovakia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Faroe Islands vs Slovakia
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/uzjl36gf-7866
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/801d4a228142021f4b31bcb7289932bfae3b4f137a54de59c57c97cd430ba381/1790975813/unl-401861110.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] France vs Italy (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] France vs Italy
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p5562bwm
+https://justkidding.junksonus.party/main/secure/8e8df8120bc57ac28faf96fce17ac5740d7f02ba1d8cf04dc90455c2563b0dde/1790989787/unl-401861110.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] France vs Italy (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] France vs Italy
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/57y1zak6-1214
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/78794a5973b76d87dd4e3dc2ffc934f1dee55e242595132e63281397fa2e3502/1790975814/fox-sports-2.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Hungary vs Georgia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Hungary vs Georgia
+https://justkidding.junksonus.party/main/secure/64389ef43cc4a46561843c6016ae23bc36d109b9825c48477ddbd12dd3770abb/1790989788/unl-401861103.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Hungary vs Georgia (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Hungary vs Georgia
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/ajq2bvsp-6104
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/3443dc031d8926c602789c477733ce2185ff6913c09c313e10ac0952a10ca9af/1790975814/unl-401861102.m3u8
-#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Poland vs Romania (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Poland vs Romania
+https://justkidding.junksonus.party/main/secure/e4faed1a2cfe9cf730d11df46964e687f65a3b4faf3cb08e8ccfc5738e6b071e/1790989788/unl-401861102.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Poland vs Romania (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Poland vs Romania
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/2iaaj7y9-3075
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/4d3d9e80bf5cd9b19c6b0aeba29323b554bc21b423b6ea7e4d3827e88d8d1a64/1790975815/unl-401861108.m3u8
-#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Ukraine vs Northern Ireland (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Ukraine vs Northern Ireland
+https://justkidding.junksonus.party/main/secure/e7832e9d41c934afd027c3b1249cb48438246c9ee0b4ac027c57b4cf2b5c2162/1790989788/unl-401861108.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Ukraine vs Northern Ireland (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Ukraine vs Northern Ireland
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/r7lsoalp-4443
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/04e80adf78ce9c9631946ac301b933765e4459412b606d07c934660d802b777c/1790975815/unl-401861106.m3u8
-#EXTINF:-1 tvg-chno="13" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Omari Jones vs Alan Sanchez (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Boxing",[Boxing] Omari Jones vs Alan Sanchez
+https://justkidding.junksonus.party/main/secure/e75778c27ee37e0b960c055350d1c188b4f9f9151945d596af32372db951c494/1790989788/unl-401861106.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Omari Jones vs Alan Sanchez (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Boxing",[Boxing] Omari Jones vs Alan Sanchez
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/jyqzet0b
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/2034cf406761c8af7d531f4fa0b057423ab9f444ef103dee4c40a8712d87b1ef/1790975816/dazn1-usa.m3u8
-#EXTINF:-1 tvg-chno="14" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Naomy Cardenas Gomez vs Melanie Timko (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Boxing",[Boxing] Naomy Cardenas Gomez vs Melanie Timko
+https://justkidding.junksonus.party/main/secure/7fbd8a6f101537e7a3cf9b9c5ff9f6140dc929f606a400417a8a6d7d9fc68ab1/1790989789/dazn1-usa.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Naomy Cardenas Gomez vs Melanie Timko (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Boxing",[Boxing] Naomy Cardenas Gomez vs Melanie Timko
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/jyqzet0b
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/2034cf406761c8af7d531f4fa0b057423ab9f444ef103dee4c40a8712d87b1ef/1790975816/dazn1-usa.m3u8
-#EXTINF:-1 tvg-chno="15" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Detroit Red Wings vs New York Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Detroit Red Wings vs New York Rangers
+https://justkidding.junksonus.party/main/secure/7fbd8a6f101537e7a3cf9b9c5ff9f6140dc929f606a400417a8a6d7d9fc68ab1/1790989789/dazn1-usa.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Detroit Red Wings vs New York Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Detroit Red Wings vs New York Rangers
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/2szx41ik
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/69691fe35a7d26b2906e01bceedc2111c35fdb267550e6318d6eb1c789105a86/1790975817/tnt-usa.m3u8
-#EXTINF:-1 tvg-chno="16" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Winnipeg Jets vs Boston Bruins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Winnipeg Jets vs Boston Bruins
+https://justkidding.junksonus.party/main/secure/4f545e58b17cc037ad2e0bd7ebc13ecf112a71fd0549fe654abc272c9e19b19a/1790989789/tnt-usa.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Winnipeg Jets vs Boston Bruins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Winnipeg Jets vs Boston Bruins
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nk28fbsy
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/5b3a7ba88c0824f4aed499c6e6e43f8aa06ed6c5fbde481f4cefac222e657373/1790975817/tsn3-ca.m3u8
-#EXTINF:-1 tvg-chno="17" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Dallas Stars vs St. Louis Blues (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Dallas Stars vs St. Louis Blues
+https://justkidding.junksonus.party/main/secure/f6e9c9e8fa951d82ba8e7b61edfba62e8ee96aadd726a937a34589439a2dfc49/1790989789/tsn3-ca.m3u8
+#EXTINF:-1 tvg-chno="15" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Dallas Stars vs St. Louis Blues (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Dallas Stars vs St. Louis Blues
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/2szx41ik
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/69691fe35a7d26b2906e01bceedc2111c35fdb267550e6318d6eb1c789105a86/1790975817/tnt-usa.m3u8
-#EXTINF:-1 tvg-chno="18" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Virginia Tech Hokies vs Pittsburgh Panthers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Virginia Tech Hokies vs Pittsburgh Panthers
+https://justkidding.junksonus.party/main/secure/412d2edda1b84a4bdd0e9e4f3a1cc330926fa709ad00c6d242c5e56de9dd1e35/1790989790/tnt-usa.m3u8
+#EXTINF:-1 tvg-chno="16" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Virginia Tech Hokies vs Pittsburgh Panthers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Virginia Tech Hokies vs Pittsburgh Panthers
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/f98997ed7210c222fa53ac63ad4c8889cef01cfe706f50c98a7b3fcfaf45e285/1790975818/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="19" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Delaware Blue Hens vs Liberty Flames (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Delaware Blue Hens vs Liberty Flames
+https://justkidding.junksonus.party/main/secure/f9c5df5f373a6e5212cc77888cc54b6dc6fad23cd9364338e5ea8d68917c25f2/1790989790/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="17" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Delaware Blue Hens vs Liberty Flames (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Delaware Blue Hens vs Liberty Flames
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/a581f62cb1586eeb2ca39289b5f260b2fed099a51e5f50c122eb4b54a1496d46/1790975819/cbssn-usa.m3u8
-#EXTINF:-1 tvg-chno="20" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Northwestern Wildcats vs Penn State Nittany Lions (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Northwestern Wildcats vs Penn State Nittany Lions
+https://justkidding.junksonus.party/main/secure/3e8b99b281a8cf71745146f127f7a696212e096fc257dfbe9a4a3953e6fd1d7c/1790989790/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="18" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Northwestern Wildcats vs Penn State Nittany Lions (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Northwestern Wildcats vs Penn State Nittany Lions
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bhg7rkug
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/621c50ac31e1cc4c76f6be0010a4cb42da9e1037ef9ff8caecb133e75f0d808b/1790975819/fox-usa.m3u8
-#EXTINF:-1 tvg-chno="21" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings vs Golden State Valkyries (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Dallas Wings vs Golden State Valkyries
+https://justkidding.junksonus.party/main/secure/87bed32e01d148ff6e7ac81bfbe9c0949434afe919d4999f839ec639c42b9143/1790989791/fox-usa.m3u8
+#EXTINF:-1 tvg-chno="19" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings vs Golden State Valkyries (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Dallas Wings vs Golden State Valkyries
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/u14o0ig8
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/45b38602fe2d770d7d63d029efda71d7b8bc2a03bdce466ad00b59c218e3937e/1790975820/tsn4-ca.m3u8
-#EXTINF:-1 tvg-chno="22" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[WWE] WWE vs  Friday Night Smackdown (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="WWE",[WWE] WWE vs Friday Night Smackdown
+https://justkidding.junksonus.party/main/secure/c0fd4f2a0c0b36673281ec67fe541f9ab10a60d9104238c3a916e4141071b4ab/1790989791/tsn4-ca.m3u8
+#EXTINF:-1 tvg-chno="20" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[WWE] WWE vs  Friday Night Smackdown (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="WWE",[WWE] WWE vs Friday Night Smackdown
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nloc37sc
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://justkidding.junksonus.party/main/secure/b6fde558ede2c24017045cba800fbe86700702ab7537832c502c9f6c7f735150/1790975821/usanetwork-usa.m3u8
+https://justkidding.junksonus.party/main/secure/42cd230a0f9553b780bc6597b791c3262189bc02ff528f720b00a92aa29c70df/1790989791/usanetwork-usa.m3u8
