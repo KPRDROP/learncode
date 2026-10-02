@@ -3,9 +3,34 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=ZQzczyllfKuQ097TGcToAQ&e=1790972049
-#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=MAAkNguiGUK-fpfeGy4mxQ&e=1790998591
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Cyprus vs. Armenia (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c1facc83b3c388166a7457bd1c602325-thumbnail.jpg" group-title="Football",[Football] Cyprus vs. Armenia (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-02/cyp-arm
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-02/cyp-arm
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-02/cyp-arm/playlist.m3u8?tk=MAAkNguiGUK-fpfeGy4mxQ&e=1790998591
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Latvia vs. Montenegro (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/28d513ee4d23516fea328a7b23d9402a-thumbnail.jpg" group-title="Football",[Football] Latvia vs. Montenegro (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-02/lva-mne
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-02/lva-mne
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-02/lva-mne/playlist.m3u8?tk=ak4aLk1PJnwZ6IA8OchLCA&e=1790998592
+#EXTINF:-1 tvg-chno="4" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=ZQzczyllfKuQ097TGcToAQ&e=1790972049
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=ak4aLk1PJnwZ6IA8OchLCA&e=1790998592
+#EXTINF:-1 tvg-chno="5" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Vermont Catamounts vs Minnesota Duluth Bulldogs (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Vermont Catamounts vs Minnesota Duluth Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_vermont-catamounts-minnesota-duluth-bulldogs-live-streaming-653675184
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_vermont-catamounts-minnesota-duluth-bulldogs-live-streaming-653675184
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_vermont-catamounts-minnesota-duluth-bulldogs-live-streaming-653675184/playlist.m3u8?tk=ak4aLk1PJnwZ6IA8OchLCA&e=1790998592
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[football] Kazakhstan vs Moldova (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rJgAZcPEHBAhuIPvpBSQKcyAghEZiUyQU+w2fRRgVKLh-L0ssryZaMA8xUQggA.webp" group-title="Live Events",[football] Kazakhstan vs Moldova (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_uefa-nations-league-league-c-gr-3_kazakhstan-moldova-live-streaming-539485056
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_uefa-nations-league-league-c-gr-3_kazakhstan-moldova-live-streaming-539485056
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live_uefa-nations-league-league-c-gr-3_kazakhstan-moldova-live-streaming-539485056/playlist.m3u8?tk=ak4aLk1PJnwZ6IA8OchLCA&e=1790998592
+#EXTINF:-1 tvg-chno="7" tvg-id="Live.Event.us" tvg-name="[fight] PFL MENA 11 Riyadh (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAY29lBWSUYAUwVmDTAE5p5gJhqDh61hh1OPgBDYLKQRcOJBt15cyAE1LBCETI3BiOzNCFq0y1PmBIheILCBQgYpkBEtGzzfMCQUsIuYxT6OKHvvKNdYt4O9GCejGIQQA.webp" group-title="Live Events",[fight] PFL MENA 11 Riyadh (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live-event_pfl-mena-11-live-stream
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live-event_pfl-mena-11-live-stream
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/delta/live-event_pfl-mena-11-live-stream/playlist.m3u8?tk=ak4aLk1PJnwZ6IA8OchLCA&e=1790998592
