@@ -3,29 +3,64 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
-#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Melbourne United vs. Cairns Taipans (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/25249cd45d5f182634a5d7cc4829c6c2-thumbnail.jpg" group-title="Basketball",[Basketball] Melbourne United vs. Cairns Taipans (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nbl/2026-10-03/mel-cns
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nbl/2026-10-03/mel-cns
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=yGcvXpSksfkUWRIc8c-5FA&e=1791090446
+#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[American Football] Notre Dame Fighting Irish at North Carolina Tar Heels (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d044dc2a8cd9d7733488d0cee34c19ee-thumbnail.jpg" group-title="American Football",[American Football] Notre Dame Fighting Irish at North Carolina Tar Heels (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=cfb/2026-10-03/nd-unc
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=cfb/2026-10-03/nd-unc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nbl/2026-10-03/mel-cns/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Finland vs. Albania (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f1f0fe599ed79f3040be9e6a8503e46b-thumbnail.jpg" group-title="Football",[Football] Finland vs. Albania (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/fin-alb
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/fin-alb
+https://messi.damitv.st/live-hls/channel/cfb/2026-10-03/nd-unc/playlist.m3u8?tk=yGcvXpSksfkUWRIc8c-5FA&e=1791090446
+#EXTINF:-1 tvg-chno="3" tvg-id="Football.Dummy.us" tvg-name="[American Football] Alabama Crimson Tide at Mississippi State Bulldogs (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/280cfa20233d33f31da4f790611ec087-thumbnail.jpg" group-title="American Football",[American Football] Alabama Crimson Tide at Mississippi State Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=cfb/2026-10-03/ala-msst
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=cfb/2026-10-03/ala-msst
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-03/fin-alb/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
-#EXTINF:-1 tvg-chno="4" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/cfb/2026-10-03/ala-msst/playlist.m3u8?tk=yGcvXpSksfkUWRIc8c-5FA&e=1791090446
+#EXTINF:-1 tvg-chno="4" tvg-id="Football.Dummy.us" tvg-name="[American Football] UCF Knights at Houston Cougars (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a98a4c733da708ffdbeafa6a741ec35a-thumbnail.jpg" group-title="American Football",[American Football] UCF Knights at Houston Cougars (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=cfb/2026-10-03/ucf-hou
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=cfb/2026-10-03/ucf-hou
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-10-03/ucf-hou/playlist.m3u8?tk=yGcvXpSksfkUWRIc8c-5FA&e=1791090446
+#EXTINF:-1 tvg-chno="5" tvg-id="Football.Dummy.us" tvg-name="[American Football] Boston College Eagles at SMU Mustangs (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/95776ad97e969f4090bfe5ce58a042e2-thumbnail.jpg" group-title="American Football",[American Football] Boston College Eagles at SMU Mustangs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=cfb/2026-10-03/bc-smu
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=cfb/2026-10-03/bc-smu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-10-03/bc-smu/playlist.m3u8?tk=yGcvXpSksfkUWRIc8c-5FA&e=1791090446
+#EXTINF:-1 tvg-chno="6" tvg-id="Football.Dummy.us" tvg-name="[American Football] Vanderbilt Commodores at Georgia Bulldogs (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f1e76a2b0038a9fd2eac0e17706a4c2b-thumbnail.jpg" group-title="American Football",[American Football] Vanderbilt Commodores at Georgia Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=cfb/2026-10-03/van-uga
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=cfb/2026-10-03/van-uga
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-10-03/van-uga/playlist.m3u8?tk=ePU4HRfnLQF7bSYdNBgOgg&e=1791090447
+#EXTINF:-1 tvg-chno="7" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d508ecf6e7a4ce01370c6d1a5df71412-thumbnail.jpg" group-title="MLB",[MLB] Chicago White Sox vs. Cleveland Guardians (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mlb/2026-10-03/chw-cle
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mlb/2026-10-03/chw-cle
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mlb/2026-10-03/chw-cle/playlist.m3u8?tk=ePU4HRfnLQF7bSYdNBgOgg&e=1791090447
+#EXTINF:-1 tvg-chno="8" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Combat Sports] Whittaker vs. Wallace (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/84a3da579aee5b30c6009bbc23d71b6d-thumbnail.jpg" group-title="Combat Sports",[Combat Sports] Whittaker vs. Wallace (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=whittaker-vs-wallace-29762
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=whittaker-vs-wallace-29762
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/whittaker-vs-wallace-29762/playlist.m3u8?tk=ePU4HRfnLQF7bSYdNBgOgg&e=1791090447
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Belarus vs. San Marino (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/59b887c6190b13fe8f8b5afce11342ff-thumbnail.jpg" group-title="Football",[Football] Belarus vs. San Marino (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/blr-smr
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/blr-smr
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-03/blr-smr/playlist.m3u8?tk=ePU4HRfnLQF7bSYdNBgOgg&e=1791090447
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Croatia vs. England (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2aee29491cfd3d37bfcba4a95cfeb01c-thumbnail.jpg" group-title="Football",[Football] Croatia vs. England (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/cro-eng
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/cro-eng
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-03/cro-eng/playlist.m3u8?tk=ePU4HRfnLQF7bSYdNBgOgg&e=1791090447
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Estonia vs. Luxembourg (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7660859db5576ca21feae50ce0afb602-thumbnail.jpg" group-title="Football",[Football] Estonia vs. Luxembourg (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/est-lux
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/est-lux
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-03/est-lux/playlist.m3u8?tk=ePU4HRfnLQF7bSYdNBgOgg&e=1791090447
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Iceland vs. Bulgaria (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ce0ce6017d0d4eb51d4ada5ecc0bb3b7-thumbnail.jpg" group-title="Football",[Football] Iceland vs. Bulgaria (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/isl-bul
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/isl-bul
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-03/isl-bul/playlist.m3u8?tk=UCPCB5NAMn9obdIHolhNkQ&e=1791090448
+#EXTINF:-1 tvg-chno="13" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
-#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Motocross of Nations | Day 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a8f82ebe777e51c51f7fda8aef1e15b9-thumbnail.jpg" group-title="Motorsports",[Motorsports] Motocross of Nations | Day 2 (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=motocross-of-nations--day-2-29774
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=motocross-of-nations--day-2-29774
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/motocross-of-nations--day-2-29774/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
-#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[fight]  BKFC Fight Night Hepi v Shewmaker ⭐ (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[fight]  BKFC Fight Night Hepi v Shewmaker ⭐ (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-golf~2005
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-golf~2005
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/golf/2005/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=UCPCB5NAMn9obdIHolhNkQ&e=1791090448
