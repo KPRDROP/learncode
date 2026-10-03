@@ -3,174 +3,19 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=-mUElwUA0SpJh7EfzNHeDg&e=1791029917
-#EXTINF:-1 tvg-chno="2" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Dallas Wings vs. Golden State Valkyries (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e0775e09d18951b1f7cbe0cf744d188e-thumbnail.jpg" group-title="NBA",[WNBA] Dallas Wings vs. Golden State Valkyries (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=wnba/2026-10-02/dal-gs
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=wnba/2026-10-02/dal-gs
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wnba/2026-10-02/dal-gs/playlist.m3u8?tk=-mUElwUA0SpJh7EfzNHeDg&e=1791029917
-#EXTINF:-1 tvg-chno="3" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=pH7ya9UVI1YAlb38VOgO0g&e=1791051322
+#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=-mUElwUA0SpJh7EfzNHeDg&e=1791029917
-#EXTINF:-1 tvg-chno="4" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Boston Bruins vs. Winnipeg Jets (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ddac8b6f915b4f55ed7d45a1f0edab09-thumbnail.jpg" group-title="NHL",[NHL] Boston Bruins vs. Winnipeg Jets (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl/2026-10-02/bos-wpg
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl/2026-10-02/bos-wpg
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=C7SSwVgMuKV3xDlCAnklDw&e=1791051323
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Bahrain Grand Prix - Practice 3 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e7b648ec61bd95c8077f0e797a1f2af1-thumbnail.jpg" group-title="Motorsports",[Motorsports] Bahrain Grand Prix - Practice 3 (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=f1/2026/bahrain/fp3
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=f1/2026/bahrain/fp3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-10-02/bos-wpg/playlist.m3u8?tk=-mUElwUA0SpJh7EfzNHeDg&e=1791029917
-#EXTINF:-1 tvg-chno="5" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] St. Louis Blues vs. Dallas Stars (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5f16216b73a8f1ac9b6f8a1cfee42f2c-thumbnail.jpg" group-title="NHL",[NHL] St. Louis Blues vs. Dallas Stars (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl/2026-10-02/stl-dal
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl/2026-10-02/stl-dal
+https://messi.damitv.st/live-hls/channel/f1/2026/bahrain/fp3/playlist.m3u8?tk=C7SSwVgMuKV3xDlCAnklDw&e=1791051323
+#EXTINF:-1 tvg-chno="4" tvg-id="Cricket.Dummy.us" tvg-name="[cricket] India vs Pakistan (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAUxDFBWERAExC2AmGAOHmDSvRAE4QImYRinXOIRwAgIYgROZugTAADGBQJY9MM2jwUVeMuq0Z2SOrABjJc2BgKB-r3xouZEIba4iZGkkWH1VMFgWVT5Or4OmA+FNgUQA.webp" group-title="Live Events",[cricket] India vs Pakistan (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-foxtrot~india-vs-pakistan
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-foxtrot~india-vs-pakistan
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-10-02/stl-dal/playlist.m3u8?tk=-mUElwUA0SpJh7EfzNHeDg&e=1791029917
-#EXTINF:-1 tvg-chno="6" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[WWE] WWE Friday Night Smackdown (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ec7810b68fc39115ce3510bcf9687a63-thumbnail.jpg" group-title="Live Events",[WWE] WWE Friday Night Smackdown (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=wwe/2026-10-02
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=wwe/2026-10-02
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/wwe/2026-10-02/playlist.m3u8?tk=-mUElwUA0SpJh7EfzNHeDg&e=1791029917
-#EXTINF:-1 tvg-chno="7" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Minnesota Duluth Bulldogs vs LIU Sharks (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Minnesota Duluth Bulldogs vs LIU Sharks (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_minnesota-duluth-bulldogs-liu-sharks-live-streaming-653673024
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_minnesota-duluth-bulldogs-liu-sharks-live-streaming-653673024
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_minnesota-duluth-bulldogs-liu-sharks-live-streaming-653673024/playlist.m3u8?tk=oTMp5CXDPfSbhaS3s7BDqQ&e=1791029918
-#EXTINF:-1 tvg-chno="8" tvg-id="Live.Event.us" tvg-name="[fight] Omari Jones vs Alan Sanchez (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuClBWLwCBjMAUzAE5dh5g0D0QATNMERc4QteDKpWYCU4oCwUgkjAOQkXhphSwCIKVA.webp" group-title="Live Events",[fight] Omari Jones vs Alan Sanchez (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live-event_omari-jones-vs-alan-sanchez-live-stream
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live-event_omari-jones-vs-alan-sanchez-live-stream
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live-event_omari-jones-vs-alan-sanchez-live-stream/playlist.m3u8?tk=oTMp5CXDPfSbhaS3s7BDqQ&e=1791029918
-#EXTINF:-1 tvg-chno="9" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Lindenwood Lions vs Arizona State Sun Devils (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Lindenwood Lions vs Arizona State Sun Devils (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_lindenwood-lions-arizona-st-live-streaming-653672592
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_lindenwood-lions-arizona-st-live-streaming-653672592
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_lindenwood-lions-arizona-st-live-streaming-653672592/playlist.m3u8?tk=oTMp5CXDPfSbhaS3s7BDqQ&e=1791029918
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[football] Colombia vs Paraguay (DAM)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Live Events",[football] Colombia vs Paraguay (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_int-friendly-games_colombia-paraguay-live-streaming-665543088
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_int-friendly-games_colombia-paraguay-live-streaming-665543088
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_int-friendly-games_colombia-paraguay-live-streaming-665543088/playlist.m3u8?tk=kisMeub2XGzqTg-GM2n8ow&e=1791029919
-#EXTINF:-1 tvg-chno="11" tvg-id="Live.Event.us" tvg-name="[american-football] Northwestern vs Penn State (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VPtBQg4UsEhDcQUkFogg+JkCVzarBYEgp9hs+ijAqUXD+XpZZXky0YB5iohBAA.webp" group-title="Live Events",[american-football] Northwestern vs Penn State (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_cfb_northwestern-penn-state-live-streaming-663647904
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_cfb_northwestern-penn-state-live-streaming-663647904
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_northwestern-penn-state-live-streaming-663647904/playlist.m3u8?tk=kisMeub2XGzqTg-GM2n8ow&e=1791029919
-#EXTINF:-1 tvg-chno="12" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Northern Michigan Wildcats vs Miami Ohio Redhawks (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Northern Michigan Wildcats vs Miami Ohio Redhawks (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_northern-michigan-miami-ohio-live-streaming-653672160
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_northern-michigan-miami-ohio-live-streaming-653672160
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_northern-michigan-miami-ohio-live-streaming-653672160/playlist.m3u8?tk=kisMeub2XGzqTg-GM2n8ow&e=1791029919
-#EXTINF:-1 tvg-chno="13" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Michigan Tech Huskies vs Minnesota Golden Gophers (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Michigan Tech Huskies vs Minnesota Golden Gophers (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_michigan-tech-minnesota-golden-gophers-live-streaming-653671728
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_michigan-tech-minnesota-golden-gophers-live-streaming-653671728
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_michigan-tech-minnesota-golden-gophers-live-streaming-653671728/playlist.m3u8?tk=kisMeub2XGzqTg-GM2n8ow&e=1791029919
-#EXTINF:-1 tvg-chno="14" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Saint Thomas Tommies vs Ohio State Buckeyes (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Saint Thomas Tommies vs Ohio State Buckeyes (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_saint-thomas-tommies-ohio-state-buckeyes-live-streaming-653681232
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_saint-thomas-tommies-ohio-state-buckeyes-live-streaming-653681232
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_saint-thomas-tommies-ohio-state-buckeyes-live-streaming-653681232/playlist.m3u8?tk=kisMeub2XGzqTg-GM2n8ow&e=1791029919
-#EXTINF:-1 tvg-chno="15" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Saint Michaels Purple Knights vs Franklin Pierce Ravens (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Saint Michaels Purple Knights vs Franklin Pierce Ravens (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_saint-michaels-purple-knights-franklin-pierce-ravens-live-streaming-653680800
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_saint-michaels-purple-knights-franklin-pierce-ravens-live-streaming-653680800
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_saint-michaels-purple-knights-franklin-pierce-ravens-live-streaming-653680800/playlist.m3u8?tk=TXJZ1GnflIAA00NdrFN1mw&e=1791029920
-#EXTINF:-1 tvg-chno="16" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Minnesota State Mavericks vs St. Cloud State Huskies (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Minnesota State Mavericks vs St. Cloud State Huskies (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_minnesota-state-mavericks-st-cloud-state-live-streaming-653680368
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_minnesota-state-mavericks-st-cloud-state-live-streaming-653680368
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_minnesota-state-mavericks-st-cloud-state-live-streaming-653680368/playlist.m3u8?tk=TXJZ1GnflIAA00NdrFN1mw&e=1791029920
-#EXTINF:-1 tvg-chno="17" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Bemidji State Beavers vs Minnesota Golden Gophers (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Bemidji State Beavers vs Minnesota Golden Gophers (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_bemidji-state-beavers-minnesota-golden-gophers-live-streaming-653679936
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_bemidji-state-beavers-minnesota-golden-gophers-live-streaming-653679936
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_bemidji-state-beavers-minnesota-golden-gophers-live-streaming-653679936/playlist.m3u8?tk=TXJZ1GnflIAA00NdrFN1mw&e=1791029920
-#EXTINF:-1 tvg-chno="18" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Quinnipiac Bobcats vs New Hampshire Wildcats (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Quinnipiac Bobcats vs New Hampshire Wildcats (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_quinnipiac-bobcats-new-hampshire-wildcats-live-streaming-653671296
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_quinnipiac-bobcats-new-hampshire-wildcats-live-streaming-653671296
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_quinnipiac-bobcats-new-hampshire-wildcats-live-streaming-653671296/playlist.m3u8?tk=TXJZ1GnflIAA00NdrFN1mw&e=1791029920
-#EXTINF:-1 tvg-chno="19" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Niagara Purple Eagles vs Rochester Institute (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Niagara Purple Eagles vs Rochester Institute (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_niagara-purple-eagles-rochester-live-streaming-653670864
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_niagara-purple-eagles-rochester-live-streaming-653670864
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_niagara-purple-eagles-rochester-live-streaming-653670864/playlist.m3u8?tk=TXJZ1GnflIAA00NdrFN1mw&e=1791029920
-#EXTINF:-1 tvg-chno="20" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Michigan Wolverines vs Bowling Green Falcons (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Michigan Wolverines vs Bowling Green Falcons (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_michigan-bowling-green-falcons-live-streaming-653670432
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_michigan-bowling-green-falcons-live-streaming-653670432
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_michigan-bowling-green-falcons-live-streaming-653670432/playlist.m3u8?tk=TXJZ1GnflIAA00NdrFN1mw&e=1791029920
-#EXTINF:-1 tvg-chno="21" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Holy Cross Crusaders vs Maine Black Bears (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Holy Cross Crusaders vs Maine Black Bears (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_holy-cross-crusaders-maine-black-bears-live-streaming-653670000
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_holy-cross-crusaders-maine-black-bears-live-streaming-653670000
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_holy-cross-crusaders-maine-black-bears-live-streaming-653670000/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="22" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Canisius Golden Griffins vs Ferris State Bulldogs (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Canisius Golden Griffins vs Ferris State Bulldogs (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_college_canisius-golden-griffins-ferris-state-bulldogs-live-streaming-653669568
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_college_canisius-golden-griffins-ferris-state-bulldogs-live-streaming-653669568
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_college_canisius-golden-griffins-ferris-state-bulldogs-live-streaming-653669568/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="23" tvg-id="Live.Event.us" tvg-name="[american-football] Ursinus Bears vs Muhlenberg Mules (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Ursinus Bears vs Muhlenberg Mules (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_cfb_ursinus-bears-muhlenberg-mules-live-streaming-663649632
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_cfb_ursinus-bears-muhlenberg-mules-live-streaming-663649632
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_ursinus-bears-muhlenberg-mules-live-streaming-663649632/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="24" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Carolina Hurricanes vs Washington Capitals (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rMPzohaSEChDcQfEFJAwQF-fuPmJTJBT7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[hockey] Carolina Hurricanes vs Washington Capitals (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~ppv-washington-capitals-vs-carolina-hurricanes
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~ppv-washington-capitals-vs-carolina-hurricanes
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-washington-capitals-vs-carolina-hurricanes/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="25" tvg-id="Live.Event.us" tvg-name="[american-football] Delaware vs Liberty (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Delaware vs Liberty (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_cfb_delaware-liberty-flames-live-streaming-663647040
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_cfb_delaware-liberty-flames-live-streaming-663647040
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_delaware-liberty-flames-live-streaming-663647040/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="26" tvg-id="Live.Event.us" tvg-name="[american-football] Virginia Tech vs Pittsburgh (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8rVlPLcQUECG1SQKEIhggSOoyDMoCwJBT7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[american-football] Virginia Tech vs Pittsburgh (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_cfb_virginia-tech-pittsburgh-live-streaming-663647472
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_cfb_virginia-tech-pittsburgh-live-streaming-663647472
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_virginia-tech-pittsburgh-live-streaming-663647472/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="27" tvg-id="Live.Event.us" tvg-name="[american-football] Ottawa Redblacks vs Hamilton Tiger-Cats (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8aEFBjAw7MAKkhuIA4hggUIEhtzWFTJBT7DZ9FGBUou78vSyzPTLRg7mKiEEA.webp" group-title="Live Events",[american-football] Ottawa Redblacks vs Hamilton Tiger-Cats (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~ppv-hamilton-tiger-cats-at-ottawa-red-blacks
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~ppv-hamilton-tiger-cats-at-ottawa-red-blacks
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-hamilton-tiger-cats-at-ottawa-red-blacks/playlist.m3u8?tk=AEfEGt1i5dHpJBqL6eWGkw&e=1791029921
-#EXTINF:-1 tvg-chno="28" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Detroit Red Wings vs New York Rangers (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAThFlBWSUYAUwVmDW2nmAmD32FrWGHXbeAENgBjUgg5sSdTtw5kAJqWCEImeuFFs8VFLhD0BfEHu4hdUkDD0gNG48cbAkFPsNn0UYFSi6vy9LLPdNaYK5iohBAA.webp" group-title="Live Events",[hockey] Detroit Red Wings vs New York Rangers (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~ppv-new-york-rangers-vs-detroit-red-wings
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~ppv-new-york-rangers-vs-detroit-red-wings
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/ppv-new-york-rangers-vs-detroit-red-wings/playlist.m3u8?tk=cX0xj_AGo1k3WH1q9CwJNg&e=1791029922
-#EXTINF:-1 tvg-chno="29" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Wisconsin Badgers vs Boston Terriers (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Wisconsin Badgers vs Boston Terriers (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_wisconsin-badgers-boston-terriers-live-streaming-653679504
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_wisconsin-badgers-boston-terriers-live-streaming-653679504
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_wisconsin-badgers-boston-terriers-live-streaming-653679504/playlist.m3u8?tk=cX0xj_AGo1k3WH1q9CwJNg&e=1791029922
-#EXTINF:-1 tvg-chno="30" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] RIT Tigers vs Colgate Raiders (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] RIT Tigers vs Colgate Raiders (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_rit-tigers-colgate-raiders-live-streaming-653678640
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_rit-tigers-colgate-raiders-live-streaming-653678640
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_rit-tigers-colgate-raiders-live-streaming-653678640/playlist.m3u8?tk=cX0xj_AGo1k3WH1q9CwJNg&e=1791029922
-#EXTINF:-1 tvg-chno="31" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Penn State Nittany Lions vs Robert Morris Lady Colonials (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Penn State Nittany Lions vs Robert Morris Lady Colonials (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_penn-state-robert-morris-lady-colonials-live-streaming-653678208
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_penn-state-robert-morris-lady-colonials-live-streaming-653678208
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_penn-state-robert-morris-lady-colonials-live-streaming-653678208/playlist.m3u8?tk=cX0xj_AGo1k3WH1q9CwJNg&e=1791029922
-#EXTINF:-1 tvg-chno="32" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Mercyhurst Lakers vs Syracuse Orange (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Mercyhurst Lakers vs Syracuse Orange (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_mercyhurst-lakers-syracuse-orange-live-streaming-653677776
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_mercyhurst-lakers-syracuse-orange-live-streaming-653677776
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_mercyhurst-lakers-syracuse-orange-live-streaming-653677776/playlist.m3u8?tk=cX0xj_AGo1k3WH1q9CwJNg&e=1791029922
-#EXTINF:-1 tvg-chno="33" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] Connecticut Huskies vs Clarkson Golden Knights (DAM)" tvg-logo="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3d2.png" group-title="Live Events",[hockey] Connecticut Huskies vs Clarkson Golden Knights (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_connecticut-huskies-clarkson-golden-knights-live-streaming-653677344
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_ncaa-women_connecticut-huskies-clarkson-golden-knights-live-streaming-653677344
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_ncaa-women_connecticut-huskies-clarkson-golden-knights-live-streaming-653677344/playlist.m3u8?tk=cX0xj_AGo1k3WH1q9CwJNg&e=1791029922
-#EXTINF:-1 tvg-chno="34" tvg-id="Live.Event.us" tvg-name="[american-football] Dickinson Red Devils vs Johns Hopkins Blue Jays (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[american-football] Dickinson Red Devils vs Johns Hopkins Blue Jays (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live_cfb_dickinson-red-devils-johns-hopkins-blue-jays-live-streaming-663648768
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live_cfb_dickinson-red-devils-johns-hopkins-blue-jays-live-streaming-663648768
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live_cfb_dickinson-red-devils-johns-hopkins-blue-jays-live-streaming-663648768/playlist.m3u8?tk=ZcBoWcaInnMwVMnmbkvwWA&e=1791029923
-#EXTINF:-1 tvg-chno="35" tvg-id="Live.Event.us" tvg-name="[fight] ONE Fight Night 48 Erdogan vs Elliott (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzrAY29lBWSUYAUwVmDTAE5p5gJhqDh61hh1OPgBDYLKQRcOJBt15cyAE1LBCETI3BiOzdilIhZ0sCRAoQvEFgMgYZ6eaMhbB-MCQUsIuYxR6OmjnvKNqcpoO9GCejGIQQA.webp" group-title="Live Events",[fight] ONE Fight Night 48 Erdogan vs Elliott (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-delta~live-event_one-fight-night-erdogan-vs-elliott-live-stream
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-delta~live-event_one-fight-night-erdogan-vs-elliott-live-stream
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/delta/live-event_one-fight-night-erdogan-vs-elliott-live-stream/playlist.m3u8?tk=ZcBoWcaInnMwVMnmbkvwWA&e=1791029923
+https://messi.damitv.st/live-sd/streamed/foxtrot/india-vs-pakistan/playlist.m3u8?tk=C7SSwVgMuKV3xDlCAnklDw&e=1791051323
