@@ -3,19 +3,29 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=pH7ya9UVI1YAlb38VOgO0g&e=1791051322
-#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
+#EXTINF:-1 tvg-chno="2" tvg-id="Basketball.Dummy.us" tvg-name="[Basketball] Melbourne United vs. Cairns Taipans (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/25249cd45d5f182634a5d7cc4829c6c2-thumbnail.jpg" group-title="Basketball",[Basketball] Melbourne United vs. Cairns Taipans (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nbl/2026-10-03/mel-cns
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nbl/2026-10-03/mel-cns
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nbl/2026-10-03/mel-cns/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Finland vs. Albania (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f1f0fe599ed79f3040be9e6a8503e46b-thumbnail.jpg" group-title="Football",[Football] Finland vs. Albania (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/fin-alb
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-03/fin-alb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-03/fin-alb/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
+#EXTINF:-1 tvg-chno="4" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=C7SSwVgMuKV3xDlCAnklDw&e=1791051323
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Bahrain Grand Prix - Practice 3 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e7b648ec61bd95c8077f0e797a1f2af1-thumbnail.jpg" group-title="Motorsports",[Motorsports] Bahrain Grand Prix - Practice 3 (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=f1/2026/bahrain/fp3
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=f1/2026/bahrain/fp3
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[Motorsports] Motocross of Nations | Day 2 (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a8f82ebe777e51c51f7fda8aef1e15b9-thumbnail.jpg" group-title="Motorsports",[Motorsports] Motocross of Nations | Day 2 (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=motocross-of-nations--day-2-29774
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=motocross-of-nations--day-2-29774
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/f1/2026/bahrain/fp3/playlist.m3u8?tk=C7SSwVgMuKV3xDlCAnklDw&e=1791051323
-#EXTINF:-1 tvg-chno="4" tvg-id="Cricket.Dummy.us" tvg-name="[cricket] India vs Pakistan (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAUxDFBWERAExC2AmGAOHmDSvRAE4QImYRinXOIRwAgIYgROZugTAADGBQJY9MM2jwUVeMuq0Z2SOrABjJc2BgKB-r3xouZEIba4iZGkkWH1VMFgWVT5Or4OmA+FNgUQA.webp" group-title="Live Events",[cricket] India vs Pakistan (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-foxtrot~india-vs-pakistan
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-foxtrot~india-vs-pakistan
+https://messi.damitv.st/live-hls/channel/motocross-of-nations--day-2-29774/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
+#EXTINF:-1 tvg-chno="6" tvg-id="Live.Event.us" tvg-name="[fight]  BKFC Fight Night Hepi v Shewmaker ⭐ (DAM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[fight]  BKFC Fight Night Hepi v Shewmaker ⭐ (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-golf~2005
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-golf~2005
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/foxtrot/india-vs-pakistan/playlist.m3u8?tk=C7SSwVgMuKV3xDlCAnklDw&e=1791051323
+https://messi.damitv.st/live-sd/streamed/golf/2005/playlist.m3u8?tk=5qKOIqvbQ__29ssFv26nAg&e=1791073344
