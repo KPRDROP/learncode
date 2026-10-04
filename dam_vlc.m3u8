@@ -3,44 +3,84 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=gJ2whewsl6djUz7XAI9epQ&e=1791158758
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Azerbaijan vs. Lithuania (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/f320e07bb91c8a2bf86a336dd9e8b34b-thumbnail.jpg" group-title="Football",[Football] Azerbaijan vs. Lithuania (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-04/aze-ltu
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-04/aze-ltu
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=LlExOuszelyb4Dm_CNww-w&e=1791177774
+#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[NFL] NFL RedZone (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/a66bbcaa04317bdc032f473fdc8c9add-thumbnail.jpg" group-title="NFL",[NFL] NFL RedZone (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-redzone-29818
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-redzone-29818
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-04/aze-ltu/playlist.m3u8?tk=gJ2whewsl6djUz7XAI9epQ&e=1791158758
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Aston Villa vs. Crystal Palace (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7d1a0806574336bbaf92a8c3a2e3b065-thumbnail.jpg" group-title="Football",[Football] Aston Villa vs. Crystal Palace (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/avl-cry
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/avl-cry
+https://messi.damitv.st/live-hls/channel/nfl-redzone-29818/playlist.m3u8?tk=LlExOuszelyb4Dm_CNww-w&e=1791177774
+#EXTINF:-1 tvg-chno="3" tvg-id="NFL.Dummy.us" tvg-name="[NFL] New England Patriots at Buffalo Bills (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/767108d56119b37840f0a2e6054ad4c2-thumbnail.jpg" group-title="NFL",[NFL] New England Patriots at Buffalo Bills (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/ne-buf
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/ne-buf
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/womens-super-league/2026-10-04/avl-cry/playlist.m3u8?tk=gJ2whewsl6djUz7XAI9epQ&e=1791158758
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Brighton & Hove Albion vs. Charlton Athletic (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5747d85e32aa782ed1c32b268c404e79-thumbnail.jpg" group-title="Football",[Football] Brighton & Hove Albion vs. Charlton Athletic (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/bha-cha
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/bha-cha
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/ne-buf/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[NFL] New York Jets at Chicago Bears (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/fc1ccbc54da269ef63bf0c58292cee3e-thumbnail.jpg" group-title="NFL",[NFL] New York Jets at Chicago Bears (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/nyj-chi
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/nyj-chi
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/womens-super-league/2026-10-04/bha-cha/playlist.m3u8?tk=53xsV0yScOaHh69gmLxChA&e=1791158759
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Everton vs. Birmingham City (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c83f48eba40bc87ca041e4d33d0de6c9-thumbnail.jpg" group-title="Football",[Football] Everton vs. Birmingham City (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/eve-bir
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/eve-bir
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/nyj-chi/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Jacksonville Jaguars at Cincinnati Bengals (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/2b05ae2dfb1e0a470ee3891335f59fb1-thumbnail.jpg" group-title="NFL",[NFL] Jacksonville Jaguars at Cincinnati Bengals (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/jax-cin
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/jax-cin
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/womens-super-league/2026-10-04/eve-bir/playlist.m3u8?tk=53xsV0yScOaHh69gmLxChA&e=1791158759
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Tottenham Hotspur vs. London City Lionesses (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/3ae94dedffd789640a0f7117ed541416-thumbnail.jpg" group-title="Football",[Football] Tottenham Hotspur vs. London City Lionesses (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/tot-lcl
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/tot-lcl
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/jax-cin/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="6" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Arizona Cardinals at New York Giants (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7821e504c9ad747b36faa87b2feb2260-thumbnail.jpg" group-title="NFL",[NFL] Arizona Cardinals at New York Giants (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/ari-nyg
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/ari-nyg
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/womens-super-league/2026-10-04/tot-lcl/playlist.m3u8?tk=53xsV0yScOaHh69gmLxChA&e=1791158759
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Football] West Ham United vs. Chelsea (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/5850a4abfb885564a956e006187a6242-thumbnail.jpg" group-title="Football",[Football] West Ham United vs. Chelsea (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/whu-che
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/whu-che
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/ari-nyg/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="7" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Los Angeles Rams at Philadelphia Eagles (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ade27487e9cf137a87bc909d89f7d7bc-thumbnail.jpg" group-title="NFL",[NFL] Los Angeles Rams at Philadelphia Eagles (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/lar-phi
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/lar-phi
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/womens-super-league/2026-10-04/whu-che/playlist.m3u8?tk=53xsV0yScOaHh69gmLxChA&e=1791158759
-#EXTINF:-1 tvg-chno="8" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/lar-phi/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="8" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Green Bay Packers at Tampa Bay Buccaneers (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/65570e02df3f6141595cd09b1e655387-thumbnail.jpg" group-title="NFL",[NFL] Green Bay Packers at Tampa Bay Buccaneers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/gb-tb
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/gb-tb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/gb-tb/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="9" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Tennessee Titans at Baltimore Ravens (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/41fa9df7355a291049ec522db2bda45d-thumbnail.jpg" group-title="NFL",[NFL] Tennessee Titans at Baltimore Ravens (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/ten-bal
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/ten-bal
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/ten-bal/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="10" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Dallas Cowboys at Houston Texans (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/c8371a1477b2a787779fc0075a3a44d7-thumbnail.jpg" group-title="NFL",[NFL] Dallas Cowboys at Houston Texans (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl/2026-10-04/dal-hou
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl/2026-10-04/dal-hou
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-10-04/dal-hou/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="11" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] New York Liberty vs. Atlanta Dream (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4c25c1e3e0baca7a6804bc3f5decebff-thumbnail.jpg" group-title="NBA",[WNBA] New York Liberty vs. Atlanta Dream (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=wnba/2026-10-04/ny-atl
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=wnba/2026-10-04/ny-atl
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/wnba/2026-10-04/ny-atl/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Manchester City vs. Arsenal (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/7fcdfb1bff2db3766f3833a7b97525b5-thumbnail.jpg" group-title="Football",[Football] Manchester City vs. Arsenal (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/mci-ars
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=womens-super-league/2026-10-04/mci-ars
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/womens-super-league/2026-10-04/mci-ars/playlist.m3u8?tk=-eXAESFmy1kOjaJsIOX_Zg&e=1791177775
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Kosovo vs. Austria (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/1a71100f48732eae22311d406739862e-thumbnail.jpg" group-title="Football",[Football] Kosovo vs. Austria (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-04/kos-aut
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-04/kos-aut
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-04/kos-aut/playlist.m3u8?tk=UwZmPGSi89tK53GQjtb_mg&e=1791177776
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Football] Malta vs. Andorra (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6fc5889dc80425b5907816deed755e51-thumbnail.jpg" group-title="Football",[Football] Malta vs. Andorra (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-04/mlt-and
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=uefa-nations-league/2026-10-04/mlt-and
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-10-04/mlt-and/playlist.m3u8?tk=UwZmPGSi89tK53GQjtb_mg&e=1791177776
+#EXTINF:-1 tvg-chno="15" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=53xsV0yScOaHh69gmLxChA&e=1791158759
-#EXTINF:-1 tvg-chno="9" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] NHL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4a70bb8cf331b8ab0299fd836b56e2ed-thumbnail.jpg" group-title="NHL",[NHL] NHL Network (DAM)
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=UwZmPGSi89tK53GQjtb_mg&e=1791177776
+#EXTINF:-1 tvg-chno="16" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] NHL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4a70bb8cf331b8ab0299fd836b56e2ed-thumbnail.jpg" group-title="NHL",[NHL] NHL Network (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl-network-29780
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl-network-29780
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl-network-29780/playlist.m3u8?tk=53xsV0yScOaHh69gmLxChA&e=1791158759
+https://messi.damitv.st/live-hls/channel/nhl-network-29780/playlist.m3u8?tk=UwZmPGSi89tK53GQjtb_mg&e=1791177776
+#EXTINF:-1 tvg-chno="17" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Winnipeg Jets vs. Detroit Red Wings (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/8d94749ea77a5e701e9f40ae400c8194-thumbnail.jpg" group-title="NHL",[NHL] Winnipeg Jets vs. Detroit Red Wings (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl/2026-10-04/wpg-det
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl/2026-10-04/wpg-det
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-10-04/wpg-det/playlist.m3u8?tk=UwZmPGSi89tK53GQjtb_mg&e=1791177776
