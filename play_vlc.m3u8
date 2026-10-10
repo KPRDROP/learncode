@@ -1,91 +1,49 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Baseball.Dummy.us" tvg-name="[MLB] Milwaukee Brewers vs San Diego Padres | EN (PLAY)" tvg-logo="https://files.catbox.moe/vq587e.png" group-title="Live Events",[MLB] Milwaukee Brewers vs San Diego Padres | EN (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Football.Dummy.us" tvg-name="[CFL] BC Lions vs Ottawa RedBlacks | CA (PLAY)" tvg-logo="https://files.catbox.moe/ivnrrj.png" group-title="Live Events",[CFL] BC Lions vs Ottawa RedBlacks | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/efcfyojna47ra.m3u8?s=ciOe5rjJahD1tXl08vRujA&e=1791609444
+https://c2807p.7odxv0l067ka.net:8443/hls/cd4vgvhakbwy8.m3u8?s=8PEjLpAqi4TueOwCUwl14A&e=1791621603
 
-#EXTINF:-1 tvg-chno="2" tvg-id="Football.Dummy.us" tvg-name="[CFL] BC Lions vs Ottawa RedBlacks | CA (PLAY)" tvg-logo="https://files.catbox.moe/ivnrrj.png" group-title="Live Events",[CFL] BC Lions vs Ottawa RedBlacks | CA (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] Grand Prix of Indonesia | DE (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="Live Events",[MotoGP] Grand Prix of Indonesia | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/cd4vgvhakbwy8.m3u8?s=EV9brkodcLw8Yk5Jo9pLaA&e=1791609446
+https://c2807p.7odxv0l067ka.net:8443/hls/yx3xnio4ue0z.m3u8?s=IJhiBKyleZ13xOxnqw-pJg&e=1791621605
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] Grand Prix of Indonesia | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="Live Events",[MotoGP] Grand Prix of Indonesia | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Chicago Bulls vs Memphis Grizzlies | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Chicago Bulls vs Memphis Grizzlies | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/o9n9d19h322vl.m3u8?s=_R3V-jpSUTIfyo99xV9b6w&e=1791609447
+https://c2807p.7odxv0l067ka.net:8443/hls/cd4dh6iarhr2p.m3u8?s=j9O_biahgMIoO_8KqujPQQ&e=1791621607
 
-#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] Grand Prix of Indonesia | DE (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="Live Events",[MotoGP] Grand Prix of Indonesia | DE (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Las Vegas Aces vs Golden State Valkyries | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] Las Vegas Aces vs Golden State Valkyries | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/yx3xnio4ue0z.m3u8?s=YuyLcoaa0iNnOAgKyIKr7A&e=1791609449
+https://c2807p.7odxv0l067ka.net:8443/hls/cd4dh8la67ol2.m3u8?s=FVFSAP6TbCBv3W7Z6Ny9cw&e=1791621608
 
-#EXTINF:-1 tvg-chno="5" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Chicago Bulls vs Memphis Grizzlies | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Chicago Bulls vs Memphis Grizzlies | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Leon | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Leon | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/cd4dh6iarhr2p.m3u8?s=ngRQkw1WT2bFQlP8QH23Zw&e=1791609451
+https://c2807p.7odxv0l067ka.net:8443/hls/yx3xnxj4x9ngn.m3u8?s=S43sS-VJt66qZHuy8Dqq0w&e=1791621610
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] New York Liberty vs Atlanta Dream | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] New York Liberty vs Atlanta Dream | EN (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Winnipeg Jets vs Anaheim Ducks | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Winnipeg Jets vs Anaheim Ducks | CA (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/cd4dh8la67ol2.m3u8?s=x6hcoKqVm7I1kOndY1GQYw&e=1791609452
+https://c2807p.7odxv0l067ka.net:8443/hls/twqwst2i9xa0b.m3u8?s=jFG9k37GoeqwIGdiQRoBtg&e=1791621611
 
-#EXTINF:-1 tvg-chno="7" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Las Vegas Aces vs Golden State Valkyries | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="Live Events",[WNBA] Las Vegas Aces vs Golden State Valkyries | CA (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tigres UANL vs Toluca | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tigres UANL vs Toluca | EN (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/cd4dh8la67ol2.m3u8?s=ZF1Q-jTL7KgkMSpUL_NfbA&e=1791609454
+https://c2807p.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=AbY4who7utdAMOb7c7ufEg&e=1791621613
 
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Argentina Primera Division] Instituto vs Boca Juniors | PT (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/1.png" group-title="Live Events",[Argentina Primera Division] Instituto vs Boca Juniors | PT (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs Atlanta Braves | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] Los Angeles Dodgers vs Atlanta Braves | ES (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/2vxv98vdkajgl.m3u8?s=zIjKKpFu0RRlSJ0HaTEqQw&e=1791609455
-
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Puebla vs Leon | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Puebla vs Leon | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/yx3xnxj4x9ngn.m3u8?s=4P17GflQD3VVX1VSLD3rTg&e=1791609457
-
-#EXTINF:-1 tvg-chno="10" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Detroit Red Wings vs Seattle Kraken | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Detroit Red Wings vs Seattle Kraken | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=1J9IXYA8a6F8ZYhDYy8zPA&e=1791609458
-
-#EXTINF:-1 tvg-chno="11" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Washington Capitals vs New York Rangers | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Washington Capitals vs New York Rangers | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/5svsislkrx3kv.m3u8?s=PJYHb0ZebI7ssxdl0LE6_g&e=1791609460
-
-#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Columbus Blue Jackets vs Pittsburgh Penguins | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Columbus Blue Jackets vs Pittsburgh Penguins | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/z7o7fz4xhk0xg.m3u8?s=UUDygMtb6ct4Am4zknIc1w&e=1791609462
-
-#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Winnipeg Jets vs Anaheim Ducks | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Winnipeg Jets vs Anaheim Ducks | CA (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/twqwst2i9xa0b.m3u8?s=PjrPpBwU3eBr-wUEOMkGfw&e=1791609463
-
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Mexico Liga MX] Tigres UANL vs Toluca | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/22.png" group-title="Live Events",[Mexico Liga MX] Tigres UANL vs Toluca | EN (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=CuwC_-Wmki2OpbVhcV2niw&e=1791609465
-
-#EXTINF:-1 tvg-chno="15" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Los Angeles Dodgers vs Atlanta Braves | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="Live Events",[MLB] Los Angeles Dodgers vs Atlanta Braves | ES (PLAY)
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://c2807p.7odxv0l067ka.net:8443/hls/vgzg9fa2psyi1.m3u8?s=UnmwNGV3RSasSSeXCIAFnw&e=1791609466
+https://c2807p.7odxv0l067ka.net:8443/hls/vgzg9fa2psyi1.m3u8?s=JLmVI5AC4ATOwEK0_Fy76Q&e=1791621614
 
