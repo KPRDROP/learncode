@@ -1,146 +1,531 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Málaga vs Espanyol (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Málaga vs Espanyol
+#EXTINF:-1 tvg-chno="1" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Singapore Grand Prix vs Sky F1 Uk (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Singapore Grand Prix vs Sky F1 Uk
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/f596f98r
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/0cc49eedf162f901bdb3b119a441c4fc5ce75a5e54bf26f1b767eacdcf418705/1791636154/skysportsf1-uk.m3u8
+#EXTINF:-1 tvg-chno="2" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Singapore Grand Prix vs Dazn F1 Spain (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Singapore Grand Prix vs Dazn F1 Spain
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/5rvazszz
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/52345e7d109e1bed14f3ef2c3163b32d38362502a277c1bf722e07275af3afeb/1791636155/daznf1-es.m3u8
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Singapore Grand Prix vs Sky F1 IT (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/06/F1-logo-500x281.png" group-title="Formula 1",[Formula 1] Singapore Grand Prix vs Sky F1 IT
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/t5mpn192
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8dc2ebf65e9c184b782210496b5011ffeb58ab645c4134e86d25aa15c5e0bcb5/1791636155/skysportf1-it.m3u8
+#EXTINF:-1 tvg-chno="4" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] MotoGP Indonesia vs Tnt 2 Uk (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="MotoGP",[MotoGP] MotoGP Indonesia vs Tnt 2 Uk
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/it7aytqh
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/58cf1be9e39b2e1e7207e1763926f87ab89e22fa26374f584a030106047b7426/1791636155/tntsports2-uk.m3u8
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Arsenal vs Leeds United (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Arsenal vs Leeds United
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nloc37sc
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/639b89f9399fac814a86cea248d940fde1a62ec79048a83e563372cd9f00b661/1791636156/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Aston Villa vs Brentford (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Aston Villa vs Brentford
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nloc37sc
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/639b89f9399fac814a86cea248d940fde1a62ec79048a83e563372cd9f00b661/1791636156/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Chelsea vs AFC Bournemouth (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Chelsea vs AFC Bournemouth
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/h0ryosf9
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/3be005c4621433ddd4446a43af0d09b2f1b8027a51ef89e4a0ff30f4abbb67d4/1791636157/skysport4-nz.m3u8
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Ipswich Town vs Fulham (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Ipswich Town vs Fulham
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/32f9u4no
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/17e687c02d249be1bb8da339307885dd3777b5df84afe01dd8f3e6456aaf79f3/1791636157/skysport5-nz.m3u8
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Sunderland vs Brighton & Hove Albion (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Sunderland vs Brighton & Hove Albion
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/wghuk9nx-9301
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/b8905843c2c38da581d435195ff0cbf44ef0f8897d8869661261c0ee019f28bb/1791636157/skysport6-nz.m3u8
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Manchester United vs Tottenham Hotspur (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Manchester United vs Tottenham Hotspur
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/kzd3hrqz-6475
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/cad810876c9ed57b3cfe0b6838f10b03e715e5c941fdc882a37f7448a2607d99/1791636158/skysportspremierleague-uk.m3u8
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Rayo Vallecano vs Athletic Club (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Rayo Vallecano vs Athletic Club
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6trsant7
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/64aa4aec2e30e1445d9904db930695a2c2b453bcb3f8884a0c7d0487bd480fcc/1791610845/espndeportes-usa.m3u8
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Puebla vs León (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Puebla vs León
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/q2u5urq3
+https://judiaslevels.embeds.gay/main/secure/75d2682593db2e7d284dd94cec804e022beda1c366a94afd22349080709df50d/1791636159/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="12" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Alavés vs Atlético Madrid (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Alavés vs Atlético Madrid
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6trsant7
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/40d3bfef87ab076c6e0397180013a257dc7d9105cf6204c33bcc2850fd0a4991/1791610846/tudn-usa.m3u8
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Tigres UANL vs Toluca (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Tigres UANL vs Toluca
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p5562bwm
+https://judiaslevels.embeds.gay/main/secure/75d2682593db2e7d284dd94cec804e022beda1c366a94afd22349080709df50d/1791636159/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Barcelona vs Getafe (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Barcelona vs Getafe
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6trsant7
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/01b3e554ef3c2e7e1ffb308e411abcc0e01071a9d09fff636f9e1b7dddfd15b1/1791610846/fox-sports-2.m3u8
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Borussia Dortmund vs Werder Bremen (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Borussia Dortmund vs Werder Bremen
+https://judiaslevels.embeds.gay/main/secure/75d2682593db2e7d284dd94cec804e022beda1c366a94afd22349080709df50d/1791636159/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Real Madrid vs Villarreal (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Real Madrid vs Villarreal
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6trsant7
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/f51bb92ebc8185bbbb1fe816182e5e5d14515ec49d98513aaf1207d21a8c940d/1791636160/espndeportes-usa.m3u8
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Genoa vs Fiorentina (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Genoa vs Fiorentina
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tom6x28d
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8a71225e2c57ad0d29518aa8f2c532db0308074f5e3bdfa7d30e6d1686a3d726/1791636160/match1.m3u8
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Internazionale vs Parma (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Internazionale vs Parma
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tom6x28d
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/b53246ebcc095115195b94bf338524671428417e7135f3ca4847708d8e3cb95b/1791636161/match1.m3u8
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Napoli vs Frosinone (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Napoli vs Frosinone
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/gib0w25z-394
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/068b4a0df9ced2afae62fd74931bea5e9f0b14cc691b9ce86c4d2aebc50a14f2/1791636161/skysportcalcio-it.m3u8
+#EXTINF:-1 tvg-chno="18" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] 1. FC Union Berlin vs SV Elversberg (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] 1. FC Union Berlin vs SV Elversberg
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/es233mez
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8c9faff8a63367381214f8ca336398f22d122260c5c0ac3add5fb24b21257a62/1791636162/skysportbundesliga5-de.m3u8
+#EXTINF:-1 tvg-chno="19" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] FC Augsburg vs Bayern Munich (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] FC Augsburg vs Bayern Munich
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bsudwrf4
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/1140b8cf08ecfb932a8011f7ee686a687bb872703593d0db6a99d82973689ac3/1791610847/skysportbundesliga-de.m3u8
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Lens vs Lyon (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Lens vs Lyon
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/s0sxc65g-8857
+https://judiaslevels.embeds.gay/main/secure/1c8ccc4c17d00b8f6106a958cf8d3027a6d0d81c4fad92afa01c78a387ec6bdc/1791636162/skysportbundesliga-de.m3u8
+#EXTINF:-1 tvg-chno="20" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Mainz vs Bayer Leverkusen (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Mainz vs Bayer Leverkusen
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/4hmoxtkx-643
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/7d71f39cb482ea6c5e62ad1382ae93a0cf1918db18c0a20e487d84af93602db1/1791610847/beinconnect4-usa.m3u8
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Al Nassr vs Al Diriyah (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Al Nassr vs Al Diriyah
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/33xtbrhm
+https://judiaslevels.embeds.gay/main/secure/70ca995d8059083a574b2627ef6105632c2575c51a35c9d82e0b0a29b3d10c1b/1791636162/rtl-de.m3u8
+#EXTINF:-1 tvg-chno="21" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] SC Paderborn 07 vs VfB Stuttgart (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] SC Paderborn 07 vs VfB Stuttgart
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8gy422i8
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/63d1fa414ff9eca07b54ad84dd4f35ea1bd1fa51efca5690ceb31ed8307358f0/1791610848/foxsoccer.m3u8
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Moreirense vs Gil Vicente (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Moreirense vs Gil Vicente
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/uzitjx7g
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/864c33f8fef48067aa67515ad2a7c981e6cc3625b6eed7661bb141e3d4d4434b/1791610848/match3.m3u8
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Braga vs Sporting CP (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Braga vs Sporting CP
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/uzitjx7g
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/0d9b17075901b8bd43b139fa469c7175e784b8cc61d1cd075cbff565bc81d62a/1791610849/match3.m3u8
-#EXTINF:-1 tvg-chno="9" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Chicago Bulls vs Memphis Grizzlies (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Chicago Bulls vs Memphis Grizzlies
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8tl2ksef
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/c59f2f606cb70438fb56236a431d335220241acc104813f4166049617e3c6ca3/1791610849/nbatv-usa.m3u8
-#EXTINF:-1 tvg-chno="10" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Detroit Red Wings vs Seattle Kraken (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Detroit Red Wings vs Seattle Kraken
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o5ml9cyh-1657
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/4affc43ec1d9d6f1b2fb7654badd5bc843b5a8a815822ec1c815ba752fee4292/1791610850/nhl-401892465.m3u8
-#EXTINF:-1 tvg-chno="11" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Washington Capitals vs New York Rangers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Washington Capitals vs New York Rangers
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/kelcwql2-7408
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/53bcfe89556a1ec87afdbf6f045dbb866f8088ea412d1a5b7766ddc8da3f94f8/1791610851/nhlnetwork-usa.m3u8
-#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Columbus Blue Jackets vs Pittsburgh Penguins (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Columbus Blue Jackets vs Pittsburgh Penguins
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/zp349y4f-6071
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/c9309911cb613ce238dfa2fa2eacf475f5ca6d3d78c45c42d13ad5c04c694724/1791610851/nhl-401892467.m3u8
-#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Winnipeg Jets vs Anaheim Ducks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Winnipeg Jets vs Anaheim Ducks
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8uyv1cz0-4994
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/82dc4c133148e0556f047fe0af420c614d3468db993755b1e964570d0dca3e85/1791610852/nhl-401892468.m3u8
-#EXTINF:-1 tvg-chno="14" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Louisville Cardinals vs Florida State Seminoles (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Louisville Cardinals vs Florida State Seminoles
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/878ef85a371211218b19447a89230e55656df860eefd2b4eb4ce99ae71904494/1791610852/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="15" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Washington Huskies vs Iowa Hawkeyes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Washington Huskies vs Iowa Hawkeyes
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bhg7rkug
-#EXTVLCOPT:http-origin=https://exmxbxe.cfd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/390d2aeded78ef481392c589db8cecead195a119da3763d2e9545e35050b1043/1791610853/fox-usa.m3u8
-#EXTINF:-1 tvg-chno="16" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Utah State Aggies vs Washington State Cougars (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Utah State Aggies vs Washington State Cougars
+https://judiaslevels.embeds.gay/main/secure/4e3cbd78a295d920554fd3fdb1684d1698e156950ea10f1103bfdf79ebd22a7e/1791636163/skysportbundesliga2.m3u8
+#EXTINF:-1 tvg-chno="22" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] TSG Hoffenheim vs Hamburg SV (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] TSG Hoffenheim vs Hamburg SV
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8x015102
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/d33f120a59ada6e714f5e8652892587180a9d77c507d73df806e5996a81964b7/1791610853/cw-usa.m3u8
-#EXTINF:-1 tvg-chno="17" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] San José State Spartans vs Wyoming Cowboys (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] San José State Spartans vs Wyoming Cowboys
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
+https://judiaslevels.embeds.gay/main/secure/ee46b0e29184e71d0fd08d061a530e524c50c25888fc9cc9f5cfea8de1988700/1791636163/cw-usa.m3u8
+#EXTINF:-1 tvg-chno="23" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] RB Leipzig vs Eintracht Frankfurt (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] RB Leipzig vs Eintracht Frankfurt
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bsudwrf4
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/b9daaec34b7e1ba265cf2907fa8f61fedf72fff0a236d1c8551c1ae5d4fbc55a/1791610854/cbssn-usa.m3u8
-#EXTINF:-1 tvg-chno="18" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] BYU Cougars vs Iowa State Cyclones (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] BYU Cougars vs Iowa State Cyclones
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+https://judiaslevels.embeds.gay/main/secure/0147c285b19720cd50c07c71ffceb891e1273c4f9dc2dfcf70d47eeb4e06f1a5/1791636164/skysportbundesliga-de.m3u8
+#EXTINF:-1 tvg-chno="24" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Lille vs Le Havre AC (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Lille vs Le Havre AC
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/5u81h0on-7821
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/3b072487086c813fa6c216d65f928ab8e5ba28ebe1174015503277df9c41cf14/1791610854/espn-usa.m3u8
-#EXTINF:-1 tvg-chno="19" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Atlanta Dream vs New York Liberty (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Atlanta Dream vs New York Liberty
+https://judiaslevels.embeds.gay/main/secure/aed2274d863fa32ffdee11b63e9d28a3d6741056cdebd0412e2493d32354d242/1791636164/beinsports6-sa.m3u8
+#EXTINF:-1 tvg-chno="25" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Paris Saint-Germain vs Le Mans (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Paris Saint-Germain vs Le Mans
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/33jhpzfr
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/b20f84b52f7206cc8d291efc2ed63aca2a75ad1f67895eee282f417d48cc539d/1791610854/espn2-usa.m3u8
-#EXTINF:-1 tvg-chno="20" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Golden State Valkyries vs Las Vegas Aces (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/wnba.png" group-title="WNBA",[WNBA] Golden State Valkyries vs Las Vegas Aces
+https://judiaslevels.embeds.gay/main/secure/a94280759b1685af310412b1b7a2d9f59b81442e3943dafecffc3f6a5902fe53/1791636164/espn2-usa.m3u8
+#EXTINF:-1 tvg-chno="26" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] FC Juárez vs Tijuana (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] FC Juárez vs Tijuana
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/n58ajgfx
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/9281c1f0396dbfb3042a2a4f3eba2023fce4209945369bad5e5789c0e0db6b2d/1791610855/skysportsmainevent-uk.m3u8
-#EXTINF:-1 tvg-chno="21" tvg-id="Cricket.Dummy.us" tvg-name="[Cricket] South Africa vs Australia (FLY)" tvg-logo="https://files.catbox.moe/rwd8mv.png" group-title="Cricket",[Cricket] South Africa vs Australia
+https://judiaslevels.embeds.gay/main/secure/ee246317c26e47f070b3d68fc24bfeb65f270d65b610b3a64420f1c0a62bc7ba/1791636165/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="27" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Atlas vs Guadalajara (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Atlas vs Guadalajara
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/qfx4038p
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/7024ade20986e86165a8382a70e6d76383bc707a92e41e8d10cec55789204abe/1791610855/skysportscricket-uk.m3u8
-#EXTINF:-1 tvg-chno="22" tvg-id="Cricket.Dummy.us" tvg-name="[Cricket] West Indies vs India (FLY)" tvg-logo="https://files.catbox.moe/rwd8mv.png" group-title="Cricket",[Cricket] West Indies vs India
+https://judiaslevels.embeds.gay/main/secure/e6e06a07cd9087b9cb8d38ff3f7ad36ecce3dff1aad39c09a05bd54d26ccf742/1791636165/skysportscricket-uk.m3u8
+#EXTINF:-1 tvg-chno="28" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] América vs Monterrey (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] América vs Monterrey
 #EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/e0lyrkhr
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/33235f2a7ff1499cca6d52b410b086a01622339182323590ea77f02ca5ffc1b8/1791610856/tntsports1-uk.m3u8
-#EXTINF:-1 tvg-chno="23" tvg-id="Cricket.Dummy.us" tvg-name="[Cricket] Bangladesh vs West Indies (FLY)" tvg-logo="https://files.catbox.moe/rwd8mv.png" group-title="Cricket",[Cricket] Bangladesh vs West Indies
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/spd8gpoh
+https://judiaslevels.embeds.gay/main/secure/52180702a14975ea9625a1e16ad3964b80f92bbc889fcf6d597372b0da506672/1791636166/tntsports1-uk.m3u8
+#EXTINF:-1 tvg-chno="29" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Swansea City vs Norwich City (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Swansea City vs Norwich City
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/5a603b4c9e22fe5f41e74df6a11a0501e7b0170f322eb2605c2ba46555bba7dc/1791610856/willow-usa.m3u8
-#EXTINF:-1 tvg-chno="24" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Baycurrent Classic vs Second Round (FLY)" tvg-logo="https://files.catbox.moe/0u2n4x.png" group-title="Golf",[Golf] Baycurrent Classic vs Second Round
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p8wos5q1
+https://judiaslevels.embeds.gay/main/secure/4b8469c437d7d1c9db7ca08d078557e41af4bb03543f0fe9b5d899b9a96a46c2/1791636166/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="30" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] West Bromwich Albion vs Birmingham City (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] West Bromwich Albion vs Birmingham City
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/n58ajgfx-9862
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/2b2f1dc374490ee7b47ea3f40e82f2a414e7e0b053c1de83951cbf4bd65f3858/1791610856/golfchannel-usa.m3u8
-#EXTINF:-1 tvg-chno="25" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Ladies European Tour Aramco vs Korea Championship (FLY)" tvg-logo="https://files.catbox.moe/0u2n4x.png" group-title="Golf",[Golf] Ladies European Tour Aramco vs Korea Championship
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p8wos5q1
+https://judiaslevels.embeds.gay/main/secure/b63c8951acbb230c399be9c90207fc90a41b2bc59fb922ce855464b53b9bb26b/1791636166/skysportsmainevent-uk.m3u8
+#EXTINF:-1 tvg-chno="31" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Middlesbrough vs Wolverhampton Wanderers (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Middlesbrough vs Wolverhampton Wanderers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/Middlesbrough
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/18e9fd5cac863541f97fd52825d8bd3a5830969922476b4bb25398f81d87ab78/1791610857/golfchannel-usa.m3u8
-#EXTINF:-1 tvg-chno="26" tvg-id="Golf.Dummy.us" tvg-name="[Golf] DP World Tour Golf Spanish Open vs Second Round (FLY)" tvg-logo="https://files.catbox.moe/0u2n4x.png" group-title="Golf",[Golf] DP World Tour Golf Spanish Open vs Second Round
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p8wos5q1
+https://judiaslevels.embeds.gay/main/secure/c4fedb34efdb78e43c6a6a807d0a797cf4753ad85d9821bdb95423c65a3ee2e1/1791636167/Middlesbrough.m3u8
+#EXTINF:-1 tvg-chno="32" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Sheffield United vs Lincoln City (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Sheffield United vs Lincoln City
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/18e9fd5cac863541f97fd52825d8bd3a5830969922476b4bb25398f81d87ab78/1791610857/golfchannel-usa.m3u8
-#EXTINF:-1 tvg-chno="27" tvg-id="Golf.Dummy.us" tvg-name="[Golf] DP World Tour Golf Spanish Open, vs Second Round (FLY)" tvg-logo="https://files.catbox.moe/0u2n4x.png" group-title="Golf",[Golf] DP World Tour Golf Spanish Open vs Second Round
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p8wos5q1
+https://judiaslevels.embeds.gay/main/secure/d406e2a7471a025d2ee46c3848e0d705cca46e6c7106e96f4019f212170b6d73/1791636167/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="33" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Casa Pia vs Santa Clara (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Casa Pia vs Santa Clara
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/1e02807a9cbc5e3089725ccf52f31211f2c56966c2867ad6cffff76020be0749/1791610858/golfchannel-usa.m3u8
-#EXTINF:-1 tvg-chno="28" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Constellation FURYK vs &amp; FRIENDS (FLY)" tvg-logo="https://files.catbox.moe/0u2n4x.png" group-title="Golf",[Golf] Constellation FURYK vs &amp; FRIENDS
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p8wos5q1
+https://judiaslevels.embeds.gay/main/secure/d2ca68d2de337a9dd4f0e78aca91dcdd0c46a4bfa89f5c5d5d455b0235f2851c/1791636168/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="34" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Maritimo vs FC Porto (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Maritimo vs FC Porto
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/u3xweaye-7209
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/1e02807a9cbc5e3089725ccf52f31211f2c56966c2867ad6cffff76020be0749/1791610858/golfchannel-usa.m3u8
-#EXTINF:-1 tvg-chno="29" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Korn Ferry Tour Golf Korn Ferry Tour Championship vs Second Round (FLY)" tvg-logo="https://files.catbox.moe/0u2n4x.png" group-title="Golf",[Golf] Korn Ferry Tour Golf Korn Ferry Tour Championship vs Second Round
-#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/p8wos5q1
+https://judiaslevels.embeds.gay/main/secure/381f1f66aeae2082483d42125d838384cb78e7672b2a14d1393109a058fc7a58/1791636168/nhl-401892464.m3u8
+#EXTINF:-1 tvg-chno="35" tvg-id="Soccer.Dummy.us" tvg-name="[Soccer] Académico de Viseu vs Estoril (FLY)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Soccer",[Soccer] Académico de Viseu vs Estoril
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/7mpi31cc-9869
 #EXTVLCOPT:http-origin=https://exmxbxe.cfd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://judiaslevels.embeds.gay/main/secure/1e02807a9cbc5e3089725ccf52f31211f2c56966c2867ad6cffff76020be0749/1791610858/golfchannel-usa.m3u8
+https://judiaslevels.embeds.gay/main/secure/1be740d0072c01490f8ae6557ca8f7246c1d4fd0c967f16dc05b565f92724bdb/1791636169/nfl-401872980.m3u8
+#EXTINF:-1 tvg-chno="36" tvg-id="Live.Event.us" tvg-name="[UFC/MMA] Brendan Allen vs Christian Leroy Duncan (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="UFC/MMA",[UFC/MMA] Brendan Allen vs Christian Leroy Duncan
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/44284280cd4e7825c2d1e892b58e5099bb8310fbe495a7db6ffbc44065e8afcc/1791636169/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="37" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Joey Essex vs Daniel O'Reilly (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Boxing",[Boxing] Joey Essex vs Daniel O'Reilly
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/jyqzet0b
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/675f0d46dde0a0e4f1ba38946987df068c79bad89c23f9fe4b3190ee195c4811/1791636170/dazn1-usa.m3u8
+#EXTINF:-1 tvg-chno="38" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="[Boxing] Floyd Schofield vs Lucas Bahdi (FLY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Boxing",[Boxing] Floyd Schofield vs Lucas Bahdi
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/jyqzet0b
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/675f0d46dde0a0e4f1ba38946987df068c79bad89c23f9fe4b3190ee195c4811/1791636170/dazn1-usa.m3u8
+#EXTINF:-1 tvg-chno="39" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Toronto Raptors vs LA Clippers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Toronto Raptors vs LA Clippers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/2rqv6c3g-1370
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/60ed624d27c8f12d2dbc86e41309b11aadb3eb3af0139b3bec2fc17b753b85a8/1791636171/tbs-usa.m3u8
+#EXTINF:-1 tvg-chno="40" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Indiana Pacers vs Atlanta Hawks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Indiana Pacers vs Atlanta Hawks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/wqbwjjhf-7938
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/f855c360777f85d52c8aef2f372e888a4e83c2d2b847eb1d85d7419242c5b4ca/1791636171/espnu-usa.m3u8
+#EXTINF:-1 tvg-chno="41" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Washington Wizards vs Detroit Pistons (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Washington Wizards vs Detroit Pistons
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40-1810
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/6ee5b26be1d78a6e955af5688e0d7cbdcbe8cbcad8ea4776ff60a9bf42c91a01/1791636171/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="42" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Miami Heat vs Minnesota Timberwolves (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Miami Heat vs Minnesota Timberwolves
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai-9245
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/56416a539f859af8d9a8ce648cd2adb9c89304b787f569e138576e6837e6433b/1791636172/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="43" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Boston Celtics vs Philadelphia 76ers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Boston Celtics vs Philadelphia 76ers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/33jhpzfr-6115
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c10d92fdc44d7d0b6d2c3b2f5b65dd062c9d8c456a65f219daa9646e6c4b6b0c/1791636172/espn2-usa.m3u8
+#EXTINF:-1 tvg-chno="44" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Golden State Warriors vs Sacramento Kings (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Golden State Warriors vs Sacramento Kings
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/ur753ie0-9897
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c45f2366ce1e16f960509c3f0b91f0458d75afeca86a3c1f99182af924b01b8d/1791636173/nhl-401892454.m3u8
+#EXTINF:-1 tvg-chno="45" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Phoenix Suns vs San Antonio Spurs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="NBA",[NBA] Phoenix Suns vs San Antonio Spurs
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/af66cefcbed953515179abdca80c6ad7e659baf48f04bd5680211189f09cbe58/1791636173/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="46" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Boston Bruins vs Philadelphia Flyers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Boston Bruins vs Philadelphia Flyers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/kelcwql2
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/008072ac01c0a97b79f2674877e0106b92eb0a43bfdb38081c49cf15fddb3256/1791636174/nhlnetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="47" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] New Jersey Devils vs Vancouver Canucks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] New Jersey Devils vs Vancouver Canucks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/uezezi1d-8242
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c17e8c22365c485cffec5c7bff9be7181f6b16dd5bddb8ac8dd2ea04dd5934cf/1791636175/cfb-401862793.m3u8
+#EXTINF:-1 tvg-chno="48" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] San Jose Sharks vs Edmonton Oilers (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] San Jose Sharks vs Edmonton Oilers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/uezezi1d-8242
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c17e8c22365c485cffec5c7bff9be7181f6b16dd5bddb8ac8dd2ea04dd5934cf/1791636175/cfb-401862793.m3u8
+#EXTINF:-1 tvg-chno="49" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Florida Panthers vs Minnesota Wild (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Florida Panthers vs Minnesota Wild
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/knd1wit3-2119
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/d1ef314ad3d4b0ab35ccfa2fa618ffe77aeee323466eba90caf297b449feb1ff/1791636176/cfb-401866430.m3u8
+#EXTINF:-1 tvg-chno="50" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Buffalo Sabres vs Utah Mammoth (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Buffalo Sabres vs Utah Mammoth
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/f1p4wtjw-661
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c34064ec6082a5d36e8b56554dba98fefb3b974b81f970b16ab3eea59aec0d51/1791636176/cfb-401866433.m3u8
+#EXTINF:-1 tvg-chno="51" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Montreal Canadiens vs Detroit Red Wings (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Montreal Canadiens vs Detroit Red Wings
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/fm7rcizs-6393
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/84a8fba0f77a5c102e9d0c034f88997592be9533ebe187295607e85455640aad/1791636177/cfb-401866434.m3u8
+#EXTINF:-1 tvg-chno="52" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Ottawa Senators vs Nashville Predators (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Ottawa Senators vs Nashville Predators
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/3agka6w8
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/970203ed0d2a7946816eb4eb193c086371f0934549f76936a34771a8eae4ae12/1791636177/nflredzone-usa.m3u8
+#EXTINF:-1 tvg-chno="53" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Pittsburgh Penguins vs Dallas Stars (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Pittsburgh Penguins vs Dallas Stars
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/l336d2w0-8438
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/5a5a013e39cfe67e1d5f5f2c4e10fcc8e400cf412a87c4e05c7ab046f36879d2/1791636178/mls-761660.m3u8
+#EXTINF:-1 tvg-chno="54" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Chicago Blackhawks vs Carolina Hurricanes (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Chicago Blackhawks vs Carolina Hurricanes
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o2pgdnnj-2113
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8acc8818985fe2929629ee988cf015e923aa9ff020bed6e393dd51eb9af7a5c4/1791636179/ufc-600060740.m3u8
+#EXTINF:-1 tvg-chno="55" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] St. Louis Blues vs Columbus Blue Jackets (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] St. Louis Blues vs Columbus Blue Jackets
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o1pjs4fj-3696
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/4b5c25671615561762bbd774921d3add21259991ce8db2f6b93e60000cc5f449/1791636179/nfl-401872971.m3u8
+#EXTINF:-1 tvg-chno="56" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Colorado Avalanche vs Toronto Maple Leafs (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Colorado Avalanche vs Toronto Maple Leafs
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tag8hs7g-1483
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/9ce30341a136daca638465f72cb94857b9362796da50834b744913ca6cab0f0d/1791636180/nfl-401872972.m3u8
+#EXTINF:-1 tvg-chno="57" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] New York Islanders vs Tampa Bay Lightning (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] New York Islanders vs Tampa Bay Lightning
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/zju8pjgp-6604
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/f6f19dfdde26601b7675cff16b39aa36cc91b1ff2f04bd3673732cb9132bf34d/1791636181/nfl-401872969.m3u8
+#EXTINF:-1 tvg-chno="58" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Calgary Flames vs Anaheim Ducks (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Calgary Flames vs Anaheim Ducks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/5zmyy9ru-6573
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2b3efd396e2fabca91c19a3fdd7f14bf17664485e09fac862cea7cb5600bbd7c/1791636181/nfl-401872966.m3u8
+#EXTINF:-1 tvg-chno="59" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Vegas Golden Knights vs Los Angeles Kings (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="NHL",[NHL] Vegas Golden Knights vs Los Angeles Kings
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/3bpztblc-4902
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/14ffaeebb9df8ce5c95efabadfeaf2587a2804ea5b539159e31668dea1a00909/1791636182/nfl-401872970.m3u8
+#EXTINF:-1 tvg-chno="60" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Cleveland Guardians vs Chicago White Sox (FLY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/mlb.png" group-title="MLB",[MLB] Cleveland Guardians vs Chicago White Sox
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/mpwxvz5v-6849
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/487e283b58f621d3a592c5e81b3d03a8a6214d00e04b5c79f76e474c7eac2484/1791636183/nfl-401872968.m3u8
+#EXTINF:-1 tvg-chno="61" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Nebraska Cornhuskers vs Indiana Hoosiers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Nebraska Cornhuskers vs Indiana Hoosiers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bhg7rkug
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/d09cd6dae19f9b96c953c4fbc0ec7f9d869068229341d1eac5d0f65481297d57/1791636183/fox-usa.m3u8
+#EXTINF:-1 tvg-chno="62" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Missouri Tigers vs Texas A&M Aggies (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Missouri Tigers vs Texas A&M Aggies
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nhmzkzez
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/87c1ed41a5db01617cd0eb20d9b61d651a01ce77c0c500deb280659ab0715d87/1791636184/abc-usa.m3u8
+#EXTINF:-1 tvg-chno="63" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Oklahoma State Cowboys vs UCF Knights (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Oklahoma State Cowboys vs UCF Knights
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/33jhpzfr
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/232abd7a7a01da494712f58a7e90d66dd3efafd3a0eb92606a32fdc7d7ff267a/1791636184/espn2-usa.m3u8
+#EXTINF:-1 tvg-chno="64" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Pittsburgh Panthers vs North Carolina Tar Heels (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Pittsburgh Panthers vs North Carolina Tar Heels
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/78dadda1744d0ca66e488cebc62d60125f4fb5ebc3a4284ee08fae1e654fbfe3/1791636184/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="65" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] West Virginia Mountaineers vs Arizona Wildcats (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] West Virginia Mountaineers vs Arizona Wildcats
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/2szx41ik
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/fc72ff51710a8ecfbafaff851efe42076e1b333e2a96951744a7300d0e1159ec/1791636185/tnt-usa.m3u8
+#EXTINF:-1 tvg-chno="66" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] NC State Wolfpack vs Wake Forest Demon Deacons (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] NC State Wolfpack vs Wake Forest Demon Deacons
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8x015102
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/dad80264ccc907ef9d16059b79e7734c4ea02fc7e7d53adb8141b34966b73074/1791636185/cw-usa.m3u8
+#EXTINF:-1 tvg-chno="67" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Army Black Knights vs Tulane Green Wave (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Army Black Knights vs Tulane Green Wave
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/4a1790459ca0019b4870531b23750a63c53765ca94c877586b58fb78aefde8e5/1791636185/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="68" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Bowling Green Falcons vs Sacramento State Hornets (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Bowling Green Falcons vs Sacramento State Hornets
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/9c2jwr40
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/cd36eff008653cf601ce7e6b02a81d27a23db9dbe05acc4c1a8cb918fde4dac3/1791636186/cbssn-usa.m3u8
+#EXTINF:-1 tvg-chno="69" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Northwestern Wildcats vs Ball State Cardinals (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Northwestern Wildcats vs Ball State Cardinals
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tkdttav3
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/9e9025c0550dd8c2c958c991381ed05ce69b1c26848ad7714d612f6af2b38f80/1791636186/big10-usa.m3u8
+#EXTINF:-1 tvg-chno="70" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Florida Gators vs South Carolina Gamecocks (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Florida Gators vs South Carolina Gamecocks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/2p9ptshb
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/b0384ea6bb773703f78792ff3331651cef0fb5c4d401f9e0e91193c07af912f0/1791636186/secnetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="71" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] App State Mountaineers vs Old Dominion Monarchs (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] App State Mountaineers vs Old Dominion Monarchs
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/6v4jdaim
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/a126fdd5943e2235d7d2f40ad608a94a772d5a3459ba2f31d3d7bf05c3c87fee/1791636187/skysportbundesliga4.m3u8
+#EXTINF:-1 tvg-chno="72" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] East Carolina Pirates vs Rice Owls (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] East Carolina Pirates vs Rice Owls
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/h4wvvvyf
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/63c0f4d5d158bbaed210d49faa46ff7a42904007dc515cca288635ee99745ae6/1791636187/sec-usa.m3u8
+#EXTINF:-1 tvg-chno="73" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Massachusetts Minutemen vs Miami (OH) RedHawks (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Massachusetts Minutemen vs Miami (OH) RedHawks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/tkdttav3
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/957205f6c55d95b2def15a3636da24fb91736910216d3ac1909920b7f8edba12/1791636188/big10-usa.m3u8
+#EXTINF:-1 tvg-chno="74" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Oklahoma Sooners vs Texas Longhorns (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Oklahoma Sooners vs Texas Longhorns
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/r3zhfr1w-429
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/3adafeeacea5805b3385d79604138e8af154069bf0c4cd2db5e153a22396831f/1791636188/cfb-401869932.m3u8
+#EXTINF:-1 tvg-chno="75" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Notre Dame Fighting Irish vs Stanford Cardinal (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Notre Dame Fighting Irish vs Stanford Cardinal
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/nloc37sc
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/fe476b9340ca6f9ecf15aafdae4e31f072d0f3efe639a77b39d9ed6ae8c05163/1791636189/usanetwork-usa.m3u8
+#EXTINF:-1 tvg-chno="76" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Vanderbilt Commodores vs Ole Miss Rebels (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Vanderbilt Commodores vs Ole Miss Rebels
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/bda42f86f86769afdda8897a7395d7aa3dc8463ed6dd3ff913095a6b456e3be5/1791636189/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="77" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Oregon Ducks vs UCLA Bruins (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Oregon Ducks vs UCLA Bruins
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/8x015102
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/332a81cce2eb9dbd66a42cffd52271cc9eb25e3ffc6d3fe0719c0e75b803d899/1791636189/cw-usa.m3u8
+#EXTINF:-1 tvg-chno="78" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Kansas State Wildcats vs Houston Cougars (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Kansas State Wildcats vs Houston Cougars
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/bhg7rkug
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c48a8f87204d7e8a31dc832ee468fa77e9c3db61dc918372fc49b952fc29bb1e/1791636190/fox-usa.m3u8
+#EXTINF:-1 tvg-chno="79" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Georgia Tech Yellow Jackets vs Duke Blue Devils (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Georgia Tech Yellow Jackets vs Duke Blue Devils
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/cj9mdofq-4623
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/fc9804d33f2b3b04938dfa22df30db70d9f8bbc9c2a5f95b4ab34a66efd5e433/1791636191/cfb-401864513.m3u8
+#EXTINF:-1 tvg-chno="80" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] California Golden Bears vs Virginia Tech Hokies (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] California Golden Bears vs Virginia Tech Hokies
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/b73208846ad2c0fd8a7a81510e8b34cbdde1f84d31a80ee0cd33da1873cff944/1791636191/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="81" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Michigan State Spartans vs Illinois Fighting Illini (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Michigan State Spartans vs Illinois Fighting Illini
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/b73208846ad2c0fd8a7a81510e8b34cbdde1f84d31a80ee0cd33da1873cff944/1791636191/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="82" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] North Texas Mean Green vs Charlotte 49ers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] North Texas Mean Green vs Charlotte 49ers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2b512cc7baf396c19a58c32e30899910622d531cf686930324bf20b74e7c3a58/1791636192/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="83" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Navy Midshipmen vs Tulsa Golden Hurricane (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Navy Midshipmen vs Tulsa Golden Hurricane
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2b512cc7baf396c19a58c32e30899910622d531cf686930324bf20b74e7c3a58/1791636192/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="84" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Akron Zips vs Eastern Michigan Eagles (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Akron Zips vs Eastern Michigan Eagles
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2b512cc7baf396c19a58c32e30899910622d531cf686930324bf20b74e7c3a58/1791636192/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="85" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Toledo Rockets vs Buffalo Bulls (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Toledo Rockets vs Buffalo Bulls
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/35e41258926e8d00f1091c32093e7f53c8312c03efcea39a4b23d4db7209bb24/1791636193/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="86" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Ohio Bobcats vs Central Michigan Chippewas (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Ohio Bobcats vs Central Michigan Chippewas
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/35e41258926e8d00f1091c32093e7f53c8312c03efcea39a4b23d4db7209bb24/1791636193/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="87" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Western Michigan Broncos vs Kent State Golden Flashes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Western Michigan Broncos vs Kent State Golden Flashes
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/35e41258926e8d00f1091c32093e7f53c8312c03efcea39a4b23d4db7209bb24/1791636193/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="88" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Temple Owls vs UConn Huskies (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Temple Owls vs UConn Huskies
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8d92a008e302456b51e7df3574d360e27397c39c310864c88726badc73b6818a/1791636194/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="89" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Ohio State Buckeyes vs Maryland Terrapins (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Ohio State Buckeyes vs Maryland Terrapins
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8d92a008e302456b51e7df3574d360e27397c39c310864c88726badc73b6818a/1791636194/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="90" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Arkansas Razorbacks vs Tennessee Volunteers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Arkansas Razorbacks vs Tennessee Volunteers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/728cad39c6beafc8ada304c12582976358c0609729076a85a0a539cc143515f8/1791636195/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="91" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Oregon State Beavers vs San Diego State Aztecs (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Oregon State Beavers vs San Diego State Aztecs
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/89vwb35l-5989
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/dfc8d8bd2cb68a7c76c5bc8e759fea60577dea90b4215a5089d8e400b67ed10e/1791636195/nhl-401891824.m3u8
+#EXTINF:-1 tvg-chno="92" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Kentucky Wildcats vs LSU Tigers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Kentucky Wildcats vs LSU Tigers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/bdd29940e86e7521dd7c6f6e8d295c21a0d6560b78e93fe587c0f38b03973f47/1791636196/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="93" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Memphis Tigers vs UAB Blazers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Memphis Tigers vs UAB Blazers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/bdd29940e86e7521dd7c6f6e8d295c21a0d6560b78e93fe587c0f38b03973f47/1791636196/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="94" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] UTEP Miners vs Nevada Wolf Pack (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] UTEP Miners vs Nevada Wolf Pack
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/bdd29940e86e7521dd7c6f6e8d295c21a0d6560b78e93fe587c0f38b03973f47/1791636196/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="95" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] UNLV Rebels vs North Dakota State Bison (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] UNLV Rebels vs North Dakota State Bison
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/3dac5bcea52da89d240968ba8fb50f751ecd20aff3f630bda621e19f72c621f1/1791636197/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="96" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Marshall Thundering Herd vs Coastal Carolina Chanticleers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Marshall Thundering Herd vs Coastal Carolina Chanticleers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/3dac5bcea52da89d240968ba8fb50f751ecd20aff3f630bda621e19f72c621f1/1791636197/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="97" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Alabama Crimson Tide vs Georgia Bulldogs (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Alabama Crimson Tide vs Georgia Bulldogs
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8b1bce9ce5f2ed9651250ba7b35d75add9f914a3ffb07535e9be2e021aaaa1a2/1791636198/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="98" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Penn State Nittany Lions vs USC Trojans (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Penn State Nittany Lions vs USC Trojans
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8b1bce9ce5f2ed9651250ba7b35d75add9f914a3ffb07535e9be2e021aaaa1a2/1791636198/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="99" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Virginia Cavaliers vs Syracuse Orange (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Virginia Cavaliers vs Syracuse Orange
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/8b1bce9ce5f2ed9651250ba7b35d75add9f914a3ffb07535e9be2e021aaaa1a2/1791636198/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="100" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Northern Illinois Huskies vs Air Force Falcons (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Northern Illinois Huskies vs Air Force Falcons
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c4a940a58c82d2d11bd3787523f57544e3b2991a5be4724416ca059e69810d3d/1791636199/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="101" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Georgia Southern Eagles vs James Madison Dukes (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Georgia Southern Eagles vs James Madison Dukes
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c4a940a58c82d2d11bd3787523f57544e3b2991a5be4724416ca059e69810d3d/1791636199/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="102" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Louisiana Tech Bulldogs vs Louisiana Ragin' Cajuns (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Louisiana Tech Bulldogs vs Louisiana Ragin' Cajuns
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/c4a940a58c82d2d11bd3787523f57544e3b2991a5be4724416ca059e69810d3d/1791636199/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="103" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Utah Utes vs Kansas Jayhawks (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Utah Utes vs Kansas Jayhawks
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2155681c36571e576e4fd3518e9d915acede7ea70d47428112d3c11a5d0e2e9a/1791636200/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="104" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Purdue Boilermakers vs Minnesota Golden Gophers (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Purdue Boilermakers vs Minnesota Golden Gophers
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2155681c36571e576e4fd3518e9d915acede7ea70d47428112d3c11a5d0e2e9a/1791636200/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="105" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Fresno State Bulldogs vs Boise State Broncos (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Fresno State Bulldogs vs Boise State Broncos
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/2155681c36571e576e4fd3518e9d915acede7ea70d47428112d3c11a5d0e2e9a/1791636200/espn-usa.m3u8
+#EXTINF:-1 tvg-chno="106" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[College Football] Arizona State Sun Devils vs Hawai'i Rainbow Warriors (FLY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/12/NCAA-Logo-500x281.png" group-title="College Football",[College Football] Arizona State Sun Devils vs Hawai'i Rainbow Warriors
+#EXTVLCOPT:http-referrer=https://exmxbxe.cfd/flyemb/o9bl8cai
+#EXTVLCOPT:http-origin=https://exmxbxe.cfd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://judiaslevels.embeds.gay/main/secure/dbfcdf75fadc99766484188d51dc68119067c780fc38a705df5336513da7f752/1791636201/espn-usa.m3u8
