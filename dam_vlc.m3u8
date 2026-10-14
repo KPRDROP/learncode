@@ -3,19 +3,74 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=DmVqLC8ixW1OensTTnzY3g&e=1792027761
-#EXTINF:-1 tvg-chno="2" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=cmgS5m8BShQ9wqWsUF207Q&e=1792045499
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Feyenoord Rotterdam vs. Como (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/d65d77cb01e1d1d65c701a932a6b710a-thumbnail.jpg" group-title="Live Events",[Champions League] Feyenoord Rotterdam vs. Como (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/fey-como
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/fey-como
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/fey-como/playlist.m3u8?tk=cmgS5m8BShQ9wqWsUF207Q&e=1792045499
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] LASK Linz vs. Liverpool (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/ffd13f423f69aa1afe5eb3f68ff0beb8-thumbnail.jpg" group-title="Live Events",[Champions League] LASK Linz vs. Liverpool (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/las-liv
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/las-liv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/las-liv/playlist.m3u8?tk=cmgS5m8BShQ9wqWsUF207Q&e=1792045499
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] AS Roma vs. Real Madrid (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6bebbcd686a75f85cec83ee9d0db3a6b-thumbnail.jpg" group-title="Live Events",[Champions League] AS Roma vs. Real Madrid (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/roma-rma
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/roma-rma
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/roma-rma/playlist.m3u8?tk=cmgS5m8BShQ9wqWsUF207Q&e=1792045499
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Aston Villa vs. Fenerbahce (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/e19fa28b6652841418de067c0dd72a0e-thumbnail.jpg" group-title="Live Events",[Champions League] Aston Villa vs. Fenerbahce (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/avl-fen
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/avl-fen
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/avl-fen/playlist.m3u8?tk=uoHDZdceqg6aKyFsqiXl5g&e=1792045500
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Bodo/Glimt vs. Borussia Dortmund (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/6a35e7507e86a67c1e54b954371d7a5a-thumbnail.jpg" group-title="Live Events",[Champions League] Bodo/Glimt vs. Borussia Dortmund (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/bodo-dor
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/bodo-dor
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/bodo-dor/playlist.m3u8?tk=uoHDZdceqg6aKyFsqiXl5g&e=1792045500
+#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Manchester City vs. Paris Saint-Germain (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/04961effa887b3cb6d155b53223aa613-thumbnail.jpg" group-title="Live Events",[Champions League] Manchester City vs. Paris Saint-Germain (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/mci-psg
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/mci-psg
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/mci-psg/playlist.m3u8?tk=uoHDZdceqg6aKyFsqiXl5g&e=1792045500
+#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Real Betis vs. FC Porto (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/52f0e05f4d78d4bd784c8ce399e6876b-thumbnail.jpg" group-title="Live Events",[Champions League] Real Betis vs. FC Porto (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/bet-fcp
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/bet-fcp
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/bet-fcp/playlist.m3u8?tk=XrbFIGreOIoopVJol2rRTw&e=1792045501
+#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Shakhtar Donetsk vs. AEK Athens (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/cb69965652c7a2bdd0046e83b6b93105-thumbnail.jpg" group-title="Live Events",[Champions League] Shakhtar Donetsk vs. AEK Athens (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/shk-aek
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/shk-aek
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/shk-aek/playlist.m3u8?tk=XrbFIGreOIoopVJol2rRTw&e=1792045501
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Champions League] Slovan Bratislava vs. VfB Stuttgart (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/840b1124ca418790df16bb47916ad944-thumbnail.jpg" group-title="Live Events",[Champions League] Slovan Bratislava vs. VfB Stuttgart (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ucl/2026-10-14/slb-vfb
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ucl/2026-10-14/slb-vfb
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/ucl/2026-10-14/slb-vfb/playlist.m3u8?tk=XrbFIGreOIoopVJol2rRTw&e=1792045501
+#EXTINF:-1 tvg-chno="11" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=DmVqLC8ixW1OensTTnzY3g&e=1792027761
-#EXTINF:-1 tvg-chno="3" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] NHL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4a70bb8cf331b8ab0299fd836b56e2ed-thumbnail.jpg" group-title="NHL",[NHL] NHL Network (DAM)
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=XrbFIGreOIoopVJol2rRTw&e=1792045501
+#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] NHL Network (DAM)" tvg-logo="https://static.ppvservices.st/assets/thumb/4a70bb8cf331b8ab0299fd836b56e2ed-thumbnail.jpg" group-title="NHL",[NHL] NHL Network (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl-network-29780
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl-network-29780
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl-network-29780/playlist.m3u8?tk=OzK2jPq8yZkXZdW85ll3Aw&e=1792027762
-#EXTINF:-1 tvg-chno="4" tvg-id="Tennis.Dummy.us" tvg-name="[tennis] Tennis Channel (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" group-title="Tennis",[tennis] Tennis Channel (DAM)
+https://messi.damitv.st/live-hls/channel/nhl-network-29780/playlist.m3u8?tk=S6tg-gPDx2CGHqCHq5mgDA&e=1792045502
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[football] Goals Show Xtra (TNT) (DAM)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Live Events",[football] Goals Show Xtra (TNT) (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-hotel~goals-show-xtra-tnt-uefa-champions-league-1792000800
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-hotel~goals-show-xtra-tnt-uefa-champions-league-1792000800
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/hotel/goals-show-xtra-tnt-uefa-champions-league-1792000800/playlist.m3u8?tk=S6tg-gPDx2CGHqCHq5mgDA&e=1792045502
+#EXTINF:-1 tvg-chno="14" tvg-id="Tennis.Dummy.us" tvg-name="[tennis] Tennis Channel (DAM)" tvg-logo="https://streamed.pk/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" group-title="Tennis",[tennis] Tennis Channel (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/streamed/admin/admin-tennis-channel/playlist.m3u8?tk=OzK2jPq8yZkXZdW85ll3Aw&e=1792027762
+https://messi.damitv.st/live-sd/streamed/admin/admin-tennis-channel/playlist.m3u8?tk=S6tg-gPDx2CGHqCHq5mgDA&e=1792045502
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[football] The Golazo Show ⚽ ⚽ ⚽ (DAM)" tvg-logo="https://files.catbox.moe/r05ma0.png" group-title="Live Events",[football] The Golazo Show ⚽ ⚽ ⚽ (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-hotel~the-golazo-show-cbs-uefa-champions-league-1792000800
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-hotel~the-golazo-show-cbs-uefa-champions-league-1792000800
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-sd/streamed/hotel/the-golazo-show-cbs-uefa-champions-league-1792000800/playlist.m3u8?tk=S6tg-gPDx2CGHqCHq5mgDA&e=1792045502
