@@ -1,103 +1,145 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Chicago Bears vs New England Patriots | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Chicago Bears vs New England Patriots | CA (PLAY)
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Germany Bundesliga 2] Simulcast | DE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/7/7b/2._Bundesliga_logo.svg/1280px-2._Bundesliga_logo.svg.png" group-title="Live Events",[Germany Bundesliga 2] Simulcast | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/cd4vgvhakbwy8.m3u8?s=ej09rKhOtZXyJW6YWWgPXw&e=1792738666
+https://643t8a.7odxv0l067ka.net:8443/hls/vgzgprk2xvqer.m3u8?s=2OWAq3aUiWNPN893A0rTog&e=1792774560
 
-#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Chicago Bears vs New England Patriots | DE (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nfl.png" group-title="Live Events",[NFL] Chicago Bears vs New England Patriots | DE (PLAY)
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[Germany Bundesliga 2] Bochum vs Wolfsburg | DE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/7/7b/2._Bundesliga_logo.svg/1280px-2._Bundesliga_logo.svg.png" group-title="Live Events",[Germany Bundesliga 2] Bochum vs Wolfsburg | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/nelmbo31s1f8g.m3u8?s=aMOwCsT8HZVBQbtM3LbV5w&e=1792738667
+https://643t8a.7odxv0l067ka.net:8443/hls/4y0y17mr3akft.m3u8?s=AaSTpUzit4g1d-JQBJuRhQ&e=1792774561
 
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[MotoGP] Australian Grand Prix | EN (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2021/03/MotoGP-Logo-500x281.png" group-title="Live Events",[MotoGP] Australian Grand Prix | EN (PLAY)
+#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[Australia A-League] Brisbane Roar vs Perth Glory | DE (PLAY)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",[Australia A-League] Brisbane Roar vs Perth Glory | DE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/o9n9d19h322vl.m3u8?s=TvtB6XvdoFrUQ4ddD8hd4Q&e=1792738669
+https://643t8a.7odxv0l067ka.net:8443/hls/3hbha9s0xn7cq.m3u8?s=PhQj3XUXPVptabiTXEzckA&e=1792774563
 
-#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Philadelphia 76ers vs Cleveland Cavaliers | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Philadelphia 76ers vs Cleveland Cavaliers | EN (PLAY)
+#EXTINF:-1 tvg-chno="4" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Ocelari Trinec vs Ceske Budejovice | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Ocelari Trinec vs Ceske Budejovice | CZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/cd4dh6iarhr2p.m3u8?s=YjwGk-823u0amD6SuVV04A&e=1792738670
+https://643t8a.7odxv0l067ka.net:8443/hls/3hbhlwn0eiwi9.m3u8?s=z7obm4a4d4efrKSfNhgc_g&e=1792774564
 
-#EXTINF:-1 tvg-chno="5" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Oklahoma City Thunder vs Denver Nuggets | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nba.png" group-title="Live Events",[NBA] Oklahoma City Thunder vs Denver Nuggets | EN (PLAY)
+#EXTINF:-1 tvg-chno="5" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Vitkovice vs Kometa Brno | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Vitkovice vs Kometa Brno | CZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/cd4dh6iarhr2p.m3u8?s=LV-PZxclq7kIHZwKQF7XUQ&e=1792738672
+https://643t8a.7odxv0l067ka.net:8443/hls/la6awsdun2mm5.m3u8?s=c9SCVljjLBIqzUAhmi-p-w&e=1792774566
 
-#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Boston Bruins vs Nashville Predators | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Boston Bruins vs Nashville Predators | CA (PLAY)
+#EXTINF:-1 tvg-chno="6" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Litvinov vs Plzen | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Litvinov vs Plzen | CZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=6HfFnGRz2Q0k3b4-7bFSDQ&e=1792738673
+https://643t8a.7odxv0l067ka.net:8443/hls/g878pdcv49gvq.m3u8?s=lkVX_Vx5r_MHxzG5nbaMtw&e=1792774567
 
-#EXTINF:-1 tvg-chno="7" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Seattle Kraken vs Utah Mammoth | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Seattle Kraken vs Utah Mammoth | CA (PLAY)
+#EXTINF:-1 tvg-chno="7" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Mountfield vs Karlovy Vary | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Mountfield vs Karlovy Vary | CZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/b1u1r1um0uwfv.m3u8?s=9Ex7Q0MJSiCjbYv4Cupm-g&e=1792738674
+https://643t8a.7odxv0l067ka.net:8443/hls/cd4d3unaj752e.m3u8?s=WBrxic1Aa-d6pj_ynClshw&e=1792774569
 
-#EXTINF:-1 tvg-chno="8" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] New Jersey Devils vs Anaheim Ducks | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] New Jersey Devils vs Anaheim Ducks | CA (PLAY)
+#EXTINF:-1 tvg-chno="8" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Bili Tygri Liberec vs Sparta Praha | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Bili Tygri Liberec vs Sparta Praha | CZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/5svsislkrx3kv.m3u8?s=iGmY1qGWLcgKWPBUqtH7NA&e=1792738676
+https://643t8a.7odxv0l067ka.net:8443/hls/4y0yb8kr346sv.m3u8?s=2iChc7Fho0iBU-deewo1lA&e=1792774570
 
-#EXTINF:-1 tvg-chno="9" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Vancouver Canucks vs Detroit Red Wings | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Vancouver Canucks vs Detroit Red Wings | CA (PLAY)
+#EXTINF:-1 tvg-chno="9" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Czech Republic Extraliga] Rytiri Kladno vs Dynamo Pardubice | CZ (PLAY)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/ELH19932005.png/revision/latest" group-title="Live Events",[Czech Republic Extraliga] Rytiri Kladno vs Dynamo Pardubice | CZ (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/5svsislkrx3kv.m3u8?s=h-8icbQW4P7JfLtkrFmqNQ&e=1792738677
+https://643t8a.7odxv0l067ka.net:8443/hls/g878pdpvwuegj.m3u8?s=O7DoqPxBQS7KAzBUyB8bsg&e=1792774571
 
-#EXTINF:-1 tvg-chno="10" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Pittsburgh Penguins vs Florida Panthers | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Pittsburgh Penguins vs Florida Panthers | CA (PLAY)
+#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Bulgaria Parva Liga] CSKA 1948 vs Botev Plovdiv | BG (PLAY)" tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/ae/Efbet_Liga_logo.png" group-title="Live Events",[Bulgaria Parva Liga] CSKA 1948 vs Botev Plovdiv | BG (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/z7o7fz4xhk0xg.m3u8?s=jLy1pLXVDkkwvkLXnxb3Fw&e=1792738679
+https://643t8a.7odxv0l067ka.net:8443/hls/ho1oawb34ijub.m3u8?s=GvJfpnOBAchX8yt9vS9kwQ&e=1792774573
 
-#EXTINF:-1 tvg-chno="11" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Toronto Maple Leafs vs New York Rangers | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Toronto Maple Leafs vs New York Rangers | CA (PLAY)
+#EXTINF:-1 tvg-chno="11" tvg-id="Soccer.Dummy.us" tvg-name="[Poland Ekstraklasa] Motor Lublin vs Zagłebie Lubin | PL (PLAY)" tvg-logo="https://assets.football-logos.cc/logos/poland/700x700/ekstraklasa.007755e8.png" group-title="Live Events",[Poland Ekstraklasa] Motor Lublin vs Zagłebie Lubin | PL (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/twqwst2i9xa0b.m3u8?s=EAehVS7a7QVkS7GXLhQhTg&e=1792738680
+https://643t8a.7odxv0l067ka.net:8443/hls/b1u169kmywt60.m3u8?s=xzQIXLZ4OeGHz5G8LjPSUw&e=1792774574
 
-#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Ottawa Senators vs San Jose Sharks | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Ottawa Senators vs San Jose Sharks | CA (PLAY)
+#EXTINF:-1 tvg-chno="12" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Sweden Hockeyallsvenskan] Modo Hockey vs AIK | SE (PLAY)" tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/2/29/HockeyAllsvenskan_logo.svg/960px-HockeyAllsvenskan_logo.svg.png" group-title="Live Events",[Sweden Hockeyallsvenskan] Modo Hockey vs AIK | SE (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/efcfxexnah99w.m3u8?s=AZCui0jBjWyplKG4ByixFw&e=1792738682
+https://643t8a.7odxv0l067ka.net:8443/hls/efcfyqrnjkdce.m3u8?s=7UigdiPstUgC-fmLVmdilA&e=1792774576
 
-#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] New York Islanders vs Los Angeles Kings | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] New York Islanders vs Los Angeles Kings | CA (PLAY)
+#EXTINF:-1 tvg-chno="13" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Kiekko Espoo vs HIFK | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Kiekko Espoo vs HIFK | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/o9n9dofhtdm7c.m3u8?s=RyD2jmVE21rkb2GDtYkOAQ&e=1792738683
+https://643t8a.7odxv0l067ka.net:8443/hls/86i6qlegsvgxf.m3u8?s=BV3AIKT2BWK3z20RjxR8kA&e=1792774577
 
-#EXTINF:-1 tvg-chno="14" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] St. Louis Blues vs Vegas Golden Knights | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] St. Louis Blues vs Vegas Golden Knights | CA (PLAY)
+#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Karpat vs KalPa | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Karpat vs KalPa | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/neaeynn1ejrac.m3u8?s=HlbUf6E9CuA4DOt7HbiCfQ&e=1792738684
+https://643t8a.7odxv0l067ka.net:8443/hls/6rtrjam8g04f.m3u8?s=BLgZMCsEENSoMPisk2pmYg&e=1792774579
 
-#EXTINF:-1 tvg-chno="15" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Dallas Stars vs Winnipeg Jets | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Dallas Stars vs Winnipeg Jets | CA (PLAY)
+#EXTINF:-1 tvg-chno="15" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Sport vs SaiPa | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Sport vs SaiPa | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/ho1oa0x34o198.m3u8?s=46X8T_K3pDkXkylwfcAleQ&e=1792738686
+https://643t8a.7odxv0l067ka.net:8443/hls/z7o7egjxnf5mr.m3u8?s=0ukakVfMUI4pueV6QagYrQ&e=1792774580
 
-#EXTINF:-1 tvg-chno="16" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Calgary Flames vs Minnesota Wild | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Calgary Flames vs Minnesota Wild | CA (PLAY)
+#EXTINF:-1 tvg-chno="16" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Jukurit vs Ilves | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Jukurit vs Ilves | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/twqw57dijwx1t.m3u8?s=9ZtjLFOMmKI0-flRE8HZ1Q&e=1792738687
+https://643t8a.7odxv0l067ka.net:8443/hls/ul8lt18swxcgn.m3u8?s=fYETdb6TcW7B7T2qCA6jWQ&e=1792774581
 
-#EXTINF:-1 tvg-chno="17" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Edmonton Oilers vs Carolina Hurricanes | CA (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/teamlogos/leagues/500/nhl.png" group-title="Live Events",[NHL] Edmonton Oilers vs Carolina Hurricanes | CA (PLAY)
+#EXTINF:-1 tvg-chno="17" tvg-id="Soccer.Dummy.us" tvg-name="[Finland Liiga] Lukko vs TPS | FI (PLAY)" tvg-logo="https://files.catbox.moe/2rifrs.png" group-title="Live Events",[Finland Liiga] Lukko vs TPS | FI (PLAY)
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://4169it.7odxv0l067ka.net:8443/hls/itptkzk7cnio9.m3u8?s=Fl1JJ1cPJ-6UWu8TlG2jow&e=1792738689
+https://643t8a.7odxv0l067ka.net:8443/hls/1nlnrofbyphvx.m3u8?s=1FhAlRafC5vG13sAKpiNBQ&e=1792774583
+
+#EXTINF:-1 tvg-chno="18" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] Hermes vs RoKi | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] Hermes vs RoKi | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/k525zq1fwfbew.m3u8?s=3M_WCqs8EKEV-xQNjQpOOA&e=1792774584
+
+#EXTINF:-1 tvg-chno="19" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] IPK vs JoKP | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] IPK vs JoKP | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/cd4d3ena5x51m.m3u8?s=cfYdi2NWm16qnoQZve_Ogg&e=1792774586
+
+#EXTINF:-1 tvg-chno="20" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[Finland Mestis] TuTo vs Kettera | FI (PLAY)" tvg-logo="https://1000logos.net/wp-content/uploads/2018/12/Mestis-Finland-Logo-2000.png" group-title="Live Events",[Finland Mestis] TuTo vs Kettera | FI (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/6rtrjle8eu84k.m3u8?s=ya-qdDV1fR07jaRzYiuH7A&e=1792774587
+
+#EXTINF:-1 tvg-chno="21" tvg-id="Soccer.Dummy.us" tvg-name="[Saudi Arabia Pro League] Al Faisaly vs Al Nassr | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2488.png" group-title="Live Events",[Saudi Arabia Pro League] Al Faisaly vs Al Nassr | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/b1u160wm3nuo.m3u8?s=Zbd3_kapguiSu3pXVyBY0g&e=1792774588
+
+#EXTINF:-1 tvg-chno="22" tvg-id="Soccer.Dummy.us" tvg-name="[Saudi Arabia Pro League] Al Faisaly vs Al Nassr | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2488.png" group-title="Live Events",[Saudi Arabia Pro League] Al Faisaly vs Al Nassr | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/vgzg9fa2psyi1.m3u8?s=hjTGhMjDKX2JiITUOjr-Fg&e=1792774590
+
+#EXTINF:-1 tvg-chno="23" tvg-id="Soccer.Dummy.us" tvg-name="[Saudi Arabia Pro League] Al Ittihad vs Diriyah | EN (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2488.png" group-title="Live Events",[Saudi Arabia Pro League] Al Ittihad vs Diriyah | EN (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/03m3urdwsuwu5.m3u8?s=jNU6VuUjzJGWySs0VmIl3A&e=1792774591
+
+#EXTINF:-1 tvg-chno="24" tvg-id="Soccer.Dummy.us" tvg-name="[Saudi Arabia Pro League] Al Ittihad vs Diriyah | ES (PLAY)" tvg-logo="https://a.espncdn.com/combiner/i?img=/i/leaguelogos/soccer/500/2488.png" group-title="Live Events",[Saudi Arabia Pro League] Al Ittihad vs Diriyah | ES (PLAY)
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://643t8a.7odxv0l067ka.net:8443/hls/vgzg9fa2psyi1.m3u8?s=vV8E9AOKN7zNUuvLIBYemw&e=1792774593
 
