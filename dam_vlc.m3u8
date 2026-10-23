@@ -3,74 +3,34 @@
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nfl-network
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=FfKKdRscvQVUD61a3MZRZw&e=1792825113
-#EXTINF:-1 tvg-chno="2" tvg-id="Darts.Dummy.us" tvg-name="[Darts] 2026 European Championship | Day 2 (DAM)" tvg-logo="/img/x/assets/thumb/dfe49f6eaba3338d87013f7f740dbc8a-thumbnail.jpg" group-title="Live Events",[Darts] 2026 European Championship | Day 2 (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=2026-european-championship--day-2-30900
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=2026-european-championship--day-2-30900
+https://messi.damitv.st/live-hls/channel/nfl-network/playlist.m3u8?tk=BVE3ihvJsPtI0dl2jFrCsQ&e=1792835999
+#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Chicago Bulls vs. Milwaukee Bucks (DAM)" tvg-logo="/img/cards/nba/401909848-r.jpg?v=ol1" group-title="NBA",[NBA] Chicago Bulls vs. Milwaukee Bucks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nba/2026-10-23/chi-mil
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nba/2026-10-23/chi-mil
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/2026-european-championship--day-2-30900/playlist.m3u8?tk=FfKKdRscvQVUD61a3MZRZw&e=1792825113
-#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] IF Elfsborg vs. Malmö FF (DAM)" tvg-logo="/img/cards/swe.1/401842851.jpg?v=3" group-title="Live Events",[Allsvenskan] IF Elfsborg vs. Malmö FF (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=allsvenskan/2026-10-23/elf-mal
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=allsvenskan/2026-10-23/elf-mal
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/allsvenskan/2026-10-23/elf-mal/playlist.m3u8?tk=FfKKdRscvQVUD61a3MZRZw&e=1792825113
-#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] Västerås SK vs. Halmstads BK (DAM)" tvg-logo="/img/cards/swe.1/401842852-r.jpg?v=3" group-title="Live Events",[Allsvenskan] Västerås SK vs. Halmstads BK (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=allsvenskan/2026-10-23/vas-hbk
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=allsvenskan/2026-10-23/vas-hbk
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/allsvenskan/2026-10-23/vas-hbk/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[Eredivisie] Go Ahead Eagles vs. Telstar (DAM)" tvg-logo="/img/cards/ned.1/401875574.jpg?v=3" group-title="Live Events",[Eredivisie] Go Ahead Eagles vs. Telstar (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=eredivisie/2026-10-23/gae-tel
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=eredivisie/2026-10-23/gae-tel
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/eredivisie/2026-10-23/gae-tel/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[Bundesliga] VfB Stuttgart vs. Borussia Mönchengladbach (DAM)" tvg-logo="/img/cards/ger.1/401884761.jpg?v=3" group-title="Live Events",[Bundesliga] VfB Stuttgart vs. Borussia Mönchengladbach (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=bundesliga/2026-10-23/vfb-bmg
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=bundesliga/2026-10-23/vfb-bmg
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/bundesliga/2026-10-23/vfb-bmg/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="7" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Torino vs. Monza (DAM)" tvg-logo="/img/cards/ita.1/401874957.jpg?v=light1" group-title="Live Events",[Serie A] Torino vs. Monza (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=seriea/2026-10-23/tor-mon
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=seriea/2026-10-23/tor-mon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/seriea/2026-10-23/tor-mon/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="8" tvg-id="Soccer.Dummy.us" tvg-name="[Ligue 1] Brest vs. Nice (DAM)" tvg-logo="/img/cards/fra.1/401876428.jpg?v=3" group-title="Live Events",[Ligue 1] Brest vs. Nice (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=ligue1/2026-10-23/bre-nice
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=ligue1/2026-10-23/bre-nice
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/ligue1/2026-10-23/bre-nice/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="9" tvg-id="Soccer.Dummy.us" tvg-name="[La Liga] Alavés vs. Málaga (DAM)" tvg-logo="/img/cards/esp.1/401882836.jpg?v=3" group-title="Live Events",[La Liga] Alavés vs. Málaga (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=laliga/2026-10-23/ala-mcf
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=laliga/2026-10-23/ala-mcf
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/laliga/2026-10-23/ala-mcf/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="10" tvg-id="Soccer.Dummy.us" tvg-name="[Premier League] Ipswich Town vs. Nottingham Forest (DAM)" tvg-logo="/img/cards/eng.1/401879253.jpg?v=6" group-title="Live Events",[Premier League] Ipswich Town vs. Nottingham Forest (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=pl/2026-10-23/ips-nfo
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=pl/2026-10-23/ips-nfo
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/pl/2026-10-23/ips-nfo/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="11" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="/img/x/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
+https://messi.damitv.st/live-hls/channel/nba/2026-10-23/chi-mil/playlist.m3u8?tk=BVE3ihvJsPtI0dl2jFrCsQ&e=1792835999
+#EXTINF:-1 tvg-chno="3" tvg-id="Golf.Dummy.us" tvg-name="[Golf] Sky Sports Golf (DAM)" tvg-logo="/img/x/assets/thumb/9950e3e6c1a19cad6a216ec1c6b50d71-thumbnail.jpg" group-title="Live Events",[Golf] Sky Sports Golf (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sky-sports-golf-29059
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=yssNYUuqEhoTcOOt_LBtPw&e=1792825114
-#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] NHL Network (DAM)" tvg-logo="/img/x/assets/thumb/4a70bb8cf331b8ab0299fd836b56e2ed-thumbnail.jpg" group-title="NHL",[NHL] NHL Network (DAM)
+https://messi.damitv.st/live-hls/channel/sky-sports-golf-29059/playlist.m3u8?tk=BVE3ihvJsPtI0dl2jFrCsQ&e=1792835999
+#EXTINF:-1 tvg-chno="4" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] NHL Network (DAM)" tvg-logo="/img/x/assets/thumb/4a70bb8cf331b8ab0299fd836b56e2ed-thumbnail.jpg" group-title="NHL",[NHL] NHL Network (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl-network-29780
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl-network-29780
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl-network-29780/playlist.m3u8?tk=SOJfeB4ZPDFYGYMs5y_TeQ&e=1792825115
-#EXTINF:-1 tvg-chno="13" tvg-id="Racing.Dummy.us" tvg-name="[F1] United States Grand Prix - Practice 1 (DAM)" tvg-logo="/img/x/assets/thumb/54db2cd6458fd7fb9a2437b643c759d2-thumbnail.jpg" group-title="Live Events",[F1] United States Grand Prix - Practice 1 (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=f1/2026/united-states/fp1
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=f1/2026/united-states/fp1
+https://messi.damitv.st/live-hls/channel/nhl-network-29780/playlist.m3u8?tk=eg9o56xUA1PZGHd7McANjQ&e=1792836000
+#EXTINF:-1 tvg-chno="5" tvg-id="Racing.Dummy.us" tvg-name="[F1] United States Grand Prix - Practice 2 (DAM)" tvg-logo="/img/x/assets/thumb/b451724f1d48375b7b765be7b232b098-thumbnail.jpg" group-title="Live Events",[F1] United States Grand Prix - Practice 2 (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=f1/2026/united-states/fp2
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=f1/2026/united-states/fp2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/f1/2026/united-states/fp1/playlist.m3u8?tk=SOJfeB4ZPDFYGYMs5y_TeQ&e=1792825115
-#EXTINF:-1 tvg-chno="14" tvg-id="Soccer.Dummy.us" tvg-name="[football] Västerås vs Halmstad (DAM)" tvg-logo="/img/cards/m/f21469e04598300a.jpg?v=3.t" group-title="Live Events",[football] Västerås vs Halmstad (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-v-ster-s-sk-vs-halmstads-bk
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-v-ster-s-sk-vs-halmstads-bk
+https://messi.damitv.st/live-hls/channel/f1/2026/united-states/fp2/playlist.m3u8?tk=eg9o56xUA1PZGHd7McANjQ&e=1792836000
+#EXTINF:-1 tvg-chno="6" tvg-id="Racing.Dummy.us" tvg-name="[Motogp] Australia - Practice 2 (DAM)" tvg-logo="/img/x/assets/thumb/210fee5c338e641356391ab51368462b-thumbnail.jpg" group-title="Live Events",[Motogp] Australia - Practice 2 (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=motogp/2026/australia/practice-2
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=motogp/2026/australia/practice-2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/s/admin/p-v-ster-s-sk-vs-halmstads-bk/playlist.m3u8?tk=qhchpf9FBiWpRktdY8W07A&e=1792825118
-#EXTINF:-1 tvg-chno="15" tvg-id="Tennis.Dummy.us" tvg-name="[tennis] Tennis Channel (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" group-title="Tennis",[tennis] Tennis Channel (DAM)
+https://messi.damitv.st/live-hls/channel/motogp/2026/australia/practice-2/playlist.m3u8?tk=eg9o56xUA1PZGHd7McANjQ&e=1792836000
+#EXTINF:-1 tvg-chno="7" tvg-id="Tennis.Dummy.us" tvg-name="[tennis] Tennis Channel (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" group-title="Tennis",[tennis] Tennis Channel (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-sd/s/admin/admin-tennis-channel/playlist.m3u8?tk=qhchpf9FBiWpRktdY8W07A&e=1792825118
+https://messi.damitv.st/live-sd/s/admin/admin-tennis-channel/playlist.m3u8?tk=vKsatdXehOJ3wMW7DtHX1A&e=1792836001
