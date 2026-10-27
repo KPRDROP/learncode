@@ -1,1 +1,31 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[Allsvenskan] AIK vs. IF Elfsborg (DAM)" tvg-logo="/img/cards/swe.1/401842858.jpg?v=3" group-title="Live Events",[Allsvenskan] AIK vs. IF Elfsborg (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=allsvenskan/2026-10-27/aik-elf
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=allsvenskan/2026-10-27/aik-elf
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/allsvenskan/2026-10-27/aik-elf/playlist.m3u8?tk=RYLAM5DOTsWNu5D56rP3JA&e=1793174252
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[National League] Altrincham vs. Kidderminster Harriers (DAM)" tvg-logo="/img/cards/m/d9bbbbe744608de4.jpg?v=3.t2" group-title="Live Events",[National League] Altrincham vs. Kidderminster Harriers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=national-league/2026-10-27/alt-kid
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=national-league/2026-10-27/alt-kid
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/national-league/2026-10-27/alt-kid/playlist.m3u8?tk=RYLAM5DOTsWNu5D56rP3JA&e=1793174252
+#EXTINF:-1 tvg-chno="3" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] AS Roma vs. Cagliari (DAM)" tvg-logo="/img/cards/ita.1/401874780.jpg?v=light1" group-title="Live Events",[Serie A] AS Roma vs. Cagliari (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=seriea/2026-10-27/roma-cag
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=seriea/2026-10-27/roma-cag
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/seriea/2026-10-27/roma-cag/playlist.m3u8?tk=RYLAM5DOTsWNu5D56rP3JA&e=1793174252
+#EXTINF:-1 tvg-chno="4" tvg-id="Soccer.Dummy.us" tvg-name="[Serie A] Torino vs. Como (DAM)" tvg-logo="/img/cards/ita.1/401874786.jpg?v=light1" group-title="Live Events",[Serie A] Torino vs. Como (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=seriea/2026-10-27/tor-como
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=seriea/2026-10-27/tor-como
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/seriea/2026-10-27/tor-como/playlist.m3u8?tk=RYLAM5DOTsWNu5D56rP3JA&e=1793174252
+#EXTINF:-1 tvg-chno="5" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Cup] Bradford City vs. Peterborough United (DAM)" tvg-logo="/img/x/assets/thumb/af3072d07b0a2a9130b2432a252b04ca-thumbnail.jpg" group-title="Live Events",[EFL Cup] Bradford City vs. Peterborough United (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=carabao-cup/2026-10-27/brd-pet
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=carabao-cup/2026-10-27/brd-pet
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/carabao-cup/2026-10-27/brd-pet/playlist.m3u8?tk=OWM_JqPu8Ev2gqIj-dXRNQ&e=1793174253
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[EFL Cup] Fleetwood Town vs. Arsenal (DAM)" tvg-logo="/img/x/assets/thumb/3b5d13a93d944c90b491da980af929c0-thumbnail.jpg" group-title="Live Events",[EFL Cup] Fleetwood Town vs. Arsenal (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=carabao-cup/2026-10-27/fle-ars
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=carabao-cup/2026-10-27/fle-ars
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/carabao-cup/2026-10-27/fle-ars/playlist.m3u8?tk=OWM_JqPu8Ev2gqIj-dXRNQ&e=1793174253
