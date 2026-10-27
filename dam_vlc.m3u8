@@ -1,41 +1,96 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Golf.Dummy.us" tvg-name="[golf] Sky Sports Golf (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IFOJAkQMUiHhyaiLNhBZxwBSogga64Wt2lNakzQPTZOgMZqU5CKDCCRTbPTCFgSXNftDnVkdhY3sCTXJnYEcyCCA.webp" group-title="Live Events",[golf] Sky Sports Golf (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-sky-sports-golf
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-sky-sports-golf
+#EXTINF:-1 tvg-chno="1" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Edmonton Oilers vs Detroit Red Wings (DAM)" tvg-logo="/img/cards/nhl/401892584.jpg?v=spl2" group-title="NHL",[NHL] Edmonton Oilers vs Detroit Red Wings (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-detroit-red-wings-vs-edmonton-oilers
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-detroit-red-wings-vs-edmonton-oilers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/a/p-sky-sports-golf/playlist.m3u8?tk=Cc-eIie4fhyOs2PNriLTOA&e=1793096968
-#EXTINF:-1 tvg-chno="2" tvg-id="Tennis.Dummy.us" tvg-name="[tennis] Tennis Channel (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" group-title="Tennis",[tennis] Tennis Channel (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
+https://messi.damitv.st/v/a/p-detroit-red-wings-vs-edmonton-oilers/playlist.m3u8?tk=u8fC-4d0e4Lo2Rb18MIlMw&e=1793109323
+#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Utah Jazz vs Memphis Grizzlies (DAM)" tvg-logo="/img/cards/nba/401909875.jpg?v=ghst2" group-title="NBA",[NBA] Utah Jazz vs Memphis Grizzlies (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-memphis-grizzlies-vs-utah-jazz
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-memphis-grizzlies-vs-utah-jazz
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/admin/admin-tennis-channel/playlist.m3u8?tk=Cc-eIie4fhyOs2PNriLTOA&e=1793096968
-#EXTINF:-1 tvg-chno="3" tvg-id="Live.Event.us" tvg-name="[motor-sports] Rally TV (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuMFBWLwBTYCbYAQxSzPzLCWDWB12Hga00quAGNCF0GdCBQhqjEM1Y4AJhixo5YXLCa8uwMAQSRgATkKk8bMFuKGIQA.webp" group-title="Live Events",[motor-sports] Rally TV (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-rally-tv
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~admin-rally-tv
+https://messi.damitv.st/v/a/p-memphis-grizzlies-vs-utah-jazz/playlist.m3u8?tk=u8fC-4d0e4Lo2Rb18MIlMw&e=1793109323
+#EXTINF:-1 tvg-chno="3" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Calgary Flames vs Toronto Maple Leafs (DAM)" tvg-logo="/img/cards/nhl/401892583.jpg?v=spl2" group-title="NHL",[NHL] Calgary Flames vs Toronto Maple Leafs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-toronto-maple-leafs-vs-calgary-flames
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-toronto-maple-leafs-vs-calgary-flames
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/admin/admin-rally-tv/playlist.m3u8?tk=Cc-eIie4fhyOs2PNriLTOA&e=1793096968
-#EXTINF:-1 tvg-chno="4" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] NHL Network (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50ICNhABjEDBEiQIYPGBUQiRFgVKtw2SD0oQKVcAiL1IGnpJXSB0mZP8wg+QWz0whYElxSTIVdWCWFHEw8VMFczRwggA.webp" group-title="NHL",[hockey] NHL Network (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-nhl-network
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-nhl-network
+https://messi.damitv.st/v/a/p-toronto-maple-leafs-vs-calgary-flames/playlist.m3u8?tk=u8fC-4d0e4Lo2Rb18MIlMw&e=1793109323
+#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Houston Rockets vs Atlanta Hawks (DAM)" tvg-logo="/img/cards/nba/401909874.jpg?v=ghst2" group-title="NBA",[NBA] Houston Rockets vs Atlanta Hawks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-atlanta-hawks-vs-houston-rockets
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-atlanta-hawks-vs-houston-rockets
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/a/p-nhl-network/playlist.m3u8?tk=Cc-eIie4fhyOs2PNriLTOA&e=1793096968
-#EXTINF:-1 tvg-chno="5" tvg-id="Live.Event.us" tvg-name="[american-football] NFL Network (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IMmQggAxqWwgqIGMBokQIUiETqpwkHphaRSmSClYQF9bMXKaU6SnIRQYQSKbZ6YQsCS5HIXJuThdhOScCYHhyN2AXSSA.webp" group-title="NFL",[american-football] NFL Network (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-nfl-network
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-nfl-network
+https://messi.damitv.st/v/a/p-atlanta-hawks-vs-houston-rockets/playlist.m3u8?tk=u8fC-4d0e4Lo2Rb18MIlMw&e=1793109323
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[NFL] Philadelphia Eagles vs Dallas Cowboys (DAM)" tvg-logo="/img/cards/nfl/401873009.jpg?v=dm3" group-title="NFL",[NFL] Philadelphia Eagles vs Dallas Cowboys (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-dallas-cowboys-at-philadelphia-eagles
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-dallas-cowboys-at-philadelphia-eagles
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/a/p-nfl-network/playlist.m3u8?tk=I9seobkKtV_leOUbL5VI0A&e=1793096969
-#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] New York Rangers vs Los Angeles Kings (DAM)" tvg-logo="/img/cards/nhl/401892582.jpg?v=spl2" group-title="NHL",[NHL] New York Rangers vs Los Angeles Kings (DAM)
+https://messi.damitv.st/v/a/p-dallas-cowboys-at-philadelphia-eagles/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="6" tvg-id="WNBA.dummy.us" tvg-name="[WNBA] Golden State Valkyries vs Atlanta Dream (DAM)" tvg-logo="/img/cards/wnba/401918309.jpg?v=3" group-title="NBA",[WNBA] Golden State Valkyries vs Atlanta Dream (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-atlanta-dream-vs-golden-state-valkyries
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-atlanta-dream-vs-golden-state-valkyries
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-atlanta-dream-vs-golden-state-valkyries/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="7" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Oklahoma City Thunder vs Phoenix Suns (DAM)" tvg-logo="/img/cards/nba/401909873.jpg?v=ghst2" group-title="NBA",[NBA] Oklahoma City Thunder vs Phoenix Suns (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-phoenix-suns-vs-oklahoma-city-thunder
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-phoenix-suns-vs-oklahoma-city-thunder
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-phoenix-suns-vs-oklahoma-city-thunder/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="8" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Milwaukee Bucks vs Indiana Pacers (DAM)" tvg-logo="/img/cards/nba/401909872.jpg?v=ghst2" group-title="NBA",[NBA] Milwaukee Bucks vs Indiana Pacers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-indiana-pacers-vs-milwaukee-bucks
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-indiana-pacers-vs-milwaukee-bucks
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-indiana-pacers-vs-milwaukee-bucks/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="9" tvg-id="MLB.Baseball.Dummy.us" tvg-name="[MLB] Tampa Bay Rays vs Milwaukee Brewers (DAM)" tvg-logo="/img/cards/mlb/401908044.jpg?v=dia1" group-title="MLB",[MLB] Tampa Bay Rays vs Milwaukee Brewers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-milwaukee-brewers-vs-tampa-bay-rays
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-milwaukee-brewers-vs-tampa-bay-rays
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-milwaukee-brewers-vs-tampa-bay-rays/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="10" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Miami Heat vs Dallas Mavericks (DAM)" tvg-logo="/img/cards/nba/401909871.jpg?v=ghst2" group-title="NBA",[NBA] Miami Heat vs Dallas Mavericks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-dallas-mavericks-vs-miami-heat
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-dallas-mavericks-vs-miami-heat
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-dallas-mavericks-vs-miami-heat/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="11" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Boston Celtics vs Chicago Bulls (DAM)" tvg-logo="/img/cards/nba/401909870.jpg?v=ghst2" group-title="NBA",[NBA] Boston Celtics vs Chicago Bulls (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-chicago-bulls-vs-boston-celtics
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-chicago-bulls-vs-boston-celtics
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-chicago-bulls-vs-boston-celtics/playlist.m3u8?tk=ObY46Fq6F_z0ORBapXHRMA&e=1793109324
+#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] New York Rangers vs Los Angeles Kings (DAM)" tvg-logo="/img/cards/nhl/401892582.jpg?v=spl2" group-title="NHL",[NHL] New York Rangers vs Los Angeles Kings (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-los-angeles-kings-vs-new-york-rangers
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-los-angeles-kings-vs-new-york-rangers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/a/p-los-angeles-kings-vs-new-york-rangers/playlist.m3u8?tk=I9seobkKtV_leOUbL5VI0A&e=1793096969
-#EXTINF:-1 tvg-chno="7" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Cleveland Cavaliers vs Minnesota Timberwolves (DAM)" tvg-logo="/img/cards/nba/401909869.jpg?v=ghst2" group-title="NBA",[NBA] Cleveland Cavaliers vs Minnesota Timberwolves (DAM)
+https://messi.damitv.st/v/a/p-los-angeles-kings-vs-new-york-rangers/playlist.m3u8?tk=EptZvS1vj_CyyfzKFOsfGw&e=1793109325
+#EXTINF:-1 tvg-chno="13" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Cleveland Cavaliers vs Minnesota Timberwolves (DAM)" tvg-logo="/img/cards/nba/401909869.jpg?v=ghst2" group-title="NBA",[NBA] Cleveland Cavaliers vs Minnesota Timberwolves (DAM)
 #EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-minnesota-timberwolves-vs-cleveland-cavaliers
 #EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-minnesota-timberwolves-vs-cleveland-cavaliers
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/a/p-minnesota-timberwolves-vs-cleveland-cavaliers/playlist.m3u8?tk=I9seobkKtV_leOUbL5VI0A&e=1793096969
-#EXTINF:-1 tvg-chno="8" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Charlotte Hornets vs Washington Wizards (DAM)" tvg-logo="/img/cards/nba/401909868.jpg?v=ghst2" group-title="NBA",[NBA] Charlotte Hornets vs Washington Wizards (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-washington-wizards-vs-charlotte-hornets
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-washington-wizards-vs-charlotte-hornets
+https://messi.damitv.st/v/a/p-minnesota-timberwolves-vs-cleveland-cavaliers/playlist.m3u8?tk=EptZvS1vj_CyyfzKFOsfGw&e=1793109325
+#EXTINF:-1 tvg-chno="14" tvg-id="Golf.Dummy.us" tvg-name="[golf] Sky Sports Golf (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IFOJAkQMUiHhyaiLNhBZxwBSogga64Wt2lNakzQPTZOgMZqU5CKDCCRTbPTCFgSXNftDnVkdhY3sCTXJnYEcyCCA.webp" group-title="Live Events",[golf] Sky Sports Golf (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-sky-sports-golf
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-sky-sports-golf
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/v/a/p-washington-wizards-vs-charlotte-hornets/playlist.m3u8?tk=I9seobkKtV_leOUbL5VI0A&e=1793096969
+https://messi.damitv.st/v/a/p-sky-sports-golf/playlist.m3u8?tk=EptZvS1vj_CyyfzKFOsfGw&e=1793109325
+#EXTINF:-1 tvg-chno="15" tvg-id="Tennis.Dummy.us" tvg-name="[tennis] Tennis Channel (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuBEBDXsQZgdgwwRgBOYAU0hDpqxQFZh5Tg0wmJgATMNTTAWkVqNri0LIinbQ61OvHS5CISiCggGIRPzWq0hNTTV5s2AMb6NNFif4h+VFxux5bFLXnk3aASx2PV0+LRRNR0hAtjYUBHZQYkk2JjBHEFsaOxytGFZYSWt5YFIVGOVgeTYOMl5AiCA.webp" group-title="Tennis",[tennis] Tennis Channel (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~admin-tennis-channel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/admin/admin-tennis-channel/playlist.m3u8?tk=EptZvS1vj_CyyfzKFOsfGw&e=1793109325
+#EXTINF:-1 tvg-chno="16" tvg-id="Live.Event.us" tvg-name="[motor-sports] Rally TV (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuMFBWLwBTYCbYAQxSzPzLCWDWB12Hga00quAGNCF0GdCBQhqjEM1Y4AJhixo5YXLCa8uwMAQSRgATkKk8bMFuKGIQA.webp" group-title="Live Events",[motor-sports] Rally TV (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~admin-rally-tv
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~admin-rally-tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/admin/admin-rally-tv/playlist.m3u8?tk=EptZvS1vj_CyyfzKFOsfGw&e=1793109325
+#EXTINF:-1 tvg-chno="17" tvg-id="Ice.Hockey.Dummy.us" tvg-name="[hockey] NHL Network (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50ICNhABjEDBEiQIYPGBUQiRFgVKtw2SD0oQKVcAiL1IGnpJXSB0mZP8wg+QWz0whYElxSTIVdWCWFHEw8VMFczRwggA.webp" group-title="NHL",[hockey] NHL Network (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-nhl-network
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-nhl-network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-nhl-network/playlist.m3u8?tk=EptZvS1vj_CyyfzKFOsfGw&e=1793109325
+#EXTINF:-1 tvg-chno="18" tvg-id="Live.Event.us" tvg-name="[american-football] NFL Network (DAM)" tvg-logo="/img/y/api/images/proxy/GwZg7AZpYEZgHCAjAJgCzuAQ1sFKBWSYAU2DFLABM8E9g1gDCFJMd46Tp51jwywYAE50IMmQggAxqWwgqIGMBokQIUiETqpwkHphaRSmSClYQF9bMXKaU6SnIRQYQSKbZ6YQsCS5HIXJuThdhOScCYHhyN2AXSSA.webp" group-title="NFL",[american-football] NFL Network (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-nfl-network
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-nfl-network
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-nfl-network/playlist.m3u8?tk=Z8f6MV26ctmS7Z0bw5Jeog&e=1793109326
+#EXTINF:-1 tvg-chno="19" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Denver Nuggets vs Golden State Warriors (DAM)" tvg-logo="/img/cards/nba/401909876.jpg?v=ghst2" group-title="NBA",[NBA] Denver Nuggets vs Golden State Warriors (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=sd-admin~p-golden-state-warriors-vs-denver-nuggets
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=sd-admin~p-golden-state-warriors-vs-denver-nuggets
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/v/a/p-golden-state-warriors-vs-denver-nuggets/playlist.m3u8?tk=Z8f6MV26ctmS7Z0bw5Jeog&e=1793109326
