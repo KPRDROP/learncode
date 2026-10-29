@@ -1,16 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] New York City FC vs. Atlanta United FC (DAM)" tvg-logo="/img/cards/usa.1/761905.jpg?v=flag2" group-title="Live Events",[MLS] New York City FC vs. Atlanta United FC (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mls/2026-10-28/nyc-atl
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mls/2026-10-28/nyc-atl
+#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[NBA] Los Angeles Lakers vs. LA Clippers (DAM)" tvg-logo="/img/cards/nba/401909892-r.jpg?v=ghst2" group-title="NBA",[NBA] Los Angeles Lakers vs. LA Clippers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nba/2026-10-28/lal-lac
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nba/2026-10-28/lal-lac
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-10-28/nyc-atl/playlist.m3u8?tk=nyDok03yRygYp0lfGhb0-Q&e=1793271795
-#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Toronto FC vs. D.C. United (DAM)" tvg-logo="/img/cards/usa.1/761906.jpg?v=flag2" group-title="Live Events",[MLS] Toronto FC vs. D.C. United (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mls/2026-10-28/tor-dc
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mls/2026-10-28/tor-dc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/mls/2026-10-28/tor-dc/playlist.m3u8?tk=nyDok03yRygYp0lfGhb0-Q&e=1793271795
-#EXTINF:-1 tvg-chno="3" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[NHL] Philadelphia Flyers vs. Washington Capitals (DAM)" tvg-logo="/img/cards/nhl/401892596-r.jpg?v=spl2" group-title="NHL",[NHL] Philadelphia Flyers vs. Washington Capitals (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=nhl/2026-10-28/phi-wsh
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=nhl/2026-10-28/phi-wsh
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-10-28/phi-wsh/playlist.m3u8?tk=dV2NvfU-KKJw53CSZbld0Q&e=1793271796
+https://messi.damitv.st/live-hls/channel/nba/2026-10-28/lal-lac/playlist.m3u8?tk=HB_mHliIdwrvg1ERq9zIvg&e=1793293913
