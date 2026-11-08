@@ -1,1 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Atlanta Falcons vs Cincinnati Bengals (DAM)" tvg-logo="/img/cards/nfl/401873038.jpg?v=dm3nf" group-title="Football",[National Football League] Atlanta Falcons vs Cincinnati Bengals (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873038
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873038
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-08/cin-atl/playlist.m3u8?tk=PZvk5TapHz0JueWIXYkLtg&e=1794200263
