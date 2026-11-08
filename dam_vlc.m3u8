@@ -1,6 +1,26 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Atlanta Falcons vs Cincinnati Bengals (DAM)" tvg-logo="/img/cards/nfl/401873038.jpg?v=dm3nf" group-title="Football",[National Football League] Atlanta Falcons vs Cincinnati Bengals (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873038
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873038
+#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Chicago Bulls vs Philadelphia 76ers (DAM)" tvg-logo="/img/cards/nba/401909945.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Chicago Bulls vs Philadelphia 76ers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909945
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909945
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl/2026-11-08/cin-atl/playlist.m3u8?tk=PZvk5TapHz0JueWIXYkLtg&e=1794200263
+https://messi.damitv.st/live-hls/channel/nba/2026-11-08/phi-chi/playlist.m3u8?tk=fLmR3OCxsBQf3SMnpKxC-g&e=1794214998
+#EXTINF:-1 tvg-chno="2" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Los Angeles Chargers vs Houston Texans (DAM)" tvg-logo="/img/cards/nfl/401873046.jpg?v=dm3nf" group-title="Football",[National Football League] Los Angeles Chargers vs Houston Texans (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873046
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873046
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-08/hou-lac/playlist.m3u8?tk=xoRtVAKuZ7uyHssj2RIB2w&e=1794215006
+#EXTINF:-1 tvg-chno="3" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] New England Patriots vs Green Bay Packers (DAM)" tvg-logo="/img/cards/nfl/401873049.jpg?v=dm3nf" group-title="Football",[National Football League] New England Patriots vs Green Bay Packers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873049
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873049
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-08/gb-ne/playlist.m3u8?tk=yyNUB2uM1srpZOSlkfjgkQ&e=1794215007
+#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] San Francisco 49ers vs Las Vegas Raiders (DAM)" tvg-logo="/img/cards/nfl/401873047.jpg?v=dm3nf" group-title="Football",[National Football League] San Francisco 49ers vs Las Vegas Raiders (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873047
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873047
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-08/lv-sf/playlist.m3u8?tk=yyNUB2uM1srpZOSlkfjgkQ&e=1794215007
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Seattle Seahawks vs Arizona Cardinals (DAM)" tvg-logo="/img/cards/nfl/401873048.jpg?v=dm3nf" group-title="Football",[National Football League] Seattle Seahawks vs Arizona Cardinals (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873048
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873048
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-08/ari-sea/playlist.m3u8?tk=kZasVdhv-VLxUUTcsFRN4A&e=1794215008
