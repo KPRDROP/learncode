@@ -1,6 +1,46 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Soccer.Dummy.us" tvg-name="[English FA Cup] Plymouth Parkway vs Berkhamsted (DAM)" tvg-logo="https://r2.thesportsdb.com/images/media/event/thumb/uexqqg1793224780.jpg/preview" group-title="Live Events",[English FA Cup] Plymouth Parkway vs Berkhamsted (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401931098
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401931098
+#EXTINF:-1 tvg-chno="1" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Toronto Raptors vs Memphis Grizzlies (DAM)" tvg-logo="/img/cards/nba/401909955.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Toronto Raptors vs Memphis Grizzlies (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909955
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909955
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/english-fa-cup/2026-11-09/ply-ber/playlist.m3u8?tk=7zaSYaczcAxqcP36ksW95Q&e=1794299593
+https://messi.damitv.st/live-hls/channel/nba/2026-11-09/mem-tor/playlist.m3u8?tk=0bst8P5mzX3VS1ksPr6xfw&e=1794323960
+#EXTINF:-1 tvg-chno="2" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Dallas Mavericks vs Indiana Pacers (DAM)" tvg-logo="/img/cards/nba/401909956.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Dallas Mavericks vs Indiana Pacers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909956
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909956
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-09/ind-dal/playlist.m3u8?tk=_bj9jXTLJjuLlYbInS-6uw&e=1794323961
+#EXTINF:-1 tvg-chno="3" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Edmonton Oilers vs New York Rangers (DAM)" tvg-logo="/img/cards/nhl/401892680.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Edmonton Oilers vs New York Rangers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892680
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892680
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-09/nyr-edm/playlist.m3u8?tk=_bj9jXTLJjuLlYbInS-6uw&e=1794323961
+#EXTINF:-1 tvg-chno="4" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Minnesota Vikings vs Buffalo Bills (DAM)" tvg-logo="/img/cards/nfl/401873051.jpg?v=dm3nf" group-title="Football",[National Football League] Minnesota Vikings vs Buffalo Bills (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873051
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873051
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-09/buf-min/playlist.m3u8?tk=_bj9jXTLJjuLlYbInS-6uw&e=1794323961
+#EXTINF:-1 tvg-chno="5" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Houston Rockets vs Denver Nuggets (DAM)" tvg-logo="/img/cards/nba/401909957.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Houston Rockets vs Denver Nuggets (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909957
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909957
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-09/den-hou/playlist.m3u8?tk=_bj9jXTLJjuLlYbInS-6uw&e=1794323961
+#EXTINF:-1 tvg-chno="6" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Phoenix Suns vs San Antonio Spurs (DAM)" tvg-logo="/img/cards/nba/401909958.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Phoenix Suns vs San Antonio Spurs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909958
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909958
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-09/sa-phx/playlist.m3u8?tk=HU9j3K8XPLir3f_O_3AgvA&e=1794323962
+#EXTINF:-1 tvg-chno="7" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Vancouver Canucks vs Philadelphia Flyers (DAM)" tvg-logo="/img/cards/nhl/401892681.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Vancouver Canucks vs Philadelphia Flyers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892681
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892681
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-09/phi-van/playlist.m3u8?tk=HU9j3K8XPLir3f_O_3AgvA&e=1794323962
+#EXTINF:-1 tvg-chno="8" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Golden State Warriors vs New Orleans Pelicans (DAM)" tvg-logo="/img/cards/nba/401909959.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Golden State Warriors vs New Orleans Pelicans (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909959
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909959
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-09/no-gs/playlist.m3u8?tk=HU9j3K8XPLir3f_O_3AgvA&e=1794323962
+#EXTINF:-1 tvg-chno="9" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] San Jose Sharks vs New York Islanders (DAM)" tvg-logo="/img/cards/nhl/401892682.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] San Jose Sharks vs New York Islanders (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892682
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892682
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-09/nyi-sj/playlist.m3u8?tk=HU9j3K8XPLir3f_O_3AgvA&e=1794323962
