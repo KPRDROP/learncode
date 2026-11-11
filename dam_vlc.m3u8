@@ -1,1 +1,51 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Toronto Maple Leafs vs Colorado Avalanche (DAM)" tvg-logo="/img/cards/nhl/401892683.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Toronto Maple Leafs vs Colorado Avalanche (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892683
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892683
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-10/col-tor/playlist.m3u8?tk=fRSyzKkHnqJ0C6RGWNdpJQ&e=1794402463
+#EXTINF:-1 tvg-chno="2" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Montreal Canadiens vs Minnesota Wild (DAM)" tvg-logo="/img/cards/nhl/401892684.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Montreal Canadiens vs Minnesota Wild (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892684
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892684
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-10/min-mtl/playlist.m3u8?tk=fRSyzKkHnqJ0C6RGWNdpJQ&e=1794402463
+#EXTINF:-1 tvg-chno="3" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Ottawa Senators vs Washington Capitals (DAM)" tvg-logo="/img/cards/nhl/401892685.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Ottawa Senators vs Washington Capitals (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892685
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892685
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-10/wsh-ott/playlist.m3u8?tk=fRSyzKkHnqJ0C6RGWNdpJQ&e=1794402463
+#EXTINF:-1 tvg-chno="4" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Winnipeg Jets vs New Jersey Devils (DAM)" tvg-logo="/img/cards/nhl/401892688.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Winnipeg Jets vs New Jersey Devils (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892688
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892688
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-10/nj-wpg/playlist.m3u8?tk=HeA1Xp6VWr6yc9KY7vSdOw&e=1794402464
+#EXTINF:-1 tvg-chno="5" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] New York Knicks vs Milwaukee Bucks (DAM)" tvg-logo="/img/cards/nba/401909960.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] New York Knicks vs Milwaukee Bucks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909960
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909960
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-10/mil-ny/playlist.m3u8?tk=HeA1Xp6VWr6yc9KY7vSdOw&e=1794402464
+#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Columbus Blue Jackets vs Florida Panthers (DAM)" tvg-logo="/img/cards/nhl/401892686.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Columbus Blue Jackets vs Florida Panthers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892686
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892686
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-10/fla-cbj/playlist.m3u8?tk=HeA1Xp6VWr6yc9KY7vSdOw&e=1794402464
+#EXTINF:-1 tvg-chno="7" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Philadelphia 76ers vs Boston Celtics (DAM)" tvg-logo="/img/cards/nba/401909961.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Philadelphia 76ers vs Boston Celtics (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909961
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909961
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-10/bos-phi/playlist.m3u8?tk=KUAfyVXunCyqN1NZAuGKyA&e=1794402465
+#EXTINF:-1 tvg-chno="8" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] St. Louis Blues vs Detroit Red Wings (DAM)" tvg-logo="/img/cards/nhl/401892687.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] St. Louis Blues vs Detroit Red Wings (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892687
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892687
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-10/det-stl/playlist.m3u8?tk=KUAfyVXunCyqN1NZAuGKyA&e=1794402465
+#EXTINF:-1 tvg-chno="9" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Phoenix Suns vs LA Clippers (DAM)" tvg-logo="/img/cards/nba/401909962.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Phoenix Suns vs LA Clippers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909962
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909962
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-10/lac-phx/playlist.m3u8?tk=KUAfyVXunCyqN1NZAuGKyA&e=1794402465
+#EXTINF:-1 tvg-chno="10" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Utah Jazz vs Miami Heat (DAM)" tvg-logo="/img/cards/nba/401909963.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Utah Jazz vs Miami Heat (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909963
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909963
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-10/mia-utah/playlist.m3u8?tk=hwwKvs1Kzduj3MYmfnPLbw&e=1794402466
