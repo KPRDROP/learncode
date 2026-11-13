@@ -1,1 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Miami Hurricanes vs North Alabama Lions (DAM)" tvg-logo="/img/cards/mens-college-basketball/401921721.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Miami Hurricanes vs North Alabama Lions (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401921721
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401921721
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-13/una-mia/playlist.m3u8?tk=Ek-HbrnsaKxHk3F5dPvP_A&e=1794647949
