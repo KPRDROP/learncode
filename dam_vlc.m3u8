@@ -1,11 +1,1 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Los Angeles Kings vs New York Islanders (DAM)" tvg-logo="/img/cards/nhl/401892705.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Los Angeles Kings vs New York Islanders (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892705
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892705
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-11-12/nyi-la/playlist.m3u8?tk=8lm_xhdv_XNPLyIEF7wiKA&e=1794592658
-#EXTINF:-1 tvg-chno="2" tvg-id="Live.Event.us" tvg-name="[National Basketball League] New Zealand Breakers vs Brisbane Bullets (DAM)" tvg-logo="/img/cards/nbl/401875310.jpg?v=3nf" group-title="Basketball",[National Basketball League] New Zealand Breakers vs Brisbane Bullets (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401875310
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401875310
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nbl/2026-11-13/nzl-bri/playlist.m3u8?tk=8lm_xhdv_XNPLyIEF7wiKA&e=1794592658
