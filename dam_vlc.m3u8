@@ -1,6 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="Live.Event.us" tvg-name="[National Basketball League] Perth Wildcats vs Illawarra Hawks (DAM)" tvg-logo="/img/cards/nbl/401875302.jpg?v=3nf" group-title="Basketball",[National Basketball League] Perth Wildcats vs Illawarra Hawks (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401875302
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401875302
+#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Miami Hurricanes vs Duke Blue Devils (DAM)" tvg-logo="/img/cards/college-football/401858296.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Miami Hurricanes vs Duke Blue Devils (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858296
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858296
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nbl/2026-11-14/per-hwk/playlist.m3u8?tk=-_z1RzAVOk7ndB2K4QLDqw&e=1794693511
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-14/duke-mia/playlist.m3u8?tk=snmVdfmEg0RwYmUAoCoCUQ&e=1794717086
+#EXTINF:-1 tvg-chno="2" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] SMU Mustangs vs Wake Forest Demon Deacons (DAM)" tvg-logo="/img/cards/college-football/401858301.jpg?v=nf2nf" group-title="Football",[NCAA - Football] SMU Mustangs vs Wake Forest Demon Deacons (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858301
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858301
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-14/wake-smu/playlist.m3u8?tk=snmVdfmEg0RwYmUAoCoCUQ&e=1794717086
+#EXTINF:-1 tvg-chno="3" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Ohio State Buckeyes vs Northwestern Wildcats (DAM)" tvg-logo="/img/cards/college-football/401858522.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Ohio State Buckeyes vs Northwestern Wildcats (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858522
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858522
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-14/nu-osu/playlist.m3u8?tk=mM_vB0C15buJinmQUgyB4A&e=1794717087
+#EXTINF:-1 tvg-chno="4" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Clemson Tigers vs Georgia Tech Yellow Jackets (DAM)" tvg-logo="/img/cards/college-football/401858297.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Clemson Tigers vs Georgia Tech Yellow Jackets (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858297
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858297
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-14/miz-uga/playlist.m3u8?tk=ld7a7LiQuXqb_8t3Z1B1vQ&e=1794717089
