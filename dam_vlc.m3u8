@@ -1,6 +1,46 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Detroit Lions vs New England Patriots (DAM)" tvg-logo="/img/cards/nfl/401873053.jpg?v=dm3nf" group-title="Football",[National Football League] Detroit Lions vs New England Patriots (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873053
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873053
+#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Michigan Wolverines vs William & Mary Tribe (DAM)" tvg-logo="/img/cards/mens-college-basketball/401918453.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Michigan Wolverines vs William & Mary Tribe (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401918453
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401918453
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nfl/2026-11-15/ne-det/playlist.m3u8?tk=h47_1ZscqYLRQciCwNXHNQ&e=1794802598
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-15/wm-mich/playlist.m3u8?tk=pkfMrVUWmGRLJoo_q6qaKw&e=1794821654
+#EXTINF:-1 tvg-chno="2" tvg-id="Soccer.Dummy.us" tvg-name="[UEFA Nations League] Croatia vs Czechia (DAM)" tvg-logo="/img/cards/m/c72f7bc46aac528d.jpg?v=3nf.t2" group-title="Live Events",[UEFA Nations League] Croatia vs Czechia (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401861178
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401861178
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/uefa-nations-league/2026-11-15/cro-cze/playlist.m3u8?tk=pkfMrVUWmGRLJoo_q6qaKw&e=1794821654
+#EXTINF:-1 tvg-chno="3" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Texas Longhorns vs Baylor Bears (DAM)" tvg-logo="/img/cards/mens-college-basketball/401906866.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Texas Longhorns vs Baylor Bears (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401906866
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401906866
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-15/bay-tex/playlist.m3u8?tk=xh7xiuwgoemIYKxdy-W9SA&e=1794821655
+#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Phoenix Suns vs Los Angeles Lakers (DAM)" tvg-logo="/img/cards/nba/401909986.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Phoenix Suns vs Los Angeles Lakers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909986
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909986
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-15/lal-phx/playlist.m3u8?tk=FxNWwWJK3Y-ef3wiKjUI_A&e=1794821656
+#EXTINF:-1 tvg-chno="5" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Las Vegas Raiders vs Seattle Seahawks (DAM)" tvg-logo="/img/cards/nfl/401873062.jpg?v=dm3nf" group-title="Football",[National Football League] Las Vegas Raiders vs Seattle Seahawks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873062
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873062
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-15/sea-lv/playlist.m3u8?tk=FxNWwWJK3Y-ef3wiKjUI_A&e=1794821656
+#EXTINF:-1 tvg-chno="6" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Arizona Cardinals vs Los Angeles Rams (DAM)" tvg-logo="/img/cards/nfl/401873061.jpg?v=dm3nf" group-title="Football",[National Football League] Arizona Cardinals vs Los Angeles Rams (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873061
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873061
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-15/lar-ari/playlist.m3u8?tk=FxNWwWJK3Y-ef3wiKjUI_A&e=1794821656
+#EXTINF:-1 tvg-chno="7" tvg-id="NFL.Dummy.us" tvg-name="[National Football League] Dallas Cowboys vs San Francisco 49ers (DAM)" tvg-logo="/img/cards/nfl/401873063.jpg?v=dm3nf" group-title="Football",[National Football League] Dallas Cowboys vs San Francisco 49ers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401873063
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401873063
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nfl/2026-11-15/sf-dal/playlist.m3u8?tk=6PVXkr0piqMnFxYF5zmknQ&e=1794821657
+#EXTINF:-1 tvg-chno="8" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] LA Clippers vs Charlotte Hornets (DAM)" tvg-logo="/img/cards/nba/401909987.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] LA Clippers vs Charlotte Hornets (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909987
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909987
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-15/cha-lac/playlist.m3u8?tk=6PVXkr0piqMnFxYF5zmknQ&e=1794821657
+#EXTINF:-1 tvg-chno="9" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Utah Jazz vs San Antonio Spurs (DAM)" tvg-logo="/img/cards/nba/401909988.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Utah Jazz vs San Antonio Spurs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909988
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909988
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-15/sa-utah/playlist.m3u8?tk=6PVXkr0piqMnFxYF5zmknQ&e=1794821657
