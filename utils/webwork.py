@@ -19,6 +19,7 @@ from playwright.async_api import (
     Route,
 )
 
+from .config import Time
 from .logger import get_logger
 
 logger = get_logger(__name__)
@@ -49,11 +50,41 @@ class Network:
 
         self.client = httpx.AsyncClient(**client_params)
 
-        easylist = (Path(__file__).parent / "easylist.txt").read_text(encoding="utf-8")
+        self.client_unv = httpx.AsyncClient(**client_params, verify=False)
+
+        # FIX: Initialize engine attribute to None so attribute exists
+        self.engine: adblock.Engine | None = None
+
+    async def setup_adblock(self) -> None:
+        """Initialize the adblock engine. Must be called before using event_context."""
+        # Skip if already set up
+        if self.engine is not None:
+            return
+
+        easylist_file = Path(__file__).parent / "easylist.txt"
+
+        if not easylist_file.exists():
+            easylist_file.write_text("", encoding="utf-8")
+
+        easylist = easylist_file.read_text(encoding="utf-8")
+
+        if Time.rn().timestamp() - easylist_file.stat().st_mtime >= 345_600:
+            logger.info("Updating EasyList file")
+
+            if r := await self.request(
+                "https://easylist.to/easylist/easylist.txt"
+            ):
+                easylist_file.write_bytes(r.content)
+                easylist = r.text
+
+            else:
+                logger.warning("Unable to update EasyList file")
+
         filter_set = adblock.FilterSet()
         filter_set.add_filter_list(easylist)
-
         self.engine = adblock.Engine(filter_set)
+
+        logger.info("Adblock engine initialized")
 
     async def request(
         self,
@@ -94,7 +125,7 @@ class Network:
         fn: Callable[[], Awaitable[T]],
         url_num: int,
         semaphore: asyncio.Semaphore,
-        timeout: int | float = 30,
+        timeout: int = 30,
         timeout_return: T | None = None,
         log: logging.Logger | None = None,
     ) -> T | None:
@@ -128,31 +159,60 @@ class Network:
 
                 return timeout_return
 
-    @cache
+    # FIX: @cache and @staticmethod order was wrong - cache must be outer
     @staticmethod
+    @cache
     def stealth_js() -> str:
         return (Path(__file__).parent / "stealth.js").read_text(encoding="utf-8")
 
     def to_block(self, request: Request) -> bool:
+        """Check if a request should be blocked. Handles service worker requests safely."""
+        # FIX: Skip if engine not initialized
+        if self.engine is None:
+            return False
+
+        # FIX: Service worker requests don't have an associated frame
+        try:
+            source_url = request.frame.url
+        except Exception:
+            # Service worker or detached frame - don't block
+            return False
+
         req_type = _TYPE_MAP.get(request.resource_type, request.resource_type)
 
-        result = self.engine.check_network_urls(
-            url=request.url,
-            source_url=request.frame.url,
-            request_type=req_type,
-        )
+        try:
+            result = self.engine.check_network_urls(
+                url=request.url,
+                source_url=source_url,
+                request_type=req_type,
+            )
 
-        return result.matched
+            return result.matched
+        except Exception:
+            # Never crash on adblock check errors
+            return False
 
     async def _adblock(self, route: Route) -> None:
+        """Route handler with full exception safety."""
         request = route.request
 
-        if request.resource_type not in ("script", "image", "media", "xhr", "fetch"):
-            await route.continue_()
+        # FIX: Wrap entire handler in try/except to prevent route failures
+        try:
+            if request.resource_type not in ("script", "image", "media", "xhr", "fetch"):
+                await route.continue_()
+                return
 
-            return
-
-        await route.abort() if self.to_block(request) else await route.continue_()
+            if self.to_block(request):
+                await route.abort()
+            else:
+                await route.continue_()
+        except Exception as e:
+            # Route may already be handled - just log and move on
+            logger.debug(f"Adblock route error: {e}")
+            try:
+                await route.continue_()
+            except Exception:
+                pass
 
     @asynccontextmanager
     async def event_context(
@@ -166,6 +226,10 @@ class Network:
 
         try:
             if stealth:
+                # FIX: Ensure engine is initialized before using adblock
+                if self.engine is None:
+                    await self.setup_adblock()
+
                 context = await browser.new_context(
                     user_agent=self.UA,
                     ignore_https_errors=ignore_https,
@@ -193,7 +257,10 @@ class Network:
 
         finally:
             if context:
-                await context.close()
+                try:
+                    await context.close()
+                except Exception as e:
+                    logger.debug(f"Context close error: {e}")
 
     @staticmethod
     @asynccontextmanager
@@ -204,7 +271,10 @@ class Network:
             yield page
 
         finally:
-            await page.close()
+            try:
+                await page.close()
+            except Exception as e:
+                logger.debug(f"Page close error: {e}")
 
     @staticmethod
     async def browser(playwright: Playwright, external: bool = False) -> Browser:
@@ -223,11 +293,11 @@ class Network:
 
         blocked = [
             re.escape(i)
-            for i in {
+             for i in (
                 # "amazonaws",
                 "knitcdn",
                 "jwpltx",
-            }
+             )
         ]
 
         pattern = re.compile(rf"^(?!.*({'|'.join(blocked)})).*\.m3u8", re.I)
@@ -241,7 +311,7 @@ class Network:
         url: str,
         url_num: int,
         page: Page,
-        timeout: int | float = 10,
+         timeout: int = 10,
         log: logging.Logger | None = None,
     ) -> str | None:
 
@@ -266,8 +336,8 @@ class Network:
                 timeout=6_000,
             )
 
-            if not resp or resp.status != 200:
-                log.warning(
+            if not resp or not resp.ok:
+                log.error(
                     f"URL {url_num}) Status Code: {resp.status if resp else 'None'}"
                 )
                 return
