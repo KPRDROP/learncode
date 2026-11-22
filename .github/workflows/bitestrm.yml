@@ -1,4 +1,4 @@
-name: Bitestrm Scraper
+name: Bitestrm Updater
 
 on:
   schedule:
@@ -33,7 +33,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
 
-      - name: Run bitestrm scraper
+      - name: Run bitestrm updater
         run: python bitestrm.py
 
       - name: Commit and push output files
