@@ -29,14 +29,7 @@ TIVIMATE_FILE = "bitechls_tivimate.m3u8"
 
 
 def process_stream(iframe_url: str, channel_id: str) -> str:
-    """
-    Convert an iframe/embed URL to a playable 247 stream URL.
-
-    Example:
-      iframe_url : https://sportsbite.org/247-embed/embed/bbcone
-      channel_id : bbcone  (extracted from "id": "247-bbcone")
-      -> output  : https://sportsbite.org/247/bbcone
-    """
+    
     # Prefer parsing the last path segment of the iframe URL (most reliable)
     if iframe_url and "/embed/" in iframe_url:
         slug = iframe_url.rstrip("/").rsplit("/embed/", 1)[-1]
