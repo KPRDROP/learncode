@@ -1,0 +1,51 @@
+name: Bitechnl Updater
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bitechnl-scraper
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright "httpx[http2]" pytz "tzdata>=2026.3" "adblock>=0.6.0"
+
+      - name: Run bitechnl updater
+        run: python bitechnl.py
+
+      - name: Commit and push output files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bitechls_vlc.m3u8 bitechls_tivimate.m3u8
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update bitechnl playlists [skip ci]"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
