@@ -1,26 +1,26 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Arizona Wildcats vs Ole Miss Rebels (DAM)" tvg-logo="/img/cards/mens-college-basketball/401921715.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Arizona Wildcats vs Ole Miss Rebels (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401921715
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401921715
+#EXTINF:-1 tvg-chno="1" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Colorado Avalanche vs Montreal Canadiens (DAM)" tvg-logo="/img/cards/nhl/401892792.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Colorado Avalanche vs Montreal Canadiens (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892792
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892792
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cbb/2026-11-25/miss-ariz/playlist.m3u8?tk=AkcUvLaUWJYQaGDwLdjHBg&e=1795688145
-#EXTINF:-1 tvg-chno="2" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Nebraska Cornhuskers vs Southern Jaguars (DAM)" tvg-logo="/img/cards/mens-college-basketball/401926065.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Nebraska Cornhuskers vs Southern Jaguars (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401926065
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401926065
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-25/mtl-col/playlist.m3u8?tk=qTVHG7fMK9uPMcMJBWpCJA&e=1795711722
+#EXTINF:-1 tvg-chno="2" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Seattle Kraken vs Chicago Blackhawks (DAM)" tvg-logo="/img/cards/nhl/401892794.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Seattle Kraken vs Chicago Blackhawks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892794
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892794
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cbb/2026-11-25/sou-neb/playlist.m3u8?tk=jnmZFpaGbSyDn_M7w2CYow&e=1795688148
-#EXTINF:-1 tvg-chno="3" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Philadelphia 76ers vs Miami Heat (DAM)" tvg-logo="/img/cards/nba/401909317.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Philadelphia 76ers vs Miami Heat (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909317
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909317
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-25/chi-sea/playlist.m3u8?tk=qTVHG7fMK9uPMcMJBWpCJA&e=1795711722
+#EXTINF:-1 tvg-chno="3" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Golden State Warriors vs Sacramento Kings (DAM)" tvg-logo="/img/cards/nba/401909324.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Golden State Warriors vs Sacramento Kings (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909324
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909324
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nba/2026-11-25/mia-phi/playlist.m3u8?tk=yL4d3_Thl7f4Lv3U7MxvWA&e=1795688149
-#EXTINF:-1 tvg-chno="4" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] USC Trojans vs South Carolina Gamecocks (DAM)" tvg-logo="/img/cards/mens-college-basketball/401921670.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] USC Trojans vs South Carolina Gamecocks (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401921670
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401921670
+https://messi.damitv.st/live-hls/channel/nba/2026-11-25/sac-gs/playlist.m3u8?tk=3HK_yI9DpITAaPaPAIXflA&e=1795711723
+#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Portland Trail Blazers vs San Antonio Spurs (DAM)" tvg-logo="/img/cards/nba/401909325.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Portland Trail Blazers vs San Antonio Spurs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909325
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909325
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cbb/2026-11-25/sc-usc/playlist.m3u8?tk=wf1KaNCOnMrQSuLZtAi_wQ&e=1795688150
-#EXTINF:-1 tvg-chno="5" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Providence Friars vs BYU Cougars (DAM)" tvg-logo="/img/cards/mens-college-basketball/401921716.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Providence Friars vs BYU Cougars (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401921716
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401921716
+https://messi.damitv.st/live-hls/channel/nba/2026-11-25/sa-por/playlist.m3u8?tk=QW9lFM95vRC9TiXSMGzWPw&e=1795711724
+#EXTINF:-1 tvg-chno="5" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Anaheim Ducks vs San Jose Sharks (DAM)" tvg-logo="/img/cards/nhl/401892793.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Anaheim Ducks vs San Jose Sharks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892793
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892793
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cbb/2026-11-25/byu-prov/playlist.m3u8?tk=wf1KaNCOnMrQSuLZtAi_wQ&e=1795688150
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-25/sj-ana/playlist.m3u8?tk=QW9lFM95vRC9TiXSMGzWPw&e=1795711724
