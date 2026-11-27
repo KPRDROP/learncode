@@ -74,3 +74,8 @@ https://sportsbite.org/selfhost/cdn/s-183ac3d5db89abcac392.m3u8?cdn=1
 #EXTVLCOPT:http-origin=https://sportsbite.org
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; G011A Build/PI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Mobile Safari/537.36
 https://sportsbite.org/selfhost/cdn/s-3ce7a87f005d41ed0b64.m3u8?cdn=1
+#EXTINF:-1 tvg-chno="16" tvg-id="PPV.EVENTS.Dummy.us" tvg-name="TNA Impact 2 | Wrestling (BITESTRM)" tvg-logo="https://files.catbox.moe/8kqv9g.png" group-title="Live Events",TNA Impact 2 | Wrestling (BITESTRM)
+#EXTVLCOPT:http-referrer=https://sportsbite.org/
+#EXTVLCOPT:http-origin=https://sportsbite.org
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 9; G011A Build/PI) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.70 Mobile Safari/537.36
+https://sportsbite.org/selfhost/cdn/s-0f4efb8c0da2acdb2975.m3u8?cdn=1
