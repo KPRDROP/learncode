@@ -1,1 +1,31 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Xavier Musketeers vs Virginia Cavaliers (DAM)" tvg-logo="/img/cards/mens-college-basketball/401920429.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Xavier Musketeers vs Virginia Cavaliers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401920429
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401920429
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-27/uva-xav/playlist.m3u8?tk=P_9ntv5LM8WGNpICxb18dQ&e=1795845524
+#EXTINF:-1 tvg-chno="2" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Ole Miss Rebels vs Mississippi State Bulldogs (DAM)" tvg-logo="/img/cards/college-football/401856762.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Ole Miss Rebels vs Mississippi State Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401856762
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401856762
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-27/msst-miss/playlist.m3u8?tk=GOk4LtRTOB9XSF-0w_PKpw&e=1795845529
+#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Grand Prix - Practice 2 (DAM)" tvg-logo="/img/f1-generic.webp" group-title="Live Events",[Formula 1] Qatar Grand Prix - Practice 2 (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mm-mot-f1-600057450-fp2
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mm-mot-f1-600057450-fp2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/f1/2026/qatar/fp2/playlist.m3u8?tk=w7Rj_QNKXSHAGJ3IQo140w&e=1795845538
+#EXTINF:-1 tvg-chno="4" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Iowa Hawkeyes vs Nebraska Cornhuskers (DAM)" tvg-logo="/img/cards/college-football/401858536.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Iowa Hawkeyes vs Nebraska Cornhuskers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858536
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858536
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-27/neb-iowa/playlist.m3u8?tk=3kjNbgwkNWave7yh--51hA&e=1795845539
+#EXTINF:-1 tvg-chno="5" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Boston Bruins vs Toronto Maple Leafs (DAM)" tvg-logo="/img/cards/nhl/401892795.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Boston Bruins vs Toronto Maple Leafs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892795
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892795
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/tor-bos/playlist.m3u8?tk=GGBKeaCVrdppSUl-QgaLgA&e=1795845542
+#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] New Jersey Devils vs Calgary Flames (DAM)" tvg-logo="/img/cards/nhl/401892796.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] New Jersey Devils vs Calgary Flames (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892796
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892796
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/cgy-nj/playlist.m3u8?tk=UDWerNs7gbxdvpYSJf9wBQ&e=1795845543
