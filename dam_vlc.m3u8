@@ -1,31 +1,81 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Xavier Musketeers vs Virginia Cavaliers (DAM)" tvg-logo="/img/cards/mens-college-basketball/401920429.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Xavier Musketeers vs Virginia Cavaliers (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401920429
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401920429
+#EXTINF:-1 tvg-chno="1" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Chicago Blackhawks vs New York Rangers (DAM)" tvg-logo="/img/cards/nhl/401892806.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Chicago Blackhawks vs New York Rangers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892806
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892806
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cbb/2026-11-27/uva-xav/playlist.m3u8?tk=P_9ntv5LM8WGNpICxb18dQ&e=1795845524
-#EXTINF:-1 tvg-chno="2" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Ole Miss Rebels vs Mississippi State Bulldogs (DAM)" tvg-logo="/img/cards/college-football/401856762.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Ole Miss Rebels vs Mississippi State Bulldogs (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401856762
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401856762
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/nyr-chi/playlist.m3u8?tk=d28vZk1fbWJ2USvKWXUsJQ&e=1795872113
+#EXTINF:-1 tvg-chno="2" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Illinois Fighting Illini vs Western Kentucky Hilltoppers (DAM)" tvg-logo="/img/cards/mens-college-basketball/401913531.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Illinois Fighting Illini vs Western Kentucky Hilltoppers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401913531
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401913531
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-11-27/msst-miss/playlist.m3u8?tk=GOk4LtRTOB9XSF-0w_PKpw&e=1795845529
-#EXTINF:-1 tvg-chno="3" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Grand Prix - Practice 2 (DAM)" tvg-logo="/img/f1-generic.webp" group-title="Live Events",[Formula 1] Qatar Grand Prix - Practice 2 (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mm-mot-f1-600057450-fp2
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mm-mot-f1-600057450-fp2
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-27/wku-ill/playlist.m3u8?tk=d3IuM3gjJo3eYjYtmBx6Dg&e=1795872115
+#EXTINF:-1 tvg-chno="3" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Indiana Hoosiers vs Bowling Green Falcons (DAM)" tvg-logo="/img/cards/mens-college-basketball/401911030.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Indiana Hoosiers vs Bowling Green Falcons (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401911030
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401911030
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/f1/2026/qatar/fp2/playlist.m3u8?tk=w7Rj_QNKXSHAGJ3IQo140w&e=1795845538
-#EXTINF:-1 tvg-chno="4" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Iowa Hawkeyes vs Nebraska Cornhuskers (DAM)" tvg-logo="/img/cards/college-football/401858536.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Iowa Hawkeyes vs Nebraska Cornhuskers (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858536
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858536
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-27/bgsu-iu/playlist.m3u8?tk=TnghFkPswyQNxSU-7kHANA&e=1795872116
+#EXTINF:-1 tvg-chno="4" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] New York Knicks vs Miami Heat (DAM)" tvg-logo="/img/cards/nba/401909326.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] New York Knicks vs Miami Heat (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909326
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909326
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/cfb/2026-11-27/neb-iowa/playlist.m3u8?tk=3kjNbgwkNWave7yh--51hA&e=1795845539
-#EXTINF:-1 tvg-chno="5" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Boston Bruins vs Toronto Maple Leafs (DAM)" tvg-logo="/img/cards/nhl/401892795.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Boston Bruins vs Toronto Maple Leafs (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892795
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892795
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/mia-ny/playlist.m3u8?tk=O2mdX4qE-S3aqwvyiiOzyA&e=1795872117
+#EXTINF:-1 tvg-chno="5" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Detroit Pistons vs Milwaukee Bucks (DAM)" tvg-logo="/img/cards/nba/401909327.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Detroit Pistons vs Milwaukee Bucks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909327
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909327
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/tor-bos/playlist.m3u8?tk=GGBKeaCVrdppSUl-QgaLgA&e=1795845542
-#EXTINF:-1 tvg-chno="6" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] New Jersey Devils vs Calgary Flames (DAM)" tvg-logo="/img/cards/nhl/401892796.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] New Jersey Devils vs Calgary Flames (DAM)
-#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892796
-#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892796
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/mil-det/playlist.m3u8?tk=bWSn68wSxNlXnG0qjoQZ_g&e=1795872122
+#EXTINF:-1 tvg-chno="6" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Indiana Pacers vs Philadelphia 76ers (DAM)" tvg-logo="/img/cards/nba/401909328.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Indiana Pacers vs Philadelphia 76ers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909328
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909328
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/cgy-nj/playlist.m3u8?tk=UDWerNs7gbxdvpYSJf9wBQ&e=1795845543
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/phi-ind/playlist.m3u8?tk=bWSn68wSxNlXnG0qjoQZ_g&e=1795872122
+#EXTINF:-1 tvg-chno="7" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Toronto Raptors vs Brooklyn Nets (DAM)" tvg-logo="/img/cards/nba/401909329.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Toronto Raptors vs Brooklyn Nets (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909329
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909329
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/bkn-tor/playlist.m3u8?tk=r9vYRoGMNr8tHADrJ2wdXA&e=1795872123
+#EXTINF:-1 tvg-chno="8" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA Men's Basketball] Houston Cougars vs Oakland Golden Grizzlies (DAM)" tvg-logo="/img/cards/mens-college-basketball/401925703.jpg?v=3nf" group-title="Basketball",[NCAA Men's Basketball] Houston Cougars vs Oakland Golden Grizzlies (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401925703
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401925703
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cbb/2026-11-27/oak-hou/playlist.m3u8?tk=tUA37TKnQDp_LAPlcW3anw&e=1795872124
+#EXTINF:-1 tvg-chno="9" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Texas A&M Aggies vs Texas Longhorns (DAM)" tvg-logo="/img/cards/college-football/401856756.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Texas A&M Aggies vs Texas Longhorns (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401856756
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401856756
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-27/tex-tam/playlist.m3u8?tk=hL9p5EE6MZ13-I2z9X9CXg&e=1795872125
+#EXTINF:-1 tvg-chno="10" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] New York Islanders vs Winnipeg Jets (DAM)" tvg-logo="/img/cards/nhl/401892807.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] New York Islanders vs Winnipeg Jets (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892807
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892807
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/wpg-nyi/playlist.m3u8?tk=5HkSDyAn40Sy5Fs7V0m9Vg&e=1795872127
+#EXTINF:-1 tvg-chno="11" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Boston Celtics vs Atlanta Hawks (DAM)" tvg-logo="/img/cards/nba/401909330.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Boston Celtics vs Atlanta Hawks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909330
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909330
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/atl-bos/playlist.m3u8?tk=tL1_BELp6UjVxhreZMhzqg&e=1795872129
+#EXTINF:-1 tvg-chno="12" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Buffalo Sabres vs Pittsburgh Penguins (DAM)" tvg-logo="/img/cards/nhl/401892808.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Buffalo Sabres vs Pittsburgh Penguins (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892808
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892808
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/pit-buf/playlist.m3u8?tk=OmFchfdWLBw0w2nAoiAKwg&e=1795872130
+#EXTINF:-1 tvg-chno="13" tvg-id="NHL.Hockey.Dummy.us" tvg-name="[National Hockey League] Edmonton Oilers vs Seattle Kraken (DAM)" tvg-logo="/img/cards/nhl/401892809.jpg?v=spl2nf" group-title="Live Events",[National Hockey League] Edmonton Oilers vs Seattle Kraken (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401892809
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401892809
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nhl/2026-11-27/sea-edm/playlist.m3u8?tk=8KJ_kUOtBO-nRaq9DeLtCw&e=1795872132
+#EXTINF:-1 tvg-chno="14" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Minnesota Timberwolves vs Memphis Grizzlies (DAM)" tvg-logo="/img/cards/nba/401909331.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Minnesota Timberwolves vs Memphis Grizzlies (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909331
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909331
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/mem-min/playlist.m3u8?tk=fq1dPyoI7kC1yheLrbmkXA&e=1795872136
+#EXTINF:-1 tvg-chno="15" tvg-id="NBA.Basketball.Dummy.us" tvg-name="[National Basketball Association] Phoenix Suns vs Dallas Mavericks (DAM)" tvg-logo="/img/cards/nba/401909332.jpg?v=ghst2nf" group-title="Basketball",[National Basketball Association] Phoenix Suns vs Dallas Mavericks (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401909332
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401909332
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/nba/2026-11-27/dal-phx/playlist.m3u8?tk=BrODiZ_QbD1XMhgKL2zw-w&e=1795872138
+#EXTINF:-1 tvg-chno="16" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Utah Utes vs West Virginia Mountaineers (DAM)" tvg-logo="/img/cards/college-football/401856880.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Utah Utes vs West Virginia Mountaineers (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401856880
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401856880
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-27/wvu-utah/playlist.m3u8?tk=BrODiZ_QbD1XMhgKL2zw-w&e=1795872138
