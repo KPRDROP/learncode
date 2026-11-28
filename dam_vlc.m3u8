@@ -1,1 +1,36 @@
 #EXTM3U
+#EXTINF:-1 tvg-chno="1" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Syracuse Orange vs Notre Dame Fighting Irish (DAM)" tvg-logo="/img/cards/college-football/401858314.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Syracuse Orange vs Notre Dame Fighting Irish (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858314
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858314
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-28/nd-syr/playlist.m3u8?tk=aiqzwPgV12MNokzqyzxY5Q&e=1795932619
+#EXTINF:-1 tvg-chno="2" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Kentucky Wildcats vs Louisville Cardinals (DAM)" tvg-logo="/img/cards/college-football/401856761.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Kentucky Wildcats vs Louisville Cardinals (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401856761
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401856761
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-28/lou-uk/playlist.m3u8?tk=oRxioXNwuYRq86HU3r9nAw&e=1795932620
+#EXTINF:-1 tvg-chno="3" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Ohio State Buckeyes vs Michigan Wolverines (DAM)" tvg-logo="/img/cards/college-football/401858540.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Ohio State Buckeyes vs Michigan Wolverines (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401858540
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401858540
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-28/mich-osu/playlist.m3u8?tk=PH2EYI8IcmjQ5m3Qi-zfSg&e=1795932622
+#EXTINF:-1 tvg-chno="4" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Ball State Cardinals vs Central Michigan Chippewas (DAM)" tvg-logo="/img/cards/college-football/401866474.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Ball State Cardinals vs Central Michigan Chippewas (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401866474
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401866474
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-28/mich-osu/playlist.m3u8?tk=PbGcVTel7dK8Q0ei0779nQ&e=1795932627
+#EXTINF:-1 tvg-chno="5" tvg-id="NCAA.Sports.Dummy.us" tvg-name="[NCAA - Football] Georgia Southern Eagles vs Louisiana Tech Bulldogs (DAM)" tvg-logo="/img/cards/college-football/401869954.jpg?v=nf2nf" group-title="Football",[NCAA - Football] Georgia Southern Eagles vs Louisiana Tech Bulldogs (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401869954
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401869954
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/cfb/2026-11-28/gt-uga/playlist.m3u8?tk=SOCKusb_HbN5qjJTJQoesA&e=1795932631
+#EXTINF:-1 tvg-chno="6" tvg-id="Soccer.Dummy.us" tvg-name="[MLS] Charlotte FC vs Chicago Fire FC (DAM)" tvg-logo="/img/cards/usa.1/401933737.jpg?v=flag2nf" group-title="Live Events",[MLS] Charlotte FC vs Chicago Fire FC (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=espn-401933737
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=espn-401933737
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/mls/2026-11-28/clt-chi/playlist.m3u8?tk=alMoO3MGiYt0JmPD8Awb1A&e=1795932641
+#EXTINF:-1 tvg-chno="7" tvg-id="Racing.Dummy.us" tvg-name="[Formula 1] Qatar Grand Prix - Qualifying (DAM)" tvg-logo="/img/f1-generic.webp" group-title="Live Events",[Formula 1] Qatar Grand Prix - Qualifying (DAM)
+#EXTVLCOPT:http-referrer=https://ondemand.st/embed/?id=mm-mot-f1-600057450-qual
+#EXTVLCOPT:http-origin=https://ondemand.st/embed/?id=mm-mot-f1-600057450-qual
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://messi.damitv.st/live-hls/channel/f1/2026/qatar/qualifying/playlist.m3u8?tk=nKUhIO558GH_ULrxS8CKgQ&e=1795932654
